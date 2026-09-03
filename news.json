@@ -149,35 +149,34 @@
       "originalTitle": "How AI-native companies turn workflows into operating capability"
     },
     {
-      "id": "f2694bfa96c49e",
-      "url": "https://openai.com/index/path-to-astra",
-      "publishedAt": "2026-09-01",
-      "source": "OpenAI",
-      "title": "OpenAI发布首个符合关键安全标准的Astra模型",
-      "summary": "OpenAI宣布Astra是首个达到关键网络安全能力门槛的模型，具备更强的发布保障措施。该模型符合准备框架下的标准，旨在提升安全防护能力。",
+      "id": "astra-safety",
+      "title": "AI 能力越强，发布前的安全门槛也越高",
+      "summary": "OpenAI 公布 Astra 的能力评估与防护方案，重点讨论强网络安全能力该如何限制滥用。它是一份安全进展说明，不是普通用户的上手指南。",
       "category": "安全与规则",
-      "importance": 70,
-      "why": "Astra模型的发布标志着OpenAI在网络安全领域的重要进展，可能对行业安全标准产生影响。",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/path-to-astra/",
+      "publishedAt": "2026-09-01",
+      "importance": 85,
+      "why": "一个 AI 能做什么，与厂商允许它做什么，是两回事。",
       "sections": [
         {
           "heading": "到底发生了什么？",
-          "text": "OpenAI宣布Astra是首个达到关键网络安全能力门槛的模型，符合准备框架下的标准。该模型具备更强的发布保障措施，以提升安全防护能力。"
+          "text": "OpenAI 介绍 Astra 在网络安全任务中的能力与风险，并说明为发布准备的多层防护，包括拒绝滥用、监测和访问限制。"
         },
         {
           "heading": "换成人话",
-          "text": "Astra是OpenAI推出的新模型，它在网络安全方面达到了较高的标准，比以往的模型更安全。这说明OpenAI在保护用户数据和系统安全方面有了新的进展。"
+          "text": "像一把更锋利的工具：能帮助专业人员发现问题，也需要更严格的使用边界。模型变强后，安全措施也必须跟上。"
         },
         {
           "heading": "和你有什么关系？",
-          "text": "如果你关心数据安全或使用AI服务，Astra的推出可能意味着未来会有更安全的AI产品。不过目前具体影响还不明确，需要进一步观察。"
+          "text": "遇到模型拒绝某些请求，不一定是它做不到，也可能是使用范围受限。评价 AI 时，除了能力，也应关注可靠性和授权边界。"
         },
         {
           "heading": "还要留意什么？",
-          "text": "目前信息有限，具体Astra的功能和应用场景未详细说明。建议关注后续官方发布，以获取更多细节。解读基于发布方摘要，详情请查看原文。"
+          "text": "文中的测试成绩有特定条件；它们不能直接等同于日常产品表现。高级安全用途的访问范围也受到限制。"
         }
       ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Path to Astra: critical capabilities and frontier safeguards"
+      "editor": "首期来源核对"
     },
     {
       "id": "claude-51",
@@ -265,36 +264,6 @@
         {
           "heading": "还要留意什么？",
           "text": "整理资料不等于替医生作决定。官方评估有特定测试条件，不能理解为在所有真实场景都准确。"
-        }
-      ],
-      "editor": "首期来源核对"
-    },
-    {
-      "id": "astra-safety",
-      "title": "AI 能力越强，发布前的安全门槛也越高",
-      "summary": "OpenAI 公布 Astra 的能力评估与防护方案，重点讨论强网络安全能力该如何限制滥用。它是一份安全进展说明，不是普通用户的上手指南。",
-      "category": "安全与规则",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/path-to-astra/",
-      "publishedAt": "2026-09-01",
-      "importance": 85,
-      "why": "一个 AI 能做什么，与厂商允许它做什么，是两回事。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "OpenAI 介绍 Astra 在网络安全任务中的能力与风险，并说明为发布准备的多层防护，包括拒绝滥用、监测和访问限制。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "像一把更锋利的工具：能帮助专业人员发现问题，也需要更严格的使用边界。模型变强后，安全措施也必须跟上。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "遇到模型拒绝某些请求，不一定是它做不到，也可能是使用范围受限。评价 AI 时，除了能力，也应关注可靠性和授权边界。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "文中的测试成绩有特定条件；它们不能直接等同于日常产品表现。高级安全用途的访问范围也受到限制。"
         }
       ],
       "editor": "首期来源核对"
