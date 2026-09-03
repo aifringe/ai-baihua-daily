@@ -1,0 +1,209 @@
+{
+  "updatedAt": "2026-09-03T14:16:19.668456+00:00",
+  "lastCheckedAt": "2026-09-03T14:16:19.668456+00:00",
+  "feedStatus": [
+    {
+      "source": "OpenAI",
+      "ok": true
+    },
+    {
+      "source": "Google",
+      "ok": true
+    },
+    {
+      "source": "Google DeepMind",
+      "ok": true
+    },
+    {
+      "source": "Hugging Face",
+      "ok": true
+    },
+    {
+      "source": "Microsoft Research",
+      "ok": true
+    }
+  ],
+  "articles": [
+    {
+      "id": "3bda12e16fd31e",
+      "url": "https://openai.com/index/atv-big-air-tour",
+      "publishedAt": "2026-09-02",
+      "source": "OpenAI",
+      "title": "ATV Big Air Tour 用 ChatGPT 提高效率",
+      "summary": "ATV Big Air Tour 使用 ChatGPT Work 来加快营销和商品推广，甚至在15分钟内将商品照片转化为库存网站。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "这项技术展示了AI在提升工作效率方面的潜力，对相关行业有实际影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "ATV Big Air Tour 使用 ChatGPT Work 来优化营销、商品推广等流程，甚至在短时间内将商品照片转化为库存网站，大幅提升了工作效率。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "ATV Big Air Tour 用 AI 工具简化了营销和商品管理，原本需要几天的工作，现在只需几小时就能完成，效率大幅提升。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术展示了 AI 在提升工作效率方面的潜力，对相关行业有实际影响，可能会影响未来的工作方式和流程。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体细节和实际效果需参考原文。AI 技术的广泛应用可能带来新的机遇和挑战，值得持续关注。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT"
+    },
+    {
+      "id": "claude-51",
+      "title": "Claude 更新：更会做长任务，也开始走进科研",
+      "summary": "Anthropic 发布 Fable 5.1 与 Mythos 5.1。两者底层相同，但开放范围和安全限制不同，别把它们当成人人都能用的两个新产品。",
+      "category": "模型进展",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "publishedAt": "2026-09-01",
+      "importance": 95,
+      "why": "AI 的竞争正在从答一道题，转向能否持续完成一件复杂的事。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Anthropic 推出 Fable 5.1 和 Mythos 5.1。官方称它们在编程、知识工作和科研任务上有所进步。Fable 面向一般用户开放，Mythos 通过受信任访问计划提供。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把模型理解成助手的大脑。这次是同一套大脑，配上不同的使用限制。它更擅长处理步骤多、耗时长的工作，但仍需要人检查结果。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你用 Claude 写代码、整理资料，可以留意升级后是否更少返工。官方的成绩和客户案例值得参考，但不能代替你自己的实际测试。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "可用范围、价格和安全限制并不相同。官方介绍不代表所有场景都比其他模型好，具体使用条件请看原文。"
+        }
+      ],
+      "editor": "首期来源核对"
+    },
+    {
+      "id": "android-memory",
+      "title": "钥匙放哪了？Gemini 将能帮你记住",
+      "summary": "Google 的 Android 更新把 AI 用在生活小事上：记录物品位置、描述眼前环境。部分功能还在陆续推出，并有设备和地区要求。",
+      "category": "日常应用",
+      "source": "Google",
+      "url": "https://blog.google/products-and-platforms/platforms/android/Android-Drop-September-2026/",
+      "publishedAt": "2026-09-01",
+      "importance": 90,
+      "why": "比起模型跑分，这类变化更容易直接影响你每天怎么用手机。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 宣布，你将可以告诉 Gemini 护照或备用钥匙放在哪里，由 Find Hub 保存位置；需要时再询问。另一个 Guided vision 功能会描述手机摄像头看到的内容。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "它像一个可以对话的备忘录。你先告诉它东西放在哪里，它帮你记住；并不是手机能自动找到任意丢失的物品。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "容易忘东西的人可能会觉得有用。视觉描述也可能帮助视力不佳的人理解标签或菜单。具体功能需要相应 Android 版本，并受支持地区限制。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "部分功能标注为即将推出。视觉描述可能出错，不能用来替代导航、障碍检测或安全出行辅助。"
+        }
+      ],
+      "editor": "首期来源核对"
+    },
+    {
+      "id": "health-records",
+      "title": "ChatGPT 接入医疗记录，先服务医护团队",
+      "summary": "OpenAI 宣布医疗版 ChatGPT 可连接 Epic 病历系统和公共医疗数据，帮助获授权的团队整理信息；并非所有人的普通账号都新增了看病功能。",
+      "category": "行业变化",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
+      "publishedAt": "2026-09-01",
+      "importance": 88,
+      "why": "AI 正在接入实际工作资料，而不只是回答泛泛的问题。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "医疗机构可以将 Epic 的授权病历信息连接到 ChatGPT for Healthcare。新的公共数据插件还可访问 PubMed、DailyMed 等来源。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "医生看诊前常要翻很多记录。这个工具希望先把近期检查、用药变化等整理出来，并指回相关记录，让医生更快找到重点。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "对普通人而言，这是医疗工作方式的变化，不是让你直接把诊断交给聊天机器人。实际能否使用，取决于医疗机构的部署和授权。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "整理资料不等于替医生作决定。官方评估有特定测试条件，不能理解为在所有真实场景都准确。"
+        }
+      ],
+      "editor": "首期来源核对"
+    },
+    {
+      "id": "astra-safety",
+      "title": "AI 能力越强，发布前的安全门槛也越高",
+      "summary": "OpenAI 公布 Astra 的能力评估与防护方案，重点讨论强网络安全能力该如何限制滥用。它是一份安全进展说明，不是普通用户的上手指南。",
+      "category": "安全与规则",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/path-to-astra/",
+      "publishedAt": "2026-09-01",
+      "importance": 85,
+      "why": "一个 AI 能做什么，与厂商允许它做什么，是两回事。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 介绍 Astra 在网络安全任务中的能力与风险，并说明为发布准备的多层防护，包括拒绝滥用、监测和访问限制。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "像一把更锋利的工具：能帮助专业人员发现问题，也需要更严格的使用边界。模型变强后，安全措施也必须跟上。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "遇到模型拒绝某些请求，不一定是它做不到，也可能是使用范围受限。评价 AI 时，除了能力，也应关注可靠性和授权边界。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文中的测试成绩有特定条件；它们不能直接等同于日常产品表现。高级安全用途的访问范围也受到限制。"
+        }
+      ],
+      "editor": "首期来源核对"
+    },
+    {
+      "id": "hardware-standard",
+      "title": "让 AI 操作实验设备，先给机器统一“语言”",
+      "summary": "Anthropic 预览 MHS 硬件标准，让 AI 更容易连接显微镜、机械臂等设备。目前面向部分实验室和制造伙伴进行研究试用。",
+      "category": "模型进展",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "publishedAt": "2026-08-27",
+      "importance": 75,
+      "why": "让 AI 从屏幕走向现实，难点还包括设备接口和安全限制。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "MHS 尝试提供共同的设备驱动规范，让不同仪器以统一方式描述功能、接收操作，并向 AI 提供安全限制。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去每台仪器像说一种方言，需要单独写翻译程序。这个标准希望提供共同语言，减少把设备连起来的工作。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "它暂时不是家用机器人产品。更直接的影响可能发生在实验室：让研究人员少做重复操作，更快验证想法。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "这还是研究预览，部分伙伴案例不代表所有设备都能直接接入。真实设备的安全验证依然重要。"
+        }
+      ],
+      "editor": "首期来源核对"
+    }
+  ]
+}

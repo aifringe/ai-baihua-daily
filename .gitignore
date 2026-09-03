@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.local-state/
+.wrangler/
+.env*
+!.env.example
+.DS_Store
+*.log
+
+__pycache__/
+*.tsbuildinfo
+
+.next/
+.vinext/
