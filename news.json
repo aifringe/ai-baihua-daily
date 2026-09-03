@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-03T14:16:19.668456+00:00",
-  "lastCheckedAt": "2026-09-03T14:16:19.668456+00:00",
+  "updatedAt": "2026-09-03T14:27:45.494073+00:00",
+  "lastCheckedAt": "2026-09-03T14:27:45.494073+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -24,6 +24,68 @@
     }
   ],
   "articles": [
+    {
+      "id": "b263b9cf94a657",
+      "url": "https://blog.google/products/ads-commerce/ads-decoded-podcast-measurement-stack/",
+      "publishedAt": "2026-09-02",
+      "source": "Google",
+      "title": "谷歌谈如何评估广告活动效果",
+      "summary": "谷歌在Ads Decoded节目中讨论了如何通过归因、增量效应和媒体组合模型来评估营销活动的效果，帮助广告主更精准地优化广告策略。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "广告主可以通过这些方法更准确地了解广告投入的实际效果，从而优化预算分配。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌在最新的Ads Decoded节目中，分享了如何利用归因、增量效应和媒体组合模型来评估广告活动的效果。这些方法可以帮助广告主更全面地了解广告投入的实际影响。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌教广告主怎么判断广告花的钱有没有用，比如看哪些广告真正带来了销售，哪些广告只是看起来有用但实际没效果。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是做广告投放的，这些方法能帮你更清楚地知道钱花在哪里，哪些广告真正带来了效果，从而优化预算和策略。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "这些方法的具体实施细节和效果可能因行业和广告类型而异，建议结合自身情况进一步了解。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Build a measurement stack you can rely on to steer your campaigns."
+    },
+    {
+      "id": "1e5b8618d900b4",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "publishedAt": "2026-09-02",
+      "source": "Google",
+      "title": "谷歌推出Gemini 3.8 Flash和3.8 Flash Cyber",
+      "summary": "谷歌宣布推出Gemini 3.8 Flash和3.8 Flash Cyber两款新模型，旨在提升多模态任务处理能力。这两款模型专注于快速响应和网络安全领域。",
+      "category": "模型进展",
+      "importance": 40,
+      "why": "这两款模型可能在处理实时数据和网络安全任务上表现更优，但具体应用场景和效果仍需进一步观察。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌推出了Gemini 3.8 Flash和3.8 Flash Cyber两款新模型，强调其在处理多模态任务和网络安全方面的优势。这两款模型旨在提供更快的响应速度和更专业的安全功能。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌发布了两款新的AI模型，分别叫Gemini 3.8 Flash和3.8 Flash Cyber。它们主要用来处理需要快速反应和网络安全的任务，比如分析数据或检测网络威胁。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用的是谷歌的AI服务，可能会在某些任务上体验到更快的响应和更安全的处理方式。但具体是否影响你，还要看这些模型是否被应用到你常用的工具中。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前发布的只是模型名称和用途，具体功能和实际效果还需等待官方进一步说明。建议关注谷歌后续的更新和实际应用案例。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
+    },
     {
       "id": "3bda12e16fd31e",
       "url": "https://openai.com/index/atv-big-air-tour",
@@ -54,6 +116,68 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT"
+    },
+    {
+      "id": "b0cbef382238cd",
+      "url": "https://openai.com/index/ai-native-company-workflows",
+      "publishedAt": "2026-09-01",
+      "source": "OpenAI",
+      "title": "AI原生公司如何将工作流程转化为运营能力",
+      "summary": "OpenAI发布文章，介绍Basis、Clay和Exa Labs等公司利用AI代理提升企业入职、账户管理和开发者集成。文章供企业领导者参考。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "文章探讨AI技术如何改变企业运营方式，对相关行业有参考价值。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章指出，Basis、Clay和Exa Labs等AI原生公司正在利用AI代理技术，优化企业内部的工作流程，如入职、账户管理和开发者集成，以提升整体运营效率。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这些公司正在用AI来帮助企业管理员工、客户和开发者的流程，让工作更高效。比如，AI可以自动处理新员工的入职手续，或者帮助客户更快地解决问题。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是企业员工或管理者，这些AI技术可能会影响你的日常工作流程，让一些重复性任务自动化，从而节省时间。但具体影响还需看公司是否采用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于发布方摘要，未提及具体实施细节或效果。如需了解更多信息，建议查看原文或相关案例。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "How AI-native companies turn workflows into operating capability"
+    },
+    {
+      "id": "f2694bfa96c49e",
+      "url": "https://openai.com/index/path-to-astra",
+      "publishedAt": "2026-09-01",
+      "source": "OpenAI",
+      "title": "OpenAI发布首个符合关键安全标准的Astra模型",
+      "summary": "OpenAI宣布Astra是首个达到关键网络安全能力门槛的模型，具备更强的发布保障措施。该模型符合准备框架下的标准，旨在提升安全防护能力。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "Astra模型的发布标志着OpenAI在网络安全领域的重要进展，可能对行业安全标准产生影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI宣布Astra是首个达到关键网络安全能力门槛的模型，符合准备框架下的标准。该模型具备更强的发布保障措施，以提升安全防护能力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Astra是OpenAI推出的新模型，它在网络安全方面达到了较高的标准，比以往的模型更安全。这说明OpenAI在保护用户数据和系统安全方面有了新的进展。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关心数据安全或使用AI服务，Astra的推出可能意味着未来会有更安全的AI产品。不过目前具体影响还不明确，需要进一步观察。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体Astra的功能和应用场景未详细说明。建议关注后续官方发布，以获取更多细节。解读基于发布方摘要，详情请查看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Path to Astra: critical capabilities and frontier safeguards"
     },
     {
       "id": "claude-51",
@@ -174,6 +298,68 @@
         }
       ],
       "editor": "首期来源核对"
+    },
+    {
+      "id": "b1b4ad0d4a36bb",
+      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "publishedAt": "2026-08-31",
+      "source": "Microsoft Research",
+      "title": "微软推出高效病理模型，降低研究成本",
+      "summary": "微软发布GigaPath-Flash和GigaTIME-Flash模型，减少计算需求同时保持性能，有助于更大规模的研究和探索。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "这些模型能降低研究成本，使更多人能参与病理研究，推动医学进步。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "微软研究团队推出了两个新的病理学基础模型，GigaPath-Flash和GigaTIME-Flash。这些模型在减少计算资源需求的同时，保持了较高的性能，使得大规模研究和探索成为可能。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "微软开发了两个新的AI模型，它们在处理病理数据时更高效，不需要太多计算资源，但效果依然不错。这有助于研究人员更轻松地进行大规模的医学研究。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这些模型可能帮助医生和研究人员更快、更便宜地分析病理数据，从而提升诊断效率和研究能力，最终可能改善医疗服务质量。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体应用效果和实际影响还需进一步观察。建议关注后续研究和实际应用案例。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models"
+    },
+    {
+      "id": "71c43cf780d371",
+      "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+      "publishedAt": "2026-08-27",
+      "source": "Google DeepMind",
+      "title": "谷歌DeepMind试点全球首个双盲AI评估",
+      "summary": "谷歌DeepMind宣布试点全球首个双盲AI评估项目，旨在更公正地测试AI系统性能。该方法通过隐藏AI身份和测试内容，减少偏见影响。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "双盲评估有助于提高AI测试的客观性，对AI技术发展有积极影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌DeepMind正在试点全球首个双盲AI评估项目，该项目通过隐藏AI身份和测试内容，以减少偏见对评估结果的影响，从而更公正地测试AI系统的性能。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌正在尝试一种新的方法来测试AI，这种方法会隐藏AI的身份和测试内容，这样测试者就不会受到偏见的影响，从而得到更公平的结果。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项评估方法的改进有助于推动AI技术的健康发展，未来可能会更公平地评估各种AI系统，对用户和开发者都有好处。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前仅是试点阶段，具体效果和影响还需进一步观察。详情请参考原文，解读基于发布方摘要，细节可能有所不同。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Piloting the world's first double-blind AI evaluations"
     },
     {
       "id": "hardware-standard",
