@@ -39,6 +39,10 @@ python3 -m unittest discover -s scripts -p 'test_*.py'
 
 构建为静态文件，适用于 GitHub Pages 与 Sites。网页使用 hash 详情路由，因此 GitHub Pages 不需要额外 rewrite。小助手只提供白名单静态文件与 `/api/status`、`/api/chat`、`/api/news`、`/api/refresh`。
 
+## 宝塔自动部署
+
+推送到 `main` 后，GitHub Actions 会构建静态文件，并通过专用 SSH 密钥上传到 `/www/wwwroot/ai.czrshe.cn/`。仓库需要配置 `BAOTA_SSH_HOST`、`BAOTA_SSH_PORT`、`BAOTA_SSH_USER`、`BAOTA_SSH_PRIVATE_KEY` 和 `BAOTA_SSH_KNOWN_HOSTS`。部署使用服务器自带的压缩解包工具，只上传或覆盖构建文件，不删除服务器目录中的其他文件。
+
 ## 停止自动运行（本机已配置时）
 
 ```sh

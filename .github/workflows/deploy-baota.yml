@@ -1,0 +1,59 @@
+name: Deploy to Baota
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: baota-production
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install and build
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.BAOTA_SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.BAOTA_SSH_KNOWN_HOSTS }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/baota_deploy
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/baota_deploy ~/.ssh/known_hosts
+
+      - name: Deploy website
+        env:
+          SSH_HOST: ${{ secrets.BAOTA_SSH_HOST }}
+          SSH_PORT: ${{ secrets.BAOTA_SSH_PORT }}
+          SSH_USER: ${{ secrets.BAOTA_SSH_USER }}
+        run: |
+          tar -C dist -czf - . | ssh \
+            -i ~/.ssh/baota_deploy \
+            -p "$SSH_PORT" \
+            "$SSH_USER@$SSH_HOST" \
+            "tar -xzmf - --no-same-owner --no-same-permissions --no-overwrite-dir -C /www/wwwroot/ai.czrshe.cn"
