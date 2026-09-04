@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-04T13:28:41.646773+00:00",
-  "lastCheckedAt": "2026-09-04T13:28:41.646773+00:00",
+  "updatedAt": "2026-09-04T16:10:17.838588+00:00",
+  "lastCheckedAt": "2026-09-04T16:10:17.838588+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -21,9 +21,366 @@
     {
       "source": "Microsoft Research",
       "ok": true
+    },
+    {
+      "source": "Google News",
+      "ok": true
+    },
+    {
+      "source": "Bing News",
+      "ok": true
+    },
+    {
+      "source": "TechCrunch AI",
+      "ok": true
+    },
+    {
+      "source": "MIT Technology Review",
+      "ok": true
     }
   ],
   "articles": [
+    {
+      "id": "d0b16425fcb6e9",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
+      "publishedAt": "2026-09-04",
+      "source": "Google",
+      "title": "Gemini 新版 Lyria 助力音乐创作",
+      "summary": "Google 推出 Gemini 应用的新版本 Lyria 3.5，提供更先进的音乐创作功能。视频展示了新控件的使用方式，帮助用户制作更高质量的音乐。",
+      "category": "模型进展",
+      "importance": 30,
+      "why": "Gemini 应用的新版本可能提升音乐创作效率，但具体影响取决于用户需求。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 在 Gemini 应用中推出了新版 Lyria 3.5，提供更先进的音乐创作功能。视频展示了新控件的使用方式，帮助用户制作更高质量的音乐。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Google 推出了一个音乐创作工具的新版本，让音乐制作变得更简单。用户可以通过新的控件来更好地编辑和制作音乐，提升创作体验。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是音乐创作者，这个更新可能会让你的创作过程更顺畅。但如果你不是音乐人，可能不会直接影响你的日常使用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体功能和效果需参考官方说明。建议关注后续更新，了解新功能的实际应用效果。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Create your best tracks yet with Lyria 3.5 in Gemini."
+    },
+    {
+      "id": "b5a4040da6dc0c",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE11QUxBUVJLdC1jSmtJbmcxQzg4Qm9yUlNPS3JEMEVBanIyY1FRT2k2R0hBTlNnX2VqcWpTSDJUMDV0TjBJN1VGamlrZzVPZw?oc=5",
+      "publishedAt": "2026-09-04",
+      "source": "Google News",
+      "title": "OpenAI发布GPT-6 Astra新版本",
+      "summary": "OpenAI推出名为GPT-6 Astra的新一代人工智能模型，强调其在智能领域的进步。该模型可能具备更强大的语言理解和生成能力。",
+      "category": "模型进展",
+      "importance": 40,
+      "why": "GPT-6 Astra是OpenAI推出的新一代AI模型，可能在语言处理和生成方面有提升。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI宣布推出名为GPT-6 Astra的新一代人工智能模型。该模型被描述为新一代智能技术的代表，可能在语言理解和生成方面有显著提升。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI推出了一款新的AI模型，名为GPT-6 Astra。这款模型被宣传为新一代智能技术，可能在理解和生成语言方面表现更好。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用AI相关的服务，比如聊天机器人、内容创作工具或智能助手，可能会受到影响。GPT-6 Astra可能带来更流畅的对话体验或更准确的内容生成。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前没有详细说明GPT-6 Astra的具体功能或性能提升。建议关注官方发布的信息，以获取更准确的细节。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "GPT-6 Astra: A new generation of intelligence - OpenAI"
+    },
+    {
+      "id": "3bdf29cbf5f7fb",
+      "url": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
+      "publishedAt": "2026-09-04",
+      "source": "TechCrunch AI",
+      "title": "Google Gemini Spark 可管理 Google 相册",
+      "summary": "Google Gemini Spark 现在可以协助管理 Google 相册，包括编辑相册、创建共享收藏夹、将照片转为日历事件等任务，仅限 AI Pro 和 Ultra 订阅用户使用。",
+      "category": "日常应用",
+      "importance": 40,
+      "why": "Gemini Spark 的新功能让 Google 相册管理更智能，适合经常使用相册的用户。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 宣布 Gemini Spark 现在可以协助管理 Google 相册，包括编辑相册、创建共享收藏夹、将照片转为日历事件等任务，仅限 AI Pro 和 Ultra 订阅用户使用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Google 相册现在可以借助 Gemini Spark 的功能，帮你整理照片、创建共享相册，甚至把照片变成日历事件，但这些功能只对高级订阅用户开放。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是 Google 相册的高级用户，可能会发现新的整理方式，让相册管理更轻松。但普通用户暂时无法使用这些功能。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前这些功能仅限 AI Pro 和 Ultra 订阅用户，具体使用体验和效果需以实际使用为准。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Google’s Gemini Spark can now manage your Google Photos library"
+    },
+    {
+      "id": "a7a3a65935fc96",
+      "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
+      "publishedAt": "2026-09-04",
+      "source": "Bing News",
+      "title": "企业开始转向开源AI模型",
+      "summary": "多家公司正在使用免费的开源AI模型，而非付费的Anthropic和OpenAI模型。这种趋势反映了企业对成本效益的追求。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "企业选择开源AI模型可能影响相关公司的市场份额和收入。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "一些公司正在转向使用免费的开源AI模型，而不是付费购买Anthropic和OpenAI的模型。这种趋势表明企业正在寻找更经济的解决方案。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "公司发现使用免费的开源AI模型比购买昂贵的商业模型更划算，因此开始采用这些模型。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是企业用户，可能会看到AI工具的选择发生变化，但普通用户可能不会直接受到影响。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "这种趋势可能影响AI行业的竞争格局，但具体影响还需进一步观察。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Corporate America Is Getting Hooked on Open-Source A.I."
+    },
+    {
+      "id": "d2244ef0d987c4",
+      "url": "https://www.ncregister.com/cna/u-s-bishops-focus-on-young-people-artificial-intelligence-in-labor-day-message",
+      "publishedAt": "2026-09-04",
+      "source": "Bing News",
+      "title": "美国主教关注年轻人与人工智能",
+      "summary": "美国主教在劳动节信息中强调年轻人就业与经济问题，同时提及人工智能发展。内容涉及薪资停滞、机会不足等议题。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "主教关注年轻人就业与经济问题，同时提及人工智能发展，反映社会对科技与经济的担忧。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "美国主教在劳动节信息中强调年轻人就业与经济问题，同时提及人工智能发展。内容涉及薪资停滞、机会不足等议题。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "美国主教在劳动节的讲话中，关注年轻人的就业和经济状况，比如薪资增长缓慢、缺乏机会等。同时，也提到了人工智能的发展，显示出对科技影响的关注。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是年轻人或关注就业市场，可能会对薪资和机会问题感兴趣。人工智能的发展也可能影响你的工作环境，但具体影响还需进一步了解。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "主教的讲话反映了社会对经济和科技发展的关注，但具体细节和影响需参考完整报道。解读基于发布方摘要，更多内容请查看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "U.S. Bishops Focus On Young People, Artificial Intelligence in Labor Day Message"
+    },
+    {
+      "id": "6fe8f3c9710a62",
+      "url": "https://techcrunch.com/podcast/apples-ternus-era-begins-as-nvidia-bets-on-the-whole-ai-stack/",
+      "publishedAt": "2026-09-04",
+      "source": "TechCrunch AI",
+      "title": "苹果进入Ternus时代，库克留任执行主席",
+      "summary": "苹果正式进入Ternus时代，前硬件主管约翰·特努斯接任CEO，其首封邮件预告了重大发布。库克留任执行主席，专注政策相关事务。",
+      "category": "行业变化",
+      "importance": 30,
+      "why": "苹果高层变动可能影响产品战略和公司发展方向，对科技行业有一定关注价值。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "苹果公司正式进入Ternus时代，前硬件主管约翰·特努斯接任CEO，而前CEO蒂姆·库克留任执行主席。特努斯在上任后第一时间发出邮件，预告了重大产品发布，时间点可能与即将举行的iPhone发布会相关。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "苹果公司换了新的CEO，是前硬件部门的主管约翰·特努斯。他上任后就表示要推出大动作，可能和即将发布的iPhone有关。蒂姆·库克虽然不再担任CEO，但仍然留在公司担任执行主席，负责政策相关的工作。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "苹果的高层变动可能会影响未来的产品策略和公司发展方向，但对普通用户来说，短期内可能不会有明显变化。如果苹果推出新产品，可能会带来一些新的功能或体验。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体Ternus的计划和苹果未来的产品策略仍需关注后续消息。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Apple’s Ternus era begins as Nvidia bets on the whole AI stack"
+    },
+    {
+      "id": "9ce8a043bb77d0",
+      "url": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
+      "publishedAt": "2026-09-04",
+      "source": "TechCrunch AI",
+      "title": "AI生成菜单千篇一律惹人厌",
+      "summary": "餐厅老板用AI生成菜单，但顾客能明显察觉菜单有问题，反映出AI生成内容缺乏吸引力。",
+      "category": "日常应用",
+      "importance": 45,
+      "why": "AI生成的菜单缺乏创意，导致顾客体验不佳，影响餐厅形象。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "餐厅老板使用AI生成菜单，但顾客能明显察觉菜单有问题，反映出AI生成内容缺乏吸引力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "餐厅用AI做菜单，但顾客觉得菜单没创意，看起来不吸引人，可能影响他们进店的意愿。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是餐厅老板，可能需要考虑AI生成内容的创意性；如果你是顾客，可能会对AI生成的菜单感到失望。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "AI生成内容可能缺乏个性化，需结合人工调整以提升吸引力。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The sameness problem behind those unappetizing AI-generated menus"
+    },
+    {
+      "id": "489d8d74deea46",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNSGRHUzhDZzF6VXdmOVlpWmxBQVNPOWF2Rk5OZThqM0MwQnRJeVp3QkUxdGZuaC1xNldPT0RmNFp5Mlo1amFPZzZrZk5rLVN2RXlGS2xoY1QyQXZYQW90TWZUS1FDcF9mYnVBYm9NQXZUZw?oc=5",
+      "publishedAt": "2026-09-03",
+      "source": "Google News",
+      "title": "OpenAI称进入AGI时代，推出GPT-6 Astra",
+      "summary": "OpenAI宣布进入AGI时代，并推出新模型GPT-6 Astra。该模型可能具备更强大的通用智能能力，但具体细节未说明。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "OpenAI推出新模型，可能代表AI技术的重要进展，但具体影响尚不明确。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI宣布进入AGI时代，并推出新模型GPT-6 Astra。该模型可能具备更强大的通用智能能力，但具体细节未说明。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI表示他们进入了一个更高级的AI时代，并推出了新的模型GPT-6 Astra。这个模型可能比之前的版本更强大，但具体功能和能力没有详细说明。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用AI工具或关注科技发展，这个消息可能值得关注。但目前尚不清楚新模型会如何影响普通用户或具体应用场景。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，建议关注后续官方发布或相关报道，以获取更详细的模型功能和应用场景说明。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "\"Welcome to the AGI era,\" OpenAI says as GPT-6 Astra debuts - Axios"
+    },
+    {
+      "id": "c75db0d4063fca",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeW1CUTVsRlFsYUw0TXR5MUU2SFhEVUhWclJQMmw3N3B1eWpfMVk1dDJaSXRXTkQwOTBtMl8xVXRLNWZDYml4blJlbFh6RENEa2c0S2VMYWlVcE52TFRscE9mdWw4d1JZZW1xaV9tTWlQSk1BdzJvaGdHTTJ4WHY0SEdILW9lUU84NVlTMHRjNUprQU9xQm9jb3BaM25zLUhXUnVLaWh4TXlzeVJaNkI2UFNnT01tS3NGTnpIMDd2UHZIVHBrbkVXNmRDWjF6ZXI5aGZXc1pHWnhwcm8?oc=5",
+      "publishedAt": "2026-09-03",
+      "source": "Google News",
+      "title": "谷歌106天发布4款Gemini Flash模型，旗舰模型仍未现身",
+      "summary": "谷歌在106天内推出了四款Gemini Flash模型，但其旗舰级前沿模型仍未发布。《财富》杂志对此进行了报道。",
+      "category": "模型进展",
+      "importance": 40,
+      "why": "谷歌快速推出多款模型，但旗舰产品尚未发布，可能影响其市场竞争力。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌在106天内推出了四款Gemini Flash模型，但其旗舰级前沿模型仍未发布。这表明谷歌在快速迭代模型方面有所进展，但核心产品仍处于未发布状态。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌在短短几个月内推出了多个Gemini Flash模型，但最重要的那个模型还没出来。这说明他们在模型开发上进展迅速，但核心产品仍需等待。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关注AI模型的发展，可能会对谷歌的进展感兴趣。但普通用户目前可能还无法使用这些旗舰模型，因此影响有限。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "需留意谷歌未来是否会发布旗舰模型，以及这些模型的实际应用效果。目前的信息仅基于发布方摘要，具体细节请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Google shipped four Gemini Flash models in 106 days. But its flagship frontier model is still nowhere to be seen. - Fortune"
+    },
+    {
+      "id": "c00309156ee59f",
+      "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+      "publishedAt": "2026-09-03",
+      "source": "TechCrunch AI",
+      "title": "OpenAI 发布新模型 Astra 引争议",
+      "summary": "OpenAI 宣称其新模型 Astra 在电脑和浏览器使用上开创了新境界，能以高速度、高准确度和高安全性处理任务。该模型引发广泛讨论。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "Astra 的推出可能改变用户与电脑和浏览器的互动方式，引发关于技术安全和效率的讨论。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 宣布推出名为 Astra 的新模型，声称其在电脑和浏览器使用方面具有突破性，能以高速度、高准确度和高安全性处理任务。该模型引发了广泛关注和讨论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 推出一个新模型，声称它能更快、更准确、更安全地处理电脑和浏览器相关的任务。这可能意味着用户在使用电脑和浏览器时会更高效、更安全。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你经常使用电脑和浏览器，Astra 可能带来更流畅、更安全的体验。不过目前尚不清楚具体如何影响日常使用，还需进一步观察。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "Astra 的具体功能和安全性尚未完全公开，因此目前无法判断其对用户的实际影响。建议关注后续的详细信息和用户反馈。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI launches Astra, its powerful (and controversial) new model"
+    },
+    {
+      "id": "18139351eea153",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/openai-says-artificial-general-intelligence-is-here-bernie-sanders-is-calling-for-a-pause-of-ai-development/ar-AA2bw0YL",
+      "publishedAt": "2026-09-03",
+      "source": "Bing News",
+      "title": "OpenAI称通用人工智能已出现，伯尼·桑德斯呼吁暂停AI发展",
+      "summary": "OpenAI表示通用人工智能已出现，而伯尼·桑德斯呼吁暂停AI发展，并要求永久禁止超级智能。此言论引发广泛讨论。",
+      "category": "安全与规则",
+      "importance": 85,
+      "why": "此事件涉及AI发展与安全的争议，可能影响政策和公众认知。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI表示通用人工智能已出现，而伯尼·桑德斯呼吁暂停AI发展，并要求永久禁止超级智能。此言论引发广泛讨论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI认为具备人类水平智能的AI已经出现，而桑德斯认为AI发展太快，应暂停并禁止超级智能。这表明AI发展存在安全风险，引发公众担忧。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "AI技术可能影响就业、隐私和安全，公众需关注其发展及监管措施。若AI失控，可能对社会造成重大影响，因此需保持警惕。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "此事件反映AI发展与安全之间的矛盾，未来可能出台更多监管政策。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI says artificial general intelligence is here. Bernie Sanders is calling for a pause of AI development."
+    },
     {
       "id": "325e9dcd840a97",
       "url": "https://openai.com/index/playco-game-prototyping-with-astra",
@@ -211,6 +568,68 @@
       "originalTitle": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
     },
     {
+      "id": "8b9d6213d2f56f",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPam1wVmhCUF9BYU11WDFMS1ZOSmlIQUpiTlF6a1RLQlpQZ0R0Y3M5M0hoTExZN0t5Q0FwbTZ5c3B3T2pzWFdZTnp1ZWVfdi1QZmdQeHlHcEFYUFhvbWw4TEdJamNqT3pYZnM3VGU1ckRYVXJWTzRyeXIzb21XT0NscnBqUXZzRW1HcS1lT05IODJOWGp2eC02bDd0ejRIRXRYTXMtbQ?oc=5",
+      "publishedAt": "2026-09-02",
+      "source": "Google News",
+      "title": "谷歌推出Gemini 3.8 Flash及Cyber版本",
+      "summary": "谷歌宣布推出Gemini 3.8 Flash和3.8 Flash Cyber两个新版本，旨在提升模型在不同场景下的应用能力。该更新可能涉及性能优化和功能扩展。",
+      "category": "模型进展",
+      "importance": 40,
+      "why": "Gemini 3.8 Flash和Cyber版本的推出可能影响开发者和企业用户在特定场景下的使用体验。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌宣布推出Gemini 3.8 Flash和3.8 Flash Cyber两个新版本。这些版本可能针对不同应用场景进行了优化，但具体细节未说明。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌推出了两个新的Gemini模型版本，可能在某些任务上表现更好。但目前没有详细说明这些版本的具体改进和用途。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是开发者或企业用户，这些新版本可能带来一些优化，但具体影响取决于实际应用场景。普通用户可能暂时不会感受到明显变化。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前发布的摘要信息有限，具体功能和性能提升需参考官方文档或进一步的更新说明。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber - blog.google"
+    },
+    {
+      "id": "f87bb394d39e63",
+      "url": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
+      "publishedAt": "2026-09-02",
+      "source": "MIT Technology Review",
+      "title": "Jabil简化AI整合提升运营效率",
+      "summary": "Jabil作为全球制造企业，面临系统分散、工具不统一等问题，影响数据整合与决策效率。公司正通过简化AI整合流程，提升整体运营效率。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "Jabil简化AI整合流程，有助于提升数据整合效率，改善决策过程。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Jabil作为一家全球制造企业，面临系统分散、工具不统一等问题，影响数据整合与决策效率。公司正通过简化AI整合流程，提升整体运营效率。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Jabil发现传统工具如Excel和手动操作导致数据分散，影响问题发现和决策。公司正在简化AI整合流程，让数据更易整合，提升决策效率。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "Jabil的举措可能影响制造行业如何整合AI技术，提升整体运营效率。这可能为其他企业提供参考，如何优化数据整合流程。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅限于Jabil的举措，具体实施效果和影响需看后续报道。解读基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Facilitating AI integration with simplicity at scale"
+    },
+    {
       "id": "b263b9cf94a657",
       "url": "https://blog.google/products/ads-commerce/ads-decoded-podcast-measurement-stack/",
       "publishedAt": "2026-09-02",
@@ -302,6 +721,130 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT"
+    },
+    {
+      "id": "75804842c44008",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-extreme-weather-cyclone-predictions/",
+      "publishedAt": "2026-09-01",
+      "source": "Google",
+      "title": "谷歌科学家谈AI如何预测台风",
+      "summary": "谷歌科学家讨论AI在台风预测中的应用，展示如何利用模型提升预测准确性。文章通过虚拟访谈形式介绍相关技术。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "AI在气象预测中的应用可能提升灾害预警能力，对公众安全有潜在影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌科学家在文章中介绍了AI如何帮助预测台风，通过模型分析气象数据，提高预测的准确性。文章以虚拟访谈形式呈现，展示AI在极端天气预测中的作用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "科学家们正在用AI技术来预测台风，这种方法比传统方式更准确。谷歌通过虚拟访谈的形式，向公众解释AI在气象预测中的应用。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果AI能更准确地预测台风，可能会帮助人们提前做好准备，减少灾害带来的影响。这对生活在台风多发地区的人们来说可能有帮助。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于谷歌的摘要信息，未提及具体技术细节或实际应用效果。更多内容需参考原文。AI预测的准确性仍需实际数据验证，不能保证对所有人同样有效。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Ask a Scientist: How do researchers use AI to predict a cyclone?"
+    },
+    {
+      "id": "fc413129afdec3",
+      "url": "https://finance.yahoo.com/technology/ai/articles/cybersecurity-cloud-artificial-intelligence-crowdstrike-182824264.html",
+      "publishedAt": "2026-09-01",
+      "source": "Bing News",
+      "title": "CrowdStrike 股价波动，安全与 AI 业务前景",
+      "summary": "CrowdStrike 股价在过去 52 周内波动较大，曾跌至 85.68 美元。公司正面对 AI 原生初创公司的竞争压力，但其在云安全和 AI 领域的布局被认为有助于长期增长。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "CrowdStrike 在云安全和 AI 领域的布局可能影响其市场地位，但股价波动显示市场对其前景存在分歧。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "CrowdStrike 股价在过去 52 周内出现大幅波动，曾跌至 85.68 美元。公司面临来自 AI 原生初创公司的竞争压力，但其在云安全和 AI 领域的布局被认为有助于长期增长。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "CrowdStrike 的股价最近波动很大，曾经跌到 85.68 美元。虽然公司面临来自 AI 领域新公司的竞争，但其在云安全和 AI 方面的布局被认为有助于未来的发展。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关注网络安全或 AI 领域的投资，CrowdStrike 的股价波动和业务发展可能影响相关行业动态。但普通用户可能不会直接受到影响。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅基于发布方摘要，未提及具体财务表现或未来计划。建议查看原文了解更详细信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "With Cybersecurity for Cloud and Artificial Intelligence, CrowdStrike Stock Is Positioned for Sustained Growth"
+    },
+    {
+      "id": "330fba64551db8",
+      "url": "https://openai.com/index/gilbert-tobin",
+      "publishedAt": "2026-09-01",
+      "source": "OpenAI",
+      "title": "律所如何用AI提升效率",
+      "summary": "OpenAI分享了律所Gilbert + Tobin如何通过领导力、严格管理和人类监督来扩展AI应用，如ChatGPT Enterprise和Codex。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "律所采用AI工具提升工作效率，对法律行业有参考价值。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI分享了律所Gilbert + Tobin如何通过领导力、严格管理和人类监督来扩展AI应用，如ChatGPT Enterprise和Codex。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这家律所通过高层支持、严格管理以及人类监督，成功地将AI工具如ChatGPT Enterprise和Codex应用到整个公司，以提高效率。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这对法律行业的人士有参考价值，展示了如何利用AI工具提升工作效率，但具体效果取决于实际应用情况。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "该信息仅基于发布方摘要，具体细节请查看原文。AI工具的实际效果可能因使用情况而异，需谨慎评估。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "How law firm Gilbert + Tobin governs and scales AI with OpenAI"
+    },
+    {
+      "id": "c97fc058379572",
+      "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
+      "publishedAt": "2026-09-01",
+      "source": "Google",
+      "title": "Google 发布 AI 新闻 2026 年 8 月更新",
+      "summary": "Google 在 2026 年 8 月发布了 AI 相关的最新动态，包括 Gemini 3.7 Flash 的介绍、Pixel 手机照片以及学生计划的推广信息。",
+      "category": "日常应用",
+      "importance": 20,
+      "why": "此新闻主要涉及 Google 的 AI 产品更新和市场推广活动，对普通用户影响较小。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 在 2026 年 8 月发布了 AI 相关的最新动态，包括 Gemini 3.7 Flash 的介绍、Pixel 手机照片以及学生计划的推广信息。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Google 在 2026 年 8 月更新了 AI 相关的内容，展示了 Gemini 3.7 Flash 的信息，并附上了 Pixel 手机的照片，同时推广了学生计划。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这些更新主要面向开发者和用户，可能对使用 Google 服务的人有帮助，但对普通用户影响不大。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "由于信息有限，建议查看原文以获取更多细节。此解读仅基于发布方摘要，具体信息请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The latest AI news we announced in August 2026"
     },
     {
       "id": "5a222bc71ad39c",
@@ -486,6 +1029,68 @@
       "editor": "首期来源核对"
     },
     {
+      "id": "4862f3d2c68fb1",
+      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
+      "publishedAt": "2026-08-31",
+      "source": "OpenAI",
+      "title": "OpenAI支持加州AI青少年安全法案",
+      "summary": "OpenAI支持加州SB 1119法案，旨在为青少年提供适合年龄的AI安全措施，同时保留学习、创作和探索的机会。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "该法案旨在保护青少年免受AI潜在风险，同时鼓励他们合理使用AI技术。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI宣布支持加州的一项法案，该法案旨在为青少年提供适合年龄的AI安全措施，同时确保他们仍能学习、创作和探索AI技术。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI支持一项加州法律，目的是让青少年在使用AI时更安全，同时不阻碍他们学习和创造AI相关的内容。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是家长或教育工作者，这项法案可能影响青少年接触AI的方式，帮助他们在安全环境中学习和使用AI技术。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体法案内容和实施细节需参考原文。该法案可能影响AI在教育和青少年使用方面的监管方向。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI supports California’s bill to advance youth AI safety"
+    },
+    {
+      "id": "0b5a688ac44522",
+      "url": "https://openai.com/index/polimill",
+      "publishedAt": "2026-08-31",
+      "source": "OpenAI",
+      "title": "日本推出新一代公共AI基础设施",
+      "summary": "Polimill利用OpenAI的GPT模型和Codex，帮助地方政府搜索和使用行政知识，加快开发进程。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "日本政府尝试通过AI提升行政效率，可能影响公共服务和管理方式。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "日本推出名为Polimill的新一代公共AI基础设施，利用OpenAI的GPT模型和Codex技术，帮助地方政府更高效地搜索和使用行政知识，加快开发进程。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "日本政府推出一个AI工具，能帮助地方政府更快地找到和使用行政信息，让工作更高效。这个工具是基于OpenAI的模型开发的。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你生活在日本，可能会感受到政府服务变得更高效。但目前还不清楚这个工具是否会影响普通人的日常生活。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，无法判断这个AI工具的实际效果和具体应用场景。建议关注后续官方消息或相关报道。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Polimill builds Japan's next-generation public AI infrastructure"
+    },
+    {
       "id": "5c8787f86ace68",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/antigravity-teamwork-multi-agent/",
       "publishedAt": "2026-08-31",
@@ -546,6 +1151,37 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models"
+    },
+    {
+      "id": "5c8d75ef9c12c0",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "publishedAt": "2026-08-27",
+      "source": "OpenAI",
+      "title": "学生使用ChatGPT提升思考能力",
+      "summary": "OpenAI发布一项研究，分析1000多名学生使用ChatGPT与批判性思维训练对学习表现的影响。",
+      "category": "模型进展",
+      "importance": 60,
+      "why": "研究显示学生在使用ChatGPT后，思考能力和原创性有所提升，对教育方式有参考价值。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI进行了一项随机研究，涉及超过1000名学生，分析他们使用ChatGPT和接受批判性思维训练后，在实际大学作业中的表现。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这项研究发现，学生在使用ChatGPT并接受批判性思维训练后，他们的思考能力和原创性有所提高，对学习有积极影响。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项研究可能帮助教育工作者了解如何更有效地结合AI工具和传统教学方法，提升学生的学习效果。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "研究结果基于发布方摘要，具体细节需参考原文。AI工具的使用效果可能因人而异，实际效果需进一步验证。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training"
     },
     {
       "id": "71c43cf780d371",
