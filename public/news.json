@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-03T14:27:45.494073+00:00",
-  "lastCheckedAt": "2026-09-03T14:27:45.494073+00:00",
+  "updatedAt": "2026-09-04T03:30:31.792447+00:00",
+  "lastCheckedAt": "2026-09-04T03:30:31.792447+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -24,6 +24,99 @@
     }
   ],
   "articles": [
+    {
+      "id": "39210f987919e8",
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra",
+      "publishedAt": "2026-09-03",
+      "source": "OpenAI",
+      "title": "OpenAI发布GPT-6 Astra模型",
+      "summary": "OpenAI宣布推出GPT-6 Astra，这是他们最强大的广泛部署模型，并首次达到其准备框架中的关键网络安全能力级别。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "该模型在网络安全方面的能力提升，可能对企业和机构的数据保护产生影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI宣布推出GPT-6 Astra，这是他们目前最强大的广泛部署模型，并且是首个达到其准备框架中关键网络安全能力级别的模型。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI推出了一个新版本的AI模型，叫GPT-6 Astra，这个模型在网络安全方面有更强的能力，是他们第一个达到这个水平的模型。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用的是OpenAI的AI服务，或者关心网络安全，这个模型的推出可能会影响你使用的AI工具的安全性。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前没有提到该模型的具体功能或应用场景，建议关注官方发布的详细信息，以了解其实际影响。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Safety overview: GPT-6 Astra"
+    },
+    {
+      "id": "9281d6906e8350",
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "publishedAt": "2026-09-03",
+      "source": "OpenAI",
+      "title": "Legora用GPT-6 Astra快速审查财务文件",
+      "summary": "Legora利用GPT-6 Astra在几分钟内审查41份文件，发现所有预设错误，并将财务审查流程的性能提升了近40%。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "这项技术展示了AI在处理复杂财务任务上的潜力，可能影响企业的工作流程。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Legora使用GPT-6 Astra在短时间内审查了大量文件，发现了所有预设的错误，并显著提升了财务审查的效率。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Legora用AI工具快速检查了大量财务文件，发现了所有隐藏的错误，并大幅提高了处理速度。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能让企业处理财务文件更高效，减少人为错误，但目前还不清楚是否适用于所有情况。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体效果和应用场景需参考完整报告。AI在财务审查中的实际应用仍需进一步验证。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Legora reviewed 41 documents in minutes with GPT-6 Astra"
+    },
+    {
+      "id": "20c169671e8659",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+      "publishedAt": "2026-09-03",
+      "source": "Google",
+      "title": "谷歌推出WeatherNext 3全球天气AI模型",
+      "summary": "谷歌发布WeatherNext 3，称其为最先进且精准的全球天气AI模型。该模型通过深度学习技术提升天气预测的准确性。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "WeatherNext 3的发布可能提升天气预测的准确性，对依赖天气信息的行业有潜在影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌推出了WeatherNext 3，称其为最先进且精准的全球天气AI模型。该模型基于深度学习技术，旨在提高天气预测的准确性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌开发了一个新的天气预测AI模型，声称比之前的版本更准确。这个模型可能帮助人们更好地了解未来的天气情况。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你经常关注天气，或者从事农业、物流、旅游等行业，这个模型的提升可能会带来更可靠的天气信息，帮助你做出更好的决策。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅限于发布方的摘要，具体效果和实际应用还需进一步观察。建议关注后续的详细报告或案例分析。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
+    },
     {
       "id": "b263b9cf94a657",
       "url": "https://blog.google/products/ads-commerce/ads-decoded-podcast-measurement-stack/",
@@ -116,6 +209,37 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT"
+    },
+    {
+      "id": "5a222bc71ad39c",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+      "publishedAt": "2026-09-01",
+      "source": "Google",
+      "title": "Gemini 引入「自主视频理解」功能",
+      "summary": "Google 宣布 Gemini 模型新增「自主视频理解」功能，旨在提升视频内容的分析能力。该功能通过结合文本与视频信息，实现更精准的理解与互动。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "Gemini 新增功能可能提升视频内容处理能力，但具体效果需进一步观察。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 宣布 Gemini 模型新增「自主视频理解」功能，该功能结合文本与视频信息，以提升视频内容的分析能力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Gemini 现在可以更好地理解视频内容，比如识别视频中的动作、场景和人物，同时结合文字信息进行更准确的分析。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项功能可能对视频内容创作者、教育工作者或需要分析视频数据的行业有帮助，但具体应用还需看实际案例。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体功能细节和实际效果需参考官方资料或后续报道。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing agentic video understanding with Gemini"
     },
     {
       "id": "b0cbef382238cd",
@@ -359,6 +483,37 @@
         }
       ],
       "editor": "首期来源核对"
+    },
+    {
+      "id": "ac6eb9276806c2",
+      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+      "publishedAt": "2026-08-26",
+      "source": "Google DeepMind",
+      "title": "Gemini 3.5 支持智能语音转文字",
+      "summary": "Google DeepMind 推出 Gemini 3.5 的语音转文字功能，提升语音识别的智能化水平，帮助用户更高效地进行语音内容转写。",
+      "category": "模型进展",
+      "importance": 60,
+      "why": "这项技术可能改善语音识别的准确性和实用性，适用于会议记录、语音笔记等场景。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google DeepMind 推出了 Gemini 3.5 的语音转文字功能，让用户能够更智能地将语音内容转为文字。这项技术旨在提升语音识别的准确性和实用性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Gemini 3.5 现在可以将语音内容自动转为文字，识别更准确，使用更方便。这项功能适合需要记录会议、语音笔记等场景的用户。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你经常需要记录语音内容，比如会议、访谈或语音笔记，这项功能可能会让你的工作更高效。但目前还不清楚具体使用方式和效果。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体功能细节和实际效果需参考官方资料。这项技术是否适合你，还需进一步了解。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Intelligent transcription with Gemini 3.5 Transcribe"
     }
   ]
 }
