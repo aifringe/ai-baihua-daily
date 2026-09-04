@@ -105,6 +105,16 @@ def all_articles():
     except Exception: pass
     return articles
 
+def article_snapshot(value,article_id):
+    if not isinstance(value,dict) or not isinstance(article_id,str) or value.get('id')!=article_id or len(article_id)>100:raise ValueError('新闻资料无效，请刷新日报')
+    required=('title','summary','source','publishedAt','url','why','editor')
+    if any(not isinstance(value.get(k),str) or not value[k].strip() or len(value[k])>2400 for k in required):raise ValueError('新闻资料不完整，请刷新日报')
+    url=urllib.parse.urlsplit(value['url'])
+    if url.scheme!='https' or not url.hostname:raise ValueError('新闻来源链接无效')
+    sections=value.get('sections')
+    if not isinstance(sections,list) or not 1<=len(sections)<=6 or any(not isinstance(s,dict) or not isinstance(s.get('heading'),str) or not isinstance(s.get('text'),str) or len(s['heading'])>200 or len(s['text'])>2400 for s in sections):raise ValueError('新闻解读内容无效')
+    return {k:value[k] for k in ('id',*required)}|{'category':str(value.get('category',''))[:100],'sections':[{'heading':s['heading'],'text':s['text']} for s in sections]}
+
 def atomic(path,data):
     tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');tmp.replace(path)
 
@@ -199,8 +209,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             if self.path=='/api/refresh':
                 threading.Thread(target=refresh,kwargs={'publish_changes':os.environ.get('BAIHUA_PUBLISH')=='1'},daemon=True).start();return self.out({'started':True},202)
             if self.path!='/api/chat':return self.out({'error':'Not found'},404)
-            article=next((a for a in all_articles() if a['id']==body.get('articleId')),None)
-            if not article:raise ValueError('找不到这条新闻，请刷新日报')
+            article_id=body.get('articleId')
+            article=next((a for a in all_articles() if a.get('id')==article_id),None)
+            if not article:article=article_snapshot(body.get('article'),article_id)
             messages=body.get('messages')
             if not isinstance(messages,list) or not 1<=len(messages)<=8:raise ValueError('对话过长')
             if any(not isinstance(m,dict) or m.get('role') not in ('user','assistant') or not isinstance(m.get('content'),str) or len(m['content'])>4000 for m in messages):raise ValueError('对话格式无效')
