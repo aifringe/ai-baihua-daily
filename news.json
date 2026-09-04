@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-04T04:08:46.109317+00:00",
-  "lastCheckedAt": "2026-09-04T04:08:46.109317+00:00",
+  "updatedAt": "2026-09-04T13:28:41.646773+00:00",
+  "lastCheckedAt": "2026-09-04T13:28:41.646773+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -21,241 +21,39 @@
     {
       "source": "Microsoft Research",
       "ok": true
-    },
-    {
-      "source": "Google News",
-      "ok": true
-    },
-    {
-      "source": "Bing News",
-      "ok": true
-    },
-    {
-      "source": "TechCrunch AI",
-      "ok": true
-    },
-    {
-      "source": "MIT Technology Review",
-      "ok": true
     }
   ],
   "articles": [
-    {
-      "id": "b5a4040da6dc0c",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE11QUxBUVJLdC1jSmtJbmcxQzg4Qm9yUlNPS3JEMEVBanIyY1FRT2k2R0hBTlNnX2VqcWpTSDJUMDV0TjBJN1VGamlrZzVPZw?oc=5",
-      "publishedAt": "2026-09-04",
-      "source": "Google News",
-      "title": "OpenAI发布新一代智能模型GPT-6 Astra",
-      "summary": "OpenAI宣布推出新一代智能模型GPT-6 Astra，声称这是新一代的智能技术。目前尚未提供详细信息。",
-      "category": "模型进展",
-      "importance": 20,
-      "why": "OpenAI推出新模型，可能对AI领域产生影响，但具体细节尚不清楚。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "OpenAI宣布推出新一代智能模型GPT-6 Astra，但未提供详细信息。目前仅知这是新一代的智能技术。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "OpenAI推出了一款新的AI模型，名为GPT-6 Astra。但目前没有具体说明它的功能或特点。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "目前尚不清楚这款新模型是否会对普通用户产生直接影响。如果它具备更强的智能能力，可能会在某些领域带来便利，但具体影响还需进一步观察。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "由于目前信息有限，建议关注后续的官方发布或相关报道，以获取更详细的模型信息和实际应用情况。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "GPT-6 Astra: A new generation of intelligence - OpenAI"
-    },
-    {
-      "id": "9ed32802069391",
-      "url": "https://www.msn.com/en-in/technology/artificial-intelligence/openai-launches-gpt-6-astra-amid-ai-safety-concerns-here-s-what-the-new-ai-model-can-do/ar-AA2bwRvQ",
-      "publishedAt": "2026-09-03",
-      "source": "Bing News",
-      "title": "OpenAI 推出 GPT-6 Astra 新模型",
-      "summary": "OpenAI 最新推出的 GPT-6 Astra 模型，声称在速度和能力上有所提升，但具体功能尚未详细说明。",
-      "category": "模型进展",
-      "importance": 30,
-      "why": "GPT-6 Astra 是 OpenAI 推出的新一代 AI 模型，可能对相关行业产生一定影响。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "OpenAI 宣布推出 GPT-6 Astra，这是他们最新的 AI 模型。据称，该模型在速度和能力方面有所提升，但具体细节尚未公布。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "OpenAI 推出了一款新的 AI 模型，叫做 GPT-6 Astra。这个模型据说比之前的版本更快、更强大，但具体它能做什么，目前还没有详细说明。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你使用的是 OpenAI 的服务，或者对 AI 技术感兴趣，这个新模型可能会带来一些变化。但目前还不清楚它具体能为你带来什么好处。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前关于 GPT-6 Astra 的信息有限，具体功能和性能还需等待官方进一步说明。建议关注 OpenAI 的后续公告，以获取更多细节。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "OpenAI launches GPT-6 Astra amid AI safety concerns: Here's what the new AI model can do"
-    },
     {
       "id": "325e9dcd840a97",
       "url": "https://openai.com/index/playco-game-prototyping-with-astra",
       "publishedAt": "2026-09-03",
       "source": "OpenAI",
       "title": "Playco用GPT-6 Astra减少游戏修改工作量",
-      "summary": "Playco利用GPT-6 Astra构建了三个主题游戏原型，相比旧模型，手动修改工作量减少了50%。",
+      "summary": "Playco利用GPT-6 Astra构建了三个主题游戏原型，相比旧模型减少了50%的手动修改工作。这项技术基于OpenAI的模型。",
       "category": "模型进展",
-      "importance": 60,
-      "why": "这表明AI在游戏开发中能有效降低重复性工作。",
+      "importance": 45,
+      "why": "这项技术展示了AI在游戏开发中的潜力，可能影响游戏制作流程。",
       "sections": [
         {
           "heading": "到底发生了什么？",
-          "text": "Playco使用GPT-6 Astra构建了三个不同主题的游戏原型，相比之前使用的模型，手动修改的工作量减少了50%。"
+          "text": "Playco使用GPT-6 Astra模型，基于一个基础灰色盒子构建了三个不同主题的游戏原型。与之前使用的模型相比，手动修改的工作量减少了50%。"
         },
         {
           "heading": "换成人话",
-          "text": "Playco用AI工具减少了游戏开发中需要手动调整的部分，让开发过程更高效。"
+          "text": "Playco用AI帮助制作游戏，减少了需要人工调整的部分，让开发过程更高效。"
         },
         {
           "heading": "和你有什么关系？",
-          "text": "如果你是游戏开发者，这可能意味着AI工具能帮你节省一些重复性工作，但具体效果取决于你的工作方式。"
+          "text": "这项技术可能让游戏开发更高效，但目前主要影响的是游戏公司和开发者，普通玩家可能不会直接感受到变化。"
         },
         {
           "heading": "还要留意什么？",
-          "text": "目前信息仅限于发布方摘要，具体细节和实际效果需参考完整文章。AI工具的效果可能因项目而异，不能保证所有人都能获得相同成果。"
+          "text": "目前信息仅基于发布方摘要，具体效果和细节需参考完整文章。AI在游戏开发中的应用仍处于早期阶段，实际效果可能因项目而异。"
         }
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra"
-    },
-    {
-      "id": "c6212e79da57e3",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBNWlBRZ25WV1BDbkN6TDlWUW96M0tIMXpfZlZBbTF5V2RMeUxoRy11c2NCeTdfbkVtTjVHc2dzOXJCcE1wanExMVZVLVR0SHR2MmZrczNfci0zUHQwZzBrTERScmRtbnJVcUpzdA?oc=5",
-      "publishedAt": "2026-09-03",
-      "source": "Google News",
-      "title": "Playco 使用 GPT-6 Astra 缩短游戏原型开发时间",
-      "summary": "Playco 表示利用 GPT-6 Astra 模型，将游戏原型开发中手动修复工作量减少了一半。该技术由 OpenAI 提供。",
-      "category": "模型进展",
-      "importance": 45,
-      "why": "游戏开发公司采用 AI 技术优化流程，可能影响行业效率。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "Playco 表示，通过使用 GPT-6 Astra 模型，他们在游戏原型开发过程中减少了 50% 的手动修复工作。这项技术由 OpenAI 提供，帮助优化开发流程。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "Playco 利用 AI 技术，让游戏开发过程中需要手动调整的部分减少了一半。这可能让开发更高效，但具体效果还需看实际应用。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你是游戏开发者或相关行业人士，这项技术可能有助于提升工作效率。但目前尚不清楚是否适用于所有开发场景，影响范围有限。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前信息仅基于发布方摘要，具体技术细节和实际效果需参考完整报道。AI 在游戏开发中的应用仍处于探索阶段，需关注后续进展。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra - OpenAI"
-    },
-    {
-      "id": "a1206c5df3f0e4",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZU5KcHdYaDR4OGNaaUJMWHBfOFpSakFkcXFBX0tDY1BCbTFzVG5nMDRaNmVvbDRHYVpEclgtam5wQ0kzZC1oNVZQb1VsUE1fa2VVYTN4cXAxVmlqVWRLcWFFOUJMdHZCQ2gxYlhrTW1Lbklydk5HZmprS2t2Y1lJS055WXpDc011VHVQcXdzUVJRbnAxeEpSOA?oc=5",
-      "publishedAt": "2026-09-03",
-      "source": "Google News",
-      "title": "Gemini 3.8 Flash 加入 GitHub Copilot",
-      "summary": "GitHub 宣布将 Gemini 3.8 Flash 模型整合进 Copilot，为开发者提供更强大的代码辅助功能。该更新旨在提升代码生成和补全的效率。",
-      "category": "模型进展",
-      "importance": 70,
-      "why": "Gemini 3.8 Flash 是 Google 推出的轻量级模型，适合在 GitHub Copilot 中使用，提升开发效率。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "GitHub 宣布将 Gemini 3.8 Flash 模型整合进 Copilot，为开发者提供更强大的代码辅助功能。该更新旨在提升代码生成和补全的效率。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "GitHub 现在可以在 Copilot 中使用 Gemini 3.8 Flash 模型，帮助开发者更快地编写和修改代码。这个模型比之前的版本更轻量，适合在各种开发环境中使用。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你是开发者，使用 GitHub Copilot 可以更高效地编写代码，尤其是在需要快速生成或修改代码时。这可能会提升你的工作效率。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前信息仅基于发布方摘要，具体功能和效果请参考官方文档或原文。Gemini 3.8 Flash 的实际表现可能因使用场景而异。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Gemini 3.8 Flash is now available in GitHub Copilot - The GitHub Blog"
-    },
-    {
-      "id": "489d8d74deea46",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNSGRHUzhDZzF6VXdmOVlpWmxBQVNPOWF2Rk5OZThqM0MwQnRJeVp3QkUxdGZuaC1xNldPT0RmNFp5Mlo1amFPZzZrZk5rLVN2RXlGS2xoY1QyQXZYQW90TWZUS1FDcF9mYnVBYm9NQXZUZw?oc=5",
-      "publishedAt": "2026-09-03",
-      "source": "Google News",
-      "title": "OpenAI称进入AGI时代，推出GPT-6 Astra",
-      "summary": "OpenAI在推出GPT-6 Astra时宣布进入AGI时代，但具体细节未说明。该模型可能具备更强大的能力，但实际效果和应用场景仍需进一步观察。",
-      "category": "模型进展",
-      "importance": 60,
-      "why": "OpenAI推出新模型并宣称进入AGI时代，可能对AI技术发展产生影响，但具体影响尚不明确。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "OpenAI宣布推出GPT-6 Astra，并称进入AGI时代。但具体技术细节和功能未在摘要中说明，仅提到这是新模型的发布。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "OpenAI推出了一款新的人工智能模型，名为GPT-6 Astra，并表示这标志着进入AGI（通用人工智能）时代。但目前没有详细说明该模型的具体功能和用途。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你关注AI技术的发展，可能会对这一进展感兴趣。但目前尚不清楚该模型是否会对普通用户产生直接影响，具体应用还需进一步观察。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "由于摘要中未提供详细信息，建议查看原文以了解GPT-6 Astra的具体功能和应用场景。此外，AGI（通用人工智能）的概念仍处于讨论阶段，实际进展和影响仍需时间验证。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "\"Welcome to the AGI era,\" OpenAI says as GPT-6 Astra debuts - Axios"
-    },
-    {
-      "id": "c00309156ee59f",
-      "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
-      "publishedAt": "2026-09-03",
-      "source": "TechCrunch AI",
-      "title": "OpenAI 发布新模型 Astra 引争议",
-      "summary": "OpenAI 宣称其新模型 Astra 在电脑和浏览器使用上开创了新境界，能以速度、准确性和安全性处理任务。",
-      "category": "模型进展",
-      "importance": 70,
-      "why": "Astra 的推出可能影响用户对 AI 模型的使用体验和安全认知。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "OpenAI 宣布推出名为 Astra 的新模型，声称其在电脑和浏览器使用方面具有突破性，能以速度、准确性和安全性处理任务。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "OpenAI 推出一个新的人工智能模型，声称它在使用电脑和浏览器时表现优异，能快速、准确且安全地完成各种任务。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你经常使用电脑或浏览器，Astra 可能带来更高效、更安全的使用体验，但具体效果还需实际测试。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "Astra 的具体功能和安全性仍需进一步了解，建议关注官方信息或实际使用反馈。解读仅基于发布方摘要，细节请看原文。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "OpenAI launches Astra, its powerful (and controversial) new model"
     },
     {
       "id": "fc40ddafdd41e0",
@@ -263,26 +61,26 @@
       "publishedAt": "2026-09-03",
       "source": "OpenAI",
       "title": "OpenAI投入10亿美元保护关键服务",
-      "summary": "OpenAI宣布投入10亿美元，用于支持前线防御者，扩大对关键服务的前沿网络AI、培训和技术支持的获取。",
-      "category": "行业变化",
+      "summary": "OpenAI宣布投入10亿美元用于‘前线守护者’计划，旨在扩大对关键服务的前沿网络AI、培训及支持。该计划旨在加强关键基础设施的安全性。",
+      "category": "安全与规则",
       "importance": 70,
-      "why": "这项投资旨在加强关键基础设施的安全性，可能影响网络安全和公共服务的维护。",
+      "why": "该计划涉及对关键服务的保护，可能影响网络安全和基础设施安全。",
       "sections": [
         {
           "heading": "到底发生了什么？",
-          "text": "OpenAI宣布投入10亿美元，用于支持前线防御者，扩大对关键服务的前沿网络AI、培训和技术支持的获取。"
+          "text": "OpenAI宣布投入10亿美元用于‘前线守护者’计划，旨在扩大对关键服务的前沿网络AI、培训及支持。该计划旨在加强关键基础设施的安全性。"
         },
         {
           "heading": "换成人话",
-          "text": "OpenAI将投入10亿美元，帮助保护像电力、医疗和交通这样的关键服务，通过提供先进的AI技术、培训和支援，让这些服务更安全、更可靠。"
+          "text": "OpenAI投入10亿美元，用于帮助保护像电力、通信等关键服务，通过提供先进的网络AI技术、培训和技术支持来提升这些服务的安全性。"
         },
         {
           "heading": "和你有什么关系？",
-          "text": "这项投资可能让关键服务更安全，减少因网络攻击或系统故障带来的影响，但具体如何影响你，还要看这些服务在你生活中的重要程度。"
+          "text": "如果你使用的是电力、通信或交通等关键服务，这项计划可能间接提升这些服务的安全性，减少因网络攻击导致的中断。"
         },
         {
           "heading": "还要留意什么？",
-          "text": "目前信息有限，具体如何实施、哪些服务会受益，以及资金如何分配，还需进一步关注官方消息。解读仅基于发布方摘要，细节请看原文。"
+          "text": "目前未说明该计划的具体实施方式、覆盖范围或时间表。解读仅基于发布方摘要，细节请看原文。"
         }
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
@@ -294,185 +92,30 @@
       "publishedAt": "2026-09-03",
       "source": "Google",
       "title": "谷歌推出AI教育系列课程助你开启AI学习",
-      "summary": "谷歌推出AI教育系列课程，帮助用户掌握AI技能，提升教育和工作效率。课程内容涵盖AI基础和应用，适合不同学习需求。",
+      "summary": "谷歌推出AI教育系列课程，帮助用户掌握AI技能，提升教育和工作效率。课程内容涵盖AI基础与应用。",
       "category": "日常应用",
       "importance": 40,
-      "why": "谷歌推出AI教育课程，旨在帮助用户提升AI技能，适应未来工作和学习需求。",
+      "why": "AI教育课程有助于个人和组织提升AI技能，适应技术发展。",
       "sections": [
         {
           "heading": "到底发生了什么？",
-          "text": "谷歌推出了AI教育系列课程，帮助用户掌握AI技能，提升教育和工作效率。课程内容涵盖AI基础和应用，适合不同学习需求。"
+          "text": "谷歌推出了AI教育系列课程，旨在帮助用户掌握AI技能，提升教育和工作效率。课程内容涵盖AI基础与应用，适合不同学习需求的人群。"
         },
         {
           "heading": "换成人话",
-          "text": "谷歌推出了新的AI学习课程，帮助用户了解和使用AI技术，提升工作和学习效率。课程适合不同水平的学习者，内容涵盖基础和实际应用。"
+          "text": "谷歌推出了新的AI学习课程，帮助大家了解和使用AI技术。课程内容从基础到应用，适合想学习AI的人。"
         },
         {
           "heading": "和你有什么关系？",
-          "text": "如果你对AI感兴趣，或者希望提升工作效率，这些课程可以帮助你掌握相关技能。适合学生、教师和职场人士学习。"
+          "text": "如果你对AI感兴趣，或者希望提升自己的技能，这些课程可以提供实用的知识和指导。无论你是学生还是职场人士，都能从中受益。"
         },
         {
           "heading": "还要留意什么？",
-          "text": "课程的具体内容和学习方式需参考官方信息。学习效果因人而异，建议结合实际需求选择课程。解读仅基于发布方摘要，细节请看原文。"
+          "text": "课程的具体内容和学习方式需要查看官方信息。AI技能的学习需要时间和实践，建议根据个人需求选择合适的课程。"
         }
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Start the year AI-ready with the Google AI Educator Series"
-    },
-    {
-      "id": "9e6525e89cf1d5",
-      "url": "https://www.timesnownews.com/technology-science/pause-ai-development-now-bernie-sanders-sounds-alarm-after-openai-rolls-out-its-most-intelligent-astra-model-article-156035268",
-      "publishedAt": "2026-09-03",
-      "source": "Bing News",
-      "title": "伯尼·桑德斯呼吁暂停AI发展",
-      "summary": "美国参议员伯尼·桑德斯警告称，先进AI的发展可能失控，呼吁立即暂停。他指出OpenAI最新推出的Astra模型可能带来重大风险。",
-      "category": "安全与规则",
-      "importance": 75,
-      "why": "桑德斯担忧AI技术可能超出人类控制，引发安全风险，因此呼吁暂停发展。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "美国参议员伯尼·桑德斯警告称，先进AI的发展可能失控，呼吁立即暂停。他提到OpenAI最新推出的Astra模型可能带来重大风险。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "桑德斯担心AI技术发展太快，可能会变得比人类更强大，难以控制。他因此建议现在就停止进一步开发AI。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "虽然目前AI还无法完全控制人类，但桑德斯的警告提醒我们，AI技术的发展可能带来未知风险。公众应关注相关政策和监管进展。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "桑德斯的呼吁可能引发更多关于AI监管的讨论。建议关注后续政策动向及科技公司如何回应。解读仅基于发布方摘要，细节请看原文。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "'Pause AI Development Now': Bernie Sanders Sounds Alarm After OpenAI Rolls Out Its Most Intelligent Astra Model"
-    },
-    {
-      "id": "3d21f48c152b5b",
-      "url": "https://www.trendforce.com/news/2026/09/04/news-samsung-electro-mechanics-secures-krw-1-07-trillion-long-term-mlcc-supply-deal-for-ai-servers/",
-      "publishedAt": "2026-09-03",
-      "source": "Bing News",
-      "title": "三星电机制定1070亿韩元MLCC长期供应协议",
-      "summary": "三星电机制定一项长期供应协议，金额达1070亿韩元，用于AI服务器的MLCC供应。协议对象未公开，具体细节未说明。",
-      "category": "行业变化",
-      "importance": 45,
-      "why": "三星电机制定长期供应协议，显示其在MLCC市场的重要地位，可能影响AI服务器供应链。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "三星电机制定一项长期供应协议，金额达1070亿韩元，用于AI服务器的MLCC供应。协议对象未公开，具体细节未说明。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "三星电机制定一项长期供应协议，金额达1070亿韩元，用于AI服务器的MLCC供应。协议对象未公开，具体细节未说明。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "三星电机制定长期供应协议，可能影响AI服务器供应链，但具体影响尚未明确。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "协议对象未公开，具体细节未说明，因此无法判断对市场的影响。解读仅基于发布方摘要，细节请看原文。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "[News] Samsung Electro-Mechanics Secures KRW 1.07 Trillion Long-Term MLCC Supply Deal for AI Servers"
-    },
-    {
-      "id": "dfefebe088ef80",
-      "url": "https://finance.yahoo.com/technology/ai/articles/snowflakes-ai-fueled-beat-sparks-012402886.html",
-      "publishedAt": "2026-09-03",
-      "source": "Bing News",
-      "title": "Snowflake因AI业绩上涨23%",
-      "summary": "Snowflake因AI推动的业绩超出预期，股价上涨23%，带动软件股整体上涨，市场关注其他公司是否会跟进。",
-      "category": "行业变化",
-      "importance": 70,
-      "why": "Snowflake的AI业绩表现引发市场对软件行业的关注，可能影响其他公司的战略方向。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "Snowflake因AI相关业务表现优于预期，导致股价上涨23%。这一表现带动了整个软件行业的股价上涨，市场开始关注其他公司是否会采取类似策略。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "Snowflake因为AI业务做得好，股价大涨，带动了软件公司整体表现变好。市场开始猜测其他公司会不会也跟着做AI相关业务。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你是软件行业的从业者或投资者，Snowflake的表现可能影响你对行业趋势的判断。但普通用户可能不会直接受到影响。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "Snowflake的AI业务表现是否可持续，以及其他公司是否会跟进，都是需要留意的点。但具体细节还需看公司财报和市场动态。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Snowflake's AI-Fueled Beat Sparks Software Rally: Will Others Follow?"
-    },
-    {
-      "id": "6ab8f88b9ec43e",
-      "url": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/",
-      "publishedAt": "2026-09-03",
-      "source": "TechCrunch AI",
-      "title": "Abliteration.ai 用 AI 模型去除安全限制",
-      "summary": "Abliteration.ai 公司声称通过去除 AI 模型的安全限制，让更强大的 AI 模型更容易被使用，认为这样能提升网络安全。",
-      "category": "安全与规则",
-      "importance": 70,
-      "why": "该公司的做法可能影响 AI 安全性与风险控制，引发公众对 AI 滥用的担忧。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "Abliteration.ai 公司正在开发一种商业模式，通过去除 AI 模型中的安全限制，让更强大的 AI 模型更容易被使用。他们认为，这样可以让网络安全防御者拥有与攻击者相同的工具，从而提升整体网络安全水平。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "这家公司正在做一件有点危险的事：让原本有安全限制的 AI 模型变得更容易被使用。他们认为，这样可以让网络安全专家更好地应对威胁，但同时也可能让恶意用户更容易利用这些 AI 模型。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你担心 AI 被滥用，或者关心网络安全，那么这件事可能和你有关。虽然这家公司声称能提升安全，但去除限制也可能带来新的风险，比如 AI 被用于恶意目的。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前的信息有限，无法判断这种做法是否真的能提升网络安全，或者是否会带来更大的风险。建议关注后续的行业反应和监管动态，以了解其实际影响。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Abliteration.ai is making a business out of removing AI guardrails"
-    },
-    {
-      "id": "82c75f7fe9e11b",
-      "url": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
-      "publishedAt": "2026-09-03",
-      "source": "TechCrunch AI",
-      "title": "Meta 为 AI 模型用户提供折扣",
-      "summary": "Meta 推出新 AI 模型 Muse Spark，针对开发者提供高达 95% 的折扣，鼓励用户分享使用体验以帮助模型优化。",
-      "category": "模型进展",
-      "importance": 45,
-      "why": "Meta 通过折扣激励用户参与模型优化，有助于提升模型性能。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "Meta 推出新 AI 模型 Muse Spark，针对开发者提供高达 95% 的折扣，鼓励用户分享使用体验以帮助模型优化。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "如果你是开发者，使用 Meta 的新 AI 模型可以享受大幅折扣，但需要分享你的使用情况和输出结果，帮助 Meta 改进模型。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你是开发者，这可能是一个节省成本的机会，但需要付出分享使用数据的代价。普通用户可能不会直接受影响。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "Meta 的折扣政策可能影响开发者对模型的选择，但具体效果还需看实际使用体验。详情请参考原文。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Meta is paying to peek at how you use their latest AI model"
     },
     {
       "id": "39210f987919e8",
@@ -568,68 +211,6 @@
       "originalTitle": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
     },
     {
-      "id": "ca0a2fc927923c",
-      "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
-      "publishedAt": "2026-09-02",
-      "source": "TechCrunch AI",
-      "title": "OpenAI新推理技术引发安全专家担忧",
-      "summary": "OpenAI推出的新Astra模型采用‘循环深度’技术，使模型能突破传统按顺序推理的限制。该技术引发AI安全专家的警觉。",
-      "category": "安全与规则",
-      "importance": 70,
-      "why": "AI安全专家担忧新技术可能带来不可预测的风险，影响模型的可控性。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "OpenAI推出的新Astra模型使用‘循环深度’技术，使模型能突破传统按顺序推理的限制。这项技术让模型在处理复杂任务时有更多灵活性，但也引发安全专家的担忧。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "Astra模型的新技术让AI在思考问题时不再按部就班，而是能更灵活地处理信息。不过，这种灵活性可能带来难以预料的风险，让AI的行为变得不可控。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "这项技术可能影响AI在日常应用中的表现，比如更智能的助手或更精准的推荐系统。但目前还不清楚它是否会带来实际好处或风险，需要进一步观察。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前信息有限，无法判断这项技术是否真的能提升AI能力，或是否会导致安全问题。建议关注后续技术发展和专家评估。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "OpenAI’s new reasoning technique alarms AI safety experts"
-    },
-    {
-      "id": "f87bb394d39e63",
-      "url": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
-      "publishedAt": "2026-09-02",
-      "source": "MIT Technology Review",
-      "title": "Jabil简化AI整合提升运营效率",
-      "summary": "Jabil作为全球制造企业，面临系统分散、工具不统一等问题，影响数据共享和决策效率。公司正通过简化AI整合来优化运营流程。",
-      "category": "行业变化",
-      "importance": 60,
-      "why": "企业运营中系统不统一会影响数据共享和决策效率，Jabil通过简化AI整合来应对这一挑战。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "Jabil作为一家全球制造企业，发现随着规模扩大，支持运营的技术可能成为负担。系统不统一、工具分散、依赖手动处理等问题导致数据孤岛，影响问题发现和决策效率。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "Jabil发现随着公司变大，原本用来提高效率的技术反而成了麻烦。系统不统一、工具分散、手动处理等问题让数据难以共享，影响了问题发现和决策效率。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "Jabil的案例说明，企业规模扩大后，技术整合和数据共享变得越来越重要。这可能影响到其他制造企业如何优化内部流程和决策效率。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "Jabil通过简化AI整合来应对系统分散的问题，但具体实施效果和细节未说明。解读仅基于发布方摘要，细节请看原文。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Facilitating AI integration with simplicity at scale"
-    },
-    {
       "id": "b263b9cf94a657",
       "url": "https://blog.google/products/ads-commerce/ads-decoded-podcast-measurement-stack/",
       "publishedAt": "2026-09-02",
@@ -721,37 +302,6 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT"
-    },
-    {
-      "id": "75804842c44008",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-extreme-weather-cyclone-predictions/",
-      "publishedAt": "2026-09-01",
-      "source": "Google",
-      "title": "谷歌科学家谈AI如何预测台风",
-      "summary": "谷歌科学家讨论AI在台风预测中的应用，展示如何利用模型提升预测准确性。文章通过虚拟访谈形式介绍相关技术。",
-      "category": "模型进展",
-      "importance": 40,
-      "why": "AI在气象预测中的应用可能提升灾害预警能力，对公众安全有潜在影响。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "谷歌科学家在一篇博客文章中讨论AI如何帮助预测台风。文章通过虚拟访谈形式，介绍了研究人员如何利用AI模型来提高极端天气预测的准确性。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "谷歌的科学家们正在研究如何用人工智能来预测台风。他们通过模拟访谈的方式，解释AI在天气预测中的作用，帮助人们更好地理解这项技术。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "AI预测台风可能帮助人们提前做好准备，减少灾害带来的影响。虽然文章没有说明具体效果，但这类技术的发展对公共安全有潜在好处。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "文章仅基于谷歌的摘要，未提及具体技术细节或实际应用效果。更多内容需参考原文。AI预测天气仍处于研究阶段，实际效果需进一步验证。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Ask a Scientist: How do researchers use AI to predict a cyclone?"
     },
     {
       "id": "5a222bc71ad39c",
@@ -940,62 +490,31 @@
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/antigravity-teamwork-multi-agent/",
       "publishedAt": "2026-08-31",
       "source": "Google",
-      "title": "谷歌Antigravity搭配Gemini 3.7 Flash解决多智能体难题",
-      "summary": "谷歌利用Gemini 3.7 Flash模型，让Antigravity系统中的多个智能体协作解决数学难题、构建CPU模拟器，并优化开源软件。",
+      "title": "谷歌用Gemini 3.7 Flash解决多智能体数学难题",
+      "summary": "谷歌利用Gemini 3.7 Flash模型，让Antigravity系统中的智能体团队解决复杂的数学问题，构建CPU模拟器，并优化开源软件。",
       "category": "模型进展",
       "importance": 70,
-      "why": "这项技术展示了AI在复杂任务中的协作能力，可能推动多个领域的自动化发展。",
+      "why": "这项技术展示了AI在解决复杂问题上的潜力，可能推动更多自动化工具的发展。",
       "sections": [
         {
           "heading": "到底发生了什么？",
-          "text": "谷歌的Antigravity系统结合Gemini 3.7 Flash模型，让多个AI智能体协作解决数学问题、构建CPU模拟器，并优化开源软件。"
+          "text": "谷歌的Antigravity系统结合Gemini 3.7 Flash模型，让多个AI智能体协作解决数学难题，如构建CPU模拟器和优化开源软件。"
         },
         {
           "heading": "换成人话",
-          "text": "谷歌让多个AI助手一起工作，解决复杂的数学问题，还能模拟电脑硬件和优化开源软件，这说明AI在处理复杂任务时变得更强大了。"
+          "text": "谷歌用AI团队解决复杂的数学问题，比如模拟电脑处理器和改进开源软件，这显示AI在处理复杂任务上的能力。"
         },
         {
           "heading": "和你有什么关系？",
-          "text": "这项技术可能影响数学研究、软件开发和硬件模拟等领域，未来或许会有更智能的工具帮助解决复杂问题。"
+          "text": "这项技术可能在未来帮助开发者更高效地解决复杂问题，但目前主要应用于研究和开发领域，普通用户可能暂时感受不到直接影响。"
         },
         {
           "heading": "还要留意什么？",
-          "text": "目前信息有限，具体效果和应用场景需看后续发展。解读仅基于发布方摘要，细节请看原文。"
+          "text": "目前信息仅基于谷歌发布的摘要，具体细节和实际应用效果需参考完整文章。AI在复杂任务中的表现仍需进一步验证。"
         }
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Pairing Google Antigravity with Gemini 3.7 Flash solves notable multi-agent math and engineering problems."
-    },
-    {
-      "id": "4862f3d2c68fb1",
-      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
-      "publishedAt": "2026-08-31",
-      "source": "OpenAI",
-      "title": "OpenAI支持加州AI青少年安全法案",
-      "summary": "OpenAI支持加州SB 1119法案，旨在为青少年提供适合年龄的AI安全措施，同时保留学习、创作和探索的机会。",
-      "category": "安全与规则",
-      "importance": 70,
-      "why": "该法案关注青少年在AI环境中的安全，可能影响AI教育和使用规范。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "OpenAI宣布支持加州的一项法案，该法案旨在为青少年提供适合年龄的AI安全措施，同时确保他们仍能学习、创作和探索AI技术。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "OpenAI支持一项加州法律，目的是让青少年在使用AI时更安全，同时不阻碍他们学习和创造AI相关的内容。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你是家长或教育工作者，这项法案可能影响你对青少年使用AI的监管方式。它也可能推动AI教育的规范化。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前信息有限，具体法案内容和实施细节尚未公布。建议关注后续官方消息或相关报道。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "OpenAI supports California’s bill to advance youth AI safety"
     },
     {
       "id": "b1b4ad0d4a36bb",
@@ -1027,37 +546,6 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models"
-    },
-    {
-      "id": "9415753715d793",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-flexible-usage-limits/",
-      "publishedAt": "2026-08-28",
-      "source": "Google",
-      "title": "Gemini Notebook 引入灵活使用限制",
-      "summary": "Google 宣布将在 Gemini Notebook 中引入新的灵活使用限制，以更好地管理计算资源。",
-      "category": "模型进展",
-      "importance": 30,
-      "why": "这项更新可能影响用户在使用 Gemini Notebook 时的资源使用方式。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "Google 宣布将在 Gemini Notebook 中引入新的灵活使用限制，这些限制是针对计算资源的，旨在优化资源管理。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "Google 要对 Gemini Notebook 的使用进行一些限制，这些限制是根据计算资源来设定的，可能是为了更有效地管理资源使用。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你是 Gemini Notebook 的用户，可能会在使用过程中遇到新的限制，这可能会影响你的使用体验。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前没有说明这些限制的具体内容，建议关注 Google 的官方公告或文档以获取更多细节。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "We’re introducing flexible usage limits for Gemini Notebook."
     },
     {
       "id": "71c43cf780d371",
