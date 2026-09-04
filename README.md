@@ -14,9 +14,9 @@
 
 ## 每日更新
 
-小助手以 `--scheduled` 启动后，每日北京时间 08:00 之后检查一次；睡眠或离线后下一次检查会补做。关闭电脑时保留上次已发布内容，不会伪造更新时间。每次最多整理 6 条新消息，每个来源最多 2 条，保留最近 60 条。自动选题不是全网穷尽报道。
+小助手以 `--scheduled` 启动后，每日北京时间 08:00 之后检查一次；睡眠或离线后下一次检查会补做。关闭电脑时保留上次已发布内容，不会伪造更新时间。每次从最近 30 天内容中最多整理 20 条，每个来源最多 4 条；“年度大热点”栏目保留近一年经官方来源核对的代表性事件。自动选题不是全网穷尽报道。
 
-来源：OpenAI、Google、Google DeepMind、Hugging Face、Microsoft Research 的公开 RSS。仅处理近 10 天、有日期、有来源摘要的内容，拒绝未来日期和非 HTTPS 链接。模型只基于源摘要生成，标注这一限制；失败时保留旧版。需要全文核对时点击原文。
+来源：OpenAI、Google、Google DeepMind、Hugging Face、Microsoft Research 的公开 RSS，以及 Google News、Bing News、TechCrunch AI、MIT Technology Review 的新闻 RSS。仅处理近 30 天、有日期、有来源摘要的内容，拒绝未来日期和非 HTTPS 链接。模型只基于源摘要生成，标注这一限制；失败时保留旧版。需要全文核对时点击原文。
 
 `BAIHUA_PUBLISH=1` 时通过当前用户 `gh` 登录，将 `public/news.json` 和 `gh-pages` 分支的 `news.json` 更新到固定仓库 `aifringe/ai-baihua-daily`。不推送其他本地修改，不将聊天内容发送到 GitHub。密钥不写入源码。GitHub Pages 发布通常有短暂延迟。
 

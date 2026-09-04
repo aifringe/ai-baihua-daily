@@ -10,7 +10,17 @@ REPO='aifringe/ai-baihua-daily'
 GH=os.environ.get('BAIHUA_GH',str(pathlib.Path.home()/'.local/bin/gh'))
 ALLOWED={'http://127.0.0.1:8766','http://localhost:8766','http://localhost:3000','http://127.0.0.1:3000','https://aifringe.github.io'}
 if (ROOT/'companion-config.json').exists(): ALLOWED.update(json.loads((ROOT/'companion-config.json').read_text()).get('allowedOrigins',[]))
-FEEDS=[('OpenAI','https://openai.com/news/rss.xml'),('Google','https://blog.google/rss/'),('Google DeepMind','https://deepmind.google/blog/rss.xml'),('Hugging Face','https://huggingface.co/blog/feed.xml'),('Microsoft Research','https://www.microsoft.com/en-us/research/feed/')]
+FEEDS=[
+ ('OpenAI','https://openai.com/news/rss.xml'),
+ ('Google','https://blog.google/rss/'),
+ ('Google DeepMind','https://deepmind.google/blog/rss.xml'),
+ ('Hugging Face','https://huggingface.co/blog/feed.xml'),
+ ('Microsoft Research','https://www.microsoft.com/en-us/research/feed/'),
+ ('Google News','https://news.google.com/rss/search?q=%22artificial%20intelligence%22%20OR%20OpenAI%20OR%20Gemini%20OR%20Claude%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen'),
+ ('Bing News','https://www.bing.com/news/search?q=artificial%20intelligence&format=rss&setlang=en-us'),
+ ('TechCrunch AI','https://techcrunch.com/category/artificial-intelligence/feed/'),
+ ('MIT Technology Review','https://www.technologyreview.com/topic/artificial-intelligence/feed/'),
+]
 STATUS={'refreshing':False,'lastError':'','lastRun':''}; REFRESH_LOCK=threading.Lock(); MODEL_LOCK=threading.Semaphore(1)
 
 def log(*args):
@@ -43,9 +53,12 @@ def parse_feed(source,raw):
                 if e.tag.split('}')[-1]==name:return e.text or e.attrib.get('href','')
             return ''
         title=clean(get('title')); url=get('link').strip(); rawdate=get('pubDate') or get('published') or get('updated')
+        if source=='Bing News':
+            target=urllib.parse.parse_qs(urllib.parse.urlsplit(url).query).get('url',[''])[0]
+            if target.startswith('https://'):url=target
         try: date=parsedate_to_datetime(rawdate) if ',' in rawdate else dt.datetime.fromisoformat(rawdate.replace('Z','+00:00')); date=date.replace(tzinfo=dt.timezone.utc) if not date.tzinfo else date
         except (ValueError,TypeError): continue
-        if date>now+dt.timedelta(hours=1) or date<now-dt.timedelta(days=10):continue
+        if date>now+dt.timedelta(hours=1) or date<now-dt.timedelta(days=30):continue
         if not AI.search(title+' '+get('description')) and source not in ('OpenAI','Google DeepMind','Hugging Face'):continue
         u=urllib.parse.urlparse(url)
         if u.scheme!='https' or not u.hostname:continue
@@ -86,6 +99,12 @@ def current_news():
     p=ROOT/'public/news.json'
     return json.loads(p.read_text())
 
+def all_articles():
+    articles=current_news()['articles']
+    try: articles+=json.loads((ROOT/'data/hotspots.json').read_text())['articles']
+    except Exception: pass
+    return articles
+
 def atomic(path,data):
     tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');tmp.replace(path)
 
@@ -101,7 +120,7 @@ def publish(data):
         if old.get('content','').replace('\n','')==content:continue
         gh_api(['--method','PUT',f'repos/{REPO}/contents/{path}'],{'message':'Update daily AI news','branch':branch,'sha':old['sha'],'content':content})
 
-def refresh(publish_changes=False,limit=6):
+def refresh(publish_changes=False,limit=20):
     if not REFRESH_LOCK.acquire(blocking=False):return
     STATUS.update(refreshing=True,lastError='')
     try:
@@ -120,7 +139,7 @@ def refresh(publish_changes=False,limit=6):
             if re.search(r'campaign|marketing|measurement|partner|tour|appoint|hiring',title):score-=35
             return score
         for x in sorted(unique.values(),key=priority,reverse=True):
-            if counts.get(x['source'],0)>=2:continue
+            if counts.get(x['source'],0)>=4:continue
             selected.append(x);counts[x['source']]=counts.get(x['source'],0)+1
             if len(selected)>=limit:break
         new=[]; failures=0
@@ -129,7 +148,9 @@ def refresh(publish_changes=False,limit=6):
             except Exception as e: failures+=1;log('Explanation skipped:',type(e).__name__,str(e))
         if selected and not new:raise RuntimeError('本地模型未完成新解读，保留上次日报；请确认 Ollama 可用')
         now=dt.datetime.now(dt.timezone.utc).isoformat()
-        result={'updatedAt':now if new else old['updatedAt'],'lastCheckedAt':now,'feedStatus':health,'articles':sorted(new+old['articles'],key=lambda a:a['publishedAt'],reverse=True)[:60]}
+        cutoff=(dt.date.today()-dt.timedelta(days=30)).isoformat()
+        articles=[a for a in new+old['articles'] if a.get('publishedAt','')>=cutoff]
+        result={'updatedAt':now if new else old['updatedAt'],'lastCheckedAt':now,'feedStatus':health,'articles':sorted(articles,key=lambda a:a['publishedAt'],reverse=True)[:240]}
         atomic(ROOT/'public/news.json',result)
         if (ROOT/'dist').exists():atomic(ROOT/'dist/news.json',result)
         if publish_changes:publish(result)
@@ -178,7 +199,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             if self.path=='/api/refresh':
                 threading.Thread(target=refresh,kwargs={'publish_changes':os.environ.get('BAIHUA_PUBLISH')=='1'},daemon=True).start();return self.out({'started':True},202)
             if self.path!='/api/chat':return self.out({'error':'Not found'},404)
-            article=next((a for a in current_news()['articles'] if a['id']==body.get('articleId')),None)
+            article=next((a for a in all_articles() if a['id']==body.get('articleId')),None)
             if not article:raise ValueError('找不到这条新闻，请刷新日报')
             messages=body.get('messages')
             if not isinstance(messages,list) or not 1<=len(messages)<=8:raise ValueError('对话过长')
@@ -199,7 +220,7 @@ def scheduler():
         time.sleep(3600)
 
 if __name__=='__main__':
-    if '--refresh' in sys.argv:refresh('--publish' in sys.argv,1 if '--one' in sys.argv else 6);sys.exit(1 if STATUS['lastError'] else 0)
+    if '--refresh' in sys.argv:refresh('--publish' in sys.argv,1 if '--one' in sys.argv else 20);sys.exit(1 if STATUS['lastError'] else 0)
     server=http.server.ThreadingHTTPServer(('127.0.0.1',PORT),Handler)
     if '--scheduled' in sys.argv:threading.Thread(target=scheduler,daemon=True).start()
     log(f'AI 白话日报小助手：http://127.0.0.1:{PORT}')

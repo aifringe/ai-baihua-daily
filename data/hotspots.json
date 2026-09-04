@@ -1,0 +1,118 @@
+{
+  "articles": [
+    {
+      "id": "hotspot-gpt-54",
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "publishedAt": "2026-03-05",
+      "source": "OpenAI",
+      "title": "GPT-5.4 把推理、编程和专业工作进一步合到一起",
+      "summary": "OpenAI 发布 GPT-5.4，并将它用于 ChatGPT、API 和 Codex。官方把重点放在复杂专业任务、工具使用、编程以及文档和表格工作上。",
+      "category": "模型进展",
+      "importance": 96,
+      "why": "这是 OpenAI 主力模型的一次重要升级，直接影响大量 ChatGPT、API 和 Codex 用户。",
+      "sections": [
+        {"heading": "到底发生了什么？", "text": "OpenAI 在 2026 年 3 月发布 GPT-5.4，并同步用于 ChatGPT、API 和 Codex。官方称它整合了近期在推理、编程和智能体工作流程方面的进展。"},
+        {"heading": "换成人话", "text": "过去不同模型各自擅长推理、写代码或调用工具，GPT-5.4 的方向是把这些能力更集中地放进一个主力模型里。"},
+        {"heading": "和你有什么关系？", "text": "如果你用 ChatGPT 完成报告、表格、演示文稿或编程工作，模型升级可能改变完成复杂任务的速度和可靠性。"},
+        {"heading": "还要留意什么？", "text": "性能数据主要来自发布方测试，具体使用效果还会受到任务、套餐和工具环境影响，细节请核对官方原文。"}
+      ],
+      "editor": "刘海儿的AI新闻 · 基于官方发布整理",
+      "originalTitle": "Introducing GPT-5.4"
+    },
+    {
+      "id": "hotspot-deepseek-v4",
+      "url": "https://deepseek.com/en/news/",
+      "publishedAt": "2026-04-24",
+      "source": "DeepSeek",
+      "title": "DeepSeek-V4 把百万级上下文带入开源模型",
+      "summary": "DeepSeek 发布 V4，重点包括更长的上下文处理和开源权重。它延续了用较低成本推动高能力模型开放使用的路线。",
+      "category": "模型进展",
+      "importance": 95,
+      "why": "长上下文和开放权重会影响开发者部署模型、处理大型资料以及构建本地应用的方式。",
+      "sections": [
+        {"heading": "到底发生了什么？", "text": "DeepSeek 在 2026 年 4 月发布并开源 V4，官方将百万级上下文能力作为核心进展之一。"},
+        {"heading": "换成人话", "text": "模型一次能够接收和处理更多文字或代码，开发者也可以下载权重，在自己的设备或服务器上部署。"},
+        {"heading": "和你有什么关系？", "text": "它可能降低处理长文档、代码仓库和知识库的门槛，也为本地模型应用提供新的选择。"},
+        {"heading": "还要留意什么？", "text": "上下文长度并不等于模型会准确记住全部内容，速度和硬件需求也要通过实际部署验证，细节请看官方资料。"}
+      ],
+      "editor": "刘海儿的AI新闻 · 基于官方发布整理",
+      "originalTitle": "DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context"
+    },
+    {
+      "id": "hotspot-gpt-52",
+      "url": "https://openai.com/index/introducing-gpt-5-2/",
+      "publishedAt": "2025-12-11",
+      "source": "OpenAI",
+      "title": "GPT-5.2 更强调专业知识工作和长任务",
+      "summary": "OpenAI 发布 GPT-5.2 系列，改进长文本理解、工具调用、视觉和专业知识工作，并提供 Instant、Thinking 和 Pro 等版本。",
+      "category": "模型进展",
+      "importance": 93,
+      "why": "它推动通用聊天模型进一步进入表格、演示、编程和多步骤工作流程。",
+      "sections": [
+        {"heading": "到底发生了什么？", "text": "OpenAI 在 2025 年 12 月发布 GPT-5.2，重点提升长文本理解、工具调用、视觉识别和复杂专业任务。"},
+        {"heading": "换成人话", "text": "这次升级的重点不只是聊天，而是让模型更能连续完成一整套工作，例如看资料、调用工具再整理成果。"},
+        {"heading": "和你有什么关系？", "text": "经常用 AI 写代码、分析文件或制作办公材料的人，可能更容易把一个完整任务交给模型处理。"},
+        {"heading": "还要留意什么？", "text": "官方也明确提醒模型仍会出错，重要的专业结论需要人工核对，具体能力和开放范围请看原文。"}
+      ],
+      "editor": "刘海儿的AI新闻 · 基于官方发布整理",
+      "originalTitle": "Introducing GPT-5.2"
+    },
+    {
+      "id": "hotspot-deepseek-v32",
+      "url": "https://deepseek.com/en/news/",
+      "publishedAt": "2025-12-01",
+      "source": "DeepSeek",
+      "title": "DeepSeek-V3.2 推动开放模型的推理与工具能力",
+      "summary": "DeepSeek 发布 V3.2 和 V3.2-Speciale，重点展示推理、思考中调用工具和开放模型能力。",
+      "category": "模型进展",
+      "importance": 92,
+      "why": "高能力开放模型为企业和个人提供了云端闭源模型之外的部署选择。",
+      "sections": [
+        {"heading": "到底发生了什么？", "text": "DeepSeek 在 2025 年 12 月发布 V3.2 系列，突出推理表现以及模型在思考过程中使用工具的能力。"},
+        {"heading": "换成人话", "text": "模型不只回答问题，还可以在解决问题的过程中调用外部工具；开放权重也让开发者能自己部署和研究。"},
+        {"heading": "和你有什么关系？", "text": "这类模型让本地 AI 和自主工具应用获得更强的基础能力，也可能促使其他厂商调整价格与开放策略。"},
+        {"heading": "还要留意什么？", "text": "竞赛成绩和实际日常体验不是同一件事，部署成本、安全限制和中文表现仍需按场景测试，细节请看官方资料。"}
+      ],
+      "editor": "刘海儿的AI新闻 · 基于官方发布整理",
+      "originalTitle": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models"
+    },
+    {
+      "id": "hotspot-claude-opus-45",
+      "url": "https://www.anthropic.com/news/claude-opus-4-5",
+      "publishedAt": "2025-11-24",
+      "source": "Anthropic",
+      "title": "Claude Opus 4.5 强化编程、智能体和电脑操作",
+      "summary": "Anthropic 发布 Claude Opus 4.5，重点提升编程、长时间智能体任务、电脑操作和日常办公能力。",
+      "category": "模型进展",
+      "importance": 91,
+      "why": "它代表 AI 从回答问题进一步走向连续操作软件和完成较长工作流程。",
+      "sections": [
+        {"heading": "到底发生了什么？", "text": "Anthropic 在 2025 年 11 月发布 Claude Opus 4.5，并同步升级 Claude Code、开发平台和办公软件相关能力。"},
+        {"heading": "换成人话", "text": "模型更擅长接手步骤很多的任务，例如理解大型代码、修改多个文件，或者在电脑应用之间连续工作。"},
+        {"heading": "和你有什么关系？", "text": "如果你把 AI 当作编程或办公助手，这类升级意味着它可能减少中途卡住和反复说明的次数。"},
+        {"heading": "还要留意什么？", "text": "相关性能和效率数据主要来自 Anthropic 及合作方测试，真实效果取决于任务环境，细节请核对原文。"}
+      ],
+      "editor": "刘海儿的AI新闻 · 基于官方发布整理",
+      "originalTitle": "Introducing Claude Opus 4.5"
+    },
+    {
+      "id": "hotspot-gemini-3",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+      "publishedAt": "2025-11-18",
+      "source": "Google",
+      "title": "Gemini 3 同日进入谷歌搜索和开发平台",
+      "summary": "Google 发布 Gemini 3，并把 Gemini 3 Pro 带入 Gemini 应用、AI Studio、Vertex AI 和搜索 AI Mode，强调推理、多模态与智能体能力。",
+      "category": "模型进展",
+      "importance": 94,
+      "why": "Google 将新模型快速接入搜索和大规模产品，影响的不只是开发者，也包括普通搜索用户。",
+      "sections": [
+        {"heading": "到底发生了什么？", "text": "Google 在 2025 年 11 月发布 Gemini 3，并让 Gemini 3 Pro 从发布当天开始进入多个消费级和开发者产品。"},
+        {"heading": "换成人话", "text": "谷歌没有只展示一个新模型，而是马上把它接进搜索、聊天和开发工具，让更多人直接接触新能力。"},
+        {"heading": "和你有什么关系？", "text": "使用 Google 搜索、Gemini 或 Google Cloud 的人，可能在复杂查询、图文理解和编程任务中感受到变化。"},
+        {"heading": "还要留意什么？", "text": "部分高级模式存在地区和套餐限制，官方性能结论也需要结合实际使用判断，具体开放范围请看原文。"}
+      ],
+      "editor": "刘海儿的AI新闻 · 基于官方发布整理",
+      "originalTitle": "A new era of intelligence with Gemini 3"
+    }
+  ]
+}

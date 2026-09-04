@@ -12,7 +12,11 @@ class FeedTests(unittest.TestCase):
  def test_atom(self):
   date=dt.datetime.now(dt.timezone.utc).isoformat()
   raw=f'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>New model</title><link href="https://example.com/a"/><updated>{date}</updated><summary>A new AI model with a clearly described set of new capabilities.</summary></entry></feed>'
-  self.assertEqual(c.parse_feed('Hugging Face',raw)[0]['url'],'https://example.com/a')
+ self.assertEqual(c.parse_feed('Hugging Face',raw)[0]['url'],'https://example.com/a')
+ def test_bing_redirect_is_unwrapped_to_original_article(self):
+  date=dt.datetime.now(dt.timezone.utc).isoformat()
+  raw=f'<rss><channel><item><title>AI model release</title><link>http://www.bing.com/news/apiclick.aspx?url=https%3A%2F%2Fexample.com%2Fstory</link><pubDate>{date}</pubDate><description>An artificial intelligence model release with enough source detail.</description></item></channel></rss>'
+  self.assertEqual(c.parse_feed('Bing News',raw)[0]['url'],'https://example.com/story')
  def test_model_cannot_override_source(self):
   raw={'id':'id','url':'https://example.com/verified','source':'Source','publishedAt':'2026-09-03','originalTitle':'AI update','excerpt':'source'}
   result={'title':'新闻','summary':'简介','category':'模型进展','why':'原因','importance':900,'url':'https://evil.example','sections':[{'heading':'解释','text':'资料'}]*4}
