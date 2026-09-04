@@ -12,6 +12,10 @@ ALLOWED={'http://127.0.0.1:8766','http://localhost:8766','http://localhost:3000'
 if (ROOT/'companion-config.json').exists(): ALLOWED.update(json.loads((ROOT/'companion-config.json').read_text()).get('allowedOrigins',[]))
 FEEDS=[('OpenAI','https://openai.com/news/rss.xml'),('Google','https://blog.google/rss/'),('Google DeepMind','https://deepmind.google/blog/rss.xml'),('Hugging Face','https://huggingface.co/blog/feed.xml'),('Microsoft Research','https://www.microsoft.com/en-us/research/feed/')]
 STATUS={'refreshing':False,'lastError':'','lastRun':''}; REFRESH_LOCK=threading.Lock(); MODEL_LOCK=threading.Semaphore(1)
+
+def log(*args):
+    try: print(*args,flush=True)
+    except (BrokenPipeError,OSError): pass
 AI=re.compile(r'\b(ai|artificial intelligence|llm|gpt|gemini|claude|agent|agents|model|models|machine learning|deep learning|qwen|deepseek)\b',re.I)
 
 def request(url,data=None,timeout=30):
@@ -53,7 +57,7 @@ def parse_feed(source,raw):
 def fetch_feed(pair):
     name,url=pair
     try:return parse_feed(name,request(url)),{'source':name,'ok':True}
-    except Exception as e: print('Feed unavailable:',name,type(e).__name__,flush=True);return [],{'source':name,'ok':False}
+    except Exception as e: log('Feed unavailable:',name,type(e).__name__);return [],{'source':name,'ok':False}
 
 def ollama(messages,structured=False):
     if not MODEL_LOCK.acquire(timeout=180): raise RuntimeError('模型正忙，请稍后重试')
@@ -121,8 +125,8 @@ def refresh(publish_changes=False,limit=6):
             if len(selected)>=limit:break
         new=[]; failures=0
         for raw in selected:
-            try: new.append(explain(raw));print('Explained:',raw['originalTitle'],flush=True)
-            except Exception as e: failures+=1;print('Explanation skipped:',type(e).__name__,str(e),flush=True)
+            try: new.append(explain(raw));log('Explained:',raw['originalTitle'])
+            except Exception as e: failures+=1;log('Explanation skipped:',type(e).__name__,str(e))
         if selected and not new:raise RuntimeError('本地模型未完成新解读，保留上次日报；请确认 Ollama 可用')
         now=dt.datetime.now(dt.timezone.utc).isoformat()
         result={'updatedAt':now if new else old['updatedAt'],'lastCheckedAt':now,'feedStatus':health,'articles':sorted(new+old['articles'],key=lambda a:a['publishedAt'],reverse=True)[:60]}
@@ -132,8 +136,8 @@ def refresh(publish_changes=False,limit=6):
         STATUS['lastRun']=now
         atomic(STATE/'last-run.json',{'at':now})
         if failures:STATUS['lastError']=f'部分解读未完成（{failures}条），已保留旧内容；其余已更新。'
-        print('Refresh complete:',len(new),'new stories',flush=True)
-    except Exception as e:STATUS['lastError']=str(e);print('Refresh error:',str(e),flush=True)
+        log('Refresh complete:',len(new),'new stories')
+    except Exception as e:STATUS['lastError']=str(e);log('Refresh error:',str(e))
     finally:STATUS['refreshing']=False;REFRESH_LOCK.release()
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -198,5 +202,5 @@ if __name__=='__main__':
     if '--refresh' in sys.argv:refresh('--publish' in sys.argv,1 if '--one' in sys.argv else 6);sys.exit(1 if STATUS['lastError'] else 0)
     server=http.server.ThreadingHTTPServer(('127.0.0.1',PORT),Handler)
     if '--scheduled' in sys.argv:threading.Thread(target=scheduler,daemon=True).start()
-    print(f'AI 白话日报小助手：http://127.0.0.1:{PORT}',flush=True)
+    log(f'AI 白话日报小助手：http://127.0.0.1:{PORT}')
     server.serve_forever()
