@@ -52,8 +52,8 @@ jobs:
           SSH_PORT: ${{ secrets.BAOTA_SSH_PORT }}
           SSH_USER: ${{ secrets.BAOTA_SSH_USER }}
         run: |
-          tar -C dist -czf - . | ssh \
+          (cd dist && find . -type f -print0 | tar --null -T - -czf -) | ssh \
             -i ~/.ssh/baota_deploy \
             -p "$SSH_PORT" \
             "$SSH_USER@$SSH_HOST" \
-            "tar -xzmf - --no-same-owner --no-same-permissions --no-overwrite-dir -C /www/wwwroot/ai.czrshe.cn"
+            "tar -xzmf - --no-same-owner --no-same-permissions -C /www/wwwroot/ai.czrshe.cn"
