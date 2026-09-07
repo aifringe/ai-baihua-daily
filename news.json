@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-06T01:02:37.077326+00:00",
-  "lastCheckedAt": "2026-09-06T01:02:37.077326+00:00",
+  "updatedAt": "2026-09-07T10:49:30.027636+00:00",
+  "lastCheckedAt": "2026-09-07T10:49:30.027636+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -40,6 +40,161 @@
     }
   ],
   "articles": [
+    {
+      "id": "073b13b14ae013",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "publishedAt": "2026-09-07",
+      "source": "OpenAI",
+      "title": "OpenAI支持乌克兰独立新闻",
+      "summary": "OpenAI与AIRPPU及WAN-IFRA合作，推出AI项目帮助乌克兰新闻机构提升创新、韧性和独立性。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "此项目旨在通过AI技术增强乌克兰新闻机构的独立性和创新能力，对当地媒体环境有潜在影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI与AIRPPU及WAN-IFRA合作，推出AI项目，帮助乌克兰新闻机构提升创新、韧性和独立性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI和其他组织一起，用AI技术帮助乌克兰的新闻机构变得更强大，能更好地独立报道新闻。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项合作可能对乌克兰的新闻环境产生积极影响，但具体如何影响普通读者，目前还不清楚。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体AI项目的细节和实际效果需参考原文。解读基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Supporting independent journalism in Ukraine"
+    },
+    {
+      "id": "93b63b754f268c",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-planet-accelerator-apac/",
+      "publishedAt": "2026-09-07",
+      "source": "Google",
+      "title": "谷歌支持亚太地区16个绿色AI项目",
+      "summary": "谷歌宣布支持亚太地区16个绿色AI项目，旨在推动可持续发展。这些项目聚焦于减少AI对环境的影响，包括能源效率和碳排放控制。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "谷歌支持绿色AI项目，表明科技公司正在关注可持续发展，这可能影响AI行业的未来方向。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌宣布支持亚太地区16个绿色AI项目，这些项目旨在减少AI对环境的影响，包括提高能源效率和控制碳排放。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌正在投资一些AI项目，这些项目的目标是让AI更环保，比如减少用电和碳排放。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这些项目可能会带来更环保的AI技术，未来使用AI时可能更省电、更环保，对环境有好处。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "这些项目的具体成果和影响还需进一步观察，目前仅是谷歌的支持计划，实际效果需看后续发展。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Backing 16 green AI projects in Asia-Pacific"
+    },
+    {
+      "id": "3784d7aba9718a",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "publishedAt": "2026-09-06",
+      "source": "OpenAI",
+      "title": "OpenAI内部：代码代理加速AI研究",
+      "summary": "OpenAI内部报告显示，代码代理正在改变AI研究方式，展示了早期数据，包括代理使用情况、实验速度、任务复杂度和研究加速效果。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "这项研究揭示了代码代理在AI研究中的潜力，可能影响未来AI开发效率。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI内部报告显示，代码代理正在改变AI研究的方式。这些代理被用来执行实验、处理任务，并加速研究进程，展示了早期数据，包括使用情况、实验速度和任务复杂度。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI内部发现，代码代理正在帮助研究人员更快地完成实验和任务，从而加快AI研究的进度。他们收集了早期数据，包括这些代理的使用情况和效果。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项研究可能影响未来AI开发的效率，但目前对普通用户的影响还不明确。如果你是研究人员或开发者，可能会对AI工具的使用方式有所启发。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前的信息仅基于OpenAI的摘要，具体细节需要查看原文。研究结果可能对AI开发有潜在影响，但实际效果还需进一步观察。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Research acceleration: The view inside OpenAI"
+    },
+    {
+      "id": "e0f75446731d59",
+      "url": "https://openai.com/index/an-alien-mind",
+      "publishedAt": "2026-09-06",
+      "source": "OpenAI",
+      "title": "OpenAI 发布 AI 对齐挑战反思",
+      "summary": "OpenAI 发布文章，探讨 AI 能力提升带来的对齐难题，呼吁加强安全措施和国际合作。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "文章关注 AI 发展中的对齐问题，涉及安全和国际合作，对公众影响较大。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 发布文章，讨论 AI 能力不断增强，但如何确保其行为符合人类价值观成为挑战。文章强调需要更强的安全措施和全球合作。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "AI 越来越强大，但如何让它听从人类指令是个大问题。文章建议加强安全措施，并推动各国一起合作解决这个问题。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然文章没有直接涉及个人，但 AI 的发展可能影响日常生活，比如自动化、信息处理等。加强安全和合作有助于减少潜在风险。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章强调 AI 对齐问题的重要性，但未提供具体解决方案或实施细节。解读基于发布方摘要，更多内容请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "An Alien Mind"
+    },
+    {
+      "id": "973d060680473f",
+      "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
+      "publishedAt": "2026-09-06",
+      "source": "TechCrunch AI",
+      "title": "作者反对出版方分走Anthropic和解金",
+      "summary": "作者认为出版方在Anthropic和解金分配中索取过多，引发争议。作者呼吁公平分配，出版方与代理商则试图争取更大份额。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "作者与出版方在和解金分配上的分歧，可能影响内容创作与出版生态。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "作者们表示，出版方似乎在Anthropic和解金中索取了过多的份额，引发作者们的不满。作者认为出版方的索取超出了合理范围，而出版方与代理商则试图争取更大的分配比例。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "作者们觉得出版方在分钱的时候拿得太多，不太公平。他们希望出版方不要拿走大部分的钱，而是让作者也能分到一部分。出版方和代理商则认为他们应该拿更多，因为他们在整个过程中起到了重要作用。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是作者，可能会关心自己的收入是否被合理分配。如果你是出版方或代理商，可能需要关注如何在各方之间平衡利益。这可能影响到内容创作和出版的生态。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前的信息仅基于发布方的摘要，具体细节还需查看原文。作者与出版方之间的分歧可能影响未来的和解金分配方式，以及内容创作的生态。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Authors push back as publishers and agents make claims on Anthropic settlement"
+    },
     {
       "id": "6ef2aef9012f0d",
       "url": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
@@ -1925,6 +2080,37 @@
         }
       ],
       "editor": "首期来源核对"
+    },
+    {
+      "id": "832a12c8f33a10",
+      "url": "https://openai.com/index/learning-never-stops",
+      "publishedAt": "2026-08-26",
+      "source": "OpenAI",
+      "title": "AI让学习不再中断",
+      "summary": "OpenAI发布报告，探讨学生和教师如何利用ChatGPT让学习更持续，支持不仅限于课堂。",
+      "category": "日常应用",
+      "importance": 45,
+      "why": "报告指出AI工具能帮助学习更连贯，对教育方式有潜在影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI发布报告，说明学生和教师如何使用ChatGPT让学习更持续，这种支持不仅限于课堂环境。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "报告指出，AI工具如ChatGPT可以帮助学生和老师让学习过程更连贯，不只是在课堂上，还能在课后继续学习。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是学生或老师，可能会发现AI工具能帮助你更有效地学习和教学，让学习过程更连贯。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "报告没有详细说明具体效果或使用方式，建议查看原文了解更多信息。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Learning never stops: How AI makes learning continuous"
     },
     {
       "id": "ed3fcbbbde771c",
