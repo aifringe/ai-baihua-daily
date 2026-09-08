@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-08T00:52:35.876708+00:00",
-  "lastCheckedAt": "2026-09-08T00:52:35.876708+00:00",
+  "updatedAt": "2026-09-08T08:15:05.253878+00:00",
+  "lastCheckedAt": "2026-09-08T08:15:05.253878+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -40,6 +40,37 @@
     }
   ],
   "articles": [
+    {
+      "id": "b3b513ec5a6f8d",
+      "url": "https://businessday.ng/life/article/the-future-of-real-estate-practice-in-the-age-of-artificial-intelligence/",
+      "publishedAt": "2026-09-07",
+      "source": "Bing News",
+      "title": "AI如何改变房地产行业",
+      "summary": "人工智能正逐步进入房地产行业，改变传统的工作方式。文章探讨了AI在房地产领域的应用前景及其对行业的影响。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "AI在房地产行业的应用可能影响工作流程和效率，值得普通读者关注。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章指出，人工智能不再只是科技公司的概念，正在进入房地产行业，改变传统的工作方式。AI的应用可能涉及数据分析、客户管理、市场预测等多个方面。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "房地产行业开始使用AI技术，比如用算法分析市场趋势、帮助客户找房，甚至自动处理一些日常事务。这可能让工作更高效，但也可能让一些传统岗位受到影响。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是房地产从业者，可能会面临工作方式的变化，比如需要学习使用AI工具。如果你是购房者，可能会享受到更精准的房产推荐和更高效的交易流程。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章没有详细说明AI具体如何应用，也没有提到对行业的影响程度。建议关注后续报道，了解AI在房地产行业的实际应用案例和效果。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The future of real estate practice in the age of artificial intelligence"
+    },
     {
       "id": "68a0bfd9c0d822",
       "url": "https://www.msn.com/en-in/general/general/artificial-intelligence-news-ai-model-fatigue-grows-as-openai-google-anthropic-and-meta-race-to-roll-out-new-models-at-breakneck-pace/ar-AA2bJkBB",
@@ -225,6 +256,68 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Backing 16 green AI projects in Asia-Pacific"
+    },
+    {
+      "id": "59449a2312249d",
+      "url": "https://www.gulftoday.ae/news/2026/09/06/emirati-women-advance-future-vision-through-artificial-intelligence",
+      "publishedAt": "2026-09-06",
+      "source": "Bing News",
+      "title": "阿联酋女性通过人工智能推动未来愿景",
+      "summary": "随着人工智能技术快速发展，阿联酋女性在科技领域的参与度不断提升，展现出推动未来发展的潜力。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "阿联酋女性在科技领域的发展反映了性别平等和技术创新的结合，可能对当地经济和社会产生积极影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章提到阿联酋女性在人工智能领域日益活跃，她们正通过科技推动未来的愿景。这表明女性在科技行业的参与度正在上升，可能对国家发展产生影响。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "阿联酋的女性正在利用人工智能技术，推动国家的未来发展。这说明女性在科技领域越来越重要，可能对国家的科技进步和经济有帮助。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这则新闻显示女性在科技领域的重要性，可能激励更多女性投身科技行业。对于关注性别平等和科技发展的读者来说，这具有一定的参考价值。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章未提及具体成就或数据，因此无法判断实际影响。建议关注后续报道，了解阿联酋女性在科技领域的具体进展。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Emirati women advance future vision through artificial intelligence"
+    },
+    {
+      "id": "4035864edb7684",
+      "url": "https://www.msn.com/en-gb/news/other/how-artificial-intelligence-can-advance-disability-inclusion/ar-AA2bGcEl",
+      "publishedAt": "2026-09-06",
+      "source": "Bing News",
+      "title": "人工智能如何促进残疾人包容性",
+      "summary": "人工智能可通过辅助技术、教育、就业、医疗和包容性设计等方式，提升残疾人的生活便利性与社会参与度。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "人工智能技术的发展为残疾人提供了更多参与社会的机会，有助于提升其生活质量。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章探讨了人工智能如何通过多种方式促进残疾人的包容性，包括辅助技术、教育、就业、医疗和设计等方面。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "人工智能可以帮助残疾人更好地生活和工作，比如通过智能设备、学习工具、医疗辅助和更友好的设计来提升他们的生活质量。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关心社会公平或科技如何帮助弱势群体，这篇文章提供了有价值的信息。它展示了科技如何让生活更便利，尤其对有特殊需求的人群。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章未详细说明具体的技术应用或实际案例，因此解读基于发布方摘要，更多细节请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "How artificial intelligence can advance disability inclusion"
     },
     {
       "id": "3784d7aba9718a",
@@ -878,6 +971,37 @@
       "originalTitle": "The sameness problem behind those unappetizing AI-generated menus"
     },
     {
+      "id": "be7dd216db3c40",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1iUlVPODl5bTBweko3Y1pHY1Y3RzZua3FHak9hVm5aa3hZWmNQcmVrVW1VMHdXME04cDJITVM4TmlBdUZWZ3JIQlgtdUZPMjlEd3pUdmNkV3BsT3FRMTEwNm1GcnRJU2NXeElBYVZhc9IBdEFVX3lxTE9NYUtIZlJ6NHoxSGladzc0bkc5Tm8xWjJkcHdJeHJHeUVfUlZ4b2ZoTC1ueE9HaEI4ZFZoUXAxUldGZHYweTd2ZEhtUkJiaFFid0FZdkdRS2Z1OV9NY2tzb3BKQW5wZGh0SER5aTlOdm9sbWVD?oc=5",
+      "publishedAt": "2026-09-03",
+      "source": "Google News",
+      "title": "OpenAI 开始推出 Astra 模型并警告其高级网络能力",
+      "summary": "OpenAI 开始推出 Astra 模型，并警告其具备先进的网络能力。该模型的推出可能引发对网络安全的担忧。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "Astra 模型的推出可能对网络安全产生影响，因此值得关注。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 开始推出 Astra 模型，并警告其具备先进的网络能力。这表明该模型可能具有强大的网络功能，引发对网络安全的担忧。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 正在推出一个新模型 Astra，并提醒人们这个模型可能有很强的网络能力。这可能意味着它能做很多网络相关的事情，但同时也可能带来风险。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你担心网络安全，或者使用相关技术，Astra 模型的推出可能会影响你。但具体影响还需进一步了解。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，建议关注 OpenAI 的后续公告或相关安全报告，以获取更多细节。解读基于发布方摘要，详情请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI begins rolling out Astra model after warning of its advanced cyber capabilities - CNBC"
+    },
+    {
       "id": "82c75f7fe9e11b",
       "url": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
       "publishedAt": "2026-09-03",
@@ -1281,6 +1405,99 @@
       "originalTitle": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
     },
     {
+      "id": "3015e545c8abf9",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1LMVdwV1NoSTBFUVBRekhPVS1MakJVb09aZ0lucGdIbTdDaW9ZTHFiNmx5dzhxOXZ6ZEdyeVN1aEp1enNqZWtVUDctS2FNTllqeEJHNG9fQmltSjZsMWlwcFl5aW15MWVUSjVheEpvWEt0eUcxdm5TVg?oc=5",
+      "publishedAt": "2026-09-02",
+      "source": "Google News",
+      "title": "OpenAI或突破AI安全红线",
+      "summary": "一篇来自Substack的文章警告称，OpenAI可能正在接近AI安全的临界点，引发对AI风险的担忧。文章由Marcus on AI发布，引发讨论。",
+      "category": "安全与规则",
+      "importance": 45,
+      "why": "文章指出OpenAI可能在AI安全方面存在风险，引发公众对AI技术发展的关注。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "一篇由Marcus on AI发布的文章警告称，OpenAI可能正在接近AI安全的临界点，可能带来潜在风险。文章在Google News上被引用，引发讨论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "有文章指出，OpenAI可能在AI安全方面存在隐患，可能对技术发展带来风险。文章引发公众对AI安全的讨论。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关注AI技术的发展和安全性，这篇文章可能对你有参考价值。但目前没有具体信息说明对普通用户的影响。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于发布方摘要，未提供详细信息。建议关注后续官方消息或权威分析，以获取更准确的信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Red Alert: OpenAI is poised to cross an AI safety redline. - Marcus on AI | Substack"
+    },
+    {
+      "id": "ec1aebbf2b6904",
+      "url": "https://www.scmp.com/native/tech/topics/evolving-world-agentic-ai/article/3365801/rethinking-cybersecurity-operations-age-artificial-intelligence",
+      "publishedAt": "2026-09-02",
+      "source": "Bing News",
+      "title": "AI重塑网络安全运营方式",
+      "summary": "AI驱动的安全系统使企业能更快更准地应对技术基础设施的威胁和攻击。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "AI在网络安全领域的应用正在改变传统防御方式，提升响应效率。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章指出，随着人工智能的发展，网络安全运营方式正在被重新思考。AI驱动的安全系统能够更快速、更准确地识别和应对网络威胁，帮助企业保护其技术基础设施。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前企业面对网络攻击时，可能需要较长时间才能发现和处理问题。现在借助AI技术，可以更快地识别威胁并采取行动，减少损失。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是企业用户或使用在线服务，AI在网络安全方面的应用可能意味着更安全的网络环境。但具体效果还需看企业如何实施这些技术。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于发布方摘要，未提及具体实施细节或实际效果。AI在网络安全中的应用仍需进一步验证其可靠性和实际效果。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Rethinking cybersecurity operations in the age of artificial intelligence"
+    },
+    {
+      "id": "05abd10d653b45",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQXB5Sms5NzNXdVdEM0FBcGU1WmJxNkUwVlBZNFUyd3lmdVNaTWRLWVA3b1FQX1NaNHFVR3g1aDZvQkZnd1g0N1ExRnZRVFhPYVBHdENSWWhkWjRSVWNQTHVZYndJMm5tSjZJc3o0R2FWRnItd1YwajlBUkFYNU5td01lYjdiYndtSHh2aU1adjlkXzBwYWJBT0hoUjRPOG8?oc=5",
+      "publishedAt": "2026-09-02",
+      "source": "Google News",
+      "title": "MrBeast与Gemini合作实现宏大创意",
+      "summary": "MrBeast与Gemini合作，将看似不可能的创意变为现实。该合作旨在通过技术手段实现创意落地，推动内容创作与技术应用的结合。",
+      "category": "行业变化",
+      "importance": 60,
+      "why": "该合作可能推动创意与技术的结合，影响内容创作领域。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "MrBeast与Gemini合作，将看似不可能的创意变为现实。该合作旨在通过技术手段实现创意落地，推动内容创作与技术应用的结合。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "MrBeast与Gemini合作，将一些看似不可能实现的创意变为现实。他们希望通过技术手段，让这些创意真正落地，从而推动内容创作的发展。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是内容创作者或对创意实现感兴趣，这项合作可能带来新的灵感和工具。它展示了技术如何帮助将创意变为现实，可能影响未来的创作方式。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体合作内容和影响尚未明确。建议关注后续报道，了解合作细节及实际应用效果。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "MrBeast partners with Gemini to turn impossibly big ideas into reality - blog.google"
+    },
+    {
       "id": "c6212e79da57e3",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBNWlBRZ25WV1BDbkN6TDlWUW96M0tIMXpfZlZBbTF5V2RMeUxoRy11c2NCeTdfbkVtTjVHc2dzOXJCcE1wanExMVZVLVR0SHR2MmZrczNfci0zUHQwZzBrTERScmRtbnJVcUpzdA?oc=5",
       "publishedAt": "2026-09-02",
@@ -1496,6 +1713,37 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT"
+    },
+    {
+      "id": "d1299ca33ca238",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ0puazl3MjhZNm1TdmpZZnRleXRud0NLMEFETVJVeE96d29BcmIwRmRRbmVOdE5GaGZTOUJidkk1c0xOSG9XSm5NR3lnbURta2NJN0JwSnduMUJBaDVPNWNPTkVXaHc3TFpUY3NUMEhKNXlFaHROMXRfUmFxbEFhQkV3?oc=5",
+      "publishedAt": "2026-09-01",
+      "source": "Google News",
+      "title": "OpenAI支持加州推动青少年AI安全法案",
+      "summary": "OpenAI宣布支持加州一项旨在提升青少年AI安全的法案，强调保护年轻用户免受潜在风险。该法案旨在推动AI安全教育和监管措施。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "OpenAI支持加州推动青少年AI安全的法案，显示其对AI安全的重视，可能影响未来AI教育和监管方向。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI宣布支持加州一项推动青少年AI安全的法案，该法案旨在通过教育和监管措施，保护年轻用户免受AI相关风险。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI支持加州的一项法律，目的是让青少年在使用AI时更安全，通过教育和规则来减少潜在风险。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项法案可能影响未来AI教育和监管，对家长和教育机构来说，可能带来新的安全指导和规范，但具体影响尚不明确。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体法案内容和实施细节未说明，建议关注后续官方发布或相关报道。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI supports California’s bill to advance youth AI safety - OpenAI"
     },
     {
       "id": "d753549be72e70",
@@ -2855,6 +3103,130 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "From Atari to EVE Online: Building on 15 Years of AI Research in Games"
+    },
+    {
+      "id": "68bd2e32c09542",
+      "url": "https://openai.com/index/introducing-intelligence-age",
+      "publishedAt": "2026-08-20",
+      "source": "OpenAI",
+      "title": "OpenAI推出新博客探讨AI对社会的影响",
+      "summary": "OpenAI推出名为'Intelligence Age'的新博客，旨在探讨人工智能如何改变权力、治理、经济和个体自由等社会领域。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "该博客可能提供关于AI对社会结构影响的深入分析，对关注科技与社会关系的读者有参考价值。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI推出了一个名为'Intelligence Age'的新博客，专注于探讨人工智能如何重塑权力、治理、经济和个体自由等社会领域。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI开始用一个新博客来讨论AI技术如何影响社会的各个方面，比如政府运作、经济系统和人们的生活方式。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关心科技如何影响社会，或者想了解AI对日常生活和未来可能带来的变化，这个博客可能提供一些有价值的信息。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "该博客的内容可能涉及对AI技术的深入分析和未来趋势的预测，但具体细节和观点需以原文为准。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing Intelligence Age"
+    },
+    {
+      "id": "ad89fb510e3c78",
+      "url": "https://openai.com/index/stampli",
+      "publishedAt": "2026-08-20",
+      "source": "OpenAI",
+      "title": "Stampli 用 ChatGPT 缩短产品上线时间",
+      "summary": "Stampli 利用 ChatGPT Work 和 Codex 技术，将原本需要数周的产品上线流程压缩至数天，大幅提升了效率。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "该案例展示了 AI 工具在缩短产品开发周期方面的潜力，对相关行业有参考价值。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Stampli 在固定截止日期和设计资源有限的情况下，使用 ChatGPT Work 和 Codex 技术，将原本需要数周的产品上线流程压缩至数天，大幅提升了效率。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Stampli 通过使用 AI 工具，将原本需要几周才能完成的产品开发工作，缩短到几天内完成，节省了大量时间和资源。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "该案例表明 AI 工具可以显著提升产品开发效率，对从事产品设计、开发或管理的人员具有参考价值。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "该案例基于发布方摘要，具体细节和实际效果需参考原文。AI 工具的使用效果可能因具体场景和团队能力而异。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Stampli cuts launch hours by 68% using ChatGPT Work"
+    },
+    {
+      "id": "2f00013902a29b",
+      "url": "https://openai.com/index/replit",
+      "publishedAt": "2026-08-19",
+      "source": "OpenAI",
+      "title": "Replit推出免费模式，用GPT-5.6 Luna助力软件开发",
+      "summary": "Replit推出免费模式，借助GPT-5.6 Luna技术，让用户无需担心token成本即可将想法转化为实际软件。",
+      "category": "日常应用",
+      "importance": 45,
+      "why": "Replit通过免费模式降低软件开发门槛，让更多人可以尝试编程和软件开发。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Replit推出了名为Free Mode的新功能，该功能基于GPT-5.6 Luna技术，允许用户在不支付token费用的情况下，将创意转化为实际的软件。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Replit现在提供一个免费的软件开发模式，用户可以使用GPT-5.6 Luna来编写代码，而不需要担心费用问题，让软件开发变得更简单。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你对编程或软件开发感兴趣，但因为费用问题而犹豫，这个新功能可能会让你更容易开始尝试。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅基于发布方摘要，具体功能和使用方式请参考原文。此外，免费模式可能有使用限制，建议查看官方说明。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Replit expands access to software creation with GPT-5.6 Luna"
+    },
+    {
+      "id": "8393c843a171d7",
+      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+      "publishedAt": "2026-08-18",
+      "source": "OpenAI",
+      "title": "ChatGPT广告扩展至欧洲31国",
+      "summary": "ChatGPT广告服务正在扩展至欧洲31个市场，帮助广告主在用户浏览、比较和做决定时进行推广。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "广告扩展意味着更多欧洲用户可能接触到ChatGPT的广告内容。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "ChatGPT的广告服务正在扩展至欧洲的31个市场，这意味着广告主可以在用户浏览、比较和做决定的过程中投放广告。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "ChatGPT现在可以在欧洲更多国家投放广告，帮助商家在用户购物或做决定时推广自己的产品或服务。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是商家，可能会在欧洲更多国家看到ChatGPT广告帮助推广产品。如果你是用户，可能会在浏览信息时看到更多相关广告。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "广告扩展可能会影响欧洲市场的广告投放方式，但具体效果还需看实际运营情况。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "ChatGPT Ads expands across Europe"
     },
     {
       "id": "1357a9ae7911e1",
