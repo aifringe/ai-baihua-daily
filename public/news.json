@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-07T10:49:30.027636+00:00",
-  "lastCheckedAt": "2026-09-07T10:49:30.027636+00:00",
+  "updatedAt": "2026-09-08T00:52:35.876708+00:00",
+  "lastCheckedAt": "2026-09-08T00:52:35.876708+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -16,7 +16,7 @@
     },
     {
       "source": "Hugging Face",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Microsoft Research",
@@ -24,11 +24,11 @@
     },
     {
       "source": "Google News",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Bing News",
-      "ok": false
+      "ok": true
     },
     {
       "source": "TechCrunch AI",
@@ -40,6 +40,130 @@
     }
   ],
   "articles": [
+    {
+      "id": "68a0bfd9c0d822",
+      "url": "https://www.msn.com/en-in/general/general/artificial-intelligence-news-ai-model-fatigue-grows-as-openai-google-anthropic-and-meta-race-to-roll-out-new-models-at-breakneck-pace/ar-AA2bJkBB",
+      "publishedAt": "2026-09-07",
+      "source": "Bing News",
+      "title": "AI模型疲劳加剧，多家公司密集发布新模型",
+      "summary": "近期多家AI公司如OpenAI、Google、Anthropic和Meta在短时间内密集发布新模型，引发行业对模型疲劳的担忧。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "AI模型更新频繁，可能影响用户使用体验和行业资源分配。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "在短短一周内，多家全球领先的AI实验室如OpenAI、Google、Anthropic和Meta相继发布了新的AI模型，显示出AI领域竞争的激烈程度。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "多家大型科技公司最近接连推出新的AI模型，这表明AI技术发展速度非常快，但同时也可能让用户感到困惑或疲惫。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你经常使用AI工具，可能会发现新模型的更新频率很高，这可能影响你对现有工具的使用习惯，甚至需要适应新的功能。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "虽然这些更新可能带来更好的AI体验，但也要注意信息过载和资源浪费的问题。具体影响还需看实际应用情况。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Artificial intelligence news: AI model fatigue grows as OpenAI, Google, Anthropic and Meta race to roll out new models at breakneck pace"
+    },
+    {
+      "id": "2c307881eee413",
+      "url": "https://www.telefonica.com/en/communication-room/blog/people-centred-leadership-talent-artificial-intelligence/",
+      "publishedAt": "2026-09-07",
+      "source": "Bing News",
+      "title": "以人为本领导力成AI时代竞争优势",
+      "summary": "文章指出在人工智能时代，以人为本的领导力对推动创新、人才管理、业务转型和可持续增长至关重要。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "文章强调在AI技术快速发展的背景下，领导力风格对组织成功的影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章讨论了在人工智能迅速发展的时代，领导力风格如何影响企业的成功。特别强调了以人为本的领导方式在推动创新和组织变革中的作用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "文章认为，随着AI技术的普及，企业需要更注重人的因素，比如员工的创造力和协作能力，来保持竞争力。这种领导方式有助于激发团队潜力，推动组织发展。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是企业管理者或正在寻找职业发展方向，这篇文章提供了关于如何在AI时代有效领导团队的思路。它强调了领导力对组织成功的重要性，可能影响你的工作方式和职业规划。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章未具体说明如何实施以人为本的领导力，也没有提供实际案例或数据支持。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "People-centred leadership: the competitive advantage that will determine success in the age of artificial intelligence"
+    },
+    {
+      "id": "1bff6c58d0f9ab",
+      "url": "https://thenightly.com.au/world/un-rights-chief-volker-turk-warns-artificial-intelligence-could-pose-existential-risk-to-humanity-c-22837167",
+      "publishedAt": "2026-09-07",
+      "source": "Bing News",
+      "title": "联合国官员警告人工智能可能带来生存威胁",
+      "summary": "联合国人权事务高级专员沃尔克·特尔警告，人工智能可能对人类构成‘存在性风险’，呼吁相关企业降低潜在风险，包括服务、通信和民主的干扰。",
+      "category": "安全与规则",
+      "importance": 85,
+      "why": "该警告涉及人工智能对社会结构和人类生存的潜在影响，引发公众对技术安全的关注。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "联合国人权事务高级专员沃尔克·特尔警告，人工智能可能对人类构成‘存在性风险’，并呼吁相关企业降低潜在风险，包括服务、通信和民主的干扰。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "联合国官员担心人工智能技术可能对人类社会造成严重威胁，比如影响日常服务、沟通方式和民主制度，因此呼吁相关公司采取措施降低这些风险。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然目前人工智能对个人生活的影响有限，但若技术发展失控，可能会影响社会运行和民主制度，因此公众应关注相关讨论和政策动向。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "该警告基于联合国官员的发言，具体影响和应对措施需进一步观察。建议关注后续政策和企业行动，以了解实际影响。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "UN rights chief Volker Turk warns artificial intelligence could pose ‘existential risk’ to humanity"
+    },
+    {
+      "id": "8b8898d492e714",
+      "url": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+      "publishedAt": "2026-09-07",
+      "source": "TechCrunch AI",
+      "title": "AI术语解析：从“模糊递归”到常见概念",
+      "summary": "随着AI的发展，许多新术语和俚语涌现。本文提供一份术语词典，帮助读者理解常见AI相关词汇。",
+      "category": "日常应用",
+      "importance": 30,
+      "why": "了解AI术语有助于更好地理解技术发展和相关讨论。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章列举了AI领域中一些常见的术语和概念，如‘模糊递归’等，并提供了它们的定义，帮助读者理解这些术语的含义。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这篇文章解释了一些AI相关的专业术语，让普通读者也能明白这些词汇的意思，比如‘模糊递归’等。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你对AI技术感兴趣，或者在日常生活中接触到相关术语，了解这些定义能帮助你更清楚地理解技术内容。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于发布方摘要，未提供详细内容。如需深入了解，建议查看原文。解读仅基于摘要信息，细节请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Opaque recurrence, and other AI terms that you should probably know"
+    },
     {
       "id": "073b13b14ae013",
       "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
@@ -196,6 +320,37 @@
       "originalTitle": "Authors push back as publishers and agents make claims on Anthropic settlement"
     },
     {
+      "id": "529a241aa37ae6",
+      "url": "https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism/",
+      "publishedAt": "2026-09-05",
+      "source": "Bing News",
+      "title": "AI公司调整智能指数应对质疑",
+      "summary": "Artificial Analysis公司更新了其智能指数版本4.2，回应外界对其基准测试未能准确反映GPT-6 Astra实际进展的质疑。Astra的评分有所调整。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "公司调整评分体系可能影响用户对AI模型能力的判断。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Artificial Analysis公司发布了新版智能指数4.2，可能是为了回应外界对其之前测试未能准确评估GPT-6 Astra进展的批评。Astra的评分有所变化。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这家公司调整了它的AI能力评分系统，可能是为了更准确地反映GPT-6 Astra的实际表现。Astra的评分被重新计算了。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关注AI技术发展或使用相关产品，这次评分调整可能影响你对AI能力的认知。但具体影响还需看实际应用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "此次调整的具体内容和影响尚未详细说明，建议关注官方后续解释。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Artificial Analysis overhauls its Intelligence Index after GPT-6 Astra scoring drew skepticism"
+    },
+    {
       "id": "6ef2aef9012f0d",
       "url": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
       "publishedAt": "2026-09-05",
@@ -287,6 +442,37 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure"
+    },
+    {
+      "id": "df26ea7a1cc428",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPb0tDakQ1cS1zU2RZTnJTQXpCdkVMR0lPbUVPR0FDclVINm82SXNLVU1rbDJTb2VURmo3TGk3MVNCUXI0aXd1Qm11WGJzemJ1NGVJS3V4STVXQWR0ZGRtclNrM25fMi0wazRxMTNxY2V6NUg2LUttYkR1SmJyTl9QX0lyaHhJZEJaSlU1M2dn?oc=5",
+      "publishedAt": "2026-09-04",
+      "source": "Google News",
+      "title": "Gemini 推出 Lyria 3.5 音乐创作工具",
+      "summary": "Google 发布 Gemini 的最新音乐创作工具 Lyria 3.5，帮助用户制作高质量音乐作品。该工具旨在提升音乐制作效率和创意表达。",
+      "category": "模型进展",
+      "importance": 40,
+      "why": "Gemini 推出新音乐创作工具，可能影响音乐制作流程和创意表达方式。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 发布了 Gemini 的最新版本 Lyria 3.5，这是一个音乐创作工具，旨在帮助用户制作高质量的音乐作品。该工具可能包含新的功能和改进，以提升音乐制作的效率和创意表达。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Google 推出了一款新的音乐创作工具，叫 Lyria 3.5，它可以帮助用户更容易地制作出更好的音乐作品。这个工具可能让音乐制作变得更简单，也更有创意。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是音乐创作者或对音乐制作感兴趣，这个工具可能会对你有帮助。它可能让创作过程更高效，但也需要你花时间去学习和适应新工具。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前没有提到 Lyria 3.5 的具体功能或使用方式，因此无法判断它是否适合你的需求。建议查看官方资料或试用该工具以了解更多信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Create your best tracks yet with Lyria 3.5 in Gemini. - blog.google"
     },
     {
       "id": "493e99f34e3a24",
@@ -1312,6 +1498,37 @@
       "originalTitle": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT"
     },
     {
+      "id": "d753549be72e70",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRktHdVJiSWtrU2l4ZnJ6a3R5OXo1QzVoWjF0WjMwTUFkU1hPeGFKRC03UWpMMGNkYzdidTlBWUJacVFpRGxuMDRaNW5xcm9DRmxWSnpyZTNiTHhpb3ZjT2xlV1lJdXIwR2NNUEljcjAxenlKcDhackkyc1dUazdYeDU3SngySEFmcVE?oc=5",
+      "publishedAt": "2026-09-01",
+      "source": "Google News",
+      "title": "AWS推出Claude Fable 5.1模型",
+      "summary": "AWS宣布推出Claude Fable 5.1模型，这是Claude系列的最新版本。该模型可能在性能和功能上有所提升，但具体细节未说明。",
+      "category": "模型进展",
+      "importance": 30,
+      "why": "Claude Fable 5.1是Claude系列的最新版本，可能在性能和功能上有改进，但具体细节未说明。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "AWS宣布推出Claude Fable 5.1模型，这是Claude系列的最新版本。该模型可能在性能和功能上有所提升，但具体细节未说明。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "AWS推出了Claude Fable 5.1模型，这是Claude系列的最新版本。该模型可能在性能和功能上有改进，但具体细节没有详细说明。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用AWS提供的AI服务，可能会受益于Claude Fable 5.1的改进。但目前没有具体信息说明这些改进如何影响实际应用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前没有详细说明Claude Fable 5.1的具体改进内容，建议关注AWS的官方公告或相关技术文档以获取更多信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing Claude Fable 5.1 on AWS | Amazon Web Services - aws.amazon.com"
+    },
+    {
       "id": "f01628e078e142",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8wODA3NURfTHVDbUZnSE12Q3A0TFpvYjhDLU1rT1NVZ2xmM2Z0VWJPc1ZRM0RVVkpIckh6b0ROcXIxTHgzODZWYV9yekV1dTJiMk1KbkVWcThSeUYxcUpDUy1KZw?oc=5",
       "publishedAt": "2026-09-01",
@@ -1678,6 +1895,68 @@
         }
       ],
       "editor": "首期来源核对"
+    },
+    {
+      "id": "bff323c46e191a",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE16UjRSUWU0dTZMbzg5a3Y5djU1d08teE55Wl9yM0N4ZjhacHFBS0thanQyTHZnN0lQVmNIWjFobV9hMS1xOE9ud0szbVVqazJwa0lIUzF4MVJrWFRMcjFRSU5OUlRIY1JyNXFkbEtrZkwyNDYxVEUw?oc=5",
+      "publishedAt": "2026-08-31",
+      "source": "Google News",
+      "title": "Grok和ChatGPT加入五角大楼企业AI门户",
+      "summary": "Grok和ChatGPT加入五角大楼的企业生成式AI门户，与Gemini一同提供AI服务。此举旨在提升国防领域的AI应用。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "五角大楼引入多个AI模型，可能推动国防领域AI技术的应用和合作。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Grok和ChatGPT已加入五角大楼的企业生成式AI门户，与Gemini一同提供AI服务。此举旨在提升国防领域的AI应用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "五角大楼现在可以使用Grok、ChatGPT和Gemini等AI模型，来帮助处理国防相关的任务和数据。这可能让AI在军事和安全领域发挥更大作用。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关心AI在军事或安全领域的应用，这可能是一个值得关注的发展。但对普通用户来说，目前影响不大。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "需留意这些AI模型在国防中的具体应用，以及是否会对国家安全或数据隐私产生影响。详情请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Grok and ChatGPT join Gemini in Pentagon’s enterprise genAI portal - DefenseScoop"
+    },
+    {
+      "id": "9a1b31c6175aba",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQXzVpMzFqZGZha2pvWUNWQ3FlMkwzWEFYQTNKZEhJVUYwVExZWkNqanJ5Z21Qc1A4c0dGMDhySzhKTlNWVFE0VXhaclFhWWlaX25CV0E3Vnc2amxzMDE3M0laUWFabXJkMUY2N2JfQVc5MnZUa1NtY04tWS05WlNTeC1YZF9lV1JIRWx0V3pxbnVSZ0hnOWdBelkyREliYS1Pai1TVVRsMXNNLUdISmfSAbMBQVVfeXFMT29zSVN3TU54MFpUaTRyb252VUFCejJDVm5YV1FUREE0RENXLUZjWllwT1ZvTHNRX1phdDhOMUZNMlRxSUdJblpxU3pfR204ZWpKSGVmS3Y3Ynlhamk2WFdpNFZ1SlhiZG10c1RhTllCT2lnZVdHN0dQWUllV0g5ZHFYazBLUnNxVTluajlKdUl5SW92b0t2cVdnQl9DcjdWdmtmejluMk52RDZNMXFiSm10MVE?oc=5",
+      "publishedAt": "2026-08-31",
+      "source": "Google News",
+      "title": "Gemini否认对Earn借贷项目崩溃负责",
+      "summary": "Gemini被仲裁员判定不应对Earn借贷项目崩溃负责。该裁决由CNBC报道。",
+      "category": "行业变化",
+      "importance": 30,
+      "why": "此裁决可能影响加密货币平台的责任认定及用户权益保护。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Gemini被仲裁员判定不应对Earn借贷项目崩溃负责。仲裁员认为Gemini在该项目中没有直接责任。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Gemini被裁定不应对Earn借贷项目失败负责，意味着他们可能不需承担相关后果。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "此裁决可能影响用户对加密货币平台的信任，也可能影响未来类似项目的责任认定。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "需关注后续法律程序及对用户权益保护的影响。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Crypto exchange Gemini not at fault for collapse of Earn lending program, arbitrator says - CNBC"
     },
     {
       "id": "8a7cdd78fd4838",
@@ -2082,6 +2361,68 @@
       "editor": "首期来源核对"
     },
     {
+      "id": "34e62ff4c7cf4d",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+      "publishedAt": "2026-08-26",
+      "source": "OpenAI",
+      "title": "OpenAI 发布 Hugging Face 安全事件调查结果",
+      "summary": "OpenAI 公布了 Hugging Face 安全事件的调查结果，并介绍了加强 AI 模型安全、监控和对齐的措施。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "OpenAI 的调查结果和安全措施可能影响 AI 模型的安全性和使用规范。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 公布了 Hugging Face 安全事件的调查结果，涉及 AI 模型的安全性问题。他们表示正在采取措施加强模型的安全、监控和对齐。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 发现 Hugging Face 在 AI 模型安全方面存在问题，并正在采取行动来提升模型的安全性和监控机制。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用或开发 AI 模型，这些安全措施可能影响模型的使用方式和安全性。但具体影响还需看实际应用情况。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅基于 OpenAI 的摘要，具体细节和影响需参考完整报告。建议关注后续发布的详细信息和更新。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The Hugging Face incident and the road ahead"
+    },
+    {
+      "id": "76c95cd8529870",
+      "url": "https://openai.com/index/loveholidays",
+      "publishedAt": "2026-08-26",
+      "source": "OpenAI",
+      "title": "Loveholidays 用 Codex 让人人成为开发者",
+      "summary": "Loveholidays 利用 OpenAI Codex 技术，让企业员工无需专业背景也能参与软件开发，提升团队将创意转化为产品的效率。",
+      "category": "行业变化",
+      "importance": 60,
+      "why": "这项技术改变了传统软件开发模式，让非技术人员也能参与开发，提升企业创新能力。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Loveholidays 采用 OpenAI Codex 技术，使企业员工无需编程知识也能参与软件开发，加快产品开发流程。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Loveholidays 用 AI 工具让普通员工也能写代码，不用专业程序员也能把想法变成产品，提升团队效率。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能让企业内部更多人参与产品开发，减少对专业程序员的依赖，提升整体创新能力。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体效果和实际应用情况需参考完整报道。解读基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "How loveholidays is making everyone a builder with Codex"
+    },
+    {
       "id": "832a12c8f33a10",
       "url": "https://openai.com/index/learning-never-stops",
       "publishedAt": "2026-08-26",
@@ -2297,6 +2638,68 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Intelligent transcription with Gemini 3.5 Transcribe"
+    },
+    {
+      "id": "51cfe3db04ed0b",
+      "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+      "publishedAt": "2026-08-25",
+      "source": "OpenAI",
+      "title": "OpenAI 解释智能技术如何更高效",
+      "summary": "OpenAI 财务总监 Sarah Friar 说明芯片、计算、模型和产品等技术进步如何共同作用，使智能技术更实用、规模更大且成本更低。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "这项技术进步可能影响多个行业，提高效率并降低成本。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 的 CFO Sarah Friar 说明了在芯片、计算、模型和产品等多个方面取得的技术进步，这些进步共同作用，使得智能技术能够以更大的规模、更低的成本提供更实用的服务。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 的财务总监解释了他们如何通过改进硬件、计算能力、模型和产品，让智能技术变得更强大、更便宜，同时也能服务更多人。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这些技术进步可能让日常使用的智能服务变得更便宜、更高效，比如语音助手、翻译工具或推荐系统等，可能会让这些服务更普及、更实用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前的信息仅基于 OpenAI 的摘要，具体细节和实际影响需参考完整文章。技术进步可能带来效率提升，但具体效果因人而异。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The full stack behind abundant intelligence"
+    },
+    {
+      "id": "b9406ae170bd91",
+      "url": "https://openai.com/index/jalapeno-first-results",
+      "publishedAt": "2026-08-25",
+      "source": "OpenAI",
+      "title": "OpenAI发布Jalapeño芯片，提升AI推理效率",
+      "summary": "OpenAI推出定制推理芯片Jalapeño，宣称其在AI推理速度和效率方面表现突出，能提供更高的吞吐量和更低的延迟。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "Jalapeño芯片可能对AI推理性能有提升，但具体影响需看实际应用。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI宣布其首款定制推理芯片Jalapeño已取得初步成果，该芯片旨在提高AI推理的速度和效率，同时降低能耗。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI推出了一款专门用于AI推理的芯片，声称它能让AI处理任务更快、更省电，同时能同时处理更多任务。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能影响未来AI服务的运行效率，比如聊天机器人或图像识别工具，但目前还不清楚普通用户是否会直接感受到变化。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅限于发布方的摘要，具体性能和实际应用效果需等待更多数据。解读基于现有信息，细节请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference"
     },
     {
       "id": "ab5c691f4b17a6",
