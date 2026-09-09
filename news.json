@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-08T08:15:05.253878+00:00",
-  "lastCheckedAt": "2026-09-08T08:15:05.253878+00:00",
+  "updatedAt": "2026-09-09T00:57:01.319441+00:00",
+  "lastCheckedAt": "2026-09-09T00:57:01.319441+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -16,7 +16,7 @@
     },
     {
       "source": "Hugging Face",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Microsoft Research",
@@ -24,11 +24,11 @@
     },
     {
       "source": "Google News",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Bing News",
-      "ok": true
+      "ok": false
     },
     {
       "source": "TechCrunch AI",
@@ -40,6 +40,378 @@
     }
   ],
   "articles": [
+    {
+      "id": "503e9c2326e78f",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "publishedAt": "2026-09-08",
+      "source": "OpenAI",
+      "title": "GPT-5.6 Sol助力量子计算实验",
+      "summary": "OpenAI展示MIT研究员如何利用GPT-5.6 Sol与Codex自动运行量子计算实验，分析结果并校准量子比特。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "量子计算是未来科技的重要方向，GPT-5.6 Sol的辅助可能加速相关研究进展。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "MIT的研究人员使用GPT-5.6 Sol与Codex工具，实现了量子计算实验的自动化运行，包括实验分析和量子比特校准。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "研究人员借助AI工具，让计算机自动执行复杂的量子实验，并分析结果，调整实验参数，提高效率。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能推动量子计算的发展，未来或影响加密技术、药物研发等领域，但目前仍处于研究阶段，对普通用户影响不大。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅限于发布方摘要，具体技术细节和实际应用效果需参考完整文章。AI在量子计算中的作用仍需进一步验证。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "How GPT-5.6 Sol helps run quantum computing experiments"
+    },
+    {
+      "id": "1dcea8b0f8acab",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "publishedAt": "2026-09-08",
+      "source": "OpenAI",
+      "title": "ChatGPT 图像 2.5 版本发布",
+      "summary": "OpenAI 推出 ChatGPT 图像 2.5 版本，帮助用户将想法、草图和参考照片转化为更个性化、更精致的图像。",
+      "category": "模型进展",
+      "importance": 40,
+      "why": "ChatGPT 图像 2.5 版本的推出，可能对创意设计、内容创作等领域产生一定影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 宣布推出 ChatGPT 图像 2.5 版本，该版本能够帮助用户将他们的想法、草图和参考照片转化为更个性化、更精致的图像。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "ChatGPT 图像 2.5 版本可以让用户更容易地把他们的创意变成图像，比如把草图变成更清晰的图片，或者把照片变成更符合自己想法的版本。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是设计师、插画师或者经常需要制作图像的人，这个新版本可能会帮助你更高效地完成工作。但目前还不清楚具体功能是否对普通用户有明显帮助。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前没有提到新版本的具体功能细节，也没有说明是否对所有用户开放。建议关注官方信息或实际使用体验。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing ChatGPT Images 2.5"
+    },
+    {
+      "id": "a58bb6dba21b70",
+      "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+      "publishedAt": "2026-09-08",
+      "source": "TechCrunch AI",
+      "title": "黑客窃取Claude用户令牌",
+      "summary": "有用户发现自己的Claude账户在未使用的情况下仍消耗令牌，Anthropic已提醒用户注意黑客行为。",
+      "category": "安全与规则",
+      "importance": 45,
+      "why": "用户账户被非法使用可能导致额外费用或隐私泄露，需提高警惕。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "有Claude用户发现自己的账户在未使用的情况下仍消耗令牌，这可能意味着账户被黑客入侵。Anthropic已向用户发出警告，提醒他们注意安全风险。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "有人偷偷用你的Claude账户，导致你花钱但没用。Anthropic已经提醒大家注意这种风险，防止账户被非法使用。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用Claude，可能会遇到账户被非法使用的情况，导致不必要的费用或隐私泄露。建议你检查账户安全，避免类似问题。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "注意账户是否有异常活动，如令牌消耗异常或未授权的使用记录。保持账户安全，避免黑客利用你的账户进行非法操作。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Hackers are stealing Claude tokens from subscribers"
+    },
+    {
+      "id": "7948c39493cbd6",
+      "url": "https://openai.com/index/teen-development-research-grants",
+      "publishedAt": "2026-09-08",
+      "source": "OpenAI",
+      "title": "OpenAI 提供 500 万美金资助 AI 与青少年发展研究",
+      "summary": "OpenAI 启动一项 500 万美金的资助计划，支持独立研究探讨生成式 AI 对青少年发展、福祉和安全的影响。申请现已开放。",
+      "category": "行业变化",
+      "importance": 60,
+      "why": "这项资助计划旨在推动对 AI 对青少年影响的研究，可能影响相关政策和教育方式。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 启动了一项 500 万美金的资助计划，支持独立研究探讨生成式 AI 对青少年发展、福祉和安全的影响。申请现已开放。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 给研究人员提供资金，研究 AI 对青少年成长、心理健康和安全的影响。这可能是为了更好地了解 AI 在青少年生活中的作用。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项研究可能帮助家长和教育者更了解 AI 如何影响青少年，从而制定更合适的教育和管理策略。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "研究结果可能影响未来 AI 的使用规范和青少年保护措施。但具体影响还需等待研究结果。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Funding grants for new research into AI and teen development"
+    },
+    {
+      "id": "47690fe8e10502",
+      "url": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
+      "publishedAt": "2026-09-08",
+      "source": "TechCrunch AI",
+      "title": "Chrome 开始每两周更新一次",
+      "summary": "Google 调整 Chrome 浏览器的更新频率，以更快地推出安全补丁和新功能。此举是为了应对 AI 技术带来的安全挑战。",
+      "category": "行业变化",
+      "importance": 60,
+      "why": "Chrome 更新频率加快，可能影响用户的安全性和使用体验。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 已调整 Chrome 浏览器的更新频率，从原来的更长时间间隔改为每两周一次。此举是为了更快地推出安全补丁和新功能，以应对 AI 技术带来的安全挑战。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Chrome 浏览器现在每两周就会更新一次，这样可以更快地修复安全漏洞并添加新功能。这可能是为了应对 AI 技术带来的安全威胁，让浏览器更安全、更高效。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用 Chrome 浏览器，可能会更频繁地收到更新提示，这有助于提升浏览器的安全性和稳定性。但更新频率加快也可能带来一些不便，比如需要更频繁地检查更新。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前的信息仅基于发布方的摘要，具体细节请参考原文。更新频率的变化可能会影响浏览器的使用体验，但具体影响还需进一步观察。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape"
+    },
+    {
+      "id": "a00fc889a2dd29",
+      "url": "https://openai.com/index/the-work-now-within-reach",
+      "publishedAt": "2026-09-08",
+      "source": "OpenAI",
+      "title": "AI能力提升让工作更易实现",
+      "summary": "OpenAI表示，更强大且价格更低的AI技术能让个人和企业完成更多工作，同时让增长更加经济。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "这项技术可能让AI在更多领域发挥作用，但具体影响还需进一步观察。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI表示，他们正在开发更强大且价格更低的AI技术，这可能让个人和企业完成更多工作，同时让增长更加经济。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI认为，AI技术变得更强大且更便宜，这可能让更多人和企业利用AI完成任务，从而提高效率和降低成本。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能让AI在更多领域发挥作用，比如办公、教育或客户服务，但具体影响还需进一步观察。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体如何实现以及实际效果还需看后续发展。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The Work Now Within Reach"
+    },
+    {
+      "id": "5e12b9068ccd13",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/route-66-small-businesses/",
+      "publishedAt": "2026-09-08",
+      "source": "Google",
+      "title": "谷歌助力小企业借助AI发展",
+      "summary": "谷歌推出新计划，帮助小企业利用人工智能提升运营效率。计划包括培训、工具和资源支持，旨在帮助小企业更好地适应数字化趋势。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "小企业是经济的重要组成部分，借助AI提升效率有助于其在竞争中生存。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌宣布推出一项新计划，旨在帮助小企业利用人工智能技术提升运营效率。该计划包括培训、工具和资源支持，帮助小企业更好地适应数字化趋势。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌正在帮助小企业使用AI技术，比如自动化任务、数据分析等，让它们更高效地运营。这包括提供培训和工具，让小企业更容易上手。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是小企业主，可能会从这项计划中受益，比如获得免费的AI工具或培训，帮助你节省时间和成本。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "计划的具体内容和实施细节尚未公布，建议关注谷歌官方信息或相关报道。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Helping small businesses win with AI"
+    },
+    {
+      "id": "f0e27f432f48fb",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "publishedAt": "2026-09-08",
+      "source": "Google DeepMind",
+      "title": "AlphaGenome Atlas：预测人类基因组所有DNA字母变化",
+      "summary": "Google DeepMind发布AlphaGenome Atlas，该工具可预测人类基因组中90亿个单字母DNA变异的分子影响。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "AlphaGenome Atlas能帮助科学家理解基因变异对健康的影响，推动精准医疗发展。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google DeepMind推出了AlphaGenome Atlas，这是一个预测工具，可以分析人类基因组中90亿个单字母DNA变异的分子影响。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "AlphaGenome Atlas就像是一个基因变异的预测地图，能帮助科学家了解哪些DNA变化可能对身体产生影响，从而更好地研究疾病和治疗方案。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能帮助医生更准确地诊断疾病，制定个性化治疗方案，但目前具体应用还需进一步研究和验证。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅基于发布方摘要，具体功能和影响需参考完整文章。解读仅基于现有信息，实际效果可能因情况而异。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome"
+    },
+    {
+      "id": "e623e2c868796f",
+      "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+      "publishedAt": "2026-09-08",
+      "source": "TechCrunch AI",
+      "title": "Cognition估值达480亿美元，显示投资者认为AI编程非赢家通吃",
+      "summary": "Cognition公司估值达到480亿美元，表明投资者认为AI编程领域并非由单一公司主导。其估值高于Cursor在出售前的水平。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "Cognition的高估值反映了市场对AI编程领域的持续兴趣和投资信心。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Cognition公司最近的估值达到480亿美元，显示出投资者对其在AI编程领域的前景持乐观态度。这一估值高于Cursor在出售前的水平，表明市场对AI编程市场的潜力有不同看法。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Cognition公司现在价值480亿美元，这说明投资者认为AI编程市场不会被一家公司垄断。他们觉得这个领域还有很大的发展空间，所以愿意投资。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是开发者或对AI工具感兴趣，这可能意味着未来会有更多AI编程工具出现，竞争会更激烈。但目前还不清楚具体会带来什么变化。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "虽然Cognition的高估值显示出市场信心，但具体影响还需看未来产品表现和市场竞争情况。目前信息有限，建议关注后续发展。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market"
+    },
+    {
+      "id": "0cfe4d849c9b73",
+      "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+      "publishedAt": "2026-09-08",
+      "source": "TechCrunch AI",
+      "title": "Meta推出Muse AI助手，用户数据信任成关键",
+      "summary": "Meta推出名为Muse的AI助手，可访问用户邮箱、日历、支付和健康服务等数据。此举被视为Meta在消费者AI领域的重要尝试，但用户是否信任Meta处理个人数据仍是关键问题。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "Muse AI助手的推出涉及用户数据访问，引发对隐私和信任的讨论，对用户隐私安全有直接影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Meta推出了名为Muse的AI助手，该助手可以访问用户的邮箱、日历、支付信息和健康服务等数据。这是Meta在消费者AI领域的重要一步，但同时也引发了用户对数据安全和隐私的担忧。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Meta推出了一款新的AI助手，可以帮用户管理日程、支付和健康信息等。但用户是否愿意让Meta访问这些敏感数据，仍是未知数。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用Meta的产品，可能会被要求授权Muse访问你的个人数据。这可能影响你的隐私安全，因此需要谨慎对待。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "Muse的推出可能影响用户对Meta的信任度。此外，Meta如何保护用户数据，以及用户是否愿意授权访问，都是需要关注的问题。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Meta debuts its Muse AI agent. Will consumers trust it?"
+    },
+    {
+      "id": "16673d70457dfb",
+      "url": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
+      "publishedAt": "2026-09-08",
+      "source": "MIT Technology Review",
+      "title": "AI创业者开发能预判意外的智能代理",
+      "summary": "AI创业者丹尼·哈弗纳正在开发一种能提前规划应对意外情况的智能代理技术。他的初创公司目前处于保密阶段，办公环境简陋，但技术潜力引人关注。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "这项技术可能提升AI在复杂环境中的适应能力，但目前尚无实际应用案例。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "AI创业者丹尼·哈弗纳正在研发一种能提前规划应对意外情况的智能代理技术。他的初创公司目前处于保密阶段，办公环境简陋，但技术潜力引人关注。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这位AI创业者正在开发一种能提前预测并应对意外情况的智能系统。虽然公司还处于早期阶段，但这项技术可能在未来帮助AI更好地处理复杂和不确定的情况。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能在未来帮助AI更好地适应复杂和不确定的环境，比如自动驾驶或智能助手。但目前还看不到具体应用，对普通用户影响尚不明确。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前技术仍处于早期阶段，没有实际应用案例。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "This AI entrepreneur is developing agents that can plan ahead for the unexpected"
+    },
+    {
+      "id": "fa6db35c0b9bc2",
+      "url": "https://blog.google/products-and-platforms/products/education/missouri-state-education-partnership/",
+      "publishedAt": "2026-09-08",
+      "source": "Google",
+      "title": "密苏里州与谷歌合作开展AI职业培训",
+      "summary": "密苏里州与谷歌合作，推动AI和职业培训项目，旨在提升学生技能，促进就业。合作内容包括教育资源和实践机会。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "AI和职业培训合作可能影响教育模式和就业市场，对相关行业有一定影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "密苏里州与谷歌合作，推出AI和职业培训项目，旨在通过教育资源和实践机会提升学生技能，促进就业。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "密苏里州和谷歌一起办培训，教学生用AI技术找工作，提供学习和实践的机会，帮助他们更好地就业。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是学生或正在找工作的年轻人，这个合作可能为你提供更多学习AI技能的机会，帮助你提升竞争力。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体培训内容和实施细节未说明，建议关注官方发布或相关报道获取更多信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Missouri and Google partner on AI and career training"
+    },
     {
       "id": "b3b513ec5a6f8d",
       "url": "https://businessday.ng/life/article/the-future-of-real-estate-practice-in-the-age-of-artificial-intelligence/",
