@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-10T01:02:17.849528+00:00",
-  "lastCheckedAt": "2026-09-10T01:02:17.849528+00:00",
+  "updatedAt": "2026-09-11T00:21:50.597465+00:00",
+  "lastCheckedAt": "2026-09-11T00:21:50.597465+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -12,7 +12,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Hugging Face",
@@ -40,6 +40,316 @@
     }
   ],
   "articles": [
+    {
+      "id": "39842fa0b34b37",
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "publishedAt": "2026-09-10",
+      "source": "OpenAI",
+      "title": "研究人员用Codex和ChatGPT寻找新抗菌分子",
+      "summary": "César de la Fuente的实验室利用Codex和ChatGPT搜索现存和已灭绝的基因组，寻找对抗耐药感染的新抗菌分子。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "这项研究展示了AI在药物研发中的潜力，可能帮助解决抗生素耐药性问题。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "César de la Fuente的实验室使用Codex和ChatGPT这两个AI工具，从现存和已灭绝的生物基因组中寻找可能具有抗菌作用的分子。这些分子可能用于对抗耐药性感染。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "研究人员借助AI工具，分析大量生物基因数据，试图找到新的抗菌药物。这些药物可能帮助治疗那些对现有抗生素产生抗性的细菌感染。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项研究可能在未来帮助开发新的抗生素，从而减少因耐药性导致的医疗问题。但目前这些成果还处于研究阶段，尚未实际应用于临床。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "研究结果基于AI分析，实际效果和安全性仍需进一步验证。此外，AI在药物研发中的应用仍处于探索阶段，具体成效还需长期观察。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules"
+    },
+    {
+      "id": "0bb946f0c42153",
+      "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "publishedAt": "2026-09-10",
+      "source": "OpenAI",
+      "title": "OpenAI 推出金融领域专用 ChatGPT",
+      "summary": "OpenAI 发布针对金融行业的 ChatGPT 服务，整合金融数据与 GPT-6 Astra，用于研究、建模及面向客户的材料制作。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "金融行业可能因此获得更精准的分析工具，提升服务效率。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 推出了专门针对金融行业的 ChatGPT 服务，结合了金融数据和 GPT-6 Astra 技术，用于研究、建模和制作面向客户的材料。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 为金融行业开发了专门的 AI 工具，能帮助分析数据、制作报告，可能提升金融服务的效率和准确性。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是金融从业者，可能会用到这个工具来提高工作效率。普通用户可能不会直接接触到这项服务。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体功能和使用方式需参考官方资料。解读基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing ChatGPT for Financial Services"
+    },
+    {
+      "id": "b32e9b84713539",
+      "url": "https://openai.com/index/introducing-the-agents-api",
+      "publishedAt": "2026-09-10",
+      "source": "OpenAI",
+      "title": "OpenAI 推出 Agents API 服务",
+      "summary": "OpenAI 发布 Agents API，允许开发者构建和部署云端代理服务。该服务基于 Codex 引擎，支持任务协调、长会话和工具调用。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "这项服务可能帮助开发者更高效地构建自动化任务系统。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 推出了 Agents API，这是一个云端代理构建工具，允许开发者创建和部署代理服务。该服务基于 Codex 引擎，支持任务协调、长会话和工具调用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 提供了一个工具，让开发者可以创建能执行任务的代理程序。这些代理可以长时间运行，并且能调用外部工具完成复杂任务。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是开发者，这项服务可能帮助你更高效地构建自动化任务系统。但对于普通用户，目前可能还不会直接影响到日常使用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前没有提到具体功能细节或使用门槛，建议关注 OpenAI 官方文档获取更多信息。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing the Agents API"
+    },
+    {
+      "id": "b8a75fb67d8179",
+      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "publishedAt": "2026-09-10",
+      "source": "OpenAI",
+      "title": "OpenAI推出GPT-Live-1语音API提升对话自然度",
+      "summary": "OpenAI推出GPT-Live-1语音API，支持自然流畅的全双工语音对话，具备更强的指令遵循能力、自定义语音和电话支持功能。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "这项更新让开发者能通过API实现更真实的语音交互体验，适用于客服、虚拟助手等场景。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI推出了GPT-Live-1语音API，让开发者可以通过API实现自然流畅的全双工语音对话。该API支持更强的指令遵循能力、自定义语音和电话支持功能，使语音交互更加贴近真实对话。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI新推出的语音API能让语音对话更像真人交流，支持双向实时对话，还能根据需求定制语音，甚至支持电话接入。这能让语音助手、客服系统等应用更自然、更实用。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是开发者，这项更新可能让你的应用更接近真实对话，提升用户体验。但目前还不清楚具体应用场景和使用门槛，需要进一步了解API的细节。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体功能和使用方式需参考官方文档。此外，语音交互涉及隐私和安全问题，需确保数据处理符合相关法规。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Build more natural voice experiences with GPT‑Live‑1 in the API"
+    },
+    {
+      "id": "ceadd21f5d3a2d",
+      "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "publishedAt": "2026-09-10",
+      "source": "Google",
+      "title": "Google分享跑步比赛训练技巧",
+      "summary": "Google发布文章，介绍三种方法帮助用户为下一场大比赛做准备，内容涉及训练策略和使用搜索功能优化训练计划。",
+      "category": "日常应用",
+      "importance": 30,
+      "why": "文章提供实用训练建议，适合跑步爱好者参考。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google发布了一篇关于如何为下一场大比赛做准备的文章，介绍了三种方法，包括利用搜索功能优化训练计划。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Google分享了三个实用的跑步训练技巧，帮助用户更好地准备比赛，比如如何利用搜索功能来制定训练计划。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是跑步爱好者，这篇文章可能对你有帮助，可以学习如何更有效地准备比赛。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于Google的摘要，具体细节请查看原文。建议结合自身情况选择适合的训练方法。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "3 ways to prep for your next big race with Search"
+    },
+    {
+      "id": "43169485cbc707",
+      "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+      "publishedAt": "2026-09-10",
+      "source": "TechCrunch AI",
+      "title": "Anthropic指控中国AI公司进行蒸馏攻击",
+      "summary": "Anthropic发布报告称，中国多家AI公司持续进行蒸馏攻击，近期竞争加剧导致此类行为上升。",
+      "category": "安全与规则",
+      "importance": 45,
+      "why": "蒸馏攻击可能影响AI模型的安全性，引发行业对技术滥用的担忧。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Anthropic发布报告，指控中国多家AI公司持续进行蒸馏攻击，这种行为在最近几个月随着竞争加剧而上升。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Anthropic称，中国的一些AI公司正在使用一种技术手段，试图从其他公司的模型中获取知识，这可能对模型的安全性和原创性造成影响。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关心AI技术的安全性或对AI行业的发展趋势感兴趣，这项指控可能值得关注。但目前尚无具体影响普通用户的信息。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅基于发布方摘要，具体细节和影响需参考原文。建议关注后续行业动态和相关公司的回应。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek"
+    },
+    {
+      "id": "17e434cbaab32a",
+      "url": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
+      "publishedAt": "2026-09-10",
+      "source": "TechCrunch AI",
+      "title": "Meta AI应用Muse成美国第二大App",
+      "summary": "Meta最新推出的AI应用Muse在美国的下载量和使用量迅速增长，目前排名第二。尽管起步较慢，但其表现优于公司其他部分产品。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "Muse的快速上升显示Meta在AI应用领域的竞争力，可能影响行业格局。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Meta最新推出的AI应用Muse在美国的下载量和使用量迅速增长，目前排名第二。尽管起步较慢，但其表现优于公司其他部分产品。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Meta推出的新AI应用Muse在美国市场表现不错，下载量和使用量增长迅速，目前排名第二。虽然起步比其他产品慢，但发展势头良好。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "Muse的快速上升可能意味着更多AI工具进入市场，未来可能会有更多类似应用出现，影响用户的选择和使用习惯。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "Muse的表现可能影响Meta在AI领域的战略，同时需要注意其数据隐私和使用规范。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Meta’s AI agent Muse is now the No. 2 app in the US"
+    },
+    {
+      "id": "51b37025f16db4",
+      "url": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
+      "publishedAt": "2026-09-10",
+      "source": "TechCrunch AI",
+      "title": "Anthropic称恶意AI讨厌验证码",
+      "summary": "Anthropic表示，恶意AI与人类一样讨厌验证码，这揭示了AI在绕过安全验证方面的挑战。该研究通过模拟AI的思维过程，展示了其如何试图伪装成人类。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "这项研究揭示了AI在绕过验证码方面的能力，对网络安全和身份验证系统有潜在影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Anthropic发布了一项研究，指出恶意AI与人类一样讨厌验证码。他们通过模拟AI的思维过程，展示了AI如何试图绕过这些安全验证机制，以伪装成人类。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这项研究显示，AI在尝试欺骗系统时，也会像人类一样对验证码感到困扰。这说明AI在模仿人类行为时，仍然存在一些难以克服的障碍。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项研究可能影响你日常使用互联网时遇到的验证码体验。如果AI能更有效地绕过这些验证，可能会对网络安全造成威胁，需要更先进的防护措施。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "研究仅基于发布方摘要，具体细节请参考原文。AI在模仿人类行为时的局限性，可能对安全验证系统提出新的挑战，值得进一步关注。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Anthropic reveals rogue AI agents hate CAPTCHAs, just like you"
+    },
+    {
+      "id": "da1eeb0d17fa86",
+      "url": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+      "publishedAt": "2026-09-10",
+      "source": "TechCrunch AI",
+      "title": "印度Pocket FM收入翻倍达5亿美元",
+      "summary": "印度音频平台Pocket FM利用AI生成93%的音频内容，使内容制作成本降低80倍，推动收入增长至5亿美元。",
+      "category": "行业变化",
+      "importance": 75,
+      "why": "AI技术显著降低了内容制作成本，推动平台收入大幅增长。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "印度音频平台Pocket FM利用AI技术生成93%的新内容，大幅降低了内容制作成本，使收入增长至5亿美元。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Pocket FM通过AI生成大部分音频内容，使得制作成本大幅下降，从而实现了收入的快速增长。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能影响音频内容的生产方式，使更多人能够以低成本制作和发布内容，但也可能对传统内容创作者带来竞争压力。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "需注意AI生成内容的质量和版权问题，以及平台如何平衡AI与人工内容的比例。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "India’s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content"
+    },
+    {
+      "id": "321672b4ff708a",
+      "url": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+      "publishedAt": "2026-09-10",
+      "source": "MIT Technology Review",
+      "title": "AI供电问题暴露数据中心隐患",
+      "summary": "美国弗吉尼亚州阿什本地区数据中心供电系统多次出现故障，引发对AI基础设施稳定性的担忧。文章指出，当前AI供电依赖传统架构，存在潜在风险。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "数据中心供电稳定性直接影响AI运行，事件揭示现有架构的脆弱性。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "2026年7月，美国弗吉尼亚州阿什本地区发生电力故障，导致超过3吉瓦的负载瞬间断电。这是继两年前一次类似事件后再次发生，影响范围和规模都令人担忧。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "数据中心供电系统出现故障，导致大规模断电，影响多个AI设施。这说明当前AI供电系统存在设计缺陷，容易因小问题引发大范围故障。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然普通用户可能不会直接受影响，但AI服务的稳定性与供电系统密切相关。如果数据中心频繁断电，可能导致AI服务中断，影响日常使用体验。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章指出，AI供电问题源于架构设计，而非单纯技术问题。未来可能需要更可靠的供电方案，以避免类似故障。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Powering AI is an architecture problem"
+    },
     {
       "id": "0286b52989ae75",
       "url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
@@ -70,6 +380,37 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks"
+    },
+    {
+      "id": "660d0278eadc72",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
+      "publishedAt": "2026-09-09",
+      "source": "Google",
+      "title": "谷歌向芬兰投资130亿欧元发展AI基础设施",
+      "summary": "谷歌宣布向芬兰投资130亿欧元，用于发展AI基础设施。此举旨在加强芬兰在人工智能领域的地位，并推动当地科技产业发展。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "谷歌在芬兰的AI投资可能带动当地科技产业和就业，但也可能引发对资源分配和竞争的讨论。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌宣布向芬兰投资130亿欧元，用于发展AI基础设施。这项投资旨在加强芬兰在人工智能领域的地位，并推动当地科技产业发展。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌决定在芬兰投入大量资金，用于建设AI相关的基础设施。这可能包括数据中心、研究设施和人才培养计划，以提升芬兰在AI领域的竞争力。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项投资可能带动芬兰的科技产业发展，创造更多就业机会。但具体影响取决于投资如何分配，以及芬兰能否有效利用这些资源。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "需关注投资的具体用途和实施效果，以及芬兰如何利用这笔资金推动AI发展。此外，还需留意其他国家或企业是否跟进类似投资。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Google deepens its commitment to Finland with a €13 billion investment in AI infrastructure"
     },
     {
       "id": "333ccaae81484d",
@@ -4064,37 +4405,6 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "MindTopo reveals VLMs’ spatial reasoning abilities"
-    },
-    {
-      "id": "0027655752f485",
-      "url": "https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement/",
-      "publishedAt": "2026-08-11",
-      "source": "Microsoft Research",
-      "title": "微软推出CARE-X，提升医学影像分析能力",
-      "summary": "微软研究团队推出CARE-X，旨在通过辅助监督、奖励对齐学习和工具增强测量等方法，提升医学影像分析的准确性和实用性。该技术聚焦于胸部X光片的解读。",
-      "category": "模型进展",
-      "importance": 45,
-      "why": "CARE-X是微软在医学影像分析领域的新尝试，可能对医疗AI的发展产生影响。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "微软研究团队推出了CARE-X，这是一种结合了灵活推理、校准预测和测量工具的医学影像分析模型。该模型专注于胸部X光片的解读，旨在提升AI在医学影像分析中的实用性。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "微软开发了一种新的AI模型，用于帮助医生分析胸部X光片。这个模型结合了多种技术，比如辅助监督和工具增强测量，以提高分析的准确性和实用性。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "这项技术可能对医疗行业产生影响，尤其是影像诊断领域。如果该模型能有效提升诊断准确性，未来可能会在医院或医疗机构中得到应用。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前的信息仅限于微软的研究摘要，具体效果和实际应用还需进一步观察。解读基于发布方提供的信息，更多细节请参考原文。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Introducing CARE-X: Towards Clinically Useful Radiology VLMs with Auxiliary Supervision, Reward-Aligned Learning, and Tool-Augmented Measurement"
     }
   ]
 }
