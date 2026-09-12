@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-11T00:21:50.597465+00:00",
-  "lastCheckedAt": "2026-09-11T00:21:50.597465+00:00",
+  "updatedAt": "2026-09-12T01:11:28.392736+00:00",
+  "lastCheckedAt": "2026-09-12T01:11:28.392736+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -40,6 +40,285 @@
     }
   ],
   "articles": [
+    {
+      "id": "46fcf5bb7b9952",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "publishedAt": "2026-09-11",
+      "source": "OpenAI",
+      "title": "OpenAI 扩建存储平台服务10亿用户",
+      "summary": "OpenAI 将其存储平台从 Python 库升级为全球分布系统，支持 10 亿 ChatGPT 用户和每秒 2200 万次请求。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "存储平台升级影响用户访问速度和稳定性，对 AI 服务提供商有参考价值。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 将其存储平台从 Python 库升级为全球分布系统，支持 10 亿 ChatGPT 用户和每秒 2200 万次请求。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 改进了其存储系统，使其能同时服务大量用户，提升响应速度和稳定性。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用 ChatGPT，可能会感受到更快的响应速度和更稳定的访问体验。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "该升级可能影响其他 AI 服务的存储方案，但具体影响需看实际应用情况。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Rapidly scaling online storage to serve over 1 billion ChatGPT users"
+    },
+    {
+      "id": "4aeb82da9975e2",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "publishedAt": "2026-09-11",
+      "source": "OpenAI",
+      "title": "OpenAI让Devin用GPT-6 Astra自测代码",
+      "summary": "OpenAI推出GPT-6 Astra，帮助Devin测试自身工作，目标是减少工程师审查代码的工作量，加快软件发布速度。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "这项技术可能提升软件开发效率，但具体效果需进一步观察。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI推出了GPT-6 Astra，用于帮助Devin测试自己的工作。这项技术旨在让Devin更有效地验证软件是否正常运行，从而减少工程师需要审查的代码量，加快软件发布流程。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Devin现在可以自己检查代码是否正确，这样工程师就不用花太多时间去检查代码了，软件也能更快地被推出。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是开发者，这项技术可能让你的工作更轻松，减少重复性检查工作。但目前还不清楚它是否适用于所有开发场景。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前的信息仅限于发布方摘要，具体效果和应用场景还需看原文。技术的实际应用效果可能因项目而异，不能保证所有人都能受益。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Cognition helps Devin test its own work with GPT‑6 Astra"
+    },
+    {
+      "id": "e37971180b75cd",
+      "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+      "publishedAt": "2026-09-11",
+      "source": "TechCrunch AI",
+      "title": "Anthropic研究员警告公司正奔向超级智能",
+      "summary": "一名Anthropic研究员辞职并警告公司正朝自我改进的超级智能发展，甚至公司内部的对齐负责人也支持该言论。此警告恰逢公司准备上市，引发关注。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "研究员警告公司发展路径可能带来风险，且正值公司准备上市，引发公众对AI安全的担忧。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "一名Anthropic研究员辞职并警告公司正朝自我改进的超级智能发展，甚至公司内部的对齐负责人也支持该言论。此警告恰逢公司准备上市，引发关注。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "一位Anthropic的研究员辞职，并在社交媒体上警告公司正在快速向能够自我提升的超级智能发展，这可能带来风险。公司内部的对齐负责人也支持这一观点，而不是反驳。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然具体影响尚不明确，但这一警告引发了公众对AI安全和公司发展方向的担忧。如果AI发展失控，可能对社会产生深远影响。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，需关注后续是否有更多细节或公司回应。AI安全是行业关注的重点，未来可能有更多类似警告或政策变化。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "An Anthropic researcher’s doomsday warning comes at a very interesting time"
+    },
+    {
+      "id": "7f452d3805d7ed",
+      "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+      "publishedAt": "2026-09-11",
+      "source": "TechCrunch AI",
+      "title": "Mecka AI估值近5亿美元获Sequoia领投",
+      "summary": "Mecka AI这家成立两年的初创公司正接近5亿美元估值，由Sequoia领投。此轮融资在公司宣布A轮融资数月后展开，反映出机器人训练数据领域的投资热度。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "Mecka AI获得大额融资，显示市场对机器人训练数据领域的兴趣增加。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Mecka AI这家成立两年的初创公司正接近5亿美元估值，由Sequoia领投。此轮融资在公司宣布A轮融资数月后展开，反映出机器人训练数据领域的投资热度。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Mecka AI这家初创公司最近获得了大笔投资，估值接近5亿美元。这表明市场对机器人训练数据的需求很高，投资者对此很感兴趣。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是AI或机器人相关行业的从业者，这可能意味着更多投资进入该领域，未来可能会有更多新技术和产品出现。但目前对普通用户的影响还不明确。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体融资金额、投资方细节以及Mecka AI的业务进展尚未详细说明。建议关注后续报道或公司官方消息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data"
+    },
+    {
+      "id": "a061c44f7783dd",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "publishedAt": "2026-09-11",
+      "source": "TechCrunch AI",
+      "title": "Garry Tan呼吁美国开放AI实验室也应提炼前沿模型",
+      "summary": "Garry Tan希望美国的开放权重AI实验室也能采用类似训练技术，以增强美国在开放权重AI领域的选择，减少对中国模型的依赖。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "此提议可能影响美国AI技术的发展方向和国际竞争格局。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Garry Tan建议美国的开放权重AI实验室采用类似训练方法，以增强美国在开放权重AI领域的选择，减少对中国模型的依赖。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Garry Tan认为，美国的AI实验室应该像中国一样，通过提炼前沿模型来提升自身的技术能力，从而在AI领域拥有更多自主选择。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项提议可能影响未来AI技术的发展方向，但对普通用户的具体影响尚不明确。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "解读仅基于发布方摘要，细节请看原文。具体实施方式和效果仍需进一步观察。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too"
+    },
+    {
+      "id": "2084a3d93fa9f2",
+      "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+      "publishedAt": "2026-09-11",
+      "source": "TechCrunch AI",
+      "title": "OpenAI与数学家的争执愈演愈烈",
+      "summary": "25位数学家联名签署公开信，指出AI实验室对其学术工作构成威胁。",
+      "category": "安全与规则",
+      "importance": 45,
+      "why": "数学家担忧AI技术可能影响其研究领域，引发学术界与科技公司的矛盾。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "25位数学家签署公开信，批评AI实验室对他们的学术工作造成威胁，认为AI技术的发展可能影响数学研究的独立性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "一群数学家公开表示，他们担心AI技术的发展会干扰他们的研究工作，甚至影响数学领域的未来发展。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这起争执主要涉及学术界与科技公司的关系，对普通用户影响不大，但可能影响未来AI技术在数学领域的应用方向。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "该事件反映了AI技术发展与学术界之间的潜在冲突，未来可能引发更多关于AI伦理和学术自由的讨论。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI’s feud with mathematicians is only escalating"
+    },
+    {
+      "id": "70d2b5e1fab497",
+      "url": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
+      "publishedAt": "2026-09-11",
+      "source": "MIT Technology Review",
+      "title": "AI专家讨论是否可能毁灭人类",
+      "summary": "MIT Technology Review报道，全球顶尖AI实验室的员工认为，先进AI可能对人类构成威胁。文章探讨了这一观点是否属实，或只是夸大其词。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "AI安全是公众关注的焦点，涉及潜在风险与社会影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "MIT Technology Review报道，一些AI实验室的员工认为，先进AI可能对人类构成威胁。文章讨论了这一观点是否成立，或只是夸大其词。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "一些AI领域的专家担心，高度发达的AI可能会对人类造成严重威胁。但也有观点认为，这可能只是过度担忧，缺乏实际证据。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然AI发展迅速，但目前尚未出现能威胁人类的AI系统。不过，AI安全问题值得公众关注，以确保技术发展符合人类利益。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于发布方摘要，未提供详细数据或案例。具体风险和应对措施需参考原文或进一步研究。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Roundtables: AI’s apocalypse crisis"
+    },
+    {
+      "id": "6a886414536a09",
+      "url": "https://openai.com/index/put-data-to-work",
+      "publishedAt": "2026-09-10",
+      "source": "OpenAI",
+      "title": "ChatGPT Work 新增数据助手功能",
+      "summary": "OpenAI 推出 ChatGPT Work 数据助手，用户可连接公司数据、发现洞察并用自然语言构建互动仪表盘。",
+      "category": "日常应用",
+      "importance": 40,
+      "why": "此功能让企业用户更方便地利用数据进行分析和可视化，提升工作效率。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 在 ChatGPT Work 中新增了数据助手功能，允许用户连接公司数据，发现洞察，并用自然语言构建互动仪表盘。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "现在用户可以通过 ChatGPT Work 连接公司内部的数据，用自然语言和 AI 一起分析数据，生成图表和报告，让数据分析变得更简单。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是企业用户，这个功能可以帮助你更轻松地处理和分析数据，提升工作效率。但目前只适用于 ChatGPT Work 的用户。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅基于发布方摘要，具体功能和使用方式请参考原文。功能是否适合你，还需根据实际需求判断。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Now everyone can put data to work"
+    },
+    {
+      "id": "3802aa15c4b6ae",
+      "url": "https://openai.com/index/expanding-ai-access-us-government",
+      "publishedAt": "2026-09-10",
+      "source": "OpenAI",
+      "title": "OpenAI为美国政府提供AI使用优惠",
+      "summary": "OpenAI与美国GSA合作，为符合条件的联邦、州、地方及部落政府提供免费授权、50%使用费折扣及增强网络安全支持。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "美国政府将获得AI技术的低成本使用机会，有助于提升公共服务和网络安全。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI与美国GSA宣布，将为符合条件的联邦、州、地方及部落政府提供免费授权、50%的使用费折扣以及增强的网络安全支持。这项合作旨在扩大AI技术在政府机构中的应用，同时提升其网络安全能力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "美国政府现在可以更便宜地使用OpenAI的AI技术，而且还能得到更好的网络安全保护。这主要是为了帮助政府更高效地提供服务，同时减少被网络攻击的风险。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是美国政府工作人员，可能会因为这项政策而获得更便宜的AI工具和更好的网络安全保障。但对普通民众来说，这可能间接提升政府服务的质量和安全性。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅限于发布方摘要，具体细节如哪些政府机构符合条件、如何申请等，需查看原文。此外，政策的实际效果和实施情况也需进一步观察。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Expanding AI access and cyber defense for federal, state, local, and tribal governments"
+    },
     {
       "id": "39842fa0b34b37",
       "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
@@ -4343,68 +4622,6 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "ChatGPT Ads expands across Europe"
-    },
-    {
-      "id": "1357a9ae7911e1",
-      "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
-      "publishedAt": "2026-08-12",
-      "source": "Google DeepMind",
-      "title": "谷歌推出手语识别新功能",
-      "summary": "谷歌DeepMind推出SL2T模型，为聋人和听力障碍者提供手语转文字功能，提升沟通便利性。",
-      "category": "模型进展",
-      "importance": 70,
-      "why": "该技术有助于改善聋人和听力障碍者的日常交流体验。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "谷歌DeepMind推出了一款名为SL2T的模型，该模型能够将手语转换为文字，为聋人和听力障碍者提供新的沟通方式。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "这项新技术可以让使用手语的人通过摄像头将手语实时转为文字，方便他们与他人交流，尤其在无法使用语音的情况下。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你认识聋人或听力障碍者，这项技术可能帮助他们更方便地与他人沟通，提升他们的生活质量。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前该功能的具体使用方式和覆盖范围尚未详细说明，建议关注官方后续发布的信息。解读仅基于发布方摘要，细节请看原文。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Putting sign language AI into users’ hands"
-    },
-    {
-      "id": "1a7704a62ecc3f",
-      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "publishedAt": "2026-08-12",
-      "source": "Microsoft Research",
-      "title": "MindTopo揭示视觉语言模型的空间推理能力",
-      "summary": "微软研究院推出MindTopo，用于测试AI对拓扑关系的理解，强调提升空间推理和规划能力，为相关领域带来新机会。",
-      "category": "模型进展",
-      "importance": 60,
-      "why": "这项研究有助于理解AI如何处理空间关系，可能推动更智能的视觉和语言交互系统。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "微软研究院发布MindTopo，这是一种用于评估视觉语言模型（VLMs）空间推理能力的新工具。该工具通过测试AI对路径、围栏、结等拓扑关系的理解，来衡量其空间推理能力。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "MindTopo是一个测试AI能否理解空间关系的工具，比如判断路径是否连通、围栏是否封闭等。它帮助研究人员了解AI在处理这类问题时的表现。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "这项研究可能推动更智能的AI系统，比如在导航、地图识别或机器人路径规划中表现得更好。但目前这些能力仍处于研究阶段，尚未广泛应用。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "MindTopo的测试结果可能影响未来AI模型的设计方向，但具体应用还需进一步验证。解读基于微软研究院的摘要，详情请参考原文。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "MindTopo reveals VLMs’ spatial reasoning abilities"
     }
   ]
 }
