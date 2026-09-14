@@ -1,14 +1,14 @@
 {
   "updatedAt": "2026-09-12T01:11:28.392736+00:00",
-  "lastCheckedAt": "2026-09-12T01:11:28.392736+00:00",
+  "lastCheckedAt": "2026-09-14T10:03:57.422647+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google DeepMind",
@@ -32,11 +32,11 @@
     },
     {
       "source": "TechCrunch AI",
-      "ok": true
+      "ok": false
     },
     {
       "source": "MIT Technology Review",
-      "ok": true
+      "ok": false
     }
   ],
   "articles": [
