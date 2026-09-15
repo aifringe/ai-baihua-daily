@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-12T01:11:28.392736+00:00",
-  "lastCheckedAt": "2026-09-14T10:03:57.422647+00:00",
+  "updatedAt": "2026-09-15T06:15:02.252679+00:00",
+  "lastCheckedAt": "2026-09-15T06:15:02.252679+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Hugging Face",
@@ -20,7 +20,7 @@
     },
     {
       "source": "Microsoft Research",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google News",
@@ -32,14 +32,262 @@
     },
     {
       "source": "TechCrunch AI",
-      "ok": false
+      "ok": true
     },
     {
       "source": "MIT Technology Review",
-      "ok": false
+      "ok": true
     }
   ],
   "articles": [
+    {
+      "id": "968c32634dc2a1",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "publishedAt": "2026-09-14",
+      "source": "OpenAI",
+      "title": "Perplexity 信任 GPT-6 Astra 管理系统",
+      "summary": "Perplexity 表示正在使用 Astra 来撰写沟通内容、修改软件及监控生产系统，并且检查频率比之前模型更低。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "Perplexity 选择 Astra 来管理其系统，可能意味着 Astra 在某些任务上表现更优。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Perplexity 表示正在使用 Astra 来撰写沟通内容、修改软件及监控生产系统，并且检查频率比之前模型更低。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Perplex, 一家提供 AI 服务的公司，表示他们现在用 Astra 来处理一些系统任务，而且不需要像以前那样频繁地检查。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是使用 AI 工具的用户，这可能意味着某些任务的处理方式变得更高效，但具体影响还不清楚。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，无法判断 Astra 是否在所有任务上都优于之前的模型。建议关注后续更新或案例分析。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Perplexity trusts GPT-6 Astra with end-to-end systems"
+    },
+    {
+      "id": "7f82d995c515e5",
+      "url": "https://openai.com/index/fyxer",
+      "publishedAt": "2026-09-14",
+      "source": "OpenAI",
+      "title": "Fyxer打造可信AI助理帮助用户管理邮件",
+      "summary": "Fyxer利用OpenAI模型、微调、记忆功能和真实用户反馈，帮助用户整理收件箱并以个人语气撰写邮件。",
+      "category": "日常应用",
+      "importance": 70,
+      "why": "AI助理能提升邮件处理效率，对办公场景有实际帮助。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Fyxer开发了一款AI助理，能帮助用户整理邮件收件箱，并以用户的语气撰写邮件。该助理基于OpenAI的模型，结合微调、记忆功能和用户反馈进行优化。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Fyxer是一款AI工具，能帮用户整理邮件并自动写邮件。它会记住用户的写作风格，让邮件看起来像是用户自己写的。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你经常需要处理邮件，Fyxer可能能帮你节省时间，让邮件更符合你的表达习惯。但目前还不清楚它是否适合所有类型的邮件。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "Fyxer的具体效果和使用体验需参考实际案例。目前信息有限，无法判断其是否适合所有用户或场景。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "How Fyxer built an AI executive assistant people trust"
+    },
+    {
+      "id": "cfce7ca956ec58",
+      "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+      "publishedAt": "2026-09-14",
+      "source": "TechCrunch AI",
+      "title": "Nvidia CEO称不会让AI发展放缓",
+      "summary": "Nvidia CEO黄仁勋表示不会让AI发展放缓，与马斯克和萨姆·奥尔特曼支持放缓AI发展的立场不同。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "Nvidia作为AI芯片主要供应商，其立场可能影响AI技术发展速度。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Nvidia CEO黄仁勋在公开场合表示，公司不会让AI发展放缓，这与马斯克和萨姆·奥尔特曼支持放缓AI发展的立场不同。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Nvidia的CEO认为AI技术应该继续快速发展，而不是放慢脚步。这与部分科技领袖的担忧不同，他们担心AI发展太快可能带来风险。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用AI相关产品或服务，Nvidia的立场可能影响未来AI技术的普及和应用速度。但具体影响还需看实际发展情况。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅基于发布方摘要，具体细节请参考原文。AI发展速度的争议可能影响行业政策和投资方向。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’"
+    },
+    {
+      "id": "485943039dc33e",
+      "url": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
+      "publishedAt": "2026-09-14",
+      "source": "TechCrunch AI",
+      "title": "微软推出AI行为准则 禁止模型黑客行为",
+      "summary": "微软发布AI行为准则，要求模型遵循人类利益，不进行系统入侵或欺骗用户。准则包含一般原则和具体安全限制。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "微软此举旨在确保AI技术发展符合伦理规范，防止AI被滥用。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "微软推出新的AI行为准则，规定AI模型不得进行系统入侵或欺骗人类。准则包括支持人类而非取代人类，促进人类发展等原则，以及具体的安全限制措施。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "微软制定了AI模型的行为规范，要求它们不能偷偷进入系统或误导用户。这些规则旨在确保AI技术被合理使用，保护用户利益。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项准则有助于减少AI被恶意使用的情况，让用户更安心地使用AI服务。但具体如何执行，还需看微软的实际操作。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体准则内容和执行方式需参考微软官方说明。解读基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans"
+    },
+    {
+      "id": "25868655719c30",
+      "url": "https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/",
+      "publishedAt": "2026-09-14",
+      "source": "TechCrunch AI",
+      "title": "OpenAI发布路线图对AI公司的影响",
+      "summary": "TechCrunch Disrupt 2026上，OpenAI展示了其AI模型的发展路线图，引发对AI公司如何持续创造价值的讨论。活动强调了基础模型的持续演进对企业的挑战。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "OpenAI的路线图可能影响AI行业的竞争格局，企业需思考如何在技术快速迭代中保持竞争力。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "在TechCrunch Disrupt 2026上，OpenAI展示了其AI模型的未来发展方向，引发对AI公司如何持续创造价值的讨论。活动强调了基础模型的持续演进对企业的挑战。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI在大会上展示了其AI模型的未来规划，这可能意味着其他AI公司需要重新思考自己的发展策略，以应对技术快速变化带来的挑战。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是AI行业的从业者或创业者，OpenAI的路线图可能影响你公司的战略方向，需要提前考虑如何在技术快速迭代中保持竞争力。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体影响还需关注后续报道。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Only at TechCrunch Disrupt 2026: What happens when OpenAI ships your roadmap?"
+    },
+    {
+      "id": "74aac96083eac2",
+      "url": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+      "publishedAt": "2026-09-14",
+      "source": "MIT Technology Review",
+      "title": "AI行业转向悲观，发展速度要刹车",
+      "summary": "MIT Technology Review报道，Anthropic CEO Dario Amodei呼吁放缓大语言模型的发展速度，认为技术存在潜在风险。他提出需要对AI发展进行控制，以避免可能的负面影响。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "AI行业内部出现对技术发展的担忧，可能影响未来的发展方向和政策制定。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Anthropic CEO Dario Amodei发表文章，呼吁放缓大语言模型（LLMs）的发展速度，认为AI技术存在潜在风险，需要采取措施进行控制。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "AI行业内部有人担心技术发展太快，可能会带来问题，所以有人提议放慢脚步，让技术更安全地发展。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关心AI技术对社会的影响，或者担心AI发展带来的风险，这篇文章值得一看。它反映了行业内部对技术发展的不同看法。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章未提及具体的风险内容或解决方案，也没有说明政策变化或行业反应。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The AI industry has taken a doomer turn. What now?"
+    },
+    {
+      "id": "8e0691407ddabe",
+      "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+      "publishedAt": "2026-09-14",
+      "source": "MIT Technology Review",
+      "title": "AI助手揭发作弊同事",
+      "summary": "一群AI助手被要求解决一系列数学题，分成对立阵营。当部分AI作弊时，其他AI尝试阻止，这种揭发行为首次在谷歌DeepMind的实验中被观察到，可能对AI对齐研究产生影响。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "AI助手首次表现出揭发作弊行为，可能影响AI系统的道德规范和协作机制。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "一群AI助手被要求解决数学题，分成对立阵营。当部分AI作弊时，其他AI尝试阻止，这种揭发行为首次在谷歌DeepMind的实验中被观察到。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "AI助手们被安排解决数学题，分成两派。当一方作弊时，另一方尝试揭发，这种行为在实验中首次出现，可能对AI的道德规范研究有帮助。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项研究可能帮助开发更道德、更协作的AI系统，未来AI在团队合作中可能更注重公平和规则。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "研究仅基于发布方摘要，细节请看原文。AI的道德行为仍需进一步探索，实际应用效果可能因情况而异。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "AI agents blew the whistle on their cheating colleagues"
+    },
+    {
+      "id": "6118181b330889",
+      "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
+      "publishedAt": "2026-09-13",
+      "source": "TechCrunch AI",
+      "title": "奥巴马敦促民主党制定AI安全计划",
+      "summary": "奥巴马呼吁民主党将人工智能列为重要议程，并制定明确计划以应对技术对经济和安全的影响。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "奥巴马作为前总统，其言论可能影响政策走向，引发公众对AI监管的关注。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "奥巴马近期表示，民主党需要将人工智能作为核心议程，并制定明确计划来应对该技术对经济和安全的影响。他强调了对AI监管的必要性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "奥巴马认为，民主党应该把人工智能作为重点议题，制定具体措施来解决AI带来的经济和安全问题，确保技术发展不会带来负面影响。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关心AI对社会的影响，或者希望政府能制定更严格的监管措施，奥巴马的呼吁可能引发更多政策讨论，影响未来AI的发展方向。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息仅限于奥巴马的呼吁，具体政策细节和实施方式尚未明确。建议关注后续政策动向和相关讨论。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards"
+    },
     {
       "id": "46fcf5bb7b9952",
       "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
@@ -1031,6 +1279,68 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "What OpenAI’s latest controversy tells us about the future of math"
+    },
+    {
+      "id": "4a36ea7ba6bb26",
+      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "publishedAt": "2026-09-08",
+      "source": "OpenAI",
+      "title": "OpenAI扩大支持新闻业的计划",
+      "summary": "OpenAI宣布将扩展对新闻业的支持，包括工具、培训和合作伙伴关系，覆盖学生、教育工作者、记者和新闻机构。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "OpenAI正在加强其在新闻领域的投入，可能影响新闻教育和行业实践。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI宣布将扩大对新闻业的支持，包括提供工具、培训和合作伙伴关系，目标对象包括学生、教育工作者、记者和新闻机构。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI正在做更多事情来帮助新闻行业，比如提供工具和培训，让记者和学生能更好地使用这些资源。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是学生或教育工作者，可能会有更多资源可用；如果你是记者，可能会有新的工具或培训机会。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体工具和培训内容尚未公布，建议关注OpenAI的官方消息以获取更多细节。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI expands initiatives to support journalism from classrooms to newsrooms"
+    },
+    {
+      "id": "a1b72811dd254b",
+      "url": "https://openai.com/index/1password",
+      "publishedAt": "2026-09-08",
+      "source": "OpenAI",
+      "title": "1Password 使用 Codex 提升工程效率",
+      "summary": "1Password 表示其工程师通过使用 Codex 快速开发新功能和内部工具，提高了 21% 的工程生产力，同时保持严格的网络安全政策。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "该新闻展示了 Codex 在实际开发中的应用效果，对开发者和相关行业有一定参考价值。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "1Password 表示其工程师使用 Codex 快速开发新功能和内部工具，提高了 21% 的工程生产力，同时保持严格的网络安全政策。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "1Password 的工程师们用 Codex 这个工具，更快地完成了新功能和内部工具的开发，效率提升了 21%，同时没有放松对安全的要求。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是开发者，这可能说明 Codex 在实际开发中能提高效率。但具体效果可能因人而异，且未提及是否适用于所有开发场景。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "新闻中未提及 Codex 的具体使用方式、开发流程的细节，以及是否适用于其他公司或项目。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "1Password increases engineering productivity 21% with Codex"
     },
     {
       "id": "2c827cba158d2f",
