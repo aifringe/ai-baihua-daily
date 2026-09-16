@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15T06:15:02.252679+00:00",
-  "lastCheckedAt": "2026-09-15T06:15:02.252679+00:00",
+  "updatedAt": "2026-09-16T00:06:37.886240+00:00",
+  "lastCheckedAt": "2026-09-16T00:06:37.886240+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -16,19 +16,19 @@
     },
     {
       "source": "Hugging Face",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Microsoft Research",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google News",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Bing News",
-      "ok": false
+      "ok": true
     },
     {
       "source": "TechCrunch AI",
@@ -40,6 +40,533 @@
     }
   ],
   "articles": [
+    {
+      "id": "850203855328fa",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "publishedAt": "2026-09-15",
+      "source": "Google",
+      "title": "谷歌推出Gemini 3.8 Live及扩展思考版本",
+      "summary": "谷歌推出Gemini 3.8 Live和3.8 Live Extended Thinking模型，旨在提升实时交互和复杂问题解决能力。该模型基于Gemini Spark技术，适用于多种应用场景。",
+      "category": "模型进展",
+      "importance": 60,
+      "why": "谷歌推出新模型可能影响AI应用领域，但具体影响需看实际应用情况。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌推出了Gemini 3.8 Live和3.8 Live Extended Thinking两个新版本模型，强调实时交互和复杂问题解决能力。这些模型基于Gemini Spark技术，适用于多种应用场景。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌发布了两个新的AI模型，它们可以更好地处理实时任务和复杂问题。这些模型基于已有的Gemini Spark技术，适合用于各种实际应用。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用AI工具进行实时任务或复杂问题处理，可能会受益于这些新模型。但具体效果还需看实际应用情况。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体功能和应用场景需参考官方资料。解读基于发布方摘要，细节请查看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking"
+    },
+    {
+      "id": "c4890978b23bdc",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/",
+      "publishedAt": "2026-09-15",
+      "source": "Google",
+      "title": "Gemini Notebook 新增学习工具",
+      "summary": "Google 推出 Gemini Notebook 新学习工具，旨在提升学习效率。相关图片显示用户在使用该工具进行学习。",
+      "category": "日常应用",
+      "importance": 30,
+      "why": "Gemini Notebook 新增学习工具可能帮助用户更高效地学习，但具体效果需进一步观察。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 在其博客中宣布，Gemini Notebook 新增了学习工具，以帮助用户提升学习效率。相关图片显示用户正在使用该工具进行学习。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Google 推出了 Gemini Notebook 的新功能，旨在帮助用户更好地安排学习时间，提高学习效率。这些工具可能包括笔记整理、任务管理等功能。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是学生或经常需要学习的人，这些新工具可能会帮助你更高效地管理学习任务。但具体效果还需实际使用后才能判断。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前仅提供摘要信息，具体功能和使用方式请参考官方发布内容。解读基于发布方摘要，细节请查看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Sharpen your study routine with new Gemini Notebook tools"
+    },
+    {
+      "id": "3333bd4644474e",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/household-chores-tips/",
+      "publishedAt": "2026-09-15",
+      "source": "Google",
+      "title": "Gemini 教你搞定家庭琐事",
+      "summary": "Google 发布文章，介绍如何利用 Gemini 模型处理家庭日常事务，如修理门把手等。文章提供四种实用技巧，帮助用户简化家务流程。",
+      "category": "日常应用",
+      "importance": 30,
+      "why": "文章提供家庭事务处理的实用建议，适合日常生活中需要解决小问题的用户。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google 发布文章，介绍如何利用 Gemini 模型处理家庭日常事务，如修理门把手等。文章提供四种实用技巧，帮助用户简化家务流程。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "文章教你用 Gemini 这个 AI 工具来处理家里的小问题，比如门把手坏了怎么修。提供四种简单的方法，让家务变得更轻松。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你家里有需要修理的小物件，或者想让家务变得更简单，这篇文章可能会对你有帮助。它提供了一些实际的建议，适合日常使用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章只提到如何用 Gemini 处理家庭琐事，没有详细说明具体步骤或效果。建议查看原文获取更多信息。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "4 ways to tackle household chores with Gemini"
+    },
+    {
+      "id": "2519775a0f691a",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZTNBTjVVXzE2ZXpJdkoxcHo2cTNVVG1pZEs0dXhMU0d4dnNzcU5iZWppYkJMeVpCeWZVQ3dKSzVzZXNoeTltY3RJaXJtckQ2LXZnWlpGQ1V4Yi1HZUdjdFdPMUFua18weUpTazgweFp5YnlVTjB2RVJiTnVFMllTUThtQVlrT3liYnd1dmhfUGxiRHZOb3pub1dGR3pXbk9UMnZzV1hZdF96UUVLcTdWanZVc2YtaGtkZXNzY1ZCQQ?oc=5",
+      "publishedAt": "2026-09-15",
+      "source": "Google News",
+      "title": "谷歌推出Gemini 3.8 Live及扩展思考版本",
+      "summary": "谷歌推出Gemini 3.8 Live和3.8 Live Extended Thinking版本，旨在提升实时交互和复杂问题处理能力。该更新可能涉及模型性能和应用场景的优化。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "Gemini 3.8 Live和扩展思考版本可能带来更流畅的实时交互体验和更强的复杂问题处理能力。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌推出了Gemini 3.8 Live和3.8 Live Extended Thinking版本，这两个版本可能在实时交互和复杂问题处理方面有所改进。具体功能和应用场景尚未详细说明。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌更新了Gemini模型，推出了两个新版本，可能让模型在处理实时任务和复杂问题时表现得更好。但具体改进内容和实际效果还需进一步了解。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用谷歌的AI服务，可能会体验到更流畅的实时交互和更强的复杂问题处理能力。但具体影响取决于实际应用场景和使用情况。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体功能和性能提升需参考官方发布或实际测试。解读基于发布方摘要，细节请查看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking - blog.google"
+    },
+    {
+      "id": "bd6b61586f08b7",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai/",
+      "publishedAt": "2026-09-15",
+      "source": "Google",
+      "title": "科学家谈AI如何帮助发现野火",
+      "summary": "Google发布文章，探讨研究人员如何利用AI技术来检测野火。文章由科学家回答相关问题，强调AI在早期预警中的潜力。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "AI在野火检测中的应用可能提升预警效率，对环境保护和公共安全有潜在影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google发布文章，邀请科学家讨论AI在野火检测中的应用。文章提到AI可以通过分析数据，帮助研究人员更早发现野火，从而提高预警能力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "科学家们正在研究如何用AI技术来发现野火。AI可以分析各种数据，比如卫星图像或天气信息，帮助人们更早发现野火，从而采取行动。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能帮助政府和环保组织更早发现野火，减少损失。但目前还不清楚具体实施情况，以及是否能广泛应用于实际场景。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅提到AI在野火检测中的潜力，未说明具体技术细节或实际应用案例。解读基于发布方摘要，详情请查看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Ask a Scientist: How can researchers use AI to spot a wildfire?"
+    },
+    {
+      "id": "2b4a67d5c4a8d5",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBVX3pnQ1lXY2F2Y3MtZVNTUlZsb2hYeWQxaF9tSTB6aHZRUlR5azdFRkhLOV9EZDZWaHpGUWpqalo2SXVCb1pRQWgyVVNmamsweDJMUzBDeGtUWHBGZ1dRR3p4NHQwNG1CcG51ZWVBM252azBjMTNn0gF8QVVfeXFMUE0zU1ZReFVzWHBKMzliU2ZWbjRMaENCTUwzS3I0TlVwV1Q2dFRkQTNDbU5xelV1MVBWWjZ1NmFJTmNtZEVoc3pXYWRmTXpqUkVoUnlTTHpBbUlOb29aQmExb3NyeTQ2d05ta2VCb1dSaWZLclQ5OUhLSktrbA?oc=5",
+      "publishedAt": "2026-09-15",
+      "source": "Google News",
+      "title": "OpenAI、Google、Anthropic讨论AI安全合作",
+      "summary": "OpenAI、Google和Anthropic正在讨论在AI安全问题上的合作。此举旨在提升AI系统的安全性，防止潜在风险。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "AI安全是当前技术发展的关键议题，多方合作有助于推动更安全的AI应用。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI、Google和Anthropic正在讨论在AI安全问题上的合作。这表明这些公司意识到AI安全的重要性，并希望通过合作来解决相关问题。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这些大公司正在开会，讨论如何让AI更安全。他们可能分享技术或经验，以减少AI带来的风险。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "AI安全影响每个人的日常生活，比如社交媒体、在线购物和隐私保护。更安全的AI意味着更少的误操作和数据泄露风险。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体合作内容和成果尚未公布。建议关注后续报道，了解合作进展和实际影响。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI, Google, Anthropic discussing collaboration on AI safety issues - CNBC"
+    },
+    {
+      "id": "cb56e164a4da14",
+      "url": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+      "publishedAt": "2026-09-15",
+      "source": "TechCrunch AI",
+      "title": "OpenAI与Anthropic、Google就AI安全展开会谈",
+      "summary": "OpenAI确认已与Anthropic和Google DeepMind就AI安全问题进行了数周的讨论。与此同时，特朗普团队则淡化安全担忧，强调要与中国保持同步发展。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "AI安全是当前技术发展的关键议题，多方合作有助于推动更安全的AI发展。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI已确认与Anthropic和Google DeepMind就AI安全问题进行了数周的讨论。这表明主要AI公司正在积极寻求合作，以应对AI安全方面的挑战。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "几家主要的AI公司正在开会，讨论如何让AI更安全。这说明他们意识到AI安全的重要性，并希望共同找到解决方案。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "AI安全关系到技术的可靠性和社会信任。虽然具体影响尚不明确，但这类合作可能有助于未来AI技术更安全、更可控。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体合作内容和成果尚未公布。建议关注后续官方消息，以了解更详细的合作进展和影响。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks"
+    },
+    {
+      "id": "5ca6bad89c8665",
+      "url": "https://finance.yahoo.com/technology/ai/articles/jensen-huang-just-gave-artificial-121925072.html",
+      "publishedAt": "2026-09-15",
+      "source": "Bing News",
+      "title": "黄仁勋给AI投资者信心",
+      "summary": "黄仁勋对AI行业保持乐观，认为消费者对更智能AI模型的需求推动行业发展。他强调AI技术的潜力和未来增长空间。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "黄仁勋作为英伟达CEO，其对AI行业的看法影响投资者信心。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "黄仁勋表示，消费者对更智能的AI模型有强烈需求，这推动了AI行业的发展。他表达了对AI技术未来潜力的信心。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "黄仁勋认为，人们希望AI变得更聪明，这种需求让AI行业有更多发展空间。他鼓励投资者继续看好AI领域。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是AI相关行业的从业者或投资者，黄仁勋的乐观态度可能会影响市场信心。但普通用户可能不会直接受到影响。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "黄仁勋的观点基于他对市场需求的判断，但具体发展仍需看实际技术突破和应用落地。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Jensen Huang Just Gave Artificial Intelligence (AI) Investors Trillions of Reasons to Remain Bullish"
+    },
+    {
+      "id": "e62c0a5490ae49",
+      "url": "https://www.msn.com/en-xl/africa/top-stories/egyptians-speak-on-the-future-of-artificial-intelligence/ar-AA2ch4kW",
+      "publishedAt": "2026-09-15",
+      "source": "Bing News",
+      "title": "埃及民众热议人工智能未来",
+      "summary": "埃及民众对人工智能的未来展开激烈讨论，形成对立阵营和谨慎中间派。讨论反映了对AI发展的不同态度和担忧。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "人工智能的发展对社会影响深远，不同群体对其未来有不同看法。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "埃及民众对人工智能的未来展开激烈讨论，形成了对立阵营和谨慎中间派。这种分歧反映了社会对AI技术发展的不同态度和担忧。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "埃及人对人工智能的未来意见不一，有人支持发展，有人担心负面影响。讨论中出现了支持者和反对者，还有持观望态度的人。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "人工智能的发展可能影响就业、隐私和日常生活。了解不同观点有助于你更全面地看待AI技术的潜在影响。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "讨论中提到的担忧和期待，可能预示未来政策和行业发展的方向。建议关注后续相关报道，了解更多信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Egyptians speak on the future of Artificial Intelligence"
+    },
+    {
+      "id": "57e99614fd364e",
+      "url": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
+      "publishedAt": "2026-09-15",
+      "source": "TechCrunch AI",
+      "title": "AI数据中心建设引发城市居民抗议",
+      "summary": "美国费城出现针对新建AI数据中心项目的抗议，当地官员考虑在已有工业污染历史的社区推进项目，引发公众不满。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "AI数据中心建设可能加剧已有工业污染社区的环境问题，引发公众对健康和生活质量的担忧。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "费城官员正在考虑在已有工业污染历史的社区建设AI数据中心，引发当地居民抗议。这反映了AI产业扩张与城市历史工业遗留问题之间的冲突。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "费城有人想建AI数据中心，但当地居民反对，因为这个区域以前有污染严重的油厂，现在还在担心环境问题。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你住在类似工业污染历史的地区，可能会担心新项目带来的环境影响。这提醒我们关注科技发展对社区的潜在影响。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "需关注AI数据中心建设对环境和社区的具体影响，以及地方政府如何平衡产业发展与居民权益。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The AI data center boom is colliding with cities scarred by big industry"
+    },
+    {
+      "id": "15b43500322375",
+      "url": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
+      "publishedAt": "2026-09-15",
+      "source": "TechCrunch AI",
+      "title": "Meta 允许 AI 帮忙设置 WhatsApp 商用账号",
+      "summary": "Meta 推出新功能，让开发者使用 AI 编程助手处理 WhatsApp 商用账号的设置、消息模板、测试和问题排查。这项功能通过 MCP 服务器实现。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "这项更新简化了 WhatsApp 商用账号的设置流程，可能提升企业使用效率。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Meta 推出新功能，允许开发者使用 AI 编程助手处理 WhatsApp 商用账号的设置、消息模板、测试和问题排查。这项功能通过 MCP 服务器实现。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Meta 现在允许开发者使用像 Claude、Cursor、Codex 和 ChatGPT 这样的 AI 工具，来处理 WhatsApp 商用账号的设置和维护工作，让这些任务变得更简单。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是使用 WhatsApp 商用账号的企业或开发者，这项更新可能让你在设置和维护账号时更省事，但具体效果取决于你是否使用这些 AI 工具。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前没有说明这些 AI 工具是否完全自动化，还是需要人工参与。此外，AI 的使用可能涉及隐私和安全问题，需进一步了解具体细节。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup"
+    },
+    {
+      "id": "539f7b66fb8e6d",
+      "url": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "publishedAt": "2026-09-15",
+      "source": "TechCrunch AI",
+      "title": "AI项目“坟场”：盘点失败的AI项目",
+      "summary": "文章列举了多个未能成功或未达预期的AI项目，包括苹果的Siri和OpenAI的超级应用，揭示AI领域中的失败案例。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "文章展示了AI领域中的失败案例，反映技术发展中的挑战与风险。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章列举了多个AI项目，如苹果的Siri和OpenAI的超级应用，这些项目要么未能如期推出，要么未能达到预期效果，最终被放弃或关闭。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "文章总结了一些AI项目失败的例子，说明在AI开发过程中，很多项目因为技术难题、市场反应不佳或其他原因而未能成功。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这些失败案例提醒我们，AI技术发展并非一帆风顺，可能会遇到各种挑战。对于普通用户来说，这说明AI产品可能需要更长时间才能成熟，也可能存在一定的不确定性。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于发布方摘要，未详细说明每个项目的具体失败原因。读者应参考原文以获取更全面的信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "The AI graveyard: a running list of projects and startups that didn’t make it"
+    },
+    {
+      "id": "c460cc0ebc3195",
+      "url": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all/",
+      "publishedAt": "2026-09-15",
+      "source": "MIT Technology Review",
+      "title": "AI是否可能毁灭人类？专家展开讨论",
+      "summary": "MIT Technology Review报道，全球顶尖AI实验室的员工认为，先进AI可能对人类构成威胁。文章探讨了AI灭绝恐惧的来源及其合理性。",
+      "category": "安全与规则",
+      "importance": 75,
+      "why": "讨论AI潜在风险，涉及安全与伦理问题，对公众认知和政策制定有影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "文章提到，全球顶尖AI实验室的员工认为，先进AI可能对人类构成威胁。讨论围绕AI灭绝恐惧的来源及其合理性展开。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "一些AI领域的专家担心，如果AI发展到足够先进，可能会对人类造成严重威胁。他们正在讨论这些担忧是否合理，或者只是夸大其词。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然文章讨论的是AI的潜在风险，但对公众来说，了解这些担忧有助于提高对AI安全和伦理问题的认识，可能影响未来政策和科技发展方向。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "文章仅基于发布方摘要，未提供具体细节。若想了解更多信息，建议查看原文。讨论中提到的风险和担忧，目前尚无明确结论，需进一步研究。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Roundtables: Could AI really kill us all?"
+    },
+    {
+      "id": "78db0f3b5384c1",
+      "url": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+      "publishedAt": "2026-09-15",
+      "source": "MIT Technology Review",
+      "title": "AI投资万亿赌局面临风险",
+      "summary": "MIT Technology Review报道指出，AI基础设施投资正迎来爆发，但伴随巨大风险。专家指出，AI对经济的影响仍存在诸多不确定性，需警惕潜在泡沫。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "AI投资规模庞大，但其对经济的实际影响仍存疑，可能引发市场波动。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "AI基础设施投资正在快速增长，但专家警告这可能是一场高风险的赌局。尽管AI被寄予厚望，但其对经济的实际影响仍存在诸多不确定性，包括技术发展、市场需求和行业竞争等。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "很多公司和投资者正在大笔投入AI技术，希望从中获利。但专家认为，AI是否真的能带来预期的经济收益还不确定，存在泡沫风险。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是投资者或相关行业从业者，AI投资的高风险可能影响你的资金安全和行业前景。普通人可能间接受到影响，比如就业市场和科技产品价格。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "需关注AI技术的实际应用效果和市场反应，避免盲目跟风投资。同时，留意政策变化和行业竞争态势，以评估潜在风险。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "What’s at stake in AI’s trillion-dollar gamble"
+    },
+    {
+      "id": "c7ea57d54a9faa",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9jY1dXTUcwbGFoeDJyQkJFbWlnT0F4akVwaE5FcTUtMzZMZWR2RUtVR3owa0d0cGY3RXhlVDNZV2xxVGV5cThyWUU0VjVSaUEwZjdlbG5Fbzl4eGR2ajhjN3dVSU1EOVhCdkY3azcxdjlFZ0Z4?oc=5",
+      "publishedAt": "2026-09-14",
+      "source": "Google News",
+      "title": "Perplexity 信任 GPT-6 Astra 全流程系统",
+      "summary": "Perplexity 表示信任 OpenAI 的 GPT-6 Astra 在端到端系统中的应用。该消息强调了 GPT-6 Astra 在系统整合方面的潜力。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "Perplexity 的信任表明 GPT-6 Astra 在系统整合方面有潜力，可能影响相关行业。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Perplexity 表示信任 OpenAI 的 GPT-6 Astra 在端到端系统中的应用。这表明 Perplexity 认为 GPT-6 Astra 在系统整合方面有潜力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Perplexity 表示他们信任 OpenAI 的 GPT-6 Astra 在系统整合方面的能力。这可能意味着 GPT-6 Astra 在实际应用中有一定的优势。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用 Perplexity 或相关服务，可能会受益于 GPT-6 Astra 在系统整合方面的潜力。但具体影响尚未明确。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，建议关注后续的详细报道或官方声明。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Perplexity trusts GPT-6 Astra with end-to-end systems - OpenAI"
+    },
+    {
+      "id": "77867a5bb3a5ac",
+      "url": "https://thediplomat.com/2026/09/a-matter-of-trust-google-artificial-intelligence-and-the-public-sphere/",
+      "publishedAt": "2026-09-14",
+      "source": "Bing News",
+      "title": "谷歌AI信任问题引关注",
+      "summary": "新加坡的Bertha Chan负责谷歌在亚太地区的信任与安全事务，关注如何防止AI被滥用，同时保持技术发展。",
+      "category": "安全与规则",
+      "importance": 45,
+      "why": "AI技术的滥用可能影响公众信任，谷歌正努力在安全与创新之间找到平衡。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌在亚太地区设立专门团队，负责AI技术的信任与安全事务，旨在防止AI被滥用，同时推动技术发展。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌在亚太地区有专门的团队，负责确保AI技术不会被用来做坏事，同时也要跟上技术发展的步伐。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你使用谷歌的AI服务，可能会更安心，因为公司正在努力确保这些技术不会被用来伤害他人。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体措施和效果需参考谷歌官方说明。AI安全是一个持续的过程，需关注后续进展。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "A Matter of Trust: Google, Artificial Intelligence, and the Public Sphere"
+    },
+    {
+      "id": "f546177cf9ef44",
+      "url": "https://www.c-span.org/liveEvent/?artificial-intelligence",
+      "publishedAt": "2026-09-14",
+      "source": "Bing News",
+      "title": "AI对社会的影响引发讨论",
+      "summary": "Robert Wright探讨了人工智能对社会的潜在影响，相关听证会讨论AI在政策和行业中的角色。事件聚焦于AI对社会结构和政策制定的影响。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "AI技术正在改变社会运作方式，引发政策制定者和公众的广泛讨论。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Robert Wright分析了人工智能对社会的潜在影响，相关听证会讨论AI在政策和行业中的角色。事件涉及AI如何改变社会结构和政策制定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "专家讨论了AI技术如何影响社会，包括就业、政策和日常生活。相关听证会探讨AI在不同领域的应用和监管问题。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "AI技术可能影响你的工作、生活和隐私。政策变化可能带来新的规则和责任，影响社会整体运作方式。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "AI的发展可能带来新的社会挑战，如就业变化和隐私问题。建议关注政策动向和行业趋势，以了解AI对个人和社会的潜在影响。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Artificial Intelligence"
+    },
     {
       "id": "968c32634dc2a1",
       "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
@@ -287,6 +814,37 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards"
+    },
+    {
+      "id": "09251f6452c38e",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPN3UtUzlPZk9tWHZsV21qVFBnN1Y1dlhrM25jZl9sMmdPcWRMd1RTT2ctYzJ6NTl3MmVfWElNclhRYXVOWG02ZDdzVzJLZXBXbHNBclY1Vkt4ckJYVjVuTnNWRDdGMEt5dVdaa254U0FfX2M0LWJ5T2Jkd1dBWHhWN3piVQ?oc=5",
+      "publishedAt": "2026-09-12",
+      "source": "Google News",
+      "title": "Claude被用于战争间谍与镇压的五种方式",
+      "summary": "Anthropic发布报告，指出Claude被用于战争、间谍活动和镇压的五种方式。报告由Axios报道，引发对AI技术滥用的担忧。",
+      "category": "安全与规则",
+      "importance": 75,
+      "why": "AI技术被用于军事和政治目的，引发对伦理和安全的担忧。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Anthropic发布报告，指出Claude被用于战争、间谍活动和镇压的五种方式。报告由Axios报道，引发对AI技术滥用的担忧。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "一份报告指出，Claude这个AI被用来做战争、间谍和镇压的事情。这说明AI技术可能被用于不好的目的，引发人们对其安全性的担忧。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然这份报告没有直接提到普通用户，但AI技术被用于不好的目的，可能影响社会安全和隐私。这提醒我们要注意AI的使用方式。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "报告只提到Claude被用于某些不好的目的，但没有具体说明如何操作或影响范围。详情请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Anthropic report: 5 ways Claude was exploited for war, spying and repression - Axios"
     },
     {
       "id": "46fcf5bb7b9952",
@@ -4901,6 +5459,68 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Replit expands access to software creation with GPT-5.6 Luna"
+    },
+    {
+      "id": "c3b0ed374d4168",
+      "url": "https://openai.com/index/chatgpt-for-teens",
+      "publishedAt": "2026-08-18",
+      "source": "OpenAI",
+      "title": "OpenAI推出专为青少年设计的ChatGPT",
+      "summary": "OpenAI推出专为青少年设计的ChatGPT，帮助他们学习、培养批判性思维，并以更强的内置保护和家长控制功能使用AI。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "青少年使用AI工具时，安全和内容控制是家长和教育者关注的重点。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI推出了专为青少年设计的ChatGPT版本，旨在帮助他们学习和使用AI，同时提供更强的安全保护和家长控制功能。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI推出了一款适合青少年使用的AI聊天工具，它不仅帮助学习，还加入了更多安全措施，让家长可以更好地管理孩子的使用。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是家长，可能会对这款工具感兴趣，因为它提供了更多控制选项。如果你是青少年，可能会有新的学习工具可用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前没有提到具体功能细节，如是否支持中文或具体的学习内容。建议查看官方资料以获取更多信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Introducing ChatGPT for Teens: Built for learning, backed by protections"
+    },
+    {
+      "id": "baf07daff59f27",
+      "url": "https://openai.com/index/nvidia/chatgpt-work",
+      "publishedAt": "2026-08-18",
+      "source": "OpenAI",
+      "title": "NVIDIA 使用 ChatGPT Work 提高工作效率",
+      "summary": "NVIDIA 团队使用 ChatGPT Work 来减少手动任务，连接快速变化的信息，并在全球范围内扩展成功的工作流程。",
+      "category": "行业变化",
+      "importance": 60,
+      "why": "NVIDIA 采用 ChatGPT Work 来优化内部流程，提升团队协作效率。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "NVIDIA 团队正在使用 ChatGPT Work 来减少手动任务，连接快速变化的信息，并在全球范围内扩展成功的工作流程。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "NVIDIA 通过使用 ChatGPT Work，让团队减少重复性工作，更快地获取和处理信息，同时将成功的流程推广到全球各地。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项技术可能影响企业如何管理内部流程，提高效率，但目前主要影响的是 NVIDIA 这样的大公司，对普通用户影响较小。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体如何应用 ChatGPT Work 提高效率，以及实际效果如何，还需参考更多资料。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "How NVIDIA scales expertise with ChatGPT Work"
     },
     {
       "id": "8393c843a171d7",
