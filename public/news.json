@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-18T00:04:10.692461+00:00",
-  "lastCheckedAt": "2026-09-18T00:04:10.692461+00:00",
+  "updatedAt": "2026-09-19T00:56:11.898066+00:00",
+  "lastCheckedAt": "2026-09-19T00:56:11.898066+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -40,6 +40,378 @@
     }
   ],
   "articles": [
+    {
+      "id": "0ce40d8ecf6c5c",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBNeUo4TFlnSHFTVTg5MlhVZC1lM2FkZER1MHZDWEJQaHp1YVdCVExBTE5EdUF6Tk1ZTmpzQjc3c3JWU3RDV04zWTN0VFNZN0MyUndHcTFZNFh0cFVQMndIMkRlaE8yTWY3WHBIYUk3RjFSWWxv?oc=5",
+      "publishedAt": "2026-09-18",
+      "source": "Google News",
+      "title": "AI专家称用Claude攻击ChatGPT",
+      "summary": "AI安全专家表示，他们利用Claude工具对ChatGPT进行了攻击。此事件引发对AI安全性的关注。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "此事件揭示了AI系统可能存在的安全漏洞，引发公众对AI安全性的担忧。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "AI安全专家表示，他们使用Claude工具对ChatGPT进行了攻击。这表明某些AI模型可能被用于攻击其他AI系统，引发对AI安全性的担忧。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "有专家利用Claude这个AI工具，对另一个AI系统ChatGPT进行了攻击。这说明AI系统可能存在被利用的风险，需要加强安全防护。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然事件未直接影响普通用户，但提醒我们AI系统可能存在安全隐患。用户应关注AI使用安全，避免使用不可信的AI工具。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "事件表明AI系统可能被用于攻击其他AI，需加强安全防护。用户应关注AI使用安全，避免使用不可信的AI工具。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "AI security experts say they used Claude to hack ChatGPT - CBS News"
+    },
+    {
+      "id": "eb5d3e327e5a38",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0tYS0VHd1I0cEFmd0JuMHh0SEg0NGxoMUprUDFPWVRlWWZvWE9LN0ZWMWd6Z2Utc2dlYWY2elB3Nk1xTGtRZm5aSzFDZlhfR0JRSms0NkJmVDlDY3JJYkxzU0M4ZWFLak1RSnNGNTlzWTJRZmxkbGZfUWppNUVDc3hxQUlVd01Ha1Z1U1ZYUzJReUU?oc=5",
+      "publishedAt": "2026-09-18",
+      "source": "Google News",
+      "title": "研究者用Claude入侵OpenAI",
+      "summary": "研究人员利用Anthropic的Claude模型入侵了OpenAI系统，引发对AI安全的担忧。事件被TechCrunch报道，具体细节未说明。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "该事件揭示了AI模型可能被用于非法活动，引发对AI安全和伦理的讨论。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "研究人员使用Anthropic的Claude模型成功入侵了OpenAI的系统。具体入侵方式和影响未详细说明，但事件已引起关注。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "有研究人员利用Claude这个AI模型，进入了OpenAI的系统。虽然具体怎么做到的没有详细说明，但这件事让人担心AI的安全性。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这件事提醒我们，AI技术如果被滥用，可能会带来风险。虽然目前没有直接影响到普通用户，但未来需要更加注意AI的安全管理。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "事件表明AI模型可能被用于非法活动，需关注相关安全措施和监管政策。具体细节请参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Researchers used Anthropic’s Claude to hack into OpenAI - TechCrunch"
+    },
+    {
+      "id": "deaa594637f7b3",
+      "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+      "publishedAt": "2026-09-18",
+      "source": "TechCrunch AI",
+      "title": "研究人员用Claude入侵OpenAI系统",
+      "summary": "安全研究人员利用Anthropic的Claude模型，发现了OpenAI系统中的漏洞，成功入侵员工账户并访问内部代码库，随后报告了这些安全问题。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "此事件揭示了AI模型可能被用于安全测试，但也存在被滥用的风险。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "研究人员使用Anthropic的Claude模型，发现了OpenAI系统中的安全漏洞，成功入侵员工账户并访问了内部代码库，之后将问题上报。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "研究人员利用Claude这个AI工具，找到了OpenAI系统中的漏洞，进而入侵了员工的账户，并访问了内部的代码库，之后他们将这些漏洞报告给了相关方。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这说明AI工具可能被用于安全测试，但也提醒我们注意AI技术被滥用的可能性。普通用户可能不会直接受影响，但事件反映了AI安全的重要性。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "事件表明AI模型可能被用于安全测试，但也存在被滥用的风险。建议关注AI安全措施的加强，以及相关公司的漏洞管理流程。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Researchers used Anthropic’s Claude to hack into OpenAI"
+    },
+    {
+      "id": "238a64731a4cd2",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQmNxc081M1NZa0l1MDZtRG16czdBY2M3X09PVUNCcFUzdS14ZEk1dEdDS0diT2toWlY4VmtMMkNaU1pVVDRaOEpDY0tMRi0zc3dweFpEMWZQOFpPQklqTUcwelZXelBDVXJQWE1GM25BYXgxbHc3ZHBBTk1xV3ViUzloX2s2d0tCd0RLS3lKZmFNdw?oc=5",
+      "publishedAt": "2026-09-18",
+      "source": "Google News",
+      "title": "黑客利用Claude入侵OpenAI",
+      "summary": "据《华尔街日报》独家报道，黑客利用Anthropic的Claude模型入侵了OpenAI。该事件引发对AI安全性的关注。",
+      "category": "安全与规则",
+      "importance": 85,
+      "why": "此事件揭示了AI模型可能被滥用的风险，对网络安全和数据保护提出新挑战。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "据《华尔街日报》报道，黑客利用Anthropic的Claude模型成功入侵了OpenAI。这表明AI模型可能被用于非法活动，引发对AI安全性的担忧。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "黑客利用一个AI模型，进入了另一个AI公司的系统。这说明AI技术可能被用来做坏事，需要加强安全措施。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "虽然事件未直接影响普通用户，但提醒我们AI技术可能被滥用，需关注数据安全和隐私保护。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "事件显示AI模型的安全性至关重要，未来需加强防护措施。具体细节和影响需参考原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Exclusive | Hackers Used Anthropic’s Claude to Break Into OpenAI - WSJ"
+    },
+    {
+      "id": "568364398bc76d",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORGtkcDVTUGdMQW5OWHpxVmFVLXlyel9IRVJhNVVmTWF6NFk2enhmOFNVdnJyY3RkMzRhbWpXaXBjVWk4YzJxekdLSzM4SHJWRW56QzFWZDlncUtPdUlZb1Zva1VtdWF0anZSejVWanJnWlNhb0xXSUU3R0VRRmlneWVqMmRoUWdwMGNSd3p3TUJObUU?oc=5",
+      "publishedAt": "2026-09-18",
+      "source": "Google News",
+      "title": "OpenAI 用 Claude 进行伦理黑客测试",
+      "summary": "《卫报》报道，OpenAI 通过 Anthropic 的 Claude 聊天机器人进行了一次伦理黑客测试，以评估 AI 系统的安全性。此举旨在确保 AI 技术的负责任使用。",
+      "category": "安全与规则",
+      "importance": 70,
+      "why": "此事件涉及 AI 安全与伦理问题，对公众和企业可能产生影响。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "OpenAI 与 Anthropic 合作，利用 Claude 进行了一次伦理黑客测试，目的是评估 AI 系统在面对潜在威胁时的表现，确保其安全性和可靠性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "OpenAI 通过 Anthropic 的聊天机器人进行了一次测试，模拟黑客攻击，以检查 AI 系统是否能有效应对安全威胁，确保其使用符合伦理标准。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这项测试有助于提高 AI 系统的安全性，减少潜在风险，对使用 AI 技术的用户和企业可能带来更安全的环境。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "此事件展示了 AI 安全测试的重要性，但具体细节和影响需参考原文。AI 安全和伦理问题仍是当前关注的焦点。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "OpenAI ‘ethically hacked’ with help of Anthropic’s Claude chatbot - The Guardian"
+    },
+    {
+      "id": "81575cd0e9ff37",
+      "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
+      "publishedAt": "2026-09-18",
+      "source": "TechCrunch AI",
+      "title": "新AI模型让开发者更轻松",
+      "summary": "由ChatGPT发明者推出的新AI模型Jev，为开发者提供更便宜且更快的软件智能开发路径。",
+      "category": "模型进展",
+      "importance": 70,
+      "why": "该模型可能降低AI开发门槛，提升开发效率。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "由ChatGPT的发明者推出的新AI模型Jev，正在吸引开发者关注。该模型被认为能以更低成本和更快的速度实现软件智能开发。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这个新AI模型让开发者更容易、更便宜地创建智能软件，可能让AI技术更普及。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是开发者，这个模型可能帮助你更高效地开发AI应用。但目前还不清楚它是否适合所有应用场景。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体性能和实际应用效果需看原文。建议关注后续报道或官方说明。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "A new kind of AI model from a ChatGPT inventor is thrilling developers"
+    },
+    {
+      "id": "43dae131a478eb",
+      "url": "https://blog.google/products-and-platforms/products/education/college-credit-ai-educator-series/",
+      "publishedAt": "2026-09-18",
+      "source": "Google",
+      "title": "Google推出AI教育课程可获学分",
+      "summary": "Google推出AI教育系列课程，学员可获得大学或继续教育学分。课程旨在帮助教育工作者掌握AI知识。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "教育工作者可通过Google课程获得学分，有助于提升专业能力。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Google推出了AI教育系列课程，学员完成课程后可获得大学或继续教育学分。该课程旨在帮助教育工作者掌握AI相关知识，提升教学能力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "如果你是老师或教育工作者，可以通过Google提供的AI课程学习相关知识，并且完成课程后还能获得学分，这对你的职业发展有帮助。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是教育工作者，这可能是一个提升自己技能的好机会，同时还能获得学分，对职业发展有帮助。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "课程的具体内容和学分获取方式未详细说明，建议查看官方信息以获取更多细节。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Earn continuing education and college credits for AI educator training."
+    },
+    {
+      "id": "d92122e53ec9d4",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+      "publishedAt": "2026-09-18",
+      "source": "Google",
+      "title": "谷歌AI与经济团队新增专家",
+      "summary": "谷歌宣布AI与经济研究团队新增专家，推动AI经济研究。相关动态显示团队正在扩展研究范围。",
+      "category": "行业变化",
+      "importance": 30,
+      "why": "谷歌扩展AI与经济研究团队，可能影响AI技术在经济领域的应用方向。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "谷歌宣布其AI与经济研究团队新增专家，表明公司正在扩展在AI经济领域的研究工作。这可能涉及AI技术对经济的影响分析及政策建议。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌正在招聘更多专家，加入AI与经济研究团队，以探索AI如何影响经济。这可能涉及AI在就业、产业、政策等方面的研究。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关注AI技术如何影响经济，或者对相关研究感兴趣，这则消息可能与你有关。但具体影响尚不明确。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，无法判断新增专家的具体研究方向或对AI经济领域的影响。建议关注后续官方消息或相关研究报告。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "New experts join Google’s AI & Economy team"
+    },
+    {
+      "id": "a7efa04ea19eb2",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/why-artificial-intelligence-is-now-on-king-charles-agenda/ar-AA2cufaT",
+      "publishedAt": "2026-09-18",
+      "source": "Bing News",
+      "title": "英国国王关注人工智能发展",
+      "summary": "英国国王查尔斯三世近期将人工智能纳入关注重点，显示出对科技发展的重视。他过去曾警告技术进步可能带来的后果。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "国王关注人工智能反映其对科技影响的担忧，可能推动相关政策或讨论。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "英国国王查尔斯三世近期将人工智能纳入其关注议题，显示出对科技发展的重视。他过去曾多次警告技术进步可能带来的后果，如今将人工智能列入关注范围，表明他对这一领域有新的思考。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "英国国王现在开始关注人工智能的发展，这说明他意识到这项技术可能对社会产生重大影响。他过去曾表达过对科技发展的担忧，现在可能希望更深入地了解并应对相关挑战。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "国王关注人工智能可能意味着未来会有更多政策或讨论围绕该技术展开，这可能影响公众对AI的认知和使用。但目前尚不清楚具体措施或影响，需关注后续发展。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，仅知国王将人工智能纳入关注范围，但具体措施或影响尚未明确。建议关注后续官方声明或相关报道，以获取更详细信息。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Why artificial intelligence is now on King Charles’ agenda"
+    },
+    {
+      "id": "8401e8e9e2ed3c",
+      "url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/",
+      "publishedAt": "2026-09-18",
+      "source": "TechCrunch AI",
+      "title": "一家公司获1亿美元投资专注实体AI",
+      "summary": "UP.Labs更名为Vantora，专注于为工业公司打造初创企业，投资方对其实体AI方向表示支持。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "该公司的转型和融资可能影响工业领域初创企业的生态。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "UP.Labs公司已更名为Vantora，正在为工业公司创建新的初创企业，并获得了1亿美元的投资。公司表示将专注于实体AI领域。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这家公司原本是帮助其他公司创业的，现在改名叫Vantora，专门帮工业大公司创建新项目，还拿到了1亿美元的投资，重点放在实体AI上。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是工业公司或相关行业的人，可能会关注这家公司的动向，因为它们正在通过投资和孵化新项目来推动AI在实体领域的应用。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体如何推动实体AI发展以及对行业的影响还需进一步观察。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "A startup that builds other startups raised $100M, and is all-in on physical AI"
+    },
+    {
+      "id": "891b0674775700",
+      "url": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
+      "publishedAt": "2026-09-18",
+      "source": "TechCrunch AI",
+      "title": "Anthropic 开设生物实验室进行实验",
+      "summary": "Anthropic 正在运营一个进行生物实验的实验室，该公司在AI领域有重要影响力。他们既强调AI在治愈疾病方面的潜力，也警告AI可能带来的风险。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "这表明AI公司正在拓展到生物领域，可能影响医疗和安全领域的发展。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Anthropic 正在运营一个进行生物实验的实验室。该公司在AI领域有重要影响力，既强调AI在治愈疾病方面的潜力，也警告AI可能带来的风险。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Anthropic 这家AI公司现在也开始做生物实验了。他们一方面认为AI可以帮助治疗疾病，另一方面也担心AI可能带来危险。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这可能意味着AI技术正在向医疗和生物领域扩展，未来可能会有更多AI相关的医疗突破。但同时也提醒人们要关注AI带来的潜在风险。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前信息有限，具体实验内容和成果尚未说明。建议关注后续报道，了解AI在生物领域的实际应用和影响。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Anthropic is operating a lab that conducts biology experiments"
+    },
+    {
+      "id": "b491d63c1a336d",
+      "url": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
+      "publishedAt": "2026-09-18",
+      "source": "MIT Technology Review",
+      "title": "AI能否真正威胁人类？你的疑问解答",
+      "summary": "MIT Technology Review举办了一场关于AI是否能威胁人类的圆桌讨论，但观众提出的问题远多于讨论时间。编辑Will Douglas Heaven参与解答，但未给出明确结论。",
+      "category": "安全与规则",
+      "importance": 45,
+      "why": "讨论聚焦AI潜在风险，但未给出明确结论，引发公众对AI安全的关注。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "MIT Technology Review举办了一场圆桌讨论，探讨AI是否可能威胁人类。讨论时间仅30分钟，但观众提出的问题远多于时间允许范围。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这场讨论是关于AI是否可能对人类造成威胁的问答环节。虽然有专家参与，但讨论时间有限，未能回答所有问题。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你对AI的安全性有疑问，这场讨论提供了部分信息。但因为时间限制，没有给出明确答案，建议关注后续报道或权威分析。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "讨论未给出明确结论，因此无法判断AI是否真正威胁人类。建议关注更多权威来源，了解AI发展的潜在风险。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Could AI really kill us all? Your questions, answered."
+    },
     {
       "id": "d22acfa5d0cc1d",
       "url": "https://openai.com/index/cooley-gopublic",
@@ -442,6 +814,99 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”"
+    },
+    {
+      "id": "27cd99b1dbe344",
+      "url": "https://openai.com/index/hex-gpt-6-astra",
+      "publishedAt": "2026-09-16",
+      "source": "OpenAI",
+      "title": "Hex用GPT-6 Astra将复杂分析转为可视化报告",
+      "summary": "Hex推出GPT-6 Astra，帮助其数据代理将分析结果转化为可交互的可视化报告，让员工更愿意分享。",
+      "category": "模型进展",
+      "importance": 45,
+      "why": "该技术有助于提升数据分析的可视化效果，便于团队协作和信息共享。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "Hex公司推出GPT-6 Astra，这是一种新的工具，能够将复杂的数据分析结果转化为可交互的可视化报告，让员工更愿意分享这些成果。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Hex开发了一个新工具，可以将数据分析结果变成图表和报告，员工们觉得这些成果值得分享，使用起来更方便。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是企业员工，可能能更方便地分享数据分析结果，提升团队协作效率。但目前具体应用还不明确。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "该技术的具体效果和应用场景尚未详细说明，建议关注后续官方信息或实际案例。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Hex turns complex analysis into visual reports with GPT‑6 Astra"
+    },
+    {
+      "id": "01310676472f10",
+      "url": "https://montreal.citynews.ca/2026/09/17/major-ai-conference-montreal/",
+      "publishedAt": "2026-09-16",
+      "source": "Bing News",
+      "title": "蒙特利尔AI大会探讨人工智能应对医生短缺",
+      "summary": "加拿大医疗系统面临诸多挑战，其中医生短缺尤为突出。蒙特利尔举办的重要AI大会讨论人工智能是否能成为解决这一问题的方案。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "医生短缺是加拿大医疗系统的重要问题，AI可能提供新解决方案，影响医疗行业。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "在蒙特利尔举行的一次重要AI大会上，专家们讨论了人工智能是否能帮助解决加拿大医生短缺的问题。会议聚焦于AI在医疗领域的应用潜力，以及如何通过技术手段缓解医疗资源紧张的现状。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "加拿大医生不够用，医疗系统压力大。这次大会讨论的是，能不能用AI来帮忙，比如让AI辅助诊断、管理病人信息，或者减少医生的工作负担。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你是医生或医疗工作者，AI可能帮助你提高效率；如果你是患者，AI可能让看病更方便。但目前AI还不能完全替代医生，只是辅助工具。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "会议没有给出具体解决方案，只是讨论了AI的潜力。AI在医疗中的应用仍处于探索阶段，实际效果和伦理问题还需进一步研究。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Major AI conference in Montreal explores if artificial intelligence can help tackle Canada’s doctor shortage"
+    },
+    {
+      "id": "9048a85b5aa0cc",
+      "url": "https://problemsolverscaucus.house.gov/news/documentsingle.aspx?DocumentID=917",
+      "publishedAt": "2026-09-16",
+      "source": "Bing News",
+      "title": "美国议员成立AI新技术工作组",
+      "summary": "美国国会问题解决 caucus 成立新工作组，聚焦人工智能和新兴技术对社会各领域的影响，包括就业、市场、国家安全和基础设施等。",
+      "category": "行业变化",
+      "importance": 45,
+      "why": "议员关注AI对社会的影响，可能推动相关政策制定。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "美国国会问题解决 caucus 成立了一个新工作组，专门研究人工智能和其他新兴技术对社会各领域的影响，包括就业、市场、国家安全和基础设施等。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "美国一些议员组成了一个小组，专门研究AI和其他新技术如何影响我们的工作、生活和国家的安全，他们想看看这些技术会带来什么变化。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "这些技术可能会影响你的工作机会、生活便利程度以及国家的安全。议员们想了解这些变化，可能会推动相关法规或政策的制定。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "工作组的具体研究方向和成果尚未公布，未来可能会有更多关于AI监管或政策的讨论。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "Problem Solvers Caucus Announces New Working Group on Artificial Intelligence and Evolving Technologies"
     },
     {
       "id": "95977feccaae95",
@@ -6484,6 +6949,37 @@
       "originalTitle": "How to encourage smarter AI use in the classroom"
     },
     {
+      "id": "aef8362e2aec58",
+      "url": "https://www.scmp.com/topics/world-artificial-intelligence-cooperation-organisation-waico",
+      "publishedAt": "2026-08-21",
+      "source": "Bing News",
+      "title": "全球人工智能合作组织成立",
+      "summary": "全球人工智能合作组织（Waico）于2026年7月成立，由中国在2026年世界人工智能大会上提出，旨在促进各国在人工智能领域的合作。",
+      "category": "行业变化",
+      "importance": 40,
+      "why": "该组织的成立可能推动全球人工智能领域的合作与资源共享。",
+      "sections": [
+        {
+          "heading": "到底发生了什么？",
+          "text": "全球人工智能合作组织（Waico）于2026年7月成立，由中国在2026年世界人工智能大会上提出，目的是鼓励各国在人工智能领域展开合作。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "中国牵头成立了一个新的国际组织，专门用来推动各国在人工智能方面的合作，希望借此促进技术交流和资源共享。"
+        },
+        {
+          "heading": "和你有什么关系？",
+          "text": "如果你关注人工智能技术的发展，或者希望了解不同国家在这一领域如何合作，这个组织的成立可能值得关注。"
+        },
+        {
+          "heading": "还要留意什么？",
+          "text": "目前尚不清楚该组织的具体运作方式和未来计划，建议关注后续报道以获取更多信息。解读仅基于发布方摘要，细节请看原文。"
+        }
+      ],
+      "editor": "本地 Qwen3 · 基于发布方摘要",
+      "originalTitle": "World Artificial Intelligence Cooperation Organisation (Waico)"
+    },
+    {
       "id": "835a331a5b20ce",
       "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
       "publishedAt": "2026-08-21",
@@ -6575,37 +7071,6 @@
       ],
       "editor": "本地 Qwen3 · 基于发布方摘要",
       "originalTitle": "Stampli cuts launch hours by 68% using ChatGPT Work"
-    },
-    {
-      "id": "2f00013902a29b",
-      "url": "https://openai.com/index/replit",
-      "publishedAt": "2026-08-19",
-      "source": "OpenAI",
-      "title": "Replit推出免费模式，用GPT-5.6 Luna助力软件开发",
-      "summary": "Replit推出免费模式，借助GPT-5.6 Luna技术，让用户无需担心token成本即可将想法转化为实际软件。",
-      "category": "日常应用",
-      "importance": 45,
-      "why": "Replit通过免费模式降低软件开发门槛，让更多人可以尝试编程和软件开发。",
-      "sections": [
-        {
-          "heading": "到底发生了什么？",
-          "text": "Replit推出了名为Free Mode的新功能，该功能基于GPT-5.6 Luna技术，允许用户在不支付token费用的情况下，将创意转化为实际的软件。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "Replit现在提供一个免费的软件开发模式，用户可以使用GPT-5.6 Luna来编写代码，而不需要担心费用问题，让软件开发变得更简单。"
-        },
-        {
-          "heading": "和你有什么关系？",
-          "text": "如果你对编程或软件开发感兴趣，但因为费用问题而犹豫，这个新功能可能会让你更容易开始尝试。"
-        },
-        {
-          "heading": "还要留意什么？",
-          "text": "目前信息仅基于发布方摘要，具体功能和使用方式请参考原文。此外，免费模式可能有使用限制，建议查看官方说明。"
-        }
-      ],
-      "editor": "本地 Qwen3 · 基于发布方摘要",
-      "originalTitle": "Replit expands access to software creation with GPT-5.6 Luna"
     }
   ]
 }
