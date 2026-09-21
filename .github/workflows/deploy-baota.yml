@@ -53,13 +53,15 @@ jobs:
           SSH_USER: ${{ secrets.BAOTA_SSH_USER }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
-          (cd dist && find . -type f -print0 | tar --null -T - -czf -) | ssh \
+          (cd dist && find . -type f ! -path './api/chat.php' -print0 | tar --null -T - -czf -) | ssh \
             -i ~/.ssh/baota_deploy \
             -p "$SSH_PORT" \
             "$SSH_USER@$SSH_HOST" \
-            "tar -xzmf - --no-same-owner --no-same-permissions -C /www/wwwroot/ai.czrshe.cn"
+            "rm -f /www/wwwroot/ai.czrshe.cn/api/chat.php; tar -xzmf - --no-same-owner --no-same-permissions -C /www/wwwroot/ai.czrshe.cn"
           printf '%s' "$DEEPSEEK_API_KEY" | ssh \
             -i ~/.ssh/baota_deploy \
             -p "$SSH_PORT" \
             "$SSH_USER@$SSH_HOST" \
             "cat > /www/wwwroot/.ai-baihua-deepseek-key && chmod 600 /www/wwwroot/.ai-baihua-deepseek-key"
+          scp -i ~/.ssh/baota_deploy -P "$SSH_PORT" dist/api/chat.php \
+            "$SSH_USER@$SSH_HOST:/www/wwwroot/ai.czrshe.cn/api/chat.php"
