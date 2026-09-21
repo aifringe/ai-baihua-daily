@@ -62,4 +62,4 @@ jobs:
             -i ~/.ssh/baota_deploy \
             -p "$SSH_PORT" \
             "$SSH_USER@$SSH_HOST" \
-            "umask 077; cat > /www/wwwroot/.ai-baihua-deepseek-key"
+            "sudo -n sh -c 'umask 077; cat > /www/wwwroot/.ai-baihua-deepseek-key'"
