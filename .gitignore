@@ -1,15 +1,39 @@
 node_modules/
 .pnpm-store/
 dist/
+.cache/
+.sites-runtime/
 .local-state/
 .wrangler/
 .env*
 !.env.example
 .DS_Store
 *.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Credentials and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
 
 __pycache__/
 *.tsbuildinfo
+.pytest_cache/
+.coverage
+coverage/
 
 .next/
 .vinext/
+
+# Editors
+.idea/
+.vscode/
+
+# This is a separate nested Git project with its own history.
+course-schedule/
