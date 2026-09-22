@@ -62,6 +62,6 @@ jobs:
             -i ~/.ssh/baota_deploy \
             -p "$SSH_PORT" \
             "$SSH_USER@$SSH_HOST" \
-            "cat > /www/wwwroot/.ai-baihua-deepseek-key && chmod 600 /www/wwwroot/.ai-baihua-deepseek-key"
+            "cat > /www/wwwroot/.ai-baihua-deepseek-key && chmod 640 /www/wwwroot/.ai-baihua-deepseek-key"
           scp -i ~/.ssh/baota_deploy -P "$SSH_PORT" dist/api/chat.php \
             "$SSH_USER@$SSH_HOST:/www/wwwroot/ai.czrshe.cn/api/chat.php"
