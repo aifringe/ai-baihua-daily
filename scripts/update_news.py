@@ -27,7 +27,7 @@ AI=re.compile(r'\b(ai|artificial intelligence|llm|gpt|gemini|claude|agent|model|
 PAYWALL=re.compile(r'(subscribe to (continue|read)|subscription required|sign in to (continue|read)|already a subscriber|register to continue|premium subscribers)',re.I)
 
 def request(url,data=None,timeout=35,headers=None):
- h={'User-Agent':'Mozilla/5.0 (compatible; AI-Baihua-Daily/2.0; +https://ai.czrshe.cn)'};h.update(headers or {})
+ h={'User-Agent':'Mozilla/5.0 (compatible; AI-Baihua-Daily/2.0; +https://news.czrshe.com)'};h.update(headers or {})
  raw=json.dumps(data).encode() if data is not None else None
  if raw is not None:h['Content-Type']='application/json'
  with urllib.request.urlopen(urllib.request.Request(url,data=raw,headers=h),timeout=timeout) as r:
