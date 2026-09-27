@@ -45,3 +45,4 @@ body{background:var(--brand-navy);color:var(--brand-ink)}
   .detail{padding:20px 17px;border-radius:18px;box-shadow:5px 5px 0 var(--brand-shadow)}.ask-card{box-shadow:5px 5px 0 var(--brand-shadow)}footer{margin:0 14px;padding-bottom:26px}
 }
 @media(max-width:700px){.list-controls select{width:74px;max-width:74px;padding:0 2px;font-size:10px;letter-spacing:-.2px;text-align:center;text-align-last:center}}
+@media(min-width:901px){.workspace:has(.detail)>aside{padding-top:79px}}
