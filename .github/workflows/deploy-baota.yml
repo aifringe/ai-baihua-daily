@@ -57,7 +57,7 @@ jobs:
             -i ~/.ssh/baota_deploy \
             -p "$SSH_PORT" \
             "$SSH_USER@$SSH_HOST" \
-            "echo DEPLOY_UID=\$(id -u) DEPLOY_GID=\$(id -g) >&2; rm -f /www/wwwroot/news.czrshe.com/api/chat.php; tar -xzmf - --no-same-owner --no-same-permissions -C /www/wwwroot/news.czrshe.com"
+            "echo DEPLOY_UID=\$(id -u) DEPLOY_GID=\$(id -g) >&2; mkdir -p /www/wwwroot/news.czrshe.com/api; rm -f /www/wwwroot/news.czrshe.com/api/chat.php; tar -xzmf - --no-same-owner --no-same-permissions -C /www/wwwroot/news.czrshe.com"
           printf '%s' "$DEEPSEEK_API_KEY" | ssh \
             -i ~/.ssh/baota_deploy \
             -p "$SSH_PORT" \
