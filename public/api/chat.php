@@ -86,7 +86,8 @@ $messages = $body['messages'] ?? null;
 if (!is_string($articleId) || !preg_match('/^[a-z0-9-]{6,64}$/', $articleId)) fail_json(400, '新闻编号无效');
 if (!is_array($messages) || count($messages) < 1 || count($messages) > 8) fail_json(400, '请求格式无效');
 $article = trusted_article($articleId);
-if (!$article) fail_json(404, '找不到这条新闻，请刷新日报后重试');
+// 宝塔常会接管 PHP 的 404 并替换为 HTML 错误页；422 可保持稳定 JSON。
+if (!$article) fail_json(422, '找不到这条新闻，请刷新日报后重试');
 
 $allowedMessages = [];
 foreach ($messages as $message) {

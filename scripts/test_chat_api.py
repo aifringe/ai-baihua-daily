@@ -58,7 +58,8 @@ class ChatApiContractTests(unittest.TestCase):
             headers={'Content-Type': 'application/json'},
         )
         response = self.response(request)
-        self.assertEqual(response.status, 404)
+        self.assertEqual(response.status, 422)
+        self.assertIn('application/json', response.headers['Content-Type'])
 
 
 if __name__ == '__main__':
