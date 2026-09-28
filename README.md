@@ -1,5 +1,7 @@
 # AI 白话日报
 
+> 开发、审计和上线验收统一遵循 [`docs/QUALITY_STANDARD.md`](docs/QUALITY_STANDARD.md)。最近一次完整审计见 [`docs/audits/2026-09-28-full-site-audit.md`](docs/audits/2026-09-28-full-site-audit.md)。
+
 面向普通人的 AI 新闻阅读站。短标题、摘要、白话详情、原文链接、搜索、分类、收藏，以及基于当前文章的本地模型问答。
 
 - 在线阅读：https://aifringe.github.io/ai-baihua-daily/
