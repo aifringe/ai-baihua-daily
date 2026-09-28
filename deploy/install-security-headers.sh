@@ -7,31 +7,40 @@ EXTENSION_DIR=/www/server/panel/vhost/nginx/extension/news.czrshe.com
 TARGET=$EXTENSION_DIR/codex-security-headers.conf
 NGINX=/www/server/nginx/sbin/nginx
 
-if [ ! -f "$VHOST" ] || ! grep -Fq "include $EXTENSION_DIR/*.conf;" "$VHOST"; then
-  echo '::warning::宝塔站点配置没有标准 extension include，安全响应头文件已部署但需要在站点 Nginx 配置中手动 include。'
+if [ ! -f "$VHOST" ] || [ ! -w "$VHOST" ]; then
+  echo '::warning::部署账号不能修改宝塔站点配置，安全响应头需要在宝塔中手动启用。'
   exit 0
 fi
 
-if [ ! -d "$EXTENSION_DIR" ] || [ ! -w "$EXTENSION_DIR" ]; then
-  echo '::warning::部署账号不能写入宝塔 Nginx extension 目录，安全响应头需要在宝塔中手动启用。'
-  exit 0
-fi
-
-BACKUP=
-if [ -f "$TARGET" ]; then
-  BACKUP=$TARGET.bak
-  cp "$TARGET" "$BACKUP"
-fi
+mkdir -p "$EXTENSION_DIR"
 cp "$SOURCE" "$TARGET"
+BACKUP=$VHOST.codex-backup
+cp "$VHOST" "$BACKUP"
+
+if ! grep -Fq "include $EXTENSION_DIR/*.conf;" "$VHOST"; then
+  TEMP=$VHOST.codex-new
+  awk -v include_line="    include $EXTENSION_DIR/*.conf;" '
+    { lines[NR]=$0; if ($0 ~ /^[[:space:]]*}[[:space:]]*$/) last=NR }
+    END {
+      if (!last) exit 2
+      for (i=1; i<=NR; i++) {
+        if (i==last) print include_line
+        print lines[i]
+      }
+    }
+  ' "$VHOST" > "$TEMP"
+  mv "$TEMP" "$VHOST"
+fi
 
 if "$NGINX" -t; then
   "$NGINX" -s reload
-  [ -z "$BACKUP" ] || rm -f "$BACKUP"
+  rm -f "$BACKUP"
   echo 'Nginx security headers enabled.'
   exit 0
 fi
 
-if [ -n "$BACKUP" ]; then mv "$BACKUP" "$TARGET"; else rm -f "$TARGET"; fi
+mv "$BACKUP" "$VHOST"
+rm -f "$TARGET"
 "$NGINX" -t
 echo 'Nginx 安全响应头配置校验失败，已自动回滚。' >&2
 exit 1
