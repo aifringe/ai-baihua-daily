@@ -1,0 +1,33 @@
+name: Quality checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: php -l public/api/chat.php
+      - run: pnpm test
+      - run: pnpm build
+      - run: pnpm check:bundle
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:e2e

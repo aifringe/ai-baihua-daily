@@ -30,6 +30,8 @@ coverage/
 
 .next/
 .vinext/
+test-results/
+playwright-report/
 
 # Editors
 .idea/

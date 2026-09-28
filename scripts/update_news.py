@@ -25,6 +25,17 @@ FEEDS=[
 ]
 AI=re.compile(r'\b(ai|artificial intelligence|llm|gpt|gemini|claude|agent|model|machine learning|deep learning|qwen|deepseek)\b',re.I)
 PAYWALL=re.compile(r'(subscribe to (continue|read)|subscription required|sign in to (continue|read)|already a subscriber|register to continue|premium subscribers)',re.I)
+PAYWALL_HOSTS={'economist.com'}
+ENTITIES=re.compile(r'(openai|chatgpt|anthropic|claude|google|gemini|deepmind|deepseek|meta|muse|microsoft|copilot|github|hugging\s*face|nvidia|amd|sk\s*hynix|micron|apple|amazon|alexa|tesla|xai|grok|qwen|alibaba|字节|豆包|百度|文心|腾讯|混元)',re.I)
+EVENT_CONCEPTS={
+ 'intrusion':re.compile(r'(hack|breach|break\s*out|attack|入侵|攻破|越界|攻击)',re.I),
+ 'avatar':re.compile(r'(avatar|digital\s*human|数字人|虚拟形象|实时形象)',re.I),
+ 'wearable':re.compile(r'(wearable|charm|pendant|挂饰|可穿戴|电子宠物)',re.I),
+ 'voice':re.compile(r'(text.to.speech|tts|voice|speech|语音|声音|音色)',re.I),
+ 'shopping':re.compile(r'(shopping|purchase|buy|购物|购买)',re.I),
+ 'training':re.compile(r'(training|train|训练)',re.I),
+ 'release':re.compile(r'(launch|release|发布|推出|上线)',re.I),
+}
 
 def request(url,data=None,timeout=35,headers=None):
  h={'User-Agent':'Mozilla/5.0 (compatible; AI-Baihua-Daily/2.0; +https://news.czrshe.com)'};h.update(headers or {})
@@ -79,6 +90,7 @@ class ArticleParser(HTMLParser):
 def article_text(item):
  try:raw,final=request(item['url']);text=raw.decode('utf-8','ignore');parser=ArticleParser();parser.feed(text)
  except Exception:return None
+ if urllib.parse.urlsplit(final).netloc.lower().removeprefix('www.') in PAYWALL_HOSTS:return None
  bodies=[]
  for blob in parser.jsonld:
   try:
@@ -96,13 +108,31 @@ def article_text(item):
  return {**item,'url':final,'body':body[:18000]}
 
 def norm_title(title):return re.sub(r'[^a-z0-9\u4e00-\u9fff]+','',title.lower())
+def distinctive_title(title):
+ value=ENTITIES.sub('',title.lower())
+ value=re.sub(r'(artificial intelligence|machine learning|techcrunch|disrupt|20\d{2}|发布|推出|宣布|上线|测试|称|系统|模型|功能|全新|最新|ai)','',value,flags=re.I)
+ return norm_title(value)
+def event_concepts(title):return {name for name,pattern in EVENT_CONCEPTS.items() if pattern.search(title)}
 def similar_title(a,b):
- a,b=norm_title(a),norm_title(b)
+ raw_a,raw_b=a,b;a,b=norm_title(a),norm_title(b)
  if not a or not b:return False
  ratio=SequenceMatcher(None,a,b).ratio()
  ga={a[i:i+2] for i in range(len(a)-1)};gb={b[i:i+2] for i in range(len(b)-1)}
  jac=len(ga&gb)/max(1,len(ga|gb))
- return ratio>=.64 or jac>=.48
+ entities_a={re.sub(r'\s+','',x.lower()) for x in ENTITIES.findall(a)};entities_b={re.sub(r'\s+','',x.lower()) for x in ENTITIES.findall(b)}
+ da,db=distinctive_title(a),distinctive_title(b)
+ dga={da[i:i+2] for i in range(len(da)-1)};dgb={db[i:i+2] for i in range(len(db)-1)}
+ distinctive_jac=len(dga&dgb)/max(1,len(dga|dgb))
+ distinctive_ratio=SequenceMatcher(None,da,db).ratio()
+ shared_entities=bool(entities_a&entities_b)
+ if entities_a and entities_b and not shared_entities:return False
+ if ratio>=.78 or jac>=.62:return True
+ shared_concepts=event_concepts(raw_a)&event_concepts(raw_b)
+ return shared_entities and (bool(shared_concepts-{'release'}) or distinctive_ratio>=.58 or distinctive_jac>=.28)
+
+def same_event(a,b):
+ left=[a.get('originalTitle',''),a.get('title','')];right=[b.get('originalTitle',''),b.get('title','')]
+ return any(similar_title(x,y) for x in left for y in right if x and y)
 
 def group_events(items):
  groups=[]
@@ -115,7 +145,7 @@ def group_events(items):
 def dedupe_existing(items):
  kept=[]
  for item in sorted(items,key=lambda x:(x.get('publishedAt',''),len(json.dumps(x,ensure_ascii=False))),reverse=True):
-  hit=next((x for x in kept if abs((dt.date.fromisoformat(x['publishedAt'])-dt.date.fromisoformat(item['publishedAt'])).days)<=3 and similar_title(x.get('originalTitle',x['title']),item.get('originalTitle',item['title']))),None)
+  hit=next((x for x in kept if abs((dt.date.fromisoformat(x['publishedAt'])-dt.date.fromisoformat(item['publishedAt'])).days)<=3 and same_event(x,item)),None)
   if hit:
    links=hit.setdefault('sources',[{'name':hit.get('source','原文'),'url':hit['url']}])
    for src in item.get('sources',[{'name':item.get('source','原文'),'url':item['url']}]):
@@ -152,7 +182,7 @@ def main(limit=15):
  with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:readable=[x for x in pool.map(article_text,by_url.values()) if x]
  groups=group_events(readable);existing=dedupe_existing(old.get('articles',[]));new=[]
  for group in groups:
-  if any(similar_title(group[0]['originalTitle'],a.get('originalTitle',a['title'])) for a in existing):continue
+  if any(same_event({'originalTitle':group[0]['originalTitle'],'title':group[0]['originalTitle']},a) for a in existing):continue
   try:new.append(explain(group));print('Explained:',group[0]['originalTitle'],flush=True)
   except Exception as e:print('Skipped:',type(e).__name__,str(e),flush=True)
   if len(new)>=limit:break

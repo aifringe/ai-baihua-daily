@@ -31,10 +31,21 @@ jobs:
           node-version: 22
           cache: pnpm
 
-      - name: Install and build
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+
+      - name: Install and verify
         run: |
           pnpm install --frozen-lockfile
+          pnpm lint
+          php -l public/api/chat.php
+          pnpm test
           pnpm build
+          pnpm check:bundle
+          pnpm exec playwright install --with-deps chromium
+          pnpm test:e2e
 
       - name: Configure SSH
         env:
@@ -65,3 +76,8 @@ jobs:
             "cat > /www/wwwroot/.ai-baihua-deepseek-key && chmod 640 /www/wwwroot/.ai-baihua-deepseek-key"
           scp -i ~/.ssh/baota_deploy -P "$SSH_PORT" dist/api/chat.php \
             "$SSH_USER@$SSH_HOST:/www/wwwroot/news.czrshe.com/api/chat.php"
+          scp -i ~/.ssh/baota_deploy -P "$SSH_PORT" \
+            deploy/nginx-security-headers.conf deploy/install-security-headers.sh \
+            "$SSH_USER@$SSH_HOST:/tmp/"
+          ssh -i ~/.ssh/baota_deploy -p "$SSH_PORT" "$SSH_USER@$SSH_HOST" \
+            "sh /tmp/install-security-headers.sh /tmp/nginx-security-headers.conf; rm -f /tmp/install-security-headers.sh /tmp/nginx-security-headers.conf"
