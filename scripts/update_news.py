@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build a deduplicated Chinese AI-news edition from publicly readable articles."""
-import concurrent.futures, datetime as dt, hashlib, html, json, os, pathlib, re, sys, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+import argparse, concurrent.futures, datetime as dt, hashlib, html, json, os, pathlib, re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
 from difflib import SequenceMatcher
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
@@ -11,6 +11,7 @@ MODEL='deepseek-flash'
 API='https://api.deepseek.com/chat/completions'
 SOURCE_CATALOG=json.loads((ROOT/'data/sources.json').read_text())
 FEEDS=[(s['name'],s['feed'],s['weight']) for s in SOURCE_CATALOG]
+SINCE_DATE=None
 
 AI=re.compile(r'\b(ai|artificial intelligence|llm|gpt|gemini|claude|agent|model|machine learning|deep learning|qwen|deepseek)\b',re.I)
 LOW_VALUE=re.compile(r'(stock|shares?|buy now|discount|coupon|deal|conference|webinar|register now|tickets?|sponsored|how to|tutorial|股票|股价|折扣|优惠|促销|报名|门票|教程)',re.I)
@@ -69,7 +70,8 @@ def parse_feed(spec):
     if e.tag.split('}')[-1]==name:return e.text or e.attrib.get('href','')
    return ''
   title=clean(get('title'));link=get('link').strip();date=parse_date(get('pubDate') or get('published') or get('updated'))
-  if not title or not date or date>today or date<today-dt.timedelta(days=30):continue
+  cutoff=SINCE_DATE or today-dt.timedelta(days=30)
+  if not title or not date or date>today or date<cutoff:continue
   if not AI.search(title+' '+clean(get('description') or get('summary'))) and source not in ('OpenAI','Google DeepMind','Google AI','Hugging Face'):continue
   if urllib.parse.urlsplit(link).scheme!='https':continue
   candidate={'originalTitle':title,'url':link,'publishedAt':date.isoformat(),'source':source,'weight':weight,'feedExcerpt':clean(get('description') or get('summary'))[:1800]}
@@ -190,7 +192,9 @@ def rank_groups(groups):
   return max(candidate_score(x,corroboration) for x in group),max(x['publishedAt'] for x in group)
  return sorted(groups,key=score,reverse=True)
 
-def main(limit=20):
+def main(limit=20,since=None):
+ global SINCE_DATE
+ SINCE_DATE=dt.date.fromisoformat(since) if since else None
  old=json.loads(OUT.read_text());candidates=[];health=[]
  with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
   for items,status in pool.map(parse_feed,FEEDS):candidates.extend(items);health.append(status)
@@ -213,9 +217,13 @@ def main(limit=20):
    print('Explained:',group[0]['originalTitle'],flush=True)
   except Exception as e:print('Skipped:',type(e).__name__,str(e),flush=True)
   if len(new)>=limit:break
- now=dt.datetime.now(dt.timezone.utc).isoformat();cutoff=(dt.date.today()-dt.timedelta(days=30)).isoformat()
- articles=dedupe_existing([*new,*existing]);articles=[x for x in articles if x.get('publishedAt','')>=cutoff]
- result={'updatedAt':now if new else old.get('updatedAt',now),'lastCheckedAt':now,'feedStatus':health,'articles':sorted(articles,key=lambda x:x['publishedAt'],reverse=True)[:120]}
+ now=dt.datetime.now(dt.timezone.utc).isoformat()
+ articles=dedupe_existing([*new,*existing])
+ result={'updatedAt':now if new else old.get('updatedAt',now),'lastCheckedAt':now,'feedStatus':health,'articles':sorted(articles,key=lambda x:x['publishedAt'],reverse=True)}
  OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(f'Updated {len(new)} stories; {len(result["articles"])} retained')
 
-if __name__=='__main__':main(min(20,int(sys.argv[1])) if len(sys.argv)>1 else 20)
+if __name__=='__main__':
+ parser=argparse.ArgumentParser()
+ parser.add_argument('limit',nargs='?',type=int,default=20)
+ parser.add_argument('--since',help='回补起始日期，格式 YYYY-MM-DD；省略时只读取最近30天')
+ args=parser.parse_args();main(min(20,args.limit),args.since)

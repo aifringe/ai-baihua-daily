@@ -9,7 +9,7 @@ import hotspotSeed from '../data/hotspots.json';
 type Article=typeof seed.articles[number]&{sources?:{name:string;url:string}[]};
 type Edition={updatedAt:string;lastCheckedAt:string;articles:Article[];feedStatus?:{source:string;ok:boolean}[]};
 import sourceCatalog from '../data/sources.json';
-const categories=['近期精选','年度大热点','日常应用','模型进展','行业变化','安全与规则','已收藏'];
+const categories=['近期精选','全年档案','年度大热点','日常应用','模型进展','行业变化','安全与规则','已收藏'];
 const annualHotspots=hotspotSeed.articles as Article[];
 export default function Home(){
  const [data,setData]=useState<Edition>(seed),[q,setQ]=useState(''),[category,setCategory]=useState('近期精选'),[id,setId]=useState(''),[saved,setSaved]=useState<string[]>([]),[notice,setNotice]=useState(''),[refreshing,setRefreshing]=useState(false),[sort,setSort]=useState('latest'),[page,setPage]=useState(1);
@@ -20,8 +20,8 @@ export default function Home(){
  const visible=useMemo(()=>{
   const cutoff30=new Date();cutoff30.setDate(cutoff30.getDate()-30);
   const cutoffYear=new Date();cutoffYear.setFullYear(cutoffYear.getFullYear()-1);
-  const pool=category==='年度大热点'?annualHotspots.filter(a=>new Date(a.publishedAt)>=cutoffYear):data.articles.filter(a=>new Date(a.publishedAt)>=cutoff30);
-  return pool.filter(a=>(category==='近期精选'||category==='年度大热点'||category==='已收藏'&&saved.includes(a.id)||a.category===category)&&(a.title+a.summary+a.source).toLowerCase().includes(q.toLowerCase())).sort((a,b)=>{if(sort==='latest')return b.publishedAt.localeCompare(a.publishedAt);if(sort==='recent-important'){const age=(x:Article)=>(now-new Date(x.publishedAt+'T00:00:00+08:00').getTime())/86400000;return (b.importance-age(b)*2)-(a.importance-age(a)*2)||b.publishedAt.localeCompare(a.publishedAt)}return b.importance-a.importance||b.publishedAt.localeCompare(a.publishedAt)});
+  const pool=category==='年度大热点'?annualHotspots.filter(a=>new Date(a.publishedAt)>=cutoffYear):category==='全年档案'||q?data.articles.filter(a=>new Date(a.publishedAt)>=cutoffYear):data.articles.filter(a=>new Date(a.publishedAt)>=cutoff30);
+  return pool.filter(a=>(category==='近期精选'||category==='全年档案'||category==='年度大热点'||category==='已收藏'&&saved.includes(a.id)||a.category===category)&&(a.title+a.summary+a.source).toLowerCase().includes(q.toLowerCase())).sort((a,b)=>{if(sort==='latest')return b.publishedAt.localeCompare(a.publishedAt);if(sort==='recent-important'){const age=(x:Article)=>(now-new Date(x.publishedAt+'T00:00:00+08:00').getTime())/86400000;return (b.importance-age(b)*2)-(a.importance-age(a)*2)||b.publishedAt.localeCompare(a.publishedAt)}return b.importance-a.importance||b.publishedAt.localeCompare(a.publishedAt)});
  },[data,category,q,saved,sort,now]);
  async function loadNews(){try{const r=await fetch('./news.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error();const d=await r.json() as Edition;if(!Array.isArray(d.articles))throw Error();setData(d);return true}catch{setNotice('暂时无法获取更新，正在显示已保存的新闻。');return false}}
  useEffect(()=>{void loadNews();const h=()=>{const nextId=location.hash.startsWith('#news/')?decodeURIComponent(location.hash.slice(6)):'';if(nextId&&!previousId.current)listScroll.current=window.scrollY;if(previousId.current&&!nextId)requestAnimationFrame(()=>window.scrollTo(0,listScroll.current));else if(nextId)window.scrollTo(0,0);previousId.current=nextId;setId(nextId);};h();window.addEventListener('hashchange',h);try{setSaved(JSON.parse(localStorage.getItem('ai-baihua-saved')||'[]'))}catch{}return()=>{window.removeEventListener('hashchange',h)}},[]);

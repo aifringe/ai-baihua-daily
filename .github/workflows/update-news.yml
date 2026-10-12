@@ -4,6 +4,16 @@ on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+    inputs:
+      since:
+        description: '可选：历史回补起始日期（YYYY-MM-DD）'
+        required: false
+        type: string
+      limit:
+        description: '本批最多新增条数（上限20）'
+        required: false
+        default: '20'
+        type: string
 
 permissions:
   contents: write
@@ -24,7 +34,12 @@ jobs:
       - name: Build deduplicated edition from readable articles
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python3 scripts/update_news.py 20
+          BACKFILL_SINCE: ${{ inputs.since }}
+          UPDATE_LIMIT: ${{ inputs.limit || '20' }}
+        run: |
+          args=("$UPDATE_LIMIT")
+          if [[ -n "$BACKFILL_SINCE" ]]; then args+=(--since "$BACKFILL_SINCE"); fi
+          python3 scripts/update_news.py "${args[@]}"
       - name: Publish changed edition
         env:
           GH_TOKEN: ${{ github.token }}

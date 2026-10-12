@@ -26,6 +26,9 @@ test('搜索、分类、排序、分页和详情流程可用', async ({page}) =>
   await page.getByRole('button', {name: '日常应用', exact: true}).click();
   await expect(page.locator('.news-card').first().locator('.meta').getByText('日常应用')).toBeVisible();
   await page.getByRole('button', {name: '近期精选', exact: true}).click();
+  await page.getByRole('button', {name: '全年档案', exact: true}).click();
+  await expect(page.locator('.news-card').first()).toBeVisible();
+  await page.getByRole('button', {name: '近期精选', exact: true}).click();
   await page.getByLabel('新闻排序').selectOption('important');
   await expect(page.getByLabel('新闻排序')).toHaveValue('important');
   await page.getByLabel('新闻排序').selectOption('latest');
