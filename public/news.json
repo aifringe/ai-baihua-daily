@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-11T03:00:47.646303+00:00",
-  "lastCheckedAt": "2026-10-11T03:00:47.646303+00:00",
+  "updatedAt": "2026-10-12T03:24:23.859022+00:00",
+  "lastCheckedAt": "2026-10-12T03:24:23.859022+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -52,6 +52,124 @@
     }
   ],
   "articles": [
+    {
+      "id": "27abcf7051e177",
+      "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/"
+        }
+      ],
+      "publishedAt": "2026-10-11",
+      "source": "TechCrunch AI",
+      "title": "语音AI高管：尚未迎来ChatGPT时刻",
+      "summary": "在HumanX大会上，PolyAI首席技术官Shawn Wen与Otter首席营销官Alex Gay表示，尽管全双工语音模型已问世，语音AI仍未迎来自己的“ChatGPT时刻”。Wen认为下一挑战是让推理足够快，使对话自然流畅；Gay则强调说话人识别、意图捕捉与转写准确度是自动化前提，转写错误会破坏下游行动并导致用户失去信任。两人还提到，企业场景中应明确告知用户正在与AI对话或被录音。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "语音AI投资火热但体验仍不成熟，高管公开承认瓶颈，有助于行业从炒作转向解决推理速度、转写准确与透明度等实际问题。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch报道，在HumanX大会上，企业语音AI平台PolyAI的CTO Shawn Wen表示，虽然全双工模型已经能边听边说，但语音AI还没有达到“ChatGPT时刻”。他认为下一步难点是让推理速度足够快，模型能迅速取回答案，对话才会自然。Otter的CMO Alex Gay则指出，说话人识别、意图捕捉并结合组织知识转写，是实现自动化的关键；如果原始转写不准，后续行动都会出错，用户会失去对平台的信任。两人还谈到透明度问题：工具应告知用户正在被录音或正在与AI对话。报道未给出具体产品发布时间或量化指标，相关判断仍属高管观点。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "把语音AI想象成一个刚学会接电话的实习生：他能听也能说，但反应慢半拍，经常听错关键词，一错后面全乱。现在投资人拼命往这个方向砸钱，可真正好用的“电话客服”还没出现。对普通人来说，这意味着短期内打客服电话仍可能先遇到笨拙的机器人，而不是像跟真人一样顺畅。好消息是，厂商已经意识到问题不在“能不能说”，而在“听得准、想得快、敢承认自己是AI”。等这三件事做好，语音助手才可能像当年ChatGPT一样，让人真正愿意用、放心用。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "These execs think voice AI hasn’t reached its ChatGPT moment yet"
+    },
+    {
+      "id": "a439fdc2654eaa",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress"
+        }
+      ],
+      "publishedAt": "2026-10-11",
+      "source": "The Verge AI",
+      "title": "本地AI实测：隐私与折腾并存",
+      "summary": "The Verge记者尝试在本地运行AI，以规避云端隐私风险。他使用256GB内存的Mac Studio安装开源Hermes Agent和1250亿参数的Qwen模型，完成每日简报、整理Steam游戏库、分析财务数据等任务。过程中遇到简报生成失败、自动化脚本仍在调试等问题。他认为本地AI虽能处理敏感数据，但并非万能助手，仍需投入大量精力。",
+      "category": "日常应用",
+      "importance": 55,
+      "why": "本地AI正成为隐私敏感用户的新选择，但实际体验仍充满门槛。该文以第一人称记录真实使用过程，揭示本地AI的潜力与局限，对普通用户是否值得投入有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "The Verge记者在配备256GB统一内存的M5 Ultra Mac Studio上安装开源Hermes Agent，并选用约105GB的Qwen 3.8 Flash Next模型，尝试本地AI日常使用。他成功让AI生成每日简报、整理400多款Steam游戏、分析财务记录和制作笔记本规格对比表，还尝试自动化基准测试。但简报多次失败，需确保Mac不睡眠；自动化脚本仍在调试。他需授予AI系统权限和Steam API密钥，但可随时撤销。目前尚不清楚这些任务在低配设备上的表现，以及长期稳定性如何。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像把AI从别人家的服务器搬回自己电脑上，好处是私密数据不用上传，坏处是得自己买高配电脑、装软件、调设置，还得忍受它时不时罢工。对普通人来说，如果你只是聊聊天、写写邮件，云端AI更省事；但如果你有敏感数据不想外传，或者想有个只属于自己的小助手，本地AI值得一试，前提是愿意折腾。它目前更像一个需要调教的工具，而不是即插即用的魔法。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Learning to use local AI is exciting, overwhelming, and frustrating"
+    },
+    {
+      "id": "2ff11c15230d66",
+      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/"
+        }
+      ],
+      "publishedAt": "2026-10-11",
+      "source": "TechCrunch AI",
+      "title": "亚马逊弃用NDA谈判数据中心，社区反对声浪未平",
+      "summary": "亚马逊近期宣布，在与地方政府谈判数据中心时不再使用保密协议，效仿微软今年早些时候的类似举措。此举旨在回应社区对数据中心推高电价、消耗水资源及影响房产价值的担忧。然而，行业观察者指出，许多数据中心项目仍秘密谈判，且各地暂停令仅持续一两年，而数据中心上线需数年，实际影响有限。科技行业沟通不畅加剧了公众不信任，亚马逊的声明能否平息反对仍有待观察。",
+      "category": "行业变化",
+      "importance": 65,
+      "why": "亚马逊和微软放弃NDA，反映AI数据中心扩张遭遇社区阻力，行业被迫提升透明度。这影响科技公司与地方政府谈判方式，也关乎普通社区对基础设施的接受度。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "亚马逊宣布在与地方政府谈判数据中心时不再使用保密协议（NDA），此前微软今年也做出类似承诺。这一变化出现在亚马逊一篇论证数据中心有益社区的博客文章中。TechCrunch报道指出，社区对数据中心的反对主要源于秘密谈判，导致居民担心电价、水资源和房产价值受影响。目前，多个地区通过了数据中心暂停令，如旧金山和纽约，但期限仅一至两年。行业人士认为，数据中心上线需数年，暂停令实际影响有限，但反对声浪已让企业感到压力。亚马逊的声明是否有效尚不确定，因为社区不信任根深蒂固，且科技行业整体沟通不佳。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "好比你家旁边要建一个大型工厂，但政府和企业偷偷商量，不告诉你细节，你肯定担心污染、噪音和房价。现在亚马逊说，以后商量时不再偷偷摸摸了，会公开谈。这算是个进步，但光这样还不够，因为大家已经不信了。而且，就算当地暂时不让建，企业可以等几年再建，所以反对可能只是拖时间。对普通人来说，这意味着未来数据中心可能更透明，但电价、水资源等实际影响仍需关注。科技公司得学会好好解释，否则反对声只会更大。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Can the AI industry persuade data center opponents by getting rid of NDAs?"
+    },
+    {
+      "id": "10ff9df7a5585a",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai"
+        }
+      ],
+      "publishedAt": "2026-10-11",
+      "source": "The Verge AI",
+      "title": "硅谷巨头跟随特朗普改称AI为超级智能",
+      "summary": "特朗普宣布将人工智能改称“超级智能”，并称使用旧称者为敌人。马斯克、贝尼奥夫、黄仁勋、纳德拉等硅谷领袖相继跟进，在公开表态或公司命名中使用新词。报道称，这反映科技巨头在特朗普第二任期主动靠拢政府，与首任期紧张关系形成对比。但改称是否被公众接受、企业是否正式更名，仍不确定。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "政治力量直接介入技术命名，可能影响行业话语与公众认知，也显示硅谷与政府关系转向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "特朗普宣布将“人工智能”改称“超级智能”，并称继续使用旧称者应被视为敌人。随后，马斯克承诺将SpaceXAI更名为SpaceXSI；贝尼奥夫宣布Salesforce将AIForce改为SIForce；黄仁勋出席相关峰会，英伟达承诺10亿美元科研投入包含“超级智能研究”；纳德拉在呼吁为AI设“紧急刹车”的帖子中反复使用“超级智能”。报道称，这些举动发生在特朗普第二任期，硅谷正试图与政府交好。但企业是否正式更名、公众是否接受新词，仍不确定。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像班里最有话语权的几个同学，突然跟着老师改口叫一个新名字，哪怕其他人还在用旧叫法。对普通人来说，短期不会改变你手机里的AI功能，但可能影响未来新闻、产品宣传甚至政策文件里的用词。如果政府带头用“超级智能”，企业为了不得罪监管者，也可能跟着改口。真正值得关注的是，改名背后是科技公司主动向政治权力靠拢，而不是技术本身发生了什么突变。",
+          "text2": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Silicon Valley is falling in line with Trump’s attempt to rename AI"
+    },
     {
       "id": "c9390824224ecd",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
@@ -3465,122 +3583,6 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Amazon releases its own Jev clone as decision models flood the web"
-    },
-    {
-      "id": "3c93c11303b90f",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-      "sources": [
-        {
-          "name": "The Verge AI",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle"
-        }
-      ],
-      "publishedAt": "2026-10-01",
-      "source": "The Verge AI",
-      "title": "OpenAI发布Dots智能体，高价迎战免费Muse",
-      "summary": "在2026年DevDay大会上，OpenAI推出由GPT-6 Astra驱动的智能体Dots，定位为可处理长周期知识工作的“幕僚长”，并强调隐私与安全。但Dots目前仅面向每月100美元及以上的Pro用户，而Meta的Muse以免费、易用和跨平台整合迅速走红。OpenAI称未来会推出面向数十亿人的大众版本，但眼下能否用更好的产品战胜免费模式，仍是最大悬念。",
-      "category": "模型进展",
-      "importance": 78,
-      "why": "这是OpenAI在智能体赛道对Meta免费策略的正面回应，涉及定价、企业市场与安全隐私竞争，可能影响普通用户能否低成本用上AI代理。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "OpenAI在年度DevDay上发布智能体Dots，由GPT-6 Astra驱动，形态是可个性化、带眼睛的彩色团块，主打长期任务、知识工作与多模态交互，并计划推出会计、法律等专业版本，与微软Agent 365整合。OpenAI强调Dots更安全可信，配套“OpenAI Private Intelligence”隐私框架和零数据保留选项。但Dots目前仅限每月100美元及以上的Pro用户，而Meta的Muse提供免费专用虚拟机，任何Meta账户即可使用。OpenAI承认Dots算力消耗大，暂为高端产品，未来才可能大众化。发布会上的语音演示未成功，短信代理功能也仍标注“即将推出”。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "这就像两家餐厅：一家把招牌菜免费送，还帮你把餐具、座位和外卖渠道都安排好；另一家菜更精致，但先只卖给VIP，还说自己更安全、更专业。OpenAI赌的是“东西更好”能赢过“不要钱”，可普通用户往往先看价格和方便程度。对普通人来说，短期内想用Dots得先掏每月100美元，而Muse可能继续免费。若OpenAI未来推出便宜版本，竞争会真正影响你我；若迟迟不降，智能体可能先成为企业和富人的工具，而不是大众日常助手。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "OpenAI’s new agent is a shot at Meta — but can it compete with free?"
-    },
-    {
-      "id": "f928531f963725",
-      "url": "https://huggingface.co/blog/allenai/olmocore3",
-      "sources": [
-        {
-          "name": "Hugging Face",
-          "url": "https://huggingface.co/blog/allenai/olmocore3"
-        }
-      ],
-      "publishedAt": "2026-10-01",
-      "source": "Hugging Face",
-      "title": "Ai2发布Olmo-core 3：开源MoE训练框架",
-      "summary": "2026年10月1日，Ai2发布Olmo-core 3，一个面向大型混合专家（MoE）模型的开源训练框架。该框架将MoE训练扩展至万亿参数级，同时保持计算效率。在8块NVIDIA B300 GPU测试中，47B参数MoE吞吐量达52,000 tokens/秒/GPU，较旧实现提升约2.7倍；启用MXFP8后吞吐量再增21%。框架已基准测试1.2万亿参数模型，并实验性达到2.38万亿参数。该框架将用于下一代Olmo模型，并完全开源。",
-      "category": "模型进展",
-      "importance": 75,
-      "why": "Olmo-core 3显著降低大型MoE训练门槛，提升吞吐并开源，使学术和小型实验室也能参与万亿参数模型开发，推动AI民主化。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "Ai2于2026年10月1日发布Olmo-core 3，这是其大语言模型训练框架的重大升级，核心是重新设计的开源MoE训练系统。该框架旨在将MoE训练扩展至万亿参数级，同时保持计算效率。在8块NVIDIA B300 GPU上，47B参数MoE吞吐量达52,000 tokens/秒/GPU，较旧FSDP实现提升约2.7倍；启用MXFP8后吞吐量再增21%，峰值内存从103 GiB降至95 GiB。框架已基准测试1.2万亿参数模型（每token激活58.36B参数，512块GPU），最高吞吐858 TFLOP/s/GPU，并实验性达到2.38万亿参数。技术报告还记录了token gerrymandering等发现。目前这些测试使用随机路由，未评估模型质量，且2.38万亿参数仅为短时容量测试，非持续训练性能。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "MoE模型像一家大公司，每个问题只找几个专家处理，但公司越大，协调越难。Olmo-core 3就是一套新的管理方法，让公司能扩大到万亿员工，而处理每个问题的成本几乎不变。对普通人来说，这意味着未来可能有更强大且更便宜的AI模型，因为训练成本降低后，小团队也能参与开发。Ai2将这套方法完全开源，就像把菜谱公开，谁都能照着做。不过，目前测试只验证了系统跑得快，还没证明训练出的模型一定更聪明。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-    },
-    {
-      "id": "d4606327912a54",
-      "url": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
-      "sources": [
-        {
-          "name": "The Verge AI",
-          "url": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed"
-        }
-      ],
-      "publishedAt": "2026-10-01",
-      "source": "The Verge AI",
-      "title": "谷歌AI搜索反垄断诉讼被驳回",
-      "summary": "美国联邦法官驳回Chegg和Penske Media对谷歌AI Overviews的反垄断诉讼。两家公司指控谷歌利用搜索垄断迫使出版商免费提供内容，否则降低搜索排名，导致流量和收入受损。法官Mehta认为，出版商仅对谷歌发送流量有“期望”，但期望不构成协议，这是通用搜索引擎的运作方式。法院虽同情出版商处境，但认为反垄断法不能替代立法机构应对新创新的经济影响。与此同时，新闻网站流量持续下滑，谷歌正试点向约100家出版商付费。",
-      "category": "行业变化",
-      "importance": 75,
-      "why": "此案明确了AI搜索时代反垄断法的边界，对出版商与平台的关系影响深远，也预示未来立法可能介入。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "美国联邦法官Amit Mehta驳回Chegg和Penske Media Corporation对谷歌的反垄断诉讼。两家公司指控谷歌滥用搜索垄断，强迫出版商免费提供内容用于AI Overviews，否则将其从搜索结果中移除，导致流量和收入下降。法官在裁决中写道，出版商仅“期望”谷歌发送流量，但期望不是协议，这是通用搜索引擎的运作方式。法院虽同情出版商，但认为反垄断规则不能替代立法机构应对新创新的经济影响。与此同时，新闻网站流量持续下滑，谷歌正试点向约100家出版商付费，但具体条款未公开。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "这就像你免费把菜放在超市门口，指望超市帮你引流，但超市用你的菜做了预制菜，却没给你分成。你去告超市垄断，法官说：你只是“指望”它引流，又没签合同，超市本来就这么运作。所以出版商告不赢。对普通人来说，以后搜新闻可能更常看到AI总结，点进原网站的机会更少，小网站可能更难生存。谷歌开始给部分出版商付费，但多数人未必能拿到。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "Judge dismisses antitrust lawsuits over Google’s AI Overviews"
-    },
-    {
-      "id": "d6170f881b8aeb",
-      "url": "https://techcrunch.com/2026/09/30/cerebras-systems-andrew-feldman-on-whether-ai-can-keep-scaling-at-techcrunch-disrupt-2026/",
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2026/09/30/cerebras-systems-andrew-feldman-on-whether-ai-can-keep-scaling-at-techcrunch-disrupt-2026/"
-        }
-      ],
-      "publishedAt": "2026-09-30",
-      "source": "TechCrunch AI",
-      "title": "Cerebras CEO将谈AI算力能否持续扩张",
-      "summary": "TechCrunch报道，Cerebras Systems联合创始人兼CEO Andrew Feldman将在2026年10月13日至15日于旧金山举行的TechCrunch Disrupt大会上，围绕“AI能否持续扩张”发表演讲。文章称Cerebras以晶圆级计算挑战传统芯片架构，2026年5月IPO募资55亿美元，并与OpenAI签署2026至2028年部署750兆瓦系统的多年协议；8月发布CS-4，并称已有超600兆瓦数据中心容量投运或签约。这些数字均来自主办方宣传稿，尚无独立核实。",
-      "category": "行业变化",
-      "importance": 62,
-      "why": "算力、电力与数据中心能否跟上模型扩张，是AI行业最现实的瓶颈。Cerebras的晶圆级路线和OpenAI大单，为观察这一瓶颈提供了具体案例，但相关数字来自活动宣传，需谨慎看待。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "TechCrunch发布活动预告，Cerebras Systems联合创始人兼CEO Andrew Feldman将在2026年10月13日至15日于旧金山Moscone West举行的TechCrunch Disrupt 2026登台，主题为“AI能否持续扩张”。文章称，Cerebras自2015年起押注晶圆级计算，不把硅晶圆切成单颗芯片，而是直接在晶圆上制造处理器，面向高负载AI任务。文中提到该公司2026年5月IPO募资55亿美元，与OpenAI签署2026至2028年部署750兆瓦系统的多年协议，8月推出CS-4，并称已有超600兆瓦数据中心容量投运或签约、2026年制造产能提升十倍以上、计划年内启用首个欧洲数据中心并在2027年底扩至200兆瓦。上述数字均出自这篇以售票和议程推广为主的文章，缺少独立来源核实，具体交付进度、协议条款和产能口径仍不确定。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "可以把AI模型想成越来越能吃的发动机，芯片只是发动机本身，真正决定它能跑多远的是油箱、加油站和散热系统。Cerebras的做法相当于不按常规把整块钢板切成小零件，而是直接拿整块钢板造一台大发动机，省掉拼接损耗。对普通人来说，这类新闻短期不会改变你用的聊天机器人，但它决定未来AI服务会不会因为缺电、缺机房而变慢、变贵，或者干脆限流。如果晶圆级路线真能落地，算力供给可能更充足；如果电力、冷却和建厂跟不上，再强的芯片也只能排队等电。看这类消息时，重点不是发布会上的数字，而是这些机房和电力是否真的按期建成。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "Cerebras Systems’ Andrew Feldman on whether AI can keep scaling at TechCrunch Disrupt 2026"
     }
   ]
 }
