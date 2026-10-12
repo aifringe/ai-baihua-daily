@@ -1,0 +1,121 @@
+[
+  {
+    "name": "OpenAI",
+    "feed": "https://openai.com/news/rss.xml",
+    "home": "https://openai.com/news/",
+    "weight": 5,
+    "kind": "官方"
+  },
+  {
+    "name": "Google DeepMind",
+    "feed": "https://deepmind.google/blog/rss.xml",
+    "home": "https://deepmind.google/discover/blog/",
+    "weight": 5,
+    "kind": "官方"
+  },
+  {
+    "name": "Google AI",
+    "feed": "https://blog.google/technology/ai/rss/",
+    "home": "https://blog.google/technology/ai/",
+    "weight": 4,
+    "kind": "官方"
+  },
+  {
+    "name": "Google Research",
+    "feed": "https://research.google/blog/rss/",
+    "home": "https://research.google/blog/",
+    "weight": 5,
+    "kind": "研究"
+  },
+  {
+    "name": "AWS AI",
+    "feed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "home": "https://aws.amazon.com/blogs/machine-learning/",
+    "weight": 4,
+    "kind": "官方"
+  },
+  {
+    "name": "MIT News",
+    "feed": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+    "home": "https://news.mit.edu/topic/artificial-intelligence2",
+    "weight": 5,
+    "kind": "研究"
+  },
+  {
+    "name": "Berkeley AI Research",
+    "feed": "https://bair.berkeley.edu/blog/feed.xml",
+    "home": "https://bair.berkeley.edu/blog/",
+    "weight": 5,
+    "kind": "研究"
+  },
+  {
+    "name": "Apple Machine Learning",
+    "feed": "https://machinelearning.apple.com/rss.xml",
+    "home": "https://machinelearning.apple.com/",
+    "weight": 5,
+    "kind": "研究"
+  },
+  {
+    "name": "Hugging Face",
+    "feed": "https://huggingface.co/blog/feed.xml",
+    "home": "https://huggingface.co/blog",
+    "weight": 4,
+    "kind": "官方"
+  },
+  {
+    "name": "Microsoft Research",
+    "feed": "https://www.microsoft.com/en-us/research/feed/",
+    "home": "https://www.microsoft.com/en-us/research/",
+    "weight": 5,
+    "kind": "研究"
+  },
+  {
+    "name": "NVIDIA AI",
+    "feed": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
+    "home": "https://blogs.nvidia.com/",
+    "weight": 4,
+    "kind": "官方"
+  },
+  {
+    "name": "GitHub",
+    "feed": "https://github.blog/ai-and-ml/feed/",
+    "home": "https://github.blog/ai-and-ml/",
+    "weight": 4,
+    "kind": "官方"
+  },
+  {
+    "name": "TechCrunch AI",
+    "feed": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "home": "https://techcrunch.com/category/artificial-intelligence/",
+    "weight": 3,
+    "kind": "专业媒体"
+  },
+  {
+    "name": "MIT Technology Review",
+    "feed": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+    "home": "https://www.technologyreview.com/",
+    "weight": 3,
+    "kind": "专业媒体"
+  },
+  {
+    "name": "VentureBeat AI",
+    "feed": "https://venturebeat.com/category/ai/feed/",
+    "home": "https://venturebeat.com/category/ai/",
+    "weight": 3,
+    "kind": "专业媒体"
+  },
+  {
+    "name": "The Verge AI",
+    "feed": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+    "home": "https://www.theverge.com/ai-artificial-intelligence",
+    "weight": 3,
+    "kind": "专业媒体"
+  },
+  {
+    "name": "Google News",
+    "feed": "https://news.google.com/rss/search?q=%22artificial%20intelligence%22%20OR%20OpenAI%20OR%20Gemini%20OR%20Claude%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+    "home": "https://news.google.com/",
+    "weight": 1,
+    "kind": "聚合发现"
+  }
+]

@@ -41,5 +41,15 @@ class UpdateNewsTests(unittest.TestCase):
   a={'title':'AMD与SK Hynix AI股票对比','originalTitle':'Better artificial intelligence stock: AMD versus SK Hynix'}
   b={'title':'英伟达与美光AI股票对比','originalTitle':'Better artificial intelligence stock: Nvidia versus Micron'}
   self.assertFalse(u.same_event(a,b))
+ def test_different_model_versions_stay_separate(self):
+  self.assertFalse(u.similar_title('OpenAI releases GPT-6.1','OpenAI releases GPT-6.2'))
+ def test_tracking_parameters_do_not_create_duplicates(self):
+  self.assertEqual(u.canonical('https://example.com/a?utm_source=x&id=1'),u.canonical('https://example.com/a?id=1'))
+ def test_low_value_promotions_are_rejected(self):
+  item={'originalTitle':'Best AI stocks to buy now','feedExcerpt':'Special deal','weight':5}
+  self.assertFalse(u.editorially_eligible(item))
+ def test_official_research_is_eligible(self):
+  item={'originalTitle':'MIT researchers release a new AI safety benchmark','feedExcerpt':'Research results','weight':5}
+  self.assertTrue(u.editorially_eligible(item))
 
 if __name__=='__main__':unittest.main()

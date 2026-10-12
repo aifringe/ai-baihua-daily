@@ -31,16 +31,10 @@ jobs:
           node-version: 22
           cache: pnpm
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.0'
-
       - name: Install and verify
         run: |
           pnpm install --frozen-lockfile
           pnpm lint
-          php -l public/api/chat.php
           pnpm test
           pnpm build
           pnpm check:bundle
@@ -62,20 +56,12 @@ jobs:
           SSH_HOST: ${{ secrets.BAOTA_SSH_HOST }}
           SSH_PORT: ${{ secrets.BAOTA_SSH_PORT }}
           SSH_USER: ${{ secrets.BAOTA_SSH_USER }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
-          (cd dist && find . -type f ! -path './api/chat.php' -print0 | tar --null -T - -czf -) | ssh \
+          (cd dist && find . -type f -print0 | tar --null -T - -czf -) | ssh \
             -i ~/.ssh/baota_deploy \
             -p "$SSH_PORT" \
             "$SSH_USER@$SSH_HOST" \
-            "echo DEPLOY_UID=\$(id -u) DEPLOY_GID=\$(id -g) >&2; mkdir -p /www/wwwroot/news.czrshe.com/api; rm -f /www/wwwroot/news.czrshe.com/api/chat.php; tar -xzmf - --no-same-owner --no-same-permissions -C /www/wwwroot/news.czrshe.com"
-          printf '%s' "$DEEPSEEK_API_KEY" | ssh \
-            -i ~/.ssh/baota_deploy \
-            -p "$SSH_PORT" \
-            "$SSH_USER@$SSH_HOST" \
-            "cat > /www/wwwroot/.ai-baihua-deepseek-key && chmod 640 /www/wwwroot/.ai-baihua-deepseek-key"
-          scp -i ~/.ssh/baota_deploy -P "$SSH_PORT" dist/api/chat.php \
-            "$SSH_USER@$SSH_HOST:/www/wwwroot/news.czrshe.com/api/chat.php"
+            "echo DEPLOY_UID=\$(id -u) DEPLOY_GID=\$(id -g) >&2; rm -f /www/wwwroot/news.czrshe.com/api/chat.php /www/wwwroot/.ai-baihua-deepseek-key; tar -xzmf - --no-same-owner --no-same-permissions -C /www/wwwroot/news.czrshe.com"
           scp -i ~/.ssh/baota_deploy -P "$SSH_PORT" \
             deploy/nginx-security-headers.conf deploy/install-security-headers.sh \
             "$SSH_USER@$SSH_HOST:/tmp/"

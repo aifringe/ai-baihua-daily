@@ -47,29 +47,18 @@ test('键盘焦点与跳转主内容入口可用', async ({page}) => {
   await expect(page.locator('#main-content')).toBeFocused();
 });
 
-test('手机 AI 面板可打开、回答并关闭', async ({page}) => {
-  await page.setViewportSize({width:390,height:844});
-  await page.route('**/api/chat.php', route=>route.fulfill({json:{answer:'这是当前新闻的**白话回答**。'}}));
-  await page.goto('/');
-  await page.locator('.news-card h2 a').first().click();
-  await page.getByRole('button',{name:'问这条新闻',exact:true}).click();
-  await expect(page.locator('dialog')).toBeVisible();
-  await page.getByLabel('关于新闻的问题').fill('解释一下');
-  await page.getByRole('button',{name:'发送问题'}).click();
-  await expect(page.locator('.markdown-answer strong')).toHaveText('白话回答');
-  await page.getByRole('button',{name:'关闭 AI 提问'}).click();
-  await expect(page.locator('dialog')).not.toBeVisible();
-  await page.getByRole('button',{name:'返回新闻列表'}).click();
-  await expect(page.locator('.news-card').first()).toBeVisible();
-});
-
-test('桌面详情 AI 顶部对齐且大屏充分利用空间', async ({page}) => {
+test('桌面详情充分利用空间且没有问答入口', async ({page}) => {
   await page.setViewportSize({width:1920,height:1080});
   await page.goto('/');
   expect(await page.locator('.shell').evaluate(el=>el.getBoundingClientRect().width)).toBeGreaterThan(1500);
   await page.locator('.news-card h2 a').first().click();
   await expect(page.locator('.detail')).toBeVisible();
-  const tops=await page.evaluate(()=>({article:document.querySelector('.detail')!.getBoundingClientRect().top,chat:document.querySelector('.ask-card')!.getBoundingClientRect().top}));
-  expect(Math.abs(tops.article-tops.chat)).toBeLessThan(3);
-  await expect(page.getByLabel('关于新闻的问题')).toBeVisible();
+  await expect(page.getByText(/云端 AI|不懂就问|发送问题/)).toHaveCount(0);
+});
+
+test('来源说明可展开，列表每页最多十条', async ({page}) => {
+  await page.goto('/');
+  await expect(page.locator('.news-card')).toHaveCount(10);
+  await page.getByText('新闻来源与选题规则').click();
+  await expect(page.locator('.source-catalog a')).not.toHaveCount(0);
 });

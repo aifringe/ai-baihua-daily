@@ -9,21 +9,12 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/'public/news.json'
 MODEL='deepseek-flash'
 API='https://api.deepseek.com/chat/completions'
-FEEDS=[
- ('OpenAI','https://openai.com/news/rss.xml',5),
- ('Google DeepMind','https://deepmind.google/blog/rss.xml',5),
- ('Google AI','https://blog.google/technology/ai/rss/',4),
- ('Hugging Face','https://huggingface.co/blog/feed.xml',4),
- ('Microsoft Research','https://www.microsoft.com/en-us/research/feed/',4),
- ('NVIDIA AI','https://blogs.nvidia.com/blog/category/deep-learning/feed/',4),
- ('GitHub','https://github.blog/ai-and-ml/feed/',3),
- ('TechCrunch AI','https://techcrunch.com/category/artificial-intelligence/feed/',3),
- ('MIT Technology Review','https://www.technologyreview.com/topic/artificial-intelligence/feed/',3),
- ('VentureBeat AI','https://venturebeat.com/category/ai/feed/',3),
- ('The Verge AI','https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',3),
- ('Google News','https://news.google.com/rss/search?q=%22artificial%20intelligence%22%20OR%20OpenAI%20OR%20Gemini%20OR%20Claude%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen',2),
-]
+SOURCE_CATALOG=json.loads((ROOT/'data/sources.json').read_text())
+FEEDS=[(s['name'],s['feed'],s['weight']) for s in SOURCE_CATALOG]
+
 AI=re.compile(r'\b(ai|artificial intelligence|llm|gpt|gemini|claude|agent|model|machine learning|deep learning|qwen|deepseek)\b',re.I)
+LOW_VALUE=re.compile(r'(stock|shares?|buy now|discount|coupon|deal|conference|webinar|register now|tickets?|sponsored|how to|tutorial|股票|股价|折扣|优惠|促销|报名|门票|教程)',re.I)
+HIGH_IMPACT=re.compile(r'(launch|release|research|benchmark|regulat|law|court|security|breach|safety|open.source|partnership|acqui|funding|chip|data.center|发布|推出|研究|突破|监管|法规|法院|安全|泄露|开源|收购|融资|芯片)',re.I)
 PAYWALL=re.compile(r'(subscribe to (continue|read)|subscription required|sign in to (continue|read)|already a subscriber|register to continue|premium subscribers)',re.I)
 PAYWALL_HOSTS={'economist.com'}
 ENTITIES=re.compile(r'(openai|chatgpt|anthropic|claude|google|gemini|deepmind|deepseek|meta|muse|microsoft|copilot|github|hugging\s*face|nvidia|amd|sk\s*hynix|micron|apple|amazon|alexa|tesla|xai|grok|qwen|alibaba|字节|豆包|百度|文心|腾讯|混元)',re.I)
@@ -56,6 +47,18 @@ def parse_date(value):
  try:d=parsedate_to_datetime(value) if ',' in value else dt.datetime.fromisoformat(value.replace('Z','+00:00'));return (d if d.tzinfo else d.replace(tzinfo=dt.timezone.utc)).date()
  except Exception:return None
 
+def candidate_score(item,group_size=1):
+ text=item.get('originalTitle','')+' '+item.get('feedExcerpt','')
+ score=int(item.get('weight',1))*8
+ score+=18 if HIGH_IMPACT.search(text) else 7
+ score+=min(18,max(0,group_size-1)*9)
+ score+=10 if re.search(r'\b(openai|anthropic|google|deepmind|microsoft|meta|nvidia|apple|amazon|github|hugging\s*face|mit)\b',text,re.I) else 4
+ score-=35 if LOW_VALUE.search(text) else 0
+ return max(0,min(100,score))
+
+def editorially_eligible(item):
+ return candidate_score(item)>=42 and not LOW_VALUE.search(item.get('originalTitle','')+' '+item.get('feedExcerpt',''))
+
 def parse_feed(spec):
  source,url,weight=spec
  try:raw,_=request(url);root=ET.fromstring(raw);items=[];today=dt.datetime.now(dt.timezone.utc).date()
@@ -66,10 +69,11 @@ def parse_feed(spec):
     if e.tag.split('}')[-1]==name:return e.text or e.attrib.get('href','')
    return ''
   title=clean(get('title'));link=get('link').strip();date=parse_date(get('pubDate') or get('published') or get('updated'))
-  if not title or not date or date>today+dt.timedelta(days=1) or date<today-dt.timedelta(days=30):continue
-  if not AI.search(title+' '+clean(get('description') or get('summary'))) and source not in ('OpenAI','Google DeepMind','Hugging Face'):continue
+  if not title or not date or date>today or date<today-dt.timedelta(days=30):continue
+  if not AI.search(title+' '+clean(get('description') or get('summary'))) and source not in ('OpenAI','Google DeepMind','Google AI','Hugging Face'):continue
   if urllib.parse.urlsplit(link).scheme!='https':continue
-  items.append({'originalTitle':title,'url':link,'publishedAt':date.isoformat(),'source':source,'weight':weight,'feedExcerpt':clean(get('description') or get('summary'))[:1800]})
+  candidate={'originalTitle':title,'url':link,'publishedAt':date.isoformat(),'source':source,'weight':weight,'feedExcerpt':clean(get('description') or get('summary'))[:1800]}
+  if editorially_eligible(candidate):items.append(candidate)
  return items,{'source':source,'ok':True}
 
 class ArticleParser(HTMLParser):
@@ -114,7 +118,11 @@ def distinctive_title(title):
  return norm_title(value)
 def event_concepts(title):return {name for name,pattern in EVENT_CONCEPTS.items() if pattern.search(title)}
 def similar_title(a,b):
- raw_a,raw_b=a,b;a,b=norm_title(a),norm_title(b)
+ raw_a,raw_b=a,b
+ versions=lambda title:set(re.findall(r'\b(?:gpt|gemini|claude|qwen|llama|grok)[ -]?(\d+(?:\.\d+)*)',title,re.I))
+ va,vb=versions(a),versions(b)
+ if va and vb and va.isdisjoint(vb):return False
+ a,b=norm_title(a),norm_title(b)
  if not a or not b:return False
  ratio=SequenceMatcher(None,a,b).ratio()
  ga={a[i:i+2] for i in range(len(a)-1)};gb={b[i:i+2] for i in range(len(b)-1)}
@@ -128,16 +136,18 @@ def similar_title(a,b):
  if entities_a and entities_b and not shared_entities:return False
  if ratio>=.78 or jac>=.62:return True
  shared_concepts=event_concepts(raw_a)&event_concepts(raw_b)
- return shared_entities and (bool(shared_concepts-{'release'}) or distinctive_ratio>=.58 or distinctive_jac>=.28)
+ return shared_entities and ((bool(shared_concepts-{'release'}) and (distinctive_ratio>=.42 or distinctive_jac>=.16)) or distinctive_ratio>=.64 or distinctive_jac>=.38)
 
 def same_event(a,b):
  left=[a.get('originalTitle',''),a.get('title','')];right=[b.get('originalTitle',''),b.get('title','')]
+ if a.get('eventKey') and b.get('eventKey') and a['eventKey']==b['eventKey']:return True
+ if a.get('url') and b.get('url') and canonical(a['url'])==canonical(b['url']):return True
  return any(similar_title(x,y) for x in left for y in right if x and y)
 
 def group_events(items):
  groups=[]
  for item in sorted(items,key=lambda x:(x['publishedAt'],x.get('weight',0)),reverse=True):
-  found=next((g for g in groups if abs((dt.date.fromisoformat(g[0]['publishedAt'])-dt.date.fromisoformat(item['publishedAt'])).days)<=3 and similar_title(g[0]['originalTitle'],item['originalTitle'])),None)
+  found=next((g for g in groups if abs((dt.date.fromisoformat(g[0]['publishedAt'])-dt.date.fromisoformat(item['publishedAt'])).days)<=3 and same_event(g[0],item)),None)
   if found is None:groups.append([item])
   else:found.append(item)
  return groups
@@ -172,18 +182,35 @@ def explain(group):
  if d.get('category') not in ('日常应用','模型进展','行业变化','安全与规则'):raise ValueError('invalid category')
  if not isinstance(d.get('sections'),list) or len(d['sections'])!=2 or [s.get('heading') for s in d['sections']]!=['发生了什么','换成人话']:raise ValueError('invalid sections')
  lead=max(group,key=lambda x:(x.get('weight',0),len(x.get('body',''))))
- return {'id':hashlib.sha256('|'.join(sorted(x['url'] for x in group)).encode()).hexdigest()[:14],'url':lead['url'],'sources':sources,'publishedAt':max(x['publishedAt'] for x in group),'source':' / '.join(dict.fromkeys(x['source'] for x in group)),'title':d['title'][:80],'summary':d['summary'][:800],'category':d['category'],'importance':max(1,min(100,int(d.get('importance',50)))),'why':d['why'][:500],'sections':d['sections'],'editor':'DeepSeek Flash · 基于公开可读正文综合整理','originalTitle':lead['originalTitle']}
+ return {'id':hashlib.sha256('|'.join(sorted(x['url'] for x in group)).encode()).hexdigest()[:14],'url':lead['url'],'sources':sources,'publishedAt':min(x['publishedAt'] for x in group),'source':' / '.join(dict.fromkeys(x['source'] for x in group)),'title':d['title'][:80],'summary':d['summary'][:800],'category':d['category'],'importance':max(1,min(100,int(d.get('importance',50)))),'why':d['why'][:500],'sections':d['sections'],'editor':'DeepSeek Flash · 基于公开可读正文综合整理','originalTitle':lead['originalTitle']}
 
-def main(limit=15):
+def rank_groups(groups):
+ def score(group):
+  corroboration=len({urllib.parse.urlsplit(x['url']).netloc for x in group})
+  return max(candidate_score(x,corroboration) for x in group),max(x['publishedAt'] for x in group)
+ return sorted(groups,key=score,reverse=True)
+
+def main(limit=20):
  old=json.loads(OUT.read_text());candidates=[];health=[]
  with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
   for items,status in pool.map(parse_feed,FEEDS):candidates.extend(items);health.append(status)
  by_url={canonical(x['url']):x for x in candidates}
  with concurrent.futures.ThreadPoolExecutor(max_workers=10) as pool:readable=[x for x in pool.map(article_text,by_url.values()) if x]
- groups=group_events(readable);existing=dedupe_existing(old.get('articles',[]));new=[]
+ groups=rank_groups(group_events(readable));existing=dedupe_existing(old.get('articles',[]));new=[];per_source={};per_category={}
  for group in groups:
-  if any(same_event({'originalTitle':group[0]['originalTitle'],'title':group[0]['originalTitle']},a) for a in existing):continue
-  try:new.append(explain(group));print('Explained:',group[0]['originalTitle'],flush=True)
+  hit=next((a for a in existing if abs((dt.date.fromisoformat(group[0]['publishedAt'])-dt.date.fromisoformat(a['publishedAt'])).days)<=7 and same_event(group[0],a)),None)
+  if hit:
+   for item in group:
+    links=hit.setdefault('sources',[{'name':hit['source'],'url':hit['url']}])
+    if canonical(item['url']) not in {canonical(x['url']) for x in links}:links.append({'name':item['source'],'url':item['url']})
+   continue
+  lead=max(group,key=lambda x:(x.get('weight',0),len(x.get('body',''))))
+  if per_source.get(lead['source'],0)>=3:continue
+  try:
+   story=explain(group)
+   if story['importance']<55 or per_category.get(story['category'],0)>=6:continue
+   new.append(story);per_source[lead['source']]=per_source.get(lead['source'],0)+1;per_category[story['category']]=per_category.get(story['category'],0)+1
+   print('Explained:',group[0]['originalTitle'],flush=True)
   except Exception as e:print('Skipped:',type(e).__name__,str(e),flush=True)
   if len(new)>=limit:break
  now=dt.datetime.now(dt.timezone.utc).isoformat();cutoff=(dt.date.today()-dt.timedelta(days=30)).isoformat()
@@ -191,4 +218,4 @@ def main(limit=15):
  result={'updatedAt':now if new else old.get('updatedAt',now),'lastCheckedAt':now,'feedStatus':health,'articles':sorted(articles,key=lambda x:x['publishedAt'],reverse=True)[:120]}
  OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(f'Updated {len(new)} stories; {len(result["articles"])} retained')
 
-if __name__=='__main__':main(int(sys.argv[1]) if len(sys.argv)>1 else 15)
+if __name__=='__main__':main(min(20,int(sys.argv[1])) if len(sys.argv)>1 else 20)

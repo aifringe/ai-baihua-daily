@@ -24,7 +24,7 @@ jobs:
       - name: Build deduplicated edition from readable articles
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python3 scripts/update_news.py 15
+        run: python3 scripts/update_news.py 20
       - name: Publish changed edition
         env:
           GH_TOKEN: ${{ github.token }}
