@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:37:42.718365+00:00",
-  "lastCheckedAt": "2026-10-13T06:37:42.718365+00:00",
+  "updatedAt": "2026-10-13T06:38:24.919557+00:00",
+  "lastCheckedAt": "2026-10-13T06:38:24.919557+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -9658,6 +9658,35 @@
       "originalTitle": "How AI trained on birds is surfacing underwater mysteries"
     },
     {
+      "id": "89fc19ba391316",
+      "url": "https://huggingface.co/blog/transformersjs-v4",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/transformersjs-v4"
+        }
+      ],
+      "publishedAt": "2026-02-09",
+      "source": "Hugging Face",
+      "title": "Transformers.js v4发布：WebGPU重写，浏览器跑大模型",
+      "summary": "2026年2月9日，Hugging Face发布Transformers.js v4，距v3已一年。核心是采用C++重写的WebGPU运行时，与ONNX Runtime团队合作，支持约200种模型架构，可在浏览器、Node、Bun、Deno中本地运行AI模型。新增GPT-OSS、FalconH1等模型，支持Mamba、MoE等架构。构建系统从Webpack迁移至esbuild，构建时间从2秒降至200毫秒，默认包体积缩小53%。新增ModelRegistry API、独立分词库@huggingface/tokenizers（8.8kB）。测试中GPT-OSS 20B在M4 Pro Max上达约60 tokens/秒。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "WebGPU运行时重写和跨环境支持显著降低本地AI部署门槛，构建效率与包体积优化提升开发体验，对WebAI生态有实质推动。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年2月9日发布Transformers.js v4，距v3约一年。最大变化是采用C++重写的WebGPU运行时，与ONNX Runtime团队合作，覆盖约200种模型架构，并支持浏览器、Node、Bun、Deno等环境。新增GPT-OSS、Chatterbox、FalconH1等模型，支持Mamba、MLA、MoE等架构。构建系统从Webpack迁移至esbuild，构建时间从2秒降至200毫秒，默认包体积缩小53%。新增ModelRegistry API、独立分词库@huggingface/tokenizers（8.8kB）。测试中GPT-OSS 20B（q4f16）在M4 Pro Max上约60 tokens/秒。仍不确定的是，不同硬件和浏览器下的实际性能与兼容性未全面披露。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前在网页里跑AI模型，要么慢要么得联网。v4相当于给浏览器装了个更快的引擎，让模型直接在本地跑，不用把数据传到云端。对普通人来说，以后网页翻译、图片处理、聊天助手可能更快更私密，断网也能用。对开发者，打包体积小了一半多，加载更快，还能在服务器和桌面应用里复用同一套代码。不过，实际体验取决于设备性能，老电脑或手机可能还是吃力。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Transformers.js v4: Now Available on NPM!"
+    },
+    {
       "id": "3802c2e4749df1",
       "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
       "sources": [
@@ -9774,6 +9803,35 @@
       "originalTitle": "​Sequential Attention: Making AI models leaner and faster without sacrificing accuracy"
     },
     {
+      "id": "634f96fb7ab6e9",
+      "url": "https://huggingface.co/blog/community-evals",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/community-evals"
+        }
+      ],
+      "publishedAt": "2026-02-04",
+      "source": "Hugging Face",
+      "title": "Hugging Face推出社区评估，打破黑箱排行榜",
+      "summary": "Hugging Face于2026年2月发布Community Evals功能，允许基准数据集托管排行榜，模型仓库存储评估分数，社区可通过PR提交结果，并引入验证徽章确保可复现。背景是当前基准测试如MMLU已饱和，但模型实际表现与分数存在差距，且不同来源报告分数不一致。该功能旨在去中心化评估报告，提供透明可追溯的分数来源，但尚处测试阶段，不解决基准饱和或测试集训练问题。",
+      "category": "行业变化",
+      "importance": 75,
+      "why": "该功能推动AI评估透明化，让社区共同验证模型能力，可能改变依赖黑箱排行榜的现状，对模型选型和信任建立有深远影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face在2026年2月4日推出Community Evals，允许基准数据集（如MMLU-Pro、GPQA、HLE）注册为基准并自动聚合模型评估结果，在数据集卡片显示排行榜。模型作者可将评估分数以YAML文件存入模型仓库，社区成员也能通过PR提交任何模型的评估结果，并链接论文或日志等来源。所有结果通过Hub API公开，支持构建自定义排行榜。验证徽章可证明结果可复现。目前功能处于测试阶段，仅支持少量基准，未来将扩展。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前AI模型的考试成绩就像黑箱，厂商自己说考了多少分，别人没法查证，不同地方分数还对不上。现在Hugging Face搞了个公开的“成绩公示栏”，谁都可以把模型考试分数贴上去，还能附上试卷和答案，大家都能看到、讨论、验证。这样选模型时，你不再只信厂商宣传，而是能看到多方证据。不过，这并不能让考试变简单，也不能防止有人提前偷看答案，只是让考试过程更透明。对普通人来说，未来用AI工具时，可能更容易找到靠谱的模型，减少被夸大宣传误导的风险。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Community Evals: Because we're done trusting black-box leaderboards over the community"
+    },
+    {
       "id": "5de818201044ab",
       "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
       "sources": [
@@ -9830,6 +9888,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Collaborating on a nationwide randomized study of AI in real-world virtual care"
+    },
+    {
+      "id": "32b1a88e079e5f",
+      "url": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b"
+        }
+      ],
+      "publishedAt": "2026-02-03",
+      "source": "Hugging Face",
+      "title": "H公司发布Holo2-235B预览版，刷新UI定位纪录",
+      "summary": "H公司时隔两个月推出迄今最大的UI定位模型Holo2-235B-A22B Preview，在ScreenSpot-Pro上单步准确率70.6%，配合智能体迭代三步后达78.5%，创该基准新纪录；在OSWorld G上为79.0%。模型已上线Hugging Face，定位为研究性发布，聚焦界面元素定位。官方称智能体定位可为各尺寸Holo2模型带来10%至20%的相对提升，训练借助SkyPilot跨云调度。目前尚缺第三方复现与真实场景验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "UI元素定位是电脑智能体操作界面的基础能力，该模型刷新高难度基准纪录，意味着AI自动点击、填表等操作有望更精准，对自动化工具与无障碍应用有直接推动。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "H公司发布Holo2-235B-A22B Preview，称其为目前最大的UI定位模型，在ScreenSpot-Pro基准上单步准确率70.6%，启用智能体模式迭代三步后升至78.5%，刷新该基准最优成绩；在OSWorld G上达到79.0%。模型已在Hugging Face开放，官方定位为研究性发布，专注界面元素定位。技术细节上，模型通过多步迭代修正预测，官方称可为各尺寸Holo2模型带来10%至20%的相对提升；训练使用SkyPilot统一调度多云端Kubernetes任务。仍不确定的是：这些数字均为官方自报，缺少第三方独立复现，也未说明真实设备与复杂界面下的表现。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，这是教AI“看懂屏幕、点对按钮”的能力。屏幕越大、按钮越小，AI越容易点错，就像在一张4K大图上找一颗小图标。Holo2的做法是让AI先猜一次，再自己检查、逐步修正，相当于多核对几遍再下手，因此准确率明显提高。对普通人的影响是：未来自动填表、自动操作软件、帮视障用户点按界面的工具会更靠谱，出错更少。不过目前它仍是研究版本，离日常稳定使用还有距离，实际效果需等独立测试和真实场景检验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "H Company's new Holo2 model takes the lead in UI Localization"
     },
     {
       "id": "cc199a2045454f",
