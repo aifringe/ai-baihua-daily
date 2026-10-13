@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:33:11.993135+00:00",
-  "lastCheckedAt": "2026-10-13T06:33:11.993135+00:00",
+  "updatedAt": "2026-10-13T06:33:52.863402+00:00",
+  "lastCheckedAt": "2026-10-13T06:33:52.863402+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -5859,6 +5859,35 @@
       "originalTitle": "Daniela Rus receives Bavarian Minister-President's High-Tech Prize"
     },
     {
+      "id": "859cdcef3df01a",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/Dharma-AI/gpu-management"
+        }
+      ],
+      "publishedAt": "2026-07-30",
+      "source": "Hugging Face",
+      "title": "GPU闲置成AI新瓶颈，利用率取代智能成关键",
+      "summary": "Hugging Face文章以航空业飞机利用率类比AI GPU管理，指出GPU成本按日历小时累积，产出仅按计算小时计。企业自购GPU后，问题从“能否买到”变为“能否保持忙碌”。但GPU需按峰值配置，且训练、推理、量化等工作负载需求各异，调度器难以兼顾，导致高占用率下仍浪费容量。文章提出“GPU管理”新学科，强调持续编排比一次性采购更重要，但具体工具和成熟实践尚未形成。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "文章揭示AI基础设施竞争从模型能力转向GPU利用率，指出企业自建集群后普遍面临调度错配和隐性浪费，对评估AI成本与投资回报有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "文章将航空业“飞机在地面时间越少越赚钱”的逻辑迁移到AI GPU。GPU的融资、折旧、电力和冷却成本按日历小时发生，而产出只按计算小时累积。企业为应对API按token线性计费，转向自购GPU本地运行，但采购完成后，问题变成如何让集群持续忙碌。文章指出，GPU需按峰值需求配置，训练、微调、量化、实时推理、批量推理等任务对内存、延迟和时长要求不同，单一调度器难以兼顾，导致平均占用率虽高，部分任务仍排队等待。文章提出“GPU管理”作为新学科，负责持续决定哪个工作负载在何时、以何优先级运行在哪块GPU上，但承认工具和成熟实践尚未定型。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像航空公司买飞机：飞机停在机场照样烧钱，只有飞起来才赚钱。AI公司买GPU也一样，卡买回来不用，电费和折旧一分不少。更麻烦的是，飞机能随便换航线，GPU却挑活：有的任务要快，有的要吞吐，有的要长时间占着。结果就是，仪表盘看着很忙，实际很多卡在等特定任务，或者被低优先级工作占着。对普通人来说，这意味着AI服务成本可能不会因为芯片变多就自动下降；企业如果管不好这些卡，最终要么涨价，要么减少免费额度。文章想说的是，以后拼的不是谁卡多，而是谁能让每块卡真正干有用的活。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft"
+    },
+    {
       "id": "a0327df34849e3",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
       "sources": [
@@ -6238,6 +6267,35 @@
       "originalTitle": "From Hugging Face to Amazon SageMaker Studio in one click"
     },
     {
+      "id": "8125b5dd69d0a5",
+      "url": "https://huggingface.co/blog/skypilot-hf-storage",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/skypilot-hf-storage"
+        }
+      ],
+      "publishedAt": "2026-07-07",
+      "source": "Hugging Face",
+      "title": "Hugging Face与SkyPilot合作实现零出口存储",
+      "summary": "Hugging Face与SkyPilot联合推出新功能，允许用户通过hf:// URL将Hugging Face上的模型和数据集直接挂载到SkyPilot任务中，并在20多家云、Kubernetes或本地集群上运行AI工作负载。由于Hugging Face存储不收取出口费用，读取数据到GPU的成本为零，解决了跨云传输费用问题。该功能基于Xet去重技术，支持增量检查点，并已开源。",
+      "category": "行业变化",
+      "importance": 75,
+      "why": "该合作消除了跨云数据读取的出口费用，使AI团队能灵活利用多云GPU资源，降低训练和推理成本，对行业资源调度和成本优化有显著影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face与SkyPilot于2026年7月7日宣布合作，推出零出口存储集成。用户可通过hf:// URL将Hugging Face Bucket或模型/数据集仓库挂载到SkyPilot任务中，使用现有HF_TOKEN认证。SkyPilot可在20多家云、Kubernetes、Slurm及本地集群上调度任务，自动寻找可用GPU。Hugging Face存储不收取出口或CDN费用，因此读取数据到任何云上的GPU均免费。该功能基于Xet内容定义分块去重，仅传输变更块，支持增量检查点和模型变体。测试中，Qwen3.5-4B模型在AWS、GCP和Lambda上微调，模型加载约30秒，检查点写入速度达112-168 MB/s。目前仍不确定写入回源是否产生出口费用，但读取免费是核心突破。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前，你的AI模型和数据存在一个云上，但GPU可能在另一个云上，把数据搬过去要交一笔“过路费”，就像从自家仓库取东西却要付跨城运费。现在，Hugging Face和SkyPilot把仓库和卡车打通了：数据留在Hugging Face，GPU随便用哪家的，读数据不要钱。你只需一个hf://地址和已有的令牌，就能在任何云上跑训练或推理。对普通人来说，这意味着AI公司能更便宜、更灵活地使用算力，未来AI服务可能更快、更便宜。同时，去重技术让保存检查点只传变化部分，省时省流量。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot"
+    },
+    {
       "id": "1ec294ada9f40d",
       "url": "https://huggingface.co/blog/microsoft/foundry-managed-compute",
       "sources": [
@@ -6294,6 +6352,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Google DeepMind and A24 announce first-of-its-kind research partnership"
+    },
+    {
+      "id": "e4a022908747a5",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai"
+        }
+      ],
+      "publishedAt": "2026-07-01",
+      "source": "Hugging Face",
+      "title": "Hugging Face与Cerebras推出实时语音AI演示",
+      "summary": "Hugging Face与Cerebras联合发布实时语音到语音AI演示，采用模块化开源架构：Nvidia Parakeet负责语音识别，Gemma 4 31B模型在Cerebras硬件上推理，阿里Qwen3TTS完成语音合成。双方称该方案重点解决语言模型响应延迟，尤其是P95长尾延迟问题，使对话更接近人类交互节奏。该管线已用于Reachy Mini机器人，文中称已有超9000台在运行，评论区有人称已破1万台。演示代码和Space已公开，但未披露具体延迟数值、成本及正式产品化时间。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "开源语音管线叠加高速推理硬件，直击实时对话的长尾延迟痛点，且已有机器人落地案例，对开发者和语音产品方向有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face与Cerebras发布了一个实时语音到语音演示，架构为级联式：语音输入经Nvidia Parakeet做识别，再由Google DeepMind的Gemma 4 31B模型在Cerebras硬件上推理，最后用阿里Qwen3TTS合成语音输出。双方强调每一层模块化、可替换，开发者可自行改造用于助手、机器人或研究项目。文章称该管线已驱动Reachy Mini机器人，正文提到超过9000台在运行，评论区有人补充已破1万台。Cerebras负责压缩语言模型响应时间，并称重点改善P95长尾延迟，让对话不再偶发卡顿。目前仍不确定的是：具体延迟与吞吐数字未公布，成本、并发上限和正式商用时间也未说明，演示与生产可用之间仍有距离。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去和AI语音聊天，最烦的不是它答得笨，而是它总要愣几秒才开口，偶尔还卡很久，像打电话对方一直沉默。这次两家公司把流程拆成几段：先听清你说什么，再快速想，最后说出来，其中“想”这一步放到专门跑得快的芯片上，减少等待。好处是对话更顺，像真人接话，而不是对着机器喊一句等半天。对普通人来说，短期内可能先在机器人、车载助手、客服或无障碍工具里感受到更自然的语音交互；但演示不等于成品，真正普及还要看价格、稳定性和隐私处理。开源意味着开发者能自己改，也意味着各家产品会更快跟进。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Hugging Face and Cerebras bring Gemma 4 to real-time voice AI"
     },
     {
       "id": "51316e8a2b80cf",
