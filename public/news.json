@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:08:58.338780+00:00",
-  "lastCheckedAt": "2026-10-13T06:08:58.338780+00:00",
+  "updatedAt": "2026-10-13T06:10:12.094175+00:00",
+  "lastCheckedAt": "2026-10-13T06:10:12.094175+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -6004,6 +6004,64 @@
       "originalTitle": "Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles"
     },
     {
+      "id": "925612dcbcc31b",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision"
+        }
+      ],
+      "publishedAt": "2026-03-31",
+      "source": "Hugging Face",
+      "title": "IBM发布Granite 4.0 3B Vision文档理解模型",
+      "summary": "IBM于2026年3月31日发布Granite 4.0 3B Vision，一款面向企业文档理解的紧凑型视觉语言模型。该模型以LoRA适配器形式搭载于Granite 4.0 Micro，支持表格提取、图表理解和语义键值对抽取。在ChartNet基准上，其Chart2Summary得分86.4%，领先所有评估模型；表格提取在PubTablesV2裁剪和全页设置分别达92.1和79.3；VAREX表单键值对零样本准确率85.5%。模型采用Apache 2.0许可，已在Hugging Face开放。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该模型以3B参数在多项文档理解任务上超越更大模型，且采用模块化设计，降低了企业部署多模态文档处理的门槛，对自动化办公和金融分析有直接推动。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM发布Granite 4.0 3B Vision，一款专为企业文档理解设计的紧凑视觉语言模型。它作为LoRA适配器叠加在Granite 4.0 Micro之上，可独立使用或与Docling集成，处理表格、图表和键值对提取。技术亮点包括：通过代码引导合成管线构建的百万级图表数据集ChartNet，含170万样本、24种图表类型；采用DeepStack架构，将抽象视觉特征注入早期层、高分辨率空间特征注入后期层，以兼顾语义与细节。性能上，在ChartNet基准的Chart2Summary任务获86.4%最高分，Chart2CSV为62.1%，仅次于参数量超两倍的Qwen3.5-9B；表格提取在PubTablesV2裁剪和全页分别达92.1和79.3，OmniDocBench为64.0，TableVQA为88.1；VAREX表单键值对零样本准确率85.5%。模型以Apache 2.0许可在Hugging Face发布。仍不确定的是，这些基准成绩多来自官方评估，第三方复现和真实企业场景的泛化能力有待验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给企业配了一个专门看文档的“小助手”，虽然个头不大（30亿参数），但看表格、读图表、填表单特别在行。以前处理一堆发票或财报，得靠人眼一行行对，或者用笨重的大模型，又贵又慢。现在这个模型能直接看懂图片里的表格结构，把图表转成数据，还能从复杂表单里精准抓取关键信息。而且它设计得很灵活，不需要视觉功能时自动退回纯文本模式，省计算资源。对普通人来说，未来报销、银行对账、看研究报告可能更快更准，后台自动处理，减少人工录入错误。不过它主要面向企业，普通用户不会直接下载，而是通过集成了它的软件间接受益。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents"
+    },
+    {
+      "id": "66637736903e97",
+      "url": "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species"
+        }
+      ],
+      "publishedAt": "2026-03-31",
+      "source": "Hugging Face",
+      "title": "OpenMed 165美元训练25物种mRNA语言模型",
+      "summary": "OpenMed 发布端到端蛋白质AI流程，涵盖结构预测、序列设计与密码子优化。团队用25万条大肠杆菌CDS对比多种Transformer，发现RoBERTa在密码子建模上远优于ModernBERT，困惑度4.01对26.24。经超参调优，CodonRoBERTa-large-v2的CAI Spearman相关达0.40，较v1的0.025提升16倍。随后扩展至25个物种、38.1万条序列，55 GPU小时训练4个生产模型，总成本约165美元。流程还集成ESMFold与ProteinMPNN，但多物种泛化与湿实验验证仍待确认。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该工作以极低成本开源了多物种密码子优化模型，并揭示NLP预训练权重在生物序列上可能产生负迁移，对mRNA疗法与合成生物学有实用价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenMed 公开了一套蛋白质AI流水线，包含三个环节：用ESMFold预测30条蛋白质链的三维结构，平均PTM为0.79；用ProteinMPNN在7K00支架上设计序列，序列回收率42%；以及自研的密码子优化模型。团队先在大肠杆菌的25万条编码序列上，以相同数据和评估协议对比CodonBERT、ModernBERT和RoBERTa。结果RoBERTa系列困惑度约4.01，ModernBERT为26.24，差距约6倍。进一步调参后，CodonRoBERTa-large-v2的CAI Spearman相关从v1的0.025升至0.404，但困惑度略升至4.10。随后团队将模型扩展至25个物种、38.1万条序列，用55 GPU小时训练4个生产模型，总花费约165美元。不过，多物种条件下的实际表达效果、湿实验验证以及模型在非训练物种上的泛化能力，文中尚未给出明确结论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把DNA想象成给细胞下订单的说明书，同一款蛋白质可以用很多种不同的“措辞”来写，但有些写法细胞读得又快又准，有些则几乎不生产。OpenMed 做的事，就是训练一个AI来挑最好用的措辞，让细胞高效造出目标蛋白质。他们发现，原本为英语设计的先进模型反而“水土不服”，而更朴素的经典模型在生物数据上表现更好；更关键的是，把学习速度放慢一点，模型挑出的密码子与真实生物偏好的吻合度提升了16倍。对普通人来说，这意味着未来mRNA疫苗、抗体药或工业酶的生产，可能用更低的算力和成本完成序列优化，加速从设计到实验的进程。但AI挑出的序列是否真能在活细胞里稳定高产，仍需实验检验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Training mRNA Language Models Across 25 Species for $165"
+    },
+    {
       "id": "42a406893f8765",
       "url": "https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/",
       "sources": [
@@ -6060,6 +6118,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Liberate your OpenClaw"
+    },
+    {
+      "id": "9ab840ff0c6990",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
+        }
+      ],
+      "publishedAt": "2026-03-26",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini 3.1 Flash Live语音模型",
+      "summary": "谷歌DeepMind于2026年3月26日发布Gemini 3.1 Flash Live，称其为迄今质量最高的音频与语音模型，主打更低延迟、更自然的实时对话和更强的语调理解。开发者可通过Google AI Studio的Gemini Live API预览使用，企业版接入Gemini Enterprise客户体验，普通用户可在Search Live和Gemini Live中体验，后者覆盖200多个国家和地区。官方称其在ComplexFuncBench Audio得分90.8%，在Scale AI的Audio MultiChallenge开启思考模式后得分36.1%。所有生成音频均嵌入SynthID水印。上述分数与效果均为谷歌自述，尚无独立验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "语音交互是AI落地的重要入口，此次更新涉及延迟、多语言与任务执行能力，并同步扩大Search Live覆盖范围，对开发者和普通用户都有直接影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌发布Gemini 3.1 Flash Live，定位为实时语音对话模型，强调更低延迟、更自然的节奏和更强的语调识别能力，能根据用户的沮丧或困惑调整回应。开发者可在Google AI Studio通过Gemini Live API预览，企业可在Gemini Enterprise客户体验中使用，普通用户则通过Search Live和Gemini Live体验，Search Live本周扩展至200多个国家和地区。谷歌称该模型在ComplexFuncBench Audio上得分90.8%，在Scale AI的Audio MultiChallenge开启思考模式后得分36.1%，并称Gemini Live可跟随对话线索的时间是上一代的两倍。所有音频输出嵌入SynthID水印。上述性能数据均由谷歌自行公布，缺少第三方独立评测，实际体验是否一致仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次更新理解成给AI换了一副更灵敏的耳朵和更快的嘴：以前语音助手常要等半拍、听不出你着急，现在它更能接住话头，也能在嘈杂环境里干活。对普通人来说，最直接的变化是Search Live能覆盖更多国家和地区，用母语和搜索引擎实时对话、边问边看成为可能。对开发者来说，可以更容易搭出能打电话、处理多步任务的语音客服或助手。水印则像给AI声音盖了个隐形章，方便平台识别合成音频，降低被用来造假的风险。不过，官方公布的跑分不等于日常体验，真实效果还要看上线后的表现。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable"
     },
     {
       "id": "67a41177a9ef76",
@@ -6120,6 +6207,35 @@
       "originalTitle": "Protecting people from harmful manipulation"
     },
     {
+      "id": "c53fde1af24fcb",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/"
+        }
+      ],
+      "publishedAt": "2026-03-25",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Lyria 3 Pro音乐生成模型",
+      "summary": "谷歌DeepMind于2026年3月25日发布Lyria 3 Pro音乐生成模型，可生成最长3分钟的曲目，并理解前奏、主歌、副歌、桥段等结构，支持用户按段落定制。该模型已接入Vertex AI、Google AI Studio、Gemini API、Google Vids、Gemini应用及ProducerAI等产品，面向开发者、企业和普通创作者开放。谷歌称输出均嵌入SynthID水印，且不会模仿指定艺人，训练素材来自其有权使用的资源。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "音乐生成从短片段走向可定制结构的长曲目，并铺进谷歌多条产品线，意味着AI音乐正从演示工具变成可规模化使用的生产工具，对创作者和音乐行业影响直接。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind推出Lyria 3 Pro，是上月Lyria 3的进阶版本。官方称其最长可生成3分钟曲目，并更好理解音乐结构，用户可提示生成前奏、主歌、副歌和桥段等具体段落，适合复杂转场和风格实验。接入范围包括Vertex AI（公开预览）、Google AI Studio与Gemini API、Google Vids、Gemini应用（先向付费订阅者开放）以及ProducerAI。谷歌强调与音乐人合作开发，输出嵌入SynthID水印，不模仿指定艺人，训练使用其有权使用的材料。目前尚不清楚各产品具体上线时间、免费额度与商用授权细则。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前的AI音乐更像随手哼一段，现在它能按你的要求把整首歌搭起来：先来前奏，再进主歌，副歌重复几次，中间加桥段。对普通人来说，做视频配乐、播客片头或教程背景音乐，不必再买版权曲库，在谷歌工具里输入描述就能生成。对开发者和小团队，它像一台按需出歌的机器，可以批量做游戏配乐或广告音乐。但要注意，它不会照抄某位歌手，生成内容带隐形水印，商用前仍需看清条款，别把AI曲子直接当成自己的原创作品去卖。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Lyria 3 Pro: Create longer tracks in more"
+    },
+    {
       "id": "30089e2028e6ae",
       "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
       "sources": [
@@ -6149,6 +6265,66 @@
       "originalTitle": "TurboQuant: Redefining AI efficiency with extreme compression"
     },
     {
+      "id": "d824d361772f6d",
+      "url": "https://research.google/blog/improving-breast-cancer-screening-workflows-with-machine-learning/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/improving-breast-cancer-screening-workflows-with-machine-learning/"
+        }
+      ],
+      "publishedAt": "2026-03-17",
+      "source": "Google Research",
+      "title": "谷歌AI乳腺筛查研究：可减负但存误判",
+      "summary": "谷歌与英国NHS合作开展AIMS研究，评估AI在乳腺X光筛查双读流程中的表现。两项发表于《自然·癌症》的研究显示：AI独立读片灵敏度高于人类首读，癌症检出率从7.54升至9.33/千人，并额外发现25%的间隔癌；在模拟AI替代第二读片人的流程中，整体灵敏度与特异度不劣于传统双人流程，预计可减少46%的人类读片量、节省36-44%读片时间。但仲裁小组在93例阳性癌症中错误推翻了AI的正确召回建议，且系统存在数据漂移问题，需持续校准。",
+      "category": "行业变化",
+      "importance": 82,
+      "why": "该研究首次在真实NHS筛查流程中大规模验证AI替代第二读片人的可行性，既展示显著减负潜力，也暴露人机协作中仲裁误判等风险，对全球乳腺癌筛查体系具有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队与多家英国NHS机构合作，在《自然·癌症》发表两项 companion 研究。第一项回顾性评估了12.5万名女性（最终纳入115,973例）的乳腺X光片，AI独立读片灵敏度显著高于人类首读，特异度未下降，癌症检出率从7.54提升至9.33/千人，并额外检出25%的间隔癌；前瞻性部署在12个筛查点处理9,266例，AI读片中位时间17.7分钟，远快于人类首读的2天以上，同时发现训练数据与临床数据存在分布漂移。第二项纳入5万名女性（45,602例），22名读片人仲裁8,732例，结果显示AI替代第二读片人的流程在灵敏度和特异度上不劣于传统双人流程，预计减少46%人类读片量、节省36-44%读片时间。但仲裁小组在93例阳性癌症中错误推翻了AI的正确召回建议，且约8.7%复杂病例仍需双人读片。研究仍属回顾性与非干预性，尚需前瞻性临床试验验证。",
+          "heading_en": "What Happened"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把乳腺筛查想象成一道双人复核的安检：第一个人先看，第二个人再看，意见不合就找专家小组拍板。谷歌的AI就像一位不知疲倦的“第二双眼睛”，它看片比人快得多，还能发现人眼漏掉的早期癌症。在模拟测试中，让AI替代第二个人，整体安检效果没有变差，反而能省下近一半的人力，让医生有时间处理更复杂的病例。但问题也很现实：当AI说“这个要复查”而专家小组说“不用”时，有93个真正患癌的案例被专家小组错误否决了。这说明AI再准，最终拍板的人如果不够信任或看不懂AI的判断，好事也可能变坏事。对普通人来说，未来筛查可能更快、更准，但人机如何配合仍需谨慎磨合。",
+          "heading_en": "In Plain English"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Improving breast cancer screening workflows with machine learning"
+    },
+    {
+      "id": "9736df9a3d4827",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/"
+        }
+      ],
+      "publishedAt": "2026-03-17",
+      "source": "Google DeepMind",
+      "title": "DeepMind发布AGI认知评估框架并设20万美元悬赏",
+      "summary": "Google DeepMind于2026年3月17日发布论文《Measuring Progress Toward AGI: A Cognitive Taxonomy》，提出用认知科学评估AI通用智能的框架，涵盖感知、生成、注意力、学习、记忆、推理、元认知、执行功能、问题解决和社会认知10项能力，并设计三阶段评估协议。同时与Kaggle合作举办黑客松，针对学习、元认知、注意力、执行功能和社会认知5个评估缺口最大的能力征集评测方案，总奖金20万美元，3月17日至4月16日提交，6月1日公布结果。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "DeepMind提出AGI认知评估框架，试图为通用人工智能的进展提供可量化的科学标准，并通过悬赏吸引社区参与，可能影响未来AI能力评估方向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind发布新论文，提出一个基于认知科学的分类框架，用于衡量AI系统在通用智能方面的进展。该框架列出10项关键认知能力：感知、生成、注意力、学习、记忆、推理、元认知、执行功能、问题解决和社会认知。为评估这些能力，论文提出三阶段协议：用保留测试集评估AI表现、收集代表性人类基线、将AI表现映射到人类表现分布中。同时，DeepMind与Kaggle合作启动黑客松，针对学习、元认知、注意力、执行功能和社会认知这5个评估缺口最大的能力征集评测方案。总奖金20万美元，其中每个赛道前两名各获1万美元，四个最佳整体方案获2.5万美元大奖。提交窗口为3月17日至4月16日，结果6月1日公布。目前框架的实际有效性及能否成为行业标准尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给AI做一次“智力体检”，但体检项目不是跑分，而是模仿人类大脑的十种基本能力，比如记性、注意力、社交理解等。DeepMind先列了一张体检清单，然后发现有些项目根本没有现成的测试题，于是掏钱请全世界的人来出题。对普通人来说，这意味着未来评价AI可能不再只看它能不能答对题，而是看它像不像一个“全面的人”。如果这套标准被广泛采用，AI产品可能会更注重综合能力，而不是单项炫技。不过，目前这只是一份提案和比赛，离真正落地还有距离，不必过度解读为AGI即将到来。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Measuring progress toward AGI: A cognitive framework"
+    },
+    {
       "id": "c52b08d09cf89e",
       "url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
       "sources": [
@@ -6176,6 +6352,95 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "State of Open Source on Hugging Face: Spring 2026"
+    },
+    {
+      "id": "051065bd361190",
+      "url": "https://research.google/blog/introducing-groundsource-turning-news-reports-into-data-with-gemini/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/introducing-groundsource-turning-news-reports-into-data-with-gemini/"
+        }
+      ],
+      "publishedAt": "2026-03-12",
+      "source": "Google Research",
+      "title": "谷歌用Gemini将新闻转为洪水数据",
+      "summary": "谷歌研究团队发布Groundsource方法，利用Gemini大模型从全球新闻中提取结构化灾害数据，首个数据集聚焦城市山洪，覆盖150多国、2000年至今共260万条记录。人工审核显示60%事件在位置和时间上准确，82%可用于实际分析，并捕获了GDACS记录的85%至100%严重洪水事件。基于该数据，谷歌洪水中心将城市山洪预报扩展至提前24小时，覆盖范围显著扩大。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "该工作展示了大模型将非结构化新闻系统性转化为科学基准数据的可行性，直接提升全球山洪预警能力，并为其他缺乏历史记录的灾害提供可复制的方法论。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究于2026年3月12日发布Groundsource，一种利用Gemini从全球新闻中提取灾害事件的可扩展框架。首个开放数据集针对城市山洪，包含260万条记录，覆盖150多个国家，时间跨度为2000年至今。流程包括：筛选以洪水为主题的报道，用Google Read Aloud从80种语言提取正文，经翻译API转为英文，再由Gemini完成分类、时间推理和空间定位。人工审核显示，60%的提取事件在位置和时间上均准确，82%达到实际可用精度。与GDACS对比，2020至2026年间捕获了其85%至100%的严重洪水事件。基于该数据，谷歌洪水中心已能提供提前24小时的城市山洪预报。仍不确定的是，模型对农村和偏远地区的覆盖是否足够，以及该方法能否稳定迁移到干旱、滑坡等灾害。",
+          "text_length": 298
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去，全球洪水记录主要靠卫星和官方通报，但卫星会被云层挡住，官方数据库又只记大灾，小规模、来得快的山洪常常没人记。谷歌这次相当于让AI当“新闻剪报员”，把几十年来各国新闻里“某地某日发大水”这类零散信息，自动整理成一张全球洪水时间表。虽然每十条里约四条位置或时间不够精确，但八成以上已经能用来训练预报模型。对普通人来说，最直接的好处是：你所在城市如果突发山洪，手机上的洪水预警可能比以前更早、更准。长远看，这套方法还能用来补上干旱、滑坡等灾害的历史空白，让预警不再只靠运气。",
+          "text_length": 276
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing Groundsource: Turning news reports into data with Gemini"
+    },
+    {
+      "id": "dc6038483727be",
+      "url": "https://research.google/blog/protecting-cities-with-ai-driven-flash-flood-forecasting/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/protecting-cities-with-ai-driven-flash-flood-forecasting/"
+        }
+      ],
+      "publishedAt": "2026-03-12",
+      "source": "Google Research",
+      "title": "谷歌AI推出城市山洪24小时预警",
+      "summary": "谷歌研究院3月12日宣布，其洪水预报系统Flood Hub新增城市山洪预报功能，可提前最多24小时预警。山洪占全球洪水相关死亡约85%，但许多发展中国家缺乏预警设施。新模型利用Gemini从新闻报道中提取历史山洪事件，训练出基于LSTM的预测模型，仅依赖全球气象数据，覆盖人口密度超100人/平方公里的城市区域。评估显示，其在南美、东南亚等地区的精度与富裕国家相当，但非洲等地因数据不足仍难准确评估。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "山洪是最致命灾害之一，该技术首次实现全球尺度的城市山洪AI预警，尤其惠及缺乏预警设施的发展中国家，有望显著减少人员伤亡。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究院扩展Flood Hub，推出城市山洪预报，提前24小时预警。传统河流洪水模型依赖水文站数据，但山洪突发且常无历史记录。团队用Gemini分析公开新闻，提取洪水事件的时间地点，构建Groundsource数据集，训练出基于LSTM的模型。模型仅使用全球气象数据，空间分辨率20x20公里，覆盖人口密度超100人/平方公里的城市。评估显示，在南美、东南亚等全球南方地区，精度与富裕国家相当；对比美国国家气象局山洪预警，其召回率22%、精度44%，谷歌模型表现相近。但非洲等地因地面真实数据不足，精度仍难准确评估。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "山洪来得快、破坏大，但很多地方没有预警。谷歌用AI从新闻里“学”过去哪里发过洪水，训练出一个能提前一天预测城市山洪的系统。它不依赖昂贵的本地传感器，只用全球天气数据，所以能覆盖更多地区。好比用天气预报加历史案例，猜出哪个城市明天可能被淹。对普通人来说，这意味着手机可能提前收到警报，有时间撤离。不过，目前只覆盖城市，非洲等地数据少，准确性还有限。这项技术是气候适应的重要一步，但离完美还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Protecting cities with AI-driven flash flood forecasting"
+    },
+    {
+      "id": "25505e303fd770",
+      "url": "https://huggingface.co/blog/storage-buckets",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/storage-buckets"
+        }
+      ],
+      "publishedAt": "2026-03-10",
+      "source": "Hugging Face",
+      "title": "Hugging Face推出存储桶，专为AI中间文件设计",
+      "summary": "Hugging Face于2026年3月10日发布Storage Buckets，一种非版本化的可变对象存储，用于存放训练检查点、优化器状态、处理后的数据分片和Agent轨迹等频繁变更的中间文件。存储桶基于Xet分块去重后端，支持CLI、Python和JavaScript操作，并可通过预加热将数据拉近计算区域。官方称免费账户含基础额度，PRO和企业版提供更高上限，企业计费按去重后容量计算。目前与AWS和GCP合作，未来将支持更多云厂商。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "Hugging Face补齐了Hub上缺失的可变存储层，让AI训练中间产物不必再塞进Git，对使用其生态的开发者有直接影响，也反映AI基础设施正围绕高频写入场景细化。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face在官方博客宣布推出Storage Buckets，定位为Hub上的非版本化、可变对象存储，类似S3。它面向训练集群持续写检查点和优化器状态、数据管道迭代处理原始数据、Agent存储轨迹与记忆等场景。存储桶位于用户或组织命名空间下，沿用Hub权限，可私有或公开，支持hf://buckets/username/name寻址。底层由Xet分块去重支撑，官方称对内容重叠的ML产物可减少带宽和存储占用。工具链方面，hf CLI支持创建、同步、复制和删除，Python库huggingface_hub自v1.5.0起支持，JavaScript包自v2.10.5起支持，并可通过fsspec兼容的HfFileSystem接入pandas等库。预加热功能可把热数据拉近计算所在云区域，目前合作方为AWS和GCP。博客提到未来计划支持存储桶与模型/数据集仓库之间的双向直接传输，但未给出时间表。免费账户含基础额度，PRO和企业版上限更高，企业计费按去重后容量计算。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Hugging Face原来的模型和数据集仓库想成图书馆书架，只适合放整理好的成品；但训练模型时会产生大量临时草稿，比如每隔一阵保存的检查点、处理到一半的数据，这些东西反复覆盖、数量多，硬塞进书架既慢又乱。Storage Buckets相当于在旁边加了一个大储物柜，随便放、随便改、随便删，不用走版本管理那套流程。它还会自动识别重复内容，比如两个检查点大部分相同，就只存不一样的部分，省空间也省传输时间。对普通用户来说，如果你只是下载模型或数据集，基本感觉不到变化；但如果你自己跑训练、做数据管道或开发Agent，就能少折腾文件同步，把中间产物直接扔进这个柜子，等成品稳定了再正式发布到仓库。企业用户按去重后的实际占用付费，理论上更省钱。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing Storage Buckets on the Hugging Face Hub"
     },
     {
       "id": "b8544e21ac38f5",
