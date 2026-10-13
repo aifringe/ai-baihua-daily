@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:31:10.190980+00:00",
-  "lastCheckedAt": "2026-10-13T06:31:10.190980+00:00",
+  "updatedAt": "2026-10-13T06:32:15.121391+00:00",
+  "lastCheckedAt": "2026-10-13T06:32:15.121391+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -7001,6 +7001,66 @@
       "originalTitle": "OlmoEarth v1.1: A more efficient family of Earth observation models"
     },
     {
+      "id": "0e90042cc61fe0",
+      "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"
+        }
+      ],
+      "publishedAt": "2026-05-18",
+      "source": "Hugging Face",
+      "title": "PaddleOCR 3.5 接入 Transformers 后端",
+      "summary": "2026年5月18日，PaddleOCR 发布 3.5 版本，新增 Hugging Face Transformers 作为推理后端。开发者可通过 engine=\"transformers\" 参数切换，并用 engine_config 配置 dtype、设备与注意力实现。PaddleOCR 仍负责 OCR 与文档解析流水线，模型侧保留 PP-OCRv5、PaddleOCR-VL 1.5 等系列。官方称该版本面向 RAG、Document AI 等场景，降低与 PyTorch/Transformers 技术栈的集成成本；追求吞吐时仍推荐默认 paddle_static 后端。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "OCR 是文档进入大模型前的关键入口，接入 Transformers 生态可降低 RAG 与 Document AI 的集成门槛，对已有 PyTorch 栈的团队影响直接。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "PaddleOCR 3.5 于 2026 年 5 月 18 日发布，核心变化是增加推理后端选择：开发者设置 engine=\"transformers\" 后，受支持的 PaddleOCR 模型可用 Hugging Face Transformers 运行，并通过 engine_config 传入 dtype、device_type、device_id、attn_implementation 等后端参数。PaddleOCR 继续管理 OCR 与文档解析流水线，模型侧仍提供 PP-OCRv5、PaddleOCR-VL 1.5 等系列。官方同时上线 Hugging Face Spaces 演示，示例使用 float32 以兼容更多硬件。需要说明的是，文章未给出与默认 paddle_static 后端的吞吐或精度对比数据，也未列出全部受支持模型清单，实际性能与兼容范围仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把 PaddleOCR 想成一家做“扫描件翻译”的工厂：以前它只用自己的机器干活，现在允许你把它的工人请到 Transformers 这间更熟悉的厂房里上班。对普通人来说，最直接的影响是以后做 PDF 问答、合同检索、票据识别这类应用，开发者更容易把“读文档”这一步接进现有的大模型流程，出错和漏读的概率有望降低。但要注意，官方说追求速度时仍推荐原来的默认后端，所以这不是“换引擎就更快”，而是多了一种更省事的接法。具体快慢和效果，还得看模型、硬件和部署环境。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend"
+    },
+    {
+      "id": "f5a5b06be6d958",
+      "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/fast-tracking-genetic-leads-to-reverse-cellular-aging/"
+        }
+      ],
+      "publishedAt": "2026-05-18",
+      "source": "Google DeepMind",
+      "title": "DeepMind称可加速逆转细胞衰老",
+      "summary": "Google DeepMind发布标题为“Fast-tracking genetic leads to reverse cellular aging”的内容，声称可加速寻找逆转细胞衰老的基因线索。但正文为乱码，无法核实具体方法、实验对象、数据与结论，也未提供论文链接或同行评审信息。目前仅能确认其对外释放了“加速基因线索发现以逆转细胞衰老”的方向性信号，实际进展与可复现性均不确定。对普通人而言，这更像早期研究信号，而非可立即使用的抗衰老方案。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "DeepMind入局衰老研究，若属实可能加速基因靶点发现；但正文乱码、细节缺失，需谨慎看待，避免过度解读为抗衰老突破。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind发布了一条标题为“Fast-tracking genetic leads to reverse cellular aging”的内容，宣称可加速追踪基因线索以逆转细胞衰老。但该正文几乎全部为乱码，无法提取实验方法、细胞类型、动物模型、干预手段、样本量、统计结果或同行评审状态。因此，目前只能确认DeepMind对外释放了“用AI加速衰老相关基因发现”的方向性信号，不能确认其是否已完成实验、是否在人类细胞中验证、是否可复现。标题中的“reverse cellular aging”究竟指部分指标改善还是全面逆转，也缺乏正文支撑。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把细胞衰老想象成一本被反复涂改的说明书，错误越积越多，细胞就越来越“摆烂”。DeepMind说要用AI当校对员，快速找出哪些基因改动能让说明书恢复清晰。但这次只看到一句口号，没看到校对记录：改了哪几页、效果多大、会不会有副作用，全都不知道。对普通人来说，这更像实验室里刚亮起的一盏指示灯，不是明天就能买到的抗衰老药。真正影响生活，还得等论文、同行评审和人体试验一步步过关。",
+          "text2": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Fast-tracking genetic leads to reverse cellular aging"
+    },
+    {
       "id": "a7d7ffa87c3e05",
       "url": "https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/",
       "sources": [
@@ -7028,6 +7088,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Gemini for Science: AI experiments and tools for a new era of discovery"
+    },
+    {
+      "id": "306170b3d62c82",
+      "url": "https://blog.google/innovation-and-ai/products/identifying-ai-generated-media-online/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/products/identifying-ai-generated-media-online/"
+        }
+      ],
+      "publishedAt": "2026-05-17",
+      "source": "Google DeepMind",
+      "title": "谷歌扩展AI内容溯源工具，覆盖搜索与Chrome",
+      "summary": "谷歌宣布扩展内容透明度与验证工具，将SynthID水印验证从Gemini应用扩展至搜索和Chrome，并新增对C2PA内容凭证的验证支持。SynthID已为超1000亿张图片和视频、6万年音频嵌入水印，Gemini中的验证功能已被使用5000万次。Pixel手机将支持视频内容凭证，OpenAI、Kakao、ElevenLabs等将采用SynthID。谷歌云推出AI内容检测API，Meta将在Instagram标注带内容凭证的相机拍摄媒体。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "谷歌将AI内容识别能力从单一应用推向搜索、浏览器和云服务，并联合OpenAI、Meta等扩大水印生态，标志着AI内容溯源从技术演示走向大规模基础设施。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌在官方博客中宣布，将内容透明度与验证工具扩展至搜索、Gemini、Chrome、Pixel和云服务。具体包括：在Gemini应用中已上线的SynthID图像、视频和音频验证功能，将扩展至搜索，并将在未来几周进入Chrome；用户可通过Lens、AI模式和圈选搜索询问“这是AI生成的吗”。同时，谷歌新增对C2PA内容凭证的验证，可判断内容是否为相机原始拍摄或经过修改及修改工具，该功能先在Gemini应用推出，未来数月进入搜索和Chrome。Pixel 8、9、10将在未来几周支持视频内容凭证。谷歌云推出AI内容检测API，供企业识别AI生成内容。OpenAI、Kakao、ElevenLabs将采用SynthID。Meta将在Instagram标注带内容凭证的相机拍摄媒体。仍不确定的是，这些工具对非谷歌模型生成内容的识别准确率、覆盖范围及实际部署时间表尚未完全披露。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这相当于给网络内容发“身份证”和“防伪码”。以前你看到一张图或一段视频，很难判断是真实拍摄还是AI生成；现在谷歌把验真工具塞进搜索、浏览器和手机相机里，你随手一搜或一问，就能看到内容来源和修改记录。对普通人来说，以后在社交媒体上刷到可疑图片，可以更快识别真假，减少被AI造假误导的风险。对行业来说，谷歌拉上OpenAI、Meta等一起给内容打标，就像多家快递公司统一使用同一种防伪标签，跨平台也能互认。不过，这套系统目前主要覆盖采用其标准的平台和模型，并非全网万能，用户仍需保持警惕。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Making it easier to understand how content was created and edited"
     },
     {
       "id": "0b0f5459a4d94e",
@@ -7173,6 +7262,93 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Uniting biological toolkits for a new approach to ALS"
+    },
+    {
+      "id": "f5132994aca5b4",
+      "url": "https://deepmind.google/blog/accelerating-discovery-of-liver-disease-mechanisms/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/accelerating-discovery-of-liver-disease-mechanisms/"
+        }
+      ],
+      "publishedAt": "2026-05-16",
+      "source": "Google DeepMind",
+      "title": "DeepMind用AI加速肝病机制发现",
+      "summary": "Google DeepMind发布研究，称利用AI加速发现肝病机制。但提供的正文为乱码，无法核实具体方法、数据与结论。仅从标题可知其方向为AI辅助肝病机理研究。由于缺少可读细节，无法确认是否涉及新模型、临床验证或合作机构，也不应补造数字。事件本身属模型在生物医学的应用进展，但信息完整性不足，需等待官方可读版本。",
+      "category": "模型进展",
+      "importance": 55,
+      "why": "AI用于肝病机制研究若属实，可缩短药物靶点发现周期，但当前正文不可读，无法验证，需谨慎看待。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind发布了一篇题为“Accelerating discovery of liver disease mechanisms”的内容，标题指向用AI加速肝病机制发现。但提供的正文几乎全是乱码与控制字符，无法提取研究背景、方法、样本、结果或合作方。因此目前只能确认存在这样一项发布，不能确认其是否提出新模型、是否经过实验验证、是否与医院或药企合作，也不能确认任何具体数字。事实冲突方面，没有可读的第二来源，无法交叉核对。仍不确定之处包括：研究是否已同行评审、是否开源、是否仅限计算模拟。读者应等待官方可读版本或独立报道后再判断。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把肝病机制研究想成找一栋大楼里哪根电线短路。过去科学家要一间间房排查，费时费力。DeepMind说想用AI当“智能电笔”，更快定位故障点。如果真能做到，未来新药研发可能少走弯路，普通人或更早用上针对性疗法。但眼下这份材料像被碎纸机搅过，我们只看到封面标题，没看到实验记录。所以别急着欢呼，也别急着否定。对普通人的实际影响暂时为零，等可读论文出来，再看它是否真能缩短从实验室到病床的时间。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Accelerating discovery of liver disease mechanisms"
+    },
+    {
+      "id": "071ef486161ea8",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
+        }
+      ],
+      "publishedAt": "2026-05-14",
+      "source": "Hugging Face",
+      "title": "IBM发布Granite多语言嵌入模型R2，97M版刷新小模型检索纪录",
+      "summary": "IBM于2026年5月发布Granite Embedding Multilingual R2系列，含97M和311M两个Apache 2.0模型，基于ModernBERT架构，支持200+语言、32K上下文和9种编程语言代码检索。97M模型在MTEB多语言检索上得分60.3，号称同规模开源最佳；311M模型得分65.2，在500M参数以下开源模型中排名第二。两者均支持Matryoshka维度截断，可无缝替换LangChain等框架默认模型。但基准测试由IBM自行发布，第三方复现结果尚不明确。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "多语言嵌入模型长期面临小模型语言覆盖差、大模型部署成本高的矛盾。R2以97M参数实现接近300M级模型的检索质量，且Apache 2.0许可允许商用，可能降低多语言RAG和跨语言搜索的落地门槛。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM发布两个多语言嵌入模型：granite-embedding-97m-multilingual-r2和granite-embedding-311m-multilingual-r2，均采用Apache 2.0许可。97M模型输出384维向量，311M模型输出768维并支持Matryoshka截断。两者基于ModernBERT编码器，上下文从R1的512 token扩展至32K，覆盖200+语言，其中52种语言经过显式检索训练，另支持Python、Go、Java等9种编程语言代码检索。IBM称97M模型在MTEB多语言检索18语言平均分60.3，超过同规模开源模型；311M模型得分65.2。模型提供ONNX和OpenVINO权重，可一行代码替换LangChain等框架默认模型。但所有基准数据来自IBM官方，独立第三方评测尚未公布，实际部署效果仍需验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "嵌入模型就像图书馆的索引员：你问一个问题，它负责从海量文档里找出最相关的几段。过去，多语言索引员要么只会几种语言，要么体积太大跑不动。IBM这次相当于训练了一个只有97M参数的“小索引员”，却能看懂200多种语言，还能处理32K token的长文档——相当于从只能看一页纸变成能读完整本合同。对普通人来说，这意味着以后用非英语搜索、跨语言问答或代码检索时，背后的AI可能更准、更快，而且因为开源免费，更多小公司也能用得起。不过，IBM自己公布的考试成绩单还需要别人来验证，实际好不好用，得等开发者上手才知道。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality"
+    },
+    {
+      "id": "86a2f227798947",
+      "url": "https://huggingface.co/blog/continuous_async",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/continuous_async"
+        }
+      ],
+      "publishedAt": "2026-05-14",
+      "source": "Hugging Face",
+      "title": "Hugging Face 异步批处理提升推理效率",
+      "summary": "Hugging Face 发布技术文章，指出连续批处理中 CPU 与 GPU 同步执行导致 GPU 空闲等待，浪费近四分之一生成时间。文章提出异步批处理方案，通过 CUDA 流和事件分离 CPU 批准备与 GPU 计算，使两者并行。在 8B 模型、批大小 32、生成 8K token 的测试中，总时间从 300.6 秒降至理论 228 秒，无需修改内核或模型。该方案已集成到 transformers 库。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "该技术能显著提升大模型推理效率，降低 GPU 成本，对部署和运营有直接经济影响，且已开源集成，实用性强。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 于 2026 年 5 月 14 日发布文章，解释连续批处理中同步执行的瓶颈：CPU 准备下一批数据时 GPU 空闲，GPU 计算时 CPU 空闲。在 8B 模型、批大小 32、生成 8K token 的测试中，总生成时间 300.6 秒，其中 24% 时间 GPU 空闲等待 CPU。文章提出异步批处理，使用 CUDA 流将 CPU 到 GPU 传输、GPU 计算、GPU 到 CPU 传输分别放入独立流，并用 CUDA 事件强制顺序，实现 CPU 与 GPU 并行。理论上可消除 CPU 开销，生成时间降至 228 秒，提升 24%。该方案已集成到 transformers 库。仍不确定的是，实际部署中不同硬件和模型下的加速比是否一致。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象你有一个超级快的厨师（GPU）和一个帮厨（CPU）。现在的情况是：帮厨切菜时厨师闲着，厨师炒菜时帮厨闲着，两人轮流干活，浪费大量时间。异步批处理就是让帮厨在厨师炒菜时提前切好下一道菜的食材，厨师炒完立刻能下锅。这样厨师几乎不停手，整体出菜速度提升近四分之一。对普通人来说，这意味着使用 AI 服务时响应更快，或者服务商成本降低后价格可能更便宜。尤其对需要大量生成文本的应用，如聊天机器人、内容创作，体验会明显改善。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Unlocking asynchronicity in continuous batching"
     },
     {
       "id": "ff20f1578f69c2",
