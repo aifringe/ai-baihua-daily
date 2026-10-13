@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T00:18:19.749533+00:00",
-  "lastCheckedAt": "2026-10-13T00:18:19.749533+00:00",
+  "updatedAt": "2026-10-13T00:19:45.242058+00:00",
+  "lastCheckedAt": "2026-10-13T00:19:45.242058+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -4800,6 +4800,93 @@
       "originalTitle": "Investing in multi-agent AI safety research"
     },
     {
+      "id": "5b02604714f804",
+      "url": "https://huggingface.co/blog/torch-profiler",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/torch-profiler"
+        }
+      ],
+      "publishedAt": "2026-05-29",
+      "source": "Hugging Face",
+      "title": "PyTorch性能分析入门：torch.profiler实战指南",
+      "summary": "Hugging Face发布PyTorch性能分析系列首篇教程，面向初学者介绍torch.profiler工具。文章以矩阵乘法加偏置为例，演示如何通过profiler表格和Chrome trace定位性能瓶颈。实验发现，64尺寸矩阵运算时CPU耗时2.314ms而GPU仅23.104微秒，GPU大部分时间空闲，属于开销受限；增大到4096尺寸后GPU耗时升至4.495ms，转为计算受限。文章还解释了warmup机制和CPU与GPU时间线偏移现象，强调预热可消除一次性开销干扰。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "性能分析是AI工程优化的基础技能，但入门门槛高。该教程以问题驱动方式降低学习曲线，帮助开发者理解CPU/GPU协作机制，对提升模型训练和推理效率有实际指导意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年5月29日发布PyTorch性能分析系列教程第一篇，作者包括Aritra Roy Gosthipaty、Sayak Paul等。文章使用torch.profiler对矩阵乘法加偏置操作进行性能分析，在NVIDIA A100上运行。实验显示，64×64矩阵运算时CPU总耗时2.314毫秒，GPU仅23.104微秒，GPU利用率不足1%，属于开销受限；将矩阵增大至4096后，CPU耗时4.908毫秒，GPU耗时4.495毫秒，转为计算受限。文章还通过Perfetto可视化trace，发现首次迭代存在约228微秒的调度延迟，并引入warmup机制消除一次性开销。教程基于PyTorch 2.13，部分trace细节可能因版本而异。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像你请了一位超级厨师（GPU）做菜，但大部分时间都花在写菜单、传菜和等食材上，厨师真正炒菜只用了不到1%的时间。矩阵太小，GPU还没热身就结束了，CPU反而成了瓶颈。把菜量加大后，厨师终于忙起来了，这才是正常状态。教程还教你用“录像回放”看每一步谁在干活、谁在摸鱼。对普通人来说，这意味着AI模型跑得慢不一定是GPU不行，可能是任务太小或调度太磨蹭。学会看性能报告，就能像老中医一样对症下药，让AI应用更快更省电。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler"
+    },
+    {
+      "id": "c3c696b5bf6b4f",
+      "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/local-reachy-mini-conversation"
+        }
+      ],
+      "publishedAt": "2026-05-27",
+      "source": "Hugging Face",
+      "title": "Reachy Mini 语音对话实现全本地运行",
+      "summary": "Hugging Face 发布教程，介绍如何让 Reachy Mini 桌面机器人的语音对话完全在本地运行，不再把音频发送到服务器。方案基于其 speech-to-speech 级联管线，依次为 Silero VAD、Parakeet-TDT 0.6B v3 语音识别、本地或远程 LLM、Qwen3-TTS 语音合成，通过兼容 Realtime API 的 WebSocket 接口与机器人应用对接。LLM 可用 llama.cpp、MLX、vLLM 或 Responses API 后端。官方称可保护隐私、免 API 费用并自由替换组件，但延迟与质量取决于硬件和模型选择。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "把语音助手从云端搬到本地，直接回应隐私与订阅成本痛点，也展示开源级联管线已能支撑实时机器人对话，对开发者和关注数据主权的用户有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 于 2026 年 5 月 27 日发布博客，说明 Reachy Mini 机器人此前的对话应用需把音频发往服务器，现在可整套本地运行。方案使用其 speech-to-speech 库，采用 VAD→STT→LLM→TTS 级联结构，并暴露兼容 Realtime API 的 /v1/realtime WebSocket。推荐组件为 Silero VAD v5、Parakeet-TDT 0.6B v3、Gemma 4 或 Qwen3 系列 LLM、Qwen3-TTS。LLM 可本地跑在 llama.cpp、MLX、Transformers、vLLM 上，也可指向 OpenAI、Gemini 或 Hugging Face 端点。文中给出命令行示例与局域网连接方法。仍不确定的是：不同硬件上的实际延迟、多语言效果和长期稳定性，官方未给出统一基准数字。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去和机器人说话，像把录音寄给远方客服，等对方听完再回话，声音要离开你家。现在等于把客服请进屋里，识别、思考、回话都在你自己的电脑上完成，断网也能用，还不用按分钟付费。代价是你要有够用的电脑：机器越强，反应越快；模型越大，回答越好但越慢。对普通人来说，意义是隐私更可控、长期使用更省钱，但需要一点动手配置。对开发者来说，像搭积木，哪块不满意就换哪块。它不会让机器人突然变聪明，只是把说话这条链路的所有权交回用户手里。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Reachy Mini goes fully local"
+    },
+    {
+      "id": "9e899a157ff8ca",
+      "url": "https://huggingface.co/blog/delta-weight-sync",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/delta-weight-sync"
+        }
+      ],
+      "publishedAt": "2026-05-27",
+      "source": "Hugging Face",
+      "title": "TRL实现万亿参数增量同步，带宽降百倍",
+      "summary": "Hugging Face TRL团队发布新方案，利用bf16权重在RL训练中约99%比特不变的特点，仅上传稀疏增量文件至Hub Bucket，vLLM推理端拉取合并。在Qwen3-0.6B上，每步传输从1.2GB降至20-35MB。该方案支持训练与推理跨区域部署，无需共享集群或RDMA，通过共享对象存储解耦。目前已在TRL中落地，但大规模生产验证仍待观察。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "该技术大幅降低异步RL训练中权重同步的带宽和延迟，使跨数据中心训练推理成为可能，对大规模模型RL训练成本有显著影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face TRL团队发布了一项名为Delta Weight Sync的技术，用于异步强化学习训练中的权重同步。核心发现是：在bf16精度下，相邻RL优化步骤之间约99%的权重比特完全相同，最差情况也不低于98%。因此，他们不再每步传输完整模型，而是仅将发生变化的权重元素编码为稀疏safetensors文件，上传至Hugging Face Bucket，并通知vLLM推理引擎拉取。在Qwen3-0.6B模型上，每步传输量从1.2GB降至20-35MB。团队还演示了完全解耦的部署：训练器、vLLM推理服务和Wordle环境分别运行在不同机器或Space中，仅通过一个Hub Bucket交换权重，无需共享集群、RDMA或VPN。目前该功能已通过TRL的PR合并，但大规模生产环境下的稳定性和性能仍有待验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象一下，你每天给同事传一份100页的报告，但其实每天只改了其中1页。以前的做法是每天把整本报告重新打印一遍送过去，费时费力。现在TRL的做法是：只把改掉的那1页拍个照发过去，同事自己替换。因为AI模型在训练时，每次更新只有极小部分参数真正变了，大部分数字根本没动。这项技术让训练大模型强化学习时，机器之间不用再疯狂传输海量数据，带宽成本直接降了约100倍。对普通人来说，这意味着未来AI模型训练可能更便宜、更快，尤其是需要跨地域协作的大公司，能省下大量网络和硬件成本，最终可能让AI服务价格更亲民。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL"
+    },
+    {
       "id": "aee6849a814743",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/accelerator-ai-for-the-planet/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
       "sources": [
@@ -4831,6 +4918,35 @@
       "originalTitle": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks"
     },
     {
+      "id": "0b0f5459a4d94e",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/"
+        }
+      ],
+      "publishedAt": "2026-05-17",
+      "source": "Google DeepMind",
+      "title": "谷歌Project Genie接入街景，AI世界模型锚定现实",
+      "summary": "谷歌DeepMind宣布，其通用世界模型Genie的实验原型Project Genie新增街景锚定能力，可将生成世界起点绑定美国街景图像，并支持海洋、黑白电影等风格。该功能面向全球Google AI Ultra订阅用户（月费200美元，18岁以上）逐步开放，街景覆盖暂限美国。官方称仍属实验研究原型，细节和准确性有待提升，未公布具体性能数据。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "Genie从纯生成虚拟环境转向锚定真实街景，为AI智能体和机器人提供更贴近现实的训练场，也降低普通用户创造沉浸式世界的门槛，是AI世界模型落地的重要一步。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年5月发布Project Genie更新，将Genie世界模型与Google Street View图像连接，推出“街景锚定”能力。用户可在Project Genie中选择美国地点，并可选“沙漠沙丘”“石器时代”“海洋世界”“黑白电影”等风格，再描述角色，系统会生成以该真实地点为起点的可交互世界。该功能由Maps Imagery Grounding技术驱动，与开发者创建AI视觉所用技术相同。Project Genie同时向全球符合条件的Google AI Ultra订阅用户（月费200美元，18岁以上）逐步开放。官方强调，街景覆盖目前仅限美国，未来扩展；Project Genie仍是Google Labs实验研究原型，细节和准确性仍在改进，未披露具体性能指标或用户规模。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前Genie像凭空造梦，现在它先看一眼真实街景，再在这个地基上盖出奇幻世界。比如你选金门大桥，再选“海洋世界”，就能在桥边潜水看鱼群；选德州牲畜场加“黑白电影”，就能逛1920年的酒馆和老车。对普通人来说，这像是给AI装了一个“现实锚点”，让虚拟世界不再完全瞎编，未来可能用于游戏、教育或机器人训练。不过目前只有美国地点、只对高价订阅用户开放，而且官方自己说还是实验品，画面和细节可能不够准。简单说：方向很酷，但别指望马上完美。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Simulate real-world places with Project Genie and Street View"
+    },
+    {
       "id": "bc2f663b554366",
       "url": "https://deepmind.google/blog/strengthening-singapores-ai-future-a-new-national-partnership/",
       "sources": [
@@ -4858,6 +4974,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Strengthening Singapore’s AI Future: A New National Partnership"
+    },
+    {
+      "id": "4bb07558bb37c9",
+      "url": "https://deepmind.google/blog/opening-new-paths-in-aging-research/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/opening-new-paths-in-aging-research/"
+        }
+      ],
+      "publishedAt": "2026-05-16",
+      "source": "Google DeepMind",
+      "title": "谷歌AI助Calico研究衰老机制获新发现",
+      "summary": "谷歌DeepMind于2026年5月发布文章，介绍Calico生命科学公司使用其多智能体AI工具Co-Scientist推进衰老生物学研究。Calico团队利用该工具整合分散的衰老研究文献，针对综合应激反应（ISR）的代谢调控生成新假说，并协助优化实验设计、随结果迭代。实验产生了对ISR在健康与疾病中作用有重要意义的新发现，团队计划发表结果。Calico专家称该工具展现出科学判断力，能像科学家一样思考。目前具体实验数据与论文尚未公开。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "AI开始参与提出可验证的生物学假说并推动实验，而非仅做文献整理，显示AI在科研发现环节的角色升级，但结果尚未经同行评审。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布文章称，Calico生命科学公司的AI/ML负责人Matt Onsum和首席科学家Katherine Labbé使用其多智能体AI工具Co-Scientist研究衰老生物学。衰老涉及多重交叠的生物过程，文献中混杂着低质量结论、死胡同和无法复现的结果。Calico团队用Co-Scientist整合这些分散发现，并围绕综合应激反应（ISR）生成一个关于代谢如何调控ISR的新假说。ISR是一种保护性细胞机制，但持续开启时会促成疾病。研究人员还与Co-Scientist互动，优化验证该假说的实验设计，并在结果出现后输入新信息。实验带来了对ISR在健康与疾病中作用有重要意义的新发现，团队计划发表。目前文章未披露具体实验数据、论文发表时间或同行评审状态，新发现的可复现性仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把衰老研究想象成一间堆满旧笔记的仓库：里面既有真线索，也有大量错误和走不通的路。过去科学家要花大量时间翻找、筛选，再凭经验猜哪条路值得走。Co-Scientist更像一个能一起讨论的科研搭档，它先帮忙把杂乱信息理出几条可能方向，再和研究人员一起把实验方案改得更靠谱，边做边调整。对普通人来说，这不代表马上会有抗衰老药，而是说明AI开始参与“提出可验证的科学问题”这一步，而不只是查资料。如果这类工具真能减少试错，未来衰老相关疾病的研究可能更快找到值得投入的方向；但眼下还只是早期案例，结论要等论文发表和同行检验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Opening new paths in aging research"
+    },
+    {
+      "id": "ff20f1578f69c2",
+      "url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/"
+        }
+      ],
+      "publishedAt": "2026-05-12",
+      "source": "Google DeepMind",
+      "title": "谷歌DeepMind推出多智能体AI科研助手Co-Scientist",
+      "summary": "谷歌DeepMind于2026年5月发布多智能体AI系统Co-Scientist，基于Gemini构建，能迭代生成、辩论和进化科学假设。系统通过“创意锦标赛”机制，让多个智能体扮演生成、反思、排名等角色，对假设进行同行评审式评估。已在肝纤维化、ALS、细胞衰老等领域与全球百余家机构合作验证，其中肝纤维化药物重定位候选在实验中阻断91%的疤痕相关反应。系统通过Hypothesis Generation工具向研究人员开放，并进行了CBRN安全评估。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "这是AI从辅助工具转向科研合作者的标志性进展，多智能体架构和创意锦标赛机制为科学假设生成提供了新范式，且已有实验室验证结果，对加速生命科学发现具有实际意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind在《自然》杂志发表Co-Scientist研究，并推出实验性工具Hypothesis Generation，向研究人员开放注册。该系统基于Gemini构建，由多个专门智能体组成，分为生成、辩论、进化三个阶段：生成智能体提出假设，反思智能体进行同行评审式批判，排名智能体组织“创意锦标赛”用Elo机制排序，进化智能体不断精炼最优假设。系统整合网络搜索、ChEMBL、UniProt等数据库，并可调用AlphaFold等专业模型。在肝纤维化研究中，系统发现的药物重定位候选在实验室阻断91%的疤痕相关反应；在ALS、细胞衰老、代谢肝病等方向也有合作案例。系统进行了CBRN滥用独立评估并部署安全分类器。目前尚不确定其假设生成在更广泛学科中的可重复性和长期影响。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Co-Scientist想象成一个永不疲倦的科研“智囊团”：一群AI专家围坐一桌，有人负责天马行空提想法，有人负责挑刺找漏洞，有人负责给想法打分排名，最后把最靠谱的几个方案交给人类科学家。它就像给科学家配了一个读过所有论文、能瞬间联想跨领域知识的超级助手，把原本需要几个月甚至几年的文献调研和假设筛选压缩到几天。对普通人来说，这意味着新药和新疗法可能更快被发现，比如肝纤维化治疗、抗衰老研究等。但要注意，它只是助手，不能替代科学家的判断和实验验证，最终决策仍由人类负责。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Co-Scientist: A multi-agent AI partner to accelerate research"
     },
     {
       "id": "82356b62524ebe",
