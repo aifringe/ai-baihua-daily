@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:41:17.052720+00:00",
-  "lastCheckedAt": "2026-10-13T06:41:17.052720+00:00",
+  "updatedAt": "2026-10-13T06:41:54.655690+00:00",
+  "lastCheckedAt": "2026-10-13T06:41:54.655690+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -7147,6 +7147,35 @@
       "originalTitle": "Is it agentic enough? Benchmarking open models on your own tooling"
     },
     {
+      "id": "270262b3426624",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware"
+        }
+      ],
+      "publishedAt": "2026-06-17",
+      "source": "Hugging Face",
+      "title": "AWS开源Strands Robots打通仿真到真机",
+      "summary": "AWS发布Apache 2.0开源SDK Strands Robots，将LeRobot机器人栈封装为AgentTools，让一个智能体循环完成仿真录制、策略推理与真机部署。仿真与硬件共用同一LeRobotDataset格式，策略可通过字符串切换，并借Zenoh网格协调多台机器人。默认路径无需硬件、GPU或Hugging Face凭证，可在笔记本上运行；真机部署需SO-101等设备及校准文件，本地GR00T推理需16GB显存GPU。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "它把机器人开发中分散的录制、训练、仿真、部署工具收进单一智能体循环，并统一数据格式，降低了从仿真到真机的迁移门槛，对机器人开发者有实际价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS在Hugging Face发布文章，介绍Strands Robots这一Apache 2.0开源SDK。它把LeRobot的硬件录制、校准、策略推理与仿真能力封装成AgentTools，组合进一个Strands智能体。仿真工具写出的LeRobotDataset与真机录制格式一致，GR00T、LerobotLocal、MolmoAct2等策略走统一接口，多机器人通过Zenoh对等网格分发指令。示例代码位于strands-labs/robots仓库，默认仿真路径无需硬件、GPU或Hub凭证。仍不确定的是：文章未给出真机抓取成功率、训练时长等量化结果，Mock策略仅生成占位动作，实际抓取需换用真实检查点。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去教机器人干活要拼五套工具：一套录示范、一套训练、一套仿真测试、一套上真机、一套管多台机器，彼此不互通。Strands Robots像一根统一的插线板，把这些工具插进同一个智能体，仿真里录的数据和真机录的数据长得一模一样，训练脚本不用改就能读。对普通人来说，短期内不会让家用机器人变聪明，但开发者试错成本明显下降：没机器人、没显卡也能在笔记本上跑通流程，以后换真机只改一个参数。真正抓取效果仍取决于策略模型本身。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot"
+    },
+    {
       "id": "334cabed9c982a",
       "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
       "sources": [
@@ -7349,6 +7378,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Fluid, natural voice translation with Gemini 3.5 Live Translate"
+    },
+    {
+      "id": "0e6454a49e2315",
+      "url": "https://huggingface.co/blog/github-ci-hf-jobs",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/github-ci-hf-jobs"
+        }
+      ],
+      "publishedAt": "2026-06-09",
+      "source": "Hugging Face",
+      "title": "Hugging Face推出GitHub CI迁移方案",
+      "summary": "Hugging Face发布文章，介绍如何将GitHub Actions的CI任务迁移到Hugging Face Jobs上运行。方案通过一个桥接Space接收GitHub的workflow_job.queued webhook，验证后启动对应硬件的HF Job，并在其中注册临时自托管runner执行CI。用户只需把workflow中的runs-on从ubuntu-latest改为hf-jobs-cpu-upgrade或hf-jobs-t4-small等标签。官方称Trackio的CPU CI时间缩短约30%，并新增了GPU测试套件。但评论区有用户质疑HF免费额度有限，作者回应称可反馈具体报错。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "CI是开发者日常基础设施，把GitHub Actions与按需GPU算力打通，降低了开源项目跑GPU测试的门槛，也显示Hugging Face正从模型托管向开发者工具链延伸。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年6月9日发布教程，介绍把GitHub仓库的CI从GitHub托管runner迁移到Hugging Face Jobs。核心组件是huggingface/jobs-actions桥接项目：用户复制一个dispatcher Space，创建并安装GitHub App，App收到workflow_job.queued webhook后，dispatcher验证签名、签发短期runner注册token，并在指定硬件上启动HF Job，Job内启动临时自托管runner执行CI。用户改动很小，只需把runs-on改为hf-jobs-cpu-upgrade或hf-jobs-t4-small等标签。官方称Trackio的CPU CI时间减少约30%，并新增GPU测试。仍不确定的是：该方案对私有仓库、并发上限和计费的实际影响，文中未给出完整数据；评论区有用户称HF免费CPU Space数量受限，作者仅请其提供报错细节。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把GitHub Actions想成公司默认配的办公电脑：够用、省事，但配置固定，想临时用带高端显卡的机器很难。Hugging Face Jobs则像一家按小时出租的机房，CPU、T4、H200等机型随选随用。这个方案相当于在两者之间装了一个调度员：GitHub一有CI任务排队，调度员就按标签去机房开一台临时机器，装好runner跑完任务再关掉。对普通开发者来说，好处是不用自己维护常开的GPU服务器，就能让开源项目跑真实CUDA测试；代价是任务实际在Hugging Face上运行和计费，需要配置token和权限，免费额度是否够用、并发是否受限，仍要看具体账号和用量。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Migrating Your GitHub CI to Hugging Face Jobs"
+    },
+    {
+      "id": "459b888b75db1d",
+      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/mishig/spaces-agents-md"
+        }
+      ],
+      "publishedAt": "2026-06-09",
+      "source": "Hugging Face",
+      "title": "AI代理串联两个Space自动搭建3D巴黎画廊",
+      "summary": "Hugging Face社区文章展示：作者让编码代理调用两个Hugging Face Space——图像生成Space与单图转3D高斯溅射Space——自动生成巴黎地标素材并搭建可交互3D画廊，全程未手动使用图像或3D工具。代理还完成翻转朝向、压缩.ply为.ksplat、构建Three.js查看器并部署为静态Space。随后仅用一句话提示即复刻出日本、埃及版本。文章认为这体现“积木经济”：模型经agents.md文档化后，代理可像拼npm包一样串联多媒体模型。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "它展示代理可零集成代码串联不同组织的图像与3D模型，把多媒体应用边际成本压到一句提示，预示AI应用开发方式变化。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face社区文章作者Mishig称，他让编码代理搭建展示巴黎地标的3D高斯溅射网站，自己未打开图像生成器或3D重建工具。代理直接调用两个Hugging Face Space：一个图像生成Space把每座地标变成黑底“标本”图，另一个VAST-AI/TripoSplat从单张图重建3D高斯溅射.ply。代理随后完成翻转Y-down朝向、自动取景、把.ply压缩为约小3倍的.ksplat、用Three.js构建滚动切换和拖拽旋转界面，并部署为静态Space。人类只给“拉远一点”“换掉方尖碑”“过渡太久”等品味级反馈。之后仅用一句话提示，代理又生成日本、埃及版本。文章称每个Gradio Space现提供agents.md，写明调用、轮询、上传和鉴权方式。仍不确定的是：该流程的稳定性、成本与可复现性未给出量化数据，且文章为社区自述，非独立评测。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去要把“一句话变成可旋转的3D地标”做成产品，得自己找模型、配环境、写接口、调格式，像从零盖房子。现在Hugging Face把每个模型做成带说明书的“乐高积木”，代理读说明书就能把图像积木和3D积木拼起来，还能顺手修朝向、压体积、做网页。对普通人来说，做多媒体小应用的门槛可能从“会编程、懂模型”降到“会描述想要什么”。但别误会：代理仍会翻车，比如宽玻璃金字塔难重建、薄方尖碑效果差，需要人给审美反馈；而且调用要HF_TOKEN，部分模型和算力仍有成本。它更像把开发从手工活变成点菜，菜好不好吃仍取决于食材和你的口味描述。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces"
     },
     {
       "id": "02b9c90015956d",
