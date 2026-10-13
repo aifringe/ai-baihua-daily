@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:36:13.662547+00:00",
-  "lastCheckedAt": "2026-10-13T06:36:13.662547+00:00",
+  "updatedAt": "2026-10-13T06:37:42.718365+00:00",
+  "lastCheckedAt": "2026-10-13T06:37:42.718365+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -9948,6 +9948,64 @@
       "originalTitle": "We Got Claude to Build CUDA Kernels and teach open models!"
     },
     {
+      "id": "6314aebbd61e4e",
+      "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl"
+        }
+      ],
+      "publishedAt": "2026-01-27",
+      "source": "Hugging Face",
+      "title": "GPT-OSS智能体强化学习训练难题获解",
+      "summary": "Hugging Face社区文章回顾了为GPT-OSS模型解锁智能体强化学习训练的过程。GPT-OSS性能虽可比o3-mini，但其智能体RL训练此前未经验证。团队使用verl框架在ReTool等任务上实验，发现KL散度爆炸、奖励不增等问题。根因包括MoE架构双前向传播导致重要性采样比偏离1，以及训练与推理引擎间的注意力机制不匹配。通过强制on-policy对数概率替换、启用rollout校正，并实现FlashAttention对attention sink的前向与反向支持，训练稳定性显著提升，但GSM8K任务上收敛仍慢于密集模型。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该工作首次系统验证GPT-OSS用于智能体RL训练的可行性，并公开了MoE路由、训练推理不一致等关键工程问题的修复方案，对开源社区复现和优化智能体训练有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face社区文章记录了为GPT-OSS模型解锁智能体强化学习训练的过程。团队使用verl框架，在ReTool、GSM8K等任务上实验，发现训练初期KL散度和熵爆炸、奖励不增。根因有二：一是MoE架构下双前向传播导致专家路由不一致，使重要性采样比偏离1，违反on-policy假设；二是推理引擎与训练栈使用不同注意力内核，产生token级概率不匹配。团队通过强制on-policy时old_log_prob等于当前log_prob、启用rollout校正，并实现FlashAttention对attention sink的前向与反向支持，使梯度范数稳定。但GSM8K上奖励提升仍缓慢，收敛慢于密集模型，且attention层冻结后奖励动态相似，表明学习主要依赖MoE层。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像教一个多才多艺的助手边干活边学习：它要自己决定查什么、用什么工具、按什么顺序做。但训练时发现，助手内部有多个“专家”分工，每次思考时选谁干活会随机波动，导致它记不住自己刚才是怎么想的，学习信号就乱了。更麻烦的是，它练习时用的“大脑”和实际干活时用的“大脑”略有不同，好比彩排和正式演出用了不同剧本。团队修好了这些不一致，让训练稳定下来，但助手在简单数学题上进步仍然慢。对普通人来说，这意味着未来AI助手能更可靠地多步操作，但离流畅自主干活还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective"
+    },
+    {
+      "id": "927036739d8c13",
+      "url": "https://huggingface.co/blog/tiiuae/emirati-benchmarks",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/tiiuae/emirati-benchmarks"
+        }
+      ],
+      "publishedAt": "2026-01-27",
+      "source": "Hugging Face",
+      "title": "阿联酋方言基准Alyah发布，评测54个阿拉伯语大模型",
+      "summary": "2026年1月27日，TII团队在Hugging Face发布阿联酋方言基准Alyah，含1173道由母语者手工编写、四选一的选择题，覆盖问候、诗歌、遗产等七类内容。团队评测了54个模型（23个基座、31个指令微调），结果显示指令微调普遍优于基座，falcon-h1-arabic-7b-instruct以82.18%居首，而“语言与方言”“问候与日常表达”最难。文中称Jais-2-70B为最高分大模型，但该模型未出现在所附成绩表中，存在数据不一致。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "首个聚焦阿联酋方言的公开评测基准，揭示主流阿拉伯语模型在方言与文化语境上的系统性短板，为后续数据采集和模型适配提供诊断依据。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TII团队发布Alyah基准，专门评测大模型对阿联酋方言的理解。数据集含1173个样本，全部由阿联酋母语者手工采集，每题四选一，正确答案位置随机分布以规避位置偏差。内容分七类：语言与方言619题、礼仪与价值观173题、意象与比喻121题、历史遗产89题、宗教与社会敏感78题、问候与日常表达61题、诗歌与创意表达32题。团队评测54个模型，含23个基座和31个指令微调，覆盖Jais、Allam、Qwen、LLaMA、Fanar、AceGPT等。指令微调模型整体优于基座，falcon-h1-arabic-7b-instruct以82.18%最高；基座中gemma-3-27b-pt为74.68%。最难的类别是“语言与方言”和“问候与日常表达”。需注意，文中称Jais-2-70B为最高分大模型，但该模型未出现在所附成绩表中，具体分数无法核实。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "阿拉伯语像中文一样，书面语和各地口语差别很大。以前的模型考试大多只考“普通话”，这次考的是“阿联酋话”。结果发现，模型即使能读懂正式新闻，也常听不懂当地人打招呼、讲谚语或说反话。好比一个外国人背熟了课本中文，却听不懂北京大爷的俏皮话。对普通人的影响是：如果你用方言和AI聊天，它可能答非所问；对开发者来说，这份基准像一张体检表，指出光靠多语言训练不够，还得补方言和文化数据。目前它只是诊断工具，不直接改变你手机里的助手，但会推动厂商改进面向本地用户的模型。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Alyah ⭐️: Toward Robust Evaluation of Emirati Dialect Capabilities in Arabic LLMs"
+    },
+    {
       "id": "ed891771925301",
       "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2",
       "sources": [
@@ -10062,6 +10120,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality"
+    },
+    {
+      "id": "1eaa5743cd6275",
+      "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment"
+        }
+      ],
+      "publishedAt": "2026-01-20",
+      "source": "Hugging Face",
+      "title": "DeepSeek R1发布一年：中国开源AI生态崛起",
+      "summary": "2025年1月DeepSeek发布R1模型，降低技术、采用和心理门槛，推动中国开源AI生态爆发。一年后，百度、字节、腾讯等大厂开源数量激增，中国新模型下载量全球领先。西方社区寻求商业替代，部分美国模型基于中国模型微调。开源竞争转向系统能力，2026年预计更多发布。",
+      "category": "行业变化",
+      "importance": 85,
+      "why": "DeepSeek R1标志着中国从开源追随者变为引领者，重塑全球AI竞争格局，开源模型成为主流，影响企业战略和地缘技术生态。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2025年1月，杭州公司DeepSeek发布R1模型，采用MIT许可证，公开推理路径和后训练方法。一年内，R1成为Hugging Face史上最受欢迎模型，中国开源模型下载量超过美国。百度从2024年零发布到2025年超100个，字节、腾讯发布量增8-9倍，月之暗面Kimi K2等新模型涌现。竞争从模型性能转向系统生态，中国公司因算力、成本和监管约束形成相似技术路径。西方公司如OpenAI、Meta发布开源模型，但部分美国模型基于DeepSeek微调。2026年预计更多发布，但具体影响尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "DeepSeek R1就像把高级AI的“配方”免费公开，以前只有大公司能玩，现在小团队也能照着做。结果中国AI圈像开了闸，大家拼命发模型，下载量全球第一。老外一边用中国模型，一边想搞自己的替代品。对普通人来说，以后AI工具会更便宜、更好用，因为开源让技术扩散更快。但竞争也更激烈，谁能在生态和场景上胜出，还得看接下来怎么走。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "One Year Since the “DeepSeek Moment”"
     },
     {
       "id": "141edcd2d5e561",
