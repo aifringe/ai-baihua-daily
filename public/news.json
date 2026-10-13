@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T00:19:45.242058+00:00",
-  "lastCheckedAt": "2026-10-13T00:19:45.242058+00:00",
+  "updatedAt": "2026-10-13T00:22:21.276806+00:00",
+  "lastCheckedAt": "2026-10-13T00:22:21.276806+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -4185,6 +4185,299 @@
       "originalTitle": "Try Google Pics: Easy image creation and editing in Google Workspace"
     },
     {
+      "id": "e61516fc5f0a08",
+      "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/"
+        }
+      ],
+      "publishedAt": "2026-08-31",
+      "source": "Google Research",
+      "title": "谷歌发布TimesFM-3多元时序预测模型",
+      "summary": "谷歌研究团队发布TimesFM-3，一款原生支持多变量预测的零样本时序基础模型，参数规模3.3亿，预训练语料超1万亿时间点。相比此前仅支持单序列预测的版本，新模型可同时预测多条相关序列，并支持历史协变量与已知未来事件（如促销、天气）作为输入。模型采用交替注意力架构，单次前向传播即可输出完整预测区间及9个分位数。在Gift-Eval、FEV-Bench和Time三个公开基准上，其点预测与概率预测平均排名均居预训练模型首位，已上线GitHub、HuggingFace并集成至BigQuery。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "时序预测是零售、金融、运维等场景的核心工具，多变量零样本能力可降低建模门槛，对行业应用有直接推动。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌发布TimesFM-3时序基础模型，首次原生支持多变量预测。模型参数3.3亿，预训练数据超1万亿时间点，可同时预测多条相关序列，并纳入仅历史可见的协变量与已知未来事件。架构上采用因果时间注意力与全变量注意力交替的二维结构，通过连续补丁掩码实现单次前向传播输出完整预测区间，并给出9个分位数。在Gift-Eval、FEV-Bench和Time三个基准上，其点预测与概率预测平均排名均优于Chronos-2、Toto 2.0及前代TimesFM-2.5。模型已开源并集成BigQuery，但官方未披露推理延迟、显存占用等工程细节，第三方复现结果尚待观察。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去预测销量只能看一条曲线自己怎么走，就像只看一个人昨天吃了什么来猜他明天吃什么。TimesFM-3相当于把周围人的菜单、天气和餐厅活动都摆上桌，一起判断。对普通人来说，最直接的变化是：以后商家做促销排期、电商备货、甚至预测用电量，可能不再需要专门训练模型，直接调用接口就能得到更准的预测。它还能给出概率区间，告诉你“大概会卖多少、最坏情况是多少”，而不是只给一个死数字。不过模型再强也依赖输入数据质量，如果促销记录本身混乱，预测照样会偏。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "TimesFM-3: A zero-shot foundation model for multivariate forecasting"
+    },
+    {
+      "id": "7d8f7d49cd6dea",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/"
+        }
+      ],
+      "publishedAt": "2026-08-27",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini Omni 1.1 Flash视频模型",
+      "summary": "2026年8月27日，Google DeepMind发布Gemini Omni 1.1 Flash，面向开发者升级生成式视频控制能力。新模型支持场景扩展（每次10秒、累计最长40秒）、首尾帧插值、360p快速草稿、最高4K输出及视频参考输入。官方称360p预览生成速度最高提升60%、成本约为720p的三分之一。Adobe Firefly、Figma Weave、Runway等已接入。模型通过Google AI Studio和Gemini Enterprise Agent Platform提供，并向Google AI付费订阅者开放。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "这是生成式视频从演示走向生产工具的关键更新，降低试错成本并提升可控性，直接影响视频创作、广告和影视预演等行业的工具链选择。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind于2026年8月27日推出Gemini Omni 1.1 Flash，定位为面向开发者的生产级生成式视频更新。核心能力包括：场景扩展可参考前10秒上下文，按10秒递增、累计最长40秒；可指定首帧和尾帧，生成中间连续画面；360p草稿预览据称比720p标准分辨率快最高60%、成本约三分之一；最终输出可提升至1080p或4K；多模态输入支持最多3秒视频参考。模型通过Gemini API在Google AI Studio和Gemini Enterprise Agent Platform提供，并向Google AI Plus、Pro、Ultra订阅者在Flow和Gemini应用中开放场景扩展。Adobe Firefly、Figma Weave、GMI Cloud、Runway等已接入。官方未披露具体定价数字和区域可用性差异，实际生成质量与速度仍需第三方验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次更新理解成给AI视频工具加了一套更精细的遥控器。以前让AI续拍一段视频，它只记得最后一秒，容易接不上；现在它能回看前十秒，续写更连贯，还能规定开头和结尾画面，让镜头运动更顺。更实用的是，先用低清晰度草稿快速试错，满意后再花更多算力输出4K成片，省钱也省时间。对普通人来说，短视频、广告和影视预演的制作门槛会进一步降低，创作者可以把更多精力放在创意和分镜上。但这也意味着，看到一段视频时更难判断它是否由AI生成，平台和观众对内容真实性的要求会更高。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini Omni 1.1 Flash lets you build with more control"
+    },
+    {
+      "id": "d4c4006fefc6f6",
+      "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/"
+        }
+      ],
+      "publishedAt": "2026-08-27",
+      "source": "Google Research",
+      "title": "谷歌推地球AI预测引擎，自动建模地理空间",
+      "summary": "谷歌研究院发布实验性研究能力“行星预测引擎”（PPE），作为Google Earth AI的一部分，可依据自然语言查询自主完成地理空间预测全流程：数据发现、特征工程、模型训练与评估，并生成报告。官方称其在美国公共卫生、尼日利亚粮食安全、刚果（金）埃博拉疫情预测等基准上优于人工专家流程，将建模周期从数周缩短至数分钟。该成果尚属早期研究，未披露是否对外提供产品化服务，实际部署效果仍待独立验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "地理空间建模长期依赖专业团队和数周手工数据工程，PPE若可复现，将降低公共卫生、粮食安全等领域的预测门槛，但作为实验性研究，其泛化能力与真实场景可靠性仍需验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究院8月27日发布行星预测引擎（PPE），定位为Google Earth AI下的实验性研究能力。系统由大语言模型分三阶段编排：先按自然语言查询确定地理约束并检索Data Commons、Earth Engine及开放网络数据；再融合人口动态基础模型与AlphaEarth嵌入，并用“特征门”过滤目标泄漏；最后自动搜索线性模型、梯度提升树和多层感知机，配合防过拟合机制。官方报告在21项CDC健康指标上平均R²为76.8%，对比人工专家流程60.0%；尼日利亚粮食安全降尺度R²为66.1%，对比基线31.5%；刚果（金）埃博拉热点预测Recall@10为83.3%，高于已发表贝叶斯基线约73%。这些数字均来自谷歌自评，论文未提及独立第三方复现，也未说明系统是否对外开放或产品化。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去做一张“哪里可能闹饥荒、哪里可能暴发疫情”的预测地图，需要专家花几周找数据、洗数据、调模型。PPE相当于一个会自己查资料、自己选变量、自己试模型的实习生，你只要用一句话提问，它几分钟就能交出一份带预测结果的报告。对普通人来说，这意味着未来人道救援、公共卫生预警可能更快更细，比如把省级粮食数据细化到地方级。但要注意，它目前只是实验室里的研究项目，不是已经上线的公共服务；报告里的高准确率由谷歌自己测试得出，真实灾害场景中数据缺失、政策变化等复杂因素，仍可能让预测打折扣。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Planetary prediction engine: Automating global models via Earth AI"
+    },
+    {
+      "id": "71c43cf780d371",
+      "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/"
+        }
+      ],
+      "publishedAt": "2026-08-27",
+      "source": "Google DeepMind",
+      "title": "谷歌试点全球首个AI双盲评测",
+      "summary": "2026年8月27日，Google DeepMind宣布与新加坡AI安全研究所、OpenMined、AVERI和MLCommons合作，对一款Gemini Flash Lite模型开展全球首个专有前沿AI模型的双盲评测。评测在Google Cloud机密计算环境中进行，外部评测方看不到模型权重，谷歌也看不到评测方的测试题，以密码学手段防止基准污染。谷歌称这解决了以往要么交出测试题、要么交出模型权重的两难，但该试点仅覆盖单一模型和特定合作方，能否推广到更多模型和评测机构仍不确定。",
+      "category": "安全与规则",
+      "importance": 72,
+      "why": "基准污染长期削弱AI评测公信力，双盲评测用密码学隔离测试题与模型，为独立机构验证前沿模型提供新范式，影响监管与企业采购判断。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布博客，称其联合新加坡AI安全研究所、OpenMined、AVERI和MLCommons，对一款Gemini Flash Lite模型进行全球首个专有前沿模型的双盲评测。做法是把外部评测数据与模型权重分别锁在Google Cloud机密计算环境里，用密码学证明双方都看不到对方内容：评测方拿不到模型权重，谷歌也拿不到测试题。谷歌称这能防止模型提前“见过”题目导致的基准污染，并强调此前靠零日志协议和合同约束保护测试题，如今加入技术手段是重要进步。仍不确定的是：试点只涉及一款模型和少数合作方，评测题目、具体结果和可复现细节未在博文中披露，能否扩展到更多模型与机构尚无定论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像一场重要考试：如果考生提前偷看了试卷，考满分也没意义。AI评测也有同样毛病——模型可能在训练时“见过”测试题，分数虚高。过去要防作弊，只能二选一：要么评测方把卷子交给模型公司，要么模型公司把模型交出去，双方都怕泄密。谷歌这次的做法相当于把试卷和考生分别锁进两个保险箱，只让考试在箱子里进行，谁都不用把钥匙给对方。对普通人来说，这意味着以后看到的AI能力排名和安全报告可能更可信，买AI服务、看监管结论时被“刷分”误导的风险会小一些。但这次只是试点，离所有AI评测都这么透明还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Piloting the world's first double-blind AI evaluations"
+    },
+    {
+      "id": "a1c9c66d731124",
+      "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/"
+        }
+      ],
+      "publishedAt": "2026-08-27",
+      "source": "Google AI",
+      "title": "谷歌AI搜索新增机票追踪与酒店预订",
+      "summary": "谷歌宣布为搜索AI模式增加三项旅行功能：机票价格追踪、积分里程比价和酒店预订。用户可在对话中设置价格提醒，查看合作航司与酒店的积分兑换成本，并通过谷歌支付完成酒店预订。机票追踪已在180多个国家和地区上线，积分功能全球可用，酒店预订先在美国以英语推出。功能暂不覆盖欧洲经济区，酒店预订由合作方作为记录商户并负责客服。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "谷歌把搜索AI模式从信息查询推进到交易闭环，机票追踪、积分比价和酒店预订直接影响用户出行决策与消费路径，也显示AI助手正成为流量与交易的新入口。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌在搜索AI模式中上线三项旅行能力。第一，机票价格追踪：用户描述出发地、目的地和日期后，可让AI模式设置价格提醒，价格变动时收到邮件，数据来自300多家合作航司和旅行网站，该功能已在180多个国家和地区推出。第二，积分与里程比价：用户可查询航班或酒店用积分兑换所需数量，数据来自合作方，首批支持阿拉斯加航空/夏威夷航空、美国航空、Choice Hotels、希尔顿和温德姆，未来数周加入雅高、Flying Blue、凯悦、LATAM和汉莎集团。第三，酒店预订：用户在美国以英语使用，选择“Continue on Google”后经谷歌支付完成预订，合作方包括Booking.com、Expedia、万豪、洲际等。谷歌称酒店或预订平台为记录商户并负责客服。仍不确定的是，欧洲经济区用户被排除在机票追踪之外，部分功能也不对其开放；酒店预订的完整覆盖时间和更多地区上线节奏未公布。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前用谷歌搜机票酒店，它更像一个导购牌，告诉你哪里便宜、哪里评价好，但下单还得跳去别的网站。现在它想当你的旅行管家：你随口说“帮我盯着这张机票”，降价就发邮件；你说“我有美国航空里程”，它直接告诉你够不够换；看中酒店后，在同一个对话里就能付款订房。对普通人来说，省的是来回切换App和比价的时间，但要注意钱和售后仍由航司、酒店或预订平台负责，谷歌只是入口。另一个现实是，这套体验先照顾美国用户，欧洲经济区被排除在部分功能外，其他地区能否用、何时用，还得看后续开放。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "3 new ways to plan and book travel in Search"
+    },
+    {
+      "id": "95b7ebc1937a7b",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/"
+        }
+      ],
+      "publishedAt": "2026-08-26",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini 3.5 Transcribe语音转文字模型",
+      "summary": "谷歌DeepMind于2026年8月26日发布Gemini 3.5 Transcribe，称其为迄今最精准的语音转文字模型，面向实时语音交互。该模型支持实时流式与预录音频两种API，可自动清理口语赘词、处理自我纠正、识别自定义词汇，并支持85种以上语言及最多三位说话人标注。谷歌援引Artificial Analysis数据称，流式场景平均词错率4.0%，非流式2.6%，最终转写时间较前代Chirp 3改善70%。模型已在Gemini API、AI Studio等平台公开预览，并接入Android Gboard、macOS Gemini应用等产品。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "语音转文字是语音助手、会议记录、实时字幕等场景的基础能力，词错率和延迟的改善会直接影响这些应用的可用性，也关系到谷歌在开发者语音工具市场的竞争力。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布Gemini 3.5 Transcribe，定位为面向智能语音交互的语音转文字模型。它提供两条API路径：gemini-3.5-transcribe-live用于亚秒级延迟的双向实时流式转写，gemini-3.5-transcribe用于预录音频，支持说话人归属和词级时间戳。功能上强调智能转写，可处理“周二—不，周三”这类自我纠正、去除“嗯”“啊”等填充词并自动排版，还能识别用户提供的自定义词汇。谷歌称其自动检测并转写85种以上语言，预录音频最多准确标注三位说话人，三人以上为实验性支持。性能方面，谷歌引用Artificial Analysis数据称流式平均词错率4.0%、非流式2.6%，最终转写时间较Chirp 3改善70%；在FLEURS基准上流式词错率5.50%、非流式5.04%。目前该模型在Gemini API、Google AI Studio和Gemini Enterprise Agent Platform公开预览，并已用于Android Gboard的Rambler、macOS版Gemini应用等场景，Chrome支持即将推出。上述词错率与延迟数据均来自谷歌单方引用，尚无独立第三方复现，实际表现仍待验证。",
+          "heading2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把旧式语音识别想成一个只会逐字听写的速记员：你说话磕巴、改口、背景嘈杂，它就照单全收，转出来一堆“嗯嗯啊啊”和错字。Gemini 3.5 Transcribe更像一个听懂人话的助理，会自动把“我们周二见——不对，周三”整理成“我们周三见”，顺手删掉口头禅，还能记住你常说的专业词和订单号。对普通人来说，最直接的变化是手机输入法、会议记录和视频字幕会更少错字、更少废话，说话就能改错别字、调语气，甚至用语音让AI总结文件、生成图片。对开发者而言，它把实时语音交互的门槛压低，做语音客服、实时字幕、通话分析不必再自己拼一套复杂管线。不过要注意，4.0%和2.6%的词错率是谷歌自己引用的测试结果，真实嘈杂环境里能好到什么程度，还得等独立评测和实际使用检验。",
+          "heading2": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Intelligent transcription with Gemini 3.5 Transcribe"
+    },
+    {
+      "id": "8b2ec93c5681d8",
+      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/"
+        }
+      ],
+      "publishedAt": "2026-08-26",
+      "source": "Google Research",
+      "title": "谷歌发布GlucoFM血糖基础模型",
+      "summary": "谷歌研究团队发布GlucoFM，一个面向连续血糖监测（CGM）的自监督基础模型。它采用双流设计，把较慢的血糖基线趋势与短期波动分开建模，并保留时间与缺失信息。模型在约10.9万小时无标签CGM数据上预训练，覆盖477条受试者/会话记录。在四个队列、七项临床任务共14组评估中，其平均PR-AUC比同语料预训练的最佳GluFormer变体高5.8个百分点；餐后血糖两小时轨迹预测平均MAE为21.88 mg/dL，低于最佳基线的22.90。研究仍属早期，预训练人群规模有限，跨设备与跨队列泛化需更大样本验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "把基础模型方法引入连续血糖监测，用无标签数据提升糖尿病风险、胰岛素抵抗等预测，并展示少样本迁移能力，对可穿戴健康与慢病管理有参考价值，但尚未进入临床验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究发布GlucoFM，一个轻量级、自监督的连续血糖监测基础模型。它把CGM信号拆成两条流：一条表示较慢的血糖基线趋势，另一条表示短期偏离，同时保留一天中的时间位置和缺失标记。预训练使用约109,066小时无标签CGM数据，来自Wear-CGM及四个公开数据集，共477条受试者/会话记录。评估覆盖四个队列、七项任务，包括糖尿病风险、胰岛素抵抗、β细胞功能障碍、高脂血症、低血糖、肥胖和血糖型，共14组队列-任务评估。结果显示，其平均PR-AUC比同语料预训练的最佳GluFormer变体高5.8个百分点；在餐后血糖两小时轨迹预测中，平均MAE为21.88 mg/dL，优于最佳基线的22.90。跨数据集迁移在12组评估中11组领先。仍不确定的是：预训练人群规模有限，不同设备与队列的泛化、以及临床实际效用尚未验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把CGM想成每几分钟给血糖拍一张照片。过去很多模型把整卷照片当成一条线看，容易把“慢慢变化的底子”和“饭后突然冒出的尖峰”混在一起。GlucoFM的做法是先分成两条线：一条看长期趋势，一条看短期波动，再让模型自己学会它们怎么随时间变化。好处是，即使没有多少医生标注过的数据，它也能从大量没标注的血糖记录里学到通用规律，然后在小样本下判断某人是否有糖尿病风险、胰岛素抵抗等。对普通人来说，这离“戴个血糖仪就能自动读懂健康风险”更近一步，但目前只是研究结果，不能替代医生诊断，也不代表现有设备马上会更新这类功能。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "GlucoFM: Foundation model for continuous glucose monitoring"
+    },
+    {
+      "id": "29facfa5780b28",
+      "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826"
+        }
+      ],
+      "publishedAt": "2026-08-26",
+      "source": "MIT News",
+      "title": "MIT新框架提升AI生成材料稳定性",
+      "summary": "AI能快速生成海量材料设计，但多数因化学不稳定而无法实用，筛选成本极高。MIT团队提出CrysVCD框架，在生成前用语言模型约束价电子规则，再交由扩散模型生成结构，使近70%的生成材料通过严格稳定性测试，效率比事后筛选高一个数量级，并可用于高导热等目标性能材料。该方法对高度有序晶体最有效，尚不适用于所有材料。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "AI造材料长期卡在“生成易、可用难”，该工作把化学规则前置到生成环节，显著降低算力门槛，可能加速半导体、数据中心散热等领域的新材料发现。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT研究团队在《自然·计算科学》发表论文，提出名为CrysVCD的框架。当前AI材料生成模型能快速产出大量候选结构，但往往忽略化学稳定性，导致后续筛选耗费约九成算力，且可能耗时数周至数月。CrysVCD的做法是在生成流程最前端加入语言模型，先产出符合价电子规则的化学式，再由扩散模型据此生成原子结构。实验显示，该方法让多种常用模型更常满足价壳层规则，在晶格动力学稳定性这一严格测试中，近70%的生成结果达标；经稳定性指标微调后，机械稳定性达68%、亚稳性达85%。团队还用它生成了高导热和高介电常数候选材料。研究获美国能源部、NSF等资助。尚不确定的是，该方法对内部高度有序的固体结构效果最好，并非适用于所有材料类型。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把AI造材料想成一台自动出题的机器：它一分钟能写几百万道“配方题”，但绝大多数配方在现实里根本立不住，等于白写。过去只能等题出完再一道道验，验一道又慢又贵，小实验室根本玩不起。MIT这套办法相当于在出题前先加一道“化学常识检查”，不合规的配方直接不让生成，好料比例大幅提高。对普通人来说，短期不会立刻买到什么新产品，但长期看，芯片、电池、数据中心散热等依赖新材料的行业，研发试错成本可能下降，小团队也有机会参与创新，最终可能让相关产品更快迭代、更省电。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "AI helps design new materials that work in the real world"
+    },
+    {
+      "id": "9b54a38fa1b1a3",
+      "url": "https://huggingface.co/blog/gradio-workflow-guide",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/gradio-workflow-guide"
+        }
+      ],
+      "publishedAt": "2026-08-25",
+      "source": "Hugging Face",
+      "title": "Gradio推出gr.Workflow可视化AI流水线工具",
+      "summary": "2026年8月25日，Hugging Face博客介绍Gradio内置新功能gr.Workflow，可将AI多步骤流水线描述为带类型节点的图，并自动生成拖拽式画布、REST API及一键部署到Hugging Face Spaces。文中演示了图像编辑、多模型媒体生成、并行图像生成、数据集分析及ZeroGPU本地模型等示例，每个输出节点自动成为独立端点。该功能目前以博客和演示形式发布，具体版本与稳定性尚未说明。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "它把AI流水线从代码调试变成可视化画布，并自动暴露API，降低了多模型组合应用的搭建与部署门槛，对开发者和普通创作者都有实际价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face博客发布Gradio新功能gr.Workflow，将AI应用视为由引用、算子、主体三类节点组成的图，节点可为Python函数、Hugging Face推理提供商模型、其他Gradio Space或Hub数据集行。用户拖拽连接类型化端口后即可运行，每个中间结果可见，每个输出自动成为以标签命名的REST端点，并支持一键部署到Hugging Face Spaces。文中给出图像编辑、媒体工作室、并行生成、数据集分析、ZeroGPU动画等演示，并展示用gradio_client和curl调用端点的代码。仍不确定的是：该功能的具体版本号、正式发布时间、稳定性与限制，以及是否已对所有用户开放。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前把“生成图片→抠图→配音”串起来，得写一堆Python，出错只能靠打印日志找哪一步坏了。gr.Workflow像搭积木：把每一步拖到画布上连起来，点运行就能看到每步结果，哪步不对一眼看出。更省事的是，搭好的流程自动变成接口，别人不用打开界面，用代码或网址就能调用，还能一键发布。对普通人来说，未来用这类工具做表情包、配音、小应用会更容易；对开发者来说，省去写接口和部署的重复劳动。不过它仍依赖Hugging Face生态和令牌，复杂流程的稳定性还需观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Wire It, Run It, Deploy It: AI Workflows in Gradio"
+    },
+    {
+      "id": "966123ef613d7e",
+      "url": "https://huggingface.co/blog/pwc-search",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/pwc-search"
+        }
+      ],
+      "publishedAt": "2026-08-21",
+      "source": "Hugging Face",
+      "title": "Hugging Face 为 Papers with Code 搭建混合搜索",
+      "summary": "Hugging Face 发文介绍其为重启后的 Papers with Code 构建的混合搜索系统。该系统结合 PostgreSQL 全文检索与 pgvector 向量检索，用 RRF 融合两路排名，并借助 Hugging Face Jobs、Storage Buckets 和 Inference Endpoints 三项服务完成离线向量构建与在线查询嵌入。目前系统为来自 arXiv 和 Daily Papers 的逾 11 万篇论文维护向量。文中称在 5000 篇论文试点中，256 维 Qwen3 嵌入索引对精确搜索的 Recall@20 达 0.9955，HNSW 查询延迟 p50 约 1.31 毫秒。若嵌入端点冷启动或异常，搜索会立即回退到全文检索。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "该案例展示了向量检索在生产环境中的工程取舍，尤其是冷启动回退与嵌入契约版本化，对构建搜索类 AI 应用的团队有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 工程师 Niels Rogge 撰文说明 Papers with Code 搜索的架构。系统采用混合检索：PostgreSQL 全文搜索提供词法候选，pgvector 提供语义候选，再用加权倒数排名融合（RRF）合并。离线侧用 Hugging Face Jobs 在 L4 GPU 上批量嵌入论文，产物经 Storage Buckets 传递；在线侧用 Inference Endpoints 部署 Qwen3-Embedding-0.6B，生成 256 维 L2 归一化查询向量。文中称当前维护逾 11 万篇论文的嵌入。仍不确定之处在于：文章未给出全量语料下的端到端延迟与召回数据，试点指标仅基于 5000 篇论文；也未说明该架构在流量高峰或端点持续不可用时的实际用户体验。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成一个图书馆：全文搜索像按书名和关键词查目录，向量搜索像管理员凭“意思相近”帮你找书，两者结果再合并排序。Hugging Face 把最费力的“给所有书贴语义标签”放在后台批量做，只在用户提问时临时算一次查询向量。好处是快且省钱，端点闲着可以缩到零；代价是端点冷启动时语义搜索会短暂失效，系统会直接退回关键词结果，而不是让用户干等。对普通用户而言，搜索仍能用，只是偶尔少了“猜你想找”的那部分；对开发者而言，这套设计提醒：把不稳定的外部依赖设计成可降级，比追求单点极致更重要。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code"
+    },
+    {
       "id": "835a331a5b20ce",
       "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
       "sources": [
@@ -4243,6 +4536,35 @@
       "originalTitle": "Measuring benchmark optimization in speech recognition"
     },
     {
+      "id": "47e5fa4d38e943",
+      "url": "https://news.mit.edu/2026/when-ai-art-has-no-author-generated-images-often-cant-be-traced-to-training-data-0818",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/when-ai-art-has-no-author-generated-images-often-cant-be-traced-to-training-data-0818"
+        }
+      ],
+      "publishedAt": "2026-08-18",
+      "source": "MIT News",
+      "title": "MIT研究：AI生成图像难追溯训练数据",
+      "summary": "MIT CSAIL团队在《自然·通讯》发表研究，提出“归因衰减”现象：生成式扩散模型训练数据规模越大，单张图片、某位艺术家全部作品甚至某人的所有照片被移除后，模型输出几乎不变。团队自建“扩散集成”架构，实现精确删除训练样本而无需重训，在256至16万张图片的七个数据集上验证，归因半径随数据量呈逆幂律缩小。研究认为，大模型输出往往无法归因于任何单个训练样本，这对版权、审计和监管提出新挑战，但结论是否适用于大语言模型仍待验证。",
+      "category": "行业变化",
+      "importance": 82,
+      "why": "该研究首次用精确删除法证明大模型输出与单个训练样本的因果链会随规模消失，直接冲击AI版权诉讼、艺术家署名和监管审计的归因逻辑，影响面广。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT CSAIL的Zheng Dai与David Gifford在《自然·通讯》发表开放获取论文，提出“归因衰减”：生成式扩散模型训练数据越多，任何单个训练样本对具体输出的影响越小。为精确验证，团队构建“扩散集成”架构，由多个分别训练于数据不同切片的子模型组成，关闭见过某样本的子模型即可得到真实反事实输出，无需重训。他们在CIFAR-10、CelebA、MetFaces、ArtBench等七个公开数据集上训练24个集成，规模从256张到逾16万张，发现移除单张图、某艺术家全部作品或某人所有照片后，输出变化极小，归因半径随数据量呈逆幂律缩小。研究还通过暴力重训1282个模型、固定移除比例、更换相似度指标等方式排除干扰。但结论目前仅针对扩散模型，是否适用于大语言模型仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像一锅由几十万人各加一勺料熬成的汤，你捞出其中任何一勺，甚至某个人加的所有料，汤的味道几乎尝不出差别。于是很难说这锅汤“是谁的功劳”。对普通人来说，AI画出一张很像某位画家风格的图，未必能证明它“抄”了那位画家的具体作品；反过来，艺术家想维权、平台想标注来源、法院想判定侵权，都会变得更难。研究还提示，企业若想证明输出不侵犯版权，可能需要主动采用这类可验证“无归因”的技术。但别误会：这不等于AI没学过那些作品，也不等于版权问题自动消失，只是“抓现行”的链条断了。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "When AI art has no author: Study finds generated images often can’t be traced to training data"
+    },
+    {
       "id": "dfb586131bf3d3",
       "url": "https://huggingface.co/blog/muse-glimmer",
       "sources": [
@@ -4270,6 +4592,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source"
+    },
+    {
+      "id": "23ccd9ff0c11ef",
+      "url": "https://huggingface.co/blog/baseten",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/baseten"
+        }
+      ],
+      "publishedAt": "2026-08-06",
+      "source": "Hugging Face",
+      "title": "Baseten接入Hugging Face推理服务",
+      "summary": "2026年8月6日，AI基础设施平台Baseten宣布成为Hugging Face Hub支持的推理提供商，首批支持对话与文本生成任务，可调用Kimi K3、DeepSeek V4 Flash、GLM-5.2等开放权重模型。开发者可通过网页界面、Python与JS SDK及多种Agent工具直接调用，支持自带密钥或由HF路由计费，HF称路由请求不加价。后续将扩展更多任务类型。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "推理提供商生态扩容，降低开发者调用多模型的接入成本，也反映模型分发平台正从托管走向聚合路由，对AI应用开发效率有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face官方博客称，Baseten已作为新的推理提供商接入Hub，用户可在模型页直接调用其托管的模型。首批覆盖对话与文本生成，涉及Kimi K3、DeepSeek V4 Flash、GLM-5.2等开放权重模型，更多任务类型将陆续上线。调用方式包括网页界面、huggingface_hub（Python，需1.26.1以上）与JS SDK，以及Pi、OpenCode等Agent工具。计费分两种：使用Baseten自有密钥由Baseten结算；经HF路由则按提供商标准费率计费，HF表示不加价，未来可能建立分成协议。PRO用户每月获2美元推理额度。目前尚不清楚具体模型清单、各任务上线时间及免费额度细节。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Hugging Face想成一个模型大卖场，Baseten是刚入驻的柜台。以前你想用某家的模型，得自己跑去那家开户、拿钥匙、对账；现在在卖场里就能直接下单，用卖场的会员卡结账也行，用柜台自己的卡也行。对普通开发者来说，好处是少折腾：同一套代码换个模型名就能试不同模型，不用为每家单独写对接。对普通用户，这类变化不会立刻改变你用的App，但会让开发者更快把新模型塞进产品里，功能更新可能更勤。需要注意的是，价格和可用模型仍由各家自己定，HF只是通道，不等于免费或永久稳定。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Baseten on Hugging Face Inference Providers 🔥"
+    },
+    {
+      "id": "5926ba0167f609",
+      "url": "https://news.mit.edu/2026/medical-ai-assistance-benefits-vary-based-on-user-expertise-0804",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/medical-ai-assistance-benefits-vary-based-on-user-expertise-0804"
+        }
+      ],
+      "publishedAt": "2026-08-04",
+      "source": "MIT News",
+      "title": "MIT研究：医疗AI解释对专家与新手效果相反",
+      "summary": "MIT等机构在《自然·医学》发表研究，测试可解释AI对皮肤疾病诊断的影响。结果显示，AI辅助整体提升非专家与基层医生的准确率，但机制不同：非专家主要靠顺从AI，即使AI出错也照信，且大语言模型解释让他们对错误答案更自信；临床医生则能识别AI错误，仅给预测、不给解释时表现最好。研究还发现，先看解释再做判断会加剧依赖。",
+      "category": "安全与规则",
+      "importance": 78,
+      "why": "揭示可解释AI可能加剧自动化偏见，且同一解释对专家和新手效果相反，直接影响医疗AI界面设计与患者安全。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT与斯坦福等机构的研究人员让非专家和基层医生分别判断皮肤病变，并对比四种AI辅助方式：仅给预测与置信度、相似图像佐证、热力图、以及大语言模型用通俗语言解释推理。结果所有方式都提升了非专家准确率，但提升主要来自对AI的顺从；当AI判断错误时，非专家表现反而被拖累，其中大语言模型解释造成的盲从最强，用户对错误答案更自信。临床医生则对错误解释有抵抗力，且在所有方式中，大语言模型解释对其准确率提升最小，仅给预测时表现最佳。研究还发现，若先展示解释再让用户自行判断，依赖会加重；AI在病变表现细微时占优，而出现非典型症状或无关特征时人类更好。论文发表于《自然·医学》，仍不确定的是不同科室、不同AI模型下这些效应是否一致。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把AI想成一个热心的实习助手：它说得越头头是道，越容易让人放弃自己的判断。对没受过训练的人，AI像导航，哪怕导错路也照走；对老医生，AI更像第二意见，他们心里已有答案，发现不对就推翻。问题在于，最需要AI帮忙的人，恰恰最容易被它带偏。对普通人的影响很直接：以后用AI查病，别只看它解释得多顺，先自己说出怀疑，再让AI补充其他可能；平台也应把AI建议放在用户判断之后，而不是一上来就给结论。否则，AI越会解释，越可能让人自信地走错方向。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The benefits of medical AI assistance vary based on user expertise"
     },
     {
       "id": "a0327df34849e3",
