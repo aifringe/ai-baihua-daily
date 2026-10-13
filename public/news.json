@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T00:16:18.316000+00:00",
-  "lastCheckedAt": "2026-10-13T00:16:18.316000+00:00",
+  "updatedAt": "2026-10-13T00:18:19.749533+00:00",
+  "lastCheckedAt": "2026-10-13T00:18:19.749533+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -5237,6 +5237,93 @@
       "originalTitle": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries"
     },
     {
+      "id": "edfff1e305bc7d",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"
+        }
+      ],
+      "publishedAt": "2026-02-26",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Nano Banana 2图像模型",
+      "summary": "2026年2月26日，谷歌DeepMind推出Nano Banana 2（Gemini 3.1 Flash Image），将Nano Banana Pro的高级能力与Gemini Flash的速度结合。新模型支持高级世界知识、精准文字渲染与翻译、最多5个角色和14个物体的主体一致性，分辨率512px至4K。即日起在Gemini应用、搜索、AI Studio、Google Cloud、Flow和Google Ads等产品中铺开，覆盖141个新国家和地区。同时，谷歌强化SynthID与C2PA内容凭证，Gemini应用中的SynthID验证功能自去年11月以来已被使用超2000万次。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "谷歌将高端图像生成能力下放到Flash级速度，并大规模集成到搜索、广告等核心产品，可能显著降低AI图像创作门槛，同时其溯源工具的大规模应用也为行业治理提供参考。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年2月26日发布Nano Banana 2（Gemini 3.1 Flash Image），定位为结合Nano Banana Pro的高级功能与Gemini Flash速度的图像模型。官方称其具备高级世界知识、精准文字渲染与翻译、增强的创意控制，支持最多5个角色和14个物体的主体一致性，分辨率从512px到4K。该模型即日起在Gemini应用、搜索AI模式与Lens、AI Studio、Gemini API、Google Cloud Vertex AI、Flow和Google Ads中铺开，覆盖141个新国家和地区及8种新语言。在Gemini应用中，Nano Banana 2将替代Nano Banana Pro，但Pro和Ultra订阅用户仍可通过三点菜单重新生成以使用Pro。同时，谷歌继续推进SynthID与C2PA内容凭证，Gemini应用中的SynthID验证功能自2025年11月上线以来已被使用超2000万次，C2PA验证即将登陆Gemini应用。目前尚不清楚模型在非英语环境下的实际表现及具体性能基准。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，谷歌把之前两个图像模型——一个聪明但慢、一个快但能力弱——的优点合在了一起，做出了一个又快又强的版本。以前你要等半天才能生成一张高质量图片，现在几乎秒出，还能保持同一个人物或物体在多张图里长得一样，方便做故事板或广告。对普通人来说，在谷歌搜索、Gemini应用里就能直接用，做图、改图、翻译图上的文字都更方便，而且覆盖了更多国家。另外，谷歌给AI生成的图片加了“防伪水印”和“身份证”，帮你分辨哪些是AI做的，这个验证功能已经被用了2000多万次，说明大家确实需要。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed"
+    },
+    {
+      "id": "3eedf77051b09b",
+      "url": "https://huggingface.co/blog/ggml-joins-hf",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ggml-joins-hf"
+        }
+      ],
+      "publishedAt": "2026-02-20",
+      "source": "Hugging Face",
+      "title": "llama.cpp团队加入Hugging Face",
+      "summary": "2026年2月20日，Hugging Face宣布GGML及llama.cpp核心团队加入，创始人Georgi Gerganov带队。llama.cpp是本地推理的基础组件，Hugging Face的transformers则是模型定义的基础。官方称项目将保持100%开源和社区驱动，团队拥有完全技术自主权，Hugging Face提供长期资源支持。双方将优化模型从transformers到llama.cpp的发布流程，并改善打包和用户体验，推动本地AI普及。但部分社区成员担忧开源项目被商业公司收购后可能变质。",
+      "category": "行业变化",
+      "importance": 75,
+      "why": "llama.cpp是本地AI推理的核心开源项目，其团队加入Hugging Face可能改变本地AI生态的资源与协作模式，影响开源社区走向，对开发者和用户均有长期意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年2月20日，Hugging Face发布博客宣布，GGML及llama.cpp的创建者Georgi Gerganov及其团队加入Hugging Face。llama.cpp是本地推理的基础组件，transformers是模型定义的基础，双方称此次合并是“天作之合”。官方表示，llama.cpp项目将继续保持100%开源和社区驱动，团队保留完全自主权和技术方向领导权，Hugging Face提供长期可持续资源。技术重点包括：让transformers库中的新模型能近乎“一键”部署到llama.cpp，并改善基于ggml软件的打包和用户体验。长期目标是让开源超级智能在本地设备上高效运行。但部分社区成员担忧商业公司介入可能影响项目独立性，也有人质疑博客内容缺乏实质细节。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "llama.cpp就像让AI模型在你自己的电脑上跑起来的“发动机”，而Hugging Face是最大的AI模型“应用商店”。现在发动机的制造团队加入了应用商店，好处是以后新模型上架时，你的本地发动机能更快适配，安装使用也更简单，就像手机应用一键安装。官方承诺发动机还是免费开源的，团队自己说了算。但有人担心，应用商店毕竟要赚钱，以后会不会偷偷加限制，比如必须登录才能用某些功能。对普通人来说，未来在个人设备上运行AI可能更方便、更私密，不用把数据传给云端；但也要留意开源承诺是否真的能长期兑现。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI"
+    },
+    {
+      "id": "31f053c94d55b1",
+      "url": "https://huggingface.co/blog/gradio-html-one-shot-apps",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/gradio-html-one-shot-apps"
+        }
+      ],
+      "publishedAt": "2026-02-18",
+      "source": "Hugging Face",
+      "title": "Gradio gr.HTML 升级：单文件生成任意 Web 应用",
+      "summary": "2026年2月18日，Hugging Face 博客介绍 Gradio 6 的 gr.HTML 新特性：支持自定义模板、作用域 CSS 和 JavaScript 交互，使开发者能用单个 Python 文件构建完整 Web 组件，无需构建步骤。文章展示了番茄钟、看板、转盘、目标检测查看器等示例，并强调 LLM 可一次性生成前端、后端和状态管理代码。该功能降低了 AI 应用开发门槛，但实际效果仍取决于模型能力与开发者调试。",
+      "category": "行业变化",
+      "importance": 65,
+      "why": "Gradio 新特性让 AI 应用开发更简单，单文件即可生成交互式 Web 组件，对快速原型和部署有实际推动，但尚未改变底层模型能力。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 博客于 2026 年 2 月 18 日发布文章，介绍 Gradio 6 中 gr.HTML 组件的重大更新。该组件现在支持自定义 HTML 模板、作用域 CSS 和 JavaScript 交互，允许开发者在单个 Python 文件内实现完整的前端、后端和状态管理。文章展示了多个示例，包括番茄钟、GitHub 贡献热力图、看板、转盘、目标检测查看器、3D 相机控制和实时语音转录。每个示例均为单文件，无需构建步骤，可直接部署到 Hugging Face Spaces。文章还说明，通过 html_template、css_template 和 js_on_load 三个参数，结合 ${value} 注入 Python 状态、props.value 更新和 trigger('change') 同步，即可实现交互。对于可复用组件，可继承 gr.HTML 类。目前尚不确定该功能在复杂生产环境中的稳定性和性能表现。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前做一个带交互的网页，通常要写 HTML、CSS、JavaScript，还要配置构建工具，像组装一台需要很多零件的机器。现在 Gradio 的 gr.HTML 把零件都打包好了，你只要写一个 Python 文件，就能做出按钮、动画、拖拽等效果。更妙的是，你可以直接告诉 AI 你想要什么，它就能生成整个文件，运行后立刻看到效果。对普通人来说，这意味着即使不懂前端，也能快速做出自己的小工具，比如专注计时器或数据看板。对 AI 开发者，可以定制模型输出展示，比如画框、关键点。不过，这仍需要一点 Python 基础，且复杂应用可能还需调试。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "One-Shot Any Web App with Gradio's gr.HTML"
+    },
+    {
       "id": "aa45bd91094426",
       "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
       "sources": [
@@ -5264,6 +5351,180 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Accelerating discovery in India through AI-powered science and education"
+    },
+    {
+      "id": "c1e4f65b1ad4de",
+      "url": "https://research.google/blog/teaching-ai-to-read-a-map/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/teaching-ai-to-read-a-map/"
+        }
+      ],
+      "publishedAt": "2026-02-17",
+      "source": "Google Research",
+      "title": "谷歌用合成数据教AI在地图上找路",
+      "summary": "谷歌研究团队发布MapTrace，提出用合成数据训练多模态大模型在地图上追踪路径的新任务与数据集。团队用大模型生成地图、识别可通行区域、构建图结构并计算最短路径，再以AI评审把关，产出200万条问答对并开源。在真实地图基准MapBench上微调后，Gemini 2.5 Flash路径误差指标从1.29降至0.87，Gemma成功率提升6.4个百分点。研究仍存不确定：生成地图文字常有错乱，AI评审准确率约76%至83%。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "它把空间推理当作可训练技能，用合成数据绕开人工标注瓶颈，并开源大规模数据集，为导航、机器人和无障碍工具提供新思路。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队提出MapTrace，目标是让多模态大模型在任意地图上沿可行走区域追踪从起点到终点的路径。由于手工标注像素级路径成本极高，且商场、博物馆等复杂地图多为专有数据，团队设计全自动合成流水线：先用大模型生成地图描述，再由文生图模型渲染地图；随后用颜色聚类产生候选可通行掩码，并让一个多模态模型充当“掩码评审”筛选；接着把掩码转成图结构，用Dijkstra算法求最短路径；最后让另一个模型充当“路径评审”做质量把关。该流水线产出200万条带路径标注的问答对并开源。团队用其中约2.3万条路径微调Gemma 3 27B和Gemini 2.5 Flash，在真实地图基准MapBench上评估，微调后Gemini 2.5 Flash的NDTW从1.29降到0.87，Gemma成功率提升6.4个百分点。仍不确定之处包括：生成地图文字常出错，掩码评审准确率约83%、路径评审约76%，均有一定误判率。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "今天的大模型能认出照片里是动物园，却未必能在地图上从大门画一条不穿墙、不穿礼品店的路到爬行动物馆。原因不是它笨，而是它没见过足够多“路必须连着走、墙不能穿”的例子。谷歌的办法相当于自己造题：让AI画地图、自己挑出能走的路、算出标准答案，再让另一个AI当判卷老师。这样不用雇人一条条手画，就能批量生产训练材料。对普通人的影响是，未来导航工具可能看着卫星图或地铁图就给出更符合直觉的走法，仓库、医院、机场里的机器人也能只看平面图就自己找路，视障人士还可能获得逐步的室内路径描述。不过目前AI判卷仍有约两成出错，生成地图上的文字也常写错，离完全可靠还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Teaching AI to read a map"
+    },
+    {
+      "id": "720d05f84e1686",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/"
+        }
+      ],
+      "publishedAt": "2026-02-12",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini 3 Deep Think重大升级",
+      "summary": "谷歌DeepMind于2026年2月12日发布Gemini 3 Deep Think重大升级，定位为面向科学、研究与工程的专用推理模式。官方称其在多项基准上取得高分，包括人类最后考试48.4%、ARC-AGI-2达84.6%、Codeforces Elo 3455，并在2025年国际数学、物理、化学奥赛书面部分达到金牌水平。该模式已向Google AI Ultra订阅者在Gemini应用开放，并首次通过Gemini API向部分研究者、工程师和企业开放早期访问申请。",
+      "category": "模型进展",
+      "importance": 82,
+      "why": "这是谷歌在专用推理模型上的关键升级，首次将Deep Think开放至API，直接面向科研与工程场景，可能影响AI在科学发现和工程建模领域的竞争格局。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind宣布对Gemini 3 Deep Think进行重大升级，称其专为科学、研究和工程难题设计，与科学家和研究者合作开发，以应对缺乏明确边界、数据不完整的问题。官方公布的成绩包括：人类最后考试48.4%（无工具）、ARC-AGI-2达84.6%、Codeforces Elo 3455、2025国际数学奥赛金牌水平，并在2025国际物理和化学奥赛书面部分达到金牌水平，CMT-Benchmark得分50.5%。应用层面，Google AI Ultra订阅者即日起可在Gemini应用中使用，研究者和企业可通过Gemini API申请早期访问。官方举例称，有数学家借此发现论文中此前未被同行评审察觉的逻辑漏洞，有实验室优化晶体生长配方。上述基准成绩和案例均来自谷歌官方，尚未见独立第三方复现验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Deep Think理解成一个专门啃硬骨头的“深度思考档位”：普通聊天机器人像随手查资料，它更像请了一位耐心推演的研究助手。谷歌说它在数学、编程和理科奥赛题上能拿金牌级分数，还能帮人检查论文漏洞、设计材料配方、把草图变成可3D打印的文件。对普通人来说，短期内最直接的变化是：如果你订阅了谷歌最高档的AI服务，就能用上这个模式；科研和工程人员则多了一条申请API试用的通道。不过这些亮眼数字目前都是谷歌自己公布的，实际好不好用、是否真能推动科研，还需要更多独立测试和真实项目来检验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini 3 Deep Think: Advancing science, research and engineering"
+    },
+    {
+      "id": "215d22fdf45ded",
+      "url": "https://research.google/blog/beyond-one-on-one-authoring-simulating-and-testing-dynamic-human-ai-group-conversations/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/beyond-one-on-one-authoring-simulating-and-testing-dynamic-human-ai-group-conversations/"
+        }
+      ],
+      "publishedAt": "2026-02-10",
+      "source": "Google Research",
+      "title": "谷歌DialogLab让AI多人对话可编排",
+      "summary": "谷歌研究团队发布开源原型DialogLab，用于编排、模拟和测试多人人机对话。它把参与者角色、分组等社交设定与对话时间线解耦，支持脚本与即兴混合，并提供人工控制、自主、被动三种模式。14名游戏、教育、社科领域参与者测试后认为，人工控制模式在参与感、有效性和真实感上明显更好。该工具仍属研究原型，尚未公布产品化时间。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "它把AI对话从一对一推进到多人协作场景，并给出可编排、可验证的工程化路径，对教育、游戏、社科研究等需要模拟群体互动的领域有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队在ACM UIST 2025展示开源原型DialogLab，目标是让开发者编排、模拟和测试动态的人机多人对话。框架把对话拆成两层：一层是社交设定，包括参与者、角色、子分组和关系；另一层是时间流，由若干片段组成，每个片段规定参与者、发言顺序和互动风格，还可设置打断与附和规则。界面提供拖拽画布、检查面板和自动生成提示词。测试环节有实时预览和人工控制模式，审核面板会建议AI回复，设计者可编辑、采纳或忽略。验证仪表盘则可视化发言分布和情绪走向。团队用14名来自游戏设计、教育和社科研究的参与者做评估，完成学术社交活动设计和三种AI对话条件测试。结果显示，人工控制模式在参与感上显著更高，在有效性和真实感上也普遍更受认可。仍不确定的是，该原型何时产品化、能否稳定支持更大规模或更长对话，以及多模态能力何时加入。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去的AI聊天基本是你一句我一句的单聊，像打一对一电话。但真实生活里更多是开会、家庭聚餐、课堂讨论，谁插话、谁跑题、谁负责总结都很复杂。DialogLab相当于给这种多人聊天搭了一个导演台：你可以先安排角色和分组，再写好几段剧情，同时允许AI临场发挥。测试时你还能像导播一样，看到AI准备说什么，决定放行还是改掉。对普通人来说，短期不会直接用到它，但它意味着未来的AI陪练、游戏NPC、课堂模拟可能不再各说各话，而是更像一群真人互动。比如练演讲时，AI观众会提问、交头接耳甚至质疑你；玩游戏时，NPC之间也会互相接话。不过它目前还是研究原型，离日常产品还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Beyond one-on-one: Authoring, simulating, and testing dynamic human-AI group conversations"
+    },
+    {
+      "id": "8a6bd48e37e3ac",
+      "url": "https://research.google/blog/how-ai-trained-on-birds-is-surfacing-underwater-mysteries/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/how-ai-trained-on-birds-is-surfacing-underwater-mysteries/"
+        }
+      ],
+      "publishedAt": "2026-02-09",
+      "source": "Google Research",
+      "title": "谷歌用鸟类模型识别鲸鱼声音",
+      "summary": "谷歌DeepMind于2025年8月发布生物声学基础模型Perch 2.0，主要用鸟类等陆生动物声音训练，未包含水下音频。谷歌研究与DeepMind在NeurIPS 2025研讨会上报告，该模型迁移到海洋任务后表现突出，在NOAA PIPAN、ReefSet和DCLDE三个数据集上，用少量标注样本训练简单分类器即可区分须鲸、座头鲸及虎鲸不同生态型，性能多数情况下居首或第二。团队还发布Colab教程，演示如何用NOAA被动声学档案快速构建自定义鲸声分类器。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "跨物种声学迁移能力降低海洋监测标注成本，对濒危鲸类保护与生态研究有实际价值，也展示基础模型泛化潜力。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2025年8月发布Perch 2.0，训练数据以鸟类和其他陆生发声动物为主，不含水下音频。谷歌研究与DeepMind在NeurIPS 2025“AI for Non-Human Animal Communications”研讨会上报告，将该模型用于海洋声学迁移学习。评估采用NOAA PIPAN、ReefSet和DCLDE三个数据集，任务包括区分须鲸物种、座头鲸、虎鲸不同生态型等。方法是用Perch 2.0生成音频嵌入，再以每类4、8、16或32个标注样本训练逻辑回归分类器，以AUC_ROC衡量。结果显示Perch 2.0在各数据集和样本量下多为最佳或次佳，优于AVES-bird、AVES-bio等模型。团队同时发布Colab端到端教程，演示用NOAA被动声学档案构建自定义鲸声分类器。论文尚未说明该迁移能力在更广泛海域和噪声条件下的稳定性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成一位只听过鸟叫的“耳朵”，突然被派去听鲸鱼唱歌。它没专门学过水下声音，却因为鸟叫里也有大量细微差别，练出了分辨音色和节奏的本事，所以换个场景也能用。对普通人来说，这意味着以后监测鲸鱼不必每次都从头训练大模型，科学家拿几十段标注声音，几小时就能做出一个专用识别器。好处是海洋保护和研究更便宜、更快，比如追踪濒危鲸群、发现新叫声。但别误会，它不是万能翻译器，只是帮人从海量录音里挑出值得细听的部分，最终判断仍要靠专家。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How AI trained on birds is surfacing underwater mysteries"
+    },
+    {
+      "id": "3802c2e4749df1",
+      "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/"
+        }
+      ],
+      "publishedAt": "2026-02-09",
+      "source": "Google DeepMind",
+      "title": "Gemini Deep Think 数学研究新突破",
+      "summary": "Google DeepMind 于2026年2月发布博文，介绍 Gemini Deep Think 在数学、物理和计算机科学专业研究中的进展。该模型2025年曾达 IMO 金牌水平，现通过数学研究智能体 Aletheia 解决研究级问题，包括自主生成论文、人机协作证明及解决 Erdős 开放问题。在计算机科学领域，模型帮助解决 Max-Cut、Steiner Tree 等长期瓶颈，并推翻十年猜想。所有结果经人类专家评分，但博文未提供具体论文链接，且部分成果尚待同行评审，实际影响仍需验证。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "Gemini Deep Think 展示 AI 在高级数学和理论计算机科学中的研究能力，可能加速科学发现，但需独立验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind 发布博文，称 Gemini Deep Think 在数学、物理和计算机科学专业研究中取得进展。该模型2025年达 IMO 金牌水平，现通过数学研究智能体 Aletheia 解决研究级问题，包括自主生成论文、人机协作证明及解决 Erdős 开放问题。在计算机科学领域，模型帮助解决 Max-Cut、Steiner Tree 等长期瓶颈，并推翻十年猜想。所有结果经人类专家评分，但博文未提供具体论文链接，且部分成果尚待同行评审，实际影响仍需验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给科学家配了一个超级助手，能帮忙解决复杂的数学题和计算机难题。比如，它独立完成了一篇数学论文，还帮人类推翻了十年没解决的猜想。对普通人来说，未来科学研究可能更快，新药、新技术或许能更早出现。但别急，这些成果还需要其他专家检查，就像新药要经过临床试验一样。目前它只是辅助工具，不会取代科学家，但会让研究更高效。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Accelerating Mathematical and Scientific Discovery with Gemini Deep Think"
+    },
+    {
+      "id": "5de818201044ab",
+      "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3"
+        }
+      ],
+      "publishedAt": "2026-02-03",
+      "source": "Hugging Face",
+      "title": "Hugging Face长文：中国开源AI生态成形",
+      "summary": "Hugging Face于2026年2月3日发布系列博客第三篇，梳理自2025年1月DeepSeek R1发布后中国开源AI生态的变化。文章称阿里Qwen衍生模型超11.3万，腾讯、字节、百度相继转向开放，月之暗面、智谱、MiniMax等创业公司推出开源模型并筹备IPO，小红书、美团等应用公司也开始自研模型。文章将这一变化归因于算力、能源与数据基础设施的长期积累，以及2025年8月“AI+”行动计划的推动，认为开源已从可选项变为系统设计的默认假设。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "该文系统梳理了中国主要AI公司从闭源转向开源的路径，并给出衍生模型数量等可核查数据，对理解全球开源AI格局和产业竞争走向有参考价值，但属观点性综述而非独立报道。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face发布系列博客第三篇，回顾2025年1月DeepSeek R1发布后中国开源AI生态的演变。文章列举：阿里Qwen在Hugging Face上衍生模型超11.3万个，远超Meta Llama的约2.7万和DeepSeek的约6千；腾讯从集成DeepSeek转向发布混元系列；字节以“AI应用工厂”思路选择性开源UI-TARS、Seed-Coder等；百度在CEO长期质疑开源后，通过Ernie 4.5系列重新进入开源生态。创业公司方面，月之暗面Kimi K2、智谱GLM-4.5、MiniMax M2进入开源模型榜单，智谱与MiniMax在2025年底相继公布IPO计划。文章还称小红书、B站、小米、美团等应用公司开始训练并发布自有模型。需注意，该文为Hugging Face平台方发布的观点性综述，部分数据（如融资额、算力增速）引自市场报告或中国方面说法，未提供独立核实来源。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去几年，中国AI公司大多把最好的模型捂在手里，靠API收费。现在风向变了：把模型免费放出来，让别人拿去改、拿去用，反而成了主流做法。这就像开餐馆不再只卖堂食，而是把菜谱公开，谁都能照着做，做的人越多，自己的调料和厨具就越好卖。对普通人来说，最直接的影响是：能免费或低价用到的中文AI模型会越来越多，手机里的助手、办公软件、短视频推荐都可能换成国产开源模型驱动。对企业来说，自己调一个专属模型的成本在下降，不必完全依赖某一家云厂商。但也要看到，开源不等于免费午餐，算力、电费和部署维护仍是真金白银，最终谁买单、数据怎么用，仍是未定之数。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+"
     },
     {
       "id": "cc199a2045454f",
