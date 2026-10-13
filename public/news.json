@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:25:50.869752+00:00",
-  "lastCheckedAt": "2026-10-13T06:25:50.869752+00:00",
+  "updatedAt": "2026-10-13T06:28:22.170113+00:00",
+  "lastCheckedAt": "2026-10-13T06:28:22.170113+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8606,6 +8606,35 @@
       "originalTitle": "Project Genie: Experimenting with infinite, interactive worlds"
     },
     {
+      "id": "eec01c0dd80f2b",
+      "url": "https://huggingface.co/blog/daggr",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/daggr"
+        }
+      ],
+      "publishedAt": "2026-01-29",
+      "source": "Hugging Face",
+      "title": "Gradio团队发布Daggr：代码优先的AI工作流可视化工具",
+      "summary": "Gradio团队推出开源Python库Daggr，用于连接Gradio应用、ML模型和自定义函数构建AI工作流。开发者用Python代码定义流程，库自动生成可视化画布，可检查中间输出、单独重跑某一步骤并管理状态。支持GradioNode、FnNode、InferenceNode三种节点，与Gradio Spaces无缝集成，状态自动持久化。目前处于beta阶段，API可能变动，存在数据丢失风险。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "Daggr以代码优先方式解决AI工作流调试痛点，降低多模型串联门槛，对开发者生态有实际价值，但尚处beta，影响范围有限。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Gradio团队发布开源Python库Daggr，定位为连接Gradio应用、ML模型和自定义函数的AI工作流工具。开发者用Python定义节点和连接关系，Daggr自动生成可视化画布，支持检查任意节点输出、修改输入并单独重跑某一步，无需执行整个流水线。节点类型包括调用Gradio Space的GradioNode、运行自定义函数的FnNode和调用Hugging Face推理服务的InferenceNode。工作流状态、输入值、缓存结果和画布位置自动保存，支持通过Gradio隧道生成公开链接或部署到Hugging Face Spaces。官方示例展示图像生成、背景移除、降采样、风格增强到3D资产生成的完整链路。目前为beta版，API可能随版本变化，本地状态持久化在更新时可能丢失数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "做AI应用常要把好几个模型串起来，比如先抠图再生成3D模型。以前要么写一堆难调试的脚本，要么用笨重的生产级平台。Daggr像给代码装了个可视化仪表盘：你照常写Python，它自动画出流程图，哪一步出错就单独重跑那一步，不用从头再来。对普通用户来说，这意味着开发者做AI小工具更快、更稳，未来你用的AI应用可能迭代更频繁、功能更灵活。不过它目前还是测试版，适合尝鲜和快速实验，不建议直接用于关键生产环境。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing Daggr: Chain apps programmatically, inspect visually"
+    },
+    {
       "id": "8e6380fc0361a1",
       "url": "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/",
       "sources": [
@@ -8633,6 +8662,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Towards a science of scaling agent systems: When and why agent systems work"
+    },
+    {
+      "id": "54d604eb530dd7",
+      "url": "https://huggingface.co/blog/upskill",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/upskill"
+        }
+      ],
+      "publishedAt": "2026-01-28",
+      "source": "Hugging Face",
+      "title": "用Claude生成技能文件，让开源小模型学会写CUDA内核",
+      "summary": "Hugging Face发布博客，介绍新工具upskill：先用Claude Opus 4.5等强模型完成写CUDA内核等复杂任务并导出过程记录，再据此自动生成“智能体技能”文件与测试用例，最后把技能交给本地或更便宜的开源模型使用并对比效果。在kernel-builder任务上，某本地量化模型准确率从40%升至85%，但技能并非对所有模型都有效，部分模型准确率或token消耗反而变差，需逐模型评估。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "它把“强模型生成技能、弱模型复用”的路径工具化，降低了本地小模型处理高难专业任务的门槛，也提醒技能效果因模型而异，不能盲目套用。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年1月28日发布文章，介绍工具upskill的完整流程：先让Claude Opus 4.5等强模型交互式完成写CUDA内核的任务并导出trace，再据此生成技能文件（SKILL.md）和测试用例，最后在目标模型上分别“有技能”和“无技能”运行对比。文中称，在kernel-builder写CUDA内核任务上，某本地量化模型准确率从40%提升到85%，提升45个百分点；但基础技能对部分模型无效，甚至降低表现或增加token消耗。文章未给出所有被测模型的完整数据，也未说明测试用例规模与统计显著性，因此“技能普遍有效”仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成：请一位资深工程师先做一遍难题，并把他脑子里的经验、踩过的坑写成一张“速查卡”，再让水平一般但便宜、能装在自己电脑上的助手照着卡片干活。卡片写得好，小助手也能干出接近高手的活，还省算力；但卡片不是万能钥匙，有的助手本来就会，塞卡片反而添乱、更费电。对普通人的影响是：以后本地小模型可能也能帮你处理写代码、配环境等专业活，成本更低；但别指望一张卡片通吃所有模型，用前最好先小范围试跑对比。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "We Got Claude to Build CUDA Kernels and teach open models!"
     },
     {
       "id": "ed891771925301",
@@ -8751,6 +8809,35 @@
       "originalTitle": "AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality"
     },
     {
+      "id": "141edcd2d5e561",
+      "url": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/"
+        }
+      ],
+      "publishedAt": "2026-01-16",
+      "source": "Google DeepMind",
+      "title": "DeepMind发布D4RT，让AI理解四维世界",
+      "summary": "Google DeepMind于2026年1月16日发布名为D4RT的技术，宣称让AI以四维方式观察世界，即在三维空间基础上加入时间维度。但所提供的正文内容为乱码，无法提取具体技术细节、实验数据或应用场景，因此该发布的确切内容、是否开源、性能指标等均无法核实。目前可确认的仅为标题、来源与日期，其余信息缺失，需等待官方原文或权威报道补充。",
+      "category": "模型进展",
+      "importance": 55,
+      "why": "四维感知若属实，将推动视频理解、机器人与自动驾驶，但正文乱码导致细节无法验证，实际影响待观察。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "根据Google DeepMind官网2026年1月16日发布的信息，其推出了一项名为D4RT的技术，标题称其教AI以四维方式看世界。四维通常指三维空间加时间，意味着模型可能同时处理空间结构与时间变化。然而，本次提供的正文为不可读的乱码，无法确认D4RT的具体架构、训练数据、评测结果、是否开源以及与其他视频模型的对比。因此，目前只能确认发布时间、来源和标题，其余关键事实均不确定，需以官方原文为准。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，现在的AI看图片像看照片，看视频像翻连环画，一帧一帧地理解。D4RT想做的，是让AI像人一样，一边看一边知道东西在往哪动、接下来会怎样。如果真能做到，手机拍照、自动驾驶、机器人干活都会更聪明。但这次我们拿到的正文全是乱码，等于只看到海报没看到内容，所以先别急着下结论，等官方把细节说清楚再说。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "D4RT: Teaching AI to see the world in four dimensions"
+    },
+    {
       "id": "69cdb5634f5ed9",
       "url": "https://research.google/blog/next-generation-medical-image-interpretation-with-medgemma-15-and-medical-speech-to-text-with-medasr/",
       "sources": [
@@ -8778,6 +8865,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Next generation medical image interpretation with MedGemma 1.5 and medical speech to text with MedASR"
+    },
+    {
+      "id": "2d716211cf95ab",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-ingredients-to-video/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-ingredients-to-video/"
+        }
+      ],
+      "publishedAt": "2026-01-13",
+      "source": "Google DeepMind",
+      "title": "谷歌Veo 3.1升级：竖屏与4K生成",
+      "summary": "谷歌DeepMind于2026年1月13日发布Veo 3.1 Ingredients to Video更新，支持基于参考图生成更富表现力的视频，新增原生9:16竖屏输出，并可将视频放大至1080p和4K。角色、背景与物体一致性得到增强，便于跨场景叙事。该功能已上线Gemini应用、YouTube Shorts、Flow、Google Vids、Gemini API和Vertex AI，但1080p/4K放大仅限Flow、API和Vertex AI。官方未披露具体性能指标或对比数据。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "视频生成向移动端竖屏和专业分辨率延伸，降低短视频创作门槛，同时影响内容生产与AI内容溯源方式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind更新Veo 3.1 Ingredients to Video，核心是让用户用参考图生成更生动、对话更丰富的视频，并提升角色、背景和物体在跨场景中的一致性。新增原生9:16竖屏输出，面向YouTube Shorts等移动平台；同时提供1080p和4K放大，用于更精细的后期与高端制作。功能覆盖Gemini应用、YouTube Shorts、YouTube Create、Flow、Google Vids、Gemini API和Vertex AI，但1080p/4K放大仅限Flow、API和Vertex AI。官方称生成视频嵌入SynthID水印，Gemini应用可验证视频是否由谷歌AI生成。仍不确定的是生成时长、配额、地区可用性及实际画质提升幅度，官方未给出量化对比。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前用AI做视频，常出现人物换脸、背景跳变，还得横屏裁成竖屏。这次更新像给AI配了“角色档案”和“场景备忘录”：你给几张参考图，它就能让同一个人、同一件物品在不同镜头里保持稳定，还能直接生成手机竖屏视频，不用再裁剪。对普通人来说，发短视频、做小广告或课堂展示会更省事，手机里就能出片。对专业团队，4K放大让素材更接近播出标准。但要注意，AI视频仍可能出错，且平台会加水印和验证工具，用之前最好确认内容真实性和版权归属。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Veo 3.1 Ingredients to Video: More consistency, creativity and control"
+    },
+    {
+      "id": "da8e12b0199ad8",
+      "url": "https://research.google/blog/neuralgcm-harnesses-ai-to-better-simulate-long-range-global-precipitation/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/neuralgcm-harnesses-ai-to-better-simulate-long-range-global-precipitation/"
+        }
+      ],
+      "publishedAt": "2026-01-12",
+      "source": "Google Research",
+      "title": "谷歌NeuralGCM用AI提升降水模拟精度",
+      "summary": "谷歌研究团队在《Science Advances》发表论文，介绍其混合模型NeuralGCM的新进展。该模型将物理模拟与神经网络结合，并直接使用NASA 2001-2018年卫星降水观测训练AI部分，而非依赖再分析数据。在280公里分辨率下，其15天降水预报和多年气候模拟均优于ECMWF业务模型及IPCC所用传统模型，极端降水误差降低40%，日循环更准确。模型已开源，并与芝加哥大学和印度农业部合作试点季风预测。但当前分辨率仍较粗，尚不能直接用于业务预报。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "降水模拟是气候预测的难点，该工作首次用卫星观测直接训练混合模型，显著提升极端降水和日循环精度，且已开源并落地季风预测试点，对农业、防灾有实际意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队在《Science Advances》发表论文，公布其混合大气模型NeuralGCM在降水模拟上的改进。该模型将传统流体动力学求解器与神经网络结合，此次关键变化是直接使用NASA IMERG卫星降水观测（2001-2018年）训练AI部分，而非像多数ML天气模型那样依赖再分析数据。在280公里分辨率下，其15天预报在24小时和6小时累积降水指标上优于ECMWF中程预报模型；多年气候模拟中，陆地平均误差约0.3毫米/天，比IPCC所用领先模型降低约40%，对前0.1%极端降水改进明显，日循环峰值时间也更接近观测。模型已开源，并与芝加哥大学及印度农业部合作试点季风预测。但当前分辨率仍较粗，尚不能直接用于业务预报。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "天气预报里最难猜的就是“下不下雨、下多大”。传统模型把地球切成几十公里的大格子，云却只有几百米，只能靠经验公式估算，结果常常小雨报多、暴雨报少，下雨时间也偏早。NeuralGCM相当于让AI直接看卫星拍到的真实降雨记录来学习，而不是看二手加工数据，所以更准。对普通人来说，这意味着未来农民能更准地知道哪天播种、城市能更好准备百年一遇暴雨，甚至印度季风预测已开始试用。不过目前它看得还比较“粗”，只能看大范围趋势，不能精确到你家门口，但方向是让长期气候预测更靠谱。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "NeuralGCM harnesses AI to better simulate long-range global precipitation"
     },
     {
       "id": "83fb5439cd58b2",
@@ -8836,6 +8981,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "NVIDIA Rubin Platform, Open Models, Autonomous Driving: NVIDIA Presents Blueprint for the Future at CES"
+    },
+    {
+      "id": "49b3f6f1a10d15",
+      "url": "https://huggingface.co/blog/nvidia-reachy-mini",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia-reachy-mini"
+        }
+      ],
+      "publishedAt": "2026-01-05",
+      "source": "Hugging Face",
+      "title": "英伟达CES展示桌面AI机器人方案",
+      "summary": "在CES 2026上，英伟达展示了一套将AI智能体实体化的开源方案：用DGX Spark提供算力，驱动Reachy Mini桌面机器人，结合Nemotron推理与视觉模型、ElevenLabs语音及NeMo Agent Toolkit编排框架，实现可对话、可看、可动作的私人助理。官方博客给出完整复现步骤，支持本地或云端部署，推理模型约需65GB磁盘空间，视觉模型约28GB。该方案强调开放可控，用户可自行替换模型与工具，但目前仍属开发者教程性质，尚未公布成品售价与上市时间。",
+      "category": "日常应用",
+      "importance": 72,
+      "why": "英伟达把大模型、机器人硬件和开源编排框架打包成可复现教程，降低了个人AI实体助手的门槛，对开发者和消费级机器人生态有示范意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达在CES 2026主题演讲中，由黄仁勋演示了用DGX Spark迷你超算搭配Reachy Mini桌面机器人，构建一个能对话、看东西并做动作的私人AI助手。配套博客给出逐步复现指南：推理用Nemotron 3 Nano，视觉用Nemotron Nano 2 VL，语音用ElevenLabs，编排用开源NeMo Agent Toolkit，并支持模拟或真实硬件。系统通过路由器把闲聊、视觉问答和工具调用分发给不同模型，还内置ReAct代理执行搜索等动作。目前该方案是开发者教程，未公布成品价格、上市时间，也未说明普通消费者能否直接购买。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成给AI装上了眼睛、耳朵和手脚：以前你只能对着聊天框打字，现在它能抬头看你、听你说话，还能动一动回应。英伟达相当于公开了一份“组装说明书”，把大脑、眼睛和身体零件都列出来，懂技术的人可以照着拼一个放在桌上的小助手。对普通人来说，短期内还买不到开箱即用的版本，但这类方案会推动未来出现更便宜、更私密的桌面机器人，你的数据不必全传到云端。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "NVIDIA brings agents to life with DGX Spark and Reachy Mini"
     }
   ]
 }
