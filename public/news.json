@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:43:40.792731+00:00",
-  "lastCheckedAt": "2026-10-13T06:43:40.792731+00:00",
+  "updatedAt": "2026-10-13T06:45:14.335646+00:00",
+  "lastCheckedAt": "2026-10-13T06:45:14.335646+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -4634,6 +4634,35 @@
       "originalTitle": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
     },
     {
+      "id": "689d78c6e007ab",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants"
+        }
+      ],
+      "publishedAt": "2026-09-22",
+      "source": "Hugging Face",
+      "title": "Transformers 原生支持 GGUF 量化模型",
+      "summary": "Hugging Face 宣布 Transformers 库现已支持直接加载和运行 llama.cpp 的 GGUF 量化模型。用户可通过 from_pretrained 接口，在 Apple Silicon Mac 上以接近 llama.cpp 的速度运行本地模型，并复用 PyTorch 生态进行调试、评估和微调。此举降低了本地推理门槛，但初期仅支持 Apple Silicon 和 Qwen3.5 架构，其他平台和模型支持仍待扩展。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "GGUF 是本地推理主流格式，Transformers 原生支持意味着开发者无需切换工具链即可在 Python 中运行量化模型，有望加速本地 AI 应用开发与模型调试。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 于 2026 年 9 月 22 日发布更新，Transformers 库新增对 GGUF 格式模型的原生支持。用户只需在 from_pretrained 中指定 gguf_file 参数，即可加载 Hub 上的 GGUF 检查点，并在 Apple Silicon Mac 上运行。该功能通过复用 llama.cpp 的 ggml Metal 内核实现，官方基准显示在 Qwen3.5-4B 等模型上，生成速度接近 llama.cpp。目前支持范围有限：仅限 Apple Silicon、需最新 PyTorch 和 kernels 库，且初期聚焦 Qwen3.5 架构。若内核不可用，会回退到 sdpa 并增加内存占用。此外，Transformers serve 可暴露 OpenAI 兼容 API，方便 Jan、Pi 等客户端连接。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前想在笔记本上跑大模型，得用 llama.cpp 这类专门工具，虽然省内存但和 Python 生态隔了一层。现在 Transformers 直接“读懂”了 GGUF 格式，就像你常用的万能遥控器突然能控制另一品牌的电视——不用换遥控器，也不用学新操作。对普通人来说，这意味着以后用 Ollama、LM Studio 等本地工具时，背后的模型可以更方便地被开发者调试、评估甚至微调，本地 AI 应用的质量和迭代速度可能提升。不过目前只支持苹果芯片和部分模型，Windows 和更多架构的用户还得再等等。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Transformers now runs llama.cpp quants"
+    },
+    {
       "id": "6b3083011aeb49",
       "url": "https://huggingface.co/blog/omlx",
       "sources": [
@@ -4926,6 +4955,35 @@
       "originalTitle": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train"
     },
     {
+      "id": "50f1fa34d3c31e",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/"
+        }
+      ],
+      "publishedAt": "2026-09-15",
+      "source": "Google AI",
+      "title": "谷歌AI语言技术覆盖300种语言",
+      "summary": "2026年9月15日，谷歌发布博客称其AI语言技术已支持300多种语言，覆盖全球86%人口。谷歌正从纯文本翻译转向原生音频理解，推出Gemini 3.5实时翻译（70种语言）、转录模型，并推进1000种语言计划。通过WAXAL、Project Vaani等本地合作收集数据，开发TranslateGemma离线模型，并与Viamo合作让功能手机用户使用语音AI。此外，SL2T手语转文本功能已登陆Pixel 11。谷歌强调技术应尊重文化差异，让更多人用自己的方式被理解。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "谷歌此次更新展示了AI语言技术从文本翻译向多模态、低资源语言和离线场景的扩展，对全球数十亿非英语用户和边缘群体具有实际意义，也反映了行业对语言包容性的重视。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌于2026年9月15日发布文章，宣布其AI语言技术已支持超过300种语言，覆盖全球约70亿人。核心进展包括：Gemini 3.5 Live Translate支持70种语言实时语音翻译，能捕捉语码转换和情感；Gemini 3.5 Transcribe提升嘈杂环境下的转录精度。谷歌推进“1000种语言计划”，通过跨语言迁移学习提升低资源语言表现。数据合作方面，WAXAL数据集覆盖27种撒哈拉以南非洲语言，Project Vaani已收集109种语言超3万小时语音。离线方面，TranslateGemma模型可在设备端运行55种语言翻译；Viamo的语音助手AVA已在卢旺达试点，用Gemini回答超200万问题。无障碍方面，SL2T支持50多种手语转文本，Pixel 11首发ASL转英语。仍不确定的是，这些技术在实际低资源环境中的准确率和普及速度尚未公布。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，谷歌想让AI不仅会翻译字面意思，还能听懂你说话时的语气、情绪甚至方言混用，比如“Spanglish”。以前技术只照顾英语等大语言，现在谷歌通过和当地社区合作，收集小语种的真实录音，训练AI理解它们。更实用的是，他们做了个能离线运行的翻译模型，没网也能用；还让只能打电话的功能手机用户通过语音助手问问题。对手语者，Pixel 11能把手语直接转成文字。对普通人来说，这意味着以后出国旅游、和不同语言的人聊天会更顺畅，小众语言和文化也能被技术尊重。不过，这些功能目前覆盖有限，实际效果还得看后续落地。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "AI for everyone in every language"
+    },
+    {
       "id": "6fff55fdf7cb61",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
       "sources": [
@@ -4953,6 +5011,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Building AI to accelerate science and improve lives"
+    },
+    {
+      "id": "a1d018f16fad79",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+        }
+      ],
+      "publishedAt": "2026-09-15",
+      "source": "Hugging Face",
+      "title": "IBM研究：AI智能体成功率77%但仅53%任务稳定复现",
+      "summary": "IBM研究团队在Hugging Face发文指出，当前智能体评测普遍只报告平均成功率，掩盖了同一任务多次运行结果不一致的问题。在AppWorld基准上，使用GPT-4.1的ReAct智能体平均成功率为77.4%，但五次运行全部成功的任务仅占53.0%，存在24.4个百分点的“一致性差距”。团队提出一致性分析器与一致性指南，通过重采样定位易翻转决策点并生成通用规则，将差距缩小至12.0个百分点，平均准确率未下降。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该研究揭示智能体评测中被平均值掩盖的可靠性问题，提出可落地的诊断与改进方法，对智能体在生产环境中的稳定部署具有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM研究团队在Hugging Face发布文章，指出智能体评测常用平均成功率（Mean@k）掩盖了同一任务多次运行结果不一致的问题。在AppWorld基准上，使用GPT-4.1的ReAct智能体平均成功率为77.4%，但五次运行全部成功的任务仅占53.0%，一致性差距达24.4个百分点，困难任务上差距可达30个百分点。团队提出一致性分析器，通过单次轨迹重采样定位易翻转的决策点，并生成一致性指南注入推理过程。实验显示，该方案将一致性差距从24.4个百分点降至12.0个百分点，平均准确率未下降。目前结果基于AppWorld基准和特定模型，跨场景泛化能力仍需更多验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像考试：一个学生平均分77分，听起来不错，但同一张卷子考五次，只有53%的题目每次都能做对。剩下那些题，他有时对有时错，不是不会，而是每次选择都像抛硬币。对普通用户来说，这意味着你让AI助手做同一件事，它可能这次成功、下次失败，尤其在财务对账、合同检查等关键场景中，这种不稳定可能直接导致损失。IBM的办法相当于找出学生每次犹豫的题目，提前给他一张“注意事项清单”，让他在这些地方不再靠运气。对普通人而言，未来使用AI智能体时，除了看它“平均多聪明”，更要关注它“每次是否都靠谱”。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Your Agent Aced the Task. Will It Do It Again?"
     },
     {
       "id": "b21c5e1ffc812b",
@@ -5073,6 +5160,35 @@
       "originalTitle": "Lifesaving Lincoln Laboratory device wins 2026 Excellence in Technology Transfer Award"
     },
     {
+      "id": "075fed980e67c6",
+      "url": "https://huggingface.co/blog/gradio-workflow-1111",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/gradio-workflow-1111"
+        }
+      ],
+      "publishedAt": "2026-09-10",
+      "source": "Hugging Face",
+      "title": "Gradio用73节点复刻A1111工作流",
+      "summary": "Hugging Face团队发布Workflow1111，用Gradio Workflow把AUTOMATIC1111的多数功能重建为单张画布：11条媒体管线、73个节点，覆盖文生图、高清修复、图生图、提示词矩阵、VLM反推、检测生成修复掩码、ControlNet式标注器、抠图、PNG Info与图生视频。模型调用走Inference Providers或Hub Space，用户可用自己账号配额运行；每个输出节点自动变成REST端点，也可作为MCP工具供AI助手调用。项目定位与ComfyUI对比，强调无需自备GPU、可OAuth多人使用，但性能与可维护性上限仍待验证。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "它把复杂AI绘图工具链变成可浏览器打开、可API调用的节点画布，降低搭建门槛，也预示AI工作流正从本地软件转向云端可组合服务。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face的yuvraj sharma与Abubakar Abid发文介绍Workflow1111：用Gradio Workflow把AUTOMATIC1111 stable-diffusion-webui的大部分功能重建为一张画布，共11条媒体管线、73个节点。节点分四类：Python函数、通过InferenceClient调用的模型、调用Hub上其他Gradio Space、以及Hub数据集行。文生图保留负面提示词、步数、CFG、种子、尺寸和模型选择；高清修复改用FLUX.1-Kontext做细化；图生图复用同一节点；提示词矩阵因无循环算子，四个文生图节点并排并行；检测到修复掩码用DETR找物体，绘图与掩码在本地用Pillow和NumPy完成；标注器为纯NumPy函数，约半秒一张。作者称36个算子节点中32个是函数节点，22个完全在进程内运行，断网时约三分之二画布仍可用。每个输出节点自动成为REST端点，共九个，也可作为MCP工具。仍不确定的是：73节点规模下的性能与可维护性上限、以及依赖第三方推理服务时的稳定性与成本，文中未给出基准数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去玩AI绘图，你得在电脑上装一套笨重软件，显卡不够就卡死。现在这套东西像把厨房搬进了网页：灶台、烤箱、榨汁机都是现成模块，拖到一张图上连起来就能做菜，不用自己买设备。你想让AI先写提示词再画图、画完自动抠背景、再让图片动起来，只要把几个方块接上就行。更关键的是，每个方块还能变成一个小接口，别的程序甚至AI助手可以直接喊它干活。对普通人来说，好处是门槛低了：打开浏览器、登录账号就能用，不用装环境、不用买显卡，做出来的流程还能分享给别人。代价是模型跑在别人服务器上，要消耗你自己的额度，网络断了部分功能会停摆。它和ComfyUI思路相近，但更强调开箱即用和自动生成接口。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
+    },
+    {
       "id": "5a44a553904294",
       "url": "https://news.mit.edu/2026/mit-schwarzman-college-computing-launches-pilot-help-educators-teach-ai-across-disciplines-0909",
       "sources": [
@@ -5100,6 +5216,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "MIT Schwarzman College of Computing launches pilot to help educators teach AI across disciplines"
+    },
+    {
+      "id": "82b8bf7db8ec72",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/"
+        }
+      ],
+      "publishedAt": "2026-09-09",
+      "source": "Google AI",
+      "title": "谷歌DeepMind用AI重现七十年爱情记忆",
+      "summary": "谷歌DeepMind与导演莉兹·加布斯合作推出纪录片《Love, Rendered》，讲述结婚70余年的Burt和Ethelle Shatz夫妇。Burt认知衰退，两人在克利夫兰学生合作社初次相遇的记忆从未被拍摄记录。团队用生成模型修复老照片，并用表演捕捉模型将夫妇当下的微表情和举止映射到年轻形象上，Ethelle全程参与校正细节。最终生成的“记忆”被夫妇认为真实。该技术已开放给Gemini应用用户修复老照片。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "展示生成式AI在记忆保存和情感连接上的实际应用，降低老照片修复门槛，同时引发对AI重建记忆真实性的讨论。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind工程师Michael Chang以技术负责人身份参与纪录片《Love, Rendered》，该片由奥斯卡提名导演Liz Garbus执导，Darren Aronofsky的创意公司Primordial Soup联合制作。影片主角Burt和Ethelle Shatz结婚超过70年，Burt出现认知衰退，两人在克利夫兰学生合作社初次相遇的记忆从未被拍照或录像。团队采用两部分技术：先用生成模型修复两人年轻时的黑白照片，再用表演捕捉模型将Burt和Ethelle当下的微表情、头部倾斜、说话停顿等特征映射到年轻形象上。Ethelle作为共同创作者，现场纠正楼梯弧度、鞋跟形状等细节。最终生成的“记忆”被夫妇认为真实。目前尚不确定该技术对记忆障碍患者的长期影响，也未披露具体模型名称和训练数据来源。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，就是老两口年轻时相遇的那一天没留下任何照片，现在爷爷记性越来越差，谷歌用AI把旧照片修好，再让年轻时的“他们”模仿现在走路、说话、皱眉的样子，拼出一段像模像样的“回忆视频”。奶奶在旁边当导演，说楼梯不对就改楼梯，说鞋跟不对就改鞋跟。这就像用数字画笔帮人把快褪色的记忆重新描一遍。对普通人来说，你也能在Gemini应用里上传家里的老照片，让它修复上色。但要注意，AI补出来的细节不一定真发生过，它更像一张“合理想象”的画像，适合帮老人打开话匣子，别当成历史证据。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Recreating a 70-year love story frame by frame"
     },
     {
       "id": "73af7527f82e0a",
@@ -5158,6 +5303,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "From MIT to IBM, expediting AI and quantum deployment"
+    },
+    {
+      "id": "5eb2aa71a90a9c",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/"
+        }
+      ],
+      "publishedAt": "2026-09-02",
+      "source": "Google AI",
+      "title": "谷歌推出Fairwind计划，用AI自主修复漏洞",
+      "summary": "谷歌宣布启动Fairwind计划，向政府机构、关键基础设施运营商和网络安全合作伙伴提供Gemini 3.8 Flash Cyber模型与CodeMender工具，用于自主发现并修复软件漏洞。谷歌称可将补丁生成时间从数周缩短至分钟级，并强调参与者须遵守严格操作标准，如限制访问人员范围、启用多因素认证。目前已有超过650家合作伙伴参与。该计划为限量访问，具体修复效果和潜在风险仍待外部验证。",
+      "category": "安全与规则",
+      "importance": 78,
+      "why": "事件涉及前沿AI被用于网络攻防，可能改变漏洞修复效率与攻防平衡，对政府、关键基础设施及企业安全策略有直接影响，因此值得关注。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌于2026年9月2日发布Fairwind计划，面向Google Cloud客户、政府机构和网络安全合作伙伴提供限量访问。该计划将Gemini 3.8 Flash Cyber与CodeMender工具结合，用于自主发现、验证和修复漏洞。谷歌称，传统人工修复需数周，而该方案可在组织安全云环境内于数分钟内生成可部署补丁，且运营成本低于传统前沿模型。参与者需遵守严格标准，包括仅限内部网络安全、事件响应或渗透测试团队使用，并部署多因素认证。谷歌表示已有超过650家合作伙伴，但未披露具体名单和修复成功率。该计划仍属限量访问，实际效果、误报率及是否会被滥用尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这理解成给安全团队配了一个不知疲倦的AI修理工：以前发现墙上有裂缝，要派人慢慢补，现在AI能自己找到裂缝并快速打好补丁。好处是医院、电网、银行等关键系统可能更快堵住漏洞，普通人遭遇数据泄露或服务中断的概率有望降低。但风险也在这里：如果AI补错了地方，或者被坏人拿到类似能力，攻防可能同时提速。谷歌目前只让受信任的机构先用，并限制使用人员，相当于先在小范围试刀。对普通人来说，短期不会直接感受到变化，但长期看，这类工具可能让网络安全的响应速度整体加快，也可能带来新的规则和监管讨论。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Proactive cyber defense for governments and enterprises"
     },
     {
       "id": "cde6039f103f88",
