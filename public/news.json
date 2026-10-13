@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:11:29.744675+00:00",
-  "lastCheckedAt": "2026-10-13T06:11:29.744675+00:00",
+  "updatedAt": "2026-10-13T06:12:45.170051+00:00",
+  "lastCheckedAt": "2026-10-13T06:12:45.170051+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -5683,6 +5683,35 @@
       "originalTitle": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL"
     },
     {
+      "id": "54b58833c71340",
+      "url": "https://huggingface.co/blog/agent-glossary",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/agent-glossary"
+        }
+      ],
+      "publishedAt": "2026-05-25",
+      "source": "Hugging Face",
+      "title": "AI智能体术语混乱，Hugging Face发文厘清",
+      "summary": "随着AI智能体快速发展，harness、scaffold等术语被混用且缺乏统一解释。Hugging Face于2026年5月25日发布术语表，系统梳理模型、脚手架、执行框架、智能体、上下文工程、策略、工具使用、技能、子智能体及训练相关概念。文章指出，模型本身无记忆无循环，需脚手架定义行为、执行框架驱动运行，二者组合才构成智能体。作者强调许多术语尚无公认定义，不同框架用法各异，目标是提供实用心智模型而非强制统一词汇。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "术语混乱增加新人门槛和团队沟通成本，此文提供可操作的心智模型，有助于开发者理解产品差异与训练部署分工。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face发布了一篇AI智能体术语表文章，起因是ICLR 2026上关于harness和scaffold的讨论未能形成统一解释。文章将模型定义为仅做文本输入输出的LLM，无记忆无循环；脚手架是定义行为的层，包括系统提示、工具描述、输出解析和上下文管理；执行框架是执行层，负责调用模型、处理工具调用、决定何时停止。文章还区分了智能体、上下文工程、策略、工具使用、技能、子智能体等概念，并单独介绍训练侧的RL环境、训练器、轨迹和奖励。作者明确表示，许多术语尚无普遍接受的定义，不同框架用法不同，此文不试图强制统一，而是提供实用参考。仍不确定之处在于，这些定义能否被社区广泛采纳，以及产品间术语是否会继续分化。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把模型想成一个只会答题的大脑，它答完就忘，也不会自己动手。脚手架像是给这个大脑配的说明书和工具箱，告诉它有哪些工具、怎么用、记住什么。执行框架则是真正跑腿的手和脚，负责把大脑的想法变成行动，并在合适的时候喊停。三者合起来才是一个能自己干活的智能体。对普通人来说，这意味着你用的AI编程助手或聊天机器人，换一个模型或换一套执行框架，体验可能完全不同。理解这些区别，能帮你在选工具时知道该关注模型本身，还是关注产品怎么组织模型和工具。对开发者而言，分清这些层有助于定位问题出在提示、工具还是执行循环。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right"
+    },
+    {
       "id": "aee6849a814743",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/accelerator-ai-for-the-planet/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
       "sources": [
@@ -5714,6 +5743,93 @@
       "originalTitle": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks"
     },
     {
+      "id": "ed1c2193d6b80a",
+      "url": "https://huggingface.co/blog/ettin-reranker",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ettin-reranker"
+        }
+      ],
+      "publishedAt": "2026-05-19",
+      "source": "Hugging Face",
+      "title": "Ettin重排序模型家族发布，覆盖17M至1B参数",
+      "summary": "2026年5月19日，Hugging Face工程师Tom Aarsen发布Ettin Reranker系列，包含17M、32M、68M、150M、400M、1B六种尺寸的交叉编码器重排序模型。模型基于Ettin ModernBERT编码器，采用从mxbai-rerank-large-v2蒸馏的逐点MSE训练配方，使用约1.43亿条(query, document, label)三元组数据。在MTEB和NanoBEIR检索评测中，各尺寸均达到同规模最优，其中1B版本与1.54B教师模型MTEB得分仅差0.0001。模型、数据集和约150行训练脚本全部开源。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "重排序是检索增强生成的关键环节，该系列以极简配方覆盖全尺寸并开源数据与脚本，降低了企业构建高质量检索系统的门槛，对搜索和RAG应用有直接推动。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face的Tom Aarsen发布了Ettin Reranker家族，共六款Sentence Transformers CrossEncoder重排序模型，参数规模从1700万到10亿。模型基于Ettin ModernBERT编码器，训练采用逐点MSE蒸馏，教师模型为mixedbread-ai/mxbai-rerank-large-v2，训练数据cross-encoder/ettin-reranker-v1-data约1.43亿条三元组，来自LightOn的预训练和微调数据混合。在MTEB(eng, v2) Retrieval和NanoBEIR上，各尺寸均优于ms-marco-MiniLM-L*-v2系列；150M版本在6亿参数以下表现最强，400M与1B版本分别逼近1.54B教师模型0.0024和0.0001。训练脚本约150行，已随模型和数据集开源。仍不确定的是，这些模型在非英语或多语言场景下的泛化能力未在文中说明，且评测主要基于英文基准。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "你可以把重排序模型想成搜索结果的“精排员”。先用便宜的嵌入模型从海量文档里粗筛出几十条候选，再让重排序模型逐条仔细比对问题和文档，重新打分排序。它比嵌入模型准，但每条都要单独算，所以只用在最后一步。这次发布的六个模型就像同一套精排员的不同体力版本：小到1700万参数适合手机或边缘设备，大到10亿参数适合服务器，效果都很好。对普通人来说，这意味着以后用搜索引擎、企业知识库或AI问答时，找到的答案会更准，而且因为小模型也能用，响应可能更快、成本更低。作者把训练数据和脚本都公开了，其他团队可以照着做出更适合自己业务的精排员。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing the Ettin Reranker Family"
+    },
+    {
+      "id": "cb1323ba54f85c",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1"
+        }
+      ],
+      "publishedAt": "2026-05-19",
+      "source": "Hugging Face",
+      "title": "OlmoEarth v1.1发布：地球观测模型算力降3倍",
+      "summary": "2026年5月19日，Ai2在Hugging Face发布OlmoEarth v1.1地球观测模型家族。该系列基于Transformer架构，通过将Sentinel-2卫星影像不同分辨率合并为单一token，把token序列长度压缩至原来的三分之一，从而将训练与推理算力成本最高降低3倍，同时声称在多项研究基准和合作任务上保持v1性能。官方同时承认部分任务出现性能回退，细节见技术报告。模型权重、训练代码及Base、Tiny、Nano三个尺寸均已开放。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "地球观测模型算力成本高，直接限制国家级、大陆级部署。此次效率提升让高频全球制图更可负担，对环保与农业应用有实际推动。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Ai2于2026年5月19日发布OlmoEarth v1.1，是2025年11月v1的迭代版本。核心改动在token设计：此前Sentinel-2影像按10米、20米、60米三种分辨率分别生成token，一个含2个时间步的输入每patch产生6个token；v1.1将三种分辨率合并为单一token，token数减少至三分之一。由于Transformer计算量随序列长度呈平方增长，官方称全生命周期算力成本最高降3倍。但直接合并会导致性能下降，例如m-eurosat kNN基准掉约10个百分点，团队因此修改了预训练方案。官方称在多项基准和合作任务上保持v1水平，同时承认存在部分性能回退，具体见技术报告。模型权重、代码及Base、Tiny、Nano三个尺寸已开放。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把卫星图像想象成一本相册，原来每个像素块要按三种清晰度各抄一遍笔记，模型读起来又慢又费电。v1.1改成三种清晰度只抄一份合并笔记，笔记总量少了三分之二，读起来自然快得多、便宜得多。代价是合并笔记可能漏掉一些细节，所以团队调整了训练方法，尽量把损失补回来。对普通人的影响是间接的：环保组织、农业部门做全国或全球范围的森林砍伐、作物分布监测时，原本高昂的算力账单可能降到三分之一，意味着这类地图能更频繁地更新，成本更低。但官方也提醒，不是所有任务都无损，用之前最好先在自己的场景里试一下。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "OlmoEarth v1.1: A more efficient family of Earth observation models"
+    },
+    {
+      "id": "a7d7ffa87c3e05",
+      "url": "https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/"
+        }
+      ],
+      "publishedAt": "2026-05-17",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini for Science科研AI工具集",
+      "summary": "谷歌DeepMind于2026年5月17日发布Gemini for Science，包含三个Google Labs实验工具：基于Co-Scientist的假设生成、基于AlphaEvolve与ERA的计算发现、基于NotebookLM的文献洞察，并推出整合30多个生命科学数据库的Science Skills。工具面向科研人员逐步开放，企业可通过Google Cloud使用，巴斯夫、拜耳作物科学等已参与预览。相关ERA与Co-Scientist论文同日发表于Nature。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "谷歌将通用智能体能力系统化嵌入科研流程，覆盖假设生成、计算实验与文献分析，并已有企业合作与论文发表，可能改变科研工作方式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布Gemini for Science，包含三个Google Labs实验工具：假设生成工具基于Co-Scientist，用多智能体“想法竞赛”生成并评估假设，附可点击引用；计算发现工具基于AlphaEvolve和ERA，并行生成并评分数千个代码变体，用于太阳能预测、流行病学等建模；文献洞察工具基于NotebookLM，将文献整理为可搜索表格并生成报告、幻灯片、音视频概述。同时推出Science Skills，整合UniProt、AlphaFold Database、AlphaGenome API、InterPro等30多个生命科学数据库，可在Google Antigravity平台使用。工具即日起逐步开放，企业版通过Google Cloud提供，巴斯夫、Klarna、第一三共、拜耳作物科学及美国国家实验室已参与预览。ERA与Co-Scientist论文同日发表于Nature。仍不确定的是：开放范围与时间表、实际科研效果、以及AI生成假设的可靠性尚未完全公开。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套工具想成给科学家配了一个不知疲倦的科研助理团队：一个负责读遍海量论文、提出可能的研究方向；一个负责同时跑成千上万次计算实验，快速筛掉不靠谱的方案；还有一个负责把文献整理成表格和报告，方便对比。过去这些事可能要花几周甚至几个月，现在可能几分钟就有初步结果。对普通人来说，短期不会直接用到，但长期可能让新药、疫苗、材料等研发提速，也可能让科研门槛降低。不过，AI提出的假设仍需人类验证，不能当成结论。谷歌强调与100多家机构合作验证，并设有测试者社区，但实际效果还需更多独立研究确认。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini for Science: AI experiments and tools for a new era of discovery"
+    },
+    {
       "id": "0b0f5459a4d94e",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/",
       "sources": [
@@ -5741,6 +5857,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Simulate real-world places with Project Genie and Street View"
+    },
+    {
+      "id": "abf74475285fe2",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/"
+        }
+      ],
+      "publishedAt": "2026-05-17",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini Omni：从视频开始生成一切",
+      "summary": "谷歌DeepMind推出Gemini Omni系列首个模型Gemini Omni Flash，支持图像、音频、视频和文本组合输入，生成高质量视频，并可通过自然语言对话编辑视频。该模型基于Gemini的物理理解与世界知识，能保持角色一致性和场景连贯。即日起向Google AI Plus、Pro和Ultra订阅用户全球推送，并免费登陆YouTube Shorts和YouTube Create。所有生成视频嵌入SynthID水印。未来将支持图像和音频输出，并逐步开放API。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "Gemini Omni将多模态生成与推理结合，降低视频创作门槛，可能重塑内容创作生态，对创作者和平台影响深远。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布Gemini Omni系列首个模型Gemini Omni Flash，定位为“从任何输入创建任何内容”，首发视频生成。用户可组合图像、音频、视频和文本作为输入，生成高质量视频，并通过自然语言对话编辑视频，如改变环境、角度、风格或添加角色，且保持角色一致性和物理合理性。该模型基于Gemini的世界知识，能推理物理规律和文化语境。即日起向Google AI Plus、Pro和Ultra订阅用户全球推送，同时免费登陆YouTube Shorts和YouTube Create。所有生成视频嵌入SynthID水印。目前仅支持语音参考音频输入，未来将扩展图像和音频输出，并逐步开放API。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，谷歌做了一个“视频版ChatGPT”：你给它几张图、一段文字或一段声音，它就能生成一段像模像样的视频，还能像聊天一样让它改这改那。比如你说“把雕塑变成泡泡做的”，它就能改。这就像你有了一个随叫随到的视频剪辑师加特效师，不用学复杂软件。对普通人来说，以后做短视频、发朋友圈甚至做小广告，可能动动嘴就行。但也要注意，这种技术可能让假视频更难分辨，好在谷歌加了隐形水印。目前高级功能要付费，但YouTube Shorts用户能免费尝鲜。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing Gemini Omni"
     },
     {
       "id": "bc2f663b554366",
@@ -5799,6 +5944,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Opening new paths in aging research"
+    },
+    {
+      "id": "6ce8ca3ce4aab7",
+      "url": "https://deepmind.google/blog/uniting-biological-toolkits-for-a-new-approach-to-als/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/uniting-biological-toolkits-for-a-new-approach-to-als/"
+        }
+      ],
+      "publishedAt": "2026-05-16",
+      "source": "Google DeepMind",
+      "title": "AI工具Co-Scientist助ALS研究跨学科合作",
+      "summary": "谷歌DeepMind的AI工具Co-Scientist帮助MIT机械工程师Ritu Raman和波士顿儿童医院化学生物学家Ryan Flynn合作研究ALS。Raman原本用组织模型研究运动疾病，但ALS文献庞杂矛盾，Co-Scientist快速梳理证据、生成可测试假设并排序方向。最佳线索涉及细胞表面RNA机制，超出Raman专长，于是她与丈夫Flynn合作，用Co-Scientist迭代整合双方工具，寻找靶向ALS的新型RNA机制和潜在药物。目前仍处早期研究阶段，尚无疗法验证。",
+      "category": "日常应用",
+      "importance": 65,
+      "why": "展示AI作为科研协作催化剂，帮助跨学科团队压缩文献梳理、生成假设，加速ALS等难治疾病研究，对科研范式有启发。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布文章称，其AI工具Co-Scientist促成MIT副教授Ritu Raman与波士顿儿童医院副教授Ryan Flynn合作研究肌萎缩侧索硬化（ALS）。Raman是机械工程师，构建活体神经和肌肉组织模拟运动疾病；Flynn是化学生物学家，绘制细胞表面RNA图谱。Raman决定研究ALS时，面对大量矛盾文献，通常需数月消化。Co-Scientist帮助她快速审问证据、将想法转为可测试假设，并按可行性、风险回报等实际权衡排序方向。但最佳线索涉及细胞表面分子互动，超出Raman专长，于是她与Flynn合作，用Co-Scientist迭代整合双方工具，寻找新型RNA机制及潜在RNA药物靶向ALS。目前仍处早期研究阶段，尚无疗法验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像两个不同领域的专家想一起修一台复杂机器，但彼此语言不通。AI充当翻译和参谋，先帮一个人快速读完所有说明书，指出可能有用的零件，再提醒她有些零件需要另一个人的工具才能装。于是两人联手，AI继续帮他们把好点子拼成新方案。对普通人来说，这意味着未来新药研发可能更快，尤其是像ALS这种目前无解的病。但别误会，AI不是医生，它只是帮科学家少走弯路。现在只是找到一些研究方向，离真正上市的药还有很长距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Uniting biological toolkits for a new approach to ALS"
     },
     {
       "id": "ff20f1578f69c2",
