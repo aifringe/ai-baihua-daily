@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:42:50.483874+00:00",
-  "lastCheckedAt": "2026-10-13T06:42:50.483874+00:00",
+  "updatedAt": "2026-10-13T06:43:40.792731+00:00",
+  "lastCheckedAt": "2026-10-13T06:43:40.792731+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -5655,6 +5655,35 @@
       "originalTitle": "AgentHands: Generating interactive hand gestures for spatially grounded agent conversations in XR"
     },
     {
+      "id": "f1c76f23a788b6",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+        }
+      ],
+      "publishedAt": "2026-08-25",
+      "source": "Hugging Face",
+      "title": "4位量化模型反超原版，压缩不再降智",
+      "summary": "多模态计算团队提出量化感知修复（QAH）方法，将GPT-OSS 120B压缩至60B参数并量化为MXFP4后，在9项基准中7项超过其bfloat16全精度版本，长上下文推理提升7.4分、数学提升5.6分。与量化感知训练（QAT）相比，QAH约100步达峰且稳定，QAT约700步达峰后到1200步暴跌近19分。研究称4位模型可同时更小、更省、更准，但MMLU-Pro与SciCode两项仍小幅落后。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "该结果挑战了压缩必然降智的常识，若可复现，将改变大模型部署的成本与精度权衡，对推理服务商和端侧应用影响直接。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Multiverse Computing团队发布论文，提出量化感知修复（QAH）。流程是先把GPT-OSS 120B做结构压缩到60B参数，再量化为MXFP4，然后用原始120B全精度模型作为冻结教师，通过KL散度蒸馏修复学生模型。结果显示，该4位模型在9项基准中7项超过同架构60B的bfloat16版本，其中AA-LCR长上下文推理+7.4、AIME 2025数学+5.6；仅在MMLU-Pro和SciCode上分别落后0.2和1.4分。与QAT对比，QAH约100步达峰并保持稳定，QAT约700步达峰后到1200步下降近19分。需注意，这些数字来自单一团队论文，尚未见独立复现，且教师与学生架构不同，泛化性仍待验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去把大模型压小、再压成4位，就像把高清照片压成小图，细节必然糊掉，所以工程师要再修一遍。这次的做法不是照着修好的小图修，而是直接拿原始高清大图当参照，让4位小模型重新学一遍。结果小模型不仅没糊，反而在多数科目上比自己的16位版本还清楚，跑起来还更省显存和算力。对普通人来说，这意味着以后手机、笔记本或便宜服务器上跑的AI，可能不再因为压缩而明显变笨，响应成本也可能下降。不过它仍属研究阶段，能否在更多模型上稳定复现，才是能否真正落地的关键。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original"
+    },
+    {
       "id": "d21068479952e4",
       "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
       "sources": [
@@ -5830,6 +5859,35 @@
       "originalTitle": "Measuring benchmark optimization in speech recognition"
     },
     {
+      "id": "eab5285cfdebeb",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+        }
+      ],
+      "publishedAt": "2026-08-20",
+      "source": "Hugging Face",
+      "title": "LFM2.5推DSpark草稿模型 推理提速3.2倍",
+      "summary": "2026年8月20日，Liquid AI发布LFM2.5-DSpark草稿模型检查点，覆盖LFM2.5-1.2B-Instruct、2.6B和8B-A1B三款模型，通过投机解码在不改变输出质量的前提下加速推理。官方称H100上最高3.18倍、端侧最高2.87倍吞吐提升，2.6B模型函数调用延迟平均降低57%，并首日支持llama.cpp与SGLang。但8B-A1B在Mac端平均仅提升18%，官方归因于llama.cpp的MoE实现及验证多token激活更多专家。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "推理速度是本地部署与智能体应用的关键瓶颈，该方案以约3亿参数草稿模型换取数倍吞吐，且保持输出一致，对端侧落地有实际价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Liquid AI为LFM2.5家族三款模型发布DSpark草稿模型，采用投机解码：小模型先猜若干token，目标模型一次前向验证，共享权重加载成本。草稿模型约3亿参数，5层注意力结构，块大小9，训练15轮并按接受率而非损失选轮次。官方数据：H100上平均2.67倍（1.2B为2.10倍，8B-A1B为2.54倍），M4 Max上平均2.27倍（1.2B为2.54倍，8B-A1B仅1.18倍）。2.6B在Mac端约140 tok/s，函数调用延迟降57%。官方称贪心解码下输出与基线完全一致，但未给出独立第三方复现，且8B-A1B端侧提升有限，MoE验证开销仍是未解问题。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "大模型生成文字时，瓶颈往往不是算得慢，而是把庞大权重从内存搬进计算单元太慢，像每次只端一小碟菜却要跑很多趟厨房。DSpark的办法是让一个约3亿参数的小助手先一口气猜出接下来几个词，再让大模型一次性核对，猜对了就整批通过，省下反复搬运的功夫。因为最终每个词仍由大模型把关，答案不会变味。对普通人的意义是：同样的笔记本或手机，聊天、写代码、调用工具的等待时间可能缩短一半以上，本地跑小模型更接近云端体验。不过大模型越大、专家越多，这套猜词法的收益越不稳定，端侧尤其如此。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Up to 3.2x Faster Inference with LFM2.5-DSpark"
+    },
+    {
       "id": "47e5fa4d38e943",
       "url": "https://news.mit.edu/2026/when-ai-art-has-no-author-generated-images-often-cant-be-traced-to-training-data-0818",
       "sources": [
@@ -5857,6 +5915,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "When AI art has no author: Study finds generated images often can’t be traced to training data"
+    },
+    {
+      "id": "5ba78b757300e8",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
+        }
+      ],
+      "publishedAt": "2026-08-18",
+      "source": "Hugging Face",
+      "title": "IBM研究：智能体记忆需按模型能力校准",
+      "summary": "IBM研究团队在Hugging Face发文，基于AppWorld的585个多步任务，对8个模型测试了ALTK-Evolve智能体记忆方案：让智能体从自身历史轨迹中提炼可复用准则，推理时注入上下文，不更新权重、不需人工标注。结果显示记忆并非越多越好：能力强的模型适合注入完整准则集，较弱模型适合“核心准则+按任务检索”，已饱和模型则无增益。gpt-oss-120b用精选检索提升16.1个百分点，token仅增5%。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "它把“智能体记忆”从堆经验变成按模型能力调剂量，并给出准确率与成本可兼得的证据，对企业落地智能体有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM研究团队在Hugging Face发布企业文章，介绍ALTK-Evolve：智能体从自己成功与失败的轨迹中提炼准则，合并成可复用集合，推理时选择全部注入或按任务检索注入，全程不更新模型权重、不需人工标注。测试在AppWorld的585个多步任务上进行，覆盖9个模拟应用，用TGC和更严格的SGC两项指标衡量。8个模型呈现三种模式：有提升空间的强模型适合完整准则集，DeepSeek-V3.2任务完成率提升9.5个百分点；较弱模型适合“高置信核心+按任务检索”，gpt-oss-120b提升16.1个百分点且token仅增5%；GLM-5等饱和模型未见可测增益。作者强调“饱和”只是观察描述，并非已证原因，参数规模不是唯一决定因素，上下文窗口、基准余量等影响仍待分离实验。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把智能体记忆想成给员工发经验手册：手册不是越厚越好。高手能消化整本，还能用上冷门案例；新手被厚手册淹没，反而需要一页核心要点加几条与当前任务相关的提示；已经做到极致的老手，再塞手册也没用。更关键的是，给新手发“精选小抄”不仅更准，还更省钱——因为完整手册每一步都要重新塞进上下文，token成本会明显上涨。对普通用户和企业来说，这意味着智能体不会自动越用越聪明，记忆需要按模型调剂量；好消息是，用对方法可以在几乎不增加推理成本的情况下提升可靠性，生产环境还可通过提示缓存进一步压低成本。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Much Memory Does Your Agent Actually Need?"
     },
     {
       "id": "bf50ec5ce617ac",
