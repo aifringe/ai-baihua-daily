@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T00:10:54.319575+00:00",
-  "lastCheckedAt": "2026-10-13T00:10:54.319575+00:00",
+  "updatedAt": "2026-10-13T00:14:17.960263+00:00",
+  "lastCheckedAt": "2026-10-13T00:14:17.960263+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -3750,6 +3750,35 @@
       "originalTitle": "Introducing Quine: An AI research system designed for the complexity of biology"
     },
     {
+      "id": "5cc8f180d7d249",
+      "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/"
+        }
+      ],
+      "publishedAt": "2026-09-29",
+      "source": "Google Research",
+      "title": "谷歌推出Diffusion Controller简化图像生成控制",
+      "summary": "谷歌研究团队发布Diffusion Controller，一种轻量级“转向阻尼器”网络，可在不修改基础模型权重的情况下精确引导图像生成。该方法将去噪过程视为连续控制问题，支持灰盒和黑盒访问，在Stable Diffusion v1.4上测试，其灰盒版本在人类偏好评分上超越LoRA，白盒版本对基线胜率达90%。框架还支持运行时调整引导强度，未来可扩展至个性化、安全机制和视频模型控制。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "该技术提出统一控制框架，降低对闭源模型的控制门槛，在图像生成对齐和稳定性上取得可量化提升，对AI图像生成领域有实际推动意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队提出Diffusion Controller，将图像生成去噪过程建模为连续控制问题，通过一个轻量级侧网络动态调整生成轨迹。该网络可附加在冻结的基础模型上，支持灰盒（仅访问中间输出）和白盒（可修改权重）两种模式。在Stable Diffusion v1.4上，使用HPS-v2人类偏好评分评估，灰盒版本在监督微调和奖励加权损失下均优于LoRA，白盒联合训练版本对基线胜率达90%。框架还允许通过单一推理参数调节控制强度。目前结果基于特定模型和测试集，尚未公布跨模型泛化数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象你有一辆性能很强但不太听话的摩托车，以前想让它按你的路线走，要么重新造发动机（重训练），要么硬掰车把（强行改提示词），容易翻车。Diffusion Controller就像给车装了一个智能转向阻尼器，不碰发动机，只在行驶中微调方向，让车既听话又不失控。对普通人来说，这意味着未来用AI画图时，你说“戴墨镜的蜥蜴”，它更可能既戴上墨镜又不把蜥蜴脸画歪。而且这套方法能用在别人不开源的模型上，普通用户可能更快用上更精准、更稳定的AI绘图工具。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Diffusion Controller unifies and simplifies AI image generation"
+    },
+    {
       "id": "fbb52d3a0c1eaa",
       "url": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/",
       "sources": [
@@ -3837,6 +3866,93 @@
       "originalTitle": "Google Beam expands with new regions, partners, and customers"
     },
     {
+      "id": "33f98722c29115",
+      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "sources": [
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/"
+        }
+      ],
+      "publishedAt": "2026-09-23",
+      "source": "Microsoft Research",
+      "title": "微软研究：机器人推理卸载可提升性能与续航",
+      "summary": "微软研究院发布研究，挑战机器人AI推理必须依赖机载GPU的假设。团队对移动操作任务（如取垃圾）进行系统测量，发现将推理卸载到边缘或云端GPU后，任务成功率提升、可运行更大模型、响应更准，同时用树莓派5替代机载GPU可显著延长电池续航。研究还指出机载GPU会拖慢建图规划、降低导航与操作精度。微软在Physical AI Toolchain中新增基于Kubernetes的推理卸载工具，支持容器化部署与分布式编排，并已用SO-101、UR10e等示例验证。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "该研究首次系统量化机器人推理卸载的收益，可能改变物理AI的算力部署方式，影响机器人续航、成本与模型规模，对制造业、仓储和家庭服务机器人落地有直接推动作用。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软研究院公开一项针对物理AI机器人的测量研究，核心结论是：把推理从机器人机载GPU卸载到边缘或云端GPU，能改善移动操作任务表现。研究覆盖语义建图与规划、导航、操作三类负载，在多种机载、边缘和云配置上对比。结果显示，较小GPU上建图规划最多慢383%，导航障碍检测及时性下降30%，视觉-语言-动作模型精度下降50%；部分小GPU甚至无法承载完整移动操作栈。电池方面，用树莓派5替代机载GPU并远程推理，可延长续航，而Jetson Thor等大GPU最多多耗160%电量。微软同时发布基于Kubernetes的卸载工具，支持容器化、部署与编排，并给出SO-101、UR10e等示例。仍不确定的是，卸载对网络延迟和带宽的依赖在真实部署中的边界条件，以及不同场景下的最优拆分策略。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去大家默认机器人得自己背一台高性能电脑，就像出门必须背台式机，又重又费电，还跑不动最新大模型。微软的做法相当于让机器人只带一个轻便终端，把重活通过Wi-Fi交给附近的边缘服务器或云端，算完再把动作指令传回来。好处很直接：机器人能跑更聪明的模型，干活更准，电池更耐用，机身也更轻更便宜。代价是必须联网，网络一卡就可能影响反应速度。对普通人来说，这意味着未来仓库、工厂甚至家里的机器人可能更便宜、续航更长、能力更强，但前提是部署环境要有稳定低延迟的网络。微软把这套能力做成了开源工具，开发者可以按需把不同任务分配到机器人、边缘和云上。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Offloaded inference for real-world physical AI robotics"
+    },
+    {
+      "id": "e9f63aa1f7aaa0",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/evaleval-aisi"
+        }
+      ],
+      "publishedAt": "2026-09-22",
+      "source": "Hugging Face",
+      "title": "英AI安全研究所联手EvalEval公开评测结果",
+      "summary": "英国AI安全研究所（AISI）宣布采用EvalEval联盟的Every Eval Ever架构与Evaluation Cards平台，公开分享其评测方法与结果，覆盖HealthBench、FrontierMath、Humanity's Last Exam、SWE-Bench Pro、Terminal-Bench 2.0五个基准，涉及Claude Opus 4系列与GPT-5系列等六个前沿模型，并附带两项网络评测。此举旨在解决评测结果格式分散、难以复现的问题，让外部研究者能核对配置与上下文。目前公开范围限于AISI论文相关实验，其他机构是否跟进尚不确定。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "评测结果长期缺乏统一披露标准，同一模型分数因推理算力与协议不同而波动。AISI以政府机构身份带头公开配置细节，为行业建立可核对的参照点，影响模型选型与政策判断。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英国AI安全研究所（AISI）与EvalEval联盟合作，将AISI公开报告的评测方法与发现接入Evaluation Cards平台，按Every Eval Ever（EEE）架构披露。此次发布覆盖其论文《How Inference Compute Shapes Frontier LLM Evaluation》主实验中的五个基准：HealthBench、FrontierMath、Humanity's Last Exam、SWE-Bench Pro、Terminal-Bench 2.0，涉及Claude Opus 4、4.5、4.6与GPT-5、5.2、5.4六个模型，另含Cyber CTFs和The Last Ones两项网络评测，但后者使用的模型集合不同且部分重叠。发布内容包括验证过的结果、上下文与配置信息。文中以Humanity's Last Exam为例，说明评测协议与推理算力会改变成绩，并提到模型在每次尝试后获得oracle正确性反馈时，随token增加会继续解出更多任务。目前不确定的是，其他评测机构是否会采用同一架构，以及缺失字段应如何处理。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这相当于给AI考试立一份“成绩单附注”。过去厂商只报一个分数，好比说“我考了90分”，却不告诉你考的是哪套卷子、开卷还是闭卷、给了多少草稿纸。现在AISI把题目、配置和过程一起公开，别人可以照着复现，也能看出两个看似相同的分数其实条件不同。对普通人来说，短期内不会直接改变你用的聊天机器人，但会影响谁能声称自己“最强”：以后没有配置说明的对比，更像广告而非证据。对企业和政策制定者，这意味着选模型时能少被营销话术带偏，多看清分数背后的真实条件。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+    },
+    {
+      "id": "d84d5932ca4ed6",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "sources": [
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/"
+        }
+      ],
+      "publishedAt": "2026-09-21",
+      "source": "Microsoft Research",
+      "title": "微软开源逆合成模型RetroChimera",
+      "summary": "微软研究院在《自然》发表逆合成预测模型RetroChimera，用于自动规划小分子合成路线。该模型融合两种互补架构：基于Transformer的R-SMILES 2和基于图神经网络的NeuralLoc，并通过学习排序策略整合预测。在盲测中，化学家更偏好其单步预测，多步路线测试中成功9个目标，优于基线。模型已开源并上线微软Foundry，旨在加速药物和材料研发。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "逆合成是药物和材料研发的关键瓶颈，RetroChimera在权威期刊发表并开源，性能超越现有方法，有望显著加速分子发现与自动化合成。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软研究院在《自然》杂志发表论文，推出逆合成预测模型RetroChimera。该模型结合两种互补方法：R-SMILES 2直接生成前体分子，灵活但可能产生幻觉；NeuralLoc基于图神经网络选择反应模板并定位应用位点，更可靠但受限于模板库。RetroChimera通过学习排序策略整合两者预测，在常见和罕见反应类型上均表现强劲。盲测中，化学家更偏好其单步预测，多步路线测试成功9个目标，优于基线。模型已开源（MIT许可）并上线微软Foundry。仍不确定的是，模型在真实实验室环境中的泛化能力和长期稳定性需进一步验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象你要造一辆复杂的乐高模型，但说明书丢了。RetroChimera就像一位超级助手，能倒推出一套拼装步骤，告诉你先拼哪块、后拼哪块。它把两种思考方式结合起来：一种天马行空，一种按图索骥，然后取长补短。对普通人来说，这意味着未来新药和智能材料可能更快、更便宜地诞生。比如，研发新药时，化学家不再需要花几个月试错合成路线，AI能快速给出可行方案，加速从实验室到药房的进程。虽然目前还在早期，但这类工具正让科学发现变得更高效。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Improving synthesis prediction of small molecules at scale with RetroChimera"
+    },
+    {
       "id": "44ec3a3d6fdc7d",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
       "sources": [
@@ -3864,6 +3980,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Co-creating the future of fashion with Google"
+    },
+    {
+      "id": "d92122e53ec9d4",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/"
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "source": "Google AI",
+      "title": "谷歌扩充AI与经济团队，聘诺奖得主研究就业影响",
+      "summary": "2026年9月18日，谷歌宣布扩充其AI与经济研究项目，聘请2025年诺贝尔经济学奖得主菲利普·阿吉翁担任学术顾问，多伦多大学教授阿贾伊·阿格拉沃尔任访问学者，并任命安努·马德加夫卡尔和丹尼尔·洛克为项目研究主任。团队将聚焦AI对就业、生产率、全球技术扩散及科学发现的影响，并更新ATLAS数据平台。谷歌称此举旨在为工人和政策制定者提供实证依据，但具体研究结论尚未公布。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "谷歌以诺奖级经济学家和实时数据研究AI经济影响，可能影响未来劳动力政策与企业决策，但短期对普通人无直接产品变化。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌于2026年9月18日宣布扩大其AI与经济研究项目，新增多位知名经济学家。2025年诺贝尔经济学奖得主菲利普·阿吉翁以学术顾问身份加入，多伦多大学战略管理教授阿贾伊·阿格拉沃尔作为访问学者加入。同时，前麦肯锡全球研究院合伙人安努·马德加夫卡尔和宾夕法尼亚大学沃顿商学院教授丹尼尔·洛克出任研究项目主任，与谷歌DeepMind AGI经济学主任亚历克斯·伊马斯及首席经济学家办公室的扎娜·伊先科共同领导。团队将研究AI对全球采用率、劳动力市场、企业生产率和科学发现的影响，并更新此前发布的AI与经济ATLAS v1.0开放数据平台。目前尚不清楚该团队将发布哪些具体政策建议或研究成果，谷歌也未披露项目预算和人员规模。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "谷歌请来一批顶尖经济学家，专门盯着AI到底抢不抢饭碗、能不能让公司更赚钱。这就像给AI这辆高速列车装上了仪表盘和行车记录仪，先搞清楚它跑多快、往哪跑，再决定怎么修路和培训司机。对普通人来说，短期内不会多一个AI功能，但长期看，这些研究可能影响政府怎么制定就业培训政策、企业怎么调整岗位。如果研究结论靠谱，未来你参加的技能培训、公司的人力安排，甚至失业保障规则，都可能参考这些数据。不过，谷歌自己也是AI大玩家，它出的研究能否保持中立，还需要外界持续观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "New experts join Google’s AI & Economy team"
+    },
+    {
+      "id": "2898a53d04394e",
+      "url": "https://news.mit.edu/2026/new-method-enables-ai-safety-critical-situations-0914",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/new-method-enables-ai-safety-critical-situations-0914"
+        }
+      ],
+      "publishedAt": "2026-09-14",
+      "source": "MIT News",
+      "title": "MIT新算法让生成式AI满足硬约束",
+      "summary": "MIT研究人员开发了HardFlow算法，旨在解决生成式AI在安全关键场景中输出必须满足硬约束的问题。传统方法在生成过程中强制中间步骤满足约束，可能限制最终解的质量。HardFlow将硬约束采样重构为轨迹优化问题，利用最优控制理论，仅在最终输出上强制约束，从而在机器人、控制、计算机视觉等实验中实现完美约束满足并提升解质量，且无需重新训练模型。该研究发表于IEEE TPAMI。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "HardFlow为生成式AI在安全关键场景的应用提供了新思路，无需重训即可满足硬约束，有望推动机器人和自动驾驶等领域的发展。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT的研究团队提出了一种名为HardFlow的新算法，用于帮助预训练的生成式AI模型在安全关键应用中满足硬约束。这些约束包括物理定律、安全规则等，不能违反。传统方法如基于投影的采样会在生成过程的每一步强制满足约束，但这可能限制模型探索更优解。HardFlow将硬约束采样重新表述为轨迹优化问题，利用最优控制理论，仅在最终输出上强制约束，从而在生成过程中给予模型更多自由。在机器人操作、迷宫导航和文本引导图像编辑等实验中，HardFlow实现了完美的约束满足，并在解的质量上优于基线方法，计算时间也相当或更低。该技术即插即用，无需重新训练模型。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象一下，你让AI画一条从A点到B点的安全路线，但路上有障碍物。传统方法要求AI每一步都不能碰到障碍，结果可能绕远路或者干脆卡住。HardFlow则允许AI先自由探索，最后只检查最终路线是否安全，这样AI就能找到又短又安全的路线。对于普通人来说，这意味着未来的机器人、自动驾驶汽车等会更聪明、更安全，能在复杂环境中做出更好的决策，而不用牺牲性能。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "New method enables AI for safety-critical situations"
     },
     {
       "id": "5a44a553904294",
@@ -3895,6 +4069,122 @@
       "originalTitle": "MIT Schwarzman College of Computing launches pilot to help educators teach AI across disciplines"
     },
     {
+      "id": "73af7527f82e0a",
+      "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/"
+        }
+      ],
+      "publishedAt": "2026-09-09",
+      "source": "Google AI",
+      "title": "谷歌搜索新增橄榄球实时赛况与梦幻联动",
+      "summary": "2026年9月9日，谷歌宣布为美国橄榄球赛季升级搜索功能，推出实时比赛动态、更详细球员与联盟数据，并支持关联雅虎梦幻或Sleeper账户获取AI个性化建议。实时动态先在美国移动端英文上线，大学赛事及全球扩展计划于本月晚些时候；梦幻关联功能已在美国英文版可用。这些更新旨在让搜索成为比赛日指南，但具体体验和全球覆盖时间仍待观察。",
+      "category": "日常应用",
+      "importance": 55,
+      "why": "谷歌将搜索与实时体育、梦幻体育账户打通，展示AI搜索向个性化场景延伸，影响普通球迷获取信息和参与梦幻联赛的方式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌在2026年9月9日发布博客，宣布搜索新增橄榄球相关功能。核心包括：实时比赛动态，用户搜索进行中的比赛可看到红色“Live”图标、比赛回顾、动态时间线、逐球更新、社交评论、关键视频和AI洞察；比赛对阵轮播，搜索某场比赛时可查看联盟其他比赛比分；更详细数据，如传球达阵、冲球码数等联盟领先者，以及擒杀、掉球、接球后码数等球员指标，未来还将显示冠军预测和季后赛对阵图。此外，用户可关联Yahoo Fantasy或Sleeper账户，通过AI模式获取首发/替补建议、 waiver目标等个性化洞察。实时动态先在美国移动端英文上线，大学赛事和全球扩展计划本月晚些时候；梦幻关联已在美国英文版可用。功能实际效果和扩展时间仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，谷歌想把搜索变成你的随身比赛助手。以前查比分要反复搜，现在搜一场比赛就能看到实时文字直播、视频集锦和AI总结，还能顺手看其他场次比分。对玩梦幻橄榄球的人，以前要手动查数据、截图问AI，现在把雅虎或Sleeper账号连上，AI就能根据你的阵容直接给建议，像有个懂球的朋友帮你出主意。对普通球迷，看球查数据更方便；对梦幻玩家，决策更省事。但要注意，这些功能先在美国移动端英文上线，其他地区和语言还得等，而且AI建议仅供参考，别全押上。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Get ready for the game with new football features in Search"
+    },
+    {
+      "id": "4546ba65600cac",
+      "url": "https://news.mit.edu/2026/from-mit-to-ibm-expediting-ai-and-quantum-deployment-0902",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/from-mit-to-ibm-expediting-ai-and-quantum-deployment-0902"
+        }
+      ],
+      "publishedAt": "2026-09-02",
+      "source": "MIT News",
+      "title": "MIT与IBM合作推动AI与量子落地",
+      "summary": "MIT News报道，MIT-IBM Computing Research Lab（原MIT-IBM Watson AI Lab）成为连接学术理论与产业应用的桥梁。三位曾在MIT学习、现就职于IBM的研究人员分别聚焦量子机器学习、强化学习与AI智能体、可信与公平AI。他们在博士或博士后阶段通过该实验室与IBM合作，将理论问题转化为可部署系统，涉及哈密顿量学习、量子核、vLLM Hook等方向。报道称这种合作帮助缩短教育与就业、研究与部署之间的差距，但未给出具体产品落地时间或量化效果。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "该报道展示大企业实验室与高校联合培养人才、推动AI和量子研究向产业部署转化的模式，对理解AI产学研合作和就业路径有参考价值，但缺乏具体产品与量化结果。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT News于2026年9月2日发布文章，介绍MIT-IBM Computing Research Lab（前身为MIT-IBM Watson AI Lab）如何帮助研究人员从理论走向实际系统。文章提到三位现就职于IBM的研究人员：Srinivasan Arunachalam、Zhang-Wei Hong和Irene Ko。他们分别在量子机器学习、强化学习与AI智能体、可信与公平AI方向工作。Hong在MIT读博期间研究强化学习中的价值函数学习，现参与IBM企业级智能体框架，探索部署时模型权重在线自演化。Ko研究可信AI，开发vLLM Hook插件框架，用于访问模型内部信号以分析提示注入和幻觉风险。Arunachalam聚焦量子机器学习，合作产出哈密顿量学习和量子核两篇论文。文章称实验室促进学术与产业合作，但未说明这些技术何时产品化或具体性能提升数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：大学实验室和企业研究所搭了一座桥，让博士生和博士后不只写论文，还能把想法做成企业里能用的工具。比如有人研究让AI自己边用边学，有人研究怎么在AI输出前检查它是否安全，还有人研究量子计算机在哪些任务上可能比普通计算机快。对普通人来说，短期不会立刻看到新产品，但这类合作会影响未来AI助手是否更可靠、企业软件是否更智能，以及量子计算何时真正有用。不过，报道更像人才与合作的成果展示，不是某项技术已经落地的公告，具体效果仍需后续验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "From MIT to IBM, expediting AI and quantum deployment"
+    },
+    {
+      "id": "ad90e6779ea304",
+      "url": "https://huggingface.co/blog/allenai/benchmirt",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/benchmirt"
+        }
+      ],
+      "publishedAt": "2026-09-01",
+      "source": "Hugging Face",
+      "title": "Ai2发布BenchMIRT审计大模型评测基准",
+      "summary": "艾伦人工智能研究所（Ai2）发布BenchMIRT，一种在单题层面审计大模型评测基准的新方法。它借鉴心理测量学的多维项目反应理论，用100个模型、16个基准、逾3.4万道题的评测结果训练，在未被告知基准用途的情况下自行识别出“安全”与“通用推理”两个主导维度。分析显示，BBQ、WMDP等常被归入安全类的基准，其得分与通用推理关联更强；HarmBench的版权类题目也偏离安全维度。仅保留10%的题目，仍能大致还原模型能力排序。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "它把评测从“看总分”推进到“看每道题在测什么”，揭示基准分数可能混合多种能力，为更小、更可解释的评测设计提供工具，也提醒分数解读需谨慎。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Ai2推出BenchMIRT，用于在单道题层面审计大模型评测基准。它基于心理测量学的多维项目反应理论，在100个模型、16个基准、超过3.4万道题的评测数据上训练，未被告知各基准的用途，却稳定地自行识别出“安全”和“通用推理”两个主导维度。分析发现，多数推理类基准确实对应推理能力，越狱和有害内容类基准对应安全能力；但BBQ（社会偏见）与通用推理关联更强，WMDP（危险双重用途知识）也更多与推理相关，且推理越强其WMDP得分越低，因为该基准把拒绝回答视为正确。HarmBench的版权类题目同样偏离安全维度。实验还显示，只保留10%的题目，仍能大致还原模型在安全或推理能力上的强弱排序；BenchMIRT预测模型未答题目的正确率约79%，高于简单基线的70%。局限在于训练模型均发布于2025年3月前，维度也依赖所选基准集合。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "大模型评测常被当成一张总分成绩单，但同一张卷子里，有的题考的是“会不会推理”，有的题考的是“该不该拒绝”，把它们平均成一个分数，就像把数学和体育成绩加在一起排名，看不出孩子到底强在哪。BenchMIRT相当于给每道题做“成分分析”，告诉你这道题真正在测什么。对普通人来说，这意味着以后厂商宣传的“安全分”“推理分”可能不再是一个笼统数字，而是能拆开看：模型是更会思考，还是更会守规矩。它也带来一个现实提醒：如果只挑“好题”来考，评测会变短变便宜，但也可能被有意无意地削弱，让不安全的模型更容易蒙混过关。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "BenchMIRT: What are LLM benchmarks actually measuring?"
+    },
+    {
+      "id": "7415c6bcd9dd29",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/"
+        }
+      ],
+      "publishedAt": "2026-09-01",
+      "source": "Google AI",
+      "title": "谷歌推出AI图像工具Google Pics",
+      "summary": "谷歌在Google Workspace中推出AI图像创建与编辑工具Google Pics，基于Nano Banana模型，支持对象分割、图内文字编辑与翻译、多人协作及多版本生成。该工具以独立产品和Workspace集成形式提供，已开始向Google AI Pro/Ultra订阅者及多数Workspace商业客户推送，Docs和Slides先行，Drive随后。用户可通过pics.new访问。谷歌未披露具体定价、地区限制或完整功能清单，部分细节仍待明确。",
+      "category": "日常应用",
+      "importance": 72,
+      "why": "谷歌将AI图像编辑深度嵌入办公套件，降低设计门槛，可能改变普通用户和团队制作视觉内容的方式，并加剧办公场景AI工具竞争。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌发布Google Pics，一款基于Nano Banana模型的AI图像生成与编辑工具，面向Google AI Pro、Ultra订阅者及多数Workspace商业客户，未来几周逐步推送。它既可作为独立产品使用，也集成到Docs、Slides和Drive中，用户无需切换标签即可编辑图片。核心功能包括：对象分割，可隔离图中物体并单独修改；图内文字编辑与翻译，不破坏原设计和字体；多人协作编辑同一图片；单次提示生成多个版本供选择。目前Docs和Slides已支持，Drive将在未来几周跟进，入口为pics.new。谷歌未说明具体价格、地区可用性或完整功能限制，部分能力仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前做海报、改图或翻译图片里的字，得开专业软件，甚至要会设计。现在谷歌把AI修图直接塞进你写文档、做幻灯片的工具里，像在文档里打字一样简单：说句话就能生成图，圈一下就能改局部，还能把图里的英文换成中文而不动排版。对普通人来说，做社交媒体图、汇报配图或简单宣传物料会快很多，不用再求人。对团队来说，多人同时改一张图，协作更顺。不过它主要面向付费订阅和商业客户，免费用户可能暂时用不上，具体怎么收费、哪些地区能用，还得等谷歌进一步说明。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Try Google Pics: Easy image creation and editing in Google Workspace"
+    },
+    {
       "id": "835a331a5b20ce",
       "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
       "sources": [
@@ -3922,6 +4212,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "From Atari to EVE Online: Building on 15 Years of AI Research in Games"
+    },
+    {
+      "id": "e3ddd7a65cd3a5",
+      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/asr-benchmark-optimization"
+        }
+      ],
+      "publishedAt": "2026-08-21",
+      "source": "Hugging Face",
+      "title": "研究：语音识别高分模型或靠“背题”刷分",
+      "summary": "HumeAI等机构在Hugging Face发文，提出三种测试量化语音识别中的“基准优化”现象。研究评估11个开源ASR模型，发现多个高分模型会复现VoxPopuli、LibriSpeech参考文本中的错误，即便音频与文本矛盾、相关词被静音，或音频支持两种写法。在VoxPopuli案例中，6/11模型漏掉音频中可听见的“Thank you”；被静音的年份“2011”也被部分模型补出。研究称约40%的VoxPopuli测试片段存在潜在参考错误，涉及约3%参考词，模型复现错误率18%–30%。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "该研究揭示公开语音基准高分可能被“刷榜”行为污染，低词错率模型反而更易复现参考错误。这提醒行业与用户，基准分数不等于真实场景可靠性，评测方法需加入留出集和反作弊探针。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "HumeAI等机构在Hugging Face发布研究，提出三种探针测试语音识别中的“基准优化”。共识分歧探针发现，VoxPopuli某片段音频含“Thank you, Mr. President”，但参考文本漏掉“Thank you”，11个模型中6个复现了错误文本；换成新采集的议会克隆语音后，多数模型又改回音频忠实文本。掩码实体检索中，音频里的数字被静音，部分模型仍输出参考文本中的“2011”等数字，LibriSpeech上约30%–40%的样本出现该现象。拼写切换探针显示，模型会随基准参考文本在“any one”与“anyone”间系统性切换。研究称约40%的VoxPopuli测试片段存在潜在参考错误，涉及约3%参考词，模型复现错误率18%–30%。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像学生做听力题，不是听录音答题，而是靠试卷排版、题干用词猜出标准答案，甚至把录音里被消音的数字“脑补”出来。模型在公开榜单上分数很高，可能只是记住了这些测试集的套路，而不是真的听懂了语音。对普通人来说，这意味着语音转写工具在真实会议、电话或嘈杂环境里，可能没有榜单显示的那么可靠；一些被静音或说错的内容，模型反而会“自作主张”补成它见过的标准答案。评测机构需要加入没被模型见过的音频，才能测出真实水平。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Measuring benchmark optimization in speech recognition"
     },
     {
       "id": "dfb586131bf3d3",
@@ -3984,6 +4303,35 @@
       "originalTitle": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control"
     },
     {
+      "id": "a1476027536888",
+      "url": "https://cloud.google.com/blog/topics/public-sector/accelerating-frontiers-of-scientific-discovery-40-million-dollar-commitment-genesis-mission",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://cloud.google.com/blog/topics/public-sector/accelerating-frontiers-of-scientific-discovery-40-million-dollar-commitment-genesis-mission"
+        }
+      ],
+      "publishedAt": "2026-07-22",
+      "source": "Google DeepMind",
+      "title": "谷歌4000万美元支持美能源部AI科研计划",
+      "summary": "谷歌DeepMind宣布向美国能源部“创世纪任务”追加4000万美元AI算力与云资源，为17个国家实验室的研究人员提供AlphaEvolve、AlphaFold 3、AlphaGenome、WeatherNext和AlphaEarth Foundations等前沿科学AI工具，并向数万名用户开放为期一年的Gemini for Government。此前谷歌已推出早期访问计划。文中引用太平洋西北国家实验室和落基山国家实验室的案例，称AI将显微镜校准时间从90分钟缩短至13分钟。该承诺旨在配合白宫目标，十年内将美国科研发现速度翻倍。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "科技巨头以算力和模型资源直接介入国家级科研体系，可能改变科学发现的组织方式与竞争格局，值得关注其长期影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind在2026年7月22日宣布，向美国能源部主导的“创世纪任务”追加4000万美元AI代币与云资源。此前谷歌已向全部17个能源部国家实验室开放科学AI工具早期访问，并推动Gemini for Government作为能源部AI底座。此次承诺分两部分：一是向创世纪任务获奖者提供AlphaEvolve、AlphaFold 3、AlphaGenome、WeatherNext和AlphaEarth Foundations等模型；二是为能源部国家实验室运营、研究和管理团队数万名用户提供一年期Gemini for Government席位与代币。文中引用太平洋西北国家实验室和落基山国家实验室的案例，称AlphaEvolve用于数学系统探索，Gemini将显微镜校准从90多分钟降至约13分钟。目前尚不清楚具体分配机制、覆盖人数和实际科研产出。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：谷歌给美国国家实验室的科学家们发了一批“AI科研助手”和算力额度，让他们用AI帮忙算题、预测蛋白质结构、看基因、预报天气和绘制地球。以前科学家要花大量时间手动调仪器、翻数据，现在部分环节交给AI，省下的时间可以多做实验。对普通人来说，短期不会直接改变生活，但长期可能让新药、新材料、新能源和天气预报进步更快。不过，这些工具是否真能兑现“十年翻倍”的目标，还要看后续实际成果，不能只看企业宣传。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission"
+    },
+    {
       "id": "2ba894a78cc5b6",
       "url": "https://research.google/blog/symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment/",
       "sources": [
@@ -4042,6 +4390,35 @@
       "originalTitle": "Introducing Gemini 3.5 Flash Cyber"
     },
     {
+      "id": "660a6401b7178f",
+      "url": "https://news.mit.edu/2026/turning-2d-designs-into-3d-models-for-rapid-prototyping-0716",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/turning-2d-designs-into-3d-models-for-rapid-prototyping-0716"
+        }
+      ],
+      "publishedAt": "2026-07-16",
+      "source": "MIT News",
+      "title": "MIT新框架GIFT提升AI生成CAD模型精度",
+      "summary": "MIT等机构研究人员开发了GIFT框架，旨在解决视觉语言模型生成CAD程序时精度不足的问题。传统方法依赖人工标注数据，成本高且多样性有限。GIFT通过让模型并行生成多个答案，识别“接近正确”的案例并自动修正，将其转化为训练数据，无需人工干预。实验显示，GIFT生成的CAD程序更准确，计算量仅为对比方法的约20%。该技术有望加速快速原型设计，降低工程成本，并帮助发现被忽视的设计方案。研究已发表于ICML。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "GIFT让AI从自身错误中学习，显著提升CAD生成精度并降低计算成本，有望加速工业设计原型迭代，对制造业和工程领域具有实用价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT与IBM等机构的研究人员提出GIFT框架，用于改进视觉语言模型将2D图像转换为CAD程序的能力。现有模型常生成简单或不准确的形状，主要瓶颈是缺乏多样且高质量的CAD训练数据。GIFT不依赖人工标注，而是让模型对同一问题并行生成多个代码答案，检测其中“接近正确”的案例，自动修正为成功解，并连同成功解一起构建新数据集，用于微调模型。该方法利用推理时扩展，用户可设定计算预算。在测试中，GIFT生成的CAD程序比多个对比方法更准确，计算量仅约20%。研究已发表于ICML，但尚未说明在更复杂工业场景下的泛化能力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象你让AI画一个零件的3D图纸，它经常画得歪歪扭扭。GIFT就像一位教练，让AI反复尝试同一道题，专门挑那些“差一点就对”的答案，帮它改对，然后把这些经验变成教材。这样AI不用等人类喂大量标注数据，自己就能越练越准，还省算力。对普通人来说，未来工程师设计产品时，AI能更快把草图变成可测试的3D模型，缩短研发周期，可能让飞机、汽车等产品的原型制作更便宜、更高效。不过目前它主要关注几何形状，离全自动设计还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "A better way to turn 2D designs into 3D models for rapid prototyping"
+    },
+    {
       "id": "f443de946cf389",
       "url": "https://huggingface.co/blog/security-incident-july-2026",
       "sources": [
@@ -4071,6 +4448,35 @@
       "originalTitle": "Security incident disclosure — July 2026"
     },
     {
+      "id": "13f77bbb5cb944",
+      "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/"
+        }
+      ],
+      "publishedAt": "2026-07-13",
+      "source": "Google DeepMind",
+      "title": "谷歌与印度合作推出ATL Saathi教育助手",
+      "summary": "印度国家转型委员会下属的Atal创新使命与谷歌合作，在2026年7月启动ATL Saathi试点。这是一款基于Gemini的网页应用，为Atal Tinkering Labs的教师提供24小时备课与培训助手，覆盖12个核心模块的摘要、信息图和测验，并支持8种语言。首批在100所学校试点，目标是减轻教师行政负担、提升创新教学效率。谷歌称其基于Gemini 3.5 Flash生成项目方案与安全说明，但实际教学效果尚未公布。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "这是AI进入印度基础教育体系的一次规模化试点，涉及上千万学生背后的教师群体，对教育公平和AI落地具有示范意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Atal创新使命与谷歌联合推出ATL Saathi，一款由Gemini驱动的网页应用，面向印度Atal Tinkering Labs的教师。该工具提供12个核心模块的摘要、AI信息图、视频概览和互动测验，并为10个模块生成与课程匹配的项目创意，以及学生自主提出问题时的分步组装说明、接线图和安全提示。应用支持8种语言，首批在100所试点学校上线。谷歌称其底层使用Gemini 3.5 Flash模型，但未披露试点时长、评估指标和成本分担方式。目前尚无独立第三方验证其教学效果，教师实际使用频率和满意度也未知。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它理解成给印度科技课老师配了一个随叫随到的AI助教：老师不用再花大量时间啃培训视频、翻译教材或想项目点子，AI直接给出简版讲义、图示和动手方案，学生提什么奇怪问题也能得到安全操作步骤。对普通人来说，这意味着孩子所在的学校如果加入试点，科技课可能更快从“看设备”变成“真动手”。但AI给的项目方案是否安全、是否贴合本地课堂，仍要靠老师把关。它更像减轻备课负担的工具，而不是替代老师。最终效果取决于学校网络、教师培训和后续评估，目前还只是100所学校的起步阶段。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Empowering India’s next generation of innovators with ATL Saathi"
+    },
+    {
       "id": "07610e55de6cc8",
       "url": "https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/",
       "sources": [
@@ -4098,6 +4504,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "NVIDIA Nemotron Achieves Benchmark-Leading Performance With LangChain Deep Agents Harness"
+    },
+    {
+      "id": "095312b62c326d",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
+        }
+      ],
+      "publishedAt": "2026-07-03",
+      "source": "Google DeepMind",
+      "title": "谷歌DeepMind与A24达成研究合作",
+      "summary": "2026年6月22日，谷歌DeepMind宣布与独立影视公司A24建立首个以研究为核心的合作伙伴关系，将研究实验室与电影创作者直接对接，帮助艺术家开发新工作流与技术，同时让DeepMind获得一线创作者反馈。谷歌还对A24进行了投资。双方称合作将横跨多个项目、长期推进，但具体目标、技术产出和创作里程碑将随时间演变，目前尚未公布任何具体产品或时间表。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "这是AI研究机构与影视厂牌少见的深度研究型合作，且伴随谷歌投资，可能影响未来影视制作工具与AI内容创作方式，但细节尚未落地。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind产品副总裁Eli Collins于2026年6月22日发文宣布，DeepMind与A24达成一项“首个此类”研究合作。合作把DeepMind的研究能力与A24的创作者资源结合，目标是让艺术家参与开发新工作流和技术，使未来工具由实际使用者塑造。双方将围绕多个项目展开长期研发协作，A24及其电影人可在创作过程中直接接触DeepMind的创新，并向研究团队提供反馈和指导。此外，谷歌已对A24进行投资。公告强调，合作仍处早期，具体目标、技术产出和创作里程碑会随时间演变，目前没有公布具体产品、上线时间或财务条款。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它理解成：做AI的实验室不再闭门造车，而是直接搬进电影片场，让导演和剪辑师边拍边告诉工程师“这工具哪里不好用”。对普通人来说，短期内看不到立刻可用的新功能，但长期可能影响你未来看到的电影怎么拍、特效怎么做，甚至AI生成内容在影视里的使用规范。谷歌同时投了钱，说明这不只是做研究，也有商业押注。不过目前只是“开始合作”，没有具体成果，别把它当成马上会改变观影体验的大事。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Google DeepMind and A24 announce first-of-its-kind research partnership"
     },
     {
       "id": "d2b47e5ca2b10e",
