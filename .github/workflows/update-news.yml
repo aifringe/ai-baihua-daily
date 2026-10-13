@@ -14,6 +14,10 @@ on:
         required: false
         default: '20'
         type: string
+      until:
+        description: '可选：历史回补结束日期（YYYY-MM-DD）'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -35,10 +39,12 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           BACKFILL_SINCE: ${{ inputs.since }}
+          BACKFILL_UNTIL: ${{ inputs.until }}
           UPDATE_LIMIT: ${{ inputs.limit || '20' }}
         run: |
           args=("$UPDATE_LIMIT")
           if [[ -n "$BACKFILL_SINCE" ]]; then args+=(--since "$BACKFILL_SINCE"); fi
+          if [[ -n "$BACKFILL_UNTIL" ]]; then args+=(--until "$BACKFILL_UNTIL"); fi
           python3 scripts/update_news.py "${args[@]}"
       - name: Publish changed edition
         env:
