@@ -29,9 +29,12 @@ test('搜索、分类、排序、分页和详情流程可用', async ({page}) =>
   await page.getByRole('button', {name: '全年档案', exact: true}).click();
   await expect(page.locator('.news-card').first()).toBeVisible();
   await page.getByRole('button', {name: '近期精选', exact: true}).click();
-  await page.getByLabel('新闻排序').selectOption('important');
-  await expect(page.getByLabel('新闻排序')).toHaveValue('important');
-  await page.getByLabel('新闻排序').selectOption('latest');
+  await page.getByRole('button', {name: '最新发布'}).click();
+  await expect(page.getByRole('menu', {name: '新闻排序'})).toBeVisible();
+  await page.getByRole('menuitemradio', {name: '重要优先'}).click();
+  await expect(page.getByRole('button', {name: '重要优先'})).toBeVisible();
+  await page.getByRole('button', {name: '重要优先'}).click();
+  await page.getByRole('menuitemradio', {name: '最新发布'}).click();
   await page.getByRole('button', {name: '下一页'}).click();
   await expect(page.getByText(/第 2 \/ \d+ 页/)).toBeVisible();
   await page.getByRole('button', {name: '上一页'}).click();
