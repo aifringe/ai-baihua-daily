@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:33:52.863402+00:00",
-  "lastCheckedAt": "2026-10-13T06:33:52.863402+00:00",
+  "updatedAt": "2026-10-13T06:34:41.081417+00:00",
+  "lastCheckedAt": "2026-10-13T06:34:41.081417+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -5069,6 +5069,35 @@
       "originalTitle": "TimesFM-3: A zero-shot foundation model for multivariate forecasting"
     },
     {
+      "id": "4d3b17a749f42c",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south"
+        }
+      ],
+      "publishedAt": "2026-08-28",
+      "source": "Hugging Face",
+      "title": "开源ASR榜单首增印地语评测集",
+      "summary": "Hugging Face与Voice Arena合作，在Open ASR Leaderboard上新增Monsoon印地语和印度英语评测集，这是该榜单首次纳入全球南方语言。四个分片共4888名说话人，每人平均仅1.5段音频，覆盖数百个地区与设备型号，并附带性别、年龄、地域等12项元数据。印地语采用格架式参考答案以容纳多种正确拼写。此举意在暴露聚合词错率掩盖的人群差异，但评测集时长有限，能否推动模型真正改善仍待观察。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "语音识别长期以单一词错率排名，掩盖了种族、性别、口音和地域间的巨大差距。把印度语言和说话人元数据搬上公开榜单，等于给评测加了一面照妖镜，会直接影响厂商优化方向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Open ASR Leaderboard新增Monsoon评测集，包含印地语和印度英语各公开、私有两半，共四个分片、4888名说话人。数据来自众包的双声道自发对话，每人用自己的手机和网络录制，覆盖数百个地区、315至582种设备型号，并记录性别、年龄、职业、收入、母语地区等12项元数据。印地语因拼写变体多，采用格架式参考答案，列出每段可接受的多种拼法。公开分片可自行打分，私有分片不公开以防针对性调优。需要说明的是，印地语公开分片仅1.33小时、468人，规模偏小；榜单尚未公布各模型在该集上的实际成绩，改善幅度仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去的语音识别排行榜像一场只考朗读的考试：题目固定、口音单一，谁分数高谁就被认为最好。可现实中，带口音的人、用便宜手机的人、在嘈杂环境说话的人，识别效果可能差得多，这些在总分里完全看不出来。Monsoon相当于把考场搬到几百个县城，让几千个不同年龄、性别、口音的人各说一两句，还记下他们是谁、用什么设备。这样厂商再想刷分，就不能只讨好少数标准口音。对普通人来说，短期不会立刻变好用，但长期看，你说话带口音、手机不高端，被识别错的概率有望被真正重视和改善。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The Open ASR Leaderboard Adds Its First Global South Language"
+    },
+    {
       "id": "7d8f7d49cd6dea",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
       "sources": [
@@ -5245,6 +5274,35 @@
       "originalTitle": "GlucoFM: Foundation model for continuous glucose monitoring"
     },
     {
+      "id": "17177c100c9150",
+      "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/train-multi-vector-encoder"
+        }
+      ],
+      "publishedAt": "2026-08-26",
+      "source": "Hugging Face",
+      "title": "Sentence Transformers v6.0 支持多向量检索训练",
+      "summary": "Sentence Transformers 发布 v6.0，新增 MultiVectorEncoder 模型类型，支持 ColBERT 式后期交互检索的完整训练流程。作者以医学检索为例，用 2.5 万条问答对在单张 RTX 3090 上训练 14.5 小时，微调后的模型在 1000 条留出问题上超过其测试的各类通用检索模型。文中还给出六种起点对比：未监督检查点适应新领域最好，已监督检查点反而可能退步。该结果来自单一作者实验，尚未经第三方复现。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "多向量检索此前多依赖现成模型，此次把训练流程并入主流库，并给出起点选择的反直觉结论，降低了自建领域检索模型的门槛。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Sentence Transformers 在 v6.0 中引入第四种模型类型 MultiVectorEncoder，用于 ColBERT 式后期交互检索，并配套完整训练方案。作者 Tom Aarsen 以医学检索为例，从 MIRIAD 取 2.5 万条问答对，在单张 RTX 3090 上训练 14.5 小时，得到 mLateOn-medical，在 1000 条留出问题、5 万篇文档的评测中超过其能找到的稠密、稀疏、词法和多向量通用检索模型。文中还比较六种起点：未监督检查点微调后提升最大，已监督检查点几乎不动甚至下降，在强检索骨干上新建投影头也接近最优。作者同时指出，多数公开模型把文档截断在 180 至 512 词，长文档场景损失可达 0.24 NDCG@10。上述数字均来自作者自述实验，尚无独立复现。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "普通检索模型把整段文字压成一个点，像把一本书缩成一句话再比对；多向量模型则保留每个词的小坐标，让查询里的每个词去找文档里最像的词，再累加得分，因此更细、更准，但索引更大。过去这种模型多是别人训练好的通用版，换到医学、法律或公司内部文档就未必好用。现在这个库把训练流程做成一键式，你拿自己几百到几万条问答对，用一张消费级显卡几小时就能训出专属检索器。对普通人的影响是：以后公司知识库、专业文献搜索可能更懂行话，但前提是你得有像样的标注数据，且别指望通用模型直接解决长文档问题。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers"
+    },
+    {
       "id": "29facfa5780b28",
       "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
       "sources": [
@@ -5301,6 +5359,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "AgentHands: Generating interactive hand gestures for spatially grounded agent conversations in XR"
+    },
+    {
+      "id": "d21068479952e4",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-4-2"
+        }
+      ],
+      "publishedAt": "2026-08-25",
+      "source": "Hugging Face",
+      "title": "IBM发布Granite 4.2推理模型家族",
+      "summary": "IBM Granite团队发布Granite 4.2，这是其首个稠密、仅解码器的推理模型家族，含3B、8B、30B三种规模，基于Granite-4.1基座后训练而来。基座约用15万亿token、五阶段策略预训练，上下文扩展至512K；随后经思维链与智能体轨迹数据监督微调，再走多阶段强化学习流水线，其中8B和30B额外接受智能体RL，学习调用工具、跑代码、操作终端和联网搜索。三款模型均带思考/非思考开关、低努力思考模式和原生工具调用，采用Apache 2.0许可。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "开源推理模型再添一档，且把智能体能力作为后训练重点，意味着企业可在自有环境部署会动手的模型，而非只会聊天。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM在Hugging Face发布技术文章，介绍Granite 4.2的构建过程。该系列为稠密、仅解码器架构，分3B、8B、30B三档，均从Granite-4.1基座后训练。基座从零预训练约15万亿token，分五阶段，第五阶段把上下文窗口拉到512K。监督微调数据约720万条、约1000亿token，其中智能体数据占31.6%，以软件工程为主，工具调用、终端使用次之；数据经格式统一、LLM评审、去重等质控。之后是多阶段GRPO强化学习，按数学、代码、科学、指令跟随、工具使用、结构化输出，再到软件工程、终端、搜索逐级推进，8B和30B才进入智能体RL段，最后统一做RLHF。文章未给出各档基准分数，也未说明具体发布日期与部署成本。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成一位新员工：先读海量资料打底，再被反复训练做题，最后被放进模拟办公室练习用工具干活。Granite 4.2的特别之处在于，它不只回答问题，还会先想一遍再答，简单问题少想、难题多想，并且能直接调用工具、改代码、敲命令行、上网查资料。对普通人来说，最直接的影响是这类模型可以免费下载、自己部署，企业不必把数据交给外部服务；对开发者而言，它兼容OpenAI接口格式，接进现有智能体框架不用额外改造。不过文章只讲了怎么造，没讲造得多好，实际能力仍需第三方测试验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Granite 4.2 LLMs: How They're Built"
     },
     {
       "id": "9b54a38fa1b1a3",
