@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-12T15:42:04.797052+00:00",
-  "lastCheckedAt": "2026-10-12T15:42:04.797052+00:00",
+  "updatedAt": "2026-10-13T00:09:18.589570+00:00",
+  "lastCheckedAt": "2026-10-13T00:09:18.589570+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -4160,6 +4160,267 @@
       "originalTitle": "Research into how AI can help users understand skin conditions"
     },
     {
+      "id": "42a406893f8765",
+      "url": "https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/"
+        }
+      ],
+      "publishedAt": "2026-03-31",
+      "source": "Google Research",
+      "title": "谷歌研究：AI评测3-5人标注不够可靠",
+      "summary": "谷歌研究团队发布论文与开源模拟器，研究AI基准测试中“标注条目数”与“每条目标注人数”的权衡。基于毒性、安全、冒犯性等主观数据集模拟发现，业界常用的每条目1至5名标注者往往不足以反映人类分歧；若要捕捉观点分布，需增加标注人数，而仅匹配多数意见时增加条目更有效。研究称，按指标优化比例后，约1000条总标注即可获得较可复现结果，但错误配比即使加预算也可能不可靠。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "AI评测长期依赖少量人工标注，该研究指出常见做法可能损害可复现性，并给出可操作的预算分配思路，影响基准设计与模型对比的可信度。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究科学家Flip Korn与Chris Welty发文，提出一套基于“金标准”评级的评测框架，并开源模拟器。团队用毒性、DICES安全、D3code跨文化冒犯性、Jobs等真实数据集做压力测试，比较总条目数N与每条目标注人数K的组合。结论有三点：常用1、3、5名标注者常不够；最优策略取决于指标，若只看多数投票，增加条目更划算，若要保留意见范围，则必须增加标注者；按指标优化后，约1000条总标注可达到较可复现结果。研究仍属模拟与特定数据集结论，能否推广到所有任务尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去做AI考试，常让三五个人给同一道题打分，再取多数当标准答案。但很多题本就没有唯一答案，比如一句话算不算冒犯，不同人看法不同。只问三五个人，就像只尝几口菜就评整家餐厅。谷歌这项研究相当于算了一笔账：想省预算又想让评测结果稳定，得先想清楚要测“大多数人怎么想”，还是“大家分歧有多大”。前者多出题，后者多找人。对普通人来说，这意味着以后AI安全、内容审核等评测若更重视分歧，结论可能更贴近真实体验，但成本与设计难度也会上升。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Building better AI benchmarks: How many raters are enough?"
+    },
+    {
+      "id": "e8802cbf5c89a4",
+      "url": "https://huggingface.co/blog/liberate-your-openclaw",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/liberate-your-openclaw"
+        }
+      ],
+      "publishedAt": "2026-03-27",
+      "source": "Hugging Face",
+      "title": "Anthropic限制Claude开放代理访问，HF推替代方案",
+      "summary": "Anthropic对Pro/Max订阅者在开放代理平台上的Claude模型访问施加限制，影响OpenClaw、Pi、Open Code等代理工具用户。Hugging Face发文提出两条迁移路径：一是通过Hugging Face Inference Providers调用开源模型，推荐GLM-5，HF PRO订阅者每月获2美元免费额度；二是在本地用llama.cpp运行Qwen3.5-35B-A3B等模型，实现隐私保护与零API成本。文章未说明Anthropic限制的具体范围与生效时间，也未提供官方回应。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "头部闭源模型收紧开放代理接入，可能改变开发者工具链选择，推动开源模型与本地推理成为替代方案，影响代理生态成本与隐私格局。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年3月27日发布文章称，Anthropic正在限制Pro/Max订阅者在开放代理平台上访问Claude模型，导致OpenClaw、Pi、Open Code等代理可能中断。文章给出两条迁移路径：其一，通过Hugging Face Inference Providers调用开源模型，需创建token并用openclaw onboard --auth-choice huggingface-api-key配置，推荐GLM-5，HF PRO订阅者每月有2美元免费额度；其二，本地运行，安装llama.cpp后以llama-server加载Qwen3.5-35B-A3B等GGUF模型，再通过自定义API地址接入OpenClaw。文章未说明Anthropic限制的具体范围、生效时间或官方回应，也未提供受影响用户数量。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它理解成：你原本租用一家大公司的“大脑”来驱动你的自动助手，现在这家公司收紧了门禁，部分租户进不去了。Hugging Face相当于一个开源模型超市，告诉你两条路：要么继续租用超市里其他品牌的“大脑”，按用量付费，速度快、门槛低；要么把“大脑”直接装进自己电脑，不联网、不按次收费，但需要一定硬件和折腾成本。对普通用户而言，短期可能遇到代理工具突然失灵或需要重新配置；长期看，选择变多，成本可能下降，隐私控制更强，但开源模型的能力与闭源顶尖模型仍有差距，迁移后效果需自行验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Liberate your OpenClaw"
+    },
+    {
+      "id": "67a41177a9ef76",
+      "url": "https://research.google/blog/vibe-coding-xr-accelerating-ai-xr-prototyping-with-xr-blocks-and-gemini/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/vibe-coding-xr-accelerating-ai-xr-prototyping-with-xr-blocks-and-gemini/"
+        }
+      ],
+      "publishedAt": "2026-03-25",
+      "source": "Google Research",
+      "title": "谷歌发布Vibe Coding XR：60秒生成XR应用",
+      "summary": "谷歌研究院推出Vibe Coding XR工作流，将Gemini Canvas与开源XR Blocks框架结合，用户用自然语言描述即可在60秒内生成可交互、带物理效果的Android XR应用。该工具支持桌面模拟器和XR头显预览，并内置分享功能。谷歌用60条提示词数据集VCXR60初步评估，早期成功率约70%，经11个版本迭代后，Pro模式结果最可靠。团队将在ACM CHI 2026展示，并邀请社区贡献。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该工作将大模型代码生成能力延伸至XR空间计算，大幅降低原型开发门槛，可能加速教育、游戏等场景的沉浸式应用创新，对开发者和内容创作者有直接影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究院发布Vibe Coding XR，一个面向Android XR的快速原型工作流。它把Gemini的长上下文推理与开源XR Blocks框架结合，通过专用系统提示和代码模板，将自然语言直接转为可交互、物理感知的WebXR应用，官方称60秒内完成。用户可在桌面Chrome的模拟现实中预览，或部署到Android XR头显，用捏合、手势等交互。谷歌用VCXR60数据集初步评估，早期错误多来自框架bug或API幻觉，成功率约70%；经11个版本迭代后，Pro模式最可靠。团队将在ACM CHI 2026现场演示。目前仍不确定的是：评估仅基于内部60条提示，真实场景泛化能力、长期稳定性及对非开发者友好度尚未验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前做XR应用，像要自己造一辆车：拼传感器、写引擎、调交互，没几天搞不定。现在谷歌把这件事变成了“点菜”：你只要说“来一朵蒲公英，捏一下会飞散”，Gemini就帮你把菜做好端上来，还能在电脑上先试吃，再戴头显真吃。对普通人来说，这意味着未来做教育课件、小游戏、科学演示，可能不再需要会编程，动嘴就行。但别高兴太早，它现在更像一个聪明的实习生：简单菜做得快，复杂菜偶尔会翻车，成功率约七成。真正普及还需时间，但方向是让空间计算从技术活变成创意活。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Vibe Coding XR: Accelerating AI + XR prototyping with XR Blocks and Gemini"
+    },
+    {
+      "id": "6b7e6317e93078",
+      "url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/"
+        }
+      ],
+      "publishedAt": "2026-03-25",
+      "source": "Google DeepMind",
+      "title": "DeepMind发布防操纵研究 正文乱码难核实",
+      "summary": "2026年3月25日，Google DeepMind官网发布一篇题为《Protecting people from harmful manipulation》的文章，从标题看聚焦防范AI对人类的有害操纵。但该文正文在抓取后几乎全部为乱码与不可读字符，无法确认其具体方法、适用范围、是否附带技术报告或政策建议，也无法判断是否涉及产品更新。由于缺少可核验的正文内容，目前只能确认文章存在及其主题方向，其余细节均不确定，需等待官方可读版本或第三方转述后再作判断。",
+      "category": "安全与规则",
+      "importance": 62,
+      "why": "AI操纵风险是当前监管与产品安全的核心议题，DeepMind发声具有风向标意义；但正文不可读，实际内容与力度无法核实，因此重要性暂定中等偏上。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年3月25日，Google DeepMind官网出现一篇题为《Protecting people from harmful manipulation》的文章，标题指向“保护人们免受有害操纵”。但抓取到的正文几乎全是乱码、控制字符和不可读符号，无法提取任何可核验的句子。因此目前只能确认：该机构发布了一篇以防范操纵为主题的文章，发布时间为3月25日。至于它是否提出具体技术方案、是否涉及模型行为规范、是否附带评测数据或政策建议，均无法从现有材料判断。也不确定这是研究博客、政策声明还是产品安全更新。在获得可读版本前，任何关于其内容与结论的描述都缺乏依据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：一家顶级AI实验室在门口贴了一张告示，标题写着“我们要防止AI被人用来忽悠人”，但告示正文被水泡烂了，只能看清标题。对普通人来说，真正重要的是AI会不会被用来精准劝诱、误导消费或影响判断，以及平台有没有对应的防护措施。现在能确定的只是“他们开始谈这件事”，但谈了什么、有没有落地工具、会不会影响你用的产品，都还是未知数。建议先别急着下结论，等官方放出可读全文或权威媒体转述后再看。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Protecting people from harmful manipulation"
+    },
+    {
+      "id": "30089e2028e6ae",
+      "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/"
+        }
+      ],
+      "publishedAt": "2026-03-24",
+      "source": "Google Research",
+      "title": "谷歌发布TurboQuant压缩算法，KV缓存缩至3比特",
+      "summary": "2026年3月24日，谷歌研究团队发布TurboQuant系列量化算法，包含PolarQuant和QJL两项技术，旨在解决大语言模型和向量搜索中的内存瓶颈。该算法可将键值缓存压缩至3比特，无需训练或微调，在LongBench等长上下文基准测试中保持模型精度，并在H100 GPU上实现最高8倍注意力计算加速。向量搜索召回率也优于现有方法。该技术有望降低AI推理内存成本，加速语义搜索，但实际部署效果仍需第三方验证。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "该算法显著降低大模型内存占用并提升推理速度，且无需训练，对AI部署成本影响重大，但实际效果待验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队于2026年3月24日发布TurboQuant压缩算法，包含PolarQuant和QJL两项技术，论文将在ICLR 2026和AISTATS 2026展示。TurboQuant通过随机旋转数据并应用极坐标量化，再用1比特QJL消除误差，实现键值缓存压缩至3比特且无精度损失。在LongBench、Needle In A Haystack等基准测试中，使用Gemma和Mistral模型，压缩后性能与原始模型相当，KV内存减少至少6倍，注意力计算速度在H100 GPU上提升最高8倍。向量搜索任务中，1@k召回率优于PQ和RabbiQ基线。但测试仅限开源模型，未涉及更大规模商业模型，实际部署效果仍需验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给AI模型的内存做了一次超级压缩，原本需要32位存储的数据现在只要3位，而且几乎不损失准确度。好比把一本厚书压缩成几页笔记，但关键内容一点没丢。对普通人来说，未来使用AI聊天、搜索时，响应可能更快，因为服务器内存压力小了；企业部署AI的成本也会降低，可能推动更多免费或低价AI服务。不过，目前这只是实验室成果，真正用到产品里还需时间，别指望明天手机上的AI就变快。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "TurboQuant: Redefining AI efficiency with extreme compression"
+    },
+    {
+      "id": "c52b08d09cf89e",
+      "url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026"
+        }
+      ],
+      "publishedAt": "2026-03-17",
+      "source": "Hugging Face",
+      "title": "Hugging Face开源AI报告：中国下载量超美国",
+      "summary": "Hugging Face发布2026春季开源AI生态报告，基于平台数据回顾过去一年变化。报告显示，平台用户达1300万，公开模型超200万，数据集超50万，均接近翻倍。中国在月度及总下载量上超越美国，占41%下载份额；行业开发占比从2022年前的约70%降至37%，独立开发者升至39%。模型下载高度集中，0.01%的模型占近半下载量。报告还指出小模型部署率更高，模型热度平均持续约6周。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "该报告以平台数据揭示开源AI生态的结构性变化：中国在下载量上反超美国，独立开发者崛起，行业集中度下降。这些趋势影响全球AI竞争格局、技术获取路径及企业选型策略，对理解开源与闭源路线之争具有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年3月17日发布春季开源AI生态报告，基于平台社区活动数据，分析竞争、地理、技术趋势和新兴社区。报告称，2025年平台用户达1300万，公开模型超200万，数据集超50万，均接近翻倍。中国在月度及总下载量上超越美国，过去一年占41%下载份额。行业开发占比从2022年前的约70%降至2025年的37%，独立开发者从17%升至39%。模型下载高度集中，约半数模型下载量不足200次，前200个模型（0.01%）占49.6%下载量。报告还提到，百度2025年在Hub上发布超100个模型，字节跳动和腾讯发布量增长八至九倍。小模型下载率高于超大模型，模型平均热度持续约6周。报告未披露具体统计口径和完整方法论，部分数据依赖社区成员贡献。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这份报告相当于给开源AI圈子做了一次年度体检。最直观的变化是：以前大家主要用美国大厂的开源模型，现在中国模型下载量反超了，说明全球开发者用脚投票，中国模型变得好用且被广泛采用。另一个信号是，做模型不再是大公司专利，独立开发者和小团队贡献了近四成下载量，就像以前只有大饭店能做饭，现在很多私房菜也很受欢迎。对普通人来说，这意味着未来你用的AI工具可能更多来自开源社区，选择更多、成本更低，但也要注意模型质量参差不齐。模型热度平均只有六周，说明这个领域更新极快，今天好用的模型可能很快被替代。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "State of Open Source on Hugging Face: Spring 2026"
+    },
+    {
+      "id": "b8544e21ac38f5",
+      "url": "https://huggingface.co/blog/async-rl-training-landscape",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/async-rl-training-landscape"
+        }
+      ],
+      "publishedAt": "2026-03-10",
+      "source": "Hugging Face",
+      "title": "16个开源RL库异步训练设计对比",
+      "summary": "Hugging Face发布对16个开源强化学习库的调研，聚焦异步RL训练架构。背景是同步训练中生成阶段耗时过长，32B模型单批32K token rollout需数小时，训练GPU闲置。核心发现：主流方案将推理与训练分离到不同GPU池，通过rollout缓冲区和异步权重同步实现重叠。Ray主导编排（8/16），NCCL广播为默认权重同步方式，陈旧数据管理从丢弃到重要性采样不等，LoRA支持稀疏，分布式MoE成新差异点。结果是为TRL异步训练器设计提供参考，但具体实现细节和性能提升幅度仍不确定。",
+      "category": "行业变化",
+      "importance": 75,
+      "why": "该调研系统梳理了异步RL训练的关键设计选择，为开源社区提供实践参考，有望提升大规模模型后训练效率，对AI训练基础设施发展有推动作用。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年3月10日发布文章，对16个开源强化学习库进行调研，比较其异步训练架构。文章指出，同步RL训练中，生成阶段（如32B模型生成32K token的rollout）可能耗时数小时，而训练GPU在此期间闲置。主流解决方案是将推理和训练分离到不同GPU池，通过rollout缓冲区连接，并异步传输权重。调研从七个维度对比：编排原语、缓冲区设计、权重同步协议、陈旧数据管理、部分rollout处理、LoRA支持和分布式训练后端。关键发现包括：Ray在8/16的库中用于编排，NCCL广播是默认权重同步方法，陈旧数据管理策略各异，LoRA支持较少，分布式MoE支持成为新兴差异点。文章还讨论了无评论家算法、过程奖励、多智能体协同等趋势带来的新挑战。目前，Hugging Face正基于此设计TRL的异步训练器，但具体性能提升和实现细节尚未公布。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象你开了一家工厂，生产线（训练）和原料供应（生成）必须交替进行：供应原料时生产线停工，生产时供应线停工，导致大量时间浪费。异步训练就像让供应线和生产线同时运转，用传送带（缓冲区）连接，原料不断送来，生产线不停加工。这次调研就是比较了16家工厂如何设计传送带、如何同步配方（权重）、如何处理过期原料等。对普通人的影响：未来AI模型训练可能更快、更便宜，因为GPU利用率提高，训练成本下降。但具体能快多少、省多少，目前还没有明确数字。另外，这种架构也让AI能更高效地处理长对话、复杂推理等任务，最终可能让AI助手更聪明、响应更快。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries"
+    },
+    {
+      "id": "aa45bd91094426",
+      "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/"
+        }
+      ],
+      "publishedAt": "2026-02-17",
+      "source": "Google DeepMind",
+      "title": "DeepMind与印度合作推进AI科研教育",
+      "summary": "Google DeepMind宣布与印度政府及机构建立国家AI伙伴关系，向印度研究者开放AlphaGenome、AI Co-scientist、Earth AI等前沿模型，并投入3000万美元Google.org AI for Science挑战赛。教育方面，Gemini将把200万册纸质教材转为互动内容，覆盖2000多所学校；同时与Atal Tinkering Labs合作服务超1万所学校。此前AlphaFold在印度已有超18万研究者使用。合作还涉及农业与电网预测，WeatherNext模型测试显示风电预测精度提升最高8%。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "这是前沿AI实验室与国家层面深度绑定的标志性案例，涉及科研、教育、能源多领域落地，可能影响全球AI治理与公共服务的合作模式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind于2026年2月宣布与印度政府机构及本地组织建立国家AI伙伴关系。科研上，与Anusandhan National Research Foundation合作，向印度研究者开放AlphaGenome、AI Co-scientist、Earth AI等模型，并设3000万美元Google.org AI for Science挑战赛。教育上，与Atal Tinkering Labs合作覆盖超1万所学校，与PM Publishers合作将200万册教材转为Gemini驱动的互动内容。能源上，与Open Climate Fix合作把WeatherNext接入印度电网，测试中风力预测精度最高提升8%。目前多数项目处于启动或试点阶段，实际效果尚待独立评估。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，DeepMind把自家最先进的科研和教学AI工具打包带进印度：科学家能借用AI找基因突变规律、设计实验，学生扫教材二维码就能问AI问题，电网也能靠AI更准地预测风光发电。对普通人而言，这意味着未来可能有更便宜的AI科研工具、更互动的课堂，以及更稳定的清洁电力。但要注意，这些多是合作意向和早期试点，能否真正惠及偏远地区、数据隐私如何保障，仍取决于后续执行与监管。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Accelerating discovery in India through AI-powered science and education"
+    },
+    {
+      "id": "cc199a2045454f",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/"
+        }
+      ],
+      "publishedAt": "2026-01-29",
+      "source": "Google DeepMind",
+      "title": "谷歌Project Genie开放：AI实时生成可玩世界",
+      "summary": "谷歌DeepMind于2026年1月29日宣布，向美国18岁以上的Google AI Ultra订阅用户推出实验性研究原型Project Genie。该原型由Genie 3世界模型、Nano Banana Pro和Gemini驱动，支持用户用文字和图片创建、探索并混编可交互的虚拟世界，移动时实时生成前方路径。官方同时列出局限：画面未必逼真、角色控制有时不稳、延迟较高、单次生成限60秒，且8月预告的部分能力尚未纳入。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "世界模型从论文演示走向付费用户可试用的产品原型，是AI从生成内容迈向实时模拟环境的关键一步，也暴露了当前技术边界。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布Project Genie，定位为Google Labs中的实验性研究原型，面向美国18岁以上的Google AI Ultra订阅用户开放，商业版Ultra用户不在范围内。它由Genie 3世界模型、Nano Banana Pro和Gemini共同驱动，核心能力有三项：用文字和图片“世界素描”生成环境并设定角色与视角；在环境中实时探索，系统随移动生成前方路径；对已有世界进行混编再创作，并可下载探索视频。官方明确列出已知不足：生成世界可能不够逼真、未必严格贴合提示或图片、物理表现不完善，角色控制有时不稳或延迟较高，单次生成限制在60秒，8月公布的“可提示事件”等能力尚未加入。官方称将逐步扩展至更多地区，但未给出具体时间表。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去AI画图是给你一张死画面，你只能看；Project Genie更像一个边玩边搭的沙盒：你打几个字，它就现搭一条路，你往前走，路才在脚下长出来。这相当于把“生成内容”升级成“生成可走进去的环境”，对普通人最直接的影响是，做游戏场景、拍动画背景、甚至虚拟旅游，可能不再需要专业建模，一句描述就能先跑起来看看。但别把它想成成品游戏：画面会穿帮，角色可能不听使唤，玩一分钟就得重来，而且目前只有美国最贵档订阅者能试。它更像一张通往未来的体验券，而不是马上能替代现有工具的成熟产品。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Project Genie: Experimenting with infinite, interactive worlds"
+    },
+    {
       "id": "908dd0753141a0",
       "url": "https://research.google/blog/atlas-practical-scaling-laws-for-multilingual-models/",
       "sources": [
@@ -4187,6 +4448,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "ATLAS: Practical scaling laws for multilingual models"
+    },
+    {
+      "id": "ca82a7731d9ae1",
+      "url": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/",
+      "sources": [
+        {
+          "name": "NVIDIA AI",
+          "url": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/"
+        }
+      ],
+      "publishedAt": "2026-01-05",
+      "source": "NVIDIA AI",
+      "title": "英伟达CES发布Rubin平台与开源自驾模型",
+      "summary": "英伟达CEO黄仁勋在CES 2026开幕演讲中宣布，新一代AI计算平台Rubin已全面投产，号称将生成token成本降至上一代的约十分之一。同时发布面向自动驾驶的开源推理模型家族Alpamayo，并称首款搭载该模型、基于DRIVE平台的梅赛德斯-奔驰CLA将很快上路。黄仁勋还强调开源模型覆盖医疗、气候、机器人等六大领域，并展示本地运行的个性化AI智能体。",
+      "category": "模型进展",
+      "importance": 88,
+      "why": "英伟达同时押注算力平台与开源模型，Rubin若真能大幅降低推理成本，将影响AI应用普及速度；开源自驾模型则可能改变自动驾驶研发门槛。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达在CES 2026上宣布，其首个六芯片协同设计的AI平台Rubin已进入全面生产，包含Rubin GPU、Vera CPU、NVLink 6、Spectrum-X以太网光子学、ConnectX-9 SuperNIC和BlueField-4 DPU。黄仁勋称该平台可将生成token的成本降至上一代的约十分之一，并推出AI原生KV缓存存储平台，宣称长上下文推理吞吐提升5倍。软件侧，英伟达发布开源推理视觉语言动作模型家族Alpamayo，含Alpamayo R1模型和AlpaSim仿真蓝图，面向L4级自动驾驶开发。黄仁勋称首款搭载Alpamayo、基于DRIVE全栈平台的量产车将是全新梅赛德斯-奔驰CLA，AI定义驾驶今年进入美国。不过，成本下降幅度、量产时间等关键数据均来自英伟达单方表述，尚无第三方验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Rubin理解成英伟达新造的一台更省油的AI发动机：官方说跑同样的活，油钱只要原来的十分之一。如果属实，企业用AI的门槛会明显降低，更多小公司也能用得起大模型。Alpamayo则像英伟达把自家自动驾驶的“驾驶教材”免费公开，车厂不必从零摸索，能更快造出会自己开车的车。对普通人来说，短期最直接的变化可能是：AI功能更便宜地进入手机、电脑和汽车；长期看，路上跑的自动驾驶车可能变多。但要注意，这些数字和落地时间目前都是英伟达自己说的，实际效果和监管审批仍待观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "NVIDIA Rubin Platform, Open Models, Autonomous Driving: NVIDIA Presents Blueprint for the Future at CES"
     }
   ]
 }
