@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:14:17.474368+00:00",
-  "lastCheckedAt": "2026-10-13T06:14:17.474368+00:00",
+  "updatedAt": "2026-10-13T06:15:37.388973+00:00",
+  "lastCheckedAt": "2026-10-13T06:15:37.388973+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -5068,6 +5068,68 @@
       "originalTitle": "The benefits of medical AI assistance vary based on user expertise"
     },
     {
+      "id": "56fdb1f2b36bdf",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
+        },
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/"
+        }
+      ],
+      "publishedAt": "2026-07-30",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini Robotics ER 2机器人模型",
+      "summary": "2026年7月30日，谷歌DeepMind发布Gemini Robotics ER 2，定位为机器人的“高层大脑”，支持实时空间推理、多步任务规划与多机器人协作。模型可通过Gemini API、Google AI Studio及企业平台获取。官方称其在工具编排上优于前代ER 1.6，进度分类准确率57.4%，关键时刻定位准确率91.3%、平均绝对距离0.96秒，并展示与波士顿动力Spot的取物演示。多机器人协作、安全基准等细节仍待第三方验证。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "这是具身智能领域的重要模型更新，直接面向机器人任务规划与多机协作，并开放开发者调用，可能加速物理世界AI应用落地，但实际效果仍需独立验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年7月30日推出Gemini Robotics ER 2，称其为机器人“高层大脑”，负责理解物理世界、规划多步任务，并将动作执行交给底层VLA模型。新模型支持实时视频理解、进度跟踪、工具调用和多机器人协作，可通过Gemini API、Google AI Studio及企业平台使用。官方数据显示，进度分类准确率57.4%，关键时刻定位准确率91.3%、平均绝对距离0.96秒，工具编排优于ER 1.6。演示中，该模型指挥波士顿动力Spot按自然语言取零食。不过，这些指标均为谷歌自测，多机器人协作与安全基准的独立复现结果尚不明确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把ER 2想成机器人的“项目经理”：它不直接拧螺丝，而是看懂摄像头画面、拆解任务、决定下一步，再指挥机械臂或轮子去干。以前机器人常“干完不知道干完没”，现在它能边看视频边判断进度，比如倒咖啡到几分满、灯泡拧紧没有，出错还能重试。多机器人协作则像让不同专长的同事接力干活。对普通人来说，未来仓库、家庭或工厂里的机器人可能更少卡壳、更会配合，但离真正普及还有距离，安全性和实际稳定性需要更多真实场景检验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration"
+    },
+    {
+      "id": "3fb8ff13848b4b",
+      "url": "https://news.mit.edu/2026/daniela-rus-receives-bavarian-minister-presidents-high-tech-prize-0730",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/daniela-rus-receives-bavarian-minister-presidents-high-tech-prize-0730"
+        }
+      ],
+      "publishedAt": "2026-07-30",
+      "source": "MIT News",
+      "title": "MIT教授Rus获德国巴伐利亚高科技奖",
+      "summary": "2026年7月23日，MIT计算机科学与人工智能实验室主任Daniela Rus在慕尼黑获巴伐利亚州长高科技奖，这是德国奖金最高的科技工程奖项。评委会表彰其在自组织机器人集群、软体机器人、自主移动和类脑AI四方面的贡献。Rus团队曾开发可吞服折纸机器人、自组装自主船队，并参与发明液态神经网络，该架构仅用19个控制神经元即可导航。她强调AI与人类协作而非对抗。",
+      "category": "行业变化",
+      "importance": 55,
+      "why": "该奖是德国最高科技荣誉，Rus的软体机器人和液态神经网络研究代表物理AI前沿，获奖有助于推动该领域从实验室走向产业应用，对机器人行业有风向标意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT计算机科学与人工智能实验室主任Daniela Rus于2026年7月23日在慕尼黑王宫赫拉克勒斯厅获颁巴伐利亚州长高科技奖。该奖由巴伐利亚州政府与巴伐利亚科学院联合颁发，是德国奖金最高的科技工程奖项。评委会列举其四方面贡献：自组织机器人集群、软体机器人、自主移动和类脑人工智能，称其30年研究致力于让机器在实验室外不可预知的条件下可靠工作。Rus团队曾开发可吞服折纸机器人取出儿童误吞的纽扣电池，以及能自组装成桥梁和平台的小型自主船队。她还参与发明液态神经网络，仅用19个控制神经元即可让车辆在陌生环境导航，并由此联合创立Liquid AI。目前尚不清楚该奖具体奖金数额及后续产业合作细节。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这相当于德国把科技界的“奥斯卡终身成就奖”颁给了一位让机器人更聪明、更柔软、更能适应真实世界的科学家。她做的不是工厂里重复焊接的机械臂，而是能自己组队、能变形、能进入人体取异物的机器人。比如那个折纸机器人，像纸片一样被吞下，到了胃里才展开干活，避免开刀。液态神经网络则像给机器人装了一个极省电的小脑，用很少的神经元就能开车。对普通人来说，这类技术未来可能让送药机器人、农业采摘机器人、救灾机器人更便宜、更安全。但离大规模进入日常生活还有距离，目前更多是实验室和初创公司的探索。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Daniela Rus receives Bavarian Minister-President's High-Tech Prize"
+    },
+    {
       "id": "a0327df34849e3",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
       "sources": [
@@ -5097,6 +5159,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control"
+    },
+    {
+      "id": "96537f9acc12bc",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+        }
+      ],
+      "publishedAt": "2026-07-27",
+      "source": "Hugging Face",
+      "title": "英伟达发布实时手术机器人生成式模拟器",
+      "summary": "英伟达在Hugging Face发布Cosmos-H-Dreams，一款面向手术机器人的实时、动作条件生成式模拟器。它把此前Cosmos-H-Surgical-Simulator的能力蒸馏为因果少步学生模型，经FlashDreams推理库加速，在单张RTX PRO 6000上从约10帧/秒提升到约160帧/秒，可闭环交互。模型针对dVRK桌面缝合训练，并与CMR Surgical、Cambridge Consultants合作接入Versius控制器。官方强调其仅为研发平台，不是诊断系统，也不能控制真实手术机器人。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "把手术世界模型从离线评估推进到实时闭环交互，可能降低机器人训练与评测对昂贵实体平台的依赖，但距离临床验证仍有明显距离。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达发布Cosmos-H-Dreams，定位为实时、动作条件的手术机器人生成式模拟器。它基于Cosmos-H-Surgical-Simulator，在Open-H-Embodiment数据上后训练，再蒸馏为因果学生模型，支持少步扩散，每帧潜变量最少两步去噪。通过FlashDreams的流式KV缓存、CUDA Graph捕获和模型编译，单张RTX PRO 6000上从约10帧/秒提升到约160帧/秒。发布版针对dVRK桌面缝合，输入初始RGB帧和机器人运动学流，自回归生成后续画面；训练数据包含针掉落、漏缝等失败与分布外片段。英伟达还与CMR Surgical和Cambridge Consultants合作，将其接入Versius控制器。官方明确它只是研发平台，不是诊断系统、术中影像替代品或真实机器人控制器。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成一个会“脑补”的手术练习游戏：你给一张画面和机械臂动作，它立刻生成接下来可能出现的画面，而且快到能边操作边看。过去训练手术机器人要么用真机，贵、慢、还可能弄坏器械；要么用传统模拟器，但组织会变形、针线会反光、还有烟雾遮挡，很难做得像。这个模型直接从真实视频和机械臂数据里学“动作会导致什么画面”，所以能批量制造罕见失败场景，让算法在虚拟环境里反复练。对普通人来说，短期内不会直接进手术室，但它可能让手术机器人研发和评测更快、更便宜，长期或有助于远程手术显示更稳、术前演练更充分。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics"
     },
     {
       "id": "a1476027536888",
@@ -5157,6 +5248,35 @@
       "originalTitle": "SymptomAI: Towards a conversational AI agent for everyday symptom assessment"
     },
     {
+      "id": "712e645398d8b6",
+      "url": "https://news.mit.edu/2026/dimitri-bertsekas-influential-computer-scientist-prolific-author-dies-0722",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/dimitri-bertsekas-influential-computer-scientist-prolific-author-dies-0722"
+        }
+      ],
+      "publishedAt": "2026-07-22",
+      "source": "MIT News",
+      "title": "MIT荣休教授Bertsekas逝世 享年83岁",
+      "summary": "麻省理工学院荣休教授、优化与强化学习领域重要学者Dimitri Bertsekas于6月3日在马萨诸塞州贝尔蒙特家中去世，享年83岁。他1971年获MIT系统科学博士学位，1979年回MIT任教至2019年，后转任亚利桑那州立大学。其研究横跨优化、控制、大规模计算、强化学习与人工智能，著有或合著20余部教材，并创办Athena Scientific出版社。MIT新闻称其写作清晰优雅，学生与同事评价他深刻影响了相关领域几代研究者。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "Bertsekas的教材与动态规划、强化学习研究影响了几代工程师和研究者，他的去世是优化与AI基础理论领域的重要损失，也提醒人们关注这些支撑现代AI的数学根基。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT新闻7月22日发布讣告，Dimitri Bertsekas于6月3日在贝尔蒙特家中去世，享年83岁。他1971年在MIT获系统科学博士学位，曾在斯坦福和伊利诺伊大学任教，1979年回MIT，2019年转至亚利桑那州立大学。其研究覆盖优化、控制、大规模计算、强化学习与人工智能，著有或合著20余部教材，并创办Athena Scientific出版社。多位学生和同事回忆其写作清晰、指导细致，称其著作塑造了相关领域。讣告未披露具体死因。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Bertsekas想成一位写“武功秘籍”的人：他未必天天上新闻，但很多做AI、做算法的人，是读着他的书学会动态规划、优化和强化学习的。强化学习后来成了AlphaGo、机器人控制等热门技术的基础之一。对普通人来说，这类基础研究不会立刻改变手机功能，但它决定了AI能不能更省算力、更稳地做决策。他的教材和培养学生的方式，相当于给后来者铺了路，影响会持续很久。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Professor Emeritus Dimitri Bertsekas, influential computer scientist and prolific author, dies at 83"
+    },
+    {
       "id": "b5de177ccc831b",
       "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
       "sources": [
@@ -5184,6 +5304,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Introducing Gemini 3.5 Flash Cyber"
+    },
+    {
+      "id": "53ad893ddb18c2",
+      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/our-approach-to-bioresilience/"
+        }
+      ],
+      "publishedAt": "2026-07-16",
+      "source": "Google DeepMind",
+      "title": "DeepMind与Isomorphic发布生物韧性方案",
+      "summary": "2026年7月16日，Google DeepMind与Isomorphic Labs联合发布生物韧性方案，称过去12个月已推进超15个政府、生物安全机构及研究团体合作，覆盖预防、检测、响应三环节。预防上沿用威胁建模、评估、缓解、监控四步流程，并尝试将SynthID水印用于生物领域；检测上以AlphaEvolve优化宏基因组测序算法；响应上向可信研究者开放模型，Isomorphic设专门团队快速设计医疗对策。方案未披露合作方名单、具体成效数据及水印技术落地时间，实际效果仍待验证。",
+      "category": "安全与规则",
+      "importance": 72,
+      "why": "前沿AI公司首次系统披露生物安全合作框架，涉及模型滥用防范与疫情响应，影响AI监管与生物安全政策走向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind与Isomorphic Labs于2026年7月16日发布联合生物韧性方案，称过去12个月推进超15个政府、生物安全组织及研究团体合作，目标一是防止威胁行为者滥用其模型，二是让政府、科学家和生物安全专家借助AI应对疫情。方案分三块：预防上对Gemini等模型执行威胁建模、评估、缓解、监控四步流程，并尝试把SynthID水印技术适配到生物学，帮助DNA合成商筛查AI生成的生物序列；检测上让编码智能体AlphaEvolve优化宏基因组测序数据的生产与分析算法，并探索用AlphaGenome和蛋白质功能注释从序列中识别病原体；响应上向可信研究者开放最新模型以加速疫苗设计，Isomorphic Labs另设专门团队，用其药物设计引擎快速设计医疗对策。仍不确定之处包括：15个合作方具体是谁、水印技术何时落地、优化算法带来多少检测提速，官方均未给出可核验数字。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：造出最强AI的人，一边给自家模型上锁，一边把钥匙交给医院和防疫部门。上锁是怕有人用AI设计有害病毒；交钥匙是希望AI帮忙更快发现疫情、设计疫苗和药物。对普通人来说，短期不会改变日常，但长期可能影响两件事：一是未来新发传染病的监测和应对速度，二是各国怎么监管AI在生物领域的用途。需要冷静看待的是，这更像一份路线图和合作意向，不是已经见效的成果。官方没有公布合作方名单和具体数据，水印筛查、算法提速都还在探索阶段。真正值得关注的是后续能否拿出可验证的检测或药物进展，以及这类“可信伙伴”机制会不会变成少数机构垄断AI生物能力的门槛。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Our approach to bioresilience"
     },
     {
       "id": "660a6401b7178f",
@@ -5273,6 +5422,35 @@
       "originalTitle": "Empowering India’s next generation of innovators with ATL Saathi"
     },
     {
+      "id": "5905604e7ae726",
+      "url": "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data/"
+        }
+      ],
+      "publishedAt": "2026-07-09",
+      "source": "Google Research",
+      "title": "谷歌发布SensorFM可穿戴健康基础模型",
+      "summary": "谷歌研究团队发布SensorFM，一个基于超一万亿分钟可穿戴传感器数据预训练的健康基础模型，数据来自500万同意参与者，覆盖100多国和20多款设备。模型采用自监督缺失感知重建，在35项健康任务中34项超越监督基线，并支持标签高效适配。在个人健康代理测试中，其预测效果与真实标签无显著差异。该研究展示单一通用生理表征替代众多定制模型的潜力，但尚未公布临床验证和实际部署细节。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "SensorFM首次将基础模型范式大规模应用于可穿戴健康数据，证明通用生理表征可跨心血管、代谢、睡眠和心理健康任务迁移，为预防性个性化健康提供新路径，但临床落地仍需验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队于2026年7月9日发布SensorFM，一个针对可穿戴健康数据的大型传感器基础模型。该模型在超过一万亿分钟的多模态传感器信号上预训练，数据来自500万同意参与者，覆盖100多个国家、美国全部50个州及20多款Fitbit和Pixel Watch设备，采集时间为2024年9月至2025年9月。模型输入34个一分钟聚合特征，涵盖光电容积描记、加速度计、皮肤电活动、皮肤温度和高度计五种模态。采用基于LSM-2和AIM框架的自监督重建，将真实缺失与人工掩码等同处理，使表征天生缺失感知。在35项健康任务中，冻结编码器的线性探针在34项上超越特征工程监督基线；最大模型SensorFM-B相比最小变体重建损失降低31%，分类AUC平均提升9%，回归皮尔逊系数提升21%。研究还构建了LLM代理“课堂”自动设计预测头，并集成到个人健康代理中，临床医生盲评显示其预测与真实标签效果无显著差异。目前该模型尚未公布临床验证、部署细节及潜在偏差评估。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，谷歌做了一个能“读懂”你手环数据的AI大脑。以前每个健康问题都要单独训练一个模型，费时费力；现在SensorFM像一个通用翻译器，把心跳、步数、体温等原始信号变成统一的身体语言，再稍加调整就能预测心脏病、糖尿病、抑郁、睡眠问题等。它最大的突破是学会了“脑补”缺失数据——手环没电或摘下时，它不瞎猜也不丢弃，而是把空白当成正常现象来学习。对普通人来说，未来你的手环可能不再只显示步数，而是直接告诉你“最近压力大，注意心脏”或“睡眠模式异常，建议就医”。不过，这还只是研究阶段，离真正看病开药方还有距离，别急着用它替代医生。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "SensorFM: Towards a general intelligence and interface for wearable health data"
+    },
+    {
       "id": "07610e55de6cc8",
       "url": "https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/",
       "sources": [
@@ -5300,6 +5478,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "NVIDIA Nemotron Achieves Benchmark-Leading Performance With LangChain Deep Agents Harness"
+    },
+    {
+      "id": "77d64de25479fa",
+      "url": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio"
+        }
+      ],
+      "publishedAt": "2026-07-07",
+      "source": "Hugging Face",
+      "title": "Hugging Face与SageMaker一键集成",
+      "summary": "Hugging Face与亚马逊SageMaker AI宣布深度链接集成，开发者在模型页点击“Customize”或“Deploy”即可直达SageMaker Studio，模型预加载、权限自动配置，并新增GPU配额可见性。此前需手动创建域、配置IAM权限、申请GPU配额，流程繁琐。新流程自动创建带AmazonSageMakerModelCustomizationCoreAccess策略的环境，支持SFT、DPO、RLVR、RLAIF等微调及端点部署。目前仅支持部分模型，具体覆盖范围未明确。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "降低开源模型从发现到企业部署的门槛，反映云厂商与模型社区加速融合，对开发者工作流有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face与亚马逊SageMaker AI推出深度链接集成。在支持的模型页面，开发者点击“Customize on SageMaker AI”或“Deploy on SageMaker AI”，即可直接进入SageMaker Studio对应工作流，模型上下文自动带入，无需重新搜索。新环境会自动创建并附加AmazonSageMakerModelCustomizationCoreAccess托管策略，覆盖监督微调、直接偏好优化、可验证奖励强化学习、AI反馈强化学习等任务，并支持部署到SageMaker AI或Amazon Bedrock端点。Studio界面还直接显示G5、G6等GPU实例的配额可用性，不足时可跳转申请。此前用户需手动创建域、配置IAM权限、申请配额。目前仅“受支持模型”可用，具体名单未在文中列出，实际覆盖范围仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去，你在Hugging Face上看到一个开源模型想试用，得先打开AWS控制台，建环境、配权限、申请GPU，折腾半天可能还没跑起来。现在相当于两家平台打通了“传送门”：点一下按钮，模型已经装好，权限也配齐，直接进实验室开跑。对普通开发者来说，试错成本大幅降低，不用再被云平台的配置细节卡住；对企业来说，开源模型能更顺畅地进入自己控制的云环境，既保留权重自主权，又省去搭建功夫。不过，这仍是云厂商绑定开发者的策略，目前也只覆盖部分模型，别指望所有模型都能一键直达。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "From Hugging Face to Amazon SageMaker Studio in one click"
+    },
+    {
+      "id": "1ec294ada9f40d",
+      "url": "https://huggingface.co/blog/microsoft/foundry-managed-compute",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/microsoft/foundry-managed-compute"
+        }
+      ],
+      "publishedAt": "2026-07-07",
+      "source": "Hugging Face",
+      "title": "微软Foundry托管计算上线Hugging Face模型",
+      "summary": "微软在Build 2026宣布，Foundry Managed Compute新增Hugging Face模型集合，每周刷新，一键部署到Azure托管GPU。权重预存Azure，运行时由微软构建并扫描，沿用企业安全、治理、可观测与计费。模型经合规与安全筛选，仅用Safetensors，避免不可信代码。部署无需访问Hugging Face Hub，可在私有网络内运行。仍不确定的是具体可用模型清单、定价与区域覆盖范围。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "把开源模型的发现、安全审查、运行时构建和GPU托管打包成企业级服务，降低部署门槛，可能改变企业采用开源模型的方式，并影响云厂商与模型社区的协作模式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软在Build 2026发布Foundry Managed Compute，并推出Hugging Face模型集合。该集合从Hugging Face生态挑选热门开源权重模型，每周刷新，可一键部署到Azure托管GPU。微软负责容器更新、运行时升级和安全补丁，支持vLLM、SGLang、TensorRT-LLM、NIM、TEI、llama.cpp等运行时。模型经许可证审查和代码检查，仅用Safetensors格式，避免加载时执行第三方Python。权重预存Azure，运行时镜像由微软签名发布，部署无需外联Hugging Face Hub。目前尚不清楚完整模型清单、各区域可用性及具体定价。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去企业想用开源大模型，得自己找模型、查许可证、搭环境、配GPU、打补丁，像自己买菜做饭。现在微软把Hugging Face上热门模型做成半成品套餐，放进自家云厨房，你点一下就能上桌，安全、计费、监控都包了。对普通人来说，企业用开源模型的门槛降低，可能更快出现更多基于开源模型的AI应用，价格也可能更灵活。但模型选择仍由微软筛选，不是所有开源模型都能上架，企业自主权与便利性之间需要权衡。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Hugging Face Models on Foundry Managed Compute"
     },
     {
       "id": "095312b62c326d",
