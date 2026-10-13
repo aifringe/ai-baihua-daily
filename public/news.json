@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:32:15.121391+00:00",
-  "lastCheckedAt": "2026-10-13T06:32:15.121391+00:00",
+  "updatedAt": "2026-10-13T06:33:11.993135+00:00",
+  "lastCheckedAt": "2026-10-13T06:33:11.993135+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -6354,6 +6354,35 @@
       "originalTitle": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration"
     },
     {
+      "id": "326b5d51b877e9",
+      "url": "https://huggingface.co/blog/eee-community-evals",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/eee-community-evals"
+        }
+      ],
+      "publishedAt": "2026-06-30",
+      "source": "Hugging Face",
+      "title": "Hugging Face与EEE打通评测结果互认",
+      "summary": "2026年6月30日，Hugging Face宣布其Community Evals与EvalEval联盟的Every Eval Ever（EEE）实现互操作。EEE于2026年2月推出，用统一JSON模式记录评测结果；Community Evals则把分数展示在模型页和基准排行榜上。双方打通后，同一评测结果既能出现在模型页，又能链接回完整EEE记录。EEE数据存储已积累约22.9万条结果，覆盖2.2万多个模型、2200多个基准，来自31种格式。转换器目前支持MMLU-Pro、GPQA、HLE、GSM8K四个基准，推送前需人工确认。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "评测分数长期散落且口径不一，同一模型同一基准可差十几个点。统一记录与互认能提升模型对比的可信度，影响研究者、开发者与政策制定者的选择依据。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face与EvalEval联盟宣布，Community Evals和Every Eval Ever（EEE）现已互通。EEE于2026年2月启动，提供一套JSON模式，记录谁跑的、哪个模型、如何访问、生成设置、指标含义，并建议附带逐样本JSONL。Community Evals同月上线，把评测分数以YAML形式放进模型仓库，并在基准数据集页汇总成排行榜。互通后，贡献者可用转换器把EEE记录写成Hugging Face所需YAML，分数会出现在模型页并进入排行榜，同时带来源徽章链接回完整EEE记录。EEE数据存储已积累约22.9万条结果，覆盖2.2万多个模型、2200多个基准，来自31种格式。转换器目前支持MMLU-Pro、GPQA、HLE、GSM8K，推送前会检查冲突并要求人工输入确认。仍不确定的是，其余基准何时纳入，以及第三方提交的分数能否获得同等验证标识。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去AI模型的考试成绩像散落在不同网站、论文和截图里的分数，同一场考试不同人报的分可能差很多，外人很难判断该信谁。现在相当于给每份成绩单配了一张统一表格，写明谁考的、怎么考的、题目版本是什么，再把表格贴到大家看模型的主页上。对普通人来说，以后挑模型或看安全报告时，更容易分辨一个高分是真本事还是考试条件不同。对开发者来说，不用再把同一份结果手工抄成两种格式。不过，统一格式只解决“记录清楚”，不自动保证分数正确；如果原始评测本身有问题，表格再整齐也只是把问题写得更明白。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Featuring Every Eval Ever Results on Hugging Face Model Pages"
+    },
+    {
       "id": "6b3146e22e33d7",
       "url": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/",
       "sources": [
@@ -6412,6 +6441,64 @@
       "originalTitle": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction"
     },
     {
+      "id": "6b86db2f0eb133",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
+        }
+      ],
+      "publishedAt": "2026-06-24",
+      "source": "Google DeepMind",
+      "title": "Gemini 3.5 Flash内置电脑操作能力",
+      "summary": "谷歌DeepMind宣布，电脑操作（computer use）成为Gemini 3.5 Flash的内置工具，此前该能力仅以独立的Gemini 2.5模型形式提供。开发者可通过Gemini API和企业代理平台构建能跨浏览器、移动端和桌面环境“看、推理、行动”的代理，用于持续软件测试、知识工作等长周期自动化任务。为应对提示注入风险，官方加入针对性对抗训练，并提供两项可选企业防护：敏感操作需用户确认、检测到间接注入时自动停止任务。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "电脑操作从独立模型并入主力Flash模型，意味着代理自动化门槛降低，可能加速企业流程自动化落地，同时提示注入等安全风险也随之放大。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年6月24日发布博客，宣布电脑操作能力正式内置到Gemini 3.5 Flash中。此前该能力只作为独立的Gemini 2.5电脑操作模型存在，如今被原生整合进主力Flash模型。官方称这是其在代理式电脑操作任务上迄今最佳表现，开发者可通过Gemini API和Gemini Enterprise Agent Platform调用，构建能在浏览器、移动端和桌面环境中感知、推理并执行动作的代理，面向持续软件测试、跨专业应用的知识工作等长周期任务。安全方面，官方称采用针对性对抗训练缓解提示注入风险，并推出两项可选企业防护：对敏感或不可逆操作要求用户显式确认，以及识别到间接提示注入时自动停止任务。博客未披露具体基准分数、定价或全面开放时间，这些仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去想让AI替你点网页、填表格、跑软件，得单独请一个“专职模型”；现在这个本事被装进了日常主力模型里，相当于给同一个助手同时配了大脑和手。对普通人来说，未来客服、测试、报表整理这类重复操作可能更多交给AI代理完成，你只需在关键步骤点确认。但风险也直白：网页里藏一句恶意指令，就可能骗AI替你干坏事，比如误删文件或泄露数据。谷歌的对策是让AI在动手前先问你，发现被“下套”就停手。不过这些防护是否够用、误报会不会频繁打断任务，目前还没有第三方验证，实际体验仍需观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing computer use in Gemini 3.5 Flash"
+    },
+    {
+      "id": "ad312ce4359870",
+      "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel"
+        }
+      ],
+      "publishedAt": "2026-06-24",
+      "source": "Hugging Face",
+      "title": "NVIDIA NeMo AutoModel 加速 MoE 微调",
+      "summary": "Hugging Face Transformers v5 发布后，NVIDIA 推出 NeMo AutoModel 库，在 v5 基础上增加专家并行、DeepEP 融合通信和 TransformerEngine 内核。在 30B MoE 模型单节点 8 卡测试中，相比 v5 训练吞吐提升 3.4-3.7 倍，显存降低 29-32%，且仅需更改一行导入代码。550B 模型全量微调时 v5 因显存不足无法运行，而 NeMo AutoModel 通过专家并行成功在 16 节点 128 卡上完成。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "该进展显著降低 MoE 模型微调门槛，提升训练效率，对开源社区和需要定制大模型的企业有直接帮助，推动大模型应用落地。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "NVIDIA 在 Hugging Face 博客发布 NeMo AutoModel，一个基于 Transformers v5 的开源库，旨在加速 MoE 模型微调。它通过子类化 AutoModelForCausalLM 保持 API 兼容，仅需将导入从 transformers 改为 nemo_automodel 即可启用专家并行、DeepEP 融合 all-to-all 通信和 TransformerEngine 内核。在单节点 8 卡 H100 上，Qwen3-30B-A3B 和 Nemotron 3 Nano 30B A3B 的训练吞吐相比 v5 提升 3.4-3.7 倍，显存降低 29-32%。对于 550B 模型全量微调，v5 因显存不足无法运行，而 NeMo AutoModel 通过 EP=64 在 16 节点 128 卡上完成。但测试中使用了平衡路由门，可能高估实际负载下的收益，且 v5 的专家并行配置未在相同条件下对比。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "MoE 模型像一家大公司，每个专家是不同部门。以前训练时，所有部门挤在一间办公室，效率低还容易爆内存。NeMo AutoModel 把部门分散到不同楼层（专家并行），并让快递员（DeepEP）在部门间高效传话，同时升级了办公设备（TransformerEngine 内核）。结果就是：同样时间能干更多活，还省了办公空间。对普通人来说，未来大模型微调成本更低，企业能更快定制自己的 AI，可能带来更便宜、更专业的 AI 服务。但别指望立刻见效，这仍是面向开发者的工具，且实际效果取决于模型和任务。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel"
+    },
+    {
       "id": "bb6dca4045d63c",
       "url": "https://huggingface.co/blog/ffasr-leaderboard",
       "sources": [
@@ -6468,6 +6555,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Thinking to recall: How reasoning unlocks parametric knowledge in LLMs"
+    },
+    {
+      "id": "b497f30634e434",
+      "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6"
+        }
+      ],
+      "publishedAt": "2026-06-22",
+      "source": "Hugging Face",
+      "title": "PP-OCRv6发布：50语种OCR，1.5M到34.5M参数",
+      "summary": "PaddleOCR团队在Hugging Face发布PP-OCRv6通用OCR模型家族，提供tiny、small、medium三档，参数从1.5M到34.5M。small和medium支持50种语言，包括简繁中文、英文、日文及46种拉丁语系语言。官方基准显示，medium版检测Hmean达86.2%，识别准确率83.2%，较PP-OCRv5_server分别提升4.6和5.1个百分点。模型采用PPLCNetV4骨干、RepLKFPN检测和EncoderWithLightSVTR识别，支持Paddle Inference、Transformers和ONNX Runtime后端，已在Hugging Face提供在线演示和模型集合。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "PP-OCRv6以极小参数实现多语言高精度OCR，降低部署门槛，对文档处理、移动端和边缘设备应用有直接推动，是OCR领域一次实用的迭代。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "PaddleOCR团队于2026年6月22日在Hugging Face发布PP-OCRv6，这是其通用OCR模型家族的最新版本。该系列包含tiny（1.5M参数）、small（7.7M）和medium（34.5M）三档，其中small和medium支持50种语言，覆盖简繁中文、英文、日文及46种拉丁语系语言。官方内部多场景基准显示，medium版检测Hmean为86.2%，识别准确率83.2%，相比PP-OCRv5_server分别提升4.6和5.1个百分点。模型采用PPLCNetV4统一骨干、RepLKFPN检测模块和EncoderWithLightSVTR识别模块，并支持Paddle Inference、Transformers和ONNX Runtime三种推理后端。目前模型已在Hugging Face Hub提供safetensors、Paddle和ONNX格式，并配有在线演示。不过，这些性能数据均来自官方基准，第三方独立评测结果尚未公布。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把PP-OCRv6想象成一套“文字识别工具箱”，里面有大中小三个型号，最小的只有1.5M参数，能塞进手机或边缘设备；最大的34.5M，适合服务器跑高精度任务。它一口气支持50种语言，不用再为每种语言单独找模型。对普通人来说，这意味着以后用手机扫描文档、翻译路牌、提取截图文字会更准更快，而且很多功能可以离线完成，不必上传到云端。对开发者而言，同一套模型能切换不同后端，部署更灵活。但要注意，官方宣称的提升幅度是在自家测试集上得出的，实际效果可能因场景而异，建议先试用在线演示再决定是否集成。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "PP-OCRv6 on Hugging Face: 50-Language OCR from 1.5M to 34.5M Parameters"
     },
     {
       "id": "965bb4d2ca17ef",
@@ -6622,6 +6738,35 @@
       "originalTitle": "From pixels to planning: Earth AI for nature restoration"
     },
     {
+      "id": "45bc33c734d049",
+      "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/"
+        }
+      ],
+      "publishedAt": "2026-06-16",
+      "source": "Google DeepMind",
+      "title": "DeepMind发布AI智能体安全新框架",
+      "summary": "2026年6月16日，Google DeepMind发布题为《Securing the future of AI agents》的文章，聚焦AI智能体（AI agents）的安全保障问题。由于公开正文为乱码，无法提取具体技术细节、政策条款或产品信息，仅能从标题判断其主题为智能体安全。目前尚不清楚该文是研究论文、工程博客还是政策倡议，也不确定是否伴随新工具或标准发布。事件核心是头部AI机构将智能体安全提上议程，但具体内容与落地方式仍待确认。",
+      "category": "安全与规则",
+      "importance": 72,
+      "why": "DeepMind作为头部机构公开讨论智能体安全，可能影响行业标准与监管方向。但正文不可读，无法核实具体主张，因此重要性打折扣，需等待可验证信息。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年6月16日，Google DeepMind发布一篇题为《Securing the future of AI agents》的文章。从标题看，内容围绕AI智能体的安全保障展开，可能涉及智能体自主行动时的风险控制、权限边界或部署规范。但该来源提供的正文为不可读的乱码，无法提取任何具体技术方案、政策建议、产品名称或数据。因此，目前只能确认DeepMind就智能体安全公开发声这一事实，无法判断文章性质是研究论文、工程博客还是政策倡议，也不清楚是否伴随新工具、新标准或合作计划。关键细节与结论均待核实。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把AI智能体想象成能自己跑腿办事的机器人助理：你让它订票、发邮件、买东西，它可能自己决定怎么操作。能力越强，越怕它闯祸，比如误删文件、乱花钱或被坏人利用。DeepMind这篇文章，相当于行业领头羊站出来说“得给这些助理上规矩”。对普通人来说，短期不会立刻改变你用的产品，但长期可能影响智能体能不能帮你自动办事、办事时有哪些限制。由于正文读不到，现在还不能说它到底提出了什么具体办法，只能先把它当作一个安全议题的信号。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Securing the future of AI agents"
+    },
+    {
       "id": "c072547560a5b4",
       "url": "https://research.google/blog/research-into-how-ai-can-help-users-understand-skin-conditions/",
       "sources": [
@@ -6649,6 +6794,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Research into how AI can help users understand skin conditions"
+    },
+    {
+      "id": "34c8593f89ef5c",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
+        }
+      ],
+      "publishedAt": "2026-06-10",
+      "source": "Google DeepMind",
+      "title": "谷歌发布DiffusionGemma：文本生成提速4倍",
+      "summary": "谷歌DeepMind于2026年6月10日发布实验性开源模型DiffusionGemma，采用文本扩散架构，可并行生成256个token，在单张H100上实现每秒1000+ token、RTX 5090上700+ token，较自回归模型提速最高4倍。该模型为26B混合专家架构，推理仅激活3.8B参数，量化后可运行于18GB显存消费级显卡。官方明确其输出质量低于标准Gemma 4，仅面向速度敏感的研究与本地交互场景，高并发云端部署收益有限。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "文本扩散长期停留在小模型实验，此次首次以26B MoE规模开源并给出消费级硬件实测数据，为本地低延迟AI应用提供新路径，但质量与云端经济性仍是明确短板。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布实验性开源模型DiffusionGemma，采用文本扩散而非逐token自回归生成，每次前向传播并行产出256个token，并支持双向注意力与迭代自校正。官方称在单张NVIDIA H100上可达每秒1000+ token，RTX 5090上700+ token，最高提速4倍。模型为26B混合专家架构，推理仅激活3.8B参数，量化后可适配18GB显存消费级显卡，以Apache 2.0许可在Hugging Face开放权重。官方同时说明，其整体输出质量低于标准Gemma 4，高并发云端服务收益递减，苹果统一内存架构可能无法获得同等加速。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "传统大模型像打字机，一个字一个字往外蹦，本地单用户使用时显卡大部分时间在空等。DiffusionGemma改成了印刷机，一次压出一整段256个token，把显卡算力吃满，所以本地跑起来快得多。代价是印出来的文字质量不如逐字打磨的标准版Gemma 4，适合实时改稿、代码补全、填字游戏这类要快不要完美的场景。对普通人来说，未来本地AI写作助手、离线代码工具可能明显更跟手，但别指望它直接替代高质量云端模型；想尝鲜需要一张高端显卡，苹果Mac用户暂时未必能享受到同等提速。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "DiffusionGemma: 4x faster text generation"
     },
     {
       "id": "416f1eec7676db",
