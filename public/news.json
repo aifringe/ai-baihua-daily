@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:39:09.189678+00:00",
-  "lastCheckedAt": "2026-10-13T06:39:09.189678+00:00",
+  "updatedAt": "2026-10-13T06:40:17.408384+00:00",
+  "lastCheckedAt": "2026-10-13T06:40:17.408384+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -8227,6 +8227,35 @@
       "originalTitle": "It's all about the angle: Your photos, re-composed"
     },
     {
+      "id": "a9b507c37a9192",
+      "url": "https://deepmind.google/blog/decoupled-diloco/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/decoupled-diloco/"
+        }
+      ],
+      "publishedAt": "2026-04-22",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Decoupled DiLoCo分布式训练新方法",
+      "summary": "谷歌DeepMind发布Decoupled DiLoCo，一种面向分布式AI训练的新方法，旨在提升训练韧性。该方法允许模型在多个数据中心异步训练，降低对高速互联的依赖。目前公开信息有限，具体性能提升和适用场景尚不明确。若有效，将降低大模型训练门槛，使更多机构能利用分散算力。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "分布式训练是突破算力瓶颈的关键，该方法若成熟将降低大模型训练门槛，影响AI研发格局。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年4月22日发布博客，介绍名为Decoupled DiLoCo的分布式AI训练新方法。该方法旨在实现更具韧性的分布式训练，允许模型在多个数据中心或分散节点上异步训练，减少对高速网络互联的依赖。目前公开信息仅为博客标题和少量元数据，具体技术细节、实验数据、性能提升幅度以及适用模型规模均未明确。该方法是否已在实际产品中应用、与现有方案（如DiLoCo）的差异等关键问题仍待澄清。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "训练大模型通常需要把成千上万块芯片连在一起，像一支配合紧密的乐队，但网络一卡就全乱。Decoupled DiLoCo相当于让乐手们各自练习，定期对一下乐谱，不用实时同步。这样即使部分节点掉线，训练也能继续。对普通人来说，未来AI模型可能训练得更快、成本更低，从而让更多公司推出便宜的AI服务。不过目前这只是实验室里的新方法，离实际应用还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Decoupled DiLoCo: A new frontier for resilient, distributed AI training"
+    },
+    {
       "id": "15e0d38d97945d",
       "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
       "sources": [
@@ -8345,6 +8374,41 @@
       "originalTitle": "QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard"
     },
     {
+      "id": "fc2ae7c68319ae",
+      "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers"
+        },
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/multimodal-sentence-transformers"
+        }
+      ],
+      "publishedAt": "2026-04-16",
+      "source": "Hugging Face",
+      "title": "Sentence Transformers 支持多模态嵌入模型微调",
+      "summary": "Hugging Face 于 2026 年 4 月发布技术博客，介绍如何用 Sentence Transformers 库训练和微调多模态嵌入与重排序模型。作者以视觉文档检索为例，微调 Qwen3-VL-Embedding-2B，在自有评估数据上 NDCG@10 从基线的 0.888 提升至 0.947，并称优于测试过的所有现有 VDR 模型，包括参数量达其 4 倍的模型。文章详述了模型加载、数据集格式、损失函数等组件，但结果仅基于作者自建评估集，未提供第三方复现或完整基准对比。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "多模态检索是 RAG 和搜索的关键环节，该教程降低了微调门槛，并展示小模型经领域微调可超越大模型，对开发者有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 工程师 Tom Aarsen 发布博客，演示用 Sentence Transformers 训练多模态嵌入和重排序模型。核心案例是微调 Qwen/Qwen3-VL-Embedding-2B 用于视觉文档检索，即根据文本查询检索文档页面截图。训练数据来自 LlamaIndex 多语言 VDR 数据集，作者预处理出 53,512 条英文样本，训练时使用查询、正例图像和一个硬负例组成三元组，损失函数为 CachedMultipleNegativesRankingLoss。微调后模型在作者自建评估集上 NDCG@10 达 0.947，基线为 0.888，并称超过所有对比的现有 VDR 模型，包括参数量 4 倍于它的模型。但评估集仅 300 条样本，且未列出具体对比模型名单，结果尚未经第三方复现。",
+          "text_length": 298
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把通用多模态模型想象成一个各科都及格但都不拔尖的学生，而微调就是针对某一门课开小灶。这次开小灶的科目是“看文档截图找答案”：你问“公司三季度营收多少”，模型要从几千张文档截图里挑出最相关的那页，还得看懂表格和图表。作者用五万多条英文样本给模型补课，结果在自家考卷上从 88.8 分提到 94.7 分，甚至超过了块头大四倍的模型。对普通人的影响是：以后企业可以用自己的文档数据训练专属检索模型，让内部搜索更准，而不必依赖通用大模型。不过目前成绩只是作者自测，实际效果还需更多独立验证。",
+          "text_length": 248
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers"
+    },
+    {
       "id": "ccc8f73fce7537",
       "url": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/",
       "sources": [
@@ -8372,37 +8436,6 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles"
-    },
-    {
-      "id": "fc2ae7c68319ae",
-      "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
-      "sources": [
-        {
-          "name": "Hugging Face",
-          "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers"
-        }
-      ],
-      "publishedAt": "2026-04-16",
-      "source": "Hugging Face",
-      "title": "Sentence Transformers 支持多模态嵌入模型微调",
-      "summary": "Hugging Face 于 2026 年 4 月发布技术博客，介绍如何用 Sentence Transformers 库训练和微调多模态嵌入与重排序模型。作者以视觉文档检索为例，微调 Qwen3-VL-Embedding-2B，在自有评估数据上 NDCG@10 从基线的 0.888 提升至 0.947，并称优于测试过的所有现有 VDR 模型，包括参数量达其 4 倍的模型。文章详述了模型加载、数据集格式、损失函数等组件，但结果仅基于作者自建评估集，未提供第三方复现或完整基准对比。",
-      "category": "模型进展",
-      "importance": 72,
-      "why": "多模态检索是 RAG 和搜索的关键环节，该教程降低了微调门槛，并展示小模型经领域微调可超越大模型，对开发者有直接参考价值。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "Hugging Face 工程师 Tom Aarsen 发布博客，演示用 Sentence Transformers 训练多模态嵌入和重排序模型。核心案例是微调 Qwen/Qwen3-VL-Embedding-2B 用于视觉文档检索，即根据文本查询检索文档页面截图。训练数据来自 LlamaIndex 多语言 VDR 数据集，作者预处理出 53,512 条英文样本，训练时使用查询、正例图像和一个硬负例组成三元组，损失函数为 CachedMultipleNegativesRankingLoss。微调后模型在作者自建评估集上 NDCG@10 达 0.947，基线为 0.888，并称超过所有对比的现有 VDR 模型，包括参数量 4 倍于它的模型。但评估集仅 300 条样本，且未列出具体对比模型名单，结果尚未经第三方复现。",
-          "text_length": 298
-        },
-        {
-          "heading": "换成人话",
-          "text": "可以把通用多模态模型想象成一个各科都及格但都不拔尖的学生，而微调就是针对某一门课开小灶。这次开小灶的科目是“看文档截图找答案”：你问“公司三季度营收多少”，模型要从几千张文档截图里挑出最相关的那页，还得看懂表格和图表。作者用五万多条英文样本给模型补课，结果在自家考卷上从 88.8 分提到 94.7 分，甚至超过了块头大四倍的模型。对普通人的影响是：以后企业可以用自己的文档数据训练专属检索模型，让内部搜索更准，而不必依赖通用大模型。不过目前成绩只是作者自测，实际效果还需更多独立验证。",
-          "text_length": 248
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers"
     },
     {
       "id": "f5afeabfec9288",
@@ -8492,6 +8525,95 @@
       "originalTitle": "AI-generated synthetic neurons speed up brain mapping"
     },
     {
+      "id": "757aaa019f35ad",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/"
+        }
+      ],
+      "publishedAt": "2026-04-15",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini 3.1 Flash TTS语音模型",
+      "summary": "2026年4月15日，谷歌DeepMind发布新一代文本转语音模型Gemini 3.1 Flash TTS，主打更强的可控性、表现力和语音质量。该模型引入音频标签功能，允许用户通过自然语言指令调整语气、语速和表达方式，支持超过70种语言，并具备多说话人对话能力。模型已在Gemini API、Google AI Studio、Vertex AI和Google Vids中开放预览。据官方数据，其在Artificial Analysis TTS排行榜上获得1211 Elo分数，被列入高性价比象限。所有生成音频均嵌入SynthID水印以标识AI生成内容。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "语音合成是AI落地的重要方向，该模型在可控性和多语言支持上有所提升，且通过水印技术回应了AI音频滥用风险，对开发者和内容创作者有直接影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年4月15日推出Gemini 3.1 Flash TTS，这是其最新一代文本转语音模型。核心更新包括：引入音频标签，用户可在文本中嵌入自然语言指令来控制语音风格、语速和表达；支持超过70种语言；具备原生多说话人对话能力。模型已在Gemini API和Google AI Studio面向开发者预览，在Vertex AI面向企业预览，并通过Google Vids向Workspace用户开放。官方称其在Artificial Analysis TTS排行榜上获得1211 Elo分数，并被列入“最具吸引力象限”。所有生成音频均嵌入SynthID水印。目前尚不清楚该模型在中文等具体语言上的实际表现，以及音频标签的完整指令集和限制。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，谷歌做了一个更听话的AI配音员。以前让AI念稿子，它可能一直一个调调；现在你可以在稿子里加类似“这里小声点”“这句加快”的指令，它就能照着演。它还支持70多种语言，能模拟多人对话，适合做有声书、游戏配音或企业客服。对普通人来说，以后听到的AI语音会更自然、更有感情，但也意味着AI假音频更难分辨——所以谷歌给每段音频都加了隐形水印，方便识别是不是AI生成的。目前它还在预览阶段，普通用户可能先在Google Vids里体验到。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech"
+    },
+    {
+      "id": "302b3e5e67a8b2",
+      "url": "https://huggingface.co/blog/Hcompany/holotab",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/Hcompany/holotab"
+        }
+      ],
+      "publishedAt": "2026-04-15",
+      "source": "Hugging Face",
+      "title": "HCompany发布HoloTab浏览器AI助手",
+      "summary": "HCompany于2026年4月15日发布HoloTab，一款基于其3月31日推出的Holo3计算机使用模型的Chrome扩展。用户用自然语言描述任务，代理即可在浏览器内自动导航网页、填写表单并做决策，无需技术配置。其“例程”功能允许用户录制一次操作，之后可重复运行或定时执行，适用于跨电商比价、职位筛选等重复性工作。该扩展免费开放，但文章未披露模型准确率、隐私数据处理方式及任务失败时的应对机制，这些仍是待确认信息。",
+      "category": "日常应用",
+      "importance": 72,
+      "why": "把此前偏研究性质的计算机使用AI直接做成免费浏览器插件，降低了普通人使用门槛，可能改变日常网页操作方式，但实际可靠性与隐私边界尚不明确。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "HCompany在Hugging Face发布文章，介绍Chrome扩展HoloTab。它基于该公司3月31日发布的Holo3计算机使用模型，能像人一样操作网页：用户描述目标后，代理在浏览器内导航界面、填写字段并做决策，视觉模型、动作规划和界面理解均在后台运行。核心功能是“例程”：用户开始录制，HoloTab实时捕捉点击和叙述，生成可重复运行或定时执行的自动化流程，例如跨二十个电商标签页比价并更新表格，或从多个招聘网站筛选职位并录入跟踪文档。文章称该扩展免费、无需技术技能，并给出Chrome商店链接。但未说明支持的语言、地区限制、任务成功率，也未解释录制的屏幕和操作数据如何存储与使用。评论区有用户反馈扩展未显示，官方回复建议精确搜索名称或使用链接。",
+          "text_en": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把HoloTab想成一个住在浏览器里的实习生：你演示一遍怎么在网站上点来点去，它记住流程，以后你一句话或到点它就自己干。好处是那些重复又耗时的网页杂活，比如比价、填表、找职位，可能不用你亲手做。对普通人来说，门槛确实低了，不用懂代码，装个插件就能试。但也要留个心眼：它要看你屏幕、学你操作，这些数据去哪了文章没说清；而且它自己点错按钮、填错信息时怎么办，也没有交代。所以现阶段更适合拿不涉及敏感账号的重复任务试水，别一上来就把网银或公司后台交给它。",
+          "text_en": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Meet HoloTab by HCompany. Your AI browser companion."
+    },
+    {
+      "id": "4b7acb24964fa6",
+      "url": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis"
+        }
+      ],
+      "publishedAt": "2026-04-15",
+      "source": "Hugging Face",
+      "title": "IBM发布VAKRA基准：AI代理企业任务表现差",
+      "summary": "IBM研究团队于2026年4月发布VAKRA基准，用于评估AI代理在企业环境中的推理与工具使用能力。该基准包含四个任务，覆盖8000多个本地API和62个领域，要求代理执行3-7步推理链，结合结构化API调用与非结构化文档检索。初步结果显示，现有模型在VAKRA上表现不佳，暴露出多步推理、工具选择和政策遵循等失败模式。VAKRA提供可执行环境和基于执行轨迹的评估框架，强调代理需通过有效推理过程获得正确答案。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "VAKRA基准填补了企业级AI代理评估的空白，通过可执行环境和多步推理任务，揭示了当前模型在复杂工作流中的不足，对推动代理研究具有重要指导意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM研究团队发布了VAKRA基准，旨在评估AI代理在企业环境中的推理和工具使用能力。该基准包含四个任务：API链式调用、工具选择、多跳推理以及多跳多源推理与政策遵循，共覆盖8000多个本地API和62个领域。任务要求代理执行3-7步推理链，结合结构化API调用和非结构化文档检索。评估采用基于执行轨迹的框架，不仅检查最终答案，还验证工具调用序列和中间结果。初步测试显示，现有模型在VAKRA上表现不佳，具体失败模式包括工具选择错误、推理链断裂和政策遵循失败。目前，VAKRA已公开数据集、排行榜和代码库，供研究者使用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "VAKRA就像给AI代理设置了一个企业模拟考场，考题是让AI像员工一样，通过调用各种软件接口和查阅文档，完成多步骤的工作流程。比如，先查数据库，再筛选信息，最后给出答案。结果发现，现在的AI代理就像刚入职的新人，经常搞错步骤、用错工具，或者忘记遵守公司规定。这意味着，虽然AI在单项任务上很厉害，但面对真实企业中的复杂任务时，还不太靠谱。对普通人来说，未来如果企业用AI代理处理业务，可能还需要人类监督和纠错，短期内AI还无法完全独立完成复杂工作。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents"
+    },
+    {
       "id": "321d179ca5268e",
       "url": "https://research.google/blog/towards-developing-future-ready-skills-with-generative-ai/",
       "sources": [
@@ -8519,6 +8641,37 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Towards developing future-ready skills with generative AI"
+    },
+    {
+      "id": "281297e7c5b7dd",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/"
+        }
+      ],
+      "publishedAt": "2026-04-13",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini Robotics-ER 1.6",
+      "summary": "谷歌DeepMind发布Gemini Robotics-ER 1.6，称其通过增强具身推理能力，可支撑真实世界机器人任务。但提供的正文为乱码，无法核实具体能力、测试数据、合作方或发布时间等细节。事件本身属于机器人基础模型迭代，方向是让模型更好理解物理环境并规划动作。由于关键信息不可读，目前只能确认发布动作，不能确认性能提升幅度或落地范围。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "机器人基础模型是AI从屏幕走向物理世界的关键路径，谷歌此次更新可能影响具身智能竞争格局，但正文乱码使实际进展无法验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布Gemini Robotics-ER 1.6，标题称其通过增强具身推理为真实世界机器人任务提供动力。但输入正文几乎全是乱码，无法提取具体功能、基准测试、合作机器人厂商或发布时间等关键细节。因此只能确认存在一次版本更新，不能确认推理能力提升多少、支持哪些机器人形态、是否开放API。仍不确定之处包括：该版本与上一代的具体差异、是否已在实际场景部署、以及是否有第三方验证。严谨起见，不应根据标题推断性能。",
+          "text_en": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把机器人想象成一个刚学会走路的孩子，过去它只能听懂“往前走”，现在谷歌想让它更懂“把桌上那杯水拿过来，别碰倒花瓶”。Gemini Robotics-ER 1.6就是给机器人换了个更会看、更会想的大脑，让它在真实环境里少犯傻。对普通人来说，短期不会立刻买到这样的机器人，但长期看，工厂、物流、家庭服务机器人会变得更灵活，能处理没见过的任务。不过这次正文乱码，我们没法知道它到底进步了多少，先别急着兴奋。",
+          "text_en": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini Robotics-ER 1.6: Powering real-world robotics tasks through enhanced embodied reasoning"
     },
     {
       "id": "0b3b78bf445dcb",
@@ -8550,6 +8703,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "ConvApparel: Measuring and bridging the realism gap in user simulators"
+    },
+    {
+      "id": "e2e5378dde946b",
+      "url": "https://huggingface.co/blog/waypoint-1-5",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/waypoint-1-5"
+        }
+      ],
+      "publishedAt": "2026-04-09",
+      "source": "Hugging Face",
+      "title": "Waypoint-1.5发布：消费级显卡可跑实时世界模型",
+      "summary": "Overworld发布实时视频世界模型Waypoint-1.5，延续初代Waypoint的本地可运行思路。新版本提供720p与360p两档模型，在RTX 3090至5090等桌面显卡上最高可达720p、60FPS，360p档面向游戏本并计划支持Apple Silicon Mac。训练数据量约为初代的100倍，并采用更高效的视频建模以减少帧间冗余计算。用户可通过本地客户端Biome或浏览器端Overworld Stream体验。官方未公布具体延迟、显存占用等指标，实际体验仍待验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "世界模型从数据中心走向消费级硬件，是生成式AI落地交互娱乐与仿真工具的关键一步；但官方未给出延迟、显存等硬指标，实际可用性仍需第三方验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Overworld于2026年4月9日发布Waypoint-1.5，定位为可在普通消费级硬件上本地运行的实时视频世界模型。相比初代，新版本分两档：720p模型面向较高性能硬件，360p模型面向更广设备，包括游戏本，并称将支持Apple Silicon Mac。官方称在RTX 3090至5090上可实时生成最高720p、60FPS环境，训练数据量约为初代100倍，并引入更高效的视频建模技术以减少帧间冗余计算。体验方式有两种：本地通过Biome客户端运行，或在浏览器用Overworld Stream直接试用。官方同时提供World Engine推理库及多个第三方客户端。目前尚不确定的是：官方未披露具体延迟、显存占用、生成时长上限及画质稳定性数据，360p档在低端设备上的实际帧率也未给出，这些都需要第三方实测确认。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去这类“AI生成可探索世界”的模型，基本要跑在大型GPU集群上，普通人只能看演示视频。Waypoint-1.5想做的事，是把这套东西塞进你家里那台游戏电脑：你动一下视角，画面就实时跟着变，而不是等它慢慢渲染。可以把它理解成“能走进去的AI视频”，不是被动看一段生成画面，而是像玩游戏一样在里面移动、探索。对普通人的影响有两面：一方面，做小游戏、虚拟场景、创意工具的门槛可能明显降低，不用租云算力；另一方面，官方目前只给了硬件档位和帧率目标，没给延迟和显存这些真正决定“卡不卡”的数字，所以别急着把旧笔记本翻出来，等实测再说。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs"
     },
     {
       "id": "5f4680a3963bb0",
