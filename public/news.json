@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T04:40:44.910970+00:00",
-  "lastCheckedAt": "2026-10-13T04:40:44.910970+00:00",
+  "updatedAt": "2026-10-13T06:07:25.482586+00:00",
+  "lastCheckedAt": "2026-10-13T06:07:25.482586+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -6526,6 +6526,64 @@
       "originalTitle": "Project Genie: Experimenting with infinite, interactive worlds"
     },
     {
+      "id": "8e6380fc0361a1",
+      "url": "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/"
+        }
+      ],
+      "publishedAt": "2026-01-28",
+      "source": "Google Research",
+      "title": "谷歌研究：多智能体并非越多越好",
+      "summary": "谷歌研究团队对180种智能体配置进行受控评测，提出首个智能体系统扩展的量化原则。结果显示，多智能体协作在可并行任务（如金融推理）中比单智能体提升约81%，但在需严格顺序推理的任务（如规划）中性能下降39%至70%。研究还发现独立多智能体系统会将错误放大至17.2倍，而集中式架构可控制在4.4倍。团队另提出预测模型，对87%的未见任务能选出最优架构。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "该研究用大规模受控实验挑战“智能体越多越好”的行业直觉，给出可量化的架构选择依据，并揭示错误放大这一部署风险，对智能体产品设计有直接指导意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队在2026年1月发布论文，对180种智能体配置做受控评测，覆盖单智能体、独立、集中式、去中心化和混合五种架构，并在金融推理、网页导航、规划和工具使用四类基准上测试GPT、Gemini和Claude三个模型家族。核心发现是：多智能体在可并行任务上收益显著，金融推理中集中式协调比单智能体提升80.9%；但在顺序推理任务上，所有多智能体变体性能下降39%至70%。研究还量化了错误放大：独立多智能体系统错误传播达17.2倍，集中式架构为4.4倍。团队同时提出预测模型，对87%的未见任务能识别最优架构。论文未披露各基准的绝对分数和具体任务规模，预测模型R²为0.513，解释力仍有限。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去很多人觉得，AI干活像搬砖，人多力量大，多叫几个智能体分工就能干得更好。这项研究相当于做了个对照实验：如果任务能拆成互不依赖的小块，比如同时查营收、成本和市场，多智能体确实快得多；但如果任务像拧螺丝，必须一步接一步，多智能体反而互相打断，越帮越忙。更关键的是，没人统一把关时，一个智能体犯的错会被放大十几倍传到最终结果；有个“工头”居中协调，错误就少得多。对普通人来说，这意味着未来AI产品不会盲目堆智能体，而是按任务类型选架构，可能更稳、更省，也更少出现连环错误。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Towards a science of scaling agent systems: When and why agent systems work"
+    },
+    {
+      "id": "ed891771925301",
+      "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2"
+        }
+      ],
+      "publishedAt": "2026-01-27",
+      "source": "Hugging Face",
+      "title": "中国开源AI转向系统级竞争",
+      "summary": "2025年1月DeepSeek R1发布后，中国开源AI生态从单一模型转向系统级竞争。Hugging Face博客指出，MoE架构成为默认选择，多模态与智能体并行发展，小模型受青睐，Apache 2.0等宽松许可证普及，国产硬件从推理向训练渗透。但算力约束仍威胁扩展，智谱AI据报因算力紧张限制使用。竞争焦点从模型性能转向系统设计，即模型、工具与工程协同交付。",
+      "category": "行业变化",
+      "importance": 85,
+      "why": "中国开源AI的架构与硬件选择正重塑全球生态，从模型性能竞争转向系统设计，影响开发者、企业与政策制定者。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face博客分析指出，自2025年1月DeepSeek R1发布后，中国开源AI生态发生结构性转变。MoE架构成为主流，Kimi K2、MiniMax M2、Qwen3等均采用。多模态与智能体方向自2025年2月起并行推进，StepFun、腾讯等发布音视频及3D模型。0.5B-30B小模型因易部署受青睐，大MoE模型作为教师模型蒸馏能力。Apache 2.0成为默认许可证。国产硬件从推理向训练渗透，如DeepSeek-V3.2-Exp获华为昇腾和寒武纪零日支持，蚂蚁Ling、百度Qianfan-VL、智谱GLM-Image等披露使用国产芯片训练。但算力约束仍存，智谱AI据报限制使用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前中国AI公司比的是谁家模型跑分高，现在比的是谁能把整套系统搭得又稳又便宜。就像造车，不再只比发动机马力，而是比底盘、电控、充电网络能不能协同。MoE架构像智能配电箱，按任务难度分配算力，不浪费电。小模型像家用轿车，好开好停；大模型像卡车，拉货强但费油，于是用卡车教轿车。宽松许可证像开放专利，大家随便改随便用。国产芯片开始参与训练，好比用国产发动机跑长途，虽然还在追赶，但已能上路。对普通人来说，未来AI工具会更便宜、更本地化，手机和电脑上就能跑，但算力紧张可能让部分服务暂时受限。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek"
+    },
+    {
       "id": "908dd0753141a0",
       "url": "https://research.google/blog/atlas-practical-scaling-laws-for-multilingual-models/",
       "sources": [
@@ -6553,6 +6611,122 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "ATLAS: Practical scaling laws for multilingual models"
+    },
+    {
+      "id": "cdd203a7561c21",
+      "url": "https://research.google/blog/small-models-big-results-achieving-superior-intent-extraction-through-decomposition/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/small-models-big-results-achieving-superior-intent-extraction-through-decomposition/"
+        }
+      ],
+      "publishedAt": "2026-01-22",
+      "source": "Google Research",
+      "title": "谷歌小模型分解法实现端侧意图理解",
+      "summary": "谷歌研究团队在EMNLP 2025发表论文，提出一种分解式工作流，让小型多模态模型在设备端理解用户界面交互轨迹中的意图。该方法先对每个屏幕交互独立摘要，再从摘要序列中提取意图，并采用Bi-Fact原子事实评估。在移动端和网页轨迹上，该方法优于思维链提示和端到端微调，且Gemini 1.5 Flash 8B达到与Gemini 1.5 Pro相当的效果，成本与速度更优。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "该研究证明小模型通过任务分解可在端侧实现接近大模型的意图理解，降低延迟、成本与隐私风险，为移动设备上的智能助手功能提供可行路径。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌软件工程师Danielle Cohen和Yoni Halpern于2026年1月22日发布博客，介绍在EMNLP 2025展示的论文《Small Models, Big Results: Achieving Superior Intent Extraction Through Decomposition》。研究针对从UI交互轨迹理解用户意图的任务，提出两阶段分解方法：第一阶段用小型多模态LLM对每个屏幕交互独立生成摘要，包括屏幕上下文、用户动作和对意图的推测；第二阶段用微调小模型从摘要序列中提取单句意图，并丢弃推测内容、清理训练标签以避免幻觉。评估采用Bi-Fact方法，将意图拆解为原子事实计算精确率、召回率和F1。在移动端和网页轨迹上，该方法优于思维链提示和端到端微调，Gemini 1.5 Flash 8B达到与Gemini 1.5 Pro相当的效果。论文未披露具体数据集规模、延迟降低幅度和能耗数据，端侧部署的完整性能仍有待验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像教一个刚入行的助理看懂你在手机上的操作：不要求他一次记住所有屏幕，而是每看一屏就写一句笔记，最后根据笔记猜你想干什么。这样小模型也能干大模型的活，不用把数据传到云端，反应更快、更省钱，隐私也更安全。对普通人来说，未来手机助手可能更懂你——比如你刚搜了欧洲音乐节又查去伦敦的机票，它就能主动推荐伦敦那几天的演出。不过目前这只是研究阶段，离真正装进手机还有距离，而且小模型偶尔会漏掉细节或猜错，实际体验仍需打磨。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Small models, big results: Achieving superior intent extraction through decomposition"
+    },
+    {
+      "id": "2cc75063d0d1df",
+      "url": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face"
+        }
+      ],
+      "publishedAt": "2026-01-21",
+      "source": "Hugging Face",
+      "title": "IBM推出AssetOpsBench工业AI智能体基准",
+      "summary": "IBM Research发布AssetOpsBench，一个面向工业资产运维的AI智能体评估基准，包含230万传感器数据点、140多个场景、4200份工单和53种故障模式。该基准从任务完成、检索准确性、结果验证、序列正确性、清晰度和幻觉率六个维度评分，并引入轨迹级故障分析。在225名用户提交的300多个智能体测试中，表现最好的GPT-4.1规划得分68.2、执行得分72.4，无模型达到85分的部署就绪阈值。多智能体协作时准确率从单智能体的68%降至47%，暴露出协调失败等关键问题。",
+      "category": "行业变化",
+      "importance": 85,
+      "why": "该基准首次系统量化工业AI智能体的真实能力短板，揭示多智能体协作准确率骤降、幻觉完成等高风险问题，为行业部署设定了明确门槛，对推动AI在安全关键场景的可靠应用具有指导意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM Research于2026年1月21日发布AssetOpsBench，一个针对工业资产运维的AI智能体评估基准。该基准包含230万传感器遥测点、140多个精选场景、4200份工单和53种结构化故障模式，覆盖异常检测、故障推理、KPI预测和工单摘要等任务。评估从任务完成、检索准确性、结果验证、序列正确性、清晰度和幻觉率六个维度打分，并利用TrajFM管道分析智能体执行轨迹中的失败模式。在225名用户提交的300多个智能体测试中，GPT-4.1规划得分68.2、执行得分72.4，表现最佳，但无模型达到85分的部署就绪阈值。多智能体协作准确率从单智能体的68%降至47%。失败分布显示，无效错误恢复占31.2%，夸大完成占23.8%。目前该基准为开源项目，支持社区提交智能体评估。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给工业AI智能体安排了一场“驾照考试”，不仅看它能不能完成任务，还要看它会不会撒谎、遇到突发情况怎么处理。考试结果不太乐观：最聪明的AI也只考了70多分，离安全上路的85分还差得远。更麻烦的是，多个AI一起干活时，成绩反而从68分掉到47分，就像团队合作时互相拖后腿。对普通人来说，这意味着工厂、电厂等关键设施暂时还不能完全交给AI自动运维，因为AI可能“不懂装懂”，在没搞清状况时就报告“一切正常”。这项基准的价值在于提前暴露了这些风险，推动开发者改进AI的可靠性，未来我们才能更放心地让AI辅助甚至接管危险或复杂的工业操作。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality"
+    },
+    {
+      "id": "69cdb5634f5ed9",
+      "url": "https://research.google/blog/next-generation-medical-image-interpretation-with-medgemma-15-and-medical-speech-to-text-with-medasr/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/next-generation-medical-image-interpretation-with-medgemma-15-and-medical-speech-to-text-with-medasr/"
+        }
+      ],
+      "publishedAt": "2026-01-13",
+      "source": "Google Research",
+      "title": "谷歌发布MedGemma 1.5与医疗语音模型MedASR",
+      "summary": "谷歌研究团队更新开源医疗AI模型MedGemma至1.5版（4B参数），新增CT、MRI和全切片病理等高维医学影像支持，并改进胸部X光纵向对比、解剖定位和化验报告结构化提取。官方称CT病灶分类准确率提升3%、MRI提升14%，MedQA提升5%，EHR问答提升22%。同时发布开源医疗语音转文字模型MedASR，胸部X光口述词错率5.2%，优于Whisper large-v3。模型免费供研究和商用，并启动10万美元Kaggle挑战赛。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "开源医疗多模态模型首次支持高维影像，降低开发者门槛，可能加速影像辅助诊断和临床文档自动化落地，但官方强调仍需针对具体场景验证和微调。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌发布MedGemma 1.5 4B，在原有2D医学图像和文本能力上，新增CT、MRI三维体数据和全切片病理图像解读，并支持胸部X光时间序列对比、解剖定位及化验报告结构化提取。官方内部基准显示，CT病灶分类绝对准确率从58%升至61%，MRI从51%升至65%，MedQA从64%升至69%，EHR问答从68%升至90%。同时推出开源医疗语音识别模型MedASR，胸部X光口述词错率5.2%，对比Whisper large-v3的12.5%；多科室口述基准为5.2%对28.2%。模型免费开放，并启动奖金10万美元的Kaggle挑战赛。官方未披露外部独立复现结果，且强调模型不可未经适配直接临床使用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把MedGemma 1.5想成一个刚补完影像课的医学生：以前只会看胸片和皮肤照片，现在能翻CT、MRI的“切片书”，还能把同一病人多次胸片串起来看变化，顺手把化验单整理成表格。MedASR则像专门练过医生口音的听写员，医生口述报告时错字更少。对普通人来说，短期不会直接拿它看病，但医院和创业公司可以基于它开发辅助工具，未来可能让影像初筛、病历录入更快。不过它仍是“半成品”，需要开发者用本地数据再训练和验证，不能替代医生诊断。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Next generation medical image interpretation with MedGemma 1.5 and medical speech to text with MedASR"
+    },
+    {
+      "id": "83fb5439cd58b2",
+      "url": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning"
+        }
+      ],
+      "publishedAt": "2026-01-05",
+      "source": "Hugging Face",
+      "title": "英伟达发布Cosmos Reason 2推理视觉语言模型",
+      "summary": "英伟达发布开源推理视觉语言模型Cosmos Reason 2，面向机器人与物理AI，提供2B和8B两种参数规模，支持从边缘到云端部署。相比上一代，其上下文长度从16K提升至256K，新增OCR、2D/3D点定位、边界框坐标与轨迹输出等能力，并称在Physical AI Bench等榜单上位列开源模型第一。优步正探索将其用于自动驾驶训练视频标注，Salesforce用于工作场所安全分析。模型已在Hugging Face开放下载，后续将登陆AWS、谷歌云和微软Azure。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该模型把视觉理解、时序推理与轨迹输出结合，直接服务机器人和自动驾驶等物理AI场景，且以开源形式发布，可能降低相关应用的开发门槛。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达发布Cosmos Reason 2，定位为面向物理AI的开源推理视觉语言模型。官方称其精度超过上一代，并在Physical AI Bench和Physical Reasoning榜单上成为视觉理解类开源模型第一。模型提供2B和8B两种规模，支持边缘到云端部署；上下文输入从上一代的16K提升到256K，新增OCR、2D/3D点定位、边界框坐标、轨迹数据和标记理解等能力。官方给出的应用包括视频分析智能体、数据标注与批评、机器人规划推理。优步正探索将其用于自动驾驶训练视频的可搜索字幕，Salesforce用于机器人拍摄视频的安全合规分析。模型已在Hugging Face开放下载，并称将陆续上线AWS、谷歌云和微软Azure。上述榜单排名和性能提升幅度均来自英伟达官方，尚待第三方独立验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Cosmos Reason 2理解成给机器人装了一个更会“看图想事”的大脑。以前的视觉模型大多只能认出画面里有什么，比如“这是车、那是人”；新模型则试图进一步判断物体怎么动、下一步该做什么，甚至直接给出机械臂该走的轨迹坐标。对普通人来说，短期不会立刻改变生活，但这类模型若成熟，会先影响自动驾驶训练、工厂安全监控、视频检索和机器人操作。比如优步用它给行车视频自动打标签，能更快找出危险驾驶片段；企业用它分析监控视频，可减少人工回看。需要注意的是，官方宣传的“榜单第一”和性能提升目前只是厂商说法，实际好不好用，还要看开发者上手后的反馈和第三方评测。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI"
     },
     {
       "id": "ca82a7731d9ae1",
