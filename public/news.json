@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:28:22.170113+00:00",
-  "lastCheckedAt": "2026-10-13T06:28:22.170113+00:00",
+  "updatedAt": "2026-10-13T06:29:20.315424+00:00",
+  "lastCheckedAt": "2026-10-13T06:29:20.315424+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8229,6 +8229,35 @@
       "originalTitle": "Train AI models with Unsloth and Hugging Face Jobs for FREE"
     },
     {
+      "id": "24717f621aa361",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
+        }
+      ],
+      "publishedAt": "2026-02-19",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini 3.1 Pro，推理能力大幅提升",
+      "summary": "2026年2月19日，谷歌发布Gemini 3.1 Pro，作为Gemini 3系列的核心智能升级，面向开发者、企业和消费者开放。该模型在ARC-AGI-2基准上获得77.1%的验证分数，是3 Pro推理性能的两倍多，旨在处理复杂推理任务。即日起，开发者可通过Gemini API、AI Studio等预览使用，企业可通过Vertex AI接入，消费者可在Gemini应用和NotebookLM中使用，其中Pro和Ultra订阅用户享有更高限额。谷歌表示此次预览旨在验证更新，并推进代理工作流等领域的进一步改进。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "Gemini 3.1 Pro的发布标志着AI核心推理能力的显著提升，77.1%的ARC-AGI-2分数是前代的两倍多，可能推动复杂问题解决和代理工作流的发展，对开发者和企业应用影响深远。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌于2026年2月19日推出Gemini 3.1 Pro，这是Gemini 3系列的核心智能升级。该模型在ARC-AGI-2基准上获得77.1%的验证分数，是3 Pro推理性能的两倍多，专为需要高级推理的复杂任务设计。即日起，开发者可通过Gemini API、AI Studio、Gemini CLI、Antigravity和Android Studio预览使用；企业可通过Vertex AI和Gemini Enterprise接入；消费者可在Gemini应用和NotebookLM中使用，Pro和Ultra订阅用户享有更高限额。谷歌表示此次预览旨在验证更新，并推进代理工作流等领域的改进，但未公布具体定价或全面可用时间。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，谷歌给AI大脑做了一次大升级，让它更会“动脑子”解决难题。比如以前只能回答简单问题，现在能帮你把复杂数据整理成图表、生成动画代码，甚至设计互动网站。对普通人来说，如果你用Gemini应用或NotebookLM，可能会发现它更聪明了，但高级功能可能需要付费订阅。对开发者而言，可以提前试用这个更强模型来开发新应用。不过目前还是预览版，正式版可能还有变化，别急着把所有工作都交给它。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini 3.1 Pro: A smarter model for your most complex tasks"
+    },
+    {
       "id": "31f053c94d55b1",
       "url": "https://huggingface.co/blog/gradio-html-one-shot-apps",
       "sources": [
@@ -8256,6 +8285,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "One-Shot Any Web App with Gradio's gr.HTML"
+    },
+    {
+      "id": "119490edde2c15",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/"
+        }
+      ],
+      "publishedAt": "2026-02-18",
+      "source": "Google DeepMind",
+      "title": "Gemini应用上线Lyria 3音乐生成功能",
+      "summary": "Google DeepMind于2026年2月18日宣布，Gemini应用开始测试Lyria 3音乐生成模型。用户输入文字描述或上传图片、视频，即可在数秒内生成30秒带歌词或纯音乐的曲目，并自动配封面图。该功能面向18岁以上用户，支持英语、德语、西班牙语、法语、印地语、日语、韩语和葡萄牙语，订阅用户额度更高。所有生成音乐均嵌入SynthID水印，Gemini同时新增音频AI检测能力。官方称该功能用于原创表达，不模仿现有艺人，但承认过滤机制并非万无一失。",
+      "category": "日常应用",
+      "importance": 72,
+      "why": "音乐生成从专业工具走向大众应用，普通人可用文字或照片快速创作配乐，同时SynthID水印和音频检测为AI内容识别提供新手段，影响创作与版权生态。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind在Gemini应用中推出Lyria 3音乐生成模型的测试版。用户可输入文字提示，或上传照片、视频，让Gemini生成30秒的歌曲，包含自动生成的歌词、人声和伴奏，并配由Nano Banana生成的封面图。官方称Lyria 3相比前代在歌词生成、风格与节奏控制、音乐复杂度上有提升。该功能面向18岁以上用户，支持八种语言，桌面端先行，移动端随后几天上线，Google AI Plus、Pro和Ultra订阅者享有更高使用额度。所有生成曲目嵌入SynthID水印，Gemini新增音频验证能力，可判断文件是否由Google AI生成。官方表示训练时考虑了版权与合作伙伴协议，提示中若点名特定艺人，只会作为风格灵感，不会直接模仿，但承认过滤并非万无一失。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以后在Gemini里打一句话或传张照片，就能马上得到一首30秒的小歌，还自带封面，像给生活配了个自动BGM。对普通人来说，做生日歌、宠物视频配乐或发朋友圈的素材门槛几乎降到零。但每首歌都藏了SynthID隐形水印，Gemini也能帮你查一段音频是不是AI做的，相当于给AI音乐贴了防伪码。官方说不会照搬某位歌手的嗓音，可实际效果仍可能接近某种风格，版权边界还在摸索。对音乐人而言，这既是新工具也是竞争；对平台和听众，识别AI内容会越来越重要。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "A new way to express yourself: Gemini can now create music"
     },
     {
       "id": "4e0bcba85dced8",
@@ -8345,6 +8403,35 @@
       "originalTitle": "Teaching AI to read a map"
     },
     {
+      "id": "fc0327c6027c6f",
+      "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills"
+        }
+      ],
+      "publishedAt": "2026-02-13",
+      "source": "Hugging Face",
+      "title": "Hugging Face 推出 CUDA 内核智能体技能",
+      "summary": "Hugging Face 发布 CUDA 内核智能体技能，让 Claude 和 Codex 等编码智能体自动编写生产级 CUDA 内核。在 H100 上针对 diffusers 的 LTX-Video 和 transformers 的 Qwen3-8B 测试，智能体生成了 RMSNorm 等内核，包含 PyTorch 绑定和基准测试。隔离测试中 RMSNorm 平均加速约 1.9 倍，端到端视频生成加速 6%，结合 torch.compile 后达 43%。技能与 Kernel Hub 互补，简化开发与分发，但端到端提升受内核占比限制。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "该技能降低 CUDA 内核开发门槛，让 AI 智能体自动生成高性能内核，可能加速模型推理优化，对开发者和 AI 基础设施有实用价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 构建了一个智能体技能，教导编码智能体编写生产级 CUDA 内核。技能约 550 个 token，包含 GPU 优化指南、集成模式和模板。团队将 Claude 和 Codex 指向两个真实目标：diffusers 的 LTX-Video 视频生成管道和 transformers 的 Qwen3-8B 语言模型。智能体生成了可工作的内核，包括 RMSNorm、RoPE 3D 等，并配有正确的 PyTorch 绑定和基准测试。在 H100 上隔离测试中，RMSNorm 内核平均加速 1.88 倍（LTX-Video）和 1.94 倍（Qwen3-8B）。端到端视频生成中，优化内核带来 6% 加速，结合 torch.compile 后达 43%。但内核仅占计算约 5%，整体提升有限。技能已开源，可通过 kernels skills add 安装。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给 AI 编程助手一本《CUDA 内核开发秘籍》，让它能自动写出原本需要专家数天才能完成的高性能代码。以前，写 CUDA 内核是少数专家的专利，现在普通开发者也能让 AI 代劳。对普通人来说，未来你用的 AI 视频生成或聊天模型可能会因此跑得更快、更省电。不过，目前优化只针对特定部分，整体提速有限，就像给汽车换了更好的火花塞，但发动机其他部分没变。长远看，这种技能让 AI 自己优化 AI，可能加速整个行业进步。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Custom Kernels for All from Codex and Claude"
+    },
+    {
       "id": "720d05f84e1686",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
       "sources": [
@@ -8372,6 +8459,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Gemini 3 Deep Think: Advancing science, research and engineering"
+    },
+    {
+      "id": "9b87ffcc2c79d5",
+      "url": "https://huggingface.co/blog/openenv-turing",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/openenv-turing"
+        }
+      ],
+      "publishedAt": "2026-02-12",
+      "source": "Hugging Face",
+      "title": "OpenEnv实测：AI代理真实环境可靠性不足",
+      "summary": "Meta与Hugging Face联合推出开源框架OpenEnv，用于在真实系统而非模拟环境中评估AI代理。Turing贡献了生产级日历管理环境Calendar Gym，测试代理在权限控制、时间推理和多步工作流下的表现。结果显示：任务描述明确时成功率近90%，改用自然语言后骤降至约40%；超过一半的失败源于工具参数格式错误或调用顺序错误，而非选错工具。研究指出多步推理是当前代理的主要瓶颈，环境设计与结构化反馈同样关键。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该研究揭示AI代理从演示走向生产的关键短板：多步推理与歧义处理，为行业评估标准提供可量化基准，影响企业部署决策。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Meta与Hugging Face合作推出开源框架OpenEnv，采用类似Gymnasium的reset/step接口和标准MCP工具调用协议，让AI代理连接真实API而非模拟环境。Turing贡献了生产级日历环境Calendar Gym，包含访问控制列表、有限可见性和多步工作流。测试发现：任务给出明确日历ID时成功率接近90%，改用自然语言描述后降至约40%；失败案例中超过一半是工具参数格式错误或调用顺序错误，即使选对了工具。常见错误包括缺少必填字段、权限不足（403）和日期时间格式不符合RFC3339。研究未公布完整基准分数，具体模型版本和测试规模尚不明确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像让一个实习生帮你订会议室：你直接说“订3号会议室下午两点”，他基本能办成；但你说“帮我约个大家方便的时间”，他就懵了。AI代理目前也是这样——单个动作没问题，一旦要连着做几步、还要猜你的意思，就容易出错。更麻烦的是，它常常不是选错工具，而是填错参数，比如日期写成“2月11日9点半”而不是标准格式，系统直接拒绝。对普通人来说，这意味着短期内别指望AI全自动帮你处理日程、邮件或审批流；它更适合当助手，关键步骤仍需人工确认。对企业而言，想让代理真正上岗，得先把接口错误提示做清楚，让它能自己纠错重试。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments"
     },
     {
       "id": "215d22fdf45ded",
@@ -8488,6 +8604,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "How AI tools can redefine universal design to increase accessibility"
+    },
+    {
+      "id": "5e3f697a6269f5",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio"
+        }
+      ],
+      "publishedAt": "2026-02-05",
+      "source": "Hugging Face",
+      "title": "ServiceNow发布SyGra Studio可视化合成数据工具",
+      "summary": "ServiceNow AI团队发布SyGra Studio，作为SyGra 2.0.0的交互式环境，将合成数据生成从YAML/终端操作转为可视化画布。用户可拖拽节点、配置模型与数据源、预览数据集、实时监控执行，并自动生成兼容的图配置和任务脚本。支持OpenAI、Azure OpenAI、Ollama、Vertex、Bedrock、vLLM等模型，以及Hugging Face、文件系统、ServiceNow数据源。内置调试、成本延迟监控，执行历史存于.executions/。该工具旨在降低合成数据生成门槛，提升可观测性。",
+      "category": "行业变化",
+      "importance": 70,
+      "why": "SyGra Studio将合成数据生成流程可视化，降低工程门槛，提升可观测性，可能推动企业AI数据准备效率，对模型训练和评估有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "ServiceNow AI团队于2026年2月5日发布SyGra Studio，作为SyGra 2.0.0的交互式环境。它允许用户在画布上拖拽节点构建数据生成流程，配置模型（OpenAI、Azure OpenAI、Ollama、Vertex、Bedrock、vLLM、自定义端点）和数据源（Hugging Face、文件系统、ServiceNow），预览数据行，编写提示词并自动提示变量，定义结构化输出。执行时实时显示节点状态、token用量、延迟和成本，支持断点调试和代码编辑器。所有操作自动生成SyGra兼容的图配置和任务执行脚本，执行历史保存在.executions/目录。目前尚不确定其对企业现有工作流的具体替代程度，以及是否完全开源。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前做合成数据像手写菜谱，得懂YAML和命令行，容易出错。SyGra Studio就像把菜谱变成可视化拼图：拖几个方块，选好模型和数据，点运行就能看到每一步在干什么、花了多少钱。对普通人来说，这意味着未来AI训练数据可能更便宜、更透明，企业能更快定制自己的AI，但具体效果还得看实际使用。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing SyGra Studio"
     },
     {
       "id": "618f4a0b4d3f42",
