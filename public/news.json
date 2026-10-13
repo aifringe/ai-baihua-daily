@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T00:14:17.960263+00:00",
-  "lastCheckedAt": "2026-10-13T00:14:17.960263+00:00",
+  "updatedAt": "2026-10-13T00:16:18.316000+00:00",
+  "lastCheckedAt": "2026-10-13T00:16:18.316000+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -4858,6 +4858,180 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Strengthening Singapore’s AI Future: A New National Partnership"
+    },
+    {
+      "id": "82356b62524ebe",
+      "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/inference-providers-deepinfra"
+        }
+      ],
+      "publishedAt": "2026-04-29",
+      "source": "Hugging Face",
+      "title": "DeepInfra 接入 Hugging Face 推理服务",
+      "summary": "2026年4月29日，Hugging Face 宣布 DeepInfra 成为其 Hub 上支持的推理提供商。用户可在模型页直接调用 DeepInfra 托管的 DeepSeek V4、Kimi-K2.6、GLM-5.1 等开源模型，支持自定义 API 密钥或由 HF 路由计费。初期仅支持对话和文本生成，后续将扩展至文生图、文生视频等任务。DeepInfra 以低价按 token 计费，此举降低了开发者使用多模型的门槛，但具体定价和性能表现尚未公布。",
+      "category": "行业变化",
+      "importance": 65,
+      "why": "DeepInfra 接入 Hugging Face 扩大了开源模型的分发渠道，为开发者提供更经济的推理选项，可能影响 AI 应用开发成本与模型选择生态。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年4月29日，Hugging Face 官方博客宣布 DeepInfra 正式成为其 Inference Providers 生态成员。DeepInfra 是一家无服务器 AI 推理平台，提供超过 100 个模型，以按 token 计费的低价著称。此次集成后，用户可在 Hugging Face 模型页面直接调用 DeepInfra 托管的对话与文本生成模型，包括 DeepSeek V4、Kimi-K2.6、GLM-5.1 等开源权重模型。调用方式有两种：用户可设置自己的 DeepInfra API 密钥直接请求，或通过 Hugging Face 路由并使用 HF 账户计费，后者无额外加价。初期仅支持对话和文本生成，文生图、文生视频、嵌入等任务将陆续推出。目前尚不清楚具体定价细节、性能基准以及免费额度限制。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像你家门口的小超市（Hugging Face）突然上架了另一家批发商（DeepInfra）的货，而且这家批发商以便宜出名。以前你想用 DeepSeek 这类开源大模型，得自己找算力、搭环境，现在在 Hugging Face 的模型页上点一下就能用，还能选是用自己的账号直接付钱，还是让 Hugging Face 代收。对普通用户来说，最直接的好处是：以后用 AI 模型可能更便宜、更方便，不用再折腾技术配置。对开发者而言，多了一个低价选项，可以更灵活地测试和部署不同模型。不过，目前只支持文字对话，想生成图片或视频还得再等等。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "DeepInfra on Hugging Face Inference Providers 🔥"
+    },
+    {
+      "id": "39c0a1c4f9c261",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence"
+        }
+      ],
+      "publishedAt": "2026-04-28",
+      "source": "Hugging Face",
+      "title": "英伟达发布Nemotron 3 Nano Omni多模态模型",
+      "summary": "英伟达在Hugging Face发布Nemotron 3 Nano Omni，一款面向文档、音频与视频智能体的长上下文全模态理解模型。它基于Nemotron 3混合Mamba-Transformer MoE骨干，搭配C-RADIOv4-H视觉编码器和Parakeet音频编码器，支持100页以上文档、20分钟音频及长视频联合推理。官方称其在OCRBenchV2、WorldSense、VoiceBench等基准领先，多文档与视频场景系统吞吐最高提升7.4倍和9.2倍。模型权重已开放下载，但多数对比数据来自厂商自测，第三方复现仍待观察。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "英伟达把文档、语音、视频和GUI操作统一进一个开源权重模型，并强调长上下文与推理效率，可能降低企业多模态智能体的部署门槛，但基准成绩多为自测，实际效果需独立验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达发布Nemotron 3 Nano Omni，定位为全模态理解模型，覆盖文档分析、多图推理、语音识别、长音视频理解和智能体操作电脑。架构上，语言骨干为Nemotron 3 Nano 30B-A3B，视觉用C-RADIOv4-H，音频用Parakeet-TDT-0.6B-v2，通过轻量投影器接入统一序列。官方称支持100页以上文档、最长20分钟音频输入，视频采用Conv3D与EVS压缩冗余帧。基准方面，OCRBenchV2-En得65.8，MMLongBench-Doc得57.5，WorldSense得55.4，VoiceBench得89.4，并称多文档与视频场景系统效率分别提升7.4倍和9.2倍。模型以BF16、FP8、NVFP4权重开放下载。不过，对比数据主要来自英伟达自测，训练细节和第三方复现结果尚不充分，实际泛化能力仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Nemotron 3 Nano Omni想成一个能同时看文件、听录音、看视频并动手点屏幕的“全能实习生”。过去企业要拼好几个模型分别做OCR、语音转写和视频理解，现在一个模型就能把合同、会议录像和操作界面串起来处理。对普通人来说，最直接的影响是以后客服、培训、合同审核这类工作可能更快被自动化，语音和视频搜索也会更准。但它不是魔法：官方跑分好看不等于你手里的杂乱文件一定处理得好，而且模型越大，部署成本越高。开源权重意味着小公司也能试用，但真正落地还要看数据隐私、算力预算和实际准确率。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents"
+    },
+    {
+      "id": "23ef0dd88f7b0e",
+      "url": "https://research.google/blog/its-all-about-the-angle-your-photos-re-composed/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/its-all-about-the-angle-your-photos-re-composed/"
+        }
+      ],
+      "publishedAt": "2026-04-22",
+      "source": "Google Research",
+      "title": "谷歌照片推出AI重构视角功能",
+      "summary": "谷歌研究院与DeepMind合作，在Google Photos的Auto frame功能中推出新方法，可将普通2D照片理解为3D场景，自动调整相机视角并生成隐藏内容，实现拍摄后重新构图。该功能已上线，主要针对含人像的照片，能修正广角畸变并改善构图。目前仅作为Auto frame的第二个渲染选项，适用于符合条件的照片，具体覆盖范围未明确。",
+      "category": "日常应用",
+      "importance": 72,
+      "why": "该功能将3D场景理解与生成式AI结合，让普通用户无需专业工具即可在拍摄后调整视角，降低修图门槛，可能改变手机摄影后期习惯。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究院与DeepMind团队发布了一种新的图像编辑方法，并已集成到Google Photos的Auto frame功能中。该方法将2D照片解释为3D场景，通过机器学习模型估计场景几何和相机参数，再利用生成式扩散模型填补因视角变化而暴露的隐藏区域，从而在拍摄后自动调整相机位置和焦距，生成新的视角。该功能主要面向含有人像的照片，可自动检测人脸位置和3D朝向，计算理想构图，并修正广角前置摄像头造成的透视畸变。目前该功能作为Auto frame的第二个渲染选项上线，用户可一键获取重新构图后的图像。但官方未说明具体支持哪些设备、地区或照片类型，也未提供用户可手动调整视角的选项。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，以后你拍完照片，手机能像拥有“后悔药”一样，自动帮你把镜头往旁边挪一点、往后退一点，甚至把没拍到的背景补出来。比如自拍时脸被广角拉变形，它能悄悄修正；合影时有人被切掉半边脸，它也能“脑补”出完整画面。这背后是AI先猜出照片里物体的远近关系，搭一个简易3D模型，再像画师一样把空缺处画上。对普通人来说，修图不再需要复杂操作，一键就能得到更顺眼的构图。不过它目前只处理有人像的照片，且是自动完成，你没法自己指定想换的角度。另外，补出来的内容毕竟是AI想象的，可能和真实场景有出入，别把它当成完全真实的记录。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "It's all about the angle: Your photos, re-composed"
+    },
+    {
+      "id": "15e0d38d97945d",
+      "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/"
+        }
+      ],
+      "publishedAt": "2026-04-21",
+      "source": "Google Research",
+      "title": "谷歌推出ReasoningBank，让AI智能体从失败中学习",
+      "summary": "谷歌研究团队发布ReasoningBank，一种新型智能体记忆框架，旨在让AI智能体在部署后持续从成功和失败经验中学习。现有记忆方法多记录详细动作或仅总结成功流程，忽略失败教训。ReasoningBank通过检索、提取和巩固的闭环，将经验蒸馏为结构化推理策略，并引入记忆感知测试时扩展（MaTTS）。在WebArena和SWE-Bench-Verified基准上，使用Gemini-2.5-Flash的测试显示，成功率分别提升8.3%和4.6%，且执行步骤减少。该研究已发表于ICLR，代码开源。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "ReasoningBank让智能体从失败中学习，提升任务成功率和效率，推动AI智能体向持续学习进化，对自动化任务处理有重要意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队于2026年4月21日发布ReasoningBank，一种智能体记忆框架，旨在解决AI智能体部署后难以从经验中学习的问题。现有方法如轨迹记忆（Synapse）和工作流记忆（AWM）要么记录详尽动作，要么仅总结成功流程，忽略失败教训。ReasoningBank通过检索、提取和巩固的闭环，将成功和失败经验蒸馏为结构化记忆项，包含标题、描述和内容。它还引入记忆感知测试时扩展（MaTTS），通过并行和顺序扩展生成更丰富学习信号。在WebArena和SWE-Bench-Verified基准上，使用Gemini-2.5-Flash的测试显示，无扩展的ReasoningBank比无记忆基线成功率分别提升8.3%和4.6%，SWE-Bench上每任务减少近3步；加入MaTTS后，WebArena成功率再提升3%，步数减少0.4。研究已发表于ICLR，代码开源。仍不确定的是，该框架在更复杂动态环境中的泛化能力及长期记忆巩固策略有待进一步验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象一个AI助手每次做任务都像失忆一样，重复犯同样的错误。ReasoningBank就像给它一个“错题本”，不仅记下做对的步骤，还分析做错的原因，提炼成通用策略。比如，它不再只是记住“点击加载更多按钮”，而是学会“先确认页面标识，避免无限滚动陷阱”。这样，AI下次遇到类似任务就能更聪明、更高效。对普通人来说，未来AI助手处理复杂任务（如网上购物、代码编写）会更可靠，出错更少，速度更快。这就像给AI装上了经验积累的大脑，让它越用越聪明，而不是永远从零开始。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "ReasoningBank: Enabling agents to learn from experience"
+    },
+    {
+      "id": "373897d12f7796",
+      "url": "https://huggingface.co/blog/cybersecurity-openness",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/cybersecurity-openness"
+        }
+      ],
+      "publishedAt": "2026-04-21",
+      "source": "Hugging Face",
+      "title": "开源AI安全系统Mythos引热议",
+      "summary": "2026年4月21日，Hugging Face发布文章，讨论AI网络安全新进展。背景是前沿AI模型Mythos及Project Glasswing的发布，引发全球对AI自主发现和修补软件漏洞能力的关注。核心事实是，Mythos并非单一模型，而是结合大算力、代码数据训练、漏洞探测脚手架和一定自主性的系统，能快速发现漏洞并生成补丁。文章认为，开放代码和工具能缩小攻防能力差距，半自主AI代理在人类监督下可有效防御。结果尚不确定，但开放生态被视为结构性优势。",
+      "category": "安全与规则",
+      "importance": 75,
+      "why": "AI自主攻防能力可能改变网络安全格局，开源与闭源路线之争影响每个依赖软件的组织和个人，值得关注。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年4月21日发文，分析前沿AI模型Mythos及Project Glasswing发布后的网络安全形势。Mythos是一个能处理代码的大语言模型，其关键不在模型本身，而在于嵌入的系统：结合大算力、软件相关数据训练、漏洞探测与修补脚手架，以及一定程度的自主性，从而快速发现漏洞、利用漏洞并构建补丁。文章指出，这种系统配方可被复制，较小模型配合深度安全专业知识也可能实现类似效果。AI网络安全能力呈锯齿状，不随模型规模平滑提升。目前尚不确定Mythos的实际部署范围、漏洞发现效率及误报率，但文章强调开放代码和工具能帮助防御方，半自主代理在人类监督下是平衡点。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象你家门锁可能被一种新式万能钥匙打开，而造钥匙的配方公开了。Mythos就像这种钥匙，但它不是一把，而是一整套开锁工具加自动试锁机器人。好消息是，好人也能拿到这套工具来修锁。文章说，如果锁的图纸公开，大家都能检查漏洞；如果只有一家公司藏着图纸，一旦被撬，所有人都遭殃。对普通人来说，未来软件漏洞可能被AI更快发现和修补，但攻击也可能更猛。关键是要让防御方也用上AI，并且人类能看懂AI在干什么，不能完全放手。开源就像小区邻居互相帮忙看门，比每家自己装个黑箱锁更安全。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "AI and the Future of Cybersecurity: Why Openness Matters"
+    },
+    {
+      "id": "ccc8f73fce7537",
+      "url": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/"
+        }
+      ],
+      "publishedAt": "2026-04-16",
+      "source": "Google Research",
+      "title": "谷歌推出Simula框架，用推理生成合成数据集",
+      "summary": "谷歌研究团队发布Simula框架，将合成数据生成重构为数据集级机制设计，通过推理从第一性原理构建数据集，实现覆盖度、复杂度和质量的细粒度控制。该方法无需种子数据，采用全局多样化、局部多样化、复杂化和双批评质量检查四步流程。在网络安全、法律推理、数学等五个领域生成最多51.2万数据点，完整系统持续优于基线，但高复杂度在数学推理中提升10%准确率，在法律推理中反而有害。Simula已用于Gemma生态及安卓诈骗检测等产品。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "Simula将合成数据生成从样本级提升到数据集级机制设计，解决了专业领域数据稀缺问题，并已实际应用于谷歌多个产品，对AI专业化发展有重要推动作用。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队于2026年4月16日发布Simula框架，旨在解决专业AI领域数据稀缺问题。该框架将合成数据生成视为数据集级机制设计，通过推理模型从第一性原理构建整个数据集，而非逐样本生成。Simula包含四个可控步骤：全局多样化利用推理模型递归构建领域分类树，确保覆盖长尾；局部多样化通过元提示生成同一概念的不同实例，防止模式崩溃；复杂化步骤可配置地提升数据难度；质量检查采用双批评循环独立评估答案正确性，减少模型谄媚。研究使用Gemini 2.5 Flash作为教师模型、Gemma-3 4B作为学生模型，在网络安全、法律推理、小学数学和多语言学术知识五个领域生成最多51.2万数据点。结果显示，完整Simula系统在所有领域均优于基线，但高复杂度在数学推理中带来10%准确率提升，在法律推理中却损害性能。Simula已应用于Gemma生态及安卓诈骗检测等产品。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象你要为AI做一本专业教材，但市面上没有现成的。Simula就像一位能自己设计课程大纲的老师：先画出整个知识地图，再为每个知识点编出多种例题，还能调节题目难度，最后请两位独立评委检查答案对不对。这样造出的教材不仅便宜、可重复，还能专门针对隐私敏感或罕见领域。对普通人来说，这意味着未来AI在医疗、法律、网络安全等专业领域会更靠谱，因为训练它们的数据不再靠人工苦熬。但研究也提醒，不是越难越好——就像给小学生做高考题反而会打击信心，数据难度必须匹配模型能力。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles"
     },
     {
       "id": "42a406893f8765",
