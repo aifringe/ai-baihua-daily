@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:29:20.315424+00:00",
-  "lastCheckedAt": "2026-10-13T06:29:20.315424+00:00",
+  "updatedAt": "2026-10-13T06:30:14.456947+00:00",
+  "lastCheckedAt": "2026-10-13T06:30:14.456947+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -7703,6 +7703,35 @@
       "originalTitle": "Training mRNA Language Models Across 25 Species for $165"
     },
     {
+      "id": "98c6dab198490d",
+      "url": "https://huggingface.co/blog/trl-v1",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/trl-v1"
+        }
+      ],
+      "publishedAt": "2026-03-31",
+      "source": "Hugging Face",
+      "title": "TRL v1.0发布：后训练库进入稳定契约时代",
+      "summary": "Hugging Face于2026年3月31日发布TRL v1.0，标志着这一后训练库从研究代码库正式转变为生产级稳定库。TRL已实现超过75种后训练方法，月下载量达300万次，被Unsloth、Axolotl等下游项目依赖。v1.0的核心变化是引入稳定与实验层分离的契约：稳定核心遵循语义化版本，实验层则快速迭代。此前破坏性变更已分散在0.x版本中，迁移成本极小。该库采用限制抽象、容忍重复的设计哲学，以应对后训练领域快速变化的特性。",
+      "category": "行业变化",
+      "importance": 75,
+      "why": "TRL是后训练领域的关键基础设施，月下载300万次，其稳定化将降低下游项目维护成本，影响大量AI开发者的工作流程。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face发布TRL v1.0，将其定位为生产级后训练库。TRL已积累超过75种后训练方法，月下载量达300万次，被Unsloth、Axolotl等下游项目直接依赖。v1.0的核心变化是明确稳定与实验层的契约：稳定核心包括SFT、DPO、奖励建模、RLOO、GRPO等训练器，遵循语义化版本；实验层则容纳新方法，不保证API稳定。为达成v1.0所需的破坏性变更已分散在0.x版本中，从最后一个0.x版本迁移的改动极小。设计上，TRL刻意限制抽象层级，容忍代码重复，避免因领域快速变化而构建过早的通用抽象。仍不确定的是，实验层方法何时晋升稳定并无固定时间表，取决于维护成本与实际使用量的比例。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "TRL就像AI模型“毕业后”的培训学校，教模型如何更好地回答问题、写代码。以前这个学校课程变来变去，学生（下游项目）经常因为教材改版而跟不上。现在TRL v1.0把课程分成“必修课”和“选修课”：必修课（稳定核心）保证不随便改，选修课（实验层）可以快速更新。这样，用TRL做产品的公司不用担心某天更新后代码突然跑不起来。对普通人来说，这意味着你用的AI应用可能更稳定、更新更快，因为开发者不用花大量时间修底层工具的兼容问题。同时，新训练方法能更快从实验室走到产品中，让AI能力提升得更快。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "TRL v1.0: Post-Training Library Built to Move with the Field"
+    },
+    {
       "id": "42a406893f8765",
       "url": "https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/",
       "sources": [
@@ -7877,6 +7906,35 @@
       "originalTitle": "Lyria 3 Pro: Create longer tracks in more"
     },
     {
+      "id": "8d885b2ad7c1ec",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/eva",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva"
+        }
+      ],
+      "publishedAt": "2026-03-24",
+      "source": "Hugging Face",
+      "title": "ServiceNow发布EVA语音智能体评估框架",
+      "summary": "ServiceNow AI团队发布EVA，一个面向对话式语音智能体的端到端评估框架，首次联合衡量任务准确性与对话体验。EVA采用机器人对机器人音频架构，包含用户模拟器、被测智能体、工具执行器、验证器和指标套件，并发布含50个场景的航空数据集。团队对20个级联和原生音频系统进行基准测试，发现准确性与体验之间存在一致权衡：任务完成好的智能体体验往往较差，反之亦然。此外，命名实体转录错误和多步工作流是主要失败模式，且模型在多次运行中表现不稳定。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "语音智能体正从演示走向客服等真实场景，但此前缺乏同时衡量任务准确性和对话体验的评估标准。EVA填补了这一空白，其发现的准确性与体验权衡将直接影响企业选型和产品优化方向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "ServiceNow AI团队于2026年3月24日发布EVA，一个评估对话式语音智能体的端到端框架。EVA通过机器人对机器人的实时音频架构模拟完整多轮通话，包含用户模拟器、被测语音智能体、工具执行器、验证器和指标套件。它输出两个核心分数：EVA-A衡量准确性，涵盖任务完成、忠实度和语音保真度；EVA-X衡量体验，涵盖简洁性、对话推进和轮流发言。团队同时发布含50个航空场景和15个工具的数据集，覆盖航班改签、取消、补偿券等。对20个级联和原生音频系统的基准测试显示，准确性与体验存在一致权衡，没有配置能同时主导两个维度。命名实体转录错误和多步工作流是主要失败模式，且pass@3与pass^3差距显著，表明模型表现不稳定。目前框架仅覆盖航空领域，其他领域待扩展。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去评价语音客服机器人，要么只看它有没有把事办成，要么只听它说话自不自然，就像考试只判对错或只评卷面。EVA相当于一场全真模拟考：让一个AI扮演顾客打电话，另一个AI当客服，后台还有数据库和工具，最后同时给“办成没有”和“聊得舒不舒服”打分。结果发现一个尴尬规律：办事靠谱的客服往往啰嗦或冷冰冰，说话好听的又常办不成事。对普通人来说，这意味着你未来打客服电话时，可能遇到“能解决问题但体验差”或“体验好但解决不了”的机器人。企业选型时也不能只看成功率，还得看用户愿不愿意继续用。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "A New Framework for Evaluating Voice Agents (EVA)"
+    },
+    {
       "id": "30089e2028e6ae",
       "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
       "sources": [
@@ -7904,6 +7962,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "TurboQuant: Redefining AI efficiency with extreme compression"
+    },
+    {
+      "id": "13c5d54df9fe54",
+      "url": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune"
+        }
+      ],
+      "publishedAt": "2026-03-20",
+      "source": "Hugging Face",
+      "title": "英伟达开源一天微调领域嵌入模型方案",
+      "summary": "英伟达团队在Hugging Face发布教程，介绍如何用单张80GB GPU、不到一天时间，把通用嵌入模型微调成理解特定领域的版本，无需人工标注。流程包括用大模型从领域文档自动生成问答对、挖掘难负样本、多跳问题展开、对比学习微调，再用BEIR评测。官方称在自有文档上Recall@10和NDCG@10提升超10%，Atlassian在JIRA数据上把Recall@60从0.751提到0.951。教程同时开源了合成数据集与代码，但效果数据来自发布方自测，尚待第三方复现。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "嵌入模型是RAG检索质量的关键瓶颈，该方案把原本专业、耗时的微调流程压缩到单卡一天，并开源数据与代码，降低了企业自建领域检索系统的门槛，对RAG落地有直接推动作用。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达研究人员在Hugging Face发文，给出把通用嵌入模型改造成领域专用模型的完整配方。基础模型是10亿参数的Llama-Nemotron-Embed-1B-v2，硬件要求为80GB显存的Ampere及以上GPU，教程在A100和H100上测试。流程分五步：用Nemotron-3-Nano-30B从领域文档自动生成问答对，覆盖1到3跳、复杂度2到5；用基础模型挖掘难负样本，并设95%边界过滤疑似假负例；把多跳问题展开成多条训练样本；用对比损失微调，默认3轮、学习率1e-5、每查询5个段落；最后用BEIR算nDCG、Recall、Precision等指标。发布方称自有文档上Recall@10与NDCG@10提升超10%，Atlassian在JIRA数据上Recall@60从0.751升至0.951。这些数字均为发布方自测，尚无独立复现，且未说明不同领域、语料规模下的稳定性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把通用嵌入模型想成一个见多识广但不熟悉你公司黑话的图书管理员：找大众话题没问题，一遇到合同条款、化工配方或内部术语，它就把长得像的文档当成正确答案递给你，RAG系统于是答非所问。这套方案相当于让管理员先读你的资料，自动出题自测，再专门挑那些“看着像但其实不对”的文档反复练习分辨。好处是企业不必雇人标注成千上万条问答，一张显卡一天就能训出更懂自家业务的检索模型，检索更准，问答机器人引用错资料的概率下降。代价是仍需80GB显存的专业卡、一定工程配置，且效果因领域而异，上线前应自己用真实问题测一遍，不能直接照搬宣传数字。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Build a Domain-Specific Embedding Model in Under a Day"
     },
     {
       "id": "d824d361772f6d",
@@ -8055,6 +8142,35 @@
       "originalTitle": "Protecting cities with AI-driven flash flood forecasting"
     },
     {
+      "id": "f7bb80dd690d59",
+      "url": "https://research.google/blog/exploring-the-feasibility-of-conversational-diagnostic-ai-in-a-real-world-clinical-study/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/exploring-the-feasibility-of-conversational-diagnostic-ai-in-a-real-world-clinical-study/"
+        }
+      ],
+      "publishedAt": "2026-03-11",
+      "source": "Google Research",
+      "title": "谷歌AMIE真实临床研究：安全可行，诊断媲美医生",
+      "summary": "谷歌与贝斯以色列女执事医疗中心合作，首次在真实门诊场景中前瞻性评估对话式医疗AI系统AMIE。研究纳入100名成年患者，AMIE在医生监督下进行就诊前病史采集，零安全事件，患者信任度显著提升。临床评估显示，AMIE的鉴别诊断和管理计划质量与初级保健医生相当，但管理计划的实用性和成本效益略逊。AMIE在90%病例中将最终诊断纳入前7位，56%列为第一诊断。该研究已发表于《柳叶刀》，标志着医疗AI从模拟走向真实世界验证的重要一步。",
+      "category": "行业变化",
+      "importance": 85,
+      "why": "这是对话式医疗AI首次在真实临床环境中完成前瞻性研究，验证了安全性和可行性，为AI辅助诊疗的落地提供了关键证据，可能改变未来就医流程。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队与贝斯以色列女执事医疗中心合作，开展了一项前瞻性单臂可行性研究，评估对话式医疗AI系统AMIE在真实门诊中的应用。研究纳入100名成年患者，在就诊前通过安全网页与AMIE进行文本对话，由医生通过视频监督，并预设了四项安全中止标准。结果显示，零安全中止事件发生，患者对AI的信任度在交互后显著提升。临床评估者盲法评分表明，AMIE的鉴别诊断和管理计划整体质量与初级保健医生相当，但在管理计划的实用性和成本效益上略逊。AMIE在90%的病例中将最终诊断纳入前7位可能，56%列为第一诊断。研究已发表于《柳叶刀》，但样本量较小、单中心、患者偏年轻，仍需更大规模验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就好比医院里来了个AI实习医生，在你看病前先问你哪里不舒服、病史如何，然后把整理好的信息交给真医生。整个过程中有真医生在旁盯着，一旦有不对劲就立刻叫停。结果发现，这个AI实习医生问诊水平不输真医生，病人跟它聊完还更信任AI了。不过它也有短板：因为看不到你的病历、做不了体检，给出的治疗方案可能不如真医生省钱实用。对普通人来说，未来看病可能先跟AI聊，医生有更多时间跟你讨论病情，而不是埋头记录。但别担心，AI只是辅助，最终决策还是医生说了算。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Exploring the feasibility of conversational diagnostic AI in a real-world clinical study"
+    },
+    {
       "id": "25505e303fd770",
       "url": "https://huggingface.co/blog/storage-buckets",
       "sources": [
@@ -8111,6 +8227,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries"
+    },
+    {
+      "id": "db0ffa036daa82",
+      "url": "https://research.google/blog/teaching-llms-to-reason-like-bayesians/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/teaching-llms-to-reason-like-bayesians/"
+        }
+      ],
+      "publishedAt": "2026-03-04",
+      "source": "Google Research",
+      "title": "谷歌用贝叶斯教学提升LLM概率推理",
+      "summary": "谷歌研究团队2026年3月4日发布论文，指出当前大语言模型在需要逐步推断用户偏好的任务中表现不佳，往往依赖简单启发式而非概率更新。研究以模拟航班推荐为测试场景，让模型与模拟用户进行五轮交互，并与最优贝叶斯助手对比。结果显示，未经训练的LLM准确率明显落后，且多轮交互后提升有限。团队随后采用监督微调，让模型模仿贝叶斯助手的预测，而非直接学习正确答案。该方法显著提升模型表现，并使其在酒店推荐、网络购物等未训练领域也能迁移，与贝叶斯助手一致率约80%。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "该研究揭示LLM在多轮交互中缺乏概率更新能力，并提出可迁移的贝叶斯教学微调方法，对智能体个性化推荐和跨域推理有直接价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队在2026年3月4日发布论文，测试大语言模型能否像贝叶斯模型那样，在多轮交互中逐步推断用户偏好。实验采用简化航班推荐任务：模拟用户有不同偏好，助手每轮推荐航班，用户反馈对错。结果发现，未经训练的LLM准确率显著低于最优贝叶斯助手，且多数模型在首轮后表现停滞，难以利用后续信息。团队随后用监督微调，让模型模仿贝叶斯助手的预测，而非直接学习正确答案。该方法使模型与贝叶斯助手一致率约80%，并在酒店推荐和网络购物等未训练领域展现迁移能力。研究仍属受控实验，真实场景效果尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "现在的AI助手常像“猜你喜欢”的粗糙版：你选了几次便宜航班，它就认定你只爱低价，不会根据新选择调整。谷歌这项研究相当于给AI上了一堂“概率更新课”：不直接告诉它标准答案，而是让它模仿一个会不断修正判断的“老手”。结果AI不仅学得更准，还能把这种“边看边改”的本事用到订酒店、网购上。对普通人来说，未来AI推荐可能更懂你，不会一上来就贴标签。但别高兴太早，这仍是模拟实验，真实用户偏好更复杂，AI能否稳定做到还不确定。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Teaching LLMs to reason like Bayesians"
     },
     {
       "id": "edfff1e305bc7d",
