@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:07:25.482586+00:00",
-  "lastCheckedAt": "2026-10-13T06:07:25.482586+00:00",
+  "updatedAt": "2026-10-13T06:08:58.338780+00:00",
+  "lastCheckedAt": "2026-10-13T06:08:58.338780+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -6236,6 +6236,35 @@
       "originalTitle": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed"
     },
     {
+      "id": "8855719404fbba",
+      "url": "https://huggingface.co/blog/moe-transformers",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/moe-transformers"
+        }
+      ],
+      "publishedAt": "2026-02-26",
+      "source": "Hugging Face",
+      "title": "Hugging Face 重构 MoE 加载，速度提升数倍",
+      "summary": "Hugging Face 发布技术文章，介绍 transformers 库对混合专家（MoE）模型支持的重大重构。文章指出，MoE 通过稀疏激活实现高效推理，但原有工具链为稠密模型设计，导致加载瓶颈。新引入 WeightConverter 和专家后端系统，将加载流程改为异步转换管道。在 Qwen1.5-110B 模型上，v5 版本加载时间从 v4 的 66 秒降至 20 秒，张量并行下仅需 10 秒。同时支持专家并行，可将专家分布到多设备。此举旨在让 MoE 成为库的一等公民，提升大模型部署效率。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "MoE 是当前大模型主流架构，但工具链支持不足。此次重构显著提升加载速度，降低部署门槛，对开发者和研究者有直接帮助，推动稀疏模型普及。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 在 2026 年 2 月 26 日发布文章，详细说明 transformers 库为支持 MoE 模型进行的工程重构。MoE 模型如 DeepSeek-V3、Qwen 等，其检查点将每个专家单独存储，而运行时需要将专家权重打包成连续张量以使用高效内核。旧版加载方式逐张量拷贝，导致速度慢、内存峰值高。新引入 WeightConverter 抽象，支持动态权重转换，通过合并、拆分等操作，将检查点张量转换为运行时布局。同时引入专家后端系统，提供 eager、batched_mm、grouped_mm 三种执行策略，并支持专家并行。基准测试显示，在单张 A100 上加载 Qwen1.5-110B，v5 异步加载仅需 20.71 秒，而 v4 需 66.24 秒；使用张量并行后进一步降至 10.1 秒。文章也指出，量化可集成到加载管道中，但具体效果未详细说明。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "MoE 模型就像一家大公司，有很多专家，但每个任务只找几个专家处理，所以干活快。但以前公司仓库管理混乱，每个专家的资料单独存放，每次开工前要花大量时间把资料搬来搬去。Hugging Face 这次相当于重新设计了仓库：把专家资料提前打包成整箱，用传送带并行搬运，还允许把不同专家分到不同仓库（专家并行）。结果就是，以前加载一个 110B 的大模型要一分多钟，现在只要 10 到 20 秒。对普通人来说，这意味着未来你用的 AI 助手可能响应更快、部署成本更低，因为服务商能更高效地运行这些大模型。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Mixture of Experts (MoEs) in Transformers"
+    },
+    {
       "id": "3eedf77051b09b",
       "url": "https://huggingface.co/blog/ggml-joins-hf",
       "sources": [
@@ -6265,6 +6294,35 @@
       "originalTitle": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI"
     },
     {
+      "id": "bc6466fca47688",
+      "url": "https://huggingface.co/blog/unsloth-jobs",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/unsloth-jobs"
+        }
+      ],
+      "publishedAt": "2026-02-20",
+      "source": "Hugging Face",
+      "title": "Hugging Face推免费微调活动，Unsloth加速小模型训练",
+      "summary": "Hugging Face于2026年2月20日发布博客，介绍如何结合Unsloth与Hugging Face Jobs免费微调小语言模型LFM2.5-1.2B-Instruct。Unsloth宣称训练速度提升约2倍、显存占用减少约60%，小模型训练成本仅几美元。用户可通过编码代理（如Claude Code、Codex）安装技能后，用自然语言指令提交训练任务，任务在托管GPU上运行并自动推送模型至Hub。官方提供免费积分和一个月Pro订阅，但需绑定账单验证。目前该方案仍处推广阶段，实际效果和长期可用性有待验证。",
+      "category": "模型进展",
+      "importance": 65,
+      "why": "该事件降低了小模型微调门槛，使个人开发者能以极低成本定制模型，可能推动边缘AI应用创新，但免费额度和实际加速效果需观察。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年2月20日，Hugging Face发布博客，介绍利用Unsloth和Hugging Face Jobs免费微调小语言模型LFM2.5-1.2B-Instruct的方法。Unsloth声称相比标准方法训练速度提升约2倍，显存占用减少约60%，使小模型训练成本降至几美元。用户需安装hf CLI，通过编码代理（如Claude Code、Codex）安装技能，然后用自然语言指令提交训练任务。任务在Hugging Face Jobs的托管GPU上运行，自动生成脚本、监控训练并推送模型至Hub。官方提供免费积分和一个月Pro订阅，但需设置账单验证。目前该方案处于推广阶段，实际加速效果和免费额度可持续性尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像以前自己组装电脑跑AI，现在有人提供免费云服务器和加速工具，让你用几句话就能训练一个专属小模型。小模型能装进手机或笔记本，适合做特定任务，比如客服问答或文本分类。对普通人来说，未来可能用上更便宜、更私密的AI应用，开发者也能低成本试错。但免费午餐可能有限，且训练效果取决于数据和调参，并非万能。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Train AI models with Unsloth and Hugging Face Jobs for FREE"
+    },
+    {
       "id": "31f053c94d55b1",
       "url": "https://huggingface.co/blog/gradio-html-one-shot-apps",
       "sources": [
@@ -6292,6 +6350,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "One-Shot Any Web App with Gradio's gr.HTML"
+    },
+    {
+      "id": "4e0bcba85dced8",
+      "url": "https://huggingface.co/blog/ibm-research/itbenchandmast",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-research/itbenchandmast"
+        }
+      ],
+      "publishedAt": "2026-02-18",
+      "source": "Hugging Face",
+      "title": "IBM与伯克利用MAST诊断企业Agent失败原因",
+      "summary": "IBM Research与UC Berkeley合作，将MAST失败分类法应用于ITBench基准，分析310条SRE Agent执行轨迹，覆盖Gemini-3-Flash、Kimi-K2和GPT-OSS-120B三款模型。结果显示，前沿模型失败模式较孤立（2.6个/轨迹），而开源大模型出现级联失败（5.3个/轨迹）。最强失败预测因子是“错误验证”，Agent常未核实真实结果就宣布成功。研究建议外部化验证、增加终止控制，并指出架构干预比提示工程更有效。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "该研究首次将结构化失败分类法用于企业IT Agent诊断，揭示不同模型失败模式差异，为构建可靠Agent提供可操作方向，对AI工程化落地有直接指导意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM Research与UC Berkeley合作，将MAST（多智能体系统失败分类法）应用于ITBench基准，分析310条SRE Agent执行轨迹，覆盖Gemini-3-Flash、Kimi-K2和GPT-OSS-120B三款模型。MAST将失败归为系统设计、智能体间错位和任务验证三类共14种模式。关键发现：Gemini-3-Flash平均2.6个失败模式/轨迹，GPT-OSS-120B达5.3个，呈级联崩溃；Kimi-K2在92%失败轨迹中出现行动-推理不匹配。最强失败预测因子是FM-3.3错误验证，Agent常未核实真实结果就宣布成功。研究建议外部化验证、增加终止控制，并指出架构干预比提示工程更有效。目前该分析仅覆盖SRE场景，其他IT领域适用性尚不明确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给AI Agent做了一次“尸检”：以前只知道它考了14分，现在能看出是粗心、走神还是没做完。对企业来说，这意味着部署AI自动化运维时，不能只看成功率，更要看它怎么失败。比如，AI可能没确认故障是否修复就报告“搞定”，导致问题遗留。研究给出的药方是：别让AI自己判卷，要用外部工具验证；给AI装上“停止按钮”，防止无限循环。对普通人而言，未来企业IT系统可能更稳定，因为AI运维工具会变得更可靠，但短期内AI仍可能犯低级错误，需要人工兜底。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST"
     },
     {
       "id": "aa45bd91094426",
@@ -6468,6 +6555,64 @@
       "originalTitle": "Accelerating Mathematical and Scientific Discovery with Gemini Deep Think"
     },
     {
+      "id": "e938ddbe7f98d4",
+      "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/"
+        }
+      ],
+      "publishedAt": "2026-02-05",
+      "source": "Google Research",
+      "title": "谷歌推NAI框架，用AI重塑无障碍设计",
+      "summary": "谷歌研究院2月5日发布博客，介绍“原生自适应界面”（NAI）框架，主张用多模态AI让界面主动适应用户，而非让残障用户寻找辅助功能。文章称全球16%人口（约13亿）有残障，NAI通过编排器与子智能体动态调整阅读、设置等任务，并展示StreetReaderAI、多模态视频播放器、手语语法实验室等原型。这些原型多处于研究验证阶段，尚未说明何时面向普通用户开放，实际效果仍需独立评估。",
+      "category": "日常应用",
+      "importance": 72,
+      "why": "谷歌将无障碍从“事后补丁”转向AI原生自适应，若落地将影响13亿残障者及更广泛用户的交互方式，但当前仍属研究原型，需观察实际可用性。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究院发布博客，提出“原生自适应界面”（NAI）框架，核心是用多模态AI把静态界面变成能主动理解用户需求的协作系统。文中描述了一个“编排器”加多个子智能体的结构：编排器掌握上下文，把总结、调整字号等任务分派给专门智能体，用户不必自己翻菜单找按钮。博客展示了若干原型：面向盲人和低视力者的StreetReaderAI可记住此前画面并回答“公交站在哪”；多模态智能体视频播放器允许用户实时追问画面细节；与RIT/NTID合作的手语语法实验室提供双语写作辅导。文章强调与残障社区共同设计，并称这些原型经过验证，但未给出发布时间、覆盖范围或第三方评测数据，实际效果仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去做无障碍，常像先盖好楼再补坡道：新功能上线后，残障用户得等辅助工具跟上，中间存在“无障碍鸿沟”。NAI想反过来，让AI像一位随行助理，界面自己变形来配合你，而不是你去迁就界面。比如盲人走过一个路口，系统能记住刚才看到的东西，回头还能回答公交站在哪；看视频时也能随时问“主角穿什么”。对普通人也有好处，这就是“路缘坡效应”：为轮椅设计的坡道，推婴儿车和拉行李箱的人同样受益。语音、摘要、个性化学习这些能力，最终可能让所有人用得更省力。不过目前这些仍是研究原型，离日常普及还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How AI tools can redefine universal design to increase accessibility"
+    },
+    {
+      "id": "618f4a0b4d3f42",
+      "url": "https://research.google/blog/sequential-attention-making-ai-models-leaner-and-faster-without-sacrificing-accuracy/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/sequential-attention-making-ai-models-leaner-and-faster-without-sacrificing-accuracy/"
+        }
+      ],
+      "publishedAt": "2026-02-04",
+      "source": "Google Research",
+      "title": "谷歌提出Sequential Attention模型瘦身新算法",
+      "summary": "谷歌研究团队于2026年2月4日发布Sequential Attention算法，用于大规模机器学习模型的子集选择问题，旨在让模型更精简、更快且不牺牲准确率。该算法将特征选择、权重剪枝等任务统一为子集选择，通过贪心机制和注意力分数逐步挑选关键组件，避免传统方法的高昂重训练成本。在蛋白质组学、图像和活动识别等基准上取得领先结果，并推出SequentialAttention++用于块稀疏化，在ImageNet分类上实现模型压缩且精度不降。目前仍处研究阶段，未来拟扩展至大语言模型剪枝、推荐系统和药物发现等领域。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "该研究提出通用子集选择框架，能显著降低大模型训练与推理成本，同时保持精度，对AI模型效率优化具有广泛影响，但尚处研究阶段，落地需时间。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队发布Sequential Attention算法，解决深度学习中的子集选择问题，包括特征选择、嵌入维度调整和权重剪枝。传统贪心选择需反复重训练模型，计算成本极高；新方法将选择过程嵌入单次训练，利用注意力分数逐步评估并加入最重要组件，避免冗余。在蛋白质组学、图像和活动识别基准上，该方法达到领先或竞争性精度，且效率大幅提升。团队还推出SequentialAttention++，将可微分剪枝与组合优化结合，用于块稀疏化，在ImageNet分类上实现模型压缩且精度不降。目前该技术仍处研究阶段，尚未公布具体产品化时间表。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "好比整理一个塞满杂物的背包，传统做法是每扔一件东西都重新称一次包重，费时费力；Sequential Attention则像有个智能助手，边整理边判断哪件物品最有用，一次性挑出关键物品，扔掉冗余的。这样背包更轻，但该带的东西一样不少。对普通人来说，未来手机上的AI翻译、推荐系统或语音助手可能运行更快、更省电，同时保持聪明。不过，这目前还是实验室里的新方法，真正用到日常App里还需时间。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "​Sequential Attention: Making AI models leaner and faster without sacrificing accuracy"
+    },
+    {
       "id": "5de818201044ab",
       "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
       "sources": [
@@ -6495,6 +6640,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+"
+    },
+    {
+      "id": "8ebedf130d3470",
+      "url": "https://research.google/blog/collaborating-on-a-nationwide-randomized-study-of-ai-in-real-world-virtual-care/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/collaborating-on-a-nationwide-randomized-study-of-ai-in-real-world-virtual-care/"
+        }
+      ],
+      "publishedAt": "2026-02-03",
+      "source": "Google Research",
+      "title": "谷歌携Included Health启动AI虚拟诊疗全国随机试验",
+      "summary": "谷歌研究团队宣布与医疗服务商Included Health合作，待机构审查委员会批准后，启动一项全国性前瞻性随机对照研究，评估对话式AI在真实虚拟诊疗流程中的表现。此前谷歌已通过AMIE等系统在模拟场景中验证诊断推理能力，并与贝斯以色列女执事医疗中心完成单中心可行性研究，初步显示安全性良好。新研究将招募全国参与者，与标准临床实践对照，以获取大规模真实世界证据。研究结果尚未公布，具体设计细节和入组规模仍不明确。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "这是医疗AI从模拟和回顾性研究迈向大规模前瞻性随机对照的关键一步，若成功将为AI临床部署建立更高证据标准，影响监管与行业实践。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队2月3日宣布，将与全美医疗服务商Included Health合作，启动一项全国性、前瞻性、随机对照研究，评估对话式AI在真实虚拟诊疗工作流中的效用与安全性。该研究尚待机构审查委员会批准，将招募全国范围内的知情同意参与者，与标准临床实践进行对照。此前，谷歌已通过AMIE系统在模拟场景中展示诊断推理能力，并与贝斯以色列女执事医疗中心完成单中心可行性研究，初步观察到安全性信号，但完整结果尚未发布。新研究旨在超越模拟和回顾性数据，获取大规模真实世界证据。目前，研究的具体入组人数、试验周期、主要终点指标及AI系统版本等关键细节均未披露，仍存在不确定性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，谷歌之前让AI医生在“模拟考”里答题，成绩不错，但模拟考终究不是真考场。现在它要拉上真实患者，在全国范围做一次“双盲对照实验”：一部分人用AI辅助，一部分人按常规看病，然后比一比谁更安全、更有效。这就像新药上市前必须做大规模临床试验，而不是只看实验室数据。对普通人来说，这意味着未来AI看病可能不再只是噱头，而是有严格证据支撑的工具。但别急着欢呼，研究还没开始，结果未知，AI在真实复杂病情中的表现仍需验证。好处是，如果成功，偏远地区缺医少药的人可能更容易获得高质量医疗建议；风险是，如果证据不足就推广，可能带来误诊等隐患。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Collaborating on a nationwide randomized study of AI in real-world virtual care"
     },
     {
       "id": "cc199a2045454f",
