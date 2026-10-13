@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:38:24.919557+00:00",
-  "lastCheckedAt": "2026-10-13T06:38:24.919557+00:00",
+  "updatedAt": "2026-10-13T06:39:09.189678+00:00",
+  "lastCheckedAt": "2026-10-13T06:39:09.189678+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -9047,6 +9047,35 @@
       "originalTitle": "State of Open Source on Hugging Face: Spring 2026"
     },
     {
+      "id": "c0a1c859372790",
+      "url": "https://huggingface.co/blog/Hcompany/holotron-12b",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/Hcompany/holotron-12b"
+        }
+      ],
+      "publishedAt": "2026-03-17",
+      "source": "Hugging Face",
+      "title": "H公司发布Holotron-12B计算机操作智能体模型",
+      "summary": "H公司基于英伟达Nemotron-Nano-2 VL模型后训练推出Holotron-12B，采用混合SSM与注意力架构，主打高吞吐推理。在WebVoyager基准上，其表现从基座模型的35.1%提升至80.5%，超过Holo2-8B；单张H100上吞吐量达8.9k tokens/s，约为Holo2-8B的2倍。模型已在Hugging Face以英伟达开放模型许可发布，但基准测试细节和实际生产表现仍待更多独立验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该模型展示了混合SSM架构在计算机操作智能体场景下的吞吐优势，并显著提升基准成绩，为高并发自动化任务提供新选择，但实际落地效果仍需观察。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "H公司发布Holotron-12B，一个面向计算机操作智能体的多模态模型。它从英伟达Nemotron-Nano-12B-v2-VL-BF16基座出发，经约140亿token的监督微调，使用H公司自有的定位与导航数据，重点训练屏幕理解、界面元素定位和交互。模型采用混合状态空间模型（SSM）与注意力架构，官方称在单张H100、vLLM 0.14.1下，WebVoyager并发100时总吞吐达8.9k tokens/s，而Holo2-8B为5.1k tokens/s。WebVoyager成绩从基座35.1%升至80.5%。模型已在Hugging Face以NVIDIA开放模型许可发布。不过，这些数据均来自官方自测，第三方复现和真实生产环境表现尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Holotron-12B理解成一个专门替人操作电脑的“数字员工”。以前的模型看屏幕、点按钮时，每多记一步就多占一份内存，任务一长就变慢；新模型换了一种更省内存的记法，只保留一个固定状态，所以同时处理很多任务也不容易卡。对普通人来说，这意味着未来批量填表、自动测试网页、生成操作数据等重复性电脑工作，可能由AI更便宜、更快地完成。但它仍可能点错按钮或误解界面，官方跑分高不等于日常好用，实际部署前需要小范围试用并保留人工检查。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Holotron-12B - High Throughput Computer Use Agent"
+    },
+    {
       "id": "051065bd361190",
       "url": "https://research.google/blog/introducing-groundsource-turning-news-reports-into-data-with-gemini/",
       "sources": [
@@ -9192,6 +9221,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries"
+    },
+    {
+      "id": "0052db55dfd78e",
+      "url": "https://huggingface.co/blog/lerobot-release-v050",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/lerobot-release-v050"
+        }
+      ],
+      "publishedAt": "2026-03-09",
+      "source": "Hugging Face",
+      "title": "LeRobot v0.5.0发布：新增人形机器人与VLA策略",
+      "summary": "开源机器人学习库LeRobot发布v0.5.0，为迄今最大更新。该版本新增首个完整人形机器人Unitree G1支持，涵盖行走、操作、遥操作与全身控制；引入Pi0-FAST自回归VLA、实时分块（RTC）等六项新策略；数据集支持流式视频编码，训练提速约10倍；推出EnvHub可从Hugging Face Hub直接加载仿真环境，并集成NVIDIA IsaacLab-Arena。代码库升级至Python 3.12与Transformers v5，支持第三方策略插件。具体性能提升幅度仍取决于硬件配置。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "该版本将人形机器人、自回归VLA与实时推理优化整合进开源工具链，显著降低机器人学习门槛，对具身智能研究与开发社区具有直接推动作用。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "LeRobot v0.5.0于2026年3月9日发布，自v0.4.0以来合并超200个PR、新增50余名贡献者。硬件方面首次完整支持Unitree G1人形机器人，包括运动、操作、遥操作与全身控制，同时新增OpenArm、Earth Rover等机器人及CAN总线电机控制器。策略方面新增Pi0-FAST自回归VLA、Wall-X、X-VLA、SARM等六项，并引入实时分块（RTC）提升流式策略响应速度，支持LoRA等PEFT微调。数据集支持流式视频编码，官方称图像训练提速约10倍、编码提速约3倍。EnvHub支持从Hugging Face Hub加载仿真环境，并集成NVIDIA IsaacLab-Arena。代码库要求Python 3.12+并迁移至Transformers v5。官方提示流式编码性能因硬件与录制配置而异。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把LeRobot理解成一个机器人界的“应用商店加开发套件”。过去想让机器人学会新动作，往往要自己搭环境、写代码、等数据编码，门槛很高。这次更新相当于把货架一下子铺满：从机械臂到能走能抓的人形机器人，从多种现成“大脑”模型到一键下载的仿真训练场，还让录制数据不再卡顿等待。对普通人来说，短期内不会直接改变生活，但它让研究者和爱好者用更少资源训练机器人，长期可能加速家用、物流、服务机器人变得更灵活、更便宜。不过官方也提醒，提速效果取决于电脑配置，并非所有设备都能达到宣传倍数。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "LeRobot v0.5.0: Scaling Every Dimension"
+    },
+    {
+      "id": "5ccb6851805d83",
+      "url": "https://huggingface.co/blog/ulysses-sp",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ulysses-sp"
+        }
+      ],
+      "publishedAt": "2026-03-09",
+      "source": "Hugging Face",
+      "title": "Ulysses序列并行：百万token训练落地Hugging Face",
+      "summary": "长上下文训练面临注意力计算随序列长度平方增长的内存瓶颈，单GPU难以承载数十万token。Snowflake AI Research提出的Ulysses序列并行，通过将序列和注意力头同时切分到多GPU，并用all-to-all通信交换键值对，实现百万token级训练。该方案已集成到Hugging Face生态，包括Accelerate、Transformers Trainer和TRL的SFTTrainer，支持FlashAttention和可变长序列，并自动处理损失聚合。相比Ring Attention，其通信量更低、延迟更小，但需满足序列长度可被sp_size整除等约束。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "长上下文是当前大模型关键能力，Ulysses降低多GPU训练门槛并集成主流工具链，让百万token训练更易落地，对开发者和企业有直接实用价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face发布技术文章，介绍Ulysses序列并行及其在生态中的集成。Ulysses源自Snowflake AI Research的ALST协议，核心是在序列维度切分的基础上，进一步把注意力头分配到不同GPU，通过两次all-to-all通信交换QKV，使每张卡只计算部分注意力头。文章给出Accelerate、Transformers Trainer和TRL SFTTrainer的配置示例，并说明Trainer会自动包装dataloader、聚合各rank损失、调整有效数据并行规模。仍不确定之处包括：实际百万token训练的具体硬件规模、吞吐与显存收益的量化数据，以及不同模型和集群下的稳定性表现，文章未给出统一基准。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前训练超长文本，就像让一个人一口气读完一整本书再答题，脑子装不下。Ulysses的做法是把书拆成几段，分给几个人同时读，但每个人只负责回答其中几类问题，中间靠快速传纸条对齐信息。这样单卡压力小了，就能处理更长的文档、代码库或检索材料。对普通用户来说，未来AI能更稳地分析整本书、长合同或大型项目代码，而不是只记住开头结尾。对开发者来说，Hugging Face把复杂通信和损失计算封装好，改几行配置就能多卡训练长上下文，省去自己写并行逻辑的麻烦。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Ulysses Sequence Parallelism: Training with Million-Token Contexts"
     },
     {
       "id": "db0ffa036daa82",
