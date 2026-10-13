@@ -22,6 +22,7 @@ test('搜索、分类、排序、分页和详情流程可用', async ({page}) =>
   await page.goto('/');
   await page.getByLabel('搜索新闻').fill('OpenAI');
   await expect(page.locator('.news-card')).not.toHaveCount(0);
+  await expect(page.getByText(/全年共 \d+ 条/)).toBeVisible();
   await page.getByLabel('搜索新闻').fill('');
   await page.getByRole('button', {name: '日常应用', exact: true}).click();
   await expect(page.locator('.news-card').first().locator('.meta').getByText('日常应用')).toBeVisible();
