@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:40:17.408384+00:00",
-  "lastCheckedAt": "2026-10-13T06:40:17.408384+00:00",
+  "updatedAt": "2026-10-13T06:41:17.052720+00:00",
+  "lastCheckedAt": "2026-10-13T06:41:17.052720+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -7848,6 +7848,35 @@
       "originalTitle": "Strengthening Singapore’s AI Future: A New National Partnership"
     },
     {
+      "id": "1c8f3fa5123819",
+      "url": "https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/"
+        }
+      ],
+      "publishedAt": "2026-05-16",
+      "source": "Google DeepMind",
+      "title": "AI模型提前5天预测飓风登陆牙买加",
+      "summary": "2025年10月，飓风梅丽莎以五级强度登陆牙买加，成为有记录以来登陆该国的最强飓风。美国国家飓风中心借助谷歌DeepMind的AI模型WeatherNext，提前五天预测出风暴将从一级风速快速增强至五级并登陆牙买加，置信度达80%，三天前升至近100%。这是首次从低初始风速成功预测五级强度。该预测为牙买加当局争取了额外预警时间，用于疏散和资源调配。NHC年度验证报告显示，WeatherNext是2025年飓风季路径和强度预测表现最佳的单模型。",
+      "category": "日常应用",
+      "importance": 78,
+      "why": "AI气象模型首次提前五天准确预测五级飓风登陆，为防灾疏散争取关键时间，展示AI在极端天气预警中的实际价值，对沿海居民安全有直接影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2025年10月，飓风梅丽莎以五级强度登陆牙买加，成为有记录以来登陆该国的最强飓风，并平了大西洋最强飓风纪录。美国国家飓风中心（NHC）首次从一级风速起步，成功预测风暴将增强至五级并登陆牙买加。谷歌DeepMind与谷歌研究院开发的AI模型WeatherNext在此过程中提供了关键支持：它提前五天预测出快速增强和登陆路径，置信度80%，三天前升至近100%。传统模型当时对风暴走向存在分歧，有的认为会以弱系统袭击海地。WeatherNext通过训练全球天气模式和极端热带气旋数据集，同时擅长路径和强度预测，并能运行50种“假设”情景。NHC年度验证报告显示，该模型是2025年飓风季路径和强度预测表现最佳的单模型。目前尚不确定该模型在其他海域和风暴类型中的普适性，官方预警仍由各国气象部门发布。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去预报飓风，要么猜得准路线但猜不准强度，要么猜得准强度但路线跑偏，就像天气预报只能二选一。这次AI模型相当于同时看懂了“台风往哪走”和“台风会变多强”，而且提前五天就发出警报。对普通人来说，这意味着住在沿海的人能更早收到疏散通知，有时间收拾东西、找安全地方，而不是半夜被狂风惊醒。牙买加这次就因此争取到了额外准备时间。不过，AI只是辅助，最终发警报的还是当地气象部门。这项技术未来可能推广到菲律宾、越南等地，让更多易受灾地区受益。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How WeatherNext helped the National Hurricane Center better predict Hurricane Melissa’s historic landfall in Jamaica"
+    },
+    {
       "id": "4bb07558bb37c9",
       "url": "https://deepmind.google/blog/opening-new-paths-in-aging-research/",
       "sources": [
@@ -7906,6 +7935,37 @@
       "originalTitle": "Uniting biological toolkits for a new approach to ALS"
     },
     {
+      "id": "7807ac29869253",
+      "url": "https://deepmind.google/blog/uncovering-repurposed-medicines-to-fight-liver-fibrosis/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/uncovering-repurposed-medicines-to-fight-liver-fibrosis/"
+        }
+      ],
+      "publishedAt": "2026-05-16",
+      "source": "Google DeepMind",
+      "title": "谷歌DeepMind用AI筛选抗肝纤维化老药",
+      "summary": "谷歌DeepMind发布研究，尝试用AI从已上市药物中筛选可重新用于治疗肝纤维化的候选药。肝纤维化是慢性肝病走向肝硬化、肝癌的关键环节，现有疗法有限，而新药研发周期长、成本高。所谓“老药新用”，即挖掘已有药物的新适应症，可绕开部分早期安全性验证。但公开正文为乱码，无法核实具体算法、筛选规模、命中药物数量及是否经过细胞或动物实验验证，也未披露临床阶段信息。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "肝纤维化患者基数大、有效药物稀缺，AI辅助老药新用若成立，可缩短研发周期并降低试错成本，但当前信息不足以判断其真实成熟度。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布了一项关于肝纤维化药物重定位的研究，目标是从已有药物中寻找可能对肝纤维化有效的候选分子。肝纤维化由慢性肝损伤引发，持续发展可导致肝硬化甚至肝癌，目前可选疗法有限。药物重定位的思路是跳过部分早期安全性验证，把已上市或已进入临床的药物用于新适应症，从而压缩研发时间和成本。但本次提供的正文内容为乱码，无法确认其使用的具体AI方法、筛选了多少种药物、命中多少候选、是否完成细胞或动物实验，也无法判断是否进入临床。因此，只能确认研究主题，不能确认疗效或落地时间。",
+          "text_length": 236
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：不从头造一把新钥匙，而是拿一大串已经存在的钥匙，用AI快速试哪把能打开肝纤维化这把锁。好处是这些钥匙已经知道安不安全，省去很多早期测试。对普通人来说，这目前只是实验室里的筛选结果，不等于已经有药能治肝纤维化，更不代表明天就能用。它真正的意义是可能让药企少走弯路、让候选药更快进入人体试验。但AI筛出来的“可能有效”和“临床证明有效”之间，还隔着很长的验证路。",
+          "text_length": 208
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Uncovering repurposed medicines to fight liver fibrosis"
+    },
+    {
       "id": "f5132994aca5b4",
       "url": "https://deepmind.google/blog/accelerating-discovery-of-liver-disease-mechanisms/",
       "sources": [
@@ -7933,6 +7993,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Accelerating discovery of liver disease mechanisms"
+    },
+    {
+      "id": "c28761bd296716",
+      "url": "https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/finding-the-molecular-switches-behind-new-infectious-diseases/"
+        }
+      ],
+      "publishedAt": "2026-05-16",
+      "source": "Google DeepMind",
+      "title": "AI工具Co-Scientist加速传染病研究",
+      "summary": "剑桥大学Clare Bryant教授利用Google DeepMind的Co-Scientist工具，研究病原体跨物种传播引发严重疾病的分子机制。她输入流感研究提案后，工具生成并排序假设，其中一些她未曾考虑。在火车上她发现工具优先考虑了一个未关注的蛋白质，随后加入未发表数据，假设逐步精确到氨基酸。团队正构建细胞系测试，预计将原本需2-3年的工作缩短至6个月。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "AI工具在科研中显著加速假设生成与验证，可能改变传染病研究范式，对公共卫生产生积极影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind的AI工具Co-Scientist被剑桥大学Clare Bryant教授用于研究病原体跨物种传播（如流感）引发严重疾病的分子开关。她先输入一份研究提案摘要，工具生成并排序了多个假设，其中一些是她未曾想到的。当提案获得资助后，她输入完整提案，并在火车上阅读输出时发现工具优先考虑了一个她未关注的蛋白质，该蛋白质与多个她感兴趣的信号通路相关。随后她加入未发表数据，假设逐步精确到特定氨基酸。团队正构建含氨基酸突变的细胞系进行测试。原本需2-3年的实验工作，现在预计6个月完成，前提是工具引导的目标正确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像你有一个超级聪明的科研助手，它读遍了所有论文，帮你从海量信息中挑出最值得研究的线索。以前科学家要花两三年才能找到具体的分子靶点，现在可能半年就搞定。这意味着未来我们可能更快地开发出针对新发传染病的药物或疫苗，保护大家健康。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Finding the molecular switches behind new infectious diseases"
     },
     {
       "id": "071ef486161ea8",
@@ -8020,6 +8109,93 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Co-Scientist: A multi-agent AI partner to accelerate research"
+    },
+    {
+      "id": "7c1a813822f725",
+      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
+        }
+      ],
+      "publishedAt": "2026-05-11",
+      "source": "Hugging Face",
+      "title": "AWS发布基础模型训练推理构建模块",
+      "summary": "AWS于2026年5月11日发布技术文章，系统梳理在AWS上运行基础模型训练与推理的软硬件分层架构。文章指出，缩放规律已从单一预训练扩展为预训练、后训练和测试时计算三条曲线，对基础设施提出趋同要求：紧耦合加速计算、高带宽低延迟网络和分布式存储。文章详列P5、P6实例族的GPU规格、NVLink与EFA带宽、本地NVMe与FSx for Lustre存储，并介绍UltraClusters和UltraServers如何扩展NVLink域。文章为系列首篇，未给出具体性能基准或客户案例。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "该文反映云厂商正围绕后训练与推理重构基础设施，对理解大模型算力成本与部署选型有参考价值，但属技术综述而非产品发布。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布技术文章，介绍在AWS上构建基础模型训练与推理的“构建模块”。文章引用NVIDIA“从一到三缩放定律”框架，认为性能不再只靠预训练堆算力，后训练（SFT、RL）和测试时计算同样关键，三者对基础设施要求趋同。文章列出P5、P6实例族规格：H100、H200、B200、B300的BF16/FP8/FP4峰值算力、HBM容量与带宽，以及NVLink和EFA各代带宽。存储采用本地NVMe、FSx for Lustre和S3分层。集群层面介绍EC2 UltraClusters和UltraServers，后者基于GB200 NVL72，可将NVLink域扩展至72块GPU。文章未提供实际训练吞吐或成本数据，也未说明这些配置的可用区域和定价。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把训练大模型想象成盖大楼：以前只要堆更多工人（算力）就能盖更高，现在发现还得靠后期装修（后训练）和现场反复检查（测试时计算）。AWS这篇文章相当于一份建材清单，告诉你它家有哪些型号的“工人”（GPU）、多宽的“传送带”（NVLink和EFA网络）和多快的“仓库”（存储）。对普通人来说，这不会直接改变你用的AI产品，但意味着云厂商正在为更复杂的模型训练和推理铺路，未来AI服务的能力和价格可能受这类基础设施效率影响。文章本身是技术导览，不是降价或新服务上线，普通用户无需行动。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Building Blocks for Foundation Model Training and Inference on AWS"
+    },
+    {
+      "id": "463b01d5793bbf",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
+        }
+      ],
+      "publishedAt": "2026-05-06",
+      "source": "Hugging Face",
+      "title": "vLLM V1迁移：先修后端再调RL目标",
+      "summary": "ServiceNow AI团队在Hugging Face发文，记录将强化学习训练中的推理引擎从vLLM V0迁移到V1的过程。初始V1运行与V0参考轨迹在clip rate、KL、熵和奖励上明显偏离。团队先排除目标函数问题，定位到四类后端差异：logprobs语义、V1运行时默认值、inflight权重更新路径，以及最终投影需用fp32 lm_head。修复后V1轨迹接近V0参考。文章强调应先保证推理后端正确性，再考虑目标侧修正。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该文揭示在线强化学习中训练与推理不一致的具体来源，对使用vLLM做RL训练的研究和工程团队有直接参考价值，也提醒先修后端再调目标。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "ServiceNow AI团队在Hugging Face发布企业文章，记录PipelineRL将推理引擎从vLLM V0迁移到V1时遇到的训练不稳定问题。参考运行使用vLLM 0.8.5，V1运行使用0.18.1。初始V1运行中，训练侧的当前策略logprobs、奖励、clip rate、KL和熵均偏离V0参考。团队先怀疑RL目标需要修正，但随后按后端行为问题排查，确认四类原因：V1默认返回原始模型logprobs而非采样器处理后的分布；V1运行时默认启用前缀缓存和异步调度；inflight权重更新路径与V0不同；最终投影需匹配训练侧的fp32 lm_head。逐项修复后，V1轨迹接近V0参考。文章未给出完整超参和全部复现细节，仍不确定之处包括不同RL算法和更大规模下的普适性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把强化学习训练想成老师和学生用同一本教材：老师出题，学生答题，老师再根据答案调整教学。这里推理引擎负责出题，训练器负责批改。迁移到V1后，出题老师换了套内部规则，比如题目难度标注方式变了、缓存了旧答案、更新教材时没清空旧笔记，导致批改标准对不上，训练自然跑偏。团队没有急着改评分规则，而是先把出题老师的规则调回和原来一致，包括用处理后的概率、关掉前缀缓存和异步调度、更新权重时保留缓存、最后投影用更高精度。对普通人的影响是间接的：这类修复能让AI模型训练更稳定、更可复现，未来使用相关模型时体验更一致，但短期内不会直接改变日常应用功能。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "vLLM V0 to V1: Correctness Before Corrections in RL"
+    },
+    {
+      "id": "9bcec59458e97e",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data"
+        }
+      ],
+      "publishedAt": "2026-05-06",
+      "source": "Hugging Face",
+      "title": "Open ASR榜引入私有数据集防刷分",
+      "summary": "2026年5月，Hugging Face的Open ASR Leaderboard宣布与Appen、DataoceanAI合作，引入覆盖美、英、澳、加、印等口音及朗读、对话场景的私有英文ASR数据集，用于防止“benchmaxxing”和测试集污染。榜单默认平均WER仍只统计公开数据集，用户可手动切换查看私有集影响，并新增朗读/对话、美式/非美式口音分组指标。目前尚不确定私有数据能否真正杜绝刷分，以及模型若曾用相似分布数据训练是否仍占优。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "语音识别榜单长期面临测试集污染和刷分问题，此举尝试用私有数据提升评测可信度，并细分口音与场景指标，对模型选型和评测标准有参考意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Open ASR Leaderboard于2026年5月6日更新，宣布与Appen和DataoceanAI合作，新增一批私有英文ASR评测集，覆盖澳大利亚、加拿大、印度、美国、英国等口音，以及朗读和对话两种风格。榜单默认的平均WER仍只基于公开数据集计算，私有集需手动开启才纳入宏平均，并新增“朗读/对话”“美式/非美式”等分组指标。官方称此举是为降低benchmaxxing和测试集污染风险，但承认若模型训练数据与私有集分布相似，仍可能获得优势，且未公布各私有集单独分数。目前尚不确定该机制能否真正杜绝刷分，以及数据提供方是否完全停止向客户提供同源数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成考试：以前题库公开，大家拼命背题，分数高不代表真会说话。现在主办方偷偷加了几套不公开的题，平时排名还是按公开题算，但你可以点开看看“隐藏题”表现。对普通人来说，这意味着以后挑语音转文字工具时，不能只看榜单第一名，还要看它在对话、非美式口音等场景下是否靠谱。对开发者来说，刷公开测试集的老路越来越难走，真正提升模型泛化能力才更划算。不过，隐藏题也可能被“猜题”式训练绕过，所以榜单只是参考，不是绝对真理。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard"
     },
     {
       "id": "55a6a125da398c",
