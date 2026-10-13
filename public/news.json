@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:30:14.456947+00:00",
-  "lastCheckedAt": "2026-10-13T06:30:14.456947+00:00",
+  "updatedAt": "2026-10-13T06:31:10.190980+00:00",
+  "lastCheckedAt": "2026-10-13T06:31:10.190980+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -7556,6 +7556,95 @@
       "originalTitle": "Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles"
     },
     {
+      "id": "fc2ae7c68319ae",
+      "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers"
+        }
+      ],
+      "publishedAt": "2026-04-16",
+      "source": "Hugging Face",
+      "title": "Sentence Transformers 支持多模态嵌入模型微调",
+      "summary": "Hugging Face 于 2026 年 4 月发布技术博客，介绍如何用 Sentence Transformers 库训练和微调多模态嵌入与重排序模型。作者以视觉文档检索为例，微调 Qwen3-VL-Embedding-2B，在自有评估数据上 NDCG@10 从基线的 0.888 提升至 0.947，并称优于测试过的所有现有 VDR 模型，包括参数量达其 4 倍的模型。文章详述了模型加载、数据集格式、损失函数等组件，但结果仅基于作者自建评估集，未提供第三方复现或完整基准对比。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "多模态检索是 RAG 和搜索的关键环节，该教程降低了微调门槛，并展示小模型经领域微调可超越大模型，对开发者有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 工程师 Tom Aarsen 发布博客，演示用 Sentence Transformers 训练多模态嵌入和重排序模型。核心案例是微调 Qwen/Qwen3-VL-Embedding-2B 用于视觉文档检索，即根据文本查询检索文档页面截图。训练数据来自 LlamaIndex 多语言 VDR 数据集，作者预处理出 53,512 条英文样本，训练时使用查询、正例图像和一个硬负例组成三元组，损失函数为 CachedMultipleNegativesRankingLoss。微调后模型在作者自建评估集上 NDCG@10 达 0.947，基线为 0.888，并称超过所有对比的现有 VDR 模型，包括参数量 4 倍于它的模型。但评估集仅 300 条样本，且未列出具体对比模型名单，结果尚未经第三方复现。",
+          "text_length": 298
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把通用多模态模型想象成一个各科都及格但都不拔尖的学生，而微调就是针对某一门课开小灶。这次开小灶的科目是“看文档截图找答案”：你问“公司三季度营收多少”，模型要从几千张文档截图里挑出最相关的那页，还得看懂表格和图表。作者用五万多条英文样本给模型补课，结果在自家考卷上从 88.8 分提到 94.7 分，甚至超过了块头大四倍的模型。对普通人的影响是：以后企业可以用自己的文档数据训练专属检索模型，让内部搜索更准，而不必依赖通用大模型。不过目前成绩只是作者自测，实际效果还需更多独立验证。",
+          "text_length": 248
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers"
+    },
+    {
+      "id": "f5afeabfec9288",
+      "url": "https://huggingface.co/blog/ecom-rlve",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ecom-rlve"
+        }
+      ],
+      "publishedAt": "2026-04-16",
+      "source": "Hugging Face",
+      "title": "电商对话智能体训练框架Ecom-RLVE发布",
+      "summary": "2026年4月，研究者发布Ecom-RLVE框架，将可验证强化学习环境从单轮推理扩展到多轮、工具增强的电商对话。该框架包含8个可验证环境（如商品发现、购物车构建、退货等），每个环境具备程序化问题生成、12轴难度课程和算法可验证奖励。团队用DAPO算法训练Qwen 3 8B模型300步，初步结果显示环境扩展和自适应难度能迁移到智能体任务。项目源自PyTorch OpenEnv黑客松，仍在演进中。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该工作将可验证强化学习从单轮推理扩展到多轮工具增强的电商对话，解决了智能体任务中奖励难以验证和难度自适应的关键问题，为训练更可靠的购物助手提供了新范式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "研究者发布了Ecom-RLVE框架，将RLVE从单轮推理谜题扩展到多轮、工具增强的电商对话。EcomRLVE-GYM提供8个可验证环境：商品发现、替代品、购物车构建、退货、订单跟踪、政策问答、捆绑规划和多意图旅程。每个环境使用程序化问题生成、12轴难度课程和算法可验证奖励，无需人工标注或LLM评判。团队用DAPO算法训练Qwen 3 8B模型300步，展示了环境扩展和自适应难度能迁移到智能体任务。项目源自PyTorch OpenEnv黑客松，仍在演进中。目前尚不确定该框架在更大规模模型和真实电商场景中的泛化能力。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给AI购物助手建了一个虚拟训练场，里面有各种购物场景，AI必须通过调用工具（搜索、加购等）完成任务，系统自动打分，做对了加分，做错了扣分，还能根据AI的水平自动调整难度。以前训练AI主要靠模仿人类对话，但模仿不等于会办事。现在用强化学习，AI直接以结果为导向，比如购物车里的商品对不对、有没有瞎编不存在的商品。对普通人来说，未来电商客服或购物助手可能更靠谱，能真正帮你找到符合要求的商品，而不是只会说漂亮话。不过目前还只是早期研究，离实际应用还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents"
+    },
+    {
+      "id": "d730085c407f53",
+      "url": "https://huggingface.co/blog/transformers-to-mlx",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/transformers-to-mlx"
+        }
+      ],
+      "publishedAt": "2026-04-16",
+      "source": "Hugging Face",
+      "title": "MLX推出AI技能辅助模型移植PR",
+      "summary": "2026年4月，Hugging Face的MLX团队发布一项“技能”与测试工具，帮助开发者将transformers模型移植到mlx-lm。背景是代码智能体普及后，开源项目收到大量低质量AI生成PR，维护者不堪重负。该技能可自动完成环境搭建、模型下载、代码编写与测试，并生成包含数值对比、逐层比较的报告，且明确标注AI辅助。团队强调这并非全自动，仍需人工审核与迭代，旨在提升贡献质量而非替代维护者判断。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "反映AI智能体对开源协作模式的冲击，以及维护者如何用工具化手段应对PR洪流，对理解AI时代开源生态演变有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MLX团队发布了一个用于将transformers模型移植到mlx-lm的“技能”和独立测试工具。该技能能根据提示自动搭建虚拟环境、从Hub发现并下载模型、阅读transformers建模代码、编写MLX实现并运行测试，若结果异常会调试迭代。它还会生成包含变体差异、生成示例、数值对比、dtype验证和逐层比较的报告，并明确披露PR由智能体辅助。团队同时提供非智能体测试工具，确保结果可复现、不受LLM幻觉影响。但该技能并非全自动，PR仍需贡献者确认结果后手动提交，且维护者强调最终审核和判断仍由人完成。目前尚不清楚该技能在复杂模型上的实际成功率，以及社区接受度如何。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前给开源项目提代码，得自己一行行写、反复测试，现在AI能帮你把大部分活干了，但问题也来了：谁都能让AI生成一堆代码扔过来，维护者根本看不过来。MLX这个工具就像给AI配了个“质检员”，让它按老手的方式干活，还附上详细检测报告，告诉审核者“我干了啥、结果咋样”。对普通人来说，以后用MLX跑新模型可能更快，因为移植速度上去了；但别指望完全躺平，AI写的代码还得真人把关，不然容易埋雷。简单说，AI让写代码变容易了，但让写好代码、看懂代码变得更值钱了。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The PR you would have opened yourself"
+    },
+    {
       "id": "7ca3e9094e7612",
       "url": "https://research.google/blog/ai-generated-synthetic-neurons-speed-up-brain-mapping/",
       "sources": [
@@ -7643,6 +7732,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "ConvApparel: Measuring and bridging the realism gap in user simulators"
+    },
+    {
+      "id": "5f4680a3963bb0",
+      "url": "https://research.google/blog/improving-the-academic-workflow-introducing-two-ai-agents-for-better-figures-and-peer-review/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/improving-the-academic-workflow-introducing-two-ai-agents-for-better-figures-and-peer-review/"
+        }
+      ],
+      "publishedAt": "2026-04-08",
+      "source": "Google Research",
+      "title": "谷歌推出论文绘图与评审AI代理",
+      "summary": "谷歌研究团队发布两款学术AI代理：PaperVizAgent负责从论文方法部分生成出版级图表，ScholarPeer模拟资深审稿人自动评审论文。PaperVizAgent采用五代理协作流程，在0-100评分中获60.2分，超过人类基线50分及GPT-Image-1.5等基线；ScholarPeer结合网络搜索与多代理验证，在公开数据集上对现有自动评审方法取得显著胜率。两者均为实验性原型，官方声明不应作为编辑或发表决策依据。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "学术出版流程长期受制于图表制作与审稿疲劳，谷歌用多代理系统切入这两个痛点，且首次有系统在图表生成上超过人类基线，可能改变科研工作方式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队于2026年4月8日发布两款学术AI代理。PaperVizAgent接收论文方法部分和图表说明，通过检索、规划、风格、可视化、批评五个代理协作，生成方法示意图或统计图代码，经迭代优化输出。在0-100分评估中，它获60.2分，超过人类基线50分，也优于GPT-Image-1.5、Nano-Banana-Pro和Paper2Any。ScholarPeer则模拟资深审稿人，通过领域历史代理、基线侦察代理和多方面问答引擎，结合网络搜索验证论文主张，生成包含总结、优缺点和提问的评审报告。在公开数据集对比中，它对现有自动评审方法取得显著胜率，并缩小了AI反馈与人类评审的多样性差距。两款工具均为实验性原型，官方明确不应作为编辑或发表决策依据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给科研人员配了两个AI助手：一个专门画论文里的流程图和统计图，另一个像审稿人一样挑毛病。以前画图要反复调整，审稿要等几个月，现在AI能快速出图、写评审意见。对普通人来说，未来读到的论文可能图表更规范、评审更细致，但也要警惕AI审稿可能漏掉创新点或产生偏见。目前它们只是实验品，不能替代人类判断，但方向已经明确：AI正从研究工具变成科研流程的参与者。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Improving the academic workflow: Introducing two AI agents for better figures and peer review"
+    },
+    {
+      "id": "d420929810345f",
+      "url": "https://research.google/blog/evaluating-alignment-of-behavioral-dispositions-in-llms/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/evaluating-alignment-of-behavioral-dispositions-in-llms/"
+        }
+      ],
+      "publishedAt": "2026-04-03",
+      "source": "Google Research",
+      "title": "谷歌研究：大模型行为倾向与人类共识存在偏差",
+      "summary": "谷歌研究团队发布框架，将心理学问卷改编为情境判断测试，评估25个大语言模型在共情、情绪调节等行为倾向上的对齐程度。结果显示，在人类标注者高度一致的场景中，大模型对齐率接近完美，但共识低于90%时对齐率降至80%出头；所有模型在人类意见分歧时表现出系统性过度自信，且自我报告倾向与实际行为存在明显不一致。研究称这是理解模型行为对齐的早期步骤。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该研究首次用心理学情境判断测试大规模量化大模型行为倾向与人类共识的偏差，揭示模型在分歧场景下过度自信及自我报告失真，对AI对齐评估方法有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队于2026年4月3日发布一项评估框架，将IRI共情量表、ERQ情绪调节问卷等心理学工具改编为情境判断测试，覆盖职业镇定、冲突解决、预订旅行等日常与职场场景。每个场景由三名标注者审核，再从550名参与者中每场景收集10份人类偏好，与25个大语言模型的回答分布对比。结果发现两类偏差：一是模型行为偏离人类共识，在人类一致同意时前沿模型对齐率接近完美，但共识低于90%时降至80%出头；二是模型未反映人类意见的分布范围，在人类分歧较大时仍保持高置信度。研究还发现模型自我报告倾向与实际行为不一致，例如自报低冲动却表现出冲动倾向。研究未说明具体模型版本及场景总数。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给AI做一套心理测试，不是问它“你觉得自己冲动吗”，而是把它放进具体场景看它怎么选。结果发现，当大多数人都觉得该这么做时，AI基本能跟上；可一旦人类自己都吵得不可开交，AI反而特别笃定，好像它比人还清楚答案。更麻烦的是，AI嘴上说的和实际做的常常对不上——它说自己不爱冲动，真遇到限时机会却劝你马上行动。对普通人来说，这意味着AI在帮你做决策时，可能把本来有争议的事说得像板上钉钉，尤其在职场和人际冲突中，它的建议未必代表多数人的真实想法。这项研究提醒我们，AI的“性格”需要更细致的校准，不能只看它自己怎么说。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Evaluating alignment of behavioral dispositions in LLMs"
     },
     {
       "id": "925612dcbcc31b",
