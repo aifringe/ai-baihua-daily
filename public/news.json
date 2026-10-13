@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:12:45.170051+00:00",
-  "lastCheckedAt": "2026-10-13T06:12:45.170051+00:00",
+  "updatedAt": "2026-10-13T06:14:17.474368+00:00",
+  "lastCheckedAt": "2026-10-13T06:14:17.474368+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -5331,6 +5331,35 @@
       "originalTitle": "Google DeepMind and A24 announce first-of-its-kind research partnership"
     },
     {
+      "id": "51316e8a2b80cf",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/"
+        }
+      ],
+      "publishedAt": "2026-06-30",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Nano Banana 2 Lite与Omni Flash",
+      "summary": "谷歌DeepMind于2026年6月30日发布两款生成式媒体模型：Nano Banana 2 Lite主打快速低成本图像生成，4秒出图、每千张1K图0.034美元，并登陆搜索AI模式、Gemini应用等消费端；Gemini Omni Flash面向开发者开放预览，支持文本、图像、视频输入的视频生成与对话式编辑，定价每秒0.10美元。两者均带SynthID水印。官方也列出Omni仅支持10秒视频、音频参考与场景扩展暂不支持等限制。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "图像与视频生成模型同时降价提速，并直接接入搜索、相册等大众产品，意味着AI创作门槛进一步降低，普通用户和开发者都能更快、更便宜地生成和编辑多媒体内容。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind发布两款模型。Nano Banana 2 Lite是Nano Banana家族中最快、最省钱的图像模型，文本生成图像约4秒，每千张1K分辨率图像0.034美元，官方建议用它替换初代Nano Banana。它当天上线Google AI Studio、Gemini API和企业平台，并进入搜索AI模式、Gemini应用、NotebookLM、Google相册、Flow、Google Ads等消费端。Gemini Omni Flash以预览形式向开发者开放，支持文本、图像、视频组合输入，可生成视频并用自然语言对话式编辑，定价每秒视频0.10美元，与Veo 3.1 Fast相同。官方明确限制：目前仅生成10秒视频，API暂不支持音频参考和场景扩展，最长3秒的视频参考虽被接口接受但模型尚不能正确处理，跨场景或平移时角色一致性也有限。两款模型均使用SynthID水印。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这两个模型想成一条流水线：Nano Banana 2 Lite是快速便宜的“草图机”，几秒就能画出一张图，适合大量试错；Omni Flash是“动画师”，能把你给的图或视频变成会动的片段，还能用说话的方式改片子。对普通人来说，最直接的变化是这些能力不再只藏在开发者工具里，搜索、相册、广告等日常产品里就能用到，做图做视频更便宜也更快。对开发者来说，先快速出图、再交给视频模型动起来，可以拼出端到端的多媒体应用。不过要注意，视频目前只有10秒，复杂镜头切换时人物可能不够稳定，音频和延长场景也还没开放，适合尝鲜和轻量创作，暂时还替代不了专业剪辑。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Start building with Nano Banana 2 Lite and Gemini Omni Flash"
+    },
+    {
       "id": "d2b47e5ca2b10e",
       "url": "https://huggingface.co/blog/ibm-research/scarfbench",
       "sources": [
@@ -5538,6 +5567,96 @@
       "originalTitle": "MosaicLeaks: Can your research agent keep a secret?"
     },
     {
+      "id": "432c23c0dd1c00",
+      "url": "https://huggingface.co/blog/is-it-agentic-enough",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/is-it-agentic-enough"
+        }
+      ],
+      "publishedAt": "2026-06-18",
+      "source": "Hugging Face",
+      "title": "Hugging Face 发布智能体工具基准测试",
+      "summary": "Hugging Face 于2026年6月18日发布博客，提出针对编码智能体使用开源库的基准测试方法。以 transformers 库为例，测试不同模型、库版本和任务下智能体的表现，关注过程指标如耗时、token消耗和错误率，而非仅最终答案。结果显示，新增 CLI 和 Skill 后，大模型完成任务时间减少，但克隆仓库时 token 消耗增加。该测试旨在帮助库维护者优化工具，使其更易被智能体驱动。",
+      "category": "行业变化",
+      "importance": 75,
+      "why": "该基准测试首次系统评估智能体使用开源库的效率，为库设计提供新标准，可能推动工具优化，影响开发者生态。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 发布博客，介绍一种针对编码智能体的工具基准测试。该测试以 transformers 库为案例，在相同硬件上运行不同模型、库版本和任务，记录智能体完成任务的过程指标，如耗时、token 消耗和错误率。测试设置三种环境：仅安装库、克隆源码、加载 Skill 文档。初步结果显示，新增 CLI 和 Skill 后，大模型平均耗时减少，但克隆源码时因需阅读新代码，token 消耗中位数从约 4k 增至 6.4k。小模型测试仍在进行，具体数据未完全公布。",
+          "text_en": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像给 AI 助手配了一套更顺手的工具。以前 AI 用 transformers 库得自己写代码、调试，现在有了命令行和说明书，它直接敲命令就行，省时但可能多翻几页说明书。对普通人来说，以后 AI 帮你处理文本、图片会更麻利，但背后可能多花点电费。库开发者也能知道怎么改工具让 AI 更爱用，最终让 AI 服务更便宜、更靠谱。",
+          "text_en": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Is it agentic enough? Benchmarking open models on your own tooling"
+    },
+    {
+      "id": "334cabed9c982a",
+      "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/"
+        }
+      ],
+      "publishedAt": "2026-06-16",
+      "source": "Google DeepMind",
+      "title": "谷歌与英国合作AI审批建房规划",
+      "summary": "英国计划2029年前新建150万套住房，但地方规划部门长期受纸质文件和积压拖累。2026年6月16日，谷歌DeepMind宣布与英国政府、Google Cloud及Barnet、Camden、Dorset等地议会合作，基于Gemini开发规划审批AI原型，目标将业主申请处理时间缩短50%。该工具可整合数据、匹配政策、汇总意见并起草报告，但最终决定权仍在规划官员手中。此前工具Extract已向英格兰所有议会开放，预计每年为单个议会节省约255小时。新工具计划2027年起全国推广。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "AI进入公共审批流程，直接影响住房建设效率与政府服务模式，是AI落地政务的重要案例，但效果仍待验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年6月16日宣布，与英国政府、Google Cloud、Faculty及Barnet、Camden、Dorset三个地方规划部门合作，基于Gemini开发一款规划审批AI原型。该工具面向占年度申请近70%的业主申请，如阁楼改造和扩建，功能包括整合积压数据、提取关键地块信息、标注国家和地方相关政策并预评估合规性、汇总咨询意见中的反对点、起草报告初稿。官方称目标是帮助官员将审批决定时间缩短50%。规划官员保留最终决定权，需逐行审核并有权批准或拒绝，工具会记录每一步以形成审计链。此前工具Extract已在超20个地方规划部门试点，本月向英格兰所有议会开放，预计每年为单个议会节省约255小时人工。新工具计划2027年起全国推广。目前仍不确定的是，50%的提速目标能否在更大范围实现，以及AI起草内容是否会被官员过度依赖。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成给规划审批员配了一个不知疲倦的实习助理：它先把成堆的PDF和旧档案翻一遍，把关键信息挑出来，再对照政策手册标出可能违规的地方，最后写一份报告草稿。审批员不用再从零开始翻材料，只需核对和修改，最后拍板。对普通人来说，以后申请扩建或阁楼改造，理论上等待时间可能缩短，地方议会也能腾出人手处理更复杂的项目。但要注意，AI只是助手，不是审批官，最终决定仍由人做出。好处是效率可能提高，风险是如果官员偷懒全盘照抄，错误也可能被放大。这套系统能否真正加快建房，还要看2027年全国推广后的实际表现。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Unlocking UK house-building with AI-accelerated planning"
+    },
+    {
+      "id": "383e6c81094b10",
+      "url": "https://research.google/blog/from-pixels-to-planning-earth-ai-for-nature-restoration/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/from-pixels-to-planning-earth-ai-for-nature-restoration/"
+        }
+      ],
+      "publishedAt": "2026-06-16",
+      "source": "Google Research",
+      "title": "谷歌发布AI矢量数据集，精细测绘农田生态特征",
+      "summary": "谷歌研究院基于高分辨率深度学习框架，将英格兰农田中的树篱、石墙等细小生态特征从像素地图转化为可操作的矢量数据集。这些特征因太小而常被卫星遗漏，但对碳储存和生物多样性至关重要。团队利用预训练视觉Transformer和谷歌地球引擎，解决了空间拓扑、语义分类和计算规模难题，生成了覆盖超13万平方公里的精细数据。该开源数据集旨在帮助土地所有者和保护者在不影响粮食安全的前提下，量化并扩展这些生态资产，应对气候与生物多样性危机。",
+      "category": "行业变化",
+      "importance": 75,
+      "why": "该成果将AI遥感从像素识别推进到可规划矢量数据，为农业用地生态恢复提供实用工具，平衡粮食安全与气候目标，对环保、农业和AI应用领域有示范意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究院于2026年6月16日发布了一个矢量化的高分辨率数据集，覆盖英格兰超过13万平方公里，专门识别农田中的树篱、石墙和小树林等细小生态特征。此前2020年的Farmscapes地图以像素形式呈现，但实际恢复和碳核算需要可操作的矢量数据。团队利用预训练于3亿张卫星图像的视觉Transformer模型，结合亚米级影像和1米LiDAR，开发了双层标注系统，并采用Polsby-Popper紧凑度评分自动区分林地、树丛和线性特征。通过谷歌地球引擎并行处理数千个网格，生成了数百万个独立特征的几何数据。目前数据已开源，但模型对英国以外景观的泛化能力尚不确定，且标注数据仅约247平方公里，可能影响精度。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "想象一下，你家农田边那些不起眼的树篱和石墙，卫星通常看不见，但它们能存碳、给野生动物当路。谷歌用AI给这些“小东西”画了张超精细地图，还把它们变成电脑能直接用的数据。这就像把一张模糊照片变成了可编辑的乐高说明书，农民和环保组织能精确知道哪里该种树、哪里该保护。对普通人来说，这意味着未来你吃的粮食可能来自更环保的农田，因为AI帮我们找到了不占耕地也能保护自然的方法。不过，这套工具目前只针对英国，其他地方能不能用，还得再验证。",
+          "text_length": 198
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "From pixels to planning: Earth AI for nature restoration"
+    },
+    {
       "id": "c072547560a5b4",
       "url": "https://research.google/blog/research-into-how-ai-can-help-users-understand-skin-conditions/",
       "sources": [
@@ -5594,6 +5713,122 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Investing in multi-agent AI safety research"
+    },
+    {
+      "id": "d7c05189da2379",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
+        }
+      ],
+      "publishedAt": "2026-06-09",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini 3.5实时语音翻译",
+      "summary": "谷歌DeepMind于2026年6月9日发布Gemini 3.5 Live Translate音频模型，支持70多种语言的近实时语音到语音翻译，能自动检测语言并保留说话者的语调、节奏和音高。该模型采用连续生成方式，而非等待整句结束，延迟仅几秒。即日起通过Gemini Live API和AI Studio向开发者开放公开预览，本月起在Google Meet面向部分企业客户私密预览，并在Android和iOS的Google Translate应用中全球上线。所有生成音频均嵌入SynthID水印。",
+      "category": "模型进展",
+      "importance": 85,
+      "why": "该模型将实时语音翻译从逐句等待升级为连续流式输出，支持70多种语言和2000多种语言组合，显著降低跨语言沟通门槛，对会议、旅行、客服等场景影响直接。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌发布Gemini 3.5 Live Translate音频模型，支持70多种语言的近实时语音到语音翻译。与等待说话者说完再翻译的轮次系统不同，该模型连续生成语音，在等待上下文提升质量与即时翻译保持同步之间取得平衡，全程仅落后说话者几秒，输出流畅自然，保留语调、节奏和音高。模型自动检测语言，无需手动配置，并具备噪声鲁棒性。即日起，开发者可通过Gemini Live API和Google AI Studio公开预览；本月起在Google Meet面向部分Workspace企业客户私密预览，支持2000多种语言组合，此前仅支持五种语言且只能与英语互译；同时在Android和iOS的Google Translate应用全球上线，Android新增“聆听模式”，可通过手机听筒收听翻译。所有生成音频均嵌入SynthID水印。目前尚不清楚更广泛的企业版和消费级功能的具体时间表。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前的翻译像打乒乓球，你说完一句，它才翻译一句，中间有尴尬的停顿。现在这个模型像同声传译员坐在你旁边，你边说它边译，只慢几秒，语气和情绪也能带过去。对普通人来说，出国旅行、看外语直播、和外国同事开会，戴上耳机就能听懂对方说什么，甚至不用耳机，把手机贴耳边就能偷偷听翻译。对企业来说，Google Meet会议能直接翻译70多种语言，跨国团队沟通不再需要英语当中间人。不过要注意，这是AI生成的声音，谷歌加了隐形水印防止被滥用。目前开发者能先用，普通用户能在翻译App里体验，企业版还要再等等。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Fluid, natural voice translation with Gemini 3.5 Live Translate"
+    },
+    {
+      "id": "02b9c90015956d",
+      "url": "https://huggingface.co/blog/openenv-agentic-rl",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/openenv-agentic-rl"
+        }
+      ],
+      "publishedAt": "2026-06-08",
+      "source": "Hugging Face",
+      "title": "OpenEnv 开源智能体强化学习环境标准",
+      "summary": "2026年6月8日，Hugging Face 宣布 OpenEnv 项目转为由 Meta-PyTorch、Nvidia、微软、Unsloth 等多家机构组成的委员会共同治理，并迁至 huggingface/OpenEnv。OpenEnv 定位为智能体执行环境（终端、浏览器等）与训练器之间的互操作层，采用 Gymnasium 风格 API 和客户端/服务器架构，支持 HTTP、WebSocket、Docker 及 MCP。项目明确不定义奖励或训练循环，只做部署与接口标准。后续计划包括外部奖励、数据集任务集、更多 harness 集成和自动验证。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "多家头部机构联合治理开源智能体训练基础设施，可能降低开源模型训练智能体的门槛，影响未来智能体生态的标准化走向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face 于 2026 年 6 月 8 日发布文章，宣布 OpenEnv 项目进入委员会治理模式，初始成员包括 Meta-PyTorch、Reflection、Unsloth、Modal、Prime Intellect、Nvidia、Mercor、Fleet AI、微软、Hugging Face 和 RadixArk，代码库迁至 huggingface/OpenEnv。OpenEnv 被定位为智能体执行环境与训练器之间的互操作层，统一环境发布、部署和消费方式，采用 Gymnasium 风格 API（reset、step、state）和客户端/服务器架构，支持 HTTP、WebSocket、Docker，并将 MCP 列为一等公民。项目强调自身不定义奖励或训练循环，只做协议层。文章还列出 PyTorch Foundation、vLLM、SkyRL、Lightning AI 等支持方，并预告外部奖励、数据集任务集、harness 集成和自动验证等后续方向。目前这些计划多处于 RFC 阶段，实际落地效果和社区采用度仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把 OpenEnv 想成一个“万能插座”：以前每个智能体训练环境都像不同形状的插头，训练器要挨个适配，费时费力。现在大家约定统一接口，任何符合标准的环境都能被任何训练器直接使用，就像 USB-C 统一了充电口。对普通人来说，短期不会直接感知，但长期可能让开源智能体更便宜、更好用，因为开发者不必重复造轮子，小团队也能用上大厂级别的训练基础设施。不过，标准能否真正统一，还要看各家是否愿意持续投入，以及实际工具链是否足够稳定。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The Open Source Community is backing OpenEnv for Agentic RL"
+    },
+    {
+      "id": "055edac304b91a",
+      "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/"
+        }
+      ],
+      "publishedAt": "2026-06-05",
+      "source": "Google Research",
+      "title": "谷歌发布Agentic RAG，准确率提升34%",
+      "summary": "谷歌研究联合谷歌云推出Gemini企业代理平台上的Agentic RAG框架，旨在解决传统单步RAG无法处理多源多跳查询的问题。该框架通过多代理协作，包括规划、查询重写、搜索分发和充分上下文代理，迭代检索直到信息足够。在FramesQA数据集上，准确率较标准RAG提升高达34%，跨语料库场景下正确回答90.1%的问题，延迟仅增加约3%。该功能已作为公开预览版在Gemini企业代理平台上线。",
+      "category": "模型进展",
+      "importance": 75,
+      "why": "该技术显著提升企业复杂查询的准确性和可靠性，减少AI猜测，对依赖多数据源的企业应用有重要价值，但尚处预览阶段，实际部署效果待观察。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究于2026年6月5日发布Agentic RAG框架，托管在Gemini企业代理平台上。该框架针对传统RAG的局限：单步检索无法处理跨多个数据源的复杂查询，例如查询服务器规格时，需先找到项目文档中的服务器ID，再二次搜索规格数据库。Agentic RAG引入多代理工作流，包括编排器、规划代理、查询重写器、搜索分发代理和充分上下文代理。充分上下文代理会检查检索片段、中间草稿和缺失信息，若发现信息不足，则反馈给查询重写器进行迭代检索，直到收集足够上下文。在FramesQA数据集上，准确率较标准RAG提升高达34%，跨语料库场景下正确回答90.1%的问题，延迟与单语料库版本相当，平均差异在3%以内。目前该功能为公开预览版，尚未公布定价和正式版时间。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前的AI搜索像是一个只翻一本书的图书管理员，你问一个需要查好几本书的问题，它翻完第一本找不到就告诉你“没有”。新的Agentic RAG则像是一个研究团队：有人负责拆解问题，有人负责去不同数据库找线索，还有人专门检查“是不是所有问题都答上了”。如果发现漏了，就再派人去找，直到找齐为止。比如医生问病人出院后吃什么药、饮食注意什么、有没有过敏，传统AI可能只找到药和饮食就说“没找到过敏信息”，而新系统会继续搜索“皮疹”“不良反应”等关键词，直到找到过敏记录。对普通人来说，这意味着未来企业客服、医疗咨询等场景的AI回答会更靠谱，不容易漏掉关键信息，但这项技术目前主要面向企业，普通用户可能还需等待。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG"
+    },
+    {
+      "id": "1b410cadf65e0a",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety"
+        }
+      ],
+      "publishedAt": "2026-06-04",
+      "source": "Hugging Face",
+      "title": "英伟达发布多模态内容安全模型Nemotron 3.5",
+      "summary": "英伟达于2026年6月发布Nemotron 3.5 Content Safety，基于Gemma 3 4B微调，将多模态输入、多语言覆盖、企业自定义策略与可审计推理整合进单次推理。模型支持12种语言显式训练并借基座泛化至约140种语言，新增自定义策略执行与THINK推理模式，同时开源安全数据集。官方称多语言多模态基准平均准确率约85%，Multilingual Aegis达96.5%。但上述数字均来自厂商自评，尚无独立第三方复现，实际生产表现仍待验证。",
+      "category": "安全与规则",
+      "importance": 72,
+      "why": "内容安全是AI落地企业的关键门槛，该模型把多语言、多模态与自定义策略合并到4B小模型，降低部署成本，对合规行业有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达发布Nemotron 3.5 Content Safety，定位为企业级多模态内容安全模型。它基于Google Gemma 3 4B IT微调，采用LoRA适配，支持128K上下文，可在8GB以上显存GPU实时部署。相比3月发布的Nemotron 3，3.5新增三项能力：把用户提示、可选图片与可选助手回复放进同一上下文统一判定；接受自然语言自定义策略并在推理时执行；提供可选THINK模式输出逐步推理轨迹。模型沿用Aegis 2.0分类体系，含13个核心类别与10个子类。官方同时开源多模态多语言安全数据集，称训练图像99%为真实照片。评测方面，官方称多语言多模态基准平均约85%，Multilingual Aegis达96.5%，RTP-LX为88.8%。这些数据均为厂商自评，尚无独立复现，实际误报率与延迟表现仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把内容安全模型想成小区门口的保安：过去多数保安只懂英文、只看文字，遇到图片或小语种就抓瞎，而且规矩是物业统一定的，医院和幼儿园用同一套标准。Nemotron 3.5相当于一个懂十几种语言、能同时看文字和图片的保安，还允许每个单位自己写门禁规则，比如开发工具里出现“终止进程”不该被当成暴力。THINK模式则像让保安写下为什么拦人，方便事后查账和申诉。对普通人来说，这意味着用AI产品时，跨语言和图片的违规内容可能被更一致地识别，企业也能按自身行业规则调整尺度。但代价是判定标准由厂商和客户自定，透明度与误伤风险仍需观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI"
     },
     {
       "id": "5b02604714f804",
