@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-17T02:13:22.473747+00:00",
-  "lastCheckedAt": "2026-10-17T02:13:22.473747+00:00",
+  "updatedAt": "2026-10-18T02:12:53.297291+00:00",
+  "lastCheckedAt": "2026-10-18T02:12:53.297291+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -216,6 +216,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Meta’s new terms may allow it to train AI on news sites for free"
+    },
+    {
+      "id": "c9a6184923cc1a",
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/reflection-beam"
+        }
+      ],
+      "publishedAt": "2026-10-16",
+      "source": "Hugging Face",
+      "title": "Reflection开源501B参数Beam模型",
+      "summary": "2026年10月16日，美国新实验室Reflection在Hugging Face发布首个开源模型Beam，采用混合专家架构，总参数501B、每token激活23B，支持100万token上下文，以Apache 2.0协议开放，主打编程与智能体场景。模型附带Rust推理框架，并在transformers、vLLM、SGLang首日支持。官方称BF16权重约1TB，NVFP4版本约280GB，需多张Blackwell显卡部署。基准成绩由Reflection团队提供，尚无第三方复现。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "开源前沿规模模型并允许自托管和微调，降低大模型私有化门槛；但硬件要求高、成绩未经独立验证，实际可用性仍待观察。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Reflection发布开源模型Beam，总参数501B、每token激活23B，上下文窗口100万token，Apache 2.0许可，面向编程和智能体任务。模型采用52层混合注意力，多数层只看最近512个token，每六层及最后一层看全上下文；49层为256专家MoE，每token路由8个专家。官方提供BF16、FP8、NVFP4三种权重，BF16约1TB，NVFP4约280GB。Hugging Face称transformers、vLLM、SGLang首日支持，并提供微调与强化学习配方。文中基准分数由Reflection团队提供，未见第三方复现；部署所需显存与并发能力仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Beam想成一家超大仓库：货架摆满501B件货，但每次取货只开23B件，所以跑起来像小模型，容量却接近大模型。好处是团队能把模型搬进自己的机房，按业务微调，不必把数据交给外部API。代价是仓库本身仍要占很大地方：BF16约1TB，普通显卡放不下，通常要两三张甚至四张高端卡才跑得顺。对普通人来说，短期不会直接感知，但更多公司自建编程助手和自动化工具后，相关服务可能更便宜、更可控；同时开源模型成绩若经不起复测，宣传与实际体验会有落差。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Welcome Beam: a 501B open model you can own, customize, and scale"
     },
     {
       "id": "a80ac8068cf5ab",
@@ -479,6 +508,35 @@
       "originalTitle": "Meta launches an open-weight AI model that runs on Macs"
     },
     {
+      "id": "eb0ac7f68c40eb",
+      "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/"
+        }
+      ],
+      "publishedAt": "2026-10-15",
+      "source": "TechCrunch AI",
+      "title": "Cal AI靠网红矩阵两年营收超3000万美元",
+      "summary": "TechCrunch Disrupt活动上，19岁创始人Zach Yadegari披露AI卡路里追踪应用Cal AI的增长路径：2024年成立后，通过付费招募大量中小网红发帖推广，早期一条网红内容两天带来约千名新用户，随后按触达量谈价、要求持续发帖直至达标。公司两年营收超3000万美元，今年3月被MyFitnessPal收购，金额未披露。他本月还推出AI助手公司Persona并融资1000万美元。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "揭示AI消费应用靠网红分销而非技术壁垒实现快速增长并被巨头收购的路径，对观察AI应用商业化与营销成本有参考价值，但收购金额等关键数据缺失。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "在TechCrunch Disrupt上，Cal AI创始人Zach Yadegari讲述公司崛起过程。Cal AI于2024年成立，主打AI卡路里追踪。早期一名网红的推广帖在两天内带来约1000名新用户，团队据此判断模式可行，开始尽可能多地付费招募网红发帖。其做法是按触达规模谈报酬，要求对方持续发布直到达到约定曝光量，并偏好粉丝社群紧密、触达可量化的创作者。公司称两年营收超过3000万美元，2026年3月被MyFitnessPal收购，交易金额未披露。Yadegari本月还创办AI助手公司Persona，已融资1000万美元。上述营收与用户数据均来自创始人单方说法，未获第三方核实。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这款应用的技术门槛不算高，真正管用的是“人海战术”：不砸钱投大广告，而是雇一大群粉丝不多但黏性强的博主反复发帖，按效果付钱，像请一群推销员挨家挨户敲门。对普通人来说，你刷到的“好用推荐”可能背后有付费合作，看到健身、减肥类App种草时不妨多留个心眼。对创业者而言，这说明AI应用早期拼的不只是模型，更是获客渠道和分发能力；但靠买流量堆出的增长能否留住用户，报道没有给出留存数据，仍需观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "When it came to Cal AI’s viral success, a small army of influencers paid off"
+    },
+    {
       "id": "ff0cf28c5d7530",
       "url": "https://huggingface.co/blog/meta-muse-spark-open",
       "sources": [
@@ -564,6 +622,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch"
+    },
+    {
+      "id": "d330643595776f",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+        }
+      ],
+      "publishedAt": "2026-10-15",
+      "source": "Hugging Face",
+      "title": "IBM发布Granite Switch 4.1多任务模型",
+      "summary": "IBM于2026年10月15日发布Granite Switch 4.1，提供8B与30B两种规模，将对话、通用与安全决策、语音转写三类能力整合进单一托管端点。官方称其Guardian适配器在安全决策任务上平均优于Jev 1.13、微软Decision-1等对比模型，内置语音模型号称OpenASR榜单最快。由于性能对比数据均来自厂商自述，尚无第三方复现，实际表现仍待验证。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "单一端点整合对话、决策与语音，且适配器共享缓存降低显存开销，代表多任务模型工程化方向；但关键性能均为厂商自述，需独立验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "IBM发布Granite Switch 4.1，含8B与30B两个版本，把对话、通用决策、安全决策和语音转写组合进一个托管端点。官方称新增的Guardian适配器在安全相关决策任务上平均超过Jev 1.13、Microsoft-Decision-1、GPT-Luna-Decisions和Clef-Flash；内置的Granite-Speech-5.0-Turbo-CTC自称OpenASR榜单最快。由于适配器采用激活式LoRA并共享基础模型的KV缓存，官方称整套能力占用显存与基础模型相近。IBM还称30B版本在五步RAG流程中快于Jev-27B，3B定制版在Doom游戏中达每秒60至100次决策。上述对比均为厂商自述，缺少第三方复现，具体数值与测试条件尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把基础模型想成一台发动机，适配器像可插拔的专用工具箱：聊天用一套、做安全判断用另一套、听写用第三套，换工具时不必重新点火，所以省显存也省时间。对普通人的直接感受是，以后一个接口就能同时完成转写、总结和内容审核，部署成本可能下降。但要注意，跑分和“最快”都是IBM自己说的，就像餐厅自评招牌菜第一，好不好吃还得看顾客反馈。企业若想采用，建议先用自己的业务数据做小规模测试，再决定是否替换现有方案。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint"
     },
     {
       "id": "ad09b0946a60b7",
@@ -653,6 +740,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Google’s Universal Cart shopping tool launches in the US"
+    },
+    {
+      "id": "eb67409897ed21",
+      "url": "https://huggingface.co/blog/flux-3",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/flux-3"
+        }
+      ],
+      "publishedAt": "2026-10-15",
+      "source": "Hugging Face",
+      "title": "FLUX.3图像模型开源，支持布局控制",
+      "summary": "2026年10月15日，Black Forest Labs发布开源图像生成模型FLUX.3 Image Klein，并在Diffusers库首日支持。该模型统一支持文生图、多参考图生图和新增的布局控制功能：用户可在提示词中写入边界框，指定画面元素位置或移动参考图中的局部内容。模型提供蒸馏版（16步快速推理）和基础版（50步，适合微调）两个检查点，另附FP8、NVFP4量化权重及LoRA训练脚本。官方称蒸馏版在H100上生成1024×1024图像约需2秒，但该速度数据来自单一来源，尚待独立验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "开源图像模型首次将布局框控制与多参考图编辑整合进单一模型，并同步提供量化权重和微调脚本，降低了开发者的使用与定制门槛，对图像生成工作流有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Black Forest Labs发布FLUX.3 Image Klein，Diffusers在发布当天即完成集成。模型同时支持文生图、多参考图生图和布局控制：在提示词后附加JSON区域列表，每个区域含id、归一化边界框（0–1000尺度，y在前）和描述，即可指定元素位置；编辑场景下还可为每个区域分别指定参考图中的源框和目标框，实现局部内容移动。官方提供蒸馏版（默认16步、无CFG）和基础版（50步、带CFG）两个检查点，以及FP8、NVFP4单文件量化权重和文生图、图生图两套LoRA训练脚本。官方称蒸馏版在H100上约2秒生成1024×1024图像，但该数据仅见于发布方自述，未经第三方复测。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去用AI画图，你只能描述“画什么”，位置和构图基本靠运气；现在可以像画草图一样，先框出“人站中间、背景铺满”，再让模型往里填内容。编辑图片时也能说“把这个小人往左上挪，其他别动”，模型会按框执行。对普通人来说，这意味着做海报、改商品图、调构图会少很多反复抽卡的麻烦。不过它仍是开源模型，需要一定硬件和配置能力，普通用户更多会通过集成它的在线工具间接受益；官方宣称的2秒出图速度也还需实际使用检验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Welcome FLUX.3 Image Klein in Diffusers"
     },
     {
       "id": "4c456e668ef45c",
@@ -800,35 +916,6 @@
       "originalTitle": "The Design Space of Tri-Modal Masked Diffusion Models"
     },
     {
-      "id": "a19e8d8011ce19",
-      "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
-      "sources": [
-        {
-          "name": "AWS AI",
-          "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/"
-        }
-      ],
-      "publishedAt": "2026-10-13",
-      "source": "AWS AI",
-      "title": "AWS推出Bedrock私有定价授权自动化方案",
-      "summary": "AWS发布技术方案，帮助企业在多账户环境下管理Amazon Bedrock第三方模型的私有定价授权。此前每个账户需单独订阅AWS Marketplace私有报价，组织级授权默认处于禁用状态，需人工在License Manager控制台激活，容易遗漏且导致协商价格无法生效。方案提供两条路径：轻量脚本用于一次性激活可信授权，CDK自动化则通过EventBridge和Lambda监听协议事件、校验卖家白名单并自动创建激活授权。AWS提醒授权与账单生效可能延迟数小时至数天，卖家白名单应视为安全边界。",
-      "category": "行业变化",
-      "importance": 62,
-      "why": "云厂商把模型采购的授权与计费流程自动化，降低企业多账户使用第三方大模型的运维成本，反映AI基础设施竞争正从模型能力延伸到采购与治理体验。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "AWS发布了一套面向Amazon Bedrock私有定价报价（MPPO）的托管授权管理方案。背景是：企业若在数十上百个AWS账户中使用第三方模型，每个账户都要单独订阅并接受Marketplace私有报价，操作繁琐。接受报价后，AWS Marketplace会在License Manager中生成许可证，组织级授权虽自动接受但默认处于禁用状态，需人工激活，否则协商价格不生效。方案给出两条路径：一是轻量脚本，列出已收许可证并支持试运行，确认后一次性创建并激活组织级授权，但无卖家白名单，仅适用于完全信任的场景；二是基于CDK的事件驱动自动化，通过EventBridge监听Marketplace协议事件，由Lambda校验卖家白名单、创建分布式授权并请求激活，日志写入CloudWatch。AWS提示授权状态与账单数据可能延迟数小时至数天，需在Cost Explorer中核对折扣是否生效。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "可以把它想成公司团购了一批AI模型的折扣券：以前每个部门都得自己跑去前台领券、签字、激活，漏一个部门就按原价扣钱。现在总部统一领券，再自动分发到各部门，还能设一道门禁，只认你谈好的那家供应商，别人冒充发券不会生效。对普通用户来说，这不会改变模型本身的能力，但会影响企业用AI的成本和速度：采购流程顺了，团队试用新模型的门槛更低，账单也更清楚。不过要注意，自动化只负责激活折扣，不负责判断价格是否划算，卖家白名单配错可能让不该生效的授权被激活，所以仍需人工核对供应商账号。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "Manage private pricing offers for Amazon Bedrock with managed entitlements"
-    },
-    {
       "id": "d0161db6473550",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "sources": [
@@ -868,6 +955,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Gemini 4 Argon: Built to solve your hardest problems"
+    },
+    {
+      "id": "a19e8d8011ce19",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/"
+        }
+      ],
+      "publishedAt": "2026-10-13",
+      "source": "AWS AI",
+      "title": "AWS推出Bedrock私有定价授权自动化方案",
+      "summary": "AWS发布技术方案，帮助企业在多账户环境下管理Amazon Bedrock第三方模型的私有定价授权。此前每个账户需单独订阅AWS Marketplace私有报价，组织级授权默认处于禁用状态，需人工在License Manager控制台激活，容易遗漏且导致协商价格无法生效。方案提供两条路径：轻量脚本用于一次性激活可信授权，CDK自动化则通过EventBridge和Lambda监听协议事件、校验卖家白名单并自动创建激活授权。AWS提醒授权与账单生效可能延迟数小时至数天，卖家白名单应视为安全边界。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "云厂商把模型采购的授权与计费流程自动化，降低企业多账户使用第三方大模型的运维成本，反映AI基础设施竞争正从模型能力延伸到采购与治理体验。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布了一套面向Amazon Bedrock私有定价报价（MPPO）的托管授权管理方案。背景是：企业若在数十上百个AWS账户中使用第三方模型，每个账户都要单独订阅并接受Marketplace私有报价，操作繁琐。接受报价后，AWS Marketplace会在License Manager中生成许可证，组织级授权虽自动接受但默认处于禁用状态，需人工激活，否则协商价格不生效。方案给出两条路径：一是轻量脚本，列出已收许可证并支持试运行，确认后一次性创建并激活组织级授权，但无卖家白名单，仅适用于完全信任的场景；二是基于CDK的事件驱动自动化，通过EventBridge监听Marketplace协议事件，由Lambda校验卖家白名单、创建分布式授权并请求激活，日志写入CloudWatch。AWS提示授权状态与账单数据可能延迟数小时至数天，需在Cost Explorer中核对折扣是否生效。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成公司团购了一批AI模型的折扣券：以前每个部门都得自己跑去前台领券、签字、激活，漏一个部门就按原价扣钱。现在总部统一领券，再自动分发到各部门，还能设一道门禁，只认你谈好的那家供应商，别人冒充发券不会生效。对普通用户来说，这不会改变模型本身的能力，但会影响企业用AI的成本和速度：采购流程顺了，团队试用新模型的门槛更低，账单也更清楚。不过要注意，自动化只负责激活折扣，不负责判断价格是否划算，卖家白名单配错可能让不该生效的授权被激活，所以仍需人工核对供应商账号。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Manage private pricing offers for Amazon Bedrock with managed entitlements"
     },
     {
       "id": "3a474d73c07650",
