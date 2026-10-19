@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-18T02:12:53.297291+00:00",
-  "lastCheckedAt": "2026-10-18T02:12:53.297291+00:00",
+  "updatedAt": "2026-10-19T02:28:35.522246+00:00",
+  "lastCheckedAt": "2026-10-19T02:28:35.522246+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -72,6 +72,35 @@
     }
   ],
   "articles": [
+    {
+      "id": "9692486eeb7793",
+      "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
+        }
+      ],
+      "publishedAt": "2026-10-18",
+      "source": "MIT News",
+      "title": "MIT推多模态模型助AI理解晶体材料",
+      "summary": "MIT研究团队在《自然·通讯》发表多模态AI模型，将晶体三维原子结构与自然语言描述对齐，用合成叙事数据训练，弥补纯文本模型缺乏几何理解的短板。在固态锂离子电池电解质筛选中，模型给出的候选材料与独立研究结论吻合，并能学习文本模型无法获得的几何表征。研究者将其类比AlphaFold，但模型的实际通用性与产业化价值仍需更多验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "材料发现是AI落地的重要方向，该工作把三维结构与语言对齐，为晶体材料筛选提供新范式，但尚处研究阶段，离大规模应用有距离。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT团队构建了一个面向晶体材料的多模态模型，把三维原子结构与自然语言描述放进同一表示空间。由于现有大语言模型主要吃论文文本，而大量候选晶体只存在于计算数据库，且文献偏向少数热门材料，研究者改用对比学习，让模型比较结构与其合成描述，从而学会“看懂”原子排布。论文称，在固态锂离子电池电解质任务中，模型排名靠前的候选与独立研究认定的潜力材料重合；仅用论文文本训练的版本则未学到结构与文本的对齐。研究仍属学术成果，模型跨材料体系的泛化能力、预测准确率及实际合成验证情况，公开信息未给出完整数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把晶体材料想成一把把形状各异的钥匙，过去AI只读说明书，没见过钥匙长什么样，所以常凭热门材料瞎猜。新模型相当于给AI配了3D眼镜，让它一边看原子怎么排列，一边读文字描述，慢慢学会“这种结构大概有什么性能”。对普通人来说，短期不会立刻改变生活，但长期可能让电池、半导体等新材料的筛选少走弯路、加快研发。需要冷静的是，这更像实验室里的一副好眼镜，能否真的缩短产品上市时间，还要看后续实验和工业验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Giving AI a “crystal clear” view of the materials world"
+    },
     {
       "id": "138e9b7e7d9747",
       "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
@@ -856,6 +885,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Generate presentations with Amazon Bedrock AgentCore"
+    },
+    {
+      "id": "504a28fcb44d1a",
+      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/hiro-acev2"
+        }
+      ],
+      "publishedAt": "2026-10-14",
+      "source": "Hugging Face",
+      "title": "AI气候模拟器以三百分之一成本生成极端天气",
+      "summary": "Ai2发布HiRO-ACEv2气候模拟系统更新，由100公里分辨率的ACE模型和3公里降尺度的HiROv2组成。新版HiROv2可同时预测降雨、风速、气压等多个高分辨率场，对百万分之一概率的极端事件统计匹配误差在3%以内，并能生成带风眼和雨带的飓风。系统生成全球3公里气候数据成本约为高分辨率大气模型X-SHiELD的三百分之一。但HiROv2依赖X-SHiELD训练，暂无法用于更暖未来或ERA5等历史气候。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "把高分辨率极端天气模拟成本降低约300倍，对气候风险评估有实用价值；但受限于训练数据，尚不能泛化到其他气候情景。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Ai2于2026年10月14日发布HiRO-ACEv2，这是其高分辨率气候模拟系统HiRO-ACE的更新。系统分两步：ACE在100公里粗分辨率上运行，HiROv2把结果细化到3公里。新版最大变化是降尺度模型HiROv2可同时输出降雨、风速、气压等多个高分辨率场，不再只做降水，并提升了对极端值的还原能力。官方称，在输入粗化的X-SHiELD数据时，其高分辨率统计量与目标模拟的偏差在3%以内，包括百万分之一量级的罕见事件；还能估算热带气旋总能量，生成有风眼和雨带的飓风，但风眼周围的风压分布比X-SHiELD更不对称。成本约为X-SHiELD的三百分之一，仅需局部区域时节省更多。不确定之处在于：HiROv2只适配与X-SHiELD匹配的ACE版本，尚不能用于更暖未来或ERA5等历史气候；近地面温度、冰雪等输出仍在计划中。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套系统想成“先画草图、再AI放大”的流水线：ACE用较粗的网格快速算出全球气候走势，HiROv2像一位擅长补细节的画师，把每格100公里的粗线条补成3公里的精细画面，连罕见的暴雨、狂风和低压都能画得像模像样。过去要直接模拟这些小块天气，得动用超级计算机跑高分辨率模型，贵得离谱；现在成本降到约三百分之一，研究人员就能批量生成十年以上的极端天气样本，用来评估洪水、风暴风险。对普通人的影响是间接的：未来保险定价、城市防灾规划可能用上更便宜的高分辨率情景数据。但它目前只会“模仿”训练它的那套模拟，换个气候背景就不灵，所以还不能当作真实未来的预报。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost"
     },
     {
       "id": "36a7e1c23fbbe3",
