@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-22T02:33:33.724775+00:00",
-  "lastCheckedAt": "2026-10-22T02:33:33.724775+00:00",
+  "updatedAt": "2026-10-23T02:38:42.140343+00:00",
+  "lastCheckedAt": "2026-10-23T02:38:42.140343+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -40,7 +40,7 @@
     },
     {
       "source": "Microsoft Research",
-      "ok": true
+      "ok": false
     },
     {
       "source": "NVIDIA AI",
@@ -72,6 +72,299 @@
     }
   ],
   "articles": [
+    {
+      "id": "fee5d6bca69047",
+      "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+        }
+      ],
+      "publishedAt": "2026-10-23",
+      "source": "TechCrunch AI",
+      "title": "MIT实验：AI智能体无任务时自发玩耍并学习",
+      "summary": "MIT研究团队将13个基于Claude Opus 4.7的AI智能体Eko放在模拟荒岛上30小时，不设具体任务。智能体自发探索、发明挑战，如堆石攀塔、投掷金环，甚至发现跳跃中松手可让方块飞得更远。随后在指定挑战中，这些“玩耍”过的智能体表现优于从未上岛的同类。研究已发布在arXiv预印本平台，尚未经同行评审。研究者认为无目标探索或为AI学习提供新路径，但有认知科学家对行为背后的认知机制持保留态度。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "该实验展示无目标探索可能提升AI智能体学习能力，为智能体训练提供新思路，但结论尚待同行评审，认知机制存疑。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT研究人员在arXiv发布预印本，将13个名为Eko的AI智能体置于模拟荒岛30小时，不分配任务。智能体自发探索环境，尝试攀爬最高石塔、投掷金环，并意外发现跳跃中松手可让方块飞得更远，这是设计者未预设的能力。随后研究者给出具体挑战，玩耍过的智能体普遍优于未上岛的对照组。实验使用Claude Opus 4.7，智能体的“灵魂”提示词将其描述为“天生好奇”。研究尚未经同行评审，加州大学伯克利分校认知科学家Eunice Yiu表示，行为令人印象深刻，但论文不足以证明模型真的在“玩耍”。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像把孩子放进一个安全的游乐场，不规定玩什么，让他自己瞎折腾。结果发现，瞎玩过的孩子 later 在指定比赛里反而更厉害，还自己琢磨出大人没想到的玩法。对普通人来说，这意味着未来AI可能不再只靠“刷题”训练，而是先在一个丰富环境里自由探索，积累经验后再干活。好处是AI可能更灵活、更有创造力；但风险也在于，自由探索的边界如何控制、会不会学出奇怪行为，目前还没有答案。研究者自己也说，有些能力靠任务教，有些可能得靠“童年”。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Left alone with nothing to do, AI agents started playing"
+    },
+    {
+      "id": "9053b1f287d8b4",
+      "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "TechCrunch AI",
+      "title": "OpenAI推出Decisions API，决策模型竞争升温",
+      "summary": "OpenAI于9月29日开发者日发布、本周四全面开放Decisions API，基于ChatGPT Luna改造，将推理延迟从1至3秒压缩到100至180毫秒，并新增语音与视觉模态。该产品对标TypeSafe的Jev模型，后者已让这家初创估值达76亿美元。Box、Datadog、Ramp、Speak等客户用它替换大模型以提升吞吐，Speak称操作间隔从1.4秒降至0.13秒。不过公开榜单上Liquid的D1 Ultra与Base Lab的Elephant-1更靠前，OpenAI模型排名中游，何种决策模型更优仍无定论。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "决策模型被视为可替代大模型的高频低成本方案，OpenAI入场将加速价格与延迟竞争，并影响开发者技术选型，但基准排名分歧说明格局未定。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI本周四向所有客户开放Decisions API，该产品9月29日在开发者日首次公布。产品负责人Nikunj Handa称，团队并非专门训练决策模型，而是把ChatGPT Luna重新配置以加快推理、降低成本，延迟从1至3秒降到100至180毫秒，公开版还加入语音和图像模态，并按地域部署推理资源以降低延迟。Box、Datadog、Ramp、Speak等早期客户用它替换原有大模型提升吞吐，Speak首席技术官Andrew Hsu称操作间隔从1.4秒缩短到0.13秒。该赛道由TypeSafe的Jev模型开创，该公司估值已达76亿美元。但在AIM System One Index和Artificial Analysis Decision Index上，Liquid的D1 Ultra与Base Lab的Elephant-1更靠前，OpenAI模型分列第八和第十四；TypeSafe在OpenRouter上查询量仍最高。何种决策模型更优，业内尚无统一标准。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把决策模型想成流水线上的分拣员：不用像大模型那样把每件事从头想一遍，只在一堆选项里快速挑一个，还附上自己有多大把握。对普通人来说，最直接的变化是手机里的AI助手、语音陪练、客服机器人反应更快，等待从一两秒缩到零点几秒，几乎感觉不到卡顿；开发者则能用更便宜的方式处理海量小判断，比如每帧画面该不该报警。但快不等于准，各家榜单排名互相打架，厂商自己也承认要看具体场景试用。所以短期内别指望它替你做重大决定，它更像把琐碎选择外包出去的助手，真正复杂的问题仍要交给更慢、更贵的大模型。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "OpenAI makes its Jev competitor widely available as decision model competition heats up"
+    },
+    {
+      "id": "4eb8c8201d11b5",
+      "url": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "AWS AI",
+      "title": "SageMaker推出训练会话API",
+      "summary": "AWS发布Amazon SageMaker AI训练会话API，将GPU基础设施管理抽象化，让开发者用Python编写自定义训练循环。开发者可调用forward_backward、optim_step、sample等操作，模型在GPU上保持加载，服务负责分布式执行、梯度同步与故障恢复。该API按处理token计费，本地奖励计算不计GPU时间，适用于强化学习、自定义损失等场景，并配套发布SFT与RL示例手册。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "云厂商把训练循环控制权交还开发者，同时免去GPU运维，降低自定义微调与强化学习门槛，按token计费也改变成本结构，对AI工程团队有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS在SageMaker AI的无服务器模型定制中新增训练会话API，把抽象层从算法下移到算力。开发者在本机Python进程中创建有状态会话，通过ServiceClient、TrainingClient、SamplingClient三层客户端调用forward_backward、optim_step、sample等操作，模型与LoRA适配器常驻GPU。服务端承担GPU分配、分布式执行、梯度同步、故障恢复、检查点存储与租户隔离。官方称按处理token计费，本地奖励计算、数据加载与调试不计GPU时间。配套发布SFT与RL示例手册，演示在GSM8K数学题上对GPT-OSS 20B做GRPO训练。支持的基础模型与区域需查文档，实际性能与计费细节尚未由第三方验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去微调大模型像点套餐：要么选全托管，只能调几个参数；要么自己租GPU搭集群，算法自由但运维全包。新API相当于把厨房开放给你，灶台和食材由云厂商备好，你只管写菜谱。训练循环里每一步该采样、打分还是更新，都由你的代码决定，GPU只在真正计算时计费，本地慢慢算奖励不花钱。对普通用户，这意味着未来会有更多按特殊需求定制的小模型，比如专门解数学题或写代码的助手，迭代更快、成本更可控。对开发者，则少了一层管机器的麻烦，但也要自己保证循环逻辑正确。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs"
+    },
+    {
+      "id": "08577d1558fa98",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "AWS AI",
+      "title": "AWS推出免GPU管理的模型定制训练会话",
+      "summary": "AWS宣布SageMaker AI无服务器模型定制功能中的“训练会话”正式可用。用户可自行编写训练循环、损失函数与奖励信号，平台负责GPU分配、分布式执行、故障恢复和检查点存储，支持SFT、DPO、RLVR、RLAIF及多轮强化学习，并兼容LoRA与全量微调。目前支持gpt-oss-20b、gemma-4-31B-it、Qwen3.6-27B、Qwen3.8-27B等模型。AWS称按处理token计费，评分阶段不计费，数据与权重保留在用户自有S3桶中，不用于训练其他模型。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "降低企业定制开源模型的基础设施门槛，把训练循环控制权交还开发者，对做智能体与垂直模型落地的团队有实际价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS于2026年10月22日宣布，SageMaker AI无服务器模型定制中的训练会话正式可用。开发者可在自己的环境中编写并协调训练循环，包括自定义损失函数和奖励信号，平台承担GPU分配、分布式执行、故障恢复与检查点存储。该功能支持SFT、DPO、RLVR、RLAIF和多轮强化学习，可选择LoRA或全量微调，并串联多种技术。官方称目前支持gpt-oss-20b、gemma-4-31B-it、Qwen3.6-27B、Qwen3.8-27B。计费按平台处理的token计算，奖励函数评分期间不计费，无需预留容量。数据与检查点存放在用户自选的S3桶和区域，AWS称不会用其训练其他模型。仍不确定的是：各模型的实际训练效果、多轮RL的稳定性以及大规模使用时的成本，官方未给出量化数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去想让通用大模型更懂自家业务，企业得自己买GPU、搭集群、写分布式训练配置，门槛高、烧钱快。现在AWS把脏活累活包了：你只管写“怎么教模型”的规则，机器调度、断点续训由平台处理，像用云盘一样按用量付费。对普通人来说，这意味着以后客服、医疗理赔、旅行预订等场景里的AI助手，可能更贴合具体业务、出错更少。但也要注意，模型改得好不好仍取决于企业自己的数据和评分标准，平台只保证基础设施不拖后腿，效果好坏没有承诺。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Announcing new ways to customize models with SageMaker AI, without managing GPUs"
+    },
+    {
+      "id": "6af0fd42e696c9",
+      "url": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "TechCrunch AI",
+      "title": "ConnectWise云备份被攻破 数千企业遭窥探",
+      "summary": "微软安全研究人员称，与中国政府关联的黑客组织攻破了IT管理与远程访问巨头ConnectWise的云备份服务，窃取用于连接ConnectWise与客户环境的应用程序凭据。黑客借此冒充授权用户登录客户在微软托管环境中的邮箱和文件。微软称黑客利用AI代理ARTEX以每分钟近3000次尝试登录的速度入侵约2250家机构，令防御方难以及时发现。ConnectWise已暂停云备份系统访问并展开调查，正努力恢复服务。黑客身份与攻击规模仍待独立核实。",
+      "category": "安全与规则",
+      "importance": 88,
+      "why": "事件涉及供应链式凭据泄露与AI加速攻击，波及数千家企业，凸显第三方IT服务商成为单点风险，对依赖云备份和远程管理的组织有直接警示意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软安全研究人员称，一个被指与中国政府关联的黑客组织攻破了ConnectWise的云备份服务，窃取用于在ConnectWise与客户之间建立数据连接的应用程序凭据。凭借这些凭据，攻击者可冒充授权用户登录客户在微软托管环境中的账户，读取邮件及其他文件。微软表示，黑客借助名为ARTEX的开源AI框架驱动AI代理，以每分钟近3000次尝试登录的速度对约2250家机构实施入侵，使防御方几乎没有时间检测和响应。ConnectWise称已暂停该云备份系统的访问并展开调查，截至周四仍在恢复服务。黑客归属、实际受害企业数量及数据外泄范围尚待独立核实。",
+          "text_note": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把ConnectWise想象成一家替很多公司保管备用钥匙的物业公司。黑客没有挨家撬锁，而是先混进物业的钥匙库，复制了能打开各家后门的钥匙，再大摇大摆走进去翻看邮件和文件。更麻烦的是，他们用AI当“自动开锁机”，一秒钟试几十把钥匙，保安还没反应过来门就开了。对普通人来说，这意味着你所在公司的数据安全不只取决于自家防护，还取决于外包服务商是否守得住。企业应尽快检查第三方云服务的凭据、启用多因素认证，并留意服务商的通知。",
+          "text_note": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise"
+    },
+    {
+      "id": "7fc3e07707c12c",
+      "url": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "AWS AI",
+      "title": "AWS发布TTS自动扩缩容实测方法",
+      "summary": "AWS AI官方博客介绍在Amazon SageMaker AI上部署Kokoro-82M语音合成模型的方法，用实测替代猜测自动扩缩容目标值。团队以并发请求数为指标，测得单实例在延迟目标内可承载50并发，超出至60即突破3000毫秒首字节延迟线；一次扩容端到端约320秒，其中实例可见阶段占56.5%。据此用算术推导扩容阈值、缩容阈值和冷却时间，并通过CDK栈在缺少实测数据时阻止扩缩容配置上线。",
+      "category": "行业变化",
+      "importance": 55,
+      "why": "针对TTS这类长连接、无token生成循环的负载，给出可复用的扩缩容参数实测流程，对自建语音服务的成本和稳定性有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS AI博客称，团队将8200万参数的Kokoro-82M语音合成模型以自定义容器部署在SageMaker AI实时端点上，用CDK栈管理部署。文章指出，TTS请求会持续占用连接数秒，且模型非自回归、没有逐token生成循环，因此常规的token每秒指标不适用，改用平台原生发布的每模型并发请求数作为扩缩容指标。实测中，单实例并发从1升至50时，95分位首字节延迟仍在3000毫秒目标内，升至60时突破至3374.8毫秒，故取50为并发上限；强制扩容全程约320秒，其中从请求容量到实例在日志中可见耗时180.8秒，占比最大。文章称所有数字来自一次真实部署测量，但未说明重复次数与不同硬件下的波动范围。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去给语音服务设自动扩容，阈值往往靠拍脑袋：设保守了，GPU机器大半时间闲着，钱照付；设激进了，平时看着没事，真来流量高峰就排队超时，而且不会触发任何告警。这篇博客相当于先给一台机器做压力测试，量出它最多能同时扛50路请求还不超时，再掐表算出加一台机器要五分多钟。有了这两个数，扩容该在多少并发时触发、缩容该等多久，都能直接算出来，不用猜。对普通用户的影响是间接的：如果云上的语音服务采用这类方法，高峰期卡顿和超时的概率可能降低，同时闲置资源减少，长期看账单也可能更合理。不过这套流程目前是示例项目，是否被广泛采用仍待观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI"
+    },
+    {
+      "id": "c8127c2e57511f",
+      "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+      "sources": [
+        {
+          "name": "MIT Technology Review",
+          "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "MIT Technology Review",
+      "title": "企业AI竞争转向服务架构",
+      "summary": "MIT Technology Review刊发由EXL赞助的内容，指出企业AI的竞争重点正从模型能力转向模型周边的服务架构（serving harness），包括内存管理、调度、批处理与推理优化。文章认为，生产环境中的延迟、并发、GPU利用率和成本等约束，比基准分数更决定AI能否规模化落地；企业应先明确业务负载，再选择架构，并持续测量瓶颈、迭代优化。文章同时强调，模型会不断更替，架构应具备可替换性。该内容为赞助方观点，非编辑部报道。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "文章反映企业AI从“比模型”转向“比工程与成本”的行业趋势，对技术选型和投资方向有参考价值；但属赞助内容，观点代表服务商立场，需谨慎看待。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT Technology Review发布了一篇由EXL赞助的文章，讨论企业AI落地中的“服务架构”问题。文章称，过去几年行业关注模型规模、推理能力和基准分数，但进入生产阶段后，真正的问题是能否以可靠、经济、可扩展的方式交付智能。作者把服务架构定义为模型外围的工程系统，包括架构设计、内存管理、调度和优化决策。文章举例说，面向客户的实时助手与可夜间运行的文档处理流水线需求不同，同一基础模型也可能需要不同服务架构。文章还提到，推理时模型权重固定，但KV缓存会随并发请求和上下文长度增长，可能先耗尽GPU内存而非算力。文章未给出具体企业案例或量化数据，相关结论来自赞助方观点。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把模型比作发动机，服务架构则是底盘、变速箱和散热系统。发动机再强，如果底盘匹配不好，车也跑不快、还费油。文章的意思是，企业不必一味追求“最强模型”，而要先看业务需要多快、多稳、多便宜，再决定怎么搭系统。对普通人来说，这会影响你用的AI客服是否秒回、企业AI服务是否稳定便宜，以及公司是否把预算花在真正卡脖子的环节上。文章也提醒，技术更新很快，今天的好模型明天可能被替换，系统要像积木一样方便换件，而不是每次推倒重来。不过，这篇文章是服务商赞助的内容，读者应把它当作一种行业主张，而非独立评测结论。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Designing an AI serving harness built to last"
+    },
+    {
+      "id": "5eee804247a435",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "The Verge AI",
+      "title": "Canva推出首款AI图像模型Craft",
+      "summary": "Canva发布首款自研AI图像生成模型Canva Craft，采用先规划后生成的两阶段架构，主打更高精度、一致性与可控性，支持最高2K分辨率和30多种画幅比例，面向全球用户开放。Canva称其用平台数百万人工模板训练，在Design Arena榜单暂列第四，落后于OpenAI的三款GPT-Image模型。官方强调具备输入输出审核与隐私安全控制，未来将开放智能体接入并推出更快版本。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "设计工具厂商自研图像模型，意味着AI生图竞争从通用大模型延伸到垂直设计场景，可能改变普通用户做图方式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Canva于10月22日发布首款自研AI图像生成模型Canva Craft，直接对标OpenAI、微软和谷歌的图像模型。其核心是两阶段架构：先规划版面再生成图像，官方称这能提升精度、一致性和可控性，尤其利于含可读文字和精确物体摆放的复杂画面。模型支持最高2K分辨率和30多种画幅比例，覆盖社媒图、营销素材、写实场景和数字艺术等。Canva表示训练数据来自平台数百万人工模板。第三方众包榜单Design Arena显示其暂列第四，前三均为OpenAI的GPT-Image系列。Canva称模型带审核与隐私控制，未来将通过MCP开放智能体接入，并推出Craft-fast等更快版本。目前全球用户可在Dream Lab中试用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去用AI画图，常常是“一句话丢进去，出来什么样看运气”，文字容易糊、元素位置乱跑。Canva Craft的思路像装修前先出施工图：先想好哪里放标题、哪里放产品，再动手画，所以成品更听话。对普通人来说，做海报、朋友圈图、菜单时，改字和挪位置会更省心，不用反复抽卡。但它目前还不是最强，榜单上排在OpenAI几款模型之后，说明“会规划”不等于全面领先。另一个现实影响是：设计门槛继续降低，不会排版的人也能快速出图，但模板化风格可能更普遍，商用前仍需留意版权与平台审核规则。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Canva’s first AI image model plans designs before generating them"
+    },
+    {
+      "id": "301925b8adfceb",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "Google DeepMind",
+      "title": "谷歌发布10米级全球森林类型地图",
+      "summary": "2026年10月22日，Google DeepMind与Google Research联合世界资源研究所（WRI）、国际应用系统分析研究所（IIASA）发布Forest Typology（ForTy）2020全球地图，以10米分辨率将地表分为原始林、自然再生林、人工林、种植园、树作物与农林复合、其他土地六类，并附2017至2025年逐年变化时间序列。团队用约170万标注点训练模型，在9000多个随机验证点上森林类型判对率约90%，区分森林与非森林约95%。地图已在Google Earth Engine开放，服务欧盟零毁林法规等需求。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "首次以10米分辨率区分森林类型并追踪逐年转换，直接服务欧盟零毁林法规合规与供应链核查，对林业、农业和监管影响实际。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind与谷歌研究院联合WRI、IIASA发布ForTy 2020地图，把全球每10米×10米地块归入六类：原始林、自然再生林、人工林、种植园、树作物与农林复合、其他土地。配套的早期时间序列覆盖2017至2025年，可显示自然林被替换为种植园或农田等变化。模型以约170万标注点训练，在9000多个随机验证点上，森林类型判对率约90%，森林与非森林区分约95%。地图已在Earth Engine以开放许可免费提供。仍不确定的是：时间序列为“早期版本”，官方称未来数月将继续改进；各区域精度是否一致，材料未给出分区域数字。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "从卫星上看，原始雨林、桉树种植园和油棕园都是一片绿，但碳储量和生物多样性差得远。过去的地图大多只回答“这里有没有树”，新地图回答“这是哪种林、后来变成了什么”。好比以前只看小区有没有绿化，现在能分清是百年老林还是刚栽的经济林，还能发现“砍了天然林再种上经济林”这种很快又变绿、肉眼难辨的替换。对普通人来说，这意味着咖啡、可可、棕榈油、家具等商品是否沾了毁林，核查会更细；对保护者和监管者，则更容易把钱和执法力量投向真正需要保护的原生林。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Beyond tree cover: mapping the world’s forest types"
+    },
+    {
+      "id": "51888f116f5b08",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "Hugging Face",
+      "title": "微软用数据库校验当奖励训练AI代理",
+      "summary": "微软与Hugging Face联合发布ThinkingBox-Training，把代理执行后数据库终态的可执行校验结果直接当作强化学习奖励，用于训练AI代理。研究团队用离线策略相对难度筛选训练任务，对Qwen3.8-27B做50步GRPO微调。在507项未参与训练的基准任务上，平均成功率从51.70%升至60.78%，20次尝试全部正确的任务从38个增至107个，但至少成功一次的任务数略有下降。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "把可执行结果当奖励，绕开主观评分，为代理训练提供可验证信号；同时揭示平均成功率与稳定复现率并不一致，对选型有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软与Hugging Face发布ThinkingBox-Training，思路是把代理操作后数据库最终状态的可执行校验结果，直接作为强化学习奖励。团队从基准外构造训练任务池，用基础模型预先估计每项任务的成功概率，据此筛选难度适中的任务，并在训练全程固定该任务池。随后对Qwen3.8-27B进行50步GRPO全参数微调。在507项未参与训练的基准任务上，每项重复20次：平均成功率由51.70%升至60.78%，20次全部通过的任务由38个增至107个，至少成功一次的任务由453个降至446个。研究方称这体现“锐化”而非能力变广，但该解释仍属推测。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去训练AI干活，常靠人打分或看它说得好不好听；这次相当于装了个“查账员”，直接翻数据库看结果对不对，对了给糖、错了不给。好处是奖励客观、难以糊弄。代价是模型变得更“稳”而不是更“全能”：同一件事反复做对的概率明显提高，但原本偶尔能碰对的偏题怪题反而少了。对普通用户来说，这意味着用在改订单、退款、工单这类会动真实数据的场景时，AI更不容易嘴上说完成、实际留烂摊子；但遇到没见过的复杂情况，它未必更聪明。选模型时也别只看平均成功率，还要看它能不能每次都做对。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
+    },
     {
       "id": "b1ec87d7057535",
       "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
@@ -423,6 +716,39 @@
       "originalTitle": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business"
     },
     {
+      "id": "4a5d7d9aa652ee",
+      "url": "https://aws.amazon.com/blogs/machine-learning/work-management-context-for-ai-agents-with-smartsheet-mcp-on-aws/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/work-management-context-for-ai-agents-with-smartsheet-mcp-on-aws/"
+        },
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/workflow-context-for-ai-agents-with-smartsheet-mcp-on-aws/"
+        }
+      ],
+      "publishedAt": "2026-10-20",
+      "source": "AWS AI",
+      "title": "Smartsheet MCP服务器上线AWS，AI可直改项目表",
+      "summary": "AWS官方博客介绍，工作管理平台Smartsheet已推出正式可用的MCP服务器，AI助手可通过标准化协议读写Smartsheet中的表格、行、列和自动化流程，覆盖40多个工具。文章给出两条接入路径：面向业务人员的Amazon Quick预置连接器，以及面向开发者的Kiro IDE配置。官方称权限沿用Smartsheet REST API体系，不构成新的信任边界，且不存储提示词。不过该文属厂商技术推广，实际稳定性与权限效果尚无第三方验证。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "MCP正从开发者工具扩展到企业工作管理场景，让AI直接操作项目表而非只做问答，对办公自动化落地有参考价值，但仍是厂商自述。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS AI博客称，Smartsheet已发布正式可用的MCP服务器，AI助手能通过统一协议读取、写入和管理Smartsheet数据，工具数量超过40个，可更新任务状态、新建行、调整项目结构。接入方式有两种：Amazon Quick将其作为预置连接器，业务人员用自然语言查询和修改表格；Kiro则通过一段JSON配置连接，开发者可在编码时查看项目规格、更新任务状态。服务器提供美国、欧盟、澳大利亚三个区域端点，支持OAuth 2.0或个人访问令牌认证。官方强调权限按用户级别执行，管理员可全局关闭AI功能。文章未披露性能数据或客户案例，实际效果仍待验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去AI只能“看懂”项目表，现在等于给了它一把能开抽屉的钥匙：你说一句“把后端接口那个任务标成完成”，它就去表里改，不用人再点开网页。对普通员工来说，查进度、催逾期、汇总风险这类琐事可能一句话搞定；对管理者来说，省下的是跨工具切换的时间。但钥匙也意味着风险：AI改错一行、误删任务，责任算谁的？官方说它只能做你有权限做的事，可这依赖配置正确。企业若要用，最好先限定只读或小范围写入，再逐步放开，别一上来就把整个项目库交给它。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Work management context for AI agents with Smartsheet MCP on AWS"
+    },
+    {
       "id": "41fb25a47d12d2",
       "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
       "sources": [
@@ -511,35 +837,6 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "US orders federal agencies to remove China’s DeepSeek AI from their systems"
-    },
-    {
-      "id": "4a5d7d9aa652ee",
-      "url": "https://aws.amazon.com/blogs/machine-learning/work-management-context-for-ai-agents-with-smartsheet-mcp-on-aws/",
-      "sources": [
-        {
-          "name": "AWS AI",
-          "url": "https://aws.amazon.com/blogs/machine-learning/work-management-context-for-ai-agents-with-smartsheet-mcp-on-aws/"
-        }
-      ],
-      "publishedAt": "2026-10-20",
-      "source": "AWS AI",
-      "title": "Smartsheet MCP服务器上线AWS，AI可直改项目表",
-      "summary": "AWS官方博客介绍，工作管理平台Smartsheet已推出正式可用的MCP服务器，AI助手可通过标准化协议读写Smartsheet中的表格、行、列和自动化流程，覆盖40多个工具。文章给出两条接入路径：面向业务人员的Amazon Quick预置连接器，以及面向开发者的Kiro IDE配置。官方称权限沿用Smartsheet REST API体系，不构成新的信任边界，且不存储提示词。不过该文属厂商技术推广，实际稳定性与权限效果尚无第三方验证。",
-      "category": "日常应用",
-      "importance": 62,
-      "why": "MCP正从开发者工具扩展到企业工作管理场景，让AI直接操作项目表而非只做问答，对办公自动化落地有参考价值，但仍是厂商自述。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "AWS AI博客称，Smartsheet已发布正式可用的MCP服务器，AI助手能通过统一协议读取、写入和管理Smartsheet数据，工具数量超过40个，可更新任务状态、新建行、调整项目结构。接入方式有两种：Amazon Quick将其作为预置连接器，业务人员用自然语言查询和修改表格；Kiro则通过一段JSON配置连接，开发者可在编码时查看项目规格、更新任务状态。服务器提供美国、欧盟、澳大利亚三个区域端点，支持OAuth 2.0或个人访问令牌认证。官方强调权限按用户级别执行，管理员可全局关闭AI功能。文章未披露性能数据或客户案例，实际效果仍待验证。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "过去AI只能“看懂”项目表，现在等于给了它一把能开抽屉的钥匙：你说一句“把后端接口那个任务标成完成”，它就去表里改，不用人再点开网页。对普通员工来说，查进度、催逾期、汇总风险这类琐事可能一句话搞定；对管理者来说，省下的是跨工具切换的时间。但钥匙也意味着风险：AI改错一行、误删任务，责任算谁的？官方说它只能做你有权限做的事，可这依赖配置正确。企业若要用，最好先限定只读或小范围写入，再逐步放开，别一上来就把整个项目库交给它。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "Work management context for AI agents with Smartsheet MCP on AWS"
     },
     {
       "id": "d3749e6f019057",
