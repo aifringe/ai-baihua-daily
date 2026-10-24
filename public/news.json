@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-23T02:38:42.140343+00:00",
-  "lastCheckedAt": "2026-10-23T02:38:42.140343+00:00",
+  "updatedAt": "2026-10-24T02:36:31.467504+00:00",
+  "lastCheckedAt": "2026-10-24T02:36:31.467504+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -40,7 +40,7 @@
     },
     {
       "source": "Microsoft Research",
-      "ok": false
+      "ok": true
     },
     {
       "source": "NVIDIA AI",
@@ -73,6 +73,182 @@
   ],
   "articles": [
     {
+      "id": "c6dba218462cbd",
+      "url": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/"
+        }
+      ],
+      "publishedAt": "2026-10-23",
+      "source": "AWS AI",
+      "title": "AWS发布多轮强化学习训练指南",
+      "summary": "AWS于2026年10月发布技术指南，介绍在Amazon SageMaker AI上运行多轮强化学习（MTRL）的完整流程。该方法不要求标注正确轨迹，只对整段任务结果打分，适合报销、工单分诊等智能体多步任务。示例以Wordle游戏演示：训练任务调用托管在AgentCore上的智能体，智能体多轮调用策略模型，结束后返回单一奖励，再用GRPO更新LoRA适配器。官方称gpt-oss-20b在留出词上解题率从61%升至84%，低推理档从15%升至69%，训练token费用约339美元，另加AgentCore运行费约79美元。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "把多轮强化学习做成托管服务并给出可复现成本与效果数据，降低了企业训练多步智能体的门槛，但示例为游戏，真实业务收益仍待验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布实操指南，说明如何在SageMaker AI上做多轮强化学习。训练服务把每条任务发给托管在Bedrock AgentCore（或EKS、EC2等自建环境）的智能体，智能体多轮调用正在训练的策略模型，任务结束时只返回一个奖励，再由GRPO根据同一任务多次采样的奖励差异更新LoRA适配器。示例用Wordle：数据集每行只含一个秘密单词，不含标准答案轨迹。官方称一次100步训练跑了105486次采样、约12小时40分，消耗约12.9亿token，按列表价约338.5美元，AgentCore运行费另约79美元；gpt-oss-20b默认推理档解题率61%升至84%，低推理档15%升至69%。目前支持Nova 2 Lite、GPT-OSS-20B、Gemma 4 31B、Qwen 3.6 27B，且仅限部分区域。",
+          "text_note": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去教模型做事，像给它看标准答案照着抄；但报销、客服分诊这类多步任务往往没有唯一正确路径，只能看最后成没成。多轮强化学习就是只告诉模型“这局赢了还是输了”，让它自己摸索哪几步走对了。对普通人的影响是：企业可以用较小的模型、较低的成本，把自家内部流程练熟，而不必依赖通用大模型。不过这次演示的是猜单词游戏，规则简单、对错清楚；换成真实业务，奖励怎么设计、会不会练出钻空子的行为，才是难点。指南也提醒，奖励设计和训练失败是实际会踩的坑。",
+          "text_note": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide"
+    },
+    {
+      "id": "b535efb452866c",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/"
+        }
+      ],
+      "publishedAt": "2026-10-23",
+      "source": "AWS AI",
+      "title": "拜耳联手AWS打造农业智能体决策引擎",
+      "summary": "拜耳作物科学在亚马逊云科技Bedrock AgentCore上构建了智能体决策引擎ADE，作为其机器学习工作流平台CDE的自然语言交互层。系统采用监督智能体加22个专业智能体的架构，可自动路由问题并检索日志、状态等上下文。首阶段约80%的用户提问无需工程师介入即可解决，故障诊断时间从一小时以上缩短至十分钟内。AWS统一运营团队提供技术顾问与生成式AI专家支持，双方在身份认证、模型选型、工具治理等方面做出多项设计取舍。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "这是企业级多智能体系统落地的具体案例，展示了身份隔离、工具治理、可观测性等工程细节，对评估智能体在传统行业的实际可用性有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "拜耳作物科学的育种决策依赖基因组、田间试验、影像等多源数据，其CDE平台负责部署和监控数百个机器学习模型配置。随着使用扩大，理解工作流结果成为瓶颈。为此拜耳构建ADE，用监督智能体将自然语言问题分发给22个专业智能体，分别处理概念问答、运行状态、故障排查和图表生成。系统运行在Amazon Bedrock AgentCore上，使用LangGraph编排，状态存入DynamoDB，工具通过AgentCore Gateway以MCP形式暴露。官方称首阶段约80%问题无需工程师介入，故障诊断从一小时以上降至十分钟内。不过该数据由厂商自述，尚无独立验证，且系统目前仅覆盖拜耳内部场景。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去育种研究员想知道某个分析为什么失败，得自己翻日志、查文档、找工程师，像在几个互不相通的抽屉里找线索。ADE相当于给这套系统配了一个懂行的前台：你用大白话提问，它判断该找哪个专家，专家再去对应系统取数据并给出解释。对普通人来说，这类系统短期不会直接出现在消费端，但它说明企业正在把大模型从聊天框推进到真实业务流程里。关键难点不在模型多聪明，而在身份认证、权限边界和出错时能否发现，这些工程细节决定智能体是帮手还是添乱。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations"
+    },
+    {
+      "id": "303db39c14fcfc",
+      "url": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023"
+        }
+      ],
+      "publishedAt": "2026-10-23",
+      "source": "MIT News",
+      "title": "哈佛学者MIT演讲：AI侵蚀民主根基",
+      "summary": "2026年10月23日，哈佛大学法学教授玛莎·米诺在MIT发表康普顿讲座，主题为“AI时代的民主建构”。她指出美国民主正面临违法违宪、压制言论、国会权威削弱等多重挑战，并援引盖洛普民调称77%受访者认为美国建国者会对现状失望。米诺从教育、可靠信息、人身安全与公平四个维度评估AI影响，警告主流AI平台加剧人的被动性、削弱青少年批判性思维，同时建议开发“导师型”AI工具、建设可靠“信息公地”。MIT校长科恩布鲁斯主持并致介绍辞。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "知名法学者在顶尖高校系统阐述AI对民主制度的冲击与补救路径，涉及教育、信息生态与公共安全，对政策讨论和AI产品设计方向有参考价值，但属观点性演讲而非实证研究。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT于2026年10月23日举办秋季康普顿讲座，哈佛大学法学教授、前法学院院长玛莎·米诺发表题为“AI时代的民主建构”的演讲，MIT校长科恩布鲁斯致介绍辞。米诺称当前“不是民主与宪政的好时候”，列举违法违宪、压制言论、国会权威萎缩、无视司法裁决等现象，并引用盖洛普民调称77%的人认为美国建国者会对现状失望。她以教育、可靠信息、免于暴力的安全、公平四项“民主要素”为框架评估AI：担忧主流AI平台诱导被动、削弱年轻人思考与记忆能力；提到近几十年记者数量减少75%；称许多法官面临可信暴力威胁。她建议开发不替代学生思考的“导师型”AI、建设“信息公地”。演讲含问答环节，米诺称最担心“启蒙运动的失落”。上述民调与记者减少数据均系其演讲引述，报道未提供原始出处。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方：民主像一台靠市民自己动脑运转的老机器，AI现在既可能当“代脑外挂”让人懒得思考，也可能被改造成“陪练”帮人想得更深。米诺的意思是，问题不在AI本身，而在怎么用、怎么管、怎么教。对普通人来说，最直接的影响在教育：孩子用AI写作业越顺手，独立思考和辨别真假信息的能力可能越退化；信息环境上，本地媒体萎缩、假消息泛滥，让人更难找到可信来源。她的建议是别只骂技术，而要主动造出更“靠谱”的工具和公共信息平台。需要说明的是，这是一场观点性演讲，不是新研究结论，其中的民调和数据来自她引用的材料，读者不宜当作定论。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "At MIT, Martha Minow speaks on sustaining democracy, both by using and overcoming AI"
+    },
+    {
+      "id": "2b3f616d26d343",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/torch-neuronx-model-support"
+        }
+      ],
+      "publishedAt": "2026-10-23",
+      "source": "Hugging Face",
+      "title": "Hugging Face上线Trainium模型支持查询工具",
+      "summary": "Hugging Face博客介绍了一个新的模型支持查询Space，用于回答“某个Transformers模型能否在AWS Trainium上运行”。该工具覆盖Hub上按下载量和热度排名的热门模型，逐行给出测试结果、分片使用的Trainium核心数、含编译在内的运行耗时和峰值显存，并提供可复现的run.py脚本与NEFF缓存同步命令。目前仅测试文本生成和图文理解类Transformers模型，且只覆盖能放进最多4块Trainium2设备（16核）的模型；PASS不代表吞吐或长文本生成表现。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "把“模型能否在Trainium上跑”从口头承诺变成可查询、可复现的公开数据集，降低开发者选型与迁移成本，但覆盖范围和判定标准仍有限。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于10月23日发文，介绍torch-neuronx模型支持Space。该Space基于公开数据集aws-neuron/torch-neuronx-model-support，按Selected、Trending、Downloads三种视图展示模型在Trainium上的测试结果，并标注分片核心数、运行耗时和峰值显存。测试流程是在trn2实例上加载模型，按能容纳权重的最少核心数分片，生成32个token并校验：单核时与CPU结果比对，分片时由小模型判断英文是否通顺。文章明确，当前只测Transformers的文本生成和图文理解任务，只覆盖最多16核的模型，PASS不说明吞吐或更长生成的质量；被排除的模型会给出原因，多数是未优先测试，少数确属不兼容。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这理解成一张“兼容性清单”：以前开发者想知道某个开源模型能不能在AWS自研AI芯片Trainium上跑，往往得自己折腾环境、编译、试错；现在先查表，能跑就直接拿到现成脚本和缓存，省掉第一轮踩坑。对普通用户，这意味着以后一些AI服务可能更便宜或更快，因为厂商换用成本更低的芯片更有依据。但要注意，清单上的“通过”只代表能跑出像样结果，不代表跑得快，也不代表长回答稳定；而且目前只覆盖一小部分模型和最多16核的规模，不能当成全面性能评测。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Does Your Model Run on AWS Trainium? Look It Up"
+    },
+    {
+      "id": "32ef7801f58029",
+      "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+        }
+      ],
+      "publishedAt": "2026-10-23",
+      "source": "Google Research",
+      "title": "谷歌开放模型落地结核筛查一线",
+      "summary": "谷歌研究团队在IDWeek 2026介绍其结核病AI筛查进展：从2019年基准研究、2021年被Stop TB Partnership评为全球领先算法，到2024年多中心前瞻验证，再经合作方Nexus AI取得欧盟CE MDR IIb认证与ISO 13485，在南非等六国约40家机构部署，已评估超2.5万张胸片，单例筛查最快45秒。团队同时开源MedSigLIP与MedGemma，供印尼卫生部等本地微调，以保护数据主权。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "这是医疗AI从论文走向认证产品与国家级部署的完整样本，且以开源模型支撑数据主权，对全球公共卫生筛查路径有示范意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究团队称，其结核病胸片AI筛查已从研究走向临床：合作方Nexus AI将算法转化为获欧盟CE MDR IIb认证、符合ISO 13485的临床工具，并在南非、塞拉利昂、科特迪瓦等六国约40家机构使用，90余名临床人员评估超2.5万张胸片，周转时间从数周降至45秒内。南非Mponeng金矿在地下四公里部署便携X光与离线AI，筛查、分诊与分子确认可一次完成。团队还开源MedSigLIP与MedGemma，印尼卫生部正用本国胸片微调，目标年筛5000万人。需注意：上述部署规模、下载量超1000万等数据均来自谷歌单方披露，缺少独立核实；WHO预认证与FDA路径仍在推进，尚未完成。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：过去只有大医院放射科专家才能看懂的胸片，现在被装进一个能离线运行的“AI读片助手”。偏远诊所或矿井下没有专家，拍完片子几十秒就能得到“像不像结核”的提示，可疑者立刻转去做确诊检查，不用等几周。更关键的是，谷歌没有只卖成品，而是把“半成品模型”公开，让各国用自己的片子继续训练，病人数据不必出境。对普通人来说，这意味着在高负担地区看病少跑路、少等待；但AI只是初筛，最终诊断仍由医生和化验确认，且其真实准确率还需更多独立评估。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Bringing foundational models to the front lines of TB screening"
+    },
+    {
+      "id": "000b68dcd1349d",
+      "url": "https://news.mit.edu/2026/qa-how-ai-came-to-model-messy-human-mind-1023",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/qa-how-ai-came-to-model-messy-human-mind-1023"
+        }
+      ],
+      "publishedAt": "2026-10-23",
+      "source": "MIT News",
+      "title": "MIT研究：AI幻觉源于早期随机性设计",
+      "summary": "MIT历史学助理教授Benjamin Lindquist在《Past and Present》发表论文，追溯生成式AI的起源：20世纪50年代，部分工程师认为创造力需要偶然与“非理性”，因此刻意在算法中注入随机性，早期神经网络被用来模拟大脑的“有益错误”。这与今天追求准确、抑制异常输出的商业模型形成对比。研究指出，AI的创造力与幻觉之间存在难以消除的权衡，减少意外输出可能同时牺牲创造性。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "该研究从历史角度解释AI幻觉的根源，提出创造力与可预测性之间的结构性权衡，有助于公众理解大模型“胡说”并非纯缺陷，而是设计取向的结果。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT News于2026年10月23日刊出对历史学助理教授Benjamin Lindquist的访谈，其论文《The Irrational Computer》发表于期刊《Past and Present》。文章梳理：20世纪50年代，贝尔实验室工程师John Pierce等人主张用数学为艺术“去除秩序”，以刻意引入意外；心理学家参与构建的早期随机神经网络，被视为能观察大脑如何“生产性犯错”的窗口。Lindquist称，当时研究者珍视系统偶尔给出偏离预期的答案，而今天OpenAI、Anthropic等因法律与商业原因压制这种“怪异”。论文还提到Frank Rosenblatt于1971年去世、符号主义AI兴起等节点。需要说明的是，这是历史学者的解释框架，并非工程共识；随机性与幻觉之间的因果强度仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把早期AI想象成一位被鼓励“胡思乱想”的实习生：老板不指望他每次答对，反而希望他偶尔冒出怪点子，因为怪点子可能通向灵感。后来AI进了大公司，说错话要赔钱、要担责，于是公司把它“打磨”得规规矩矩，怪点子被压了下去。这篇研究提醒我们，AI的“灵光一现”和“一本正经胡说八道”可能来自同一个开关：调低胡说的概率，创意也可能一起变少。对普通人来说，这意味着别指望一个模型既百分百可靠又天马行空；用在写诗、头脑风暴时可放宽，用在医疗、法律等场景则必须人工核查。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Q&A: How AI came to model the “messy” human mind"
+    },
+    {
       "id": "fee5d6bca69047",
       "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
       "sources": [
@@ -102,6 +278,35 @@
       "originalTitle": "Left alone with nothing to do, AI agents started playing"
     },
     {
+      "id": "5d794c3788a3a4",
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/litpivot"
+        }
+      ],
+      "publishedAt": "2026-10-23",
+      "source": "Hugging Face",
+      "title": "Ai2推LitPivot：按文献评估研究想法",
+      "summary": "艾伦人工智能研究所（Ai2）联合宾夕法尼亚大学发布LitPivot系统，用于早期科研构思阶段。系统将研究提案拆分为问题、贡献、评估计划三个维度，围绕正在编辑的部分组织检索到的文献，给出带原文摘录支撑的批评与修改建议，研究者可接受、编辑或拒绝。17名研究者的实验显示，领域专家认为用LitPivot产出的想法文献依据更扎实，参与者自评新颖性和实用性提升。该系统将在UIST 2026展示，目前仅限早期构思场景。",
+      "category": "日常应用",
+      "importance": 55,
+      "why": "它把“查文献”和“改想法”合成一个可操作流程，而非只做检索或写作，对科研工作者有直接实用价值，但尚处实验室研究阶段，未大规模验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Ai2与宾夕法尼亚大学合作开发了LitPivot，并在官网发布论文与实验报告。系统让研究者先写一段简短提案，再点击提案中的问题、贡献或评估计划片段，侧栏会按该片段对相关论文分组排序；研究者选定论文后请求评估，系统给出带引文摘录的批评和改写建议，文献排序随修改后的片段重新计算。研究团队称，在17名研究者的对照实验中，两名不知情的领域专家认为LitPivot产出的提案文献支撑更好；参与者自评对周边文献理解更深。不过样本仅17人，且系统定位为早期构思，能否用于完整论文写作尚未验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把LitPivot想成一个“边写开题报告边被审稿”的助手：你写到哪一段，它就把相关论文摆到旁边，指出“这个点别人做过了”或“这里还缺证据”，并附上原文出处，而不是空口说不行。对普通人的影响是间接的——它不直接面向大众，但若这类工具成熟，科研人员少走弯路，新药、新材料等研究的前期筛选可能更快。需要提醒的是，实验规模很小，专家评分也只针对“文献依据是否扎实”这一项，不能据此认为它能让想法本身变得更好。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape"
+    },
+    {
       "id": "9053b1f287d8b4",
       "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
       "sources": [
@@ -129,6 +334,68 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "OpenAI makes its Jev competitor widely available as decision model competition heats up"
+    },
+    {
+      "id": "1fd5dc2d57e903",
+      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+        },
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "TechCrunch AI",
+      "title": "Canva推出首款自研图像生成模型Craft",
+      "summary": "设计平台Canva发布首款自研图像生成模型Canva Craft，由内部研究团队开发，并整合了2024年收购的Leonardo.ai研究人员。该模型采用两阶段生成：先解析提示词并规划空间关系、视觉层级与文字信息，再生成最高2K分辨率、支持约30种宽高比的图像。与多数模型不同，它用Canva模板库中的设计作品而非照片训练，因此生成结果可经Canva Magic转为分层设计。模型已向所有用户开放，并计划通过API和MCP接入第三方聊天机器人。Canva称此举可降低对外部模型的API依赖与成本，并更好控制质量与速度。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "Canva首次自研图像模型，标志设计工具商从调用外部模型转向垂直自研，以设计数据训练形成差异化，并可能降低API成本、影响普通用户的设计工作流。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Canva发布首款自研图像生成模型Canva Craft，称由公司研究团队开发，Leonardo.ai研究人员亦有贡献。模型分两阶段：先理解提示词并规划元素空间关系、相对比例、视觉层级和文字信息，再生成最高2K分辨率、支持约30种宽高比的图像。Canva表示该方式能更准确呈现物体细节和可读文字，并支持局部精确编辑而不改动其他区域。训练数据来自Canva模板库中的海报、社交帖、演示文稿等设计作品，而非照片，因此生成图可经Canva Magic转为分层设计。模型已向所有用户开放，入口在Dream Lab标签页，也将通过Canva API提供，并计划借MCP接入ChatGPT、Gemini等第三方聊天机器人。Canva还称正开发Craftfast和Craft-ultrafast两个低成本版本，发布时间未定。报道提到Canva去年营收目标为40亿美元，但下调了2026年增长预期，外部分析师称其估值从420亿美元降至350亿美元，该估值说法来自外部，未获公司确认。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Canva Craft理解成一个“先打草稿再画图”的画师：接到需求先想清楚谁大谁小、文字放哪，再动笔，所以画面更少出错、字也更清楚。更特别的是，它从小看的是海报、菜单、PPT这类设计稿，而不是照片，所以画出来的东西天生像“能改的设计文件”，而不是一张死图。对普通人来说，做海报、社交媒体图时可以直接在Canva里生成并继续改字改版式，不必来回切换工具。对Canva自己来说，过去生成图片要调用别家模型、按次付费，现在用自家模型能省成本，也能自己把控速度和效果。不过新模型实际画质、文字准确度和编辑体验是否真如宣传，还需用户实测；低成本版本何时上线也未确定。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Canva releases its first image generation model"
+    },
+    {
+      "id": "264af0525447e4",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "TechCrunch AI",
+      "title": "1Password推出AI代理免密登录工具",
+      "summary": "随着消费者越来越多地把账户操作交给AI代理，密码管理公司1Password发布“1Password for Agents”，让代理在不接触用户密码的前提下代用户登录。流程是：代理发起登录时向1Password发送数字密钥以确认身份，用户收到提醒并亲自确认，随后由1Password代为填入凭据完成登录。该工具支持Claude Duet、ChatGPT Work、Grok Bot等多家代理。同日Axios报道称美国部分银行已在用户账户中检测到代理活动，且多数银行难以判断是否获得用户授权。",
+      "category": "安全与规则",
+      "importance": 72,
+      "why": "AI代理代操作账户正从演示走向日常，密码与授权边界成为现实风险点；该方案把“交出密码”改为“逐次确认”，为行业提供可参考的权限托管模式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "1Password发布面向AI代理的登录工具“1Password for Agents”。用户可授权代理代登录个人账户，但代理始终拿不到账号密码。机制上，代理发起登录时先向1Password发送唯一数字密钥以证明自身身份，用户随后收到登录提醒并手动确认，再由1Password替代理填入凭据、完成登录。官方称支持Claude Duet、ChatGPT Work、Grok Bot、Meta的Muse等代理，并正与其他公司洽谈扩展。同日Axios报道，美国部分银行已在用户账户中检测到代理活动，多数银行无法判断这些操作是否经用户授权，有银行人士称情况“令人恐惧”。目前尚不清楚该工具的实际安全强度、确认环节是否会被绕过，以及银行端将如何识别此类代登录。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去让AI帮忙办事，常见做法是把密码直接告诉它，等于把家门钥匙复制一把交出去，还可能被存到别处。新做法更像给AI配一张一次性门禁卡：它到门口先亮明身份，你手机收到通知点“同意”，门由物业（密码管理器）打开，AI全程看不到钥匙。好处是权限可逐次收回，泄露面变小；代价是每次都要你确认，频繁操作会麻烦。对普通人来说，这意味着以后让AI代订票、代填表、代查账时，不必再纠结“要不要把密码给它”，但也要留意确认弹窗别乱点——你点的每一次“同意”，都是替AI开的门。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "1Password launches a way for AI agents to log in on your behalf without seeing your password"
     },
     {
       "id": "4eb8c8201d11b5",
@@ -187,6 +454,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Announcing new ways to customize models with SageMaker AI, without managing GPUs"
+    },
+    {
+      "id": "db007afeffa315",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "sources": [
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "Microsoft Research",
+      "title": "微软发布Flint-interactive交互图表语言",
+      "summary": "微软研究院发布Flint-interactive，一种用于创建交互式数据可视化的语言，构建在Flint之上。它让AI智能体生成的图表支持点击、筛选、缩放、高亮和跨图表联动，用户还能在对话中选中图表内容追问。其核心是把点击、拖拽等原始操作翻译成语义事件，再由编译器处理视觉更新，从而降低生成成本、提升可靠性。目前可通过Flint-MCP在聊天环境试用，开发者也能用编程接口构建仪表盘和数据故事。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "它针对AI生成图表普遍静态、交互代码易出错的问题，用高层语言把交互逻辑与渲染细节分离，有望降低智能体生成可探索图表的门槛，对数据分析和报表场景有实际价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软研究院公开了Flint-interactive，定位是让AI智能体更可靠地生成可交互数据可视化。按官方说明，它把点击、拖拽、按键等原始操作解析为标识图表元素和数据的语义事件，用户或智能体只需用高层操作符描述“选中后要高亮、标注还是缩放”，布局、命中测试和渲染更新交给Flint编译器处理。官方称这能减少反复推理调试的token消耗，并降低交互图表布局错乱的风险。使用途径包括聊天环境中的Flint-MCP、面向开发者的Flint Interactive Canvas编程接口，以及自定义触发器加处理函数。需要说明的是，这些能力与效果目前来自微软单方发布材料，尚无独立评测，实际生成质量和适用范围仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去让AI画图，多半得到一张“死图”，想放大看细节或点某个国家看关联数据，只能自己改代码，改着改着图就乱了。Flint-interactive相当于给AI配了一套“交互积木”：你告诉它“点这个柱子就高亮对应文字”，它不用从零写渲染逻辑，编译器会把动作翻译成图表变化。对普通人来说，未来在聊天窗口里生成的报表可能不再只是图片，而是能点、能筛、能追问的活图表；对开发者来说，做仪表盘时少写底层代码，出错概率更低。不过它仍是面向开发者和智能体的工具，普通用户能否顺手，还要看实际产品接入后的表现。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Flint-interactive: A language for creating interactive data visualizations"
     },
     {
       "id": "6af0fd42e696c9",
@@ -279,33 +575,62 @@
       "originalTitle": "Designing an AI serving harness built to last"
     },
     {
-      "id": "5eee804247a435",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "id": "0e5fad3ca5f8a8",
+      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
       "sources": [
         {
-          "name": "The Verge AI",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1"
         }
       ],
       "publishedAt": "2026-10-22",
-      "source": "The Verge AI",
-      "title": "Canva推出首款AI图像模型Craft",
-      "summary": "Canva发布首款自研AI图像生成模型Canva Craft，采用先规划后生成的两阶段架构，主打更高精度、一致性与可控性，支持最高2K分辨率和30多种画幅比例，面向全球用户开放。Canva称其用平台数百万人工模板训练，在Design Arena榜单暂列第四，落后于OpenAI的三款GPT-Image模型。官方强调具备输入输出审核与隐私安全控制，未来将开放智能体接入并推出更快版本。",
+      "source": "Hugging Face",
+      "title": "IBM开源Granite时序集成预测方案",
+      "summary": "IBM研究团队在Hugging Face发布Granite Timeseries Ensemble，将PatchTST-FM-r1、PatchTST-FM-r2、FlowState-r1.1和TTM-r3四个开源时序模型打包为统一预测接口，提供等权概率池化和按预测区间宽度加权的IQR两种组合方式，无需重训或拟合权重。在97个GIFT-Eval配置上，概率集成取得最低MASE 0.683，略优于最佳单模型0.685，但CRPS仍由PatchTST-FM-r2领先。团队强调集成价值在于免选型的稳健性，而非登顶榜单。",
       "category": "模型进展",
       "importance": 62,
-      "why": "设计工具厂商自研图像模型，意味着AI生图竞争从通用大模型延伸到垂直设计场景，可能改变普通用户做图方式。",
+      "why": "把多模型集成做成开箱即用的默认配方，降低时序预测选型门槛，对做需求、工业信号预测的开发者有直接参考价值。",
       "sections": [
         {
           "heading": "发生了什么",
-          "text": "Canva于10月22日发布首款自研AI图像生成模型Canva Craft，直接对标OpenAI、微软和谷歌的图像模型。其核心是两阶段架构：先规划版面再生成图像，官方称这能提升精度、一致性和可控性，尤其利于含可读文字和精确物体摆放的复杂画面。模型支持最高2K分辨率和30多种画幅比例，覆盖社媒图、营销素材、写实场景和数字艺术等。Canva表示训练数据来自平台数百万人工模板。第三方众包榜单Design Arena显示其暂列第四，前三均为OpenAI的GPT-Image系列。Canva称模型带审核与隐私控制，未来将通过MCP开放智能体接入，并推出Craft-fast等更快版本。目前全球用户可在Dream Lab中试用。"
+          "text": "IBM研究团队发布Granite Timeseries Ensemble，把四个预训练Granite时序模型——PatchTST-FM-r1、PatchTST-FM-r2、FlowState-r1.1和TTM-r3——组合成一个可调用的预测接口，输出中位数和0.1至0.9分位数。默认采用等权概率池化，另提供按各成员预测区间宽度加权的IQR方案，两者都不需要重新训练或拟合权重。在97个GIFT-Eval配置上，概率集成MASE为0.683，优于最佳单模型PatchTST-FM-r2的0.685，但CRPS为0.471，略逊于后者的0.467；IQR集成平均CRPS排名更好。团队明确表示领先幅度很小，且当前配方独立预测各通道、需加载四个检查点，推理成本更高。"
         },
         {
           "heading": "换成人话",
-          "text": "过去用AI画图，常常是“一句话丢进去，出来什么样看运气”，文字容易糊、元素位置乱跑。Canva Craft的思路像装修前先出施工图：先想好哪里放标题、哪里放产品，再动手画，所以成品更听话。对普通人来说，做海报、朋友圈图、菜单时，改字和挪位置会更省心，不用反复抽卡。但它目前还不是最强，榜单上排在OpenAI几款模型之后，说明“会规划”不等于全面领先。另一个现实影响是：设计门槛继续降低，不会排版的人也能快速出图，但模板化风格可能更普遍，商用前仍需留意版权与平台审核规则。"
+          "text": "就像天气预报不再只信一个模型，而是把几家机构的预测合在一起看：单个模型可能擅长平滑的工业曲线，却搞不定嘈杂的零售销量，与其纠结选哪个，不如让四个各有所长的模型一起投票。IBM把这套投票规则做成了默认设置，你装好包、调一行代码就能拿到预测区间，不用先做实验挑模型。代价是要同时跑四个模型，更吃内存和时间，而且它不会自动变准——官方也承认提升幅度有限，真正的好处是省去选型焦虑、结果更稳。对普通人来说，这意味着以后用电、物流、库存这类预测服务可能少一些“押错模型”的翻车，但上线后仍需持续盯着效果。"
         }
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "Canva’s first AI image model plans designs before generating them"
+      "originalTitle": "Ensemble forecasting with IBM Granite time-series models"
+    },
+    {
+      "id": "2c5776b8329112",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-in-a-hipaa-eligible-environment-with-amazon-quick/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-in-a-hipaa-eligible-environment-with-amazon-quick/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "AWS AI",
+      "title": "AWS推医疗合规AI工作台",
+      "summary": "AWS发布技术文章，介绍其AI工作台Amazon Quick可在符合HIPAA资格的环境中部署，用于处理受保护健康信息（PHI）。文章区分了“HIPAA资格”与“HIPAA合规”：前者指AWS经评估允许在签署业务伙伴协议（BAA）后处理PHI，后者取决于客户自身配置、治理与行政保障。Quick支持非结构化知识库与结构化数据两条PHI路径，提供默认加密、访问控制、审计日志等能力，但客户仍需自行完成数据分类、密钥策略与合规责任。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "医疗是AI落地的高门槛场景，AWS明确资格与合规边界，为行业提供可参考的部署框架，也提醒企业合规责任不可外包。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS于2026年10月22日发布文章，说明Amazon Quick为HIPAA资格服务，覆盖网页、桌面与移动客户端，但需在共享责任模型和客户正确配置下使用。文章强调，资格不等于合规：客户须先通过AWS Artifact接受BAA，再自行完成数据分类、加密策略、访问控制、员工培训与风险评估。Quick通过知识库处理非结构化PHI，通过Quick Sight读取结构化数据，分别依赖文档级ACL和行列级安全。审计信号分为CloudTrail与CloudWatch日志，前者不记录聊天正文。文章还提示，用户反馈文本可能构成PHI暴露面，且部分数据库连接需手动启用TLS。仍不确定的是，具体部署效果取决于各机构配置，文章未给出统一合规结论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把HIPAA资格理解成“这辆车允许上高速”，但能不能安全到达终点，还得看司机有没有驾照、路线对不对、刹车灵不灵。AWS把基础设施和加密这些“车况”管好了，可数据怎么分类、谁能看、出了事怎么处理，仍是医院或保险公司的责任。对普通人来说，这意味着未来医疗机构可能用AI更快处理病历和理赔，但你的健康信息是否被妥善保护，不只看用了哪家云，还要看机构有没有把权限和审计做扎实。文章也提醒，聊天反馈这类小细节都可能泄露信息，说明合规是整套流程，不是开个开关。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Deploy AI in a HIPAA-eligible environment with Amazon Quick"
     },
     {
       "id": "301925b8adfceb",
@@ -364,6 +689,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
+    },
+    {
+      "id": "812abe3aa79b8a",
+      "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "TechCrunch AI",
+      "title": "DeepSeek被美限制两天后传融资150亿美元",
+      "summary": "美国要求联邦民事机构移除DeepSeek技术两天后，彭博社报道这家中国AI公司完成约150亿美元（约1000亿元人民币）融资，潜在投资方包括宁德时代和腾讯。此前DeepSeek于6月融资超70亿美元、估值500亿美元，7月又传拟以约710亿美元估值再融15亿美元，并计划最早明年在国内IPO。TechCrunch称DeepSeek未回应置评请求，融资细节尚未获公司确认。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "巨额融资与美方限制几乎同时发生，凸显中美AI竞争下资本仍加速涌入头部实验室，也反映中国AI融资规模和估值持续抬升。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据TechCrunch援引彭博社报道，美国下令联邦民事机构因安全担忧移除DeepSeek技术仅两天后，这家杭州AI公司据称融资约150亿美元（约1000亿元人民币），潜在投资方包括电池制造商宁德时代和微信母公司腾讯。报道称，这发生在DeepSeek 6月融资超70亿美元、估值500亿美元之后；7月公司还据称寻求以约710亿美元估值再融15亿美元，并计划最早明年在中国IPO。TechCrunch表示DeepSeek未立即回应置评请求，融资规模、投资方和估值均未获公司确认，仍属媒体报道。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它理解成：一边被美国政府部门“请出门”，一边在国内拿到更大一笔“弹药钱”。DeepSeek拿这笔钱大概率继续买算力、做开源模型、抢国内外市场，和月之暗面、智谱、MiniMax等国内对手的竞争会更卷。对普通人来说，短期未必直接改变你用的产品，但说明中国头部AI公司仍被资本看好，未来模型迭代和价格战可能更频繁；同时美国限制与巨额融资并存，也意味着这类公司出海会面对更复杂的规则环境。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "DeepSeek reportedly raises $15B days after US restrictions"
     },
     {
       "id": "b1ec87d7057535",
