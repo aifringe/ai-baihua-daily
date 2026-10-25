@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-24T02:36:31.467504+00:00",
-  "lastCheckedAt": "2026-10-24T02:36:31.467504+00:00",
+  "updatedAt": "2026-10-25T02:23:43.170636+00:00",
+  "lastCheckedAt": "2026-10-25T02:23:43.170636+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -72,6 +72,64 @@
     }
   ],
   "articles": [
+    {
+      "id": "43fa73ddaf377e",
+      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
+        }
+      ],
+      "publishedAt": "2026-10-24",
+      "source": "TechCrunch AI",
+      "title": "AI项目倒闭潮：从Character.ai到Humane的失败清单",
+      "summary": "TechCrunch汇总了一份“AI墓地”清单，记录近年关停或大幅收缩的AI产品与初创公司。Character.ai在2026年10月申请破产，Humane AI Pin于2025年2月终止业务、资产以1.16亿美元卖给惠普，Notion Mail定于9月22日关闭，OpenAI的独立浏览器Atlas和视频平台Sora也已停运。报道援引S&P数据称约42%的企业AI计划最终被放弃，原因包括资金不足、技术挑战、竞争和需求疲软。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "清单式梳理多家AI产品关停，反映大平台内置功能挤压独立产品、硬件与消费应用商业化困难的行业趋势，对判断AI创业风险有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch整理了一份持续更新的“AI墓地”清单。文中称，Zapier替代品Relay于8月完全关停；Character.ai在成立五年后于10月初申请破产，此前谷歌以约27亿美元授权其技术并带走创始人，公司还面临青少年相关诉讼和迪士尼侵权警告，迪士尼现以2000万美元竞购部分IP授权。Humane AI Pin在2025年2月终止业务，资产以1.16亿美元售予惠普。Notion Mail因用户转向其他AI代理处理邮件，定于9月22日关闭。OpenAI的独立浏览器Atlas于8月9日停运，Sora因成本与留存问题于2026年3月关闭。报道还提到约42%的企业AI计划被放弃，但该数字来自S&P的统计口径，具体样本未在文中说明。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这份清单像一份“AI创业死亡笔记”：很多产品不是想法不好，而是被大厂顺手做进主产品里，用户没必要再单独装一个。比如浏览器、做图、自动化流程，ChatGPT们一更新，独立小工具就没了活路。对普通人来说，短期是好事——功能更集中、更便宜；但也意味着选择变少，一旦你依赖的小众AI服务关停，数据迁移和习惯改变都得自己扛。硬件方面，Humane和Rabbit说明“戴在身上的AI”噱头足但体验差，买单前最好等评测。Character.ai的破产则提醒，陪聊类应用面临法律和内容监管的硬约束，用户别把重要情感或隐私长期寄托在单一平台上。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The AI graveyard: a running list of projects and startups that didn’t make it"
+    },
+    {
+      "id": "c7aa9b7dfeaf83",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
+        }
+      ],
+      "publishedAt": "2026-10-24",
+      "source": "The Verge AI",
+      "title": "宾州立法要求AI生成广告加标注",
+      "summary": "宾夕法尼亚州州长夏皮罗签署《人工智能欺骗性广告法》，要求凡经AI显著修改或生成的广告——无论图片、视频、音频还是文字——都须以与广告相同的形式加注披露标签，且不限于本州制作的广告。该州成为首批强制标注AI广告的州之一。但法律留有诸多模糊地带：“显著修改”缺乏客观标准，对讽刺、评论及“明显虚构”内容设豁免，且仅针对造成虚假消费认知的内容，具体认定权责不明。",
+      "category": "安全与规则",
+      "importance": 72,
+      "why": "这是美国州级层面较早针对AI广告的强制披露立法，可能影响跨州投放的广告，但定义模糊和豁免条款削弱了实际约束力，具有示范与争议双重意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "宾夕法尼亚州州长乔什·夏皮罗签署《人工智能欺骗性广告法》，要求任何“经人工智能显著修改或生成”的广告，包括静态图片、视频、音频和文字，都必须以与广告本身相同的格式加注披露标签。适用范围覆盖大企业的电视广告，也包括小餐馆传单，且不论广告在何处制作，只要预计在宾州播出就可能出现标签。该法对“讽刺、戏仿、评论或批评”以及“明显虚构”内容设豁免，并暗示只有“以制造虚假消费认知的方式使用合成内容”才需披露。但“显著修改”“明显虚构”“虚假”均无明确定义，提出法案的州参议员办公室未回应置评请求。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，以后在宾州看到的广告，如果是AI画的、AI剪的或AI写的，理论上都得挂个“AI制作”的牌子，就像食品包装上的配料表。好处是观众能多一层知情，不至于把AI合成的画面当成真实产品。但这部法像一张网眼很大的筛子：什么叫“显著修改”、什么叫“明显虚构”，全凭解释，商家也可能用“这是讽刺”来绕开。对普通人来说，短期内别指望每个AI广告都老实标注；对广告主来说，跨州投放时可能要多备一套带标签的版本，合规成本会上升。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Pennsylvania will require labels on AI-generated ads"
+    },
     {
       "id": "c6dba218462cbd",
       "url": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
@@ -307,35 +365,6 @@
       "originalTitle": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape"
     },
     {
-      "id": "9053b1f287d8b4",
-      "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/"
-        }
-      ],
-      "publishedAt": "2026-10-22",
-      "source": "TechCrunch AI",
-      "title": "OpenAI推出Decisions API，决策模型竞争升温",
-      "summary": "OpenAI于9月29日开发者日发布、本周四全面开放Decisions API，基于ChatGPT Luna改造，将推理延迟从1至3秒压缩到100至180毫秒，并新增语音与视觉模态。该产品对标TypeSafe的Jev模型，后者已让这家初创估值达76亿美元。Box、Datadog、Ramp、Speak等客户用它替换大模型以提升吞吐，Speak称操作间隔从1.4秒降至0.13秒。不过公开榜单上Liquid的D1 Ultra与Base Lab的Elephant-1更靠前，OpenAI模型排名中游，何种决策模型更优仍无定论。",
-      "category": "模型进展",
-      "importance": 72,
-      "why": "决策模型被视为可替代大模型的高频低成本方案，OpenAI入场将加速价格与延迟竞争，并影响开发者技术选型，但基准排名分歧说明格局未定。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "OpenAI本周四向所有客户开放Decisions API，该产品9月29日在开发者日首次公布。产品负责人Nikunj Handa称，团队并非专门训练决策模型，而是把ChatGPT Luna重新配置以加快推理、降低成本，延迟从1至3秒降到100至180毫秒，公开版还加入语音和图像模态，并按地域部署推理资源以降低延迟。Box、Datadog、Ramp、Speak等早期客户用它替换原有大模型提升吞吐，Speak首席技术官Andrew Hsu称操作间隔从1.4秒缩短到0.13秒。该赛道由TypeSafe的Jev模型开创，该公司估值已达76亿美元。但在AIM System One Index和Artificial Analysis Decision Index上，Liquid的D1 Ultra与Base Lab的Elephant-1更靠前，OpenAI模型分列第八和第十四；TypeSafe在OpenRouter上查询量仍最高。何种决策模型更优，业内尚无统一标准。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "可以把决策模型想成流水线上的分拣员：不用像大模型那样把每件事从头想一遍，只在一堆选项里快速挑一个，还附上自己有多大把握。对普通人来说，最直接的变化是手机里的AI助手、语音陪练、客服机器人反应更快，等待从一两秒缩到零点几秒，几乎感觉不到卡顿；开发者则能用更便宜的方式处理海量小判断，比如每帧画面该不该报警。但快不等于准，各家榜单排名互相打架，厂商自己也承认要看具体场景试用。所以短期内别指望它替你做重大决定，它更像把琐碎选择外包出去的助手，真正复杂的问题仍要交给更慢、更贵的大模型。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "OpenAI makes its Jev competitor widely available as decision model competition heats up"
-    },
-    {
       "id": "1fd5dc2d57e903",
       "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
       "sources": [
@@ -367,6 +396,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Canva releases its first image generation model"
+    },
+    {
+      "id": "9053b1f287d8b4",
+      "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "TechCrunch AI",
+      "title": "OpenAI推出Decisions API，决策模型竞争升温",
+      "summary": "OpenAI于9月29日开发者日发布、本周四全面开放Decisions API，基于ChatGPT Luna改造，将推理延迟从1至3秒压缩到100至180毫秒，并新增语音与视觉模态。该产品对标TypeSafe的Jev模型，后者已让这家初创估值达76亿美元。Box、Datadog、Ramp、Speak等客户用它替换大模型以提升吞吐，Speak称操作间隔从1.4秒降至0.13秒。不过公开榜单上Liquid的D1 Ultra与Base Lab的Elephant-1更靠前，OpenAI模型排名中游，何种决策模型更优仍无定论。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "决策模型被视为可替代大模型的高频低成本方案，OpenAI入场将加速价格与延迟竞争，并影响开发者技术选型，但基准排名分歧说明格局未定。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI本周四向所有客户开放Decisions API，该产品9月29日在开发者日首次公布。产品负责人Nikunj Handa称，团队并非专门训练决策模型，而是把ChatGPT Luna重新配置以加快推理、降低成本，延迟从1至3秒降到100至180毫秒，公开版还加入语音和图像模态，并按地域部署推理资源以降低延迟。Box、Datadog、Ramp、Speak等早期客户用它替换原有大模型提升吞吐，Speak首席技术官Andrew Hsu称操作间隔从1.4秒缩短到0.13秒。该赛道由TypeSafe的Jev模型开创，该公司估值已达76亿美元。但在AIM System One Index和Artificial Analysis Decision Index上，Liquid的D1 Ultra与Base Lab的Elephant-1更靠前，OpenAI模型分列第八和第十四；TypeSafe在OpenRouter上查询量仍最高。何种决策模型更优，业内尚无统一标准。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把决策模型想成流水线上的分拣员：不用像大模型那样把每件事从头想一遍，只在一堆选项里快速挑一个，还附上自己有多大把握。对普通人来说，最直接的变化是手机里的AI助手、语音陪练、客服机器人反应更快，等待从一两秒缩到零点几秒，几乎感觉不到卡顿；开发者则能用更便宜的方式处理海量小判断，比如每帧画面该不该报警。但快不等于准，各家榜单排名互相打架，厂商自己也承认要看具体场景试用。所以短期内别指望它替你做重大决定，它更像把琐碎选择外包出去的助手，真正复杂的问题仍要交给更慢、更贵的大模型。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "OpenAI makes its Jev competitor widely available as decision model competition heats up"
     },
     {
       "id": "264af0525447e4",
@@ -425,6 +483,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs"
+    },
+    {
+      "id": "b29f5da23a3873",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai-dlc/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai-dlc/"
+        }
+      ],
+      "publishedAt": "2026-10-22",
+      "source": "AWS AI",
+      "title": "Rescale用AI分诊代理自动归类测试失败",
+      "summary": "Rescale在AWS的AI-DLC框架下，用五天工作坊构建了一个AI分诊代理，自动对夜间端到端测试失败进行分类和路由。该代理运行在Amazon EKS上，调用Amazon Bedrock上的Claude模型，结合历史失败知识库和CloudWatch日志，输出结构化修复报告。上线后，其与人工分诊的分类一致率从44%升至68%，测试失败分析阻塞生产部署的时间减少20%。不过，这些数字均来自厂商自述，尚无独立验证。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "案例展示了AI代理进入软件交付运维环节的具体路径和可量化收益，对评估AI在工程流程中的落地价值有参考意义，但数据来自单一厂商，需谨慎看待。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Rescale的夜间端到端测试套件包含数百个用例，失败后需人工查日志、判断根因并分派给对应团队，这一流程长期占用值班工程师时间，且阻塞每周生产发布。Rescale采用AWS开源的AI-DLC方法，在五天线下工作坊中完成需求澄清、架构设计和部署，构建出运行在Amazon EKS上的分诊代理。该代理由Argo Workflows触发，调用Amazon Bedrock上的Claude模型，将失败归为基础设施、代码缺陷、不稳定测试或环境问题四类，并检索历史失败模式、通过MCP查询CloudWatch日志，生成含文件与函数引用的修复报告。代理已进入生产，分类一致率从44%提升至68%，分析阻塞部署的时间下降20%。上述效果均为Rescale与AWS单方披露，缺少第三方复核；一致率仍未达到人工水平，代理输出也需工程师确认后才行动。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套系统想成医院急诊的分诊台：测试失败就像病人涌进来，过去由值班工程师逐个问诊、判断该送哪个科室，费时且容易排队。现在先由一个AI助手快速初筛，写好“疑似病因”和“建议处理”，工程师只需复核签字。好处是发布前少堵一会儿，工程师少做重复劳动；但AI目前大约三成判断与人不一致，还不能让它自己拍板。对普通用户而言，这类改进不会直接改变产品功能，却可能让软件更新更快、故障定位更早。更值得关注的是，厂商公布的提升幅度是否能在更多团队复现，以及当AI分错类时，责任仍由谁承担。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Rescale built an AI triage agent with Strands Agents and AI-DLC"
     },
     {
       "id": "08577d1558fa98",
@@ -1070,6 +1157,35 @@
       "originalTitle": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business"
     },
     {
+      "id": "da0915a1e152e3",
+      "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/"
+        }
+      ],
+      "publishedAt": "2026-10-20",
+      "source": "AWS AI",
+      "title": "i14线性注意力模型登陆AWS芯片",
+      "summary": "AWS与AI研究公司i14合作，将其Laplace 3B线性注意力模型移植到Trainium2芯片，用原生PyTorch替代GPU专用内核。该模型以固定29.5MB循环状态替代随上下文增长的KV缓存，单实例训练约12万token/秒，推理在1280路并发下达11544 token/秒。团队通过分块对齐、Muon通信重设计和反向传播展开三项改造实现，但检索质量仍需按场景评估。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "线性注意力架构在专用芯片上的工程落地，展示了固定内存推理的可行性，对长上下文与高并发服务成本有参考价值，但属单一模型案例，尚未验证通用性。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布技术文章，介绍与i14合作在Trainium2上训练和部署Laplace 3B。该模型24层、约30.3亿参数，用门控线性注意力替代softmax注意力，每序列循环状态固定为29.5MB，不随上下文增长。原实现依赖GPU的Triton内核，团队改用TorchNeuron Native的原生PyTorch算子，并做三项调整：将注意力按16块、每块128token切分以对齐芯片128个分区；把Muon优化器的通信改为两次all_to_all，单卡流量降24倍、吞吐升1.63倍；静态展开16步循环以适配编译器。结果单台trn2.48xlarge训练约12万token/秒，推理11544 token/秒、1280路并发。文章未给出与GPU方案的直接对比，也未披露检索质量评测数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "普通大模型的“记忆”像越记越厚的笔记本，聊得越久占地方越多，服务器能同时接待的人就越少。Laplace 3B换了个思路：不管聊多长，只保留一张固定大小的摘要卡片，内存占用恒定。代价是细节可能被压缩掉，翻旧账不一定准。对普通人的影响是：如果这类模型成熟，长文档分析、长期在线的AI助手可能更便宜、更稳定，不必因为上下文变长而涨价或失忆。但这次只是把模型搬上AWS自家芯片的工程展示，离日常产品还有距离，且文章自己也提醒要针对具体任务评估它“记不记得住”。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Beyond the KV cache: Training and serving i14’s Laplace 3B linear attention model on AWS Trainium2 with native PyTorch"
+    },
+    {
       "id": "4a5d7d9aa652ee",
       "url": "https://aws.amazon.com/blogs/machine-learning/work-management-context-for-ai-agents-with-smartsheet-mcp-on-aws/",
       "sources": [
@@ -1220,6 +1336,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Discover tools at runtime with AWS Agent Registry"
+    },
+    {
+      "id": "c2b4b68d7e0027",
+      "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/mps-pytorch-2-15"
+        }
+      ],
+      "publishedAt": "2026-10-20",
+      "source": "Hugging Face",
+      "title": "PyTorch 2.15 强化 Mac MPS 后端",
+      "summary": "Hugging Face 的 PyTorch 团队发布 PyTorch 2.15，重点改进苹果芯片上的 MPS 后端：新增 FP8 张量支持，MoE 模型解码速度较 2.14 提升 5–6.5 倍，Qwen3.6-35B-A3B 在 M3 Ultra 上从 9.4 提升至 61.3 tokens/s；词表 softmax 约快 8 倍；Wan2.2 视频 VAE 解码峰值驱动内存从约 270 GiB 降至约 8 GiB，并修复 Qwen-Image-2.1 图像编码损坏问题。新版本要求 macOS 15 及 Python 3.11 以上。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "这是本地推理生态的重要更新，直接提升 Mac 上大模型与视频生成的速度和可用内存，对使用 ComfyUI、transformers 的开发者影响明显。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "PyTorch 2.15 于 2026 年 10 月发布，Hugging Face 的 PyTorch 团队介绍了 MPS 后端的多项改动。核心包括：MPS 支持 float8_e4m3fn 张量与 F.scaled_mm；分组矩阵乘改为原生 Metal 内核，减少 GPU-CPU 同步；单行线性层接入 GEMV 内核，词表 softmax 改用专用 Metal 内核。官方数据称 MoE 模型解码较 2.14 快 5–6.5 倍，Wan2.2 分块 VAE 解码峰值驱动内存从约 270 GiB 降至约 8 GiB。仍不确定的是：这些数字来自特定硬件与 torch.compile 配置，其他 Mac 型号和未编译场景的提升幅度未给出。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把 MPS 后端想成 Mac 显卡的“翻译官”：以前很多计算要绕路或搬到 CPU，模型跑得慢、吃内存。2.15 相当于给翻译官补了常用词库，让矩阵乘法、采样、卷积这些高频动作直接在显卡上完成。对普通人的影响是：在 Mac 上跑本地大模型，出字速度可能快数倍；做视频生成时不再轻易把内存撑爆；用 ComfyUI 修图时图像不再被悄悄弄坏。代价是系统门槛提高，macOS 15 以下和旧 Python 环境需要先升级。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "MPS in PyTorch 2.15"
     },
     {
       "id": "4560d3830d9f53",
