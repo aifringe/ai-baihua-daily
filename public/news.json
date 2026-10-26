@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-25T02:23:43.170636+00:00",
-  "lastCheckedAt": "2026-10-25T02:23:43.170636+00:00",
+  "updatedAt": "2026-10-26T02:23:34.870111+00:00",
+  "lastCheckedAt": "2026-10-26T02:23:34.870111+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -72,6 +72,37 @@
     }
   ],
   "articles": [
+    {
+      "id": "b411fbb2487aa2",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
+        }
+      ],
+      "publishedAt": "2026-10-25",
+      "source": "The Verge AI",
+      "title": "r/opensource禁AI与英语外用户引争议",
+      "summary": "2026年10月25日，Reddit开源社区r/opensource版主发布新规，禁止涉及AI的项目、要求项目至少一年且多人维护，并称不会英语者需另寻社区，理由是难以区分AI写作与翻译。新规引发大量批评，有人指出Linux内核已含AI生成代码，按此规则相关项目也可能被禁，社区还出现r/trueopensource作为替代。版主称存在选择性执行空间，但未明确边界。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "开源社区以规则排斥AI与英语外参与者，触及开源包容性与AI治理边界，可能引发其他社区效仿或反弹，对开发者协作生态有示范影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "r/opensource版主发布新提交规则：使用AI、由AI生成或面向AI的项目不得发布；项目须满一年、活跃维护且有多名贡献者；不再接受招募维护者或贡献者的帖子；不会英语者被建议离开，理由是版主无法区分AI写作与AI翻译，用户也难以自行核验译文。版主Wolvereness在评论中称规则有细微差别，可选择性执行，例如含AI辅助字幕等无障碍功能的软件。批评者认为规则过宽且模糊，并指出Linux内核已含AI生成代码，相关项目可能受波及。社区还出现r/trueopensource。规则具体执行尺度仍不确定。",
+          "text_note": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像一个小区业委会突然贴告示：用智能工具装修的房子不准进，新住户必须住满一年、还得有邻居联名，不会说本地话的干脆别来。理由是分不清你是自己写的还是机器翻的。问题是，现在很多“房子”的地基里已经掺了智能工具产的砖，比如Linux内核，照这规矩可能连老住户都要被赶。对普通人来说，开源本是低门槛协作场，门槛突然抬高，新人、非英语开发者和小团队找帮助更难；对行业而言，这是社区用规则给AI划红线的试探，后续是收紧还是松动，还得看执行。",
+          "text_note": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "r/opensource just banned AI, non-English speakers, and more"
+    },
     {
       "id": "43fa73ddaf377e",
       "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
