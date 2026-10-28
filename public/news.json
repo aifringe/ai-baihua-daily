@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-27T02:59:22.968454+00:00",
-  "lastCheckedAt": "2026-10-27T02:59:22.968454+00:00",
+  "updatedAt": "2026-10-28T03:09:49.566997+00:00",
+  "lastCheckedAt": "2026-10-28T03:09:49.566997+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -73,6 +73,122 @@
   ],
   "articles": [
     {
+      "id": "d5da004d8354f3",
+      "url": "https://aws.amazon.com/blogs/machine-learning/fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock/"
+        }
+      ],
+      "publishedAt": "2026-10-27",
+      "source": "AWS AI",
+      "title": "评测标签96.8%来自旧模型，换模型先修评测",
+      "summary": "房产平台Property Finder在Amazon Bedrock上迁移视觉AI时发现，其评测数据中96.8%的标签直接沿用旧模型预测而非人工核验，导致任何替代模型都被系统性判为更差。团队重新组织专家独立标注356张阿联酋房源图，改用多标签与Micro F1等指标，并迭代提示词至v27。最终Llama 4 Maverick 17B Instruct在评测集上Micro F1达0.80，旧专有模型为0.56，成本降低86%。需注意评测集含调参用图，分数偏乐观。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "揭示模型评测中“用旧模型当标准答案”的循环偏差，说明换模型前先修评测方法，对做AI落地的团队有普遍警示价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Property Finder每天处理数万张中东和北非房源图，每张需判断水印、房间类型、装修状态等11项属性。团队想换更便宜的视觉模型，却发现评测集里96.8%的标签直接来自现有模型的预测，只有3.2%经人工标注。这等于用旧模型的答案当考卷，新模型越不像旧模型分越低。团队随后请领域专家独立标注356张阿联酋图片，不参考旧模型输出，并把单标签改为多标签，避免走廊里能看到卧室却被判错。提示词从v0迭代到v27，加入区域规则和自动优化。最终Llama 4 Maverick 17B Instruct在356张评测集上Micro F1为0.80，旧专有模型为0.56，成本降86%。但评测集包含调参用图，双方提示词都在其上优化过，分数偏乐观；埃及图片仅作跨区域检查，未在文中报告结果。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像公司想换掉老员工，却拿老员工自己写的答案当考试标准，新人答得不一样就被扣分。真正的问题不是新人不行，而是考卷本身有偏见。Property Finder先请懂行的人重新出卷，再让新旧模型同场考试，才发现便宜的开源模型其实更准。对普通人的影响是间接的：平台审核房源图更快更便宜，错标水印、误判房间类型的概率可能下降，房源上线体验更顺。对做AI的团队来说，教训很直接——换模型之前先检查你的评测数据是不是旧模型的自拍照，否则比较结果没有意义。另外，这次只用了356张图，稀有类别样本少，细微差距未必测得出，结论应留有余地。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Fix evaluation bias to unlock better models on Amazon Bedrock"
+    },
+    {
+      "id": "e3fff8f98b614c",
+      "url": "https://aws.amazon.com/blogs/machine-learning/exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-customization/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-customization/"
+        }
+      ],
+      "publishedAt": "2026-10-27",
+      "source": "AWS AI",
+      "title": "Exowatt用SageMaker微调小模型超越前沿模型",
+      "summary": "太阳能储能公司Exowatt为边缘告警分诊和云端能源市场分析两类任务，借助亚马逊SageMaker无服务器微调，分别训练Qwen3-1.7B与Qwen3-14B专用模型。边缘模型在320个测试用例上宏F1达0.911，超过其测试的前沿模型基线，且无需GPU、可离线运行；云端模型宏F1从基座0.415提升至0.975。公司称成本最高降低49倍，但该数字及对比范围来自单一厂商博客，尚无第三方复现。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "展示小参数专用微调在窄任务上可胜过通用大模型，并给出边缘离线部署与成本路径，对行业落地有参考价值；但数据源自厂商博客，缺乏独立验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Exowatt在AWS官方博客中称，其太阳能储能系统需要AI代理在边缘处理设备告警，并在云端分析电力市场数据。团队用SageMaker无服务器微调，将Qwen3-1.7B微调后部署到无GPU的现场控制器，把告警分为固定类别并附证据；将Qwen3-14B微调后经Bedrock导入，读取约90行市场数据并输出五类市场事件。博客称边缘模型宏F1为0.911，云端模型从基座0.415升至0.975，训练成本约20至25美元、耗时32分钟。需注意，这些数字均为厂商自述，未披露完整测试集与基线细节，49倍成本优势也缺少独立核验。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这相当于不请全能博士，而是培养一个只干一件事的熟练工：参数小、跑在便宜设备上、断网也能干活。对普通人来说，这类方案意味着偏远电站、工厂设备可能用更低成本获得自动告警判断，不必事事上传云端。但也要清醒：博客里的漂亮分数是厂商在自家任务上测的，换场景未必成立；所谓“超越前沿模型”仅限告警分诊这类窄任务，不是通用能力超越。真正值得关注的是可复制的流水线，而非某个模型封神。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Exowatt beats frontier models on accuracy with SageMaker serverless model customization"
+    },
+    {
+      "id": "373a8b625d1496",
+      "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/"
+        }
+      ],
+      "publishedAt": "2026-10-27",
+      "source": "TechCrunch AI",
+      "title": "Disruptive设100亿美元基金押注AI与国防",
+      "summary": "达拉斯投资机构Disruptive宣布设立100亿美元基金，计划投资至少10家后期阶段公司，单笔最高10亿美元，重点投向资本密集的AI与国防领域。这是该公司首个盲池基金，此前主要通过逐笔特殊目的载体投资。WSJ本月早些时候报道其募资目标，当时已获至少75亿美元承诺；彭博称其向LP表示已用约19亿美元投入换回超60亿美元回报。该基金据称是得州史上最大风投基金，但最终投资标的与节奏尚未披露。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "百亿美元级盲池基金显示资本正加速向AI与国防等重资产赛道集中，单笔10亿美元的体量可能抬高后期融资门槛，影响创业公司融资路径与估值预期。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "总部位于达拉斯的Disruptive于10月27日宣布设立100亿美元基金，计划支持至少10家后期阶段公司，单笔支票最高可达10亿美元，方向聚焦资本密集的AI和国防。这是该公司首个盲池基金，此前它通过逐笔特殊目的载体募资。WSJ本月早些时候率先报道其募资计划，当时已锁定至少75亿美元承诺资金；彭博称公司向LP表示，约19亿美元投入已带来超60亿美元回报。达拉斯商业期刊称这是得州史上最大风投基金。Disruptive由Alex Davis于2012年创立，过往投资包括Palantir、Airbnb、Spotify，以及芯片初创Groq和AI语音公司ElevenLabs。目前尚不清楚具体投资名单、出手节奏和基金最终关闭时间。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这只基金想成一张百亿美元的“大额支票本”：不预先指定买哪几家，先向出资人收钱，再挑至少10家成熟公司各开一张最高10亿美元的支票。对普通人来说，这不直接改变你手机里的AI产品，但意味着AI和国防创业公司更容易拿到巨额后期资金，行业整合和上市节奏可能加快；同时，大基金集中押注少数赢家，也会让中小创业公司融资更难。需要留意的是，募资额和回报数字来自公司及媒体转述，实际投资效果要等多年后才能验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Disruptive raises $10B fund to make big bets on at least 10 companies"
+    },
+    {
+      "id": "1d6c5c59e46e52",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/novelty-bench"
+        }
+      ],
+      "publishedAt": "2026-10-27",
+      "source": "Hugging Face",
+      "title": "研究：LLM判断科研创意新颖性极不稳定",
+      "summary": "Ai2发布研究《Old Ideas, Novel Problems》，用ICLR 2026同行评审中明确讨论原创性的段落构建基准：154个高新颖度人类创意与145个低新颖度创意，另配154个简单LLM生成创意。测试GPT-5系列与Claude 4.5/4.6共六个模型发现，仅改动提示词措辞，同一批创意的判断准确率可波动超50个百分点；增加检索与推理并不稳定提升效果，两个专用评估系统反而不如简单提示的Claude Opus 4.6基线，且成本更高。研究结论是LLM新颖性评审仍是未解问题。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "首次系统量化LLM评审科研创意新颖性的脆弱性，提示词微调即可让准确率跌破随机，对AI辅助科研与评审流程有直接警示意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Ai2以ICLR 2026评审文本为依据，筛出评审明确肯定原创性的154个高新颖度人类创意，以及评审质疑原创性的145个低新颖度创意，再让简单LLM生成154个创意作对照。六个模型在逐条打分和两两比较两种方式下接受测试，变量包括提示词、推理预算、是否可见相关论文、创意格式与投票次数。结果显示：GPT-5.4在人类与生成创意配对中，换一种更简单的提问方式后准确率从93.5%跌至40.9%，低于随机水平，过半判断翻转；人类创意数据集上波动较小但依然存在，Claude Opus 4.6也有21个百分点变化。带实时检索的高推理代理评审macro-F1为0.78，落后简单基线0.89，成本约十倍。研究团队承认生成创意的“较低新颖度”标签属弱标签，并非逐条人工核验。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这相当于请一位阅卷老师判断论文有没有新意，但只把题目问法从“哪篇更新”改成“哪篇新”，他的答案就有一半翻盘，甚至不如抛硬币。更麻烦的是，这位老师对真人写的论文还算靠谱，一遇到AI写的创意就明显失准，而现实中大家恰恰想用它来筛AI生成的科研点子。加钱让它多查资料、多想几步也不管用，两个专门做这事的系统又贵又不如一句简单提问。对普通人的影响在于：如果高校、基金或企业用这类AI工具初筛创意，结论可能随提示词措辞摇摆，不能当作可靠依据；AI辅助科研要真正可信，还得先解决“怎么判断新不新”这个基础问题。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Can we trust LLMs to judge whether a research idea is novel?"
+    },
+    {
       "id": "8af7b30500f9c0",
       "url": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
       "sources": [
@@ -100,6 +216,93 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing"
+    },
+    {
+      "id": "5b8f2377809f90",
+      "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/"
+        }
+      ],
+      "publishedAt": "2026-10-27",
+      "source": "TechCrunch AI",
+      "title": "AI数据中心用电激增 电网迎改造契机",
+      "summary": "AI热潮带动美国数据中心用电需求大幅上升，给老化电网带来压力，短期或推高电费，长期存在停电风险。在TechCrunch Disrupt活动上，WeaveGrid、Veir和Rewiring America的业内人士认为，新增用电接入也在推动电网现代化：软件调度负荷、超导电缆提升输电效率，并催生更多技术试验。Veir称其电缆输电距离为传统电缆5倍、占地少20倍，近期完成1.1亿美元C轮融资。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "AI算力扩张正把电力基础设施变成关键瓶颈，电网现代化与负荷调度将影响数据中心扩张速度、电价和普通用户负担，值得持续关注。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch报道，AI数据中心快速接入使美国电网承受更大压力，业内担忧短期电费上涨、长期出现停电或技术问题。在TechCrunch Disrupt讨论中，WeaveGrid CEO Apoorv Bhargava称电网变量和负荷都在增加，公用事业公司需提升管理与调度能力；Veir CEO Tim Heidel称公司销售超导电力线，输电距离为传统电缆5倍、占用空间少20倍，本月完成1.1亿美元C轮融资；Rewiring America政策副总裁Kristin Eberhard称AI用电需求带来紧迫感，也促使行业尝试此前搁置的方案。报道未给出具体电价涨幅或停电时间表。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把电网想成一条老公路，AI数据中心是突然涌上来的大批货车：车多路旧，短期可能堵车、养路费上涨，长期还可能出事故。但车流暴增也逼着大家修路、换更省地的超导电缆，并用软件错峰调度，让现有道路跑更多车。对普通人来说，短期账单可能更贵，长期若改造顺利，供电可靠性和新能源接入条件可能改善；若改造跟不上，停电风险仍会上升。目前这些好处和风险都还取决于项目落地速度。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The data center boom has an upside: innovation for the US grid"
+    },
+    {
+      "id": "393575ee7d83ff",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+        }
+      ],
+      "publishedAt": "2026-10-27",
+      "source": "Google DeepMind",
+      "title": "DeepMind发布Genie 4世界模拟器",
+      "summary": "据Google DeepMind官方博客，其于2026年10月27日发布新一代世界模拟模型Genie 4，称其为“新一代世界模拟”。但该文正文为乱码，无法核实模型能力、参数、开放范围、发布时间等关键细节，其他媒体亦无独立报道可交叉验证。目前可确认的仅是官方标题与发布意图，具体功能与可用性均不确定，读者不宜据此判断产品成熟度。",
+      "category": "模型进展",
+      "importance": 55,
+      "why": "世界模型是当前AI前沿方向，头部实验室迭代值得关注；但正文不可读、缺乏第三方验证，信息价值受限，需谨慎看待。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind在其官网发布题为《Genie 4: A new generation of world simulation》的文章，标注日期为2026年10月27日，显示其推出第四代世界模拟模型。然而该文正文为不可读的乱码，无法提取模型规模、训练数据、生成能力、是否开放API或研究预览等关键信息。其他媒体暂无独立报道，无法交叉核实。因此目前只能确认官方发布了这一标题，Genie 4的实际能力、可用范围与发布时间均不确定，需等待官方可读版本或第三方测试。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "世界模型可以理解为让AI在内部“脑补”一个可交互的小世界：给它一张图或一句话，它就能推演接下来会发生什么，像给机器装了一个简易沙盘。Genie系列此前以从图像生成可玩场景闻名。如果Genie 4真如标题所言升级，未来可能用于游戏快速 prototyping、机器人训练和虚拟场景生成。但对普通人来说，现在谈影响还太早：官方正文读不出内容，也没有实测，既不能确认它已开放使用，也不能判断效果好坏。建议先当一条“预告”看，等官方说明和实测再下结论。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Genie 4: A new generation of world simulation"
+    },
+    {
+      "id": "1c5b51464767c2",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+        }
+      ],
+      "publishedAt": "2026-10-27",
+      "source": "Hugging Face",
+      "title": "Liquid AI发布LFM3系列端侧多模态模型",
+      "summary": "Liquid AI发布第三代Liquid基础模型LFM3，以1.7B参数基座统一文本、视觉、音频、全模态与决策六款2B级模型。官方称新架构使LFM3-1.7B在参数减少35%情况下超越前代LFM2.5-2.6B，文本模型4比特量化约1GB，支持256K上下文，可在单GPU微调。视觉模型新增视频输入，音频模型首字延迟低至50毫秒。上述性能对比均为厂商自述，尚无第三方复现。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "小参数端侧多模态是当前落地热点，LFM3以统一基座覆盖六种模态并强调单卡微调，若性能属实将降低本地部署门槛，但数据均来自官方，需独立验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Liquid AI于10月27日发布LFM3系列，称其基于LFM3-1.7B-Base派生六款2B级模型：文本、视觉、音频、全模态及两款决策模型。官方介绍基座采用三混合层结构（13层门控短卷积、5层滑动窗口注意力、6层全局注意力），预训练22T token，后3.5T为智能体数据并扩展至256K上下文。视觉模型首次支持视频输入，音频模型配备自研编码器与LiquidCodec。官方给出的对比数据包括：文本模型在WebArena-Verified得38.42，前代为3.02；视觉模型62项基准均分从57.6升至71.4。这些数字均出自厂商文章，未提供第三方复现或完整评测细节。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把LFM3理解成一套“共用底盘”的小车：同一个约17亿参数的底座，换上摄像头、麦克风等不同配件，就变成看图的、听声的或全能型版本。好处是体积小，普通笔记本甚至树莓派都能跑，个人用一张显卡就能按自己的数据改造。对普通人的影响是，未来语音助手、图片识别、离线翻译可能不再依赖云端，隐私更好、断网也能用。但要注意，官方宣称“小模型打败大模型”的成绩目前只是自报，实际好不好用，还得等开发者上手实测。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Build specialized multimodal models with LFM3"
     },
     {
       "id": "addcc356018895",
