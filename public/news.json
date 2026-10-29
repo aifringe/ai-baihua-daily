@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-28T03:09:49.566997+00:00",
-  "lastCheckedAt": "2026-10-28T03:09:49.566997+00:00",
+  "updatedAt": "2026-10-29T03:35:39.586297+00:00",
+  "lastCheckedAt": "2026-10-29T03:35:39.586297+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -72,6 +72,219 @@
     }
   ],
   "articles": [
+    {
+      "id": "cb95a4beb18f63",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
+        },
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+        }
+      ],
+      "publishedAt": "2026-10-28",
+      "source": "Google DeepMind",
+      "title": "谷歌发布Gemini 4 Carbon，主打网络安全",
+      "summary": "2026年10月28日，谷歌DeepMind发布新一代前沿模型Gemini 4 Carbon，距上一代Argon仅两周。官方称其在Artificial Analysis智能指数v5.0上以59分居首，网络安全基准SEC-bench Pro达88.2%、ExploitGym达54.8%、CWE-bench达71.0%，WebDev Arena升至第4。模型先向部分网络安全防御者开放，再经Fairwind计划扩大，暂未面向开发者与公众。定价与Argon相同，输入每百万token 2美元、输出10美元，优惠期后翻倍。上述成绩均为官方口径，尚无第三方独立验证。",
+      "category": "模型进展",
+      "importance": 82,
+      "why": "头部厂商两周内迭代前沿模型，并把网络安全能力作为核心卖点，同时采取受限发布，反映能力提升与风险管控并行的行业趋势。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年10月28日宣布Gemini 4 Carbon，称其为最强模型，重点强化网络安全与长周期任务能力。官方数据包括：Artificial Analysis智能指数v5.0得59分排第一；发现漏洞的SEC-bench Pro为88.2%，利用验证的ExploitGym为54.8%，根因修复的CWE-bench为71.0%；WebDev Arena升至1768分、第4名。官方还称内部安全代码生成成功率较Argon提升逾2倍，Terminal-Bench 4.0作弊率降至0%，间接提示注入攻击成功率为0.0%。发布采取分阶段策略：先开放给部分网络安全防御者，再通过Fairwind计划扩大，开发者与消费者版本时间未定。定价与Argon一致，优惠期后输入每百万token 4美元、输出20美元。上述基准均为官方自述，缺少独立复现，实际泛化能力仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Carbon理解成一个既能写代码、又能当“安全巡检员”的助手：它不只找漏洞，还尝试判断漏洞能否被利用、并直接给出修复补丁。对普通人来说，短期最直接的变化不是马上能用上，而是这类模型会先进入银行、云服务商等机构的安全团队，帮助更快堵住系统漏洞，间接降低数据泄露风险。谷歌这次没有一口气放开，而是先给受信任的防御方试用，相当于新药先做小范围临床，边用边调安全护栏。需要冷静看待的是，跑分高不等于实战强，官方数字未经第三方验证；而且同一套能力既能防守也可能被滥用，所以分阶段发布和监控才是关键。价格与上一代持平，说明竞争焦点正从“更便宜”转向“更能干脏活累活”。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini 4 Carbon: Our next frontier model"
+    },
+    {
+      "id": "ec733f799e1aae",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+        }
+      ],
+      "publishedAt": "2026-10-28",
+      "source": "Hugging Face",
+      "title": "英伟达开源多语种转写模型Nemotron 3.5",
+      "summary": "英伟达发布开源权重模型Nemotron 3.5 Transcribe，将转写、说话人区分、翻译和音频问答整合进单一模型，支持40种语言转写、31种语言与英语互译、13种语言说话人标注，可处理一小时录音并区分最多8名说话人。官方称其在Hugging Face开放ASR英文榜居开源模型首位，平均词错率5.33%，并在David AI多语种说话人日志榜14个系统中错误率最低。同步开放Granary v2数据管线，覆盖48种语言、约46.3万小时。量化版本和本地部署工具尚未发布，榜单成绩均为厂商自述，需独立验证。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "开源语音模型把转写、说话人区分、翻译和问答合并到一个可提示的权重中，并公开数据管线，降低了多语种语音应用的开发门槛，但榜单与效率数据仍需第三方复现。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达在Hugging Face和ModelScope发布开源权重模型Nemotron 3.5 Transcribe，同一检查点可完成多语种转写、说话人区分、翻译和音频问答，支持40种语言转写、31种语言与英语互译、13种语言说话人标注，最长处理一小时录音、最多标注8名说话人，并支持词级时间戳。开发者可用自然语言提示控制输出格式和术语。英伟达称该模型在Hugging Face开放ASR英文榜以5.33%平均词错率居开源模型第一，在David AI 21语种说话人日志榜以18.26%错误率居首。同步开放的Granary v2数据管线覆盖48种语言、463062小时、16个语料源。量化版本、vLLM服务与本地部署工具尚在推进，模型面向录制音频而非实时流。上述榜单排名和吞吐数据均为厂商自述，独立复现结果尚未出现。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把新模型理解成一个能听会记的会议秘书：你告诉它“把这段录音转成文字并标出谁在说话”，或者“直接翻译成英文”，它按指令输出，不用为每个任务单独换模型。过去转写、分人、翻译往往要拼几套工具，现在一个模型全包，还能用提示词纠正专业术语拼写。对普通人来说，多语种会议记录、课堂回放字幕、医疗口述整理都可能更省事，开发者也能在本地显卡上跑。但要注意：它处理的是录好的音频，不是实时直播；人名、说话人切换和问答答案仍需人工抽查；榜单第一是厂商自己公布的成绩，实际效果要看第三方测试和真实场景表现。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt"
+    },
+    {
+      "id": "4ebc8e400813c8",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/"
+        }
+      ],
+      "publishedAt": "2026-10-28",
+      "source": "AWS AI",
+      "title": "AWS发布AgentCore企业级智能体平台蓝图",
+      "summary": "AWS AI于2026年10月28日发布技术博客，介绍基于Amazon Bedrock与AgentCore构建企业级智能体AI平台的架构与参考实现。文章指出智能体落地的主要瓶颈不在模型和工具调用，而在安全环境、团队归属、运维边界与成本可见性等周边治理问题。方案采用联邦式运营模型：中央平台团队提供受控的模型与工具网关、身份、评估与发布流水线，各业务团队在隔离账户内独立部署、回滚和退役智能体。文中给出多账户拓扑、控制平面与可重复Workstream单元设计，但未披露具体客户案例或量化效果。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "面向企业规模化落地智能体的治理架构，回应多团队协作、成本归属与安全边界等真实痛点，对平台团队有参考价值，但属方法论与参考实现，非产品发布或突破性进展。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS AI发布博客，介绍在Amazon Bedrock与AgentCore上构建企业级智能体平台的架构蓝图。文章认为智能体进入生产的主要障碍不是模型或工具调用，而是安全环境、模型与工具归属、AgentOps边界、跨账户成本与健康可见性等平台问题。方案采用联邦模式：中央平台团队维护版本化模板、共享推理网关、MCP工具网关、身份、评估与发布流程；每个业务团队拥有隔离账户，内含AgentCore Runtime、按参与者隔离的Memory和仅暴露获批工具的Gateway，可独立部署、回滚与退役。文章给出账户拓扑、服务控制策略、评估门禁与退役验证等设计，但未提供客户案例、性能数据或定价信息，实际落地效果仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套方案想成公司给智能体建了一栋写字楼：平台团队是物业，统一管门禁、水电和消防；各业务团队是租户，在自己房间里装修干活，出了事只影响自己那间，不用整栋楼陪着停摆。以前每个团队各自拉模型、接工具，权限和账单容易乱，出了事故也难查是谁调的哪个模型。现在所有调用都走统一网关，谁用了多少、花了多少钱都有记录，还能一键回滚。对普通人来说，这意味着未来公司里的AI助手可能更稳定、更守规矩，出问题能快速恢复；但文章讲的是企业怎么搭台子，不是新模型或新功能，普通用户短期内感受不到直接变化。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Building an Agentic AI Platform on Amazon Bedrock AgentCore"
+    },
+    {
+      "id": "2bac06729e105b",
+      "url": "https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks/"
+        }
+      ],
+      "publishedAt": "2026-10-28",
+      "source": "AWS AI",
+      "title": "AWS发布Ray训练容器简化多机分布式训练",
+      "summary": "AWS发布Ray Train深度学习容器（DLC），预集成CUDA、NCCL、EFA网络库与KubeRay兼容的Ray版本，用户无需自行构建镜像即可在EKS上做多机分布式训练。官方示例用两个g6.12xlarge实例、8块L4 GPU微调Qwen2.5-1.5B，采用FSDP分片，跨节点通信走EFA。文章称该镜像经AWS多节点EFA与KubeRay测试，但示例成本约每小时9.5美元，且需96个G系列vCPU配额，实际性能未给出基准数据。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "把分布式训练中最易出错的镜像与网络栈打包成开箱即用容器，降低多机训练门槛，但属工程集成优化而非模型突破，影响集中在使用AWS的AI工程团队。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布Ray Train深度学习容器，把CUDA、PyTorch、NCCL、EFA用户态库、AWS OFI NCCL插件和Ray 2.58.0等组件预先构建并测试，发布在Amazon ECR Public。配套示例在EKS上用KubeRay创建集群：一个无GPU的CPU头节点，两个各带4块L4 GPU的g6.12xlarge工作节点，通过FSDP微调Qwen2.5-1.5B，跨节点集合通信走EFA。用户只需配置实例类型、GPU数量、网络环境变量和额外Python包，无需构建镜像。文章称AWS对每次发布做多节点EFA和KubeRay训练测试，但未公布吞吐或收敛对比数据；示例成本约每小时9.5美元，需96个G系列vCPU配额，且两个实例须在同一可用区。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "多机训练大模型，难点常不在模型代码，而在每台机器上的驱动、通信库版本要严丝合缝；一旦网络库没对上，任务照样跑完，只是慢得离谱，还不报错。AWS这次相当于把整套“装机盘”做好并测过，你拉下来就能用，省去自己攒镜像、调EFA的功夫。对普通人的影响很间接：它不会让手机上的AI立刻变聪明，但能让企业更便宜、更快地训练和微调模型，长期可能反映在AI服务价格和迭代速度上。不过它绑定AWS云和英伟达GPU，账单按小时计，小团队仍要算清成本。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Distributed training with Ray Train DLCs and EFA on EKS"
+    },
+    {
+      "id": "3b64f2126ca310",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity"
+        }
+      ],
+      "publishedAt": "2026-10-28",
+      "source": "The Verge AI",
+      "title": "Instagram负责人：AI负面情绪还会更糟",
+      "summary": "Instagram负责人Adam Mosseri在播客访谈中谈及AI舆论，称围绕AI的焦虑、沮丧与愤怒不仅正在加剧，未来几年还会继续恶化，其中部分情绪有依据、部分没有依据。他提到创作者担心内容被用于训练模型、安全问题、岗位被取代，归根结底是害怕被落下。Mosseri表示Instagram不会对AI创作者降权，但承认AI内容质量参差、平台对AI内容的排序可能不如非AI内容，并称已开始要求AI账号自我标注，但认为全面禁止AI内容不现实。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "头部社交平台高管公开预判AI负面情绪将持续恶化，并透露平台在AI内容标注与排序上的实际做法，反映行业与公众情绪的张力。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "在Colin and Samir播客中，Instagram负责人Adam Mosseri被问及AI与大学生在毕业典礼上嘘科技CEO的现象。他表示，对AI的焦虑、沮丧和愤怒呈上升趋势，尤其在创意行业，并预计未来几年还会继续恶化，其中部分情绪有依据、部分没有。他列举创作者担忧：内容归属与模型训练、安全、岗位被取代，核心是害怕被落下。平台层面，他称Instagram不会区别对待AI创作者，但承认AI内容质量参差不齐，对AI内容的排序可能不如非AI内容；平台已开始要求AI账号自我标注，此前也推出过AI标签并整治AI生成账号，但名人深度伪造等误导性内容仍是问题。他明确表示全面禁止AI内容不现实。",
+          "text_en": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这理解成：AI像一股涌进商场的新客流，店家既想做生意又怕被挤垮。Mosseri的意思是，这股不安不会很快消散，未来几年只会更明显。对普通人来说，最直接的变化是刷到的AI内容会越来越多，平台会要求账号亮明“这是AI”，但别指望它把AI内容全清走。对创作者而言，担心作品被拿去训练、担心流量被分走，都是真实压力；平台则一边说不会故意压AI内容，一边承认AI内容整体质量还跟不上，排序上可能吃亏。换句话说，规则在补，但情绪和争议会先到。",
+          "text_en": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Adam Mosseri says negativity around AI is ‘going to get worse’"
+    },
+    {
+      "id": "3b6696291dbcf9",
+      "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/"
+        }
+      ],
+      "publishedAt": "2026-10-28",
+      "source": "TechCrunch AI",
+      "title": "Anthropic推AI支出回报报告工具",
+      "summary": "Anthropic在实现第二季度运营盈利、净收入留存率达900%后，推出面向企业客户的报告工具，可查看团队在特定时间段的工作产出、token花费及流程瓶颈，并提供优化建议，默认不将数据用于模型训练。同时新增团队共享预算功能。背景是企业客户日益关注AI投入回报，Jellyfish报告显示相关工具支出年内增长10倍，约占工程总成本2%。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "反映企业AI从粗放采购转向成本与回报管理，头部实验室以报告工具强化客户黏性，可能影响企业选型与预算决策。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Anthropic宣布推出企业报告工具，结合内部分析与员工调查，让管理者按时间段查看团队产出、token成本及工作流中断点，并给出改进建议；公司称默认不将该数据用于模型训练，另设团队共享预算以管理token支出。TechCrunch援引其向投资者披露的数据称，公司第二季度实现运营盈利，净收入留存率900%。Jellyfish对27.6万开发者的调查显示，基于Anthropic模型的工具占提交审查代码变更近三分之一，相关支出年内增10倍、约占工程成本2%。OpenAI的Astra模型是否构成实质冲击，报道称尚未在数据中显现。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前公司买AI像办健身卡，钱花了却说不清练出什么；现在Anthropic给企业配了个“记账教练”，能看团队用AI干了多少活、花了多少钱、卡在哪，还教怎么省。对普通人来说，这意味着你所在公司采购AI会更看重实际效果，而不是跟风烧钱；同时员工用AI的产出和成本可能被更细地统计。不过这些数字来自厂商和第三方调查，实际回报因公司而异，报告工具能否真的帮企业省钱，还要看落地情况。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Anthropic just launched tools to show companies what their AI spending is buying"
+    },
+    {
+      "id": "ba816ae2c66dda",
+      "url": "https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028"
+        }
+      ],
+      "publishedAt": "2026-10-28",
+      "source": "MIT News",
+      "title": "MIT学者：AI与气候压力重塑基础设施",
+      "summary": "麻省理工学院土木与环境工程系主任Ali Jadbabaie在10月28日世界基础设施论坛召开前接受采访，指出气候变化、AI、地缘政治与全球脱贫带来的需求正同时冲击20世纪的基础设施模式。他称AI可加速工程设计、提升资源效率，但系统互联也放大了连锁故障风险。该论坛由MIT、世界银行等共同创办，设五个工作组推动跨部门对话。AI对基础设施的具体效果尚未确定。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "基础设施是AI落地的物理底座，该访谈把AI能耗、电网老化与全球建设需求放在同一框架下，提示行业规则可能调整，但尚无具体政策或数据。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT新闻10月28日刊出对土木与环境工程系主任Ali Jadbabaie的访谈。他表示，气候变化、资源约束、地缘政治不稳定与发展中世界需求上升正同时到来，若沿用20世纪资源密集型模式，资源将难以支撑。他提到模型预测2028年全球中位居民日生活费将首次超过10美元，随之带来更多基础设施需求。他认为AI与数字技术可让传感更便宜、设计探索更快，但强调结果尚未写定。同日，MIT与世行、马德里理工大学、得州大学奥斯汀分校共同创办的世界基础设施论坛在马德里举行，设五个工作组。访谈未给出AI提升效率的具体数字，也未说明论坛将形成何种约束性成果。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把基础设施想成城市的血管和神经：过去各管各的，现在电网一停，水、网、交通跟着瘫。AI像一位能同时画很多张图纸的助手，帮工程师用更少材料、更少电建东西；但把系统连得越紧，一处堵塞就越容易全身出问题。对普通人来说，短期看不到直接变化，长期可能影响电价、建设速度和停电风险。真正值得留意的是，这次论坛把设计、融资、运营放在一张桌上谈，说明未来修路建网不再只是工程师的事，钱从哪来、谁来用同样关键。至于AI能否兑现承诺，目前仍是开放问题。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "3 Questions: Why infrastructure is entering a defining era"
+    },
     {
       "id": "d5da004d8354f3",
       "url": "https://aws.amazon.com/blogs/machine-learning/fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock/",
