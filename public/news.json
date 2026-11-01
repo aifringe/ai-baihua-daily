@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-31T03:23:26.810859+00:00",
-  "lastCheckedAt": "2026-10-31T03:23:26.810859+00:00",
+  "updatedAt": "2026-11-01T03:22:16.428664+00:00",
+  "lastCheckedAt": "2026-11-01T03:22:16.428664+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -100,6 +100,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia"
+    },
+    {
+      "id": "204d5faf405d32",
+      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
+        }
+      ],
+      "publishedAt": "2026-10-31",
+      "source": "TechCrunch AI",
+      "title": "法官驳回xAI撤诉请求，NAACP污染诉讼继续",
+      "summary": "美国联邦法官驳回xAI要求撤销NAACP诉讼的动议。该诉讼由南方环境法律中心代表NAACP提起，指控xAI在孟菲斯郊外Colossus数据中心安装并运行至少35台燃气轮机，未取得必要的空气建设或运营许可，违反《清洁空气法》。xAI辩称涡轮机属移动源可豁免许可，且原告无起诉资格。法官认定原告享有法定起诉资格，涡轮机不属于密西西比州实施计划下的移动源，公民诉讼条款不违宪，案件继续审理。此前司法部类似撤诉动议也被驳回。",
+      "category": "安全与规则",
+      "importance": 72,
+      "why": "案件涉及AI基础设施的环保合规与公民诉讼权，法官明确否定移动源豁免，对数据中心能源使用监管有示范意义，也反映公众对数据中心态度转变。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "美国联邦法官Debra M. Brown驳回xAI的撤诉动议，允许NAACP依据《清洁空气法》提起的诉讼继续。原告南方环境法律中心代表NAACP指控xAI在孟菲斯郊外Colossus数据中心安装并运行至少35台燃气轮机及其他空气污染源，从未取得建设前或运营空气许可。xAI主张涡轮机为移动源可豁免许可，并称原告无起诉资格。法官认定原告具有法定起诉资格，涡轮机不属于密西西比州实施计划下的移动源，公民诉讼条款不违反宪法第二条或私人非授权原则。此前司法部类似撤诉动议也被驳回。xAI是否已申请许可、涡轮机实际排放影响等仍待审理。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "好比一家AI公司给数据中心配了35台燃气发电机，却没办空气污染许可证，被民权组织告上法庭。公司辩称发电机是“可移动的”所以不用办证，法官不买账：这些设备固定运行，不算移动源，公民有权起诉。对普通人来说，这意味着AI算力扩张不能绕过环保规则，数据中心附近的空气质量诉求可以通过法院推进。案件继续审理，可能促使其他数据中心更谨慎处理许可问题，也可能影响地方对新建数据中心的审批态度。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Judge allows NAACP lawsuit over xAI data center pollution to move forward"
+    },
+    {
+      "id": "f9b3653194a263",
+      "url": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/"
+        }
+      ],
+      "publishedAt": "2026-10-30",
+      "source": "AWS AI",
+      "title": "AWS推出会话端点实时预览编码代理应用",
+      "summary": "AWS发布Amazon Bedrock AgentCore运行时新能力Session endpoints，为每个代理会话分配带认证的URL，可将会话内运行的Web应用（如Vite开发服务器）直接映射到浏览器预览。开发者让编码代理修改代码后，页面通过热重载在数秒内更新，无需先部署。该功能仅限microVM运行时，URL随会话结束失效，且需每次请求携带签名或令牌，不适用于面向最终用户的生产托管。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "云厂商把“代理写代码—即时预览”闭环纳入托管平台，降低AI编码工具落地门槛，但功能仍处预览阶段且仅限特定运行时，短期影响开发流程而非终端用户。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS在Amazon Bedrock AgentCore运行时中推出Session endpoints预览功能。每个代理会话获得独立且需认证的URL，可将会话内指定端口（8000至12000范围内，最多5个）的HTTP、WebSocket流量转发到开发者浏览器。示例中编码代理在8080端口接收指令，用Claude Haiku 5.5修改文件，Vite开发服务器在8090端口提供页面并热重载，状态路由在8081端口。请求需携带SigV4签名或JWT，主机名前缀决定目标端口。该功能仅支持microVM运行时，不支持Instances计算类型和PrivateLink入站，URL随会话结束失效，官方建议生产托管仍用Amplify等部署服务。目前为预览，区域可用性未在文中完整列出。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去AI帮你改网页代码，你得先把代码搬出去部署，才能看到效果，改一次等一次。现在相当于给AI配了一间带玻璃墙的工作室：它在里面改文件，你隔着玻璃实时看到页面变化，不满意当场喊停再改。对普通人的直接影响有限，因为这是给开发者用的工具，不是给终端用户的新产品；但它意味着未来用AI做原型、调界面的速度会明显加快，产品团队试错成本更低。需要注意的是，这扇“玻璃墙”只对开发者本人开放，带认证且随会话关闭，不能直接拿来给外部用户访问，正式上线仍要走常规托管。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime"
     },
     {
       "id": "f7975896246f3c",
@@ -218,6 +276,64 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams"
+    },
+    {
+      "id": "93ad0842fdd46a",
+      "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+        }
+      ],
+      "publishedAt": "2026-10-30",
+      "source": "TechCrunch AI",
+      "title": "Runware拟流水线造AI数据中心",
+      "summary": "AI基础设施公司Runware在推出工厂预制模块化数据中心Sonic Inference Pod后，宣布计划在罗马尼亚建设流水线工厂，像造汽车一样批量生产这类数据中心。公司称目标到2028年日产能达30兆瓦、约合每月近1吉瓦，并计划明年初启用第二座工厂，宣称已获10亿美元意向订单。但产能目标、交付速度和成本控制均未经验证，其模式能否跑通仍待观察。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "把汽车流水线思路引入数据中心建造，若跑通将改变AI算力部署节奏；但目标激进、执行未验证，对行业有参考价值而非既成事实。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据TechCrunch报道，Runware此前推出工厂预制、运抵即可安装的模块化数据中心Sonic Inference Pod，现计划在罗马尼亚建流水线工厂批量组装。CEO拉杜列斯库称，到2028年日产能将达30兆瓦，约合每月近1吉瓦，接近美国今年预计新增数据中心电力的全年规模。公司称已有两座工厂，第二座明年初上线，单舱建造时间将从三周压缩到一天，现场安装上线目标48小时。客户可自备场地或由公司选址，可租算力或自带GPU按月付费，电力和网络另计。公司称已获10亿美元意向、超20兆瓦，并正洽谈397兆瓦站点储备。上述均为公司说法，产能、订单落地和交付速度尚待验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像把盖房子改成买预制板房：以前建数据中心要选址、施工、调试，动辄几年；Runware想先在工厂把机房做成标准模块，运到现场接上电和网就能用。对普通人来说，短期没有直接影响，但若这类模式成熟，AI算力扩张会更快、更靠近用电地点，可能影响电价、土地和社区资源。需要冷静的是，造车新势力Arrival也曾宣称颠覆制造，最终因量产和成本折戟。Runware目前融资约6000万美元，计划再融B轮，能否把流水线、供应链和订单同时跑通，才是真正的考验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Can AI data centers be mass-produced like cars? This startup aims to find out"
+    },
+    {
+      "id": "7f7f1671728237",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers"
+        }
+      ],
+      "publishedAt": "2026-10-30",
+      "source": "The Verge AI",
+      "title": "缅因州数据中心争议搅动参议院选战",
+      "summary": "美国缅因州参议院选战进入最后阶段，大型数据中心扩张成为当地最敏感议题之一。今年4月州议会通过全美首个大型数据中心全州暂停令，但被州长米尔斯否决；此后多镇自行出台临时禁令，11月部分地方还将公投。民调显示76%受访者反对在自家社区建数据中心。竞选资金大量涌入，民主党预计花费8100万美元、共和党1.14亿美元，科技与AI相关捐款明显偏向共和党候选人柯林斯。数据中心能否带来长期就业仍存争议，选情结果将影响联邦层面AI与数据中心政策。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "数据中心扩张从地方环保议题升级为全国性政治变量，叠加巨额竞选资金与参议院控制权，直接影响未来AI基础设施监管走向，对行业与普通社区均有外溢影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "缅因州参议院选战最后一场辩论中，有观众当场喊出对AI数据中心破坏气候、污染水源的恐惧。今年4月州议会通过大型数据中心全州暂停令，10天后被州长米尔斯否决；随后多镇自行通过临时禁令，部分地方11月就数据中心扩张举行公投。民调显示76%受访者反对在本地建数据中心。竞选资金方面，民主党预计支出8100万美元、共和党1.14亿美元，科技与AI相关捐款明显流向共和党候选人柯林斯，其对手杰克逊立场相近但无公开的科技业财务关联。数据中心是否带来长期就业仍不确定，经济研究普遍认为建成后净就业有限。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事想成：一个缺钱的小镇突然来了个“用电用水大户”，承诺给工作，但大家发现它更像一台抽水机，把电、水和税收优惠抽走，留下的岗位却不多。缅因州过去靠伐木、造纸吃饭，习惯了“资源被运走”的模式，所以对“外来资本挖资源”格外警惕。现在这场选举等于让选民表态：要不要为了可能的税收和少量岗位，接受数据中心搬到家门口。对普通人来说，短期看是电费、水价和社区环境，长期看是这类项目会不会在全国复制，以及你所在地区未来会不会也面临同样的公投和拉锯。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Maine’s data center revolt will decide who controls the Senate"
     },
     {
       "id": "7f66bb1efb4272",
@@ -425,6 +541,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity"
+    },
+    {
+      "id": "718617961cab3a",
+      "url": "https://huggingface.co/blog/announcing-project-protostar",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/announcing-project-protostar"
+        }
+      ],
+      "publishedAt": "2026-10-29",
+      "source": "Hugging Face",
+      "title": "Hugging Face牵头启动ProtoStar计划",
+      "summary": "2026年10月29日，Hugging Face宣布联合卡内基梅隆大学、普渡大学、佐治亚理工学院等高校及Astera研究所、ORCA等机构发起Project ProtoStar，旨在将公共资助的科研数据、模型与代码整理为AI可直接使用的格式。美国联邦政府每年研发投入约1900亿美元，但公开成果常散落于互不兼容的系统、缺乏元数据，难以被AI发现和复用。该计划通过机构备忘录推动开放发布，并举办系列挑战赛检验复用效果，首场由CMU于11月2日至13日主办，用210座美国城市历史天气数据预测气候指标。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "由头部开源平台联合多所高校推动科研数据标准化开放，若落地将降低AI科研的数据门槛，但当前仍处倡议与首场挑战阶段，实际成效待观察。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face于2026年10月29日发布公告，宣布Project ProtoStar启动。创始伙伴包括卡内基梅隆大学、普渡大学、佐治亚理工学院、亚利桑那州立大学和乔治·华盛顿大学（通过Open Forum for AI联合），以及Astera研究所、作为基础设施伙伴的Hugging Face和社区伙伴ORCA。参与机构以谅解备忘录形式承诺，将适合公开的科研数据集、模型和代码以AI可用格式发布在开放基础设施上。公告称美国联邦政府每年研发投入约1900亿美元，NIH、NSF等已强化公共获取要求，但数据分散、格式陈旧、缺少文档与来源信息仍阻碍复用。首场挑战赛由CMU主办，11月2日至13日举行，用截至2018年的气候记录预测2019至2026年四类城市气候指标，最终结果待2026年完整天气记录公布后于2027年初发布。公告未说明各机构具体将开放多少数据，也未给出衡量计划成败的量化指标。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成给公共科研数据建一套“通用插头和说明书”。过去政府花钱做出的研究数据，常像散落在不同仓库、接口各异的零件，AI想用却插不上；ProtoStar想让这些零件按统一规格摆上货架，并附上说明，谁都能拿来组装。对普通人来说，短期不会直接改变生活，但长期可能让气候预测、药物研发等公共研究更快被AI利用，减少重复采集数据的浪费。首场CMU气候挑战赛就是一次“试用”：拿历史天气数据考AI能否预测城市高温和降水，再对比简单统计方法，看AI是否真有优势。需要提醒的是，这目前主要是倡议和比赛，能否让科研机构持续改变发布习惯，还要看后续挑战和实际复用案例。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
     },
     {
       "id": "32d69d7e6fd51a",
