@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-01T03:22:16.428664+00:00",
-  "lastCheckedAt": "2026-11-01T03:22:16.428664+00:00",
+  "updatedAt": "2026-11-02T03:31:04.753287+00:00",
+  "lastCheckedAt": "2026-11-02T03:31:04.753287+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -72,6 +72,37 @@
     }
   ],
   "articles": [
+    {
+      "id": "944be91cc06a18",
+      "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
+        }
+      ],
+      "publishedAt": "2026-11-01",
+      "source": "TechCrunch AI",
+      "title": "OpenAI拟将数据中心改称“AI算力园区”",
+      "summary": "中期选举后，OpenAI计划发起公关行动以影响AI议题讨论。其全球事务主管Chris Lehane向Axios透露多项设想，包括为AI设“限速”、推动美国参与全球标准制定，以及把数据中心重新包装为“AI算力园区”。背景是数据中心因能耗、选址等问题在地方层面颇不受欢迎，亚马逊、微软已表示不再在与地方政府谈判中使用保密协议。目前这些说法均出自公司高管表态，具体方案、时间表及是否落地尚不确定。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "反映头部AI公司主动介入政策与舆论，试图重塑公众对算力基础设施的认知，可能影响后续地方审批与行业监管走向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据TechCrunch援引Axios报道，OpenAI正准备在中期选举后展开一轮公关攻势。其首席全球事务官Chris Lehane提到多项主张：为AI发展设定“限速”、让公众感到AI能增强个人能力、推动美国参与制定全球标准，以及把数据中心改称“AI算力园区”。他把围绕数据中心的争论称为“良性且健康”，认为社区应让企业承担责任并获得实际收益。报道同时提到，数据中心因能耗与选址争议在地方层面遇阻，亚马逊和微软已表示不再在与地方政府谈判时使用保密协议。需要说明的是，上述内容均为高管表态，改名是否实施、公关行动的具体形式与预算均未披露，报道本身也以“可能”措辞呈现。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方，数据中心就像小区旁边要建的垃圾处理站——功能必需，但谁都不愿它挨着自己。OpenAI想做的，是先给它换个听起来更体面的名字，再谈怎么让邻居觉得有好处。对普通人来说，这意味着未来你看到的新闻、社区说明会上，“AI算力园区”这个词可能越来越多，而它本质上仍是耗电、耗水的大型机房。改名不改变用电和选址的现实，但会影响地方听证和审批时的舆论氛围。至于“AI限速”和全球标准，目前只是方向性表态，离落到你我手机里的具体规则还很远，值得继续观察而非提前下结论。",
+          "text2": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "OpenAI might rebrand its data centers as ‘AI compute campuses’"
+    },
     {
       "id": "420fd151ca6ffe",
       "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
@@ -394,6 +425,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Sam Altman says it’s better for RAM to be in a data center than on your desk"
+    },
+    {
+      "id": "b9ee8bb30716fa",
+      "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+        }
+      ],
+      "publishedAt": "2026-10-30",
+      "source": "The Verge AI",
+      "title": "谷歌卫星AI芯片首次在轨生成回复",
+      "summary": "谷歌于2026年10月发射搭载TPU的试验卫星，作为Project Suncatcher计划的一部分，探索将AI数据中心送入太空。谷歌称已成功启动星上TPU，让Gemma 4模型在轨执行提示词并生成一首关于太空的俳句，还测试了其他太空主题文本与遥测提示。下一步将评估TPU在轨道热应力和辐射下的表现，并计划2027年发射两颗互联卫星。目前仅为单星初步验证，模型输出质量、算力规模和长期可靠性均未披露。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "这是AI算力基础设施向太空延伸的早期在轨验证，虽规模有限，但涉及芯片、模型与卫星平台协同，可能影响未来数据中心布局思路。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌在博客中称，其搭载张量处理单元（TPU）的试验卫星已成功开机，星上Gemma 4模型按提示生成了一首关于身处太空的俳句，并测试了其他太空主题短诗和遥测提示。该卫星本月早些时候入轨，属于实验性项目Project Suncatcher，目标是探索在太空部署AI数据中心。谷歌表示下一步将评估TPU在轨道热应力和辐射暴露下的表现，并把“双星互联”列为2027年里程碑。仍不确定的是：生成内容是否完全在轨完成、模型规模与算力细节、测试持续时长及可靠性数据均未公开，单次成功不足以证明太空算力可行。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：谷歌把一台小型AI电脑装进卫星，第一次在太空里让它“开口说话”——写了几句诗。这更像一次太空环境下的开机自检，而不是把大型数据中心搬上天。对普通人来说，短期内没有直接可用的新服务，但它指向一种可能：未来部分AI计算在轨道上完成，再把结果传回地面。好处是可能减少对地面电力和散热的依赖，难点是辐射、温差、维护和回传带宽。现在只是单星小模型跑通一次，离大规模商用还很远，别把一次写诗当成太空云服务已经到来。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Google’s satellite AI server transmits its first response to Earth"
     },
     {
       "id": "3dbc47c31caae5",
