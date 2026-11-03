@@ -5,6 +5,9 @@
       "id": "sam-altman-building-future",
       "person": "Sam Altman",
       "role": "OpenAI 联合创始人兼 CEO",
+      "image": "./people/sam-altman.jpg",
+      "imageAlt": "Sam Altman 肖像",
+      "imageCredit": "Wikimedia Commons · CC BY-SA",
       "title": "当 AI 能力继续加速，人和社会该提前准备什么？",
       "summary": "这场 OpenAI 官方对话谈到科学发现、工作变化、网络与生物安全，以及如何让 AI 的收益不只集中在少数人手中。",
       "takeaways": ["能力增长越快，公共讨论和制度准备越不能等。", "AI 会降低创业、科研和创作的门槛，但安全和分配问题也需要同步处理。"],
@@ -16,6 +19,9 @@
       "id": "demis-hassabis-world-models",
       "person": "Demis Hassabis",
       "role": "Google DeepMind 联合创始人兼 CEO",
+      "image": "./people/demis-hassabis.jpg",
+      "imageAlt": "Demis Hassabis 肖像",
+      "imageCredit": "Christopher Michel / Wikimedia Commons · CC BY",
       "title": "世界模型为什么可能是通往更通用 AI 的一步？",
       "summary": "Hassabis 从 Gemini Deep Think、Genie 3 和新型评测谈起，解释 AI 如何从处理文字，走向理解和模拟真实世界。",
       "takeaways": ["模型的下一阶段不只是‘会回答’，还要能理解环境和行动后果。", "新评测的意义是找出模型真正不会的事，而不是只追求更高跑分。"],
@@ -27,6 +33,9 @@
       "id": "google-io-dialogues-2026",
       "person": "Sundar Pichai 等",
       "role": "Google 与 DeepMind 领导者、研究者",
+      "image": "./people/sundar-pichai.jpg",
+      "imageAlt": "Sundar Pichai 肖像",
+      "imageCredit": "European Commission / Wikimedia Commons · CC BY 4.0",
       "title": "从智能体到科学与机器人，AI 正在向哪里走？",
       "summary": "Google I/O 2026 的系列对话把智能体、科学、量子计算、机器人与创意工作放在一起，适合用来建立对行业方向的整体感。",
       "takeaways": ["智能体正从被动回答走向持续执行任务。", "科学、机器人和创意工具是模型能力走出聊天框的重要场景。"],
@@ -37,9 +46,12 @@
   ],
   "tools": {
     "new": [
-      {"name": "Skills over MCP", "description": "用 MCP 的统一方式发现和分发 Agent Skills。", "tag": "Agent Skill", "url": "https://github.com/modelcontextprotocol/ext-skills"},
-      {"name": "OpenAI Codex", "description": "可在本地项目中读代码、修改、测试和协作的开源编码智能体。", "tag": "开源项目", "url": "https://github.com/openai/codex"},
-      {"name": "Microsoft Agent Skills", "description": "面向 AI 编码智能体的 Skills、自定义 Agent 和 MCP 配置集。", "tag": "Skills", "url": "https://github.com/microsoft/skills"}
+      {"name": "tt-a1i / archify", "description": "让 AI 编码智能体生成可验证的架构、时序、数据流和生命周期图。", "tag": "Agent Skill", "trend": "本月 +47.2k 关注", "url": "https://github.com/tt-a1i/archify"},
+      {"name": "volcengine / OpenViking", "description": "面向 AI Agent 的自进化上下文数据库，统一管理记忆、知识 RAG 和 Skills。", "tag": "Agent 记忆", "trend": "本月 +8.5k 关注", "url": "https://github.com/volcengine/OpenViking"},
+      {"name": "THU-MAIC / OpenMAIC", "description": "一键搭建多智能体互动课堂，适合教学演示与多角色学习实验。", "tag": "多智能体", "trend": "本月 +15.3k 关注", "url": "https://github.com/THU-MAIC/OpenMAIC"},
+      {"name": "debpalash / VoiceStudio", "description": "可全本地运行的开源语音工作台，支持声音克隆、配音、转写与有声书。", "tag": "本地语音", "trend": "本月 +12.7k 关注", "url": "https://github.com/debpalash/VoiceStudio"},
+      {"name": "NVIDIA-NeMo / Switchyard", "description": "在多个模型和供应商之间路由请求，用于对比成本、性能与效果。", "tag": "模型路由", "trend": "本月 +2.6k 关注", "url": "https://github.com/NVIDIA-NeMo/Switchyard"},
+      {"name": "AlexsJones / llmfit", "description": "输入一条命令，查看哪些本地模型适合你电脑的内存与硬件。", "tag": "本地模型", "trend": "本月 +4.7k 关注", "url": "https://github.com/AlexsJones/llmfit"}
     ],
     "essential": [
       {"name": "Ollama", "description": "在个人电脑上运行和管理开源模型。", "tag": "本地模型", "url": "https://ollama.com/"},

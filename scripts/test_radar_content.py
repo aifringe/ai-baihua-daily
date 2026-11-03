@@ -40,6 +40,13 @@ class RadarContentTests(unittest.TestCase):
         self.assertGreaterEqual(len(self.data["reports"]), 3)
         self.assertGreaterEqual(len(self.data["advice"]), 3)
 
+    def test_dialogue_portraits_are_local_and_present(self):
+        for row in self.data["dialogues"]:
+            self.assertTrue(row["image"].startswith("./people/"))
+            self.assertTrue((ROOT / "public" / row["image"].removeprefix("./")).is_file())
+            self.assertTrue(row["imageAlt"])
+            self.assertTrue(row["imageCredit"])
+
 
 if __name__ == "__main__":
     unittest.main()

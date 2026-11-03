@@ -76,10 +76,15 @@ test('五个主栏目顺序正确且都有实际内容', async ({page}) => {
   expect(labels.map(label => label.replace(/^0\d/, ''))).toEqual(['今日情报', '人物对话', '工具雷达', '报告趋势', '行动建议']);
   await page.getByRole('button', {name: /02人物对话/}).click();
   await expect(page.locator('.feature-card')).toHaveCount(3);
+  await expect(page.locator('.person-image')).toHaveCount(3);
+  expect(await page.locator('.person-image').evaluateAll(images => images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
   await page.getByRole('button', {name: /03工具雷达/}).click();
-  await expect(page.locator('.tool-row')).toHaveCount(8);
+  await expect(page.locator('.tool-row')).toHaveCount(11);
+  await expect(page.getByRole('heading', {name: 'GitHub 本月热门'})).toBeVisible();
   await page.getByRole('button', {name: /04报告趋势/}).click();
   await expect(page.locator('.report-card')).toHaveCount(4);
+  await expect(page.locator('.report-card h2 a')).toHaveCount(4);
+  await expect(page.getByRole('link', {name: '阅读原报告'})).toHaveCount(4);
   await page.getByRole('button', {name: /05行动建议/}).click();
   await expect(page.locator('.advice-card')).toHaveCount(3);
 });
