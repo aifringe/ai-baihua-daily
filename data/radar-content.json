@@ -1,0 +1,119 @@
+{
+  "updatedAt": "2026-11-04",
+  "dialogues": [
+    {
+      "id": "sam-altman-building-future",
+      "person": "Sam Altman",
+      "role": "OpenAI 联合创始人兼 CEO",
+      "title": "当 AI 能力继续加速，人和社会该提前准备什么？",
+      "summary": "这场 OpenAI 官方对话谈到科学发现、工作变化、网络与生物安全，以及如何让 AI 的收益不只集中在少数人手中。",
+      "takeaways": ["能力增长越快，公共讨论和制度准备越不能等。", "AI 会降低创业、科研和创作的门槛，但安全和分配问题也需要同步处理。"],
+      "source": "OpenAI Forum",
+      "url": "https://forum.openai.com/public/videos/event-replay-sam-altman-on-building-the-future-of-ai-2026-04-06",
+      "publishedAt": "2026-04-06"
+    },
+    {
+      "id": "demis-hassabis-world-models",
+      "person": "Demis Hassabis",
+      "role": "Google DeepMind 联合创始人兼 CEO",
+      "title": "世界模型为什么可能是通往更通用 AI 的一步？",
+      "summary": "Hassabis 从 Gemini Deep Think、Genie 3 和新型评测谈起，解释 AI 如何从处理文字，走向理解和模拟真实世界。",
+      "takeaways": ["模型的下一阶段不只是‘会回答’，还要能理解环境和行动后果。", "新评测的意义是找出模型真正不会的事，而不是只追求更高跑分。"],
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-release-notes-podcast-demis-hassabis/",
+      "publishedAt": "2025-08-11"
+    },
+    {
+      "id": "google-io-dialogues-2026",
+      "person": "Sundar Pichai 等",
+      "role": "Google 与 DeepMind 领导者、研究者",
+      "title": "从智能体到科学与机器人，AI 正在向哪里走？",
+      "summary": "Google I/O 2026 的系列对话把智能体、科学、量子计算、机器人与创意工作放在一起，适合用来建立对行业方向的整体感。",
+      "takeaways": ["智能体正从被动回答走向持续执行任务。", "科学、机器人和创意工具是模型能力走出聊天框的重要场景。"],
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+      "publishedAt": "2026-05-22"
+    }
+  ],
+  "tools": {
+    "new": [
+      {"name": "Skills over MCP", "description": "用 MCP 的统一方式发现和分发 Agent Skills。", "tag": "Agent Skill", "url": "https://github.com/modelcontextprotocol/ext-skills"},
+      {"name": "OpenAI Codex", "description": "可在本地项目中读代码、修改、测试和协作的开源编码智能体。", "tag": "开源项目", "url": "https://github.com/openai/codex"},
+      {"name": "Microsoft Agent Skills", "description": "面向 AI 编码智能体的 Skills、自定义 Agent 和 MCP 配置集。", "tag": "Skills", "url": "https://github.com/microsoft/skills"}
+    ],
+    "essential": [
+      {"name": "Ollama", "description": "在个人电脑上运行和管理开源模型。", "tag": "本地模型", "url": "https://ollama.com/"},
+      {"name": "Hugging Face", "description": "查找模型、数据集、Demo 和开源 AI 工具。", "tag": "模型与数据", "url": "https://huggingface.co/"},
+      {"name": "Model Context Protocol", "description": "让 AI 应用用统一协议连接工具、数据和服务。", "tag": "MCP", "url": "https://modelcontextprotocol.io/"},
+      {"name": "GitHub Trending", "description": "发现近期增长较快的开源项目，需再核对用途与安全性。", "tag": "项目发现", "url": "https://github.com/trending"},
+      {"name": "LM Studio", "description": "用图形界面下载、测试并在本地运行大模型。", "tag": "本地模型", "url": "https://lmstudio.ai/"}
+    ]
+  },
+  "reports": [
+    {
+      "id": "stanford-ai-index-2026",
+      "title": "2026 AI Index Report",
+      "organization": "Stanford HAI",
+      "summary": "从模型能力、投资、产业采用、责任 AI 到全球竞争，用数据给出年度全景。",
+      "finding": "AI 能力和采用仍在加速，但治理、评估和透明度没有同步跟上。",
+      "url": "https://hai.stanford.edu/ai-index",
+      "publishedAt": "2026-04"
+    },
+    {
+      "id": "anthropic-economic-index",
+      "title": "Anthropic Economic Index",
+      "organization": "Anthropic",
+      "summary": "基于真实但经过隐私保护的 Claude 使用模式，观察 AI 正在被用于哪些职业与任务。",
+      "finding": "判断 AI 对工作的影响，要看它在替人执行，还是在帮人完成任务，不能只看职业名称。",
+      "url": "https://www.anthropic.com/economic-index",
+      "publishedAt": "2026"
+    },
+    {
+      "id": "international-ai-safety-report",
+      "title": "International AI Safety Report",
+      "organization": "International AI Safety Report",
+      "summary": "由多国专家共同综述通用 AI 的能力、风险、缓解方法以及仍存在的证据空白。",
+      "finding": "对 AI 风险的认识应该分清已知证据和推测，并持续跟踪模型能力与防护的变化。",
+      "url": "https://internationalaisafetyreport.org/",
+      "publishedAt": "2026"
+    },
+    {
+      "id": "wef-future-jobs-2025",
+      "title": "Future of Jobs Report 2025",
+      "organization": "World Economic Forum",
+      "summary": "从企业调研出发，分析技术、经济与人口变化对就业、技能和培训的影响。",
+      "finding": "AI 与大数据技能需求上升，但分析、创造、协作与持续学习仍是重要的通用能力。",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "publishedAt": "2025-01"
+    }
+  ],
+  "advice": [
+    {
+      "id": "build-one-workflow",
+      "audience": "正在学 AI 的人",
+      "title": "别只收藏工具，先把一个真实流程做通",
+      "reason": "工具更新很快，可迁移的能力是：能定义问题、设计流程、检查输出并量化节省的时间。",
+      "action": "本周选一个你每周都会重复的任务，记录原耗时，用 AI 重做一遍，再用同一标准检查结果。",
+      "sourceLabel": "Stanford AI Index",
+      "sourceUrl": "https://hai.stanford.edu/ai-index"
+    },
+    {
+      "id": "learn-verification",
+      "audience": "想做 AI 产品的人",
+      "title": "把‘会验证’当成核心产品能力",
+      "reason": "模型会给出看起来很完整的错误结果。真正可用的产品，必须能发现错误、回溯来源并让人接管。",
+      "action": "给当前的 AI 功能加一份失败清单：输入错误、网络失败、模型幻觉、超时和无权限时各会发生什么。",
+      "sourceLabel": "International AI Safety Report",
+      "sourceUrl": "https://internationalaisafetyreport.org/"
+    },
+    {
+      "id": "domain-plus-ai",
+      "audience": "准备转向 AI 的年轻人",
+      "title": "不要把原有专业丢掉，用 AI 把它放大",
+      "reason": "真实任务需要领域判断、上下文和责任边界。懂行业又能驾驭 AI，往往比只会调一个工具更稀缺。",
+      "action": "写下你最熟悉的三个真实问题，选其中一个做成可演示、可衡量、有错误边界的 AI 小项目。",
+      "sourceLabel": "Anthropic Economic Index",
+      "sourceUrl": "https://www.anthropic.com/economic-index"
+    }
+  ]
+}

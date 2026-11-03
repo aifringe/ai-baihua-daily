@@ -2,7 +2,10 @@ name: Update AI news
 
 on:
   schedule:
+    # Beijing 01:30, 08:00 and 13:00 (UTC+8)
+    - cron: '30 17 * * *'
     - cron: '0 0 * * *'
+    - cron: '0 5 * * *'
   workflow_dispatch:
     inputs:
       since:

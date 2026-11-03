@@ -1,6 +1,6 @@
-# 刘海儿的 AI 新闻
+# 刘海儿的 AI 雷达
 
-面向普通人的 AI 新闻阅读站，提供短标题、三行预览、白话详情、可追溯原文、搜索、分类、排序、分页和浏览器本地收藏。
+面向对 AI 感兴趣的学习者、工作者和创业者，用五个栏目把信息变成行动：今日情报、人物对话、工具雷达、报告趋势和行动建议。
 
 - 正式网站：<https://news.czrshe.com/>
 - 质量标准：[`docs/QUALITY_STANDARD.md`](docs/QUALITY_STANDARD.md)
@@ -9,7 +9,8 @@
 ## 架构
 
 - 前端：React 19、TypeScript、Vite、Tailwind CSS、shadcn/ui。
-- 新闻：`public/news.json`，由 GitHub Actions 每天北京时间 08:00 更新。
+- 情报：`public/news.json`，由 GitHub Actions 每天北京时间 01:30、08:00 和 13:00 检查更新。
+- 精选内容：`data/radar-content.json`，保存人物对话、工具、报告和行动建议及其官方链接。
 - 编辑整理：DeepSeek Flash 仅在离线更新任务中根据公开可读正文生成中文摘要；网站不提供模型问答接口。
 - 收藏：仅保存在当前浏览器 `localStorage`。
 - 部署：推送 `main` 后，通过 GitHub Actions 部署到宝塔 `/www/wwwroot/news.czrshe.com/`。
@@ -34,4 +35,4 @@ pnpm test:e2e
 
 手动更新：`DEEPSEEK_API_KEY=你的密钥 python3 scripts/update_news.py 20`。
 
-`quality.yml` 执行全部质量检查；`update-news.yml` 每日更新新闻；`deploy-baota.yml` 部署静态站点，同时删除历史问答接口和服务器密钥文件。每次修改必须遵循 [`AGENTS.md`](AGENTS.md) 和质量标准。
+`quality.yml` 执行全部质量检查；`update-news.yml` 每日三次检查情报；`deploy-baota.yml` 部署静态站点，同时删除历史问答接口和服务器密钥文件。每次修改必须遵循 [`AGENTS.md`](AGENTS.md) 和质量标准。
