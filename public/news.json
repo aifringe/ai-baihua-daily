@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-02T03:31:04.753287+00:00",
-  "lastCheckedAt": "2026-11-02T03:31:04.753287+00:00",
+  "updatedAt": "2026-11-03T04:40:05.269112+00:00",
+  "lastCheckedAt": "2026-11-03T04:40:05.269112+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -73,6 +73,93 @@
   ],
   "articles": [
     {
+      "id": "981c51fa20c4c2",
+      "url": "https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102"
+        }
+      ],
+      "publishedAt": "2026-11-02",
+      "source": "MIT News",
+      "title": "MIT两教授获AI科学奖 曾用AI发现抗生素",
+      "summary": "MIT新闻2026年11月2日报道，MIT教授Regina Barzilay与James Collins获2026年普利兹克AI科学卓越研究奖，该奖由芝加哥大学与加州理工2024年设立。两人因合作利用深度学习、生物工程与实验验证发现新型抗菌候选物而获奖。其2020年论文报告首个AI发现的抗生素halicin，对多种耐药菌有效，将原本数年的发现过程缩短至数周；2023年又识别窄谱抗生素abaucin。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "该奖项与成果显示AI在药物发现中从辅助工具走向设计工具，对耐药菌危机具现实意义，也反映高校与AI交叉研究的制度化认可。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT新闻称，Regina Barzilay与James Collins获2026年普利兹克AI科学卓越研究奖，表彰其在AI辅助抗生素发现上的合作。报道回顾，两人2020年在《Cell》发表论文，描述首个由AI发现的抗生素halicin，模型基于2500个分子训练，测试显示可杀灭艰难梭菌、鲍曼不动杆菌和结核分枝杆菌等耐药菌，发现周期由数年缩至数周。2023年团队又识别窄谱抗生素abaucin，针对鲍曼不动杆菌。报道同时引述Barzilay称，AI目前只能自动化药物发现流程的部分环节，仍需更真实的人类生物学模型；奖项具体评选细节及独立验证情况未在文中展开。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：过去找新抗生素像在大海里靠经验捞针，慢且常失败；现在研究人员先让AI从海量分子里筛出候选，再到实验室验证。halicin和abaucin就是被筛出来并验证有效的例子，前者广谱、后者只打一种菌，后者理论上更不容易误伤肠道好菌、也更难让细菌产生耐药。对普通人来说，这不等于新药马上进医院，但意味着面对“超级细菌”时，未来可能更快找到新武器；同时也要看到，AI只是加速了筛选环节，真正上市仍需多年临床试验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Regina Barzilay and Jim Collins win Pritzker Prize for AI and Science Research Excellence for work in AI-enabled antibiotic discovery"
+    },
+    {
+      "id": "0b86c010857d52",
+      "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times"
+        }
+      ],
+      "publishedAt": "2026-11-02",
+      "source": "The Verge AI",
+      "title": "纽约时报等起诉Brave浏览器AI抓取与绕过付费墙",
+      "summary": "《纽约时报》及《纽约每日新闻》《芝加哥论坛报》《奥兰多哨兵报》等媒体起诉Brave浏览器开发商，指控其未经许可抓取新闻内容，建立索引并付费提供给Anthropic、Perplexity、Mistral、xAI、Cohere等AI公司用于训练或回答查询，同时通过“付费墙拦截”功能让用户免费访问内容。原告称Brave从未获得授权或补偿。Brave及涉事AI公司暂未回应，Perplexity高管则公开嘲讽诉讼。案件核心争议在于抓取索引转售是否构成侵权，目前尚无司法结论。",
+      "category": "安全与规则",
+      "importance": 78,
+      "why": "这是主流媒体首次将浏览器索引方与多家AI公司一并纳入版权诉讼，可能重塑AI训练数据获取的合规边界，对内容方与AI产业均有示范效应。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "《纽约时报》联合《纽约每日新闻》《芝加哥论坛报》《奥兰多哨兵报》对Brave Software提起诉讼，指控其抓取新闻网站内容建立索引，并向Anthropic、Perplexity、Mistral、xAI、Cohere等AI公司付费提供访问权限，用于模型训练或实时回答用户查询。诉状还称Brave浏览器内置“付费墙拦截”功能，让用户绕过订阅限制阅读内容，且未获出版商许可或补偿。纽约时报发言人表示，此举是为追究Brave“窃取内容”的责任。Brave及多数被点名AI公司未立即回应；Perplexity高管则称诉讼含“虚假信息”。目前案件刚进入司法程序，抓取行为是否侵权、索引转售责任如何划分均无定论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Brave想象成一个“二道贩子”：它先翻进别人家院子把报纸搬走，整理成目录，再卖给想用这些报纸训练AI的公司；同时还给路人发“万能钥匙”，让他们不买票就能看付费内容。出版商认为，这等于把偷来的东西转手卖钱，还断了自家订阅收入。对普通人来说，短期可能仍能免费看部分内容，但若法院支持出版商，类似“绕墙”工具和AI问答中直接引用新闻的做法可能受限，免费获取新闻的渠道会收窄，内容方与AI公司的授权谈判也会更频繁。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls"
+    },
+    {
+      "id": "c45a0b6d7de18a",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/"
+        }
+      ],
+      "publishedAt": "2026-11-02",
+      "source": "Google AI",
+      "title": "谷歌发布Gemini 4双模型及多项AI更新",
+      "summary": "2026年10月，谷歌发布前沿推理模型Gemini 4 Argon，面向开发者、企业和消费者开放，用于复杂编程、金融分析与法律流程；两周后宣布专注长周期工程与网络安全防御的Gemini 4 Carbon，目前仅与美国政府及部分网络安全伙伴进行预发布测试。同期推出实时交互世界模型Genie 4、全球英文版SynthID检测器、安卓增强防诈骗模式，并披露TPU在轨运行、量子纠错等进展。Carbon全面开放时间及实际能力仍待验证。",
+      "category": "模型进展",
+      "importance": 82,
+      "why": "一次性发布两款前沿模型并配套检测、安全工具，反映头部厂商模型迭代加速，也影响开发者工具选择与AI内容鉴别方式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌在10月博客汇总中称，已全球推出Gemini 4 Argon，覆盖AI Studio、Gemini API、云、搜索和Gemini应用，并用于机器人物理世界推理；两周后宣布Gemini 4 Carbon，主打长周期工程与网络安全防御，但仅通过Fairwind项目向美国政府及少数可信网络安全方预发布测试，尚未面向开发者、企业和消费者开放。同期发布Genie 4实时交互世界模拟、SynthID检测器全球英文版、安卓增强防诈骗模式，以及TPU在轨运行、量子纠错等研究进展。上述均为谷歌单方披露，Carbon实际能力与全面上线时间仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Argon理解成已经上市的全能型选手，写代码、算财务、读法律文件都能接活；Carbon则像还在封闭训练的特种兵，专攻长时间工程任务和网络攻防，先让政府和少数安全团队试用，确认不闯祸再放出来。对普通人来说，最直接的变化是手机防诈骗更聪明、能查内容是否AI生成；对开发者来说，多了一个可调用的强模型。但博客是厂商自述，实际好不好用、会不会出错，还得等第三方测试和更大范围开放后才能判断。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The latest AI news we announced in October 2026"
+    },
+    {
       "id": "944be91cc06a18",
       "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
       "sources": [
@@ -102,6 +189,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "OpenAI might rebrand its data centers as ‘AI compute campuses’"
+    },
+    {
+      "id": "1cf8f670adac64",
+      "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/"
+        }
+      ],
+      "publishedAt": "2026-11-01",
+      "source": "TechCrunch AI",
+      "title": "数据中心成中期选举议题，布鲁克林活动聚焦AI争议",
+      "summary": "TechCrunch报道，在布鲁克林一场中期选举预热活动中，AI与数据中心意外成为全场核心话题。主持人询问“谁支持AI数据中心”时遭现场嘘声。报道援引Data Center Watch数据称，2026年上半年约2000亿美元数据中心项目因政治与社区反对而延迟、停滞或被阻止；宾夕法尼亚、佐治亚、得州、纽约、弗吉尼亚等州正考虑加强监管与透明度。与会者担忧科技公司与地方官员秘密交易、环境健康风险及社区失去控制权，不同立场者对就业与补偿看法分歧。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "反映AI基础设施扩张正从技术议题转为地方政治与选举议题，社区反对已实质影响项目进度，对科技行业与监管环境有直接冲击。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch记者描述，11月初布鲁克林一场中期选举活动上，原本安排讨论注意力经济与选情预测，但AI与数据中心几乎占据所有对话。记者主持的数据中心专题讨论中，现场对“支持AI数据中心”的提问报以嘘声。报道引述Data Center Watch报告称，2026年上半年近2000亿美元数据中心项目因政治和社区反对被延迟、停滞或阻止；弗吉尼亚等地计划新建数百座数据中心，多州正考虑监管措施。与会者提到地方官员与科技公司交易不透明、分区规则模糊导致抗议滞后，以及就业承诺多为临时岗位。不同嘉宾对工会支持、社区补偿存在分歧，报道未给出统一结论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把数据中心想成一座突然要建在自家小区旁的超大工厂：它带来施工期的工作和税收，却可能长期消耗水电、产生噪音，而居民事先未必知情。过去这类项目多在偏远地区，如今连纽约布鲁克林这样的城市也感受到压力，于是它从工程问题变成选票问题。对普通人来说，这意味着未来地方选举中，候选人可能被追问是否支持数据中心、如何公开审批；对科技公司来说，建厂不再只是找地拉电，还要先过社区这一关，项目延期和成本上升的风险变高。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Data centers are now a midterm issue, even in Brooklyn"
     },
     {
       "id": "420fd151ca6ffe",
@@ -160,6 +276,35 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Judge allows NAACP lawsuit over xAI data center pollution to move forward"
+    },
+    {
+      "id": "1b296d8bb11508",
+      "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/"
+        }
+      ],
+      "publishedAt": "2026-10-30",
+      "source": "Google DeepMind",
+      "title": "DeepMind规划AI提速58%，扩至15个英国地方议会",
+      "summary": "Google DeepMind于2026年10月宣布，其与英国政府、Google Cloud及Faculty合作开发的规划审批AI工具PlanAssist，在Barnet、Camden、Dorset三地试点中，将规划官员处理家庭类申请的平均评估时间缩短最多58%，超70%的AI生成报告无需修改即获官员采纳。该工具基于Gemini，负责核验材料、比对地方与国家级规划政策及历史异议，并起草带引用的评估报告，最终决定权仍归规划官员。工具将进入为期12个月的Beta阶段，新增12个地方议会，总数达15个；若测试顺利，英国政府计划2027年向英格兰所有议会开放。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "这是AI进入公共审批流程的规模化落地案例，涉及住房建设与政府服务效率，且明确保留人工最终决定权，对AI在政务场景的边界设定有示范意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google DeepMind宣布，其AI规划工具PlanAssist在英格兰Barnet、Camden、Dorset三地试点后，将扩展至另外12个地方议会，总数达15个，进入为期12个月的Beta阶段并使用真实申请。该工具基于Gemini，由DeepMind与英国政府、Google Cloud、Faculty合作开发，用于处理占规划官员工作量最高70%的常规家庭类申请：核验文件与图纸、比对树木保护令等遗产限制及地方和国家政策、检查历史异议，并起草带引用的评估报告。试点数据显示，官员单件评估时间最多减少58%，超70%的生成报告无需修改即被采纳。工具不替代决策，每份评估仍须由合格规划官员审阅批准。若测试顺利，英国政府计划2027年向英格兰所有议会开放。目前尚不确定的是，58%的提速能否在更多元的大都市与乡村地区复制，以及12个月Beta阶段的实际表现。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把规划审批想象成小区物业审核装修申请：大部分是加个阳光房、搭个阁楼这类简单事，但每份都要人工翻图纸、查规定、看有没有邻居反对，费时又枯燥。PlanAssist就像一个先帮你把材料理齐、把相关条款和投诉记录都翻出来、再写好一份草稿的助手，物业经理只需核对签字。对普通人来说，这意味着申请扩建、改造的等待时间可能缩短，英国政府想建的150万套住房也少了一道堵点。但要注意，AI只是打草稿，拍板的仍是人，所以它不会自己批准任何东西，也不会替官员背锅。真正的看点是：当AI把繁琐的初筛做完，官员是能腾出时间处理复杂个案，还是会被更多申请淹没，这决定了效率提升能否落到普通人身上。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Speeding up planning decisions with AI"
     },
     {
       "id": "f9b3653194a263",
