@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">刘海儿的 AI 雷达新闻封面</title>
+  <desc id="desc">深蓝背景中的雷达圆环和薄荷绿色信号点</desc>
+  <rect width="1200" height="720" fill="#172f63"/>
+  <circle cx="870" cy="360" r="260" fill="none" stroke="#86dbc1" stroke-width="3" opacity=".34"/>
+  <circle cx="870" cy="360" r="176" fill="none" stroke="#86dbc1" stroke-width="3" opacity=".52"/>
+  <circle cx="870" cy="360" r="88" fill="none" stroke="#86dbc1" stroke-width="3" opacity=".72"/>
+  <path d="M870 360 1090 220A260 260 0 0 1 1120 360Z" fill="#86dbc1" opacity=".22"/>
+  <path d="M870 100V620M610 360H1130" stroke="#86dbc1" stroke-width="2" opacity=".2"/>
+  <circle cx="1002" cy="275" r="13" fill="#ff7548"/>
+  <circle cx="760" cy="470" r="9" fill="#fff8eb"/>
+  <text x="72" y="238" fill="#86dbc1" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="8">AI RADAR</text>
+  <text x="72" y="335" fill="#fff8eb" font-family="Arial, sans-serif" font-size="68" font-weight="700">白话新闻</text>
+  <text x="72" y="398" fill="#dbe3f3" font-family="Arial, sans-serif" font-size="26">看懂变化，找到行动。</text>
+</svg>

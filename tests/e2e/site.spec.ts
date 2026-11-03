@@ -6,7 +6,7 @@ for (const width of widths) {
   test(`首页在 ${width}px 无横向溢出`, async ({page}) => {
     await page.setViewportSize({width, height: width < 700 ? 844 : 900});
     await page.goto('/');
-    await expect(page.locator('h1.sr-only')).toHaveText('今日情报 · 刘海儿的 AI 雷达');
+    await expect(page.locator('h1.sr-only')).toHaveText('白话新闻 · 刘海儿的 AI 雷达');
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
     expect(overflow).toBe(false);
     await expect(page.locator('.news-card').first()).toBeVisible();
@@ -20,12 +20,12 @@ test('搜索、分类、排序、分页和详情流程可用', async ({page}) =>
   const errors: string[] = [];
   page.on('console', (message) => {if (message.type() === 'error') errors.push(message.text());});
   await page.goto('/');
-  await page.getByLabel('搜索情报').fill('OpenAI');
+  await page.getByLabel('搜索新闻').fill('OpenAI');
   await expect(page.locator('.news-card')).not.toHaveCount(0);
   await expect(page.getByText(/全年共 \d+ 条/)).toBeVisible();
-  await page.getByLabel('搜索情报').fill('');
-  await page.getByRole('button', {name: '日常应用', exact: true}).click();
-  await expect(page.locator('.news-card').first().locator('.meta').getByText('日常应用')).toBeVisible();
+  await page.getByLabel('搜索新闻').fill('');
+  await page.getByRole('button', {name: '年度大热点', exact: true}).click();
+  await expect(page.getByRole('button', {name: '年度大热点', exact: true})).toHaveAttribute('aria-pressed','true');
   await page.getByRole('button', {name: '近期精选', exact: true}).click();
   await page.getByRole('button', {name: '全年档案', exact: true}).click();
   await expect(page.locator('.news-card').first()).toBeVisible();
@@ -40,7 +40,7 @@ test('搜索、分类、排序、分页和详情流程可用', async ({page}) =>
   await expect(page.getByText(/第 2 \/ \d+ 页/)).toBeVisible();
   await page.getByRole('button', {name: '上一页'}).click();
   await page.locator('.news-card h2 a').first().click();
-  await expect(page.getByRole('button', {name: '返回情报列表'})).toBeVisible();
+  await expect(page.getByRole('button', {name: '返回新闻列表'})).toBeVisible();
   await expect(page.getByRole('heading', {name: '发生了什么', exact: true})).toBeVisible();
   await expect(page.getByRole('heading', {name: '换成人话'})).toBeVisible();
   expect(errors).toEqual([]);
@@ -65,7 +65,11 @@ test('桌面详情充分利用空间且没有问答入口', async ({page}) => {
 
 test('来源说明可展开，列表每页最多十条', async ({page}) => {
   await page.goto('/');
-  await expect(page.locator('.news-card')).toHaveCount(10);
+  await expect(page.locator('.headline-card')).toHaveCount(1);
+  await expect(page.locator('.news-card')).toHaveCount(9);
+  const headlineImage = page.locator('.headline-image img');
+  await expect(headlineImage).toBeVisible();
+  expect(await headlineImage.evaluate(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0)).toBe(true);
   await page.getByText('内容来源与筛选规则').click();
   await expect(page.locator('.source-catalog a')).not.toHaveCount(0);
 });
@@ -73,7 +77,7 @@ test('来源说明可展开，列表每页最多十条', async ({page}) => {
 test('五个主栏目顺序正确且都有实际内容', async ({page}) => {
   await page.goto('/');
   const labels = await page.locator('.primary-nav button').allTextContents();
-  expect(labels.map(label => label.replace(/^0\d/, ''))).toEqual(['今日情报', '人物对话', '工具雷达', '报告趋势', '行动建议']);
+  expect(labels.map(label => label.replace(/^0\d/, ''))).toEqual(['白话新闻', '人物对话', '工具雷达', '报告趋势', '行动建议']);
   await page.getByRole('button', {name: /02人物对话/}).click();
   await expect(page.locator('.feature-card')).toHaveCount(3);
   await expect(page.locator('.person-image')).toHaveCount(3);
@@ -87,4 +91,23 @@ test('五个主栏目顺序正确且都有实际内容', async ({page}) => {
   await expect(page.getByRole('link', {name: '阅读原报告'})).toHaveCount(4);
   await page.getByRole('button', {name: /05行动建议/}).click();
   await expect(page.locator('.advice-card')).toHaveCount(3);
+});
+
+test('手机版栏目菜单可看到并进入全部五个模块', async ({page}) => {
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('/');
+  await expect(page.locator('.primary-nav')).toBeHidden();
+  await page.getByLabel('打开栏目菜单').click();
+  await expect(page.locator('.mobile-nav-panel button')).toHaveCount(5);
+  await page.locator('.mobile-nav-panel button').filter({hasText:'行动建议'}).click();
+  await expect(page.locator('.advice-card')).toHaveCount(3);
+  await expect(page.locator('.mobile-nav')).not.toHaveAttribute('open','');
+});
+
+test('白话新闻只显示四个分类且收藏可用', async ({page}) => {
+  await page.goto('/');
+  await expect(page.locator('.toolbar .tab')).toHaveText(['近期精选','年度大热点','全年档案','收藏']);
+  await page.getByRole('button', {name:'收藏头条'}).click();
+  await page.getByRole('button', {name:'收藏', exact:true}).click();
+  await expect(page.locator('.news-card')).toHaveCount(1);
 });

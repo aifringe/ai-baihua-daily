@@ -142,6 +142,8 @@
       "publishedAt": "2026-11-02",
       "source": "Google AI",
       "title": "谷歌发布Gemini 4双模型及多项AI更新",
+      "image": "./news-images/google-ai-october-2026.jpg",
+      "imageAlt": "谷歌2026年10月AI产品更新官方配图",
       "summary": "2026年10月，谷歌发布前沿推理模型Gemini 4 Argon，面向开发者、企业和消费者开放，用于复杂编程、金融分析与法律流程；两周后宣布专注长周期工程与网络安全防御的Gemini 4 Carbon，目前仅与美国政府及部分网络安全伙伴进行预发布测试。同期推出实时交互世界模型Genie 4、全球英文版SynthID检测器、安卓增强防诈骗模式，并披露TPU在轨运行、量子纠错等进展。Carbon全面开放时间及实际能力仍待验证。",
       "category": "模型进展",
       "importance": 82,

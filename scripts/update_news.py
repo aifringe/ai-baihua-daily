@@ -7,6 +7,7 @@ from html.parser import HTMLParser
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/'public/news.json'
+NEWS_IMAGE_DIR=ROOT/'public/news-images'
 MODEL='deepseek-flash'
 API='https://api.deepseek.com/chat/completions'
 SOURCE_CATALOG=json.loads((ROOT/'data/sources.json').read_text())
@@ -81,9 +82,10 @@ def parse_feed(spec):
  return items,{'source':source,'ok':True}
 
 class ArticleParser(HTMLParser):
- def __init__(self):super().__init__();self.depth=0;self.block=0;self.parts=[];self.jsonld=[];self.capture_json=False
+ def __init__(self):super().__init__();self.depth=0;self.block=0;self.parts=[];self.jsonld=[];self.capture_json=False;self.image=''
  def handle_starttag(self,tag,attrs):
   attrs=dict(attrs)
+  if tag=='meta' and (attrs.get('property','').lower()=='og:image' or attrs.get('name','').lower() in ('og:image','twitter:image','twitter:image:src')) and not self.image:self.image=attrs.get('content','').strip()
   if tag in ('article','main'):self.depth+=1
   if tag in ('script','style','nav','header','footer','aside','form'):self.block+=1
   if tag=='script' and attrs.get('type','').lower()=='application/ld+json':self.capture_json=True;self.jsonld.append('')
@@ -113,7 +115,25 @@ def article_text(item):
   except Exception:pass
  body=clean(max(bodies,key=len) if bodies else ' '.join(parser.parts))
  if PAYWALL.search(body[:2500]) or len(body)<900:return None
- return {**item,'url':final,'body':body[:18000]}
+ image_url=urllib.parse.urljoin(final,parser.image) if parser.image else ''
+ if urllib.parse.urlsplit(image_url).scheme!='https':image_url=''
+ return {**item,'url':final,'body':body[:18000],'imageUrl':image_url}
+
+def store_news_image(url):
+ if not url:return ''
+ try:
+  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; AI-Baihua-Daily/2.0; +https://news.czrshe.com)'})
+  with urllib.request.urlopen(req,timeout=35) as response:
+   mime=response.headers.get_content_type().lower();raw=response.read(2_500_001)
+  extensions={'image/jpeg':'.jpg','image/png':'.png','image/webp':'.webp'}
+  ext=extensions.get(mime)
+  if not ext or len(raw)>2_500_000 or len(raw)<2_000:return ''
+  valid=(ext=='.jpg' and raw[:3]==b'\xff\xd8\xff') or (ext=='.png' and raw[:8]==b'\x89PNG\r\n\x1a\n') or (ext=='.webp' and raw[:4]==b'RIFF' and raw[8:12]==b'WEBP')
+  if not valid:return ''
+  NEWS_IMAGE_DIR.mkdir(parents=True,exist_ok=True);name=hashlib.sha256(url.encode()).hexdigest()[:20]+ext;target=NEWS_IMAGE_DIR/name
+  if not target.exists():target.write_bytes(raw)
+  return './news-images/'+name
+ except Exception:return ''
 
 def norm_title(title):return re.sub(r'[^a-z0-9\u4e00-\u9fff]+','',title.lower())
 def distinctive_title(title):
@@ -186,7 +206,7 @@ def explain(group):
  if d.get('category') not in ('日常应用','模型进展','行业变化','安全与规则'):raise ValueError('invalid category')
  if not isinstance(d.get('sections'),list) or len(d['sections'])!=2 or [s.get('heading') for s in d['sections']]!=['发生了什么','换成人话']:raise ValueError('invalid sections')
  lead=max(group,key=lambda x:(x.get('weight',0),len(x.get('body',''))))
- return {'id':hashlib.sha256('|'.join(sorted(x['url'] for x in group)).encode()).hexdigest()[:14],'url':lead['url'],'sources':sources,'publishedAt':min(x['publishedAt'] for x in group),'source':' / '.join(dict.fromkeys(x['source'] for x in group)),'title':d['title'][:80],'summary':d['summary'][:800],'category':d['category'],'importance':max(1,min(100,int(d.get('importance',50)))),'why':d['why'][:500],'sections':d['sections'],'editor':'DeepSeek Flash · 基于公开可读正文综合整理','originalTitle':lead['originalTitle']}
+ return {'id':hashlib.sha256('|'.join(sorted(x['url'] for x in group)).encode()).hexdigest()[:14],'url':lead['url'],'sources':sources,'publishedAt':min(x['publishedAt'] for x in group),'source':' / '.join(dict.fromkeys(x['source'] for x in group)),'title':d['title'][:80],'summary':d['summary'][:800],'category':d['category'],'importance':max(1,min(100,int(d.get('importance',50)))),'why':d['why'][:500],'sections':d['sections'],'editor':'DeepSeek Flash · 基于公开可读正文综合整理','originalTitle':lead['originalTitle'],'image':store_news_image(lead.get('imageUrl','')),'imageAlt':d['title'][:80]+'相关图片'}
 
 def rank_groups(groups):
  def score(group):

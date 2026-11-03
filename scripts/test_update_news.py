@@ -51,5 +51,8 @@ class UpdateNewsTests(unittest.TestCase):
  def test_official_research_is_eligible(self):
   item={'originalTitle':'MIT researchers release a new AI safety benchmark','feedExcerpt':'Research results','weight':5}
   self.assertTrue(u.editorially_eligible(item))
+ def test_article_parser_reads_open_graph_image(self):
+  parser=u.ArticleParser();parser.feed('<meta property="og:image" content="https://example.com/cover.jpg"><article>正文内容</article>')
+  self.assertEqual(parser.image,'https://example.com/cover.jpg')
 
 if __name__=='__main__':unittest.main()
