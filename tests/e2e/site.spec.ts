@@ -6,7 +6,7 @@ for (const width of widths) {
   test(`首页在 ${width}px 无横向溢出`, async ({page}) => {
     await page.setViewportSize({width, height: width < 700 ? 844 : 900});
     await page.goto('/');
-    await expect(page.getByRole('heading', {name: '今天，AI 又发生了什么？'})).toBeVisible();
+    await expect(page.locator('h1.sr-only')).toHaveText('今日情报 · 刘海儿的 AI 雷达');
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
     expect(overflow).toBe(false);
     await expect(page.locator('.news-card').first()).toBeVisible();
