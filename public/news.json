@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T12:42:02.612327+00:00",
-  "lastCheckedAt": "2026-11-04T12:42:02.612327+00:00",
+  "updatedAt": "2026-11-04T22:49:52.061888+00:00",
+  "lastCheckedAt": "2026-11-04T22:49:52.061888+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -72,6 +72,320 @@
     }
   ],
   "articles": [
+    {
+      "id": "d2290c5d3e5ab0",
+      "url": "https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "AWS AI",
+      "title": "AWS 详解生产级 AI 智能体上下文工程四层实践",
+      "summary": "AWS AI 官方博客发布系列文章第二部分，以开源多智能体数据分析方案 Deep Insight 为参考实现，系统梳理生产级 AI 智能体的四层上下文工程：架构层用多智能体隔离上下文、提示层限制各智能体输出、工具层把代码与数据外置到文件系统、验证层用独立智能体兜底。文中称，合并写入与执行工具可让每个脚本进入上下文的 token 减少约 95%，按需加载技能使系统提示缩小约 97%。这些数字来自该参考实现，并非通用基准，其他场景效果仍不确定。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "上下文管理是智能体落地的核心瓶颈，文章给出可复用的分层方法与代码参考，对开发者有实操价值；但数据仅来自单一开源实现，普适性待验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS AI 博客刊出系列文章第二部分，主题是生产级 AI 智能体的四层上下文工程。文章以基于 Strands Agents SDK 与 Amazon Bedrock AgentCore 构建的开源多智能体数据分析方案 Deep Insight 为参考实现，逐层给出代码示例。第一层是架构隔离：协调者、规划者、审查者、监督者与工具智能体各自拥有独立上下文，共享状态只保留上一条消息、压缩线索、计划清单和简短日志，使最耗上下文的编码智能体总量控制在约 25K token 以内。第二层用提示限定各智能体输出预算，如编码智能体 1000 至 1500 token，并要求脚本自包含。第三层把代码与数据放进文件，上下文只留指针，合并后的写入并执行工具据称可减少约 95% 的脚本 token。第四层用独立智能体与防护措施校验结果。文章同时引用 Anthropic 关于上下文腐化的说法，即上下文越长，模型准确召回能力越弱。上述百分比均为该参考实现中的观测值，未给出跨场景基准，实际收益仍不确定。",
+          "text_note": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把大模型的上下文窗口想成一张办公桌：任务一多，桌上堆满草稿，真正要看的文件反而找不到。这套做法就是分工加收纳：每个智能体只在自己的小桌上干活，干完只交一张便签给主管；代码和图表不摆上桌，锁进文件柜，桌上只留一张取件条；最后再派一个独立的人复核。对普通人的影响是，以后用 AI 做数据分析、写报告这类多步骤任务，中途卡死、越跑越贵、结果前后矛盾的情况可能减少。但文章里的九成节省来自一个特定开源项目，换成别的产品未必同样明显，读者不宜把它当成通用承诺。",
+          "text_note": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Four layers of context engineering for production AI agents: How Deep Insight applies them in working code",
+      "image": "./news-images/c92d54b6367c2c7abb7c.png",
+      "imageAlt": "AWS 详解生产级 AI 智能体上下文工程四层实践相关图片"
+    },
+    {
+      "id": "711c85cb75b94c",
+      "url": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "AWS AI",
+      "title": "亚马逊Quick推出智能审批 减少AI代理频繁打扰",
+      "summary": "亚马逊云科技为Amazon Quick推出Smart Approvals功能，在保留权限边界的前提下，由独立分类模型判断AI代理拟执行的操作是否符合用户请求，符合则自动放行，否则退回人工审核。该功能默认开启，用户可自行关闭；涉及对外发送、修改权限、删除记录、发起付款等敏感操作仍须人工确认。官方称自动审批仅单次有效，不授予持续权限，相关事件记入CloudTrail。但模型判断仍可能出错，实际效果需试点验证。",
+      "category": "安全与规则",
+      "importance": 62,
+      "why": "该功能试图在AI代理自主性与人工监督间取得平衡，涉及权限治理、审计追溯和提示注入防护，对企业部署AI代理有参考价值，但尚缺独立验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "亚马逊云科技发布Amazon Quick的Smart Approvals功能，用于AI代理执行多步任务时的审批管理。系统先按Custom Permissions、Quick Guardrails、连接器操作权限和用户设置判断操作是否被允许，被拒绝的操作仍被阻止。仅当用户设为“每次询问”且无其他控制要求人工审批时，操作才进入自动审核。独立分类模型结合用户请求和有限对话上下文判断操作是否符合意图，可查询知识图谱了解收件人与用户关系。对外发送、修改访问权限、删除记录、发起付款等操作仍退回人工。自动批准单次有效，超时或审核失败不自动放行。官方承认模型可能出错，建议通过连接器权限强制敏感操作人工审批，并配置CloudTrail和CloudWatch Logs留存审计记录。实际误判率尚无公开数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Smart Approvals理解成给AI代理配了一位“值班主管”：小事按规矩自动盖章，大事仍要人来签字。过去要么每步都弹窗确认，要么全放开，前者让人被反复打扰、逐渐麻木点“同意”，后者风险失控。新功能试图只把真正需要判断的操作推到人面前，比如把文件发给公司外的人或上级。对普通人来说，日常让AI整理资料、发内部邮件可能少点几次确认；但涉及钱、权限和敏感数据时，仍会停下来等人拍板。需要注意的是，自动放行靠模型判断，模型也会看走眼，所以企业不能把它当保险箱，重要操作最好继续强制人工审批，并保留日志以便事后追查。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Smart Approvals in Amazon Quick: Human oversight where it matters",
+      "image": "./news-images/1c063676f9495c3d044e.png",
+      "imageAlt": "亚马逊Quick推出智能审批 减少AI代理频繁打扰相关图片"
+    },
+    {
+      "id": "32d4e91d243ef0",
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "Hugging Face",
+      "title": "Dharma发布20亿参数文档字段提取模型",
+      "summary": "Dharma-AI在Hugging Face发布Dharma Field Extractor，一个20亿参数模型，可从任意文档图像中按开放或指定schema提取字段并输出JSON，支持表格嵌套与缺失字段返回null。团队称在546份文档、1638个用例的自建基准上，字段级F1为0.834，高于其测试的Claude Opus 5（0.816）和GPT-5.6 Luna（0.741），自托管单卡成本比API低6至147倍。上述对比均为厂商自测，未经第三方复现，成本口径为GPU时长而非售价。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "小模型在限定任务上对标前沿API，涉及文档自动化这一高频企业场景；但基准与成本数据均为厂商自测，需独立验证，故重要性中等偏上。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Dharma-AI发布Dharma Field Extractor，基座为20亿参数的DharmaOCR-LITE v1.1，在其上训练LoRA适配器，使用43384条字段级标注样本，覆盖英文多领域、巴西葡语及少量多语种数据。模型接受文档图像，支持两种请求：不给schema时自动识别键值对与表格；给schema时按指定键名和类型（字符串、数字、布尔）返回，文档中没有的字段返回null而非编造。团队自建基准含546份文档、三种请求场景共1638个用例，指标为字段级F1乘以值相似度与合法JSON比例。厂商称得分0.834，高于其测试的Claude Opus 5（0.816）至GPT-5.6 Luna（0.741）；成本按单张L40S每小时2.24美元计，比API低6至147倍。需注意：对比均为厂商自测，未第三方复现；成本为自托管GPU时长估算，非对外售价；前沿模型均以低推理强度运行。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "很多公司每天收到大量发票、化验单、证件，真正想要的不是整页文字，而是其中几个关键数字和名字，再录入系统。过去要么写规则代码，要么调用大模型逐页处理，量大时又慢又贵。这个模型相当于一个专门练过“填表”的熟练工：你告诉它要哪几栏，它就照格式交回一份JSON，表里没有的栏留空，不瞎编。对普通人的影响是间接的：报销、挂号、入职登记等后台录入可能更快、更少出错，但前提是这类工具真被企业采用并验证可靠。需要冷静的是，跑分和成本都是厂商自己算的，实际效果取决于你的文档类型和部署条件，不能直接当成定论。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+      "image": "./news-images/8c0b2b6e2ade433f9a7f.png",
+      "imageAlt": "Dharma发布20亿参数文档字段提取模型相关图片"
+    },
+    {
+      "id": "e582a56b9edebb",
+      "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "TechCrunch AI",
+      "title": "谷歌AI政策引反弹 DuckDuckGo抢学校市场",
+      "summary": "谷歌近日告知学校可关闭Gemini，但若关闭搜索中的其他AI功能，学校将同时失去Google搜索使用权，引发教育界反弹。以隐私著称的搜索引擎DuckDuckGo随即向学校抛出橄榄枝，其CEO温伯格发布文档指导学校将默认搜索引擎切换为DuckDuckGo，公共事务负责人巴兹巴兹则公开批评谷歌“向学生强推AI”。谷歌回应称Gemini、Gemini Notebook和搜索将默认关闭，学校可逐项开启，并强调此举是给学校更多选择。争议核心在于谷歌搜索已深度嵌入AI概览与对话模式，学校难以完全剥离AI。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "事件反映AI进校园引发的控制权之争，谷歌以搜索捆绑AI，DuckDuckGo借机切入教育市场，可能改变学校搜索工具格局，也凸显用户对AI强制植入的抵触。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌向学校表示，可以关闭Gemini，但若同时关闭搜索中的其他AI功能，学校将一并失去Google搜索。此举引发教育界不满。DuckDuckGo迅速回应：CEO温伯格在社交平台发布操作文档，指导学校把默认搜索引擎换成DuckDuckGo，并称可联系获取帮助；公共事务负责人巴兹巴兹措辞更强，指责谷歌“向学生强推AI”，呼吁证明谷歌错了。谷歌随后澄清，Gemini、Gemini Notebook和搜索默认关闭，学校可按需逐项开启，称这是回应K-12学校对更多控制权的诉求。目前尚不确定有多少学校会实际切换，谷歌也未说明关闭AI功能与失去搜索的具体绑定细节。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方：谷歌像一家食堂，说你可以不吃新菜，但想撤掉新菜就得连米饭一起端走。学校想要“纯搜索、不带AI”的选项，谷歌却把搜索和AI捆在一起卖。DuckDuckGo趁机递上菜单：你可以只吃米饭，AI配菜想加再加。对普通人来说，这意味着学校在选工具时多了一个“可关AI”的备选，家长和老师对课堂上AI介入程度有了更多话语权。但别误会，DuckDuckGo自己也做AI，只是把开关交到用户手里。真正的看点是：当科技巨头把AI默认塞进日常工具，用户会不会用脚投票。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
+      "image": "./news-images/92e6f5ad55bc1879f3a5.png",
+      "imageAlt": "谷歌AI政策引反弹 DuckDuckGo抢学校市场相关图片"
+    },
+    {
+      "id": "8d6f6c8bc49c9d",
+      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "TechCrunch AI",
+      "title": "Meta收购AI编程初创公司Conductor",
+      "summary": "Meta确认收购2024年成立的AI编程初创公司Conductor，后者允许用户通过多个智能体在并行工作区协作开发软件。创始人Charlie Holtz称公司将加入Meta，并预告明年初推出新界面。Meta未披露交易金额。Conductor核心功能将暂时保留，但其云服务11月20日关闭并删除用户云端数据。Meta近期加速AI布局，已推出编程智能体Muse Code，其Muse智能体用户超1000万。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "Meta通过收购补齐智能体编程能力，反映大厂围绕AI编程工具的竞争加剧；云服务关停和数据删除直接影响现有用户，需关注迁移安排。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Meta确认收购AI编程初创公司Conductor，交易金额未披露。Conductor成立于2024年，去年夏天才推出核心产品，其平台可部署多个智能体，在云端、本地或手机上并行处理软件项目中相互隔离的部分；这些智能体并非自研，而来自Anthropic、OpenAI等主要实验室。创始人兼CEO Charlie Holtz在博客和X上宣布加入Meta，称明年初会有“新东西”，并期待与Meta首席AI官Alexandr Wang及Superintelligence Labs产品负责人Nat Friedman合作。Meta向TechCrunch确认收购但拒绝进一步置评。Holtz表示核心功能暂时照旧，但云服务将于11月20日关闭，随后删除用户云端数据。交易价格、团队整合方式及新界面细节仍不清楚。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Conductor理解成一个“包工头”：它自己不生产工人，而是调用Anthropic、OpenAI等家的AI工人，把一个大软件项目拆成几块，让多个AI同时开工、互不打架。Meta买下它，相当于把这位会调度AI工人的包工头招进自家工地，补上编程智能体这块短板。对普通人来说，短期最实际的影响是：如果你或你的团队正在用Conductor的云服务，11月20日后数据会被删除，需要提前备份或迁移；本地和手机端功能暂时还能用。长期看，大厂争相收购这类工具，意味着未来写软件时“指挥AI干活”会越来越常见，开发门槛可能进一步降低，但具体产品形态和收费方式目前仍是未知数。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Meta acquires AI coding startup Conductor",
+      "image": "./news-images/2e6ebf678e10da0c0193.webp",
+      "imageAlt": "Meta收购AI编程初创公司Conductor相关图片"
+    },
+    {
+      "id": "5112f3d519822a",
+      "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "TechCrunch AI",
+      "title": "Hugging Face谈开源AI商业化路径",
+      "summary": "TechCrunch于2026年11月4日发布报道，围绕开源AI模型日益主流化的趋势，采访了Hugging Face首席政策官兼战略高级副总裁。报道指出，企业、政府和初创公司正因低成本、可控性和灵活性而更多采用开源模型，但模型能力越强、越免费可得，公司如何从中获取价值成为核心问题。报道同时提到中国开源模型正在取得进展，美国参与者能否跟上受到关注。文章还列出初创公司在基于开源模型构建前需了解的工具、基础设施选择及权衡因素。需要说明的是，所给正文主要为活动推广和人物介绍，未披露具体财务数据或市场份额，相关商业化结论仍不确定。",
+      "category": "行业变化",
+      "importance": 55,
+      "why": "开源模型商业化是AI产业关键议题，涉及中美竞争与企业选型，但原文信息偏活动预告，缺乏具体数据支撑。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch在2026年11月4日的报道中，以Hugging Face为采访对象，讨论开源AI模型的商业化问题。报道称，开源模型正被企业、政府和初创公司更广泛采用，驱动力包括更低成本、更强控制力和更高灵活性。但随着能力更强的模型越来越免费可得，公司如何捕获价值成为焦点。报道还提到中国开源模型正在扩大影响力，并追问美国参与者能否保持竞争力。Hugging Face方面被问及初创公司在基于开源模型开发前应了解的事项，包括工具与基础设施选择以及相关权衡。不过，所给正文主要是活动推广和受访者个人介绍，没有给出具体营收、市场份额或模型性能数字，因此商业化路径的实际效果仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把开源AI模型想成免费发放的菜谱：谁都能照着做菜，餐馆很难靠卖菜谱本身赚钱。Hugging Face这类平台相当于菜谱集市，真正值钱的是帮人挑菜谱、配厨房、调口味和做售后的服务。报道的意思是，模型越免费，赚钱点就越往工具、部署、合规和支持上转移。对中国读者来说，另一个信号是国产开源模型正在海外获得存在感，这会加剧全球竞争。对普通人而言，短期影响是更多便宜甚至免费的AI功能会出现，但服务质量、数据安全和后续收费方式仍需观察，不能简单理解为“开源就等于永远免费好用”。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Open source AI is booming. Hugging Face explains who profits.",
+      "image": "./news-images/664660270c856cb1ed86.jpg",
+      "imageAlt": "Hugging Face谈开源AI商业化路径相关图片"
+    },
+    {
+      "id": "97689e4470033f",
+      "url": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "The Verge AI",
+      "title": "AT&T智能安防接入Gemini for Home",
+      "summary": "AT&T宣布其Connected Life智能家居安防系统与Google的Gemini for Home完成集成，成为首个接入Google Home Premium的安防产品。用户可通过自然语言搜索监控录像、获取摄像头事件的详细描述及每日活动摘要，并支持基于位置自动布防或撤防。相关AI功能仅对每月29.99美元的Connected Life专业监控套餐用户开放。AT&T去年12月与Google、Abode合作推出该系统，此次借助Google的Home APIs实现AI功能。ADT也暗示将引入类似功能。",
+      "category": "日常应用",
+      "importance": 55,
+      "why": "智能家居安防与生成式AI结合，是AI落地家庭场景的具体案例，但功能绑定高价订阅，短期影响范围有限。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AT&T宣布其Connected Life智能家居安防系统已与Gemini for Home集成，成为首个接入Google Home Premium的安防产品。集成后，Gemini可对摄像头捕捉的事件生成详细描述，例如谁送了包裹、放了几件；用户能用自然语言检索录像，如“昨晚是什么挖了院子”；还能查看室内外活动的每日摘要。AT&T同时新增按用户与家的距离自动布防或撤防的功能。上述AI功能仅限每月29.99美元的Connected Life专业监控套餐。该系统于去年12月由AT&T联合Google和Abode推出，此次通过Google的Home APIs实现。ADT也表示有意引入Gemini for Home功能，但时间与范围尚不明确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，你家门口的摄像头不再只录画面，而是配了个能看懂画面的AI助手：你问“谁把狗放出去的”，它去翻录像回答你。好处是查监控从拖进度条变成动嘴问，坏处是这能力不白给，得先买每月近30美元的监控套餐。对普通人来说，这更像安防厂商给高端订阅加的一个卖点，而不是马上能用的免费功能。它释放的信号是：AI正从聊天框走进家庭设备，但先落地的往往是付费服务。至于隐私——让AI分析你家进进出出的画面，值不值这个价，得自己掂量。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini for Home now plugs into AT&T’s smart security system",
+      "image": "./news-images/2c16faa667cabba3b9a3.jpg",
+      "imageAlt": "AT&T智能安防接入Gemini for Home相关图片"
+    },
+    {
+      "id": "09c40cbdb75966",
+      "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "Google Research",
+      "title": "谷歌推Agile Deliberation助主观分类",
+      "summary": "谷歌研究院提出Agile Deliberation框架，用于训练主观类别的图像分类器，如“健康食品”或内容审核中的点击诱饵识别。该框架将定义过程拆为概念范围界定与概念迭代两阶段，由视觉语言模型主动挑出边界模糊图片，引导用户澄清意图，再自动优化提示词。研究团队开展18场、每场1.5小时的真人实验，对比零样本、自动协作和人工调参三种基线，结果显示新框架的分类器表现更优，用户认知负担和焦虑显著降低。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "该工作把主观概念定义变成人机迭代对话，而非静态标注，对内容审核、图像策展等依赖模糊边界的应用有直接参考价值，也展示了提示词自动优化与主动学习结合的新路径。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究院发布Agile Deliberation框架，针对“健康食品”“鼓舞人心的艺术品”等主观图像分类任务。传统流程要求标注者事先有清晰稳定的类别定义，但主观概念的边界常随文化、政策和个人理念变化。该框架分两步：先让用户把大概念拆成子类和明确排除项，再由视觉语言模型主动检索语义上处于边界的图片，请用户判断并反馈，反馈进入自动提示词优化循环。团队称在18场真人实验中，该框架的分类器优于零样本和人工调参基线，用户压力更低。不过实验规模有限，论文与代码已开源，尚未披露跨领域大规模部署结果。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去教AI认“健康食品”，像让一个人凭空写完整规则再闭眼打分，规则没想全就开工，后面越改越乱。新方法像请了个会找茬的助手：它先帮你把大方向拆开，再专门挑水果奶昔这种“算不算健康”的模糊照片问你。你只需说像不像，系统自动把判断写进规则。好处是普通人不用学写提示词，也不用担心改一处坏一片。对内容审核、图片策展等岗位，这意味着定义标准更省力，但最终边界仍由人拍板，AI只是把隐藏分歧提前摆到桌面上。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Agile Deliberation: How AI helps humans define the gray areas",
+      "image": "./news-images/2e6eedee60412431eaf0.jpg",
+      "imageAlt": "谷歌推Agile Deliberation助主观分类相关图片"
+    },
+    {
+      "id": "b531b56f4ce768",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "The Verge AI",
+      "title": "高通押注数据中心，手机销量下滑两成",
+      "summary": "高通在2026年第四季度财报电话会上披露，受智能手机销量较2025年下滑约20%影响，公司将AI数据中心作为新增长点，依托此前与亚马逊、Meta等伙伴的合作。公司预计2027年第一季度数据中心收入约6.5亿美元，2027年底达50亿美元，2029年达150亿美元，并称数据中心最终将占其业务约30%。2026年公司总营收为104亿美元，上述目标若实现将显著改变收入结构，但预测能否兑现仍不确定。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "手机主业萎缩迫使芯片巨头转向AI算力，30%的业务占比目标将重塑高通收入结构，也反映数据中心需求的持续外溢。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "高通在2026年第四季度财报电话会上承认，智能手机销量较2025年下滑约20%，拖累其基本盘。公司随即把AI数据中心列为重点方向，依托今年早些时候与亚马逊、Meta等宣布的合作推进。高通给出的路线是：2027年第一季度数据中心收入约6.5亿美元，2027年底升至50亿美元，2029年达150亿美元，并预计数据中心最终占公司业务约30%。作为参照，高通2026年总营收为104亿美元。需要指出的是，这些均为公司自身预测，尚无已实现的收入数据支撑，合作的具体规模与落地节奏也未披露，能否按期兑现存在不确定性。",
+          "text_note": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "高通过去靠卖手机芯片吃饭，如今手机不好卖，它想改去给AI算力“修路供电”。打个比方，原来它是给手机造发动机的，现在想给大型机房造发动机。对普通人来说，短期感受不到直接变化，但长期看，如果高通真把三成生意搬到数据中心，它的收入就不再随手机换机周期大起大落，芯片和算力价格也可能受更多厂商竞争影响。不过50亿、150亿美元都是画出来的饼，能不能烤熟要看客户是否真下单，别把预测当既成事实。",
+          "text_note": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Qualcomm is betting big on data centers as smartphone sales sink",
+      "image": "./news-images/524cd94e0968b89a2027.jpg",
+      "imageAlt": "高通押注数据中心，手机销量下滑两成相关图片"
+    },
+    {
+      "id": "988e33cedf7304",
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+      "sources": [
+        {
+          "name": "MIT Technology Review",
+          "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "MIT Technology Review",
+      "title": "得州民主党胜选或收紧AI数据中心",
+      "summary": "美国得州中期选举后民主党全面掌权，新当选州长和参议员在竞选中将AI数据中心作为核心议题，州长已指示暂停发放相关许可。得州近年是AI数据中心建设重镇，在建项目规模庞大，但银行放贷趋严、地方与州级审批权分散，实际限制仍存变数。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "得州是AI算力扩张的关键地区，政策转向可能拖慢大型数据中心项目，并影响电力成本与地方审批博弈，对AI基础设施投资节奏有直接冲击。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "得州选举中民主党人赢得参议员和州长职位，并24年来首次控制州众议院。当选者竞选时频繁讨论数据中心议题，州长候选人主张暂停新建。现任州长在9月已指示监管机构暂停数据中心许可，开发商称州长办公室不再回复邮件。得州在建项目规模巨大，如规划1,820兆瓦的Stargate Frontier和6,400兆瓦的Nexus Hubbard。但审批权分散在市、县和州多个层级，地方官员可能抵制州级限制，支持民主党的建筑工会也可能反对禁令，实际执行存在不确定性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把得州想象成AI公司抢着盖厂房的黄金地段，过去审批快、阻力小。现在换了一批主张“先别盖”的管家，新项目可能被卡，老项目也可能拖慢。对普通人来说，这未必是坏事：数据中心耗电大，可能推高电费，选民正是担心这点才投票支持限制。但AI公司扩张计划会受影响，算力成本可能上升，最终可能传导到使用AI服务的价格和速度上。不过管家不止一个，市、县、州各有话语权，禁令能不能真正落地还要看后续扯皮。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+      "image": "./news-images/8fccc740592e35bcf67a.jpg",
+      "imageAlt": "得州民主党胜选或收紧AI数据中心相关图片"
+    },
     {
       "id": "14409ffa4e7706",
       "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
