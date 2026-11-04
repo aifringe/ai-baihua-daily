@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T03:59:49.621045+00:00",
-  "lastCheckedAt": "2026-11-04T03:59:49.621045+00:00",
+  "updatedAt": "2026-11-04T12:42:02.612327+00:00",
+  "lastCheckedAt": "2026-11-04T12:42:02.612327+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -319,6 +319,37 @@
       "originalTitle": "Agentic cheminformatics with Google Antigravity",
       "image": "./news-images/d1616123fbdf580a4cd4.webp",
       "imageAlt": "谷歌Antigravity化学技能加速药物发现相关图片"
+    },
+    {
+      "id": "a6f54d325d3163",
+      "url": "https://huggingface.co/blog/transformers-mic",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/transformers-mic"
+        }
+      ],
+      "publishedAt": "2026-11-03",
+      "source": "Hugging Face",
+      "title": "Hugging Face推模型集成契约防回归",
+      "summary": "2026年7月，Transformers为T5启用SDPA注意力后，UMT5解码器可偷看未来token，该缺陷在主干代码中潜伏近两个月才被修复。Hugging Face于11月3日发文介绍“模型集成契约”（MIC）：将真实检查点缩成小模型夹具，配可运行示例与人工审核基线，在廉价CPU上跑快速集成测试。回放五个月提交时，小UMT5夹具成功标记该回归。目前MIC在CI中只报告失败、不阻断合并，覆盖率与误报率仍待评估。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "揭示主流模型库测试体系的真实盲区，并给出可复用的轻量回归方案，对依赖Transformers的开发者有直接参考价值，但尚未成为强制门槛。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face博客披露，2026年7月30日Transformers为T5启用PyTorch的SDPA注意力，副作用是UMT5解码器能关注未来token，训练时可“偷看”答案；程序不崩溃，缺陷在主干停留至9月28日修复。作者称完整集成测试需大量GPU、难以在每个PR运行，于是把真实检查点缩成小夹具：UMT5夹具仅66MB，原检查点1227MB，保留各类层与分词器文件，在CPU上跑“模型集成契约”，含夹具、用法示例和人工审核基线。回放五个月提交时，该夹具在缺陷引入的每个提交上都报警，对数概率偏差1.22、训练损失约0.20；但契约须走SDPA默认路径，仅eager注意力会漏检。截至11月1日，CI中该任务只报失败、不阻断合并。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把大模型想成一台整机，过去每次改代码都要把整机搬上昂贵测试台，排队太久，等发现毛病时坏代码早已进主线。Hugging Face的做法是照整机图纸造一台巴掌大的样机，零件种类一个不少、只是尺寸缩小，再配一份“标准答案”：输入固定问题，输出必须和人工审核过的记录一致，不一致就报警。这次UMT5的毛病正是靠这台小样机在回放中抓出来的。对普通人的影响是间接的：你用的翻译、摘要等模型可能更少带着隐蔽错误上线；但眼下它只是“提醒”而非“拦门”，且小样机未必复现所有真实故障，所以还不能把它当成万能保险。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Transformers Model Integration Contracts",
+      "image": "./news-images/43f5b39bbf4787a331cf.png",
+      "imageAlt": "Hugging Face推模型集成契约防回归相关图片"
     },
     {
       "id": "981c51fa20c4c2",
