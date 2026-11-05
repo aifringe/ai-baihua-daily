@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T22:49:52.061888+00:00",
-  "lastCheckedAt": "2026-11-04T22:49:52.061888+00:00",
+  "updatedAt": "2026-11-05T04:21:17.919057+00:00",
+  "lastCheckedAt": "2026-11-05T04:21:17.919057+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -106,6 +106,37 @@
       "imageAlt": "AWS 详解生产级 AI 智能体上下文工程四层实践相关图片"
     },
     {
+      "id": "6fbaab12e7dcb7",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-indegene-is-modernizing-and-scaling-enterprise-data-quality-in-life-sciences/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-indegene-is-modernizing-and-scaling-enterprise-data-quality-in-life-sciences/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "AWS AI",
+      "title": "Indegene在AWS上构建LLM数据质量代理",
+      "summary": "生命科学服务商Indegene在AWS官方博客中介绍，其NEXT统一数据平台内构建了由大语言模型驱动的数据质量代理。该代理结合企业内部知识库与外部参考知识库，可自动生成上下文感知的数据质量规则，并产出可运行的SQL和Python代码，经人工审核后存入中央规则库。方案基于Amazon Bedrock、Strands Agents和AgentCore，面向受监管的生命科学场景。目前披露的是架构与流程说明，尚无第三方验证的量化效果数据。",
+      "category": "行业变化",
+      "importance": 55,
+      "why": "展示生成式AI在受监管行业数据治理中的落地路径，对关注企业级AI应用与数据质量自动化的读者有参考价值，但缺乏独立效果验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS官方博客刊文介绍Indegene Limited在NEXT统一数据平台中构建的数据质量代理。文章称，传统数据质量规则分散在SQL脚本、管道代码和表格中，技术规则与业务规则分属不同团队维护，新数据集接入需反复人工剖析、定义、开发和验证。该代理通过两个知识库提供上下文：内部知识库汇集业务术语表、数据字典、SOP、已批准规则和历史异常，经RAG检索；外部知识库定期更新标准框架与参考值。工作流从选择数据源、剖析数据、检测异常，到生成列级、表级或自定义查询规则建议，再由用户审核，代理生成并验证SQL与Python代码，最终存入中央规则库。技术栈包括Amazon Bedrock、Strands Agents和AgentCore，并继承AWS安全与审计控制。文章未给出规则准确率、效率提升幅度等量化结果，也未说明客户实际部署规模。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把数据质量规则想成小区门禁：过去每来一栋新楼，保安都要手工重写一遍门禁清单，技术保安管格式对不对，业务保安管这人该不该进，两套清单还常对不上。这个代理相当于给保安配了一个熟悉小区规章的助手，它翻看内部手册和外部标准，先草拟门禁清单，人确认后再自动写成可执行的程序。对普通人的影响是间接的：药企和医疗数据平台若能把数据校验做得更一致，商业分析、患者相关流程中的错误可能减少，但前提是人工审核环节真正把关。文章来自厂商合作方，效果仍需独立验证，读者不宜把架构描述当成已证实的效率提升。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Indegene is modernizing and scaling enterprise data quality in life sciences",
+      "image": "./news-images/e2c6b7b57b600d3bea37.png",
+      "imageAlt": "Indegene在AWS上构建LLM数据质量代理相关图片"
+    },
+    {
       "id": "711c85cb75b94c",
       "url": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/",
       "sources": [
@@ -199,6 +230,37 @@
       "imageAlt": "谷歌AI政策引反弹 DuckDuckGo抢学校市场相关图片"
     },
     {
+      "id": "dca8692856b150",
+      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "TechCrunch AI",
+      "title": "谷歌威胁停用校园搜索 逼学校接受AI",
+      "summary": "谷歌宣布，使用其K-12教育软件的学校若不选择启用Gemini等AI工具，学生将无法使用谷歌搜索，只会看到学校停用提示。谷歌称搜索与AI已深度整合，并强调AI产品默认关闭、学校可逐项开启。此举引发强烈反弹：参议员桑德斯指责其为“勒索”，布卢门撒尔批评谷歌更在意强推Gemini，前FTC主席汗认为这凸显不受监管的垄断者控制基础服务的危险。谷歌回应称新政策是给学校更多选择与控制，并正开发引导学生自行解题的“引导式学习”功能。",
+      "category": "行业变化",
+      "importance": 78,
+      "why": "大型平台把基础搜索与AI捆绑，牵动教育场景的公平与选择权，也再次点燃反垄断与未成年人使用AI的争议，影响面广。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌宣布，使用其K-12教育软件的学校若不在AI工具上选择启用，学生将无法使用谷歌搜索，而会看到学校设置的不可用提示。谷歌教育副总裁菲利普斯对媒体称，搜索与AI已深度整合。谷歌随后澄清，Gemini、Gemini Notebook和搜索默认关闭，学校可分别开启，并称这是回应教育者希望获得更多控制权。反弹迅速：桑德斯称这是“勒索”，布卢门撒尔批评谷歌更在意强推Gemini，前FTC主席汗指其涉嫌利用搜索垄断地位施压，纽约市长马姆达尼称没有公司应决定如何教孩子。谷歌还表示正为校园账户开发“引导式学习”，引导学生自行解题而非直接给答案。目前该功能上线时间、具体适用范围及学校实际可选组合仍不明确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它想成：学校想关掉食堂里的“智能点餐机”，结果供应商说那连普通窗口一起关。谷歌把搜索和AI打包，学校要么整套接受，要么连查资料的基础功能都用不了。对依赖Chromebook和谷歌教育套件的学校来说，换搜索引擎并不容易。争议的核心不是AI好不好，而是谁有权替课堂做决定：是学校和教育者，还是掌握基础设施的公司。对普通家庭的影响在于，孩子在校查资料的方式可能被平台策略左右；若“引导式学习”真能启发思考而非直接给答案，或许能缓解抄答案的担忧，但其效果和边界仍待观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
+      "image": "./news-images/f389386358471f896c86.jpg",
+      "imageAlt": "谷歌威胁停用校园搜索 逼学校接受AI相关图片"
+    },
+    {
       "id": "8d6f6c8bc49c9d",
       "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
       "sources": [
@@ -261,6 +323,37 @@
       "imageAlt": "Hugging Face谈开源AI商业化路径相关图片"
     },
     {
+      "id": "efff75d2c4af86",
+      "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "TechCrunch AI",
+      "title": "Hugging Face政策主管谈开源AI成本与风险",
+      "summary": "TechCrunch播客采访Hugging Face首席政策官Irene Solaiman，讨论企业、政府和初创公司转向开源AI模型的趋势。她谈到开源模型成本更低、控制权更强，但也涉及何时不该使用最强模型、免费模型如何变现、美国是否需要英伟达等资金雄厚者打造开源前沿模型以应对中国开源模型，以及近期针对开源AI平台的攻击带来的安全与开放平衡难题。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "开源模型正从技术圈走向企业和政府采用，采访触及成本、变现、中美竞争与安全四个关键议题，对判断开源AI生态走向有参考价值，但内容为观点讨论而非具体数据或产品发布。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch的Equity播客于2026年11月4日发布一期节目，主持人Rebecca Bellan对话Hugging Face首席政策官兼战略高级副总裁Irene Solaiman。节目围绕开源AI模型展开：越来越多企业、政府和初创公司因成本更低、控制权更强、灵活性更高而采用开源模型；讨论还包括初创公司在基于开源模型开发前应如何选择工具和基础设施、免费模型由谁赚钱、美国是否需要英伟达这类资金雄厚的公司打造能与中国的开源前沿模型竞争的产品，以及近期针对开源AI平台的攻击如何在不封闭生态的前提下保障安全。节目未给出具体成本数字或攻击细节，相关判断多为嘉宾观点。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "开源模型就像公开菜谱：谁都能照着做菜，省钱又自由，但餐厅靠什么赚钱、菜谱被坏人利用怎么办，都是现实问题。对普通人来说，这意味着未来更多AI服务可能更便宜、更可定制，数据也不必全交给大公司；但免费背后仍有商业和安全代价。节目提醒，如果中国开源模型成为全球默认选择，美国生态可能失去话语权，这也是为何有人主张由大厂出资做开源前沿模型。对开发者和企业，选开源不是零成本，工具、维护和安全都得算进去。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
+      "image": "./news-images/35b805bb8b9afc6a99ff.jpg",
+      "imageAlt": "Hugging Face政策主管谈开源AI成本与风险相关图片"
+    },
+    {
       "id": "97689e4470033f",
       "url": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
       "sources": [
@@ -290,6 +383,37 @@
       "originalTitle": "Gemini for Home now plugs into AT&T’s smart security system",
       "image": "./news-images/2c16faa667cabba3b9a3.jpg",
       "imageAlt": "AT&T智能安防接入Gemini for Home相关图片"
+    },
+    {
+      "id": "56101ee27feec7",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "The Verge AI",
+      "title": "Nothing预告无屏AI设备将于12月发布",
+      "summary": "Nothing CEO裴宇在X上宣布，公司首款AI原生设备将于12月发布，距其公布AI原生设备与AI操作系统计划仅一年多。他未透露产品形态，仅强调该设备没有新屏幕、也不可能做成App，并配发一张带“NOTHING(R)”字样和黑色圆角的预告图。此前有传闻称Nothing将推出两副AI智能眼镜（其中一副无摄像头），并转型为AI优先公司、转向AI配件。裴宇还评论称，全行业都在寻找AI的“iPhone时刻”，但今天去找AI的iPhone是死路。",
+      "category": "行业变化",
+      "importance": 55,
+      "why": "Nothing从手机转向无屏AI硬件，反映消费电子厂商押注新形态；但产品细节、功能与定价均未公布，实际影响待发布后验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Nothing CEO裴宇在X发帖称，公司首款AI原生设备将于12月出货，称其为“工具”，但带有Nothing一贯的个性与用心，并明确“没有新屏幕”，也“不可能是一个App”。配图仅显示“NOTHING(R)”字样和一块模糊的黑色圆角，未展示产品全貌。裴宇未说明设备形态、功能、价格或上市地区。此前有传闻称Nothing计划推出两副AI智能眼镜，其中一副不带摄像头，另有消息称公司正转型为AI优先企业、转向AI配件。裴宇还提到行业正追逐“AI的iPhone时刻”，但认为今天去找AI的iPhone是死路。上述传闻均未获官方确认，设备具体形态仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Nothing想做的不是又一块屏幕，而是一个不带屏、靠AI干活的小工具，类似把助手装进口袋而不是装进手机。对普通人来说，这意味着未来可能多一种不用盯着屏幕的交互方式，比如语音或手势；但眼下连它长什么样、能干什么、卖多少钱都不知道，更像一张预告海报。裴宇说别急着找“AI界的iPhone”，意思是这类产品还没到定型的时候。对消费者，先别掏钱，等12月真机亮相再看它是不是刚需；对行业，这代表手机厂商开始试探屏幕之外的AI硬件赛道。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Nothing teases a screen-free AI device ahead of launch next month",
+      "image": "./news-images/748d1417eaa2a896a79c.jpg",
+      "imageAlt": "Nothing预告无屏AI设备将于12月发布相关图片"
     },
     {
       "id": "09c40cbdb75966",
@@ -385,6 +509,37 @@
       "originalTitle": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
       "image": "./news-images/8fccc740592e35bcf67a.jpg",
       "imageAlt": "得州民主党胜选或收紧AI数据中心相关图片"
+    },
+    {
+      "id": "0beed25ab06a25",
+      "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results"
+        }
+      ],
+      "publishedAt": "2026-11-04",
+      "source": "The Verge AI",
+      "title": "数据中心成中期选举焦点，多地投票限制开发",
+      "summary": "2026年美国中期选举中，数据中心成为地方政治焦点。NBC民调显示76%受访选民反对社区建数据中心。全国45项地方公投中至少33项通过限制开发，缅因州韦尔斯市批准180天暂停令，俄亥俄州多市禁止25MW以上项目。得州、密歇根州等当选官员支持暂停令。但部分胜选者仅主张有限监管，数据中心 backlash 与候选人胜负的因果关系尚不明确。",
+      "category": "行业变化",
+      "importance": 85,
+      "why": "选举结果直接改变数据中心扩张的政策环境，涉及AI基础设施成本与地方能源负担，影响面广且具持续性。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年美国中期选举期间，数据中心开发成为多地选票议题。NBC选举日民调显示，76%受访选民反对在本地建设数据中心。全国45项地方公投中，截至周三上午至少33项结果将限制开发：缅因州韦尔斯市通过180天大型数据中心暂停令，追溯至2026年6月中旬；俄亥俄州多市投票禁止25MW以上项目；堪萨斯州埃尔多拉多市禁止峰值电力负荷超10MW项目十年。得州当选州长希诺霍萨支持全州暂停令，密歇根州当选参议员埃尔-赛义德呼吁暂停新开发。但部分胜选者仅主张有限监管，如佛州当选州长唐纳德斯反对全面禁令。数据中心争议与候选人胜负的直接因果关系尚不明确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，AI公司建数据中心要用电用水，附近居民觉得吵、费电、推高电价，于是用选票说“不”。这次选举像一场地方公投：谁对数据中心强硬，谁就容易拿到票。结果是一批支持暂停或限制的官员上台，未来建数据中心会更难、更慢、更贵。对普通人来说，短期可能看到电价和用水争议被摆上台面，地方有更多发言权；长期看，AI服务扩张速度可能受影响，但具体影响多大还不好说，因为有些当选者只是嘴上强硬，实际政策未必一刀切。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Data centers lost the midterms",
+      "image": "./news-images/d8ba49ef0b824a759fa8.jpg",
+      "imageAlt": "数据中心成中期选举焦点，多地投票限制开发相关图片"
     },
     {
       "id": "14409ffa4e7706",
