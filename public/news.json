@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-05T04:21:17.919057+00:00",
-  "lastCheckedAt": "2026-11-05T04:21:17.919057+00:00",
+  "updatedAt": "2026-11-05T12:52:24.487532+00:00",
+  "lastCheckedAt": "2026-11-05T12:52:24.487532+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -72,6 +72,68 @@
     }
   ],
   "articles": [
+    {
+      "id": "788aca0b86fe44",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "The Verge AI",
+      "title": "四大科技巨头AI基建支出超7200亿美元",
+      "summary": "亚马逊、微软、Alphabet、Meta在最新财报电话会上披露，今年资本支出合计至少7200亿美元，主要用于AI数据中心，并计划2027年继续加码。但AI尚未带来可观回报：Alphabet承认AI搜索查询变现率偏低，拖累搜索广告增速从17%降至12%，股价单日跌13%。Anthropic季度收入170亿美元，算力成本却达175亿美元。微软因第三方产能延迟支出低于预期，随后发行250亿美元债券。",
+      "category": "行业变化",
+      "importance": 88,
+      "why": "四大巨头AI资本支出规模空前却回报未现，谷歌核心搜索业务被自家AI产品侵蚀，标志AI投资进入需向华尔街证明回报的阶段，影响行业融资与估值逻辑。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "亚马逊、微软、Alphabet、Meta在季度财报电话会上表示，今年资本支出合计至少7200亿美元，多数投向AI基础设施，未来数年另有至少1万亿美元支出承诺。Alphabet首席商务官承认，AI Mode查询变现率较低，拖累搜索广告收入增速从去年同期的17%降至12%；Alphabet股价单日下跌13%。亚马逊CEO称2027年支出将“明显更多”，Meta预计算力效率提升十倍但需大量投入。Anthropic季度收入170亿美元，算力成本175亿美元，并承诺近9000亿美元未来算力支出。微软因第三方产能延迟，季度资本支出452亿美元低于预期，随后发行250亿美元债券。数据中心监管政策因中期选举存在不确定性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像四家巨头合伙开了一家巨型工厂，机器越买越多、厂房越盖越大，但产品还没开始稳定赚钱。谷歌的情况更尴尬：新推出的AI搜索很受欢迎，可它带来的广告收入比老搜索少，等于新业务在抢老业务的饭碗。对普通人来说，短期可能看到更多免费AI功能，但长期若巨头把成本转嫁，订阅涨价、广告变多都有可能；数据中心扩张还可能推高当地电价、引发社区反对。华尔街现在盯的不是“你花了多少”，而是“什么时候能赚回来”，这个压力会决定接下来AI产品是继续免费烧钱，还是加速收费。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Big Tech’s big AI buildout will not end until someone stops it",
+      "image": "./news-images/801b6539b61ce8418046.jpg",
+      "imageAlt": "四大科技巨头AI基建支出超7200亿美元相关图片"
+    },
+    {
+      "id": "c65c7708e93995",
+      "url": "https://huggingface.co/blog/phonon-tts",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/phonon-tts"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "Hugging Face",
+      "title": "Phonon端侧语音模型开源并登顶榜单",
+      "summary": "2026年11月5日，Gradium团队在Hugging Face发布博客，回顾两周前开源的端侧文本转语音模型Phonon。该模型无需服务器和网络，文本不出设备，提供约65MB和75MB两种规格，支持英法德西葡五种语言及百余种内置音色。Phonon 31m采用Apache 2.0许可可商用，40m多语言版为非商用许可。团队称其在Hugging Face开放TTS榜单的德语、西班牙语可懂度排名第一，各评测语言均进前三，CPU流式首音延迟居首，两周下载超20万次。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "端侧小模型在可懂度和首音延迟上比肩大模型，且开放权重可商用，降低了语音应用的部署门槛与隐私风险，对开发者和终端用户体验都有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Gradium团队发布博客，介绍其两周前开源的端侧TTS模型Phonon。模型完全在本地运行，不依赖网络，用户输入文本留在设备上。发布两个规格约65MB和75MB，覆盖英语、法语、德语、西班牙语和葡萄牙语，内置音色超百种，并支持声音克隆与文本描述生成音色。许可方面，Phonon 31m为Apache 2.0可免费商用，其余模型为CC BY-NC仅限非商用，商用按用户数计价。团队称在Hugging Face开放TTS榜单上，德语和西班牙语可懂度第一，所有评测语言进前三，CPU流式首音延迟居首。官方还提供ptts推理框架，支持CPU、GPU、NPU等十余种后端，并已集成进Transformers。博客称首两周下载超20万次。上述榜单排名与下载量均为团队自述，尚无独立核实。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去用语音合成，基本是把文字发到云端服务器，等它念完再传回来，既依赖网络，也意味着你的内容离开了设备。Phonon相当于把一个小型播音员塞进手机、手表甚至浏览器标签页里，断网也能开口，你说的话不用出门。它体积只有几十兆，却号称念得清楚、反应快，还能换声音。对普通人来说，最直接的好处是离线导航、健身计数、朗读文章这类场景不再怕没信号，隐私顾虑也小一些。对开发者来说，31m版本可免费商用，做产品时不必先谈云服务合同。不过多语言版本仍限非商用，想用于商业项目需要留意授权，别把免费当成了随便用。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+      "image": "./news-images/8a343fedcefce78fb383.png",
+      "imageAlt": "Phonon端侧语音模型开源并登顶榜单相关图片"
+    },
     {
       "id": "d2290c5d3e5ab0",
       "url": "https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/",
