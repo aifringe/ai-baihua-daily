@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-05T12:52:24.487532+00:00",
-  "lastCheckedAt": "2026-11-05T12:52:24.487532+00:00",
+  "updatedAt": "2026-11-05T22:49:41.062751+00:00",
+  "lastCheckedAt": "2026-11-05T22:49:41.062751+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -73,6 +73,202 @@
   ],
   "articles": [
     {
+      "id": "7d05777f3cb4eb",
+      "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "TechCrunch AI",
+      "title": "Meta警告中期选举反数据中心情绪或拖慢AI扩张",
+      "summary": "2026年美国中期选举后，Meta总裁Dina Powell McCormick在WSJ科技会议上表示，民主党胜选与地方反数据中心情绪升温，将使公司建设数据中心更难。她称数据中心是AI最直观的载体，社区抵触背后是公众对AI整体的不安，行业未充分解释投资益处。Meta目前在23个州有数据中心，其中5个规划为1吉瓦以上项目。她称未来项目将面临更多审查，需证明对当地有实际好处；即便AI消费级代理Muse未达预期，已建算力也可对外出租变现。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "选举政治与社区抵触正成为AI基础设施扩张的现实约束，Meta公开承认扩张难度上升，反映算力建设从技术问题转向社会许可问题，影响行业节奏与成本。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "在WSJ科技会议上，Meta总裁Dina Powell McCormick称，中期选举中民主党获胜后，企业建设数据中心将更困难。她表示，反数据中心情绪与公众对AI的整体观感相关，数据中心是AI“可见的化身”，社区容易产生排斥。Meta称已在23个州运营数据中心，其中5个规划为1吉瓦及以上项目，包括得州一处。她提出成功项目需Meta自付电费、将税收盈余投向教师和急救人员、雇佣本地劳动力并争取两党支持。她预计未来项目将面临更多审查，需衡量当地居民是否真正欢迎。她同时称，公司每天收到租用算力的询价，即使AI代理Muse未达预期，算力仍可变现。报道未给出具体受影响项目数量或投资金额，相关表述来自Meta单方。",
+          "text_len": 286
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把数据中心想成AI的“发电厂”：训练和运行大模型都要大量电力和机房，但它占地、耗电、有噪音，邻居未必欢迎。过去企业觉得把机房建起来就行，现在选民会用选票表达不满，政客也愿意打“反机房”牌，于是建厂从“有钱就行”变成“先过社区这一关”。对普通人来说，这意味着未来AI服务扩张可能变慢、成本上升，但地方谈判也可能带来更多就业、税收和电费承担承诺。Meta的算盘是：就算自家AI产品没火，机房算力也能租给别人赚钱。真正不确定的是，这种“先争取社区同意”的模式能否在更多州复制，以及选举政治会不会让项目审批周期明显拉长。",
+          "text_len": 268
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Meta warns that election backlash against data centers could make AI expansion harder",
+      "image": "./news-images/8f99314e934aa862d568.jpg",
+      "imageAlt": "Meta警告中期选举反数据中心情绪或拖慢AI扩张相关图片"
+    },
+    {
+      "id": "0f94978320f209",
+      "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/"
+        },
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "TechCrunch AI / The Verge AI",
+      "title": "OpenAI推网络安全模型 攻防能力引争议",
+      "summary": "2026年11月，OpenAI发布面向网络安全的新模型。据TechCrunch报道，开发者借助其模型两小时内发现Ubuntu服务器严重漏洞，Debian已修补；OpenAI称该模型还协助在Linux内核发现948个潜在问题、在Firefox发现81个未知漏洞。The Verge称新模型为GPT-6 Cyber，越界测试违规率从约5%降至1%以下，ExploitGym得分48.5%。但模型被列为最高风险级，且研究者称其能力曾被削弱，攻防双方获取门槛不对等引发担忧。",
+      "category": "安全与规则",
+      "importance": 82,
+      "why": "前沿模型正被直接用于挖掘真实系统漏洞，攻防能力与访问权限的失衡将重塑网络安全格局，影响关键基础设施与普通用户。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI推出面向网络安全的新模型，并向Daybreak Red项目成员开放。TechCrunch报道，Charge Robotics联合创始人Max Justicz用GPT 5.6 Sol在约两小时内发现Ubuntu服务器代码中的严重漏洞，已报告Debian并获修补，暂无被利用证据。OpenAI称该模型协助扫描Linux内核948个潜在问题、在Firefox发现81个未知漏洞。The Verge称新模型为GPT-6 Cyber，越界测试违规率低于1%，ExploitGym得分48.5%，被列为最高风险级。但两家媒体对模型名称与版本表述不一，且Justicz称Daybreak Blue能力曾被削弱，实际攻防效果仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这理解成：AI从“会写代码的助手”变成了“会找门锁漏洞的开锁匠”。过去找漏洞要专家花几周，现在普通人花几千美元订阅、把代码丢给模型，两小时就可能挖出大洞。好处是防守方能抢先补墙；坏处是坏人也能用同类工具，甚至用限制更少的开源模型。对普通人来说，电网、水务、常用软件都可能被更快发现漏洞，补丁速度能否跟上决定风险。OpenAI一边开放工具一边设门槛，但研究者抱怨防守方被“绑住一只手”，这场攻防赛跑才刚开始。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "OpenAI released a new cybersecurity model. Is that enough?",
+      "image": "./news-images/48306e7da3a11e8acde5.webp",
+      "imageAlt": "OpenAI推网络安全模型 攻防能力引争议相关图片"
+    },
+    {
+      "id": "e0773151ab5d42",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai/"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "AWS AI",
+      "title": "亚马逊用视觉语言模型评估A+内容质量",
+      "summary": "亚马逊公开一套基于SageMaker AI的A+商品页内容质量评估方案：将整页渲染为单张快照，由视觉语言模型按四个维度打分，再叠加OCR提取的文本密度、间距等可读性信号，用CatBoost分类器融合预测专家标注。在约1100页留出集上，融合模型准确率0.94、F1为0.95，高于仅用视觉语言模型的0.89和0.90。方案还用SHAP解释评分依据，向卖家给出改进建议。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "展示了多模态模型与轻量分类器融合做内容质量审核的工程路径，对电商内容治理和卖家运营有直接参考价值，但属企业技术博客披露，非行业标准。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "亚马逊在其AI技术博客中介绍，Amazon Marketplace用Amazon SageMaker AI搭建A+内容质量评估流水线。做法是把含图文视频的完整商品页渲染成一张快照，交给视觉语言模型按视觉叙事、功能呈现、A+布局、转化优化四个维度各打0到10分并给出理由；同时用OCR提取文本块位置，计算文本密度、字符密度、间距和整体可读性四项指标。八个特征输入CatBoost分类器，训练标签来自一名电商营销专家和四名标注员对5478个页面的独立评级，标注者与共识标签的一致性在0.845至0.915之间。在20%留出集上，融合模型准确率0.94、F1为0.95，仅视觉语言模型为0.89和0.90，仅OCR为0.82和0.83。博客称再用SHAP定位拉低评分的特征，生成改进建议。需注意这是企业单方披露，未提供独立复现或线上效果数据，实际部署范围与卖家反馈尚不明确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套系统想成一位看整页而不是逐张挑刺的质检员：单看每张图、每段字都没毛病，但把页面拼起来看，可能文案说大容量、配图却是小杯型，或者场景图排在产品主图前面，顾客先看到厨房才看到商品。视觉语言模型负责这种整体观感，OCR负责挑字太挤、行距太密这类细节，最后一个小分类器像裁判综合两边意见，给出高低质量判断，并指出哪一项最拖后腿。对普通消费者，意味着商品页可能更连贯、更好读；对卖家，意味着收到的不只是分数，还有具体改哪里的提示。不过这套评分是否公平、会不会误伤小品牌，目前只有亚马逊自己的数据支撑，效果仍需观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Amazon Marketplace evaluates content quality with Amazon SageMaker AI",
+      "image": "./news-images/f71f847d26d8e1906dad.png",
+      "imageAlt": "亚马逊用视觉语言模型评估A+内容质量相关图片"
+    },
+    {
+      "id": "27b87d65d3f994",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "sources": [
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "Google AI",
+      "title": "谷歌发布Gemini Omni 1.2 Flash视频模型",
+      "summary": "谷歌DeepMind于2026年11月5日发布Gemini Omni 1.2 Flash视频生成模型，并首次实现全面可用。新版本将原生视频时长从10秒提升至15秒，支持3至15秒按秒指定时长，新增多轮对话式编辑、更强的参考图一致性和更自然的语音口型同步。价格较1.1版下降30%，720p视频为每秒0.07美元。模型已上线Gemini API、Google Cloud、Flow、Google Vids等平台，输出带SynthID水印。谷歌同时承认快速运动、复杂物理等场景仍在改进中。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "视频生成时长、一致性和成本是当前AI视频商业化的关键瓶颈，此次升级直接降低企业批量制作视频的门槛，并首次全面开放，对广告、电商等内容生产影响明显。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind产品经理Anish Nangia在官方博客宣布推出Gemini Omni 1.2 Flash，并称其首次全面可用。核心变化包括：原生生成和编辑最长15秒视频，较1.1版的10秒延长，且可按1秒步长指定3至15秒；支持多轮对话式编辑，可在同一片段上逐轮替换产品、背景、光线或画幅，无需重新生成；参考一致性增强，可结合人物、产品、风格图片、最长3秒运动片段和音频线索，保持人脸、服装、包装文字和品牌色稳定。价格从1.1版下调30%，720p为每秒0.07美元。模型上线Gemini API、Google Cloud、Flow、Google Vids、Gemini应用和Google Ads，输出带SynthID水印。谷歌明确表示快速体育动作、快速脚本变化和复杂物理仍在改进中，未披露具体性能基准。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次升级理解成：以前AI拍视频像一次性拍照，拍坏了只能整段重来；现在更像导演坐在监视器前，一条一条改台词、换背景、调光线，而且每条能拍15秒，足够讲完一个小故事。对普通人来说，最直接的变化是电商试穿、产品广告和短视频素材的制作成本更低、速度更快，Google Vids用户还能免费生成15秒片段。但也要注意，官方自己承认快速运动和复杂物理还不行，所以它更像一个高效的“广告片流水线”，而不是能替代专业影视拍摄的全能工具。",
+          "text3": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "image": "./news-images/70f353013fcf4571c53d.png",
+      "imageAlt": "谷歌发布Gemini Omni 1.2 Flash视频模型相关图片"
+    },
+    {
+      "id": "2165b65a40c289",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "The Verge AI",
+      "title": "Perplexity推AI工作代理Teammates，月费200美元",
+      "summary": "2026年11月5日，Perplexity发布面向工作场景的AI代理产品Teammates，可常驻工作区并同时承担多个角色，调用用户已有的项目、技能与记忆，并与Perplexity Computer集成以执行持续、大规模任务。用户可在应用内独立线程追踪进度，也能在Slack中交互。该功能需订阅每月200美元的Max套餐，价格高于OpenAI的Dots和Claude Duet等同类产品。CEO斯里尼瓦斯称，未来每个组织每人或配备数百个Teammate。实际任务完成质量与并发稳定性尚待验证。",
+      "category": "行业变化",
+      "importance": 68,
+      "why": "Perplexity以高价订阅切入工作型AI代理赛道，直接对标OpenAI与Anthropic，反映代理产品从演示走向常驻协作，也抬高了个人使用门槛。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Perplexity推出常驻型AI代理Teammates，定位工作场景。官方称其可在同一工作区内承担多个角色，并继承用户已有工具中的项目、技能和记忆，同时执行不同任务。它建立在Perplexity Computer之上，后者可在用户设备上部署代理完成任务，而Teammates侧重协作与持续的大规模工作。用户可通过应用内独立线程查看各代理进度，也能在Slack中与其交互。该功能需订阅每月200美元的Max套餐，价格高于OpenAI Dots和Claude Duet等同类形态。CEO斯里尼瓦斯在X上称，未来每个组织每人或拥有数百个Teammate。目前尚不清楚其任务完成质量、并发上限及计费细则。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Teammates理解成给每个员工配一支不睡觉的助理小队：你交代一件事，它们分头去干，还能记住你之前的习惯和资料。好处是重复性、跨工具的工作可能被并行推进，人只负责分派和验收。但代价不低，每月200美元相当于再雇一个廉价外包，普通个人用户很难随手订阅。对企业的意义在于，AI从“问答框”变成“工位上的同事”，管理方式也要跟着变：怎么派活、怎么查进度、出错谁负责。对普通人来说，短期内更可能先在Slack等工作软件里间接接触到这类代理，而不是自己掏钱购买。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Perplexity launches its own take on AI agents for work",
+      "image": "./news-images/899ea457df9c84138a11.jpg",
+      "imageAlt": "Perplexity推AI工作代理Teammates，月费200美元相关图片"
+    },
+    {
+      "id": "5c6fd66a42c8ea",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "The Verge AI",
+      "title": "SoundCloud接入ElevenLabs直发AI音乐",
+      "summary": "SoundCloud与AI音乐平台ElevenLabs达成合作，用户可将生成作品直接发布至SoundCloud，无需导出再上传。Artist Pro订阅者另获三个月ElevenMusic Pro免费试用。经此渠道发布的歌曲会被标注AI来源。该整合深度不及此前与Moises的合作，后者支持将曲目拉入平台分轨重混后再发布。SoundCloud对AI音乐态度较其他流媒体宽松，虽要求欧盟用户标注AI生成内容并禁止冒名，但已与多家生成式音乐平台合作，且未高调宣传清理AI垃圾歌曲的成果。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "主流音频平台首次开放AI音乐一键直发，并配套标注与订阅激励，可能推动其他流媒体跟进，也加剧AI音乐与版权、平台治理的博弈。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "SoundCloud宣布与ElevenLabs整合，用户可把在ElevenLabs生成的音乐直接发布到SoundCloud，省去下载再上传步骤。SoundCloud Artist Pro订阅者获赠三个月ElevenMusic Pro。经此通道发布的歌曲会带有AI来源标注。报道指出，该整合不如与Moises的合作深入——后者允许把SoundCloud曲目拉入Moises做分轨分离和重混，再直接发回。SoundCloud对AI音乐整体更开放：对受欧盟规则约束的用户“鼓励”标注AI生成或操纵内容，并禁止冒名；但已与多家生成式音乐平台合作，也未高调公布清理垃圾AI歌曲的数量或取消变现的举措。标注执行细节、非欧盟用户是否同样强制标注，尚不明确。",
+          "text_note": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前用AI做歌，得像把文件从一台机器搬到另一台：先导出、再上传。现在等于两家平台之间开了条传送带，点一下就能发，平台还会挂个“AI出品”的牌子。对普通听众，好处是AI歌曲会更容易辨认来源；对创作者，门槛更低、试错更快，但也意味着平台上的AI内容会更多，良莠不齐更难筛。SoundCloud的做法像“先开门、再贴标签”，和部分流媒体“先拦在门外”不同。它能否靠标注和规则管住冒名、刷量，仍要看后续执行。",
+          "text_note": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "You can post AI music straight to SoundCloud from ElevenLabs",
+      "image": "./news-images/de6951a7880e7da3ee5c.jpg",
+      "imageAlt": "SoundCloud接入ElevenLabs直发AI音乐相关图片"
+    },
+    {
       "id": "788aca0b86fe44",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
       "sources": [
@@ -104,6 +300,68 @@
       "imageAlt": "四大科技巨头AI基建支出超7200亿美元相关图片"
     },
     {
+      "id": "ce33817e4026d3",
+      "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "TechCrunch AI",
+      "title": "Meta向全美用户开放Muse AI虚拟形象视频通话",
+      "summary": "Meta宣布，其消费级AI助手Muse的视频通话功能已向全美用户开放。该功能9月在Connect大会首次亮相，依托Muse Realtime Avatar与Muse Realtime Voice模型，用户可与可自定义的动画虚拟形象实时对话，形象会配合语气做出表情和手势。Meta称Muse并不真正“看见”用户，只听取并回应对话。公司计划年底前推出类似电子宠物的可穿戴设备Muse Charm，并逐步扩展至AI眼镜。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "这是消费级AI助手从文字、语音走向拟人化实时视频交互的一步，且与Meta即将推出的硬件联动，反映AI陪伴产品形态的演进方向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Meta于11月5日宣布，Muse Voice功能已向全美所有用户开放，用户可通过手机、网页及Mac与AI助手Muse进行语音通话和视频聊天。该功能9月在Meta Connect开发者大会首次发布，背后是Muse Realtime Avatar和Muse Realtime Voice两项新技术。Muse以动画虚拟形象呈现，默认形象昵称Jolly，用户可自定义为人物、动物或其他角色；对话时形象会做出与语气相符的细微表情和手势。Meta明确表示Muse并不“看见”用户，只是听取对话并作出反应。首席AI官Alexandr Wang在X上发布了演示视频。Meta还称该功能后续将登陆AI眼镜和年底前推出的Muse Charm硬件设备，但具体时间与设备细节尚未公布。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，以前你打字或说话问AI，现在可以像打视频电话一样，对着一个会眨眼、会做表情的小动画角色聊天。它看不见你，但听得见你说话，还会根据语气做出反应，你可以把它改成猫、狗或任何形象。Meta的算盘是：形象越像“人”，用户越容易产生感情，用得也越久。对普通人来说，这意味着AI助手更像一个陪伴型角色，而不只是工具；等年底那个类似电子宠物的硬件出来，这个角色还能装进小屏幕随身带。不过也要留意，越拟人化的AI越容易让人模糊“它只是程序”的边界。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Meta says US users can now video chat with their Muse AI avatar",
+      "image": "./news-images/c339531f4f4afaca3cb1.jpg",
+      "imageAlt": "Meta向全美用户开放Muse AI虚拟形象视频通话相关图片"
+    },
+    {
+      "id": "b28ecfb79591f9",
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "sources": [
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "Microsoft Research",
+      "title": "微软推PDD Kit：用形式化证明约束AI写码",
+      "summary": "微软研究院发布PDD Kit工具，用于对AI智能体生成的全栈Web应用进行形式化验证。该工具将开发者意图转为Verus形式化规范，对代码进行数学证明，无法证明处退回测试。团队在约5000行Rust编写的Pet Store应用上验证登录逻辑，开发者只审阅意图而未逐行读代码，证明过程还发现既有缺陷。工具强调区分“证明”与“测试证据”，并要求用户对信任边界逐项确认。",
+      "category": "模型进展",
+      "importance": 72,
+      "why": "针对AI大规模生成代码后人工审查难以扩展的痛点，提出以形式化证明替代逐行审阅的新范式，对软件工程流程有实质影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软研究院发布PDD Kit，作为GitHub Next协作规划环境Chopin中的伙伴工具，把开发者用自然语言表达的意图转成Verus形式化规范，再对智能体生成的代码做数学证明，证明覆盖不到的第三方库、外部状态等部分则退回单元与端到端测试。团队用约5000行Rust编写的Pet Store全栈应用做演示，仅用两句话描述登录需求，工具先提出澄清问题，再生成意图地图与规范，最终证明登录逻辑满足规范并发现既有缺陷。开发者审阅的是意图与信任边界，而非逐行代码。需注意：演示只覆盖登录逻辑，并非整个应用；证明依赖的信任计算基础仍需人工签字确认，其实际可扩展性尚待更多验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前AI一口气写几万行代码，人根本看不完，只能靠它自己写的测试把关，可测试往往只证明“它做的东西能跑”，不证明“它做的是你要的”。PDD Kit相当于先跟你把需求抠清楚，写成一份数学意义上的合同，再用证明器检查代码是否条条满足合同；证明够不着的地方才用测试兜底，并明确标注哪些是“证明”、哪些只是“证据”。对普通人的影响是间接的：未来你用的软件可能更少出现“密码错了也能登录”这类低级漏洞，因为关键逻辑被数学检查过；但这也意味着开发流程要多花时间澄清需求，且工具目前仍偏研究性质，离日常普及还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Formally verifying agent-written full-stack web apps with PDD Kit",
+      "image": "./news-images/cba687d0af6c7fefa051.jpg",
+      "imageAlt": "微软推PDD Kit：用形式化证明约束AI写码相关图片"
+    },
+    {
       "id": "c65c7708e93995",
       "url": "https://huggingface.co/blog/phonon-tts",
       "sources": [
@@ -133,6 +391,70 @@
       "originalTitle": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
       "image": "./news-images/8a343fedcefce78fb383.png",
       "imageAlt": "Phonon端侧语音模型开源并登顶榜单相关图片"
+    },
+    {
+      "id": "f25b9201ad6bdc",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "Hugging Face",
+      "title": "英伟达开源Cosmos 3世界模型四款检查点",
+      "summary": "2026年11月5日，英伟达在Hugging Face发布Cosmos 3世界模型家族的四款开放权重检查点，均基于Cosmos 3 Nano后训练，含160亿可训练参数，采用允许商用的OpenMDW1.1许可。四款模型分别面向自动驾驶多视角多传感器数据生成、驾驶流式仿真、物理模拟器控制转写实视频、双臂机器人动作预测视频。官方称可用于构建交互式仿真环境，但模型在忠实支撑策略学习与评估方面仍有局限，需进一步测量边界。",
+      "category": "模型进展",
+      "importance": 78,
+      "why": "开源世界模型直接服务自动驾驶与机器人仿真训练，降低合成数据门槛；但官方承认评估边界未明，落地价值需验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "英伟达在Hugging Face发布Cosmos 3世界模型平台的四款开放权重检查点：Transfer-Auto生成最多11路相机同步视频并支持RGB与激光雷达联合生成；Sim-Auto是其因果蒸馏的流式版本，用少量去噪步输出连续片段；Sim-Transfer把物理模拟器的深度、分割等空间控制加文本提示转成写实RGB；Sim-Bimanual从双臂机器人动作直接预测下一帧观测。四者均为Cosmos 3 Nano后训练示例，160亿可训练参数，按OpenMDW1.1条款允许商用与非商用。训练分四阶段，从双向适配到自强制训练以缓解误差累积。官方明确表示，模型在多大程度上忠实支撑策略学习与评估仍待测量，运行需Linux、英伟达GPU与Docker，测试环境为单台GB200，并非最低显存要求。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这四款模型理解成给机器人和自动驾驶汽车准备的“虚拟练车场”：以前训练它们要真车真路跑数据，成本高、危险场景难复现；现在用模型批量生成雨雾天、不同路口、多摄像头加激光雷达的画面，还能边生成边响应动作，像玩游戏一样实时互动。对普通人来说，短期不会直接用到，但长期可能让辅助驾驶和家用机器人迭代更快、测试更充分。不过要清醒：生成画面再逼真，也不等于真实世界，官方自己都说还说不清模型在哪些情况下靠得住，所以别把它当成安全性的证明。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+      "image": "./news-images/3a1c131d4cd4a0760908.png",
+      "imageAlt": "英伟达开源Cosmos 3世界模型四款检查点相关图片"
+    },
+    {
+      "id": "94c971e34f7981",
+      "url": "https://www.theverge.com/entertainment/1026282/grimes-ai-movie",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/entertainment/1026282/grimes-ai-movie"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "The Verge AI",
+      "title": "Grimes出演AI科幻片并登陆院线",
+      "summary": "AI生成的科幻片《Gods Don't Give Gifts》宣布歌手Grimes将以肖像和配音形式出演，影片定于12月4日上映，被宣传为首部进入院线的AI电影。制片方Fable称，演员以肖像加声音出演AI动画电影将更常见。影片由Jack London（网名Gossip Goblin）执导，为设定在身体可弃、意识商品化未来的多线故事合集。此前好莱坞AI项目多停留在概念阶段，该片能否验证AI电影的票房与叙事价值仍待观察。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "AI电影首次进入院线并引入真人明星肖像与配音，是检验AI影视商业化与演员授权模式的关键案例，影响行业对AI内容的态度。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据The Verge AI报道，AI生成科幻片《Gods Don't Give Gifts》将让歌手Grimes以肖像和配音形式出演，影片定于12月4日上映，并被宣传为“首部进入院线的AI电影”。制片方Fable在新闻稿中称，演员以肖像加声音出演AI动画电影将变得更常见。影片由Jack London（网名Gossip Goblin）执导，是设定在“身体可弃、意识被商品化”未来的多线故事合集。报道提到Grimes长期关注超人类主义与AI主题，另有AI主题专辑在制作。目前尚不确定影片实际制作中AI参与的比例、Grimes的授权范围与报酬安排，以及“首部院线AI电影”的说法能否成立。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：一位真人明星把自己的“脸和声音”借给一部由AI生成的电影，然后这部电影要像普通电影一样卖票。对普通人来说，最直接的变化是以后在影院看到的可能不再是真人拍摄，而是AI按明星形象合成的表演；对演员来说，这相当于把肖像和声音变成可授权的资产。它能不能成，关键看观众愿不愿意为AI电影买票，以及明星授权、版权和分成规则能否说清楚。如果票房成立，类似项目可能变多；如果不成立，这更像一次高调试验。",
+          "text2": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Grimes is going to star in an AI movie that’s coming to theaters",
+      "image": "./news-images/18a4de0bb270cd1df302.png",
+      "imageAlt": "Grimes出演AI科幻片并登陆院线相关图片"
     },
     {
       "id": "d2290c5d3e5ab0",
@@ -1382,6 +1704,37 @@
       ],
       "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
       "originalTitle": "Sam Altman says it’s better for RAM to be in a data center than on your desk"
+    },
+    {
+      "id": "d42b8e56046bc1",
+      "url": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030"
+        }
+      ],
+      "publishedAt": "2026-10-30",
+      "source": "MIT News",
+      "title": "MIT七人获2026 AI2050奖学金",
+      "summary": "施密特科学公司公布2026年度AI2050奖学金名单，麻省理工学院有五位教师和两位校友入选，另有一位前博士后也在名单中。该计划由埃里克·施密特与詹姆斯·马尼卡共同发起，以“2050年AI已造福社会，我们解决了什么”为设问，资助有益AI研究。MIT入选者研究方向涵盖算法与人类行为、深度学习数学基础、民主决策中的公众意见采集、生物酶功能判定及算法公平性等。目前各项目均处早期阶段，具体成果尚未公布。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "该事件反映主流慈善资本对“有益AI”长期研究的定向资助，入选者横跨经济、数学、政治学与生物学，体现AI研究跨学科化趋势，对科研资源分配有风向标意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "施密特科学公司公布2026年度AI2050奖学金名单，麻省理工学院有五位教师和两位校友入选，另有一位前博士后也在名单中。该计划由埃里克·施密特与詹姆斯·马尼卡共同发起，以“2050年AI已造福社会，我们解决了什么”为设问，资助有益AI研究。MIT入选者研究方向涵盖算法与人类行为、深度学习数学基础、民主决策中的公众意见采集、生物酶功能判定及算法公平性等。目前各项目均处早期阶段，具体成果尚未公布。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把AI2050奖学金理解成一份“未来押注清单”：出资方不急着让研究者马上做出产品，而是先出钱让不同学科的人回答“AI怎样才算真正帮到人”。对普通人来说，短期看不到直接变化，但这类资助会影响未来几年AI在招聘公平、公共决策、生物医药等方向的研究重心。入选者分散在数学、政治学、生物学等领域，说明AI治理不再只是工程师的事，社会科学家和生物学家也在参与定义“好AI”的标准。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows",
+      "image": "./news-images/31b145a938bc5ecf6e2d.jpg",
+      "imageAlt": "MIT七人获2026 AI2050奖学金相关图片"
     },
     {
       "id": "b9ee8bb30716fa",
