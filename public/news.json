@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-06T12:36:49.006385+00:00",
-  "lastCheckedAt": "2026-11-06T12:36:49.006385+00:00",
+  "updatedAt": "2026-11-06T22:17:45.592070+00:00",
+  "lastCheckedAt": "2026-11-06T22:17:45.592070+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -106,6 +106,198 @@
       "imageAlt": "Palo Alto拟5亿美元收购AI代理安全公司Clutch相关图片"
     },
     {
+      "id": "1e3b4849f46ed2",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "AWS AI",
+      "title": "Greenlight用Bedrock AgentCore建自主安全运营",
+      "summary": "AWS发布案例称，金融科技公司Greenlight Financial基于Amazon Bedrock AgentCore构建自主安全运营中心系统Luna，采用两级监督者加30余个专用智能体的分层架构，处理暗网泄露卡、身份异常、基础设施告警和金融风险事件。官方数据显示，月处理3000至4000起案件，自主解决率从仅一级时的83%提升至两级加学习机制后的90%以上，常规案件分诊从人工15至30分钟降至数秒，需人工升级比例从100%降至不足10%。该数据来自厂商自述，尚无第三方验证。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "这是智能体在受监管金融安全场景落地的具体案例，展示了多智能体分层架构与记忆机制如何替代重复人工分诊，对安全运营自动化有参考价值，但数据源自厂商，需谨慎看待。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS官网发布案例，介绍Greenlight Financial在Amazon Bedrock AgentCore上构建自主安全运营系统Luna。该系统采用两级监督者架构：一级负责高频初筛，调度身份访问、终端检测、可观测性、资产清单、支付处理、客服工单、威胁情报等30多个专用智能体；二级用推理能力更强的模型处理约10%的复杂案件，输出带证据链的报告。系统还通过AgentCore记忆实现30天情景记忆和长期记忆，并用学习管道把处置结果回流。官方称月处理3000至4000起案件，自主解决率超90%，常规分诊中位数为数秒。需注意，这些指标均为厂商自述，未提供第三方审计，且文中未披露误判率与合规审查细节。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Luna想成一个不知疲倦的夜班保安团队：门口先由一群各管一摊的初级保安快速分流，遇到拿不准的再交给资深侦探深挖。它记得上周二凌晨三点的例行维护，不会每周重复报警；也记得某个暗网来源误报率高，会先查重再下结论。对普通人来说，银行卡信息泄露后的核查可能从等人工排队半小时变成几秒出结果，风险暴露窗口更短。但也要明白，这套系统仍会把约一成案件交给人，且其效果数据由厂商自己公布，真实误报和漏报情况还需独立观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Greenlight Financial built an autonomous SOC solution on Amazon Bedrock AgentCore",
+      "image": "./news-images/bdffde8be37b4d4dce89.png",
+      "imageAlt": "Greenlight用Bedrock AgentCore建自主安全运营相关图片"
+    },
+    {
+      "id": "7b06aebc8d394f",
+      "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "AWS AI",
+      "title": "Claude Code可远程跑在AWS隔离沙箱",
+      "summary": "AWS发布技术方案，将本地运行的Claude Code扩展为Amazon Bedrock AgentCore上的远程编码代理。每个任务在独立microVM会话中执行，模型调用仅走Bedrock私有端点，GitHub凭据由AgentCore Identity短期签发，任务提示先经Guardrails过滤，最终以草稿拉取请求交付、由人审核合并。方案明确不适合不可信代码和开放式任务，且护栏只筛查输入提示，无法拦截仓库文件或命令输出中的注入内容。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "把编码代理从个人电脑搬到云端隔离环境，是企业采用AI编程工具的关键一步，涉及权限、凭据和审计等实际落地问题，对开发团队有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布示例方案，把原本在本地运行的Claude Code改为在Amazon Bedrock AgentCore上远程执行。用户提交任务后可关闭电脑，任务在账户内独立的microVM会话中克隆仓库、规划、写码并运行测试，最多尝试三轮，最后推送分支并开拉取请求，代理不会自行合并。安全上，模型调用只走Bedrock私有端点，GitHub令牌由AgentCore Identity签发、8小时过期，提示先经Guardrails筛查。官方也说明局限：护栏只看输入提示，看不到仓库文件或命令输出里的注入；方案不适合不可信代码和开放式任务。部署约15至25分钟，注册仓库另需8至12分钟。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它理解成给AI程序员租了一间一次性办公室：活干完房间就清空，钥匙是临时配的，用完自动作废，AI只能进你指定的几栋楼，最后交上来的是一份待你签字的改动清单，而不是直接改你的代码。好处是任务能排队并行，不占用你的笔记本，模型调用仍受原有数据保护约束。代价是你中途插手更少、环境要提前搭好、成本更难预估。对普通开发者的实际影响是：以后派活给AI更像发工单，重点从盯着它写代码变成写好任务描述、配好测试和分支保护，并认真审查它交上来的拉取请求。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
+      "image": "./news-images/03e3a8f8ac334aa76df0.png",
+      "imageAlt": "Claude Code可远程跑在AWS隔离沙箱相关图片"
+    },
+    {
+      "id": "1eb7d3c82b7f61",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "AWS AI",
+      "title": "Taxbit在Bedrock上构建合规AI助手",
+      "summary": "数字资产税务合规平台Taxbit在Amazon Bedrock AgentCore上构建了嵌入式AI助手Taxbit Assist，帮助合规团队在产品仪表盘内获得带引用、按角色授权的答案。其知识库整合公开文档、从产品源码生成的说明和人工整理内容，检索后重排并限制引用来源。官方称超55%提问用户24小时内再次使用。该助手不读取客户税务数据，不提供税务建议，模型不接触用户身份，并按区域处理数据驻留。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "展示受监管行业如何用检索增强与权限隔离把AI助手落到生产，对合规、数据驻留和引用可信度的工程取舍有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Taxbit披露其AI助手Taxbit Assist的技术实现：应用运行在Amazon Bedrock AgentCore运行时，用户提问先经Bedrock Guardrails筛查并遮蔽个人信息，再从Bedrock知识库检索候选段落，经Cohere Rerank 3.5重排后取前5段交给模型，回答附带可打开的来源链接。知识库只收录公开网站、API文档、帮助中心文章、由产品源码生成的Markdown说明和人工整理内容，不包含租户数据。助手有八个窄工具，仅能查知识库、做组织权限与角色检查、管理提问者自己的工单，不读取客户税务数据。身份信息由调用服务绑定，模型无法自行指定。Taxbit称超55%提问用户24小时内再次提问，但该数字来自其内部生产分析，未提供独立验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套系统想成一位只背了产品说明书、且进门前先核对工牌的客服：它回答时必须翻到某一页并指给你看，找不到就说不知道；它不会替你决定该选哪种税务计算方法，因为那是税务建议；它也看不到你的账目，只能帮你开自己的工单。对普通人来说，这类设计意味着AI在报税、合规场景里更像“带出处的查询台”，而不是拍脑袋给结论的顾问。真正值得关注的是它把“能引用什么”写进代码而非提示词，以及按地区限制推理位置，这两点决定了受监管客户敢不敢用。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Taxbit Assist: A grounded, role-aware AI agent on Amazon Bedrock AgentCore",
+      "image": "./news-images/8cc274630787c0b68431.png",
+      "imageAlt": "Taxbit在Bedrock上构建合规AI助手相关图片"
+    },
+    {
+      "id": "b7e06d2c4d9dad",
+      "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/"
+        },
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "TechCrunch AI",
+      "title": "中期选举后，AI数据中心扩张或遇阻",
+      "summary": "2026年美国中期选举中，民主党取得历史性胜利，科技行业尤其是AI数据中心建设面临政策转向。选举日共有41项与数据中心相关的公投措施，其中40项多数票支持对数据中心开发施加更多限制。即便未直接列入公投，数据中心也成为新当选民主党州长和议员的重要议题。TechCrunch播客讨论了选举对科技行业的影响，但未给出具体立法时间表或企业应对方案，相关影响仍待观察。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "选举结果直接改变数据中心建设的政策环境，而数据中心是AI产业的基础设施。限制措施可能推高算力成本、延缓项目落地，对AI公司和普通用户都有传导效应。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年美国中期选举后，民主党在多个层级取得胜利。选举日当天，选民对41项与数据中心相关的公投措施进行表决，其中40项以多数票支持对数据中心开发施加更多限制。此外，数据中心成为新当选民主党州长和国会议员的重点议题，即便当地没有直接公投。TechCrunch旗下播客Equity就此讨论选举对科技行业的影响，涉及数据中心政策走向。目前尚不确定这些公投结果的具体法律效力、各州后续立法节奏，以及企业是否会调整建设计划。报道未提供受影响数据中心的数量或投资规模。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把AI数据中心想象成耗电耗水的大工厂。过去地方上欢迎这类项目，因为能带来投资和就业；现在选民通过公投说“先别急着建”，相当于给工厂加了一道审批门槛。对普通人来说，短期可能感受不到变化，但长期看，AI公司建机房变慢、成本变高，最终可能体现在云服务价格或AI产品更新速度上。对AI行业而言，这像是扩张路上突然多了一排减速带：不是不让走，而是得放慢速度、多交“过路费”。不过公投结果只是地方表态，具体怎么落地还要看后续立法和诉讼。",
+          "text2": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "After the midterms, is the AI industry in for a rough two years?",
+      "image": "./news-images/de7f1b49869d9f21b663.jpg",
+      "imageAlt": "中期选举后，AI数据中心扩张或遇阻相关图片"
+    },
+    {
+      "id": "c262b9961ff71d",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "TechCrunch AI",
+      "title": "800余个Artex AI黑客工具暴露公网",
+      "summary": "安全公司Censys扫描发现，开源自主渗透测试工具Artex有超过800个部署实例无需密码即可从公网访问。该工具由中方开发，7月开源后已被用于多起攻击，包括9月针对韩国金融业的攻击及10月对IT服务商ConnectWise的入侵。微软称其可“从侦察到数据窃取”高度自动化。暴露实例还可能泄露植入物等攻击工具。Artex已宣布转为闭源，但代码仍在共享网站流传。",
+      "category": "安全与规则",
+      "importance": 78,
+      "why": "暴露的开源攻击工具降低网络犯罪门槛，且已关联真实大规模攻击，凸显AI安全工具的双用风险与配置管理漏洞。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Censys发现800多个Artex实例可无密码公网访问。Artex是开源自主渗透测试工具，7月发布，微软称其能低人工干预完成从侦察到数据窃取。Censys研究员Cutler表示并非所有实例都用于恶意目的，许多是授权测试者，但软件本身不要求联网暴露，原因不明。暴露系统还可能包含植入物等攻击工具。CrowdStrike将9月韩国金融业攻击归因于使用Artex的中文黑客；10月ConnectWise遭入侵，黑客借Artex进入微软云环境窃取数据。多数攻击利用弱密码、已知密码及缺乏多因素认证等简单漏洞。Artex已宣布转闭源，但代码仍在共享网站流传。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像一把能自动撬锁的工具被开源，本意是让安全人员测试自家门锁，结果几百把工具被摆在公共走廊上，谁都能拿来用。更麻烦的是，工具里还留着别人作案用的“后门钥匙”。对普通人来说，这意味着你所在公司的系统若密码太弱、没开双重验证，就可能被这类自动化工具盯上，攻击速度之快让防守方来不及反应。事件也提醒企业：不仅自家系统要锁好，连测试工具本身也不能随便暴露在公网。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "image": "./news-images/b584df3428f361129928.webp",
+      "imageAlt": "800余个Artex AI黑客工具暴露公网相关图片"
+    },
+    {
+      "id": "5a90caffb2c87d",
+      "url": "https://huggingface.co/blog/allenai/toyblocks",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/toyblocks"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "Hugging Face",
+      "title": "AI2发布ToyBlocks机器人学习仿真框架",
+      "summary": "2026年11月6日，Ai2在Hugging Face发布ToyBlocks，一个围绕机械臂与桌面方块搭建的开源仿真框架，属于其FoundationWorlds计划的首个环境。它可自动生成任务与演示数据，单GPU并行执行数百个规划，速度最高达实时的24倍，并提供成功率之外的执行速度、施力等指标。团队用其测试视觉-语言-动作模型的空间泛化，初步结果显示即便经过大规模预训练，这类模型在训练范围外表现仍差，泛化问题远未解决。",
+      "category": "模型进展",
+      "importance": 62,
+      "why": "提供可复现的受控机器人评测环境，直指VLA泛化这一关键争议，对机器人学习研究有方法论价值，但尚属仿真阶段，离日常应用较远。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Ai2发布ToyBlocks，一个以机械臂和桌面方块为核心的开放仿真框架，是FoundationWorlds系列的首个环境。它基于Isaac Lab，用强化学习与运动规划自动生成推、翻、叠等技能，再由任务与运动规划器串联成演示数据，单GPU可并行生成数百个规划，最高达实时24倍。框架支持域随机化，并输出执行速度、施力、任务进度等指标。团队用其评测ManiFlow、π0.5、MolmoAct 2等动作模型的空间泛化，初步结果显示训练范围外表现不佳；高层规划则用Molmo 2搭配低层策略测试拼字等长程任务。需注意，这些均为仿真结果，真实机器人迁移效果尚未确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把ToyBlocks理解成机器人的“宠物箱”：场景只有一张桌子和几块积木，简单到能反复改条件、重跑实验，看清机器人到底学会了什么、为什么失败。以前训练机器人常靠人远程遥控录数据，费时且难复现；现在系统能自动批量生成练习和考卷，还能记录速度、力度等细节。对普通人的意义是间接的：它不直接进入生活，但能让研究者更快找出机器人“换个位置就不会干活”的原因，推动未来家用机器人更可靠。不过目前一切发生在电脑模拟里，真机表现仍需验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "ToyBlocks: A controlled world for robot learning and evaluation",
+      "image": "./news-images/e765c069e83ec70f6671.jpg",
+      "imageAlt": "AI2发布ToyBlocks机器人学习仿真框架相关图片"
+    },
+    {
       "id": "13e4c95dcbaa6d",
       "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
       "sources": [
@@ -135,6 +327,37 @@
       "originalTitle": "Egyptian and Nigerian English join the Open ASR Leaderboard",
       "image": "./news-images/086db9bbd6bfcfcd315c.png",
       "imageAlt": "开源ASR榜单新增埃及与尼日利亚英语口音相关图片"
+    },
+    {
+      "id": "98f2cdcbd9596f",
+      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "TechCrunch AI",
+      "title": "美中期选举或收紧数据中心监管",
+      "summary": "2026年美国中期选举后，民主党取得历史性胜利，可能重塑AI行业监管环境。本次选举中，选民就41项数据中心相关公投措施投票，除一项外，其余均多数支持对数据中心开发施加更多限制。即便未直接列入公投，数据中心也成为重要议题，新当选的民主党州长和国会议员预计将支持额外监管。TechCrunch播客讨论了这一结果对科技行业的影响，涉及数据中心监管及对大型科技公司审查趋严，但具体立法内容和时间表尚不明确。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "选举结果直接指向数据中心监管收紧，可能改变AI基础设施扩张节奏，并加剧对大型科技公司的审查，对行业格局有实质影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年美国中期选举中，民主党取得历史性胜利。本次选举共有41项与数据中心相关的公投措施，其中40项获多数支持，主张对数据中心开发施加更多限制。即便在未直接公投的地区，数据中心也成为竞选议题，新当选的民主党州长和国会议员预计将支持额外监管。TechCrunch播客指出，这可能影响AI行业，涉及数据中心监管和对大型科技公司审查趋严。不过，目前尚不清楚具体立法形式、实施时间及联邦与州层面的权限划分，相关影响仍待观察。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把数据中心想成AI的“水电煤”，训练和运行大模型都离不开它。过去建数据中心相对容易，现在选民通过公投明确表示“别建在我家门口”，新官员也倾向加码限制。对普通人来说，短期可能看到数据中心选址更难、电价和土地争议增多；长期则可能让AI服务扩张变慢、成本上升，甚至影响部分地区的就业和税收。对科技公司而言，这意味着扩张计划要更多考虑地方民意和政治风向，合规成本也会增加。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How a Blue Wave midterm might reshape the AI industry",
+      "image": "./news-images/8688d1fc0036b4122828.jpg",
+      "imageAlt": "美中期选举或收紧数据中心监管相关图片"
     },
     {
       "id": "7d05777f3cb4eb",
@@ -1298,6 +1521,37 @@
       "originalTitle": "Transformers Model Integration Contracts",
       "image": "./news-images/43f5b39bbf4787a331cf.png",
       "imageAlt": "Hugging Face推模型集成契约防回归相关图片"
+    },
+    {
+      "id": "e790a34c95d47f",
+      "url": "https://www.microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset/",
+      "sources": [
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset/"
+        }
+      ],
+      "publishedAt": "2026-11-03",
+      "source": "Microsoft Research",
+      "title": "微软研究员谈黑客思维与安全规则",
+      "summary": "微软研究院播客访谈研究经理Mike Walker，他早年痴迷规则与系统漏洞，曾领导DARPA“网络大挑战”，开发首个全机器自主黑客竞赛，展示AI自动发现并修补软件漏洞的能力。访谈中他提出安全系统每次向用户索取配合都是在消耗信任，规则是社会建构，需理解社会语境而非机械裁决。他回顾从BBS时代到9·11后进入网络安全行业的经历，并追问当今联网系统是否比十年前更安全，但未给出明确结论。",
+      "category": "安全与规则",
+      "importance": 55,
+      "why": "访谈呈现AI自动化攻防的十年进展与“安全即信任”的治理视角，对理解安全规则设计和用户信任成本有参考价值，但属个人回顾，无新数据。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软研究院播客发布主持人Weishung Liu与研究经理Mike Walker的对话。Walker现负责AI、网络安全与大型分布式系统交叉项目，此前领导DARPA“网络大挑战”，该赛事今年满十周年，曾演示自主AI系统发现并修补软件漏洞。他回忆在俄亥俄州长大，父亲常带工业设备回家让他拆解，后运营拨号BBS，9·11后进入安全行业，并参与DEF CON夺旗赛。他称规则是社会建构，安全系统向用户提要求即索取信任，信任被挥霍则安全机制失效。访谈还提及“公园禁车”思想实验，但未给出联网系统是否更安全的确切答案。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把安全规则想成小区门禁：每让住户多刷一次卡、多记一个密码，都是在花他们对物业的信任；折腾太多，大家就会绕开门禁、私拉电线，规则反而形同虚设。Walker的意思是，做安全不能只靠“一刀切”判对错，得看具体场景和人的感受。对普通人来说，这解释了为什么有些安全提示让人烦却未必更安全；而AI自动找漏洞、打补丁，好比给软件请了不知疲倦的巡检工，能更快堵漏，但也意味着攻防节奏加快，个人更需及时更新设备、留意账号异常。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Learn the rules: The hacker mindset",
+      "image": "./news-images/245fac414efa615ed0c5.jpg",
+      "imageAlt": "微软研究员谈黑客思维与安全规则相关图片"
     },
     {
       "id": "981c51fa20c4c2",
