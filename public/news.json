@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-05T22:49:41.062751+00:00",
-  "lastCheckedAt": "2026-11-05T22:49:41.062751+00:00",
+  "updatedAt": "2026-11-06T04:17:45.427057+00:00",
+  "lastCheckedAt": "2026-11-06T04:17:45.427057+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -298,6 +298,37 @@
       "originalTitle": "Big Tech’s big AI buildout will not end until someone stops it",
       "image": "./news-images/801b6539b61ce8418046.jpg",
       "imageAlt": "四大科技巨头AI基建支出超7200亿美元相关图片"
+    },
+    {
+      "id": "17b57e4655701f",
+      "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/"
+        }
+      ],
+      "publishedAt": "2026-11-05",
+      "source": "TechCrunch AI",
+      "title": "Airbnb宣布2027上半年推出AI旅行管家",
+      "summary": "Airbnb在2026年第三季度股东信中宣布，其自研AI旅行管家将于2027年上半年面向消费者推出，此前仅模糊表示“未来一年内”。该产品不走纯聊天机器人路线，而是调用地图、照片、比价、日历、行程等数百种旅行专用界面组件，按用户需求实时组合成“生成式界面”。CEO切斯基称约80%旅行者享受研究行程的过程，通用智能体难以胜任。该管家还将覆盖改订、退款、支付问题及24小时安全支持。同期Airbnb三季度营收同比增长19%至48.7亿美元，并上调2026年增长预期。",
+      "category": "日常应用",
+      "importance": 62,
+      "why": "头部旅行平台把AI从聊天框推向专用交互界面，若落地将改变用户规划与预订方式，也为“AI智能体是否该通用化”提供反例。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Airbnb在2026年11月5日的三季度股东信及财报电话会上确认，自研AI旅行管家将于2027年上半年上线，比此前“未来一年内”的说法更具体。按公司描述，该智能体不采用纯文本聊天，而是从地图、照片、比价、日历、行程等数百个旅行专用界面组件中实时拼装界面，切斯基称体验“有点像生成式UI”。它还能处理改订、退款、支付纠纷、重新预订和24小时安全支持，这些是外部通用智能体难以独立完成的。公司称近20年房东与房客数据将用于训练。仍不确定的是：具体上线月份、覆盖市场、定价方式，以及“生成式界面”在真实设备上的完成度均未披露。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Airbnb的新管家理解成一个会“摆摊”的助手：普通聊天机器人只会跟你一问一答地打字，它却会根据你想去哪儿，现场摆出地图、房源照片、价格对比表和行程单，像有个懂行的朋友边聊边给你铺开资料。Airbnb的逻辑是，订旅行不是查天气，很多人享受挑房、比价、和同伴商量的过程，所以它不追求一个万能助手包办一切。对普通人来说，未来在Airbnb上规划行程可能更像逛一个会变形的App，而不是对着输入框打字；遇到退改、支付出问题，也有望在同一个入口解决。不过这一切要等到2027年上半年，且实际好不好用仍是未知数。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
+      "image": "./news-images/570b6ed738d0c1da6faa.webp",
+      "imageAlt": "Airbnb宣布2027上半年推出AI旅行管家相关图片"
     },
     {
       "id": "ce33817e4026d3",
