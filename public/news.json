@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-06T04:17:45.427057+00:00",
-  "lastCheckedAt": "2026-11-06T04:17:45.427057+00:00",
+  "updatedAt": "2026-11-06T12:36:49.006385+00:00",
+  "lastCheckedAt": "2026-11-06T12:36:49.006385+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -72,6 +72,70 @@
     }
   ],
   "articles": [
+    {
+      "id": "c822924fc1f280",
+      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "TechCrunch AI",
+      "title": "Palo Alto拟5亿美元收购AI代理安全公司Clutch",
+      "summary": "据TechCrunch援引知情人士报道，Palo Alto Networks正洽谈以5亿美元现金加里程碑付款收购成立三年的AI代理安全初创公司Clutch Security，后者专注管理AI代理对企业系统的访问权限。Clutch在2025年1月完成2000万美元A轮融资时估值8500万美元，目前年经常性收入接近1000万美元，若成交估值约为ARR的50倍。双方均未回应置评请求。若交易达成，这将是Palo Alto今年第七笔收购，反映AI驱动攻击上升背景下安全资产估值走高。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "交易虽未官宣，但50倍ARR估值和年内第七笔收购，显示安全巨头正加速买入AI代理权限管理能力，反映AI攻击面扩大正重塑网络安全并购市场。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch援引一名知情人士称，Palo Alto Networks正洽谈收购Clutch Security，报价为5亿美元现金，另加基于里程碑的额外付款。Clutch成立约三年，主攻AI代理访问企业系统时的权限安全。该公司2025年1月完成由Lightspeed和SignalFire领投的2000万美元A轮，当时估值8500万美元，目前年经常性收入接近1000万美元，按此计算收购估值约为ARR的50倍。Palo Alto与Clutch均未回应置评请求，The Information最先报道谈判。交易尚未敲定，金额与条款仍可能变化。若完成，将是Palo Alto今年第七笔收购，此前已买下Console、Embrace、Chronosphere和Koi等公司。",
+          "text_en": "TechCrunch, citing a person familiar with the discussions, reported that Palo Alto Networks is in talks to acquire Clutch Security for $500 million in cash plus milestone-based payouts. Clutch, about three years old, focuses on securing AI agents' access to corporate systems. It raised a $20 million Series A in January 2025 led by Lightspeed and SignalFire at an $85 million valuation and is approaching $10 million in ARR, implying a roughly 50x ARR price. Neither company responded to requests for comment; The Information first reported the talks. The deal is not final and terms could change. If completed, it would be Palo Alto's seventh acquisition this year, after Console, Embrace, Chronosphere and Koi."
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Clutch理解成给AI代理发门禁卡的保安公司：企业让AI代理登录邮箱、数据库等系统干活，Clutch负责规定它能进哪扇门、能拿什么。Palo Alto花大价钱买它，是因为越来越多黑客也用AI找漏洞，企业怕AI代理权限失控。对普通人来说，这类收购短期不改变你用的产品，但意味着未来企业软件会更强调“AI能做什么、不能做什么”的权限管控，安全账单可能继续上涨。50倍收入的报价也说明，只要沾上AI安全，初创公司就能卖出高价，行业整合还会继续。",
+          "text_en": "Think of Clutch as a badge-issuing firm for AI agents: when companies let AI agents log into email or databases, Clutch decides which doors they can open and what they can take. Palo Alto is paying up because attackers increasingly use AI to find holes, and firms fear runaway agent permissions. For ordinary users, little changes short-term, but enterprise software will emphasize what AI can and cannot do, and security bills may keep rising. A 50x revenue price shows AI-security startups command premiums, and consolidation is likely to continue."
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+      "image": "./news-images/1af0357f4d5d0e88d2d1.jpg",
+      "imageAlt": "Palo Alto拟5亿美元收购AI代理安全公司Clutch相关图片"
+    },
+    {
+      "id": "13e4c95dcbaa6d",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-liva"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "Hugging Face",
+      "title": "开源ASR榜单新增埃及与尼日利亚英语口音",
+      "summary": "2026年11月6日，Hugging Face的Open ASR Leaderboard宣布与数据公司Liva AI合作，新增埃及和尼日利亚两种英语口音的私有测试数据，时长分别约1.34小时和1.55小时，均为带标点、大小写和口语不流畅现象的自发对话语音。榜单称此举旨在提升语音识别评测的口音代表性，并用私有数据减少针对公开测试集的过拟合。榜单还引入Kachru三圈模型，将口音分为美国与非美国、内圈与外圈/扩展圈进行对比。目前样本量较小，能否稳定反映模型真实水平仍待观察。",
+      "category": "行业变化",
+      "importance": 55,
+      "why": "语音识别评测长期偏向少数口音，新增私有口音数据有助于暴露模型短板，但样本仅数小时，短期影响有限，更多是评测方法上的信号。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Hugging Face的Open ASR Leaderboard于2026年11月6日发文，宣布与Liva AI合作，在私有测试集中加入埃及英语和尼日利亚英语两种口音。数据均为自发对话语音，带标点、大小写并保留口语不流畅现象，时长分别约1.34小时和1.55小时。榜单此前已加入Appen、DataOceanAI和Voice Arena的私有数据，覆盖多种口音。此次还按Kachru三圈模型新增口音分组报告，区分美国与非美国、内圈与外圈/扩展圈。文章未披露模型排名变化，也未说明数据采集时间和说话人数量，样本规模偏小是明确的不确定点。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "语音识别模型过去常被少数口音“喂大”，遇到埃及、尼日利亚口音容易听错。榜单这次相当于请来一批没提前泄题的新考官，用真实对话录音考试，防止模型靠背公开题库刷分。对普通人来说，这意味着未来语音助手、字幕工具在更多口音下可能更靠谱，但眼下只加了几小时录音，更像一次小范围抽查，还不足以说明所有产品立刻变好。真正的影响是提醒厂商：别只盯着美式英语，全球用户的口音都得照顾。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+      "image": "./news-images/086db9bbd6bfcfcd315c.png",
+      "imageAlt": "开源ASR榜单新增埃及与尼日利亚英语口音相关图片"
+    },
     {
       "id": "7d05777f3cb4eb",
       "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
