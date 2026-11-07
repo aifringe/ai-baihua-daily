@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-06T22:17:45.592070+00:00",
-  "lastCheckedAt": "2026-11-06T22:17:45.592070+00:00",
+  "updatedAt": "2026-11-07T03:48:56.484744+00:00",
+  "lastCheckedAt": "2026-11-07T03:48:56.484744+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -8,7 +8,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true
     },
     {
       "source": "Google AI",
@@ -106,6 +106,72 @@
       "imageAlt": "Palo Alto拟5亿美元收购AI代理安全公司Clutch相关图片"
     },
     {
+      "id": "b447a2e764e48f",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/"
+        },
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "AWS AI",
+      "title": "AWS详解Okta跨应用访问治理AI代理",
+      "summary": "AWS发布两篇技术文章，介绍如何用Okta Cross App Access与Amazon Bedrock AgentCore治理AI代理访问。第一部分在AgentCore runtime上构建任务代理，由Okta决定哪个代理可代表哪个用户访问哪些资源，AgentCore Identity兑换短期令牌，测试中撤销授权约1秒生效、已发令牌5分钟内过期。第二部分引入AgentCore Gateway作为统一入口，用Cedar策略绑定工具与代理及授权范围，并在CloudWatch集中审计。文章强调代码为示例、非生产可用。",
+      "category": "安全与规则",
+      "importance": 62,
+      "why": "针对企业AI代理权限失控问题给出可落地的身份治理方案，涉及令牌交换、策略执行与审计，对部署代理的团队有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS在官方博客发布两部分教程，演示用Okta Cross App Access（XAA）和Amazon Bedrock AgentCore治理AI代理访问。第一部分中，用户经Okta登录后，后端用ID令牌换取一次性ID-JAG，AgentCore runtime校验后由AgentCore Identity在Okta自定义授权服务器兑换5分钟访问令牌，MCP服务器再校验用户组与范围。测试称撤销用户分配后约1秒拒绝新请求，已发令牌5分钟内过期，兑换约增加0.6秒。第二部分把直连改为经AgentCore Gateway统一入口，用Cedar默认拒绝策略按工具、代理和范围授权，并接入Observability与CloudWatch审计。文章明确代码为示例、非生产可用，且未给出大规模部署的实测数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Okta想成公司门禁系统，AgentCore是替员工跑腿的机器人。过去机器人拿着万能钥匙到处走，出了事说不清是谁批准的。现在每次跑腿都要门禁开一张只对某个房间、短时间有效的临时通行证，机器人自己看不到钥匙，过期就作废。第二部分相当于在每层楼加一个前台，所有机器人只能从前台进，前台按名单放行并记录每一步。对普通人的影响是：公司里的AI助手能替你办事，但权限被限制在你本人能访问的范围内，管理员收回权限后很快失效，事后也能查到它做了什么。代价是配置更复杂，且目前仍是示例代码，企业需自行评估合规与运维成本。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2",
+      "image": "./news-images/a8691b83a12974d4ca84.png",
+      "imageAlt": "AWS详解Okta跨应用访问治理AI代理相关图片"
+    },
+    {
+      "id": "189563f1d6f7d0",
+      "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "AWS AI",
+      "title": "SageMaker推理支持GPU分区，单卡可跑多模型",
+      "summary": "AWS宣布SageMaker Inference支持基于NVIDIA MIG的GPU分区，可将单块GPU在硬件层面切分为最多7个隔离分区，每个分区拥有独立算力和显存。此前用户若模型数多于GPU数，只能选择共享GPU的多模型端点（无隔离）或自建Kubernetes。新功能仅适用于使用推理组件的端点，需在创建端点时选定分区布局，单模型端点、无服务器端点及异构实例池不支持。AWS称切分开销约增加17秒配置时间，Salesforce参与了需求定义与初步验证。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "这是主流托管推理平台首次把硬件级GPU分区做成开箱能力，直接影响多模型部署的成本与隔离性，对做多租户、多微调变体的团队有实际意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布SageMaker Inference的GPU分区功能，底层使用NVIDIA Multi-Instance GPU，把一块物理GPU按硬件切分为多个独立分区，每个分区有固定比例的算力和专属显存，隔离由硬件保证。用户通过两个新增可选字段配置：在端点配置的生产变体里声明分区布局，在推理组件里指定模型使用哪种分区。AWS给出的例子是在8卡A100实例上把每卡切成4g、2g、1g三块，共24个分区。限制包括：最多7个分区、布局只能在创建端点时确定、需要多卡的模型仍须整卡、单模型端点等形态不支持。AWS称切分使配置时间增加约17秒，并提示P4d上部分分区需较新驱动镜像。Salesforce表示参与了需求定义和初步验证，但生产负载验证尚在准备中。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "以前租GPU像租整层楼：哪怕你只开一家小店，也得付整层租金，而且一层只能塞一家。现在房东允许把一层隔成几间独立铺面，各有各的水电表，一家着火不波及隔壁。好处很直接：小模型不用再占整张卡，多个模型可以挤在一张卡上互不干扰，延迟更可预测，账单也能按铺面算清楚。代价是隔间方案在签租约时就得定死，中途不能改；需要大场地的模型还是得整层租。对普通用户来说，这类变化通常不会立刻体现在产品上，但会慢慢压低推理成本，让更多小模型服务变得划算。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
+      "image": "./news-images/476026924a9084342fa6.png",
+      "imageAlt": "SageMaker推理支持GPU分区，单卡可跑多模型相关图片"
+    },
+    {
       "id": "1e3b4849f46ed2",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/",
       "sources": [
@@ -168,37 +234,6 @@
       "imageAlt": "Claude Code可远程跑在AWS隔离沙箱相关图片"
     },
     {
-      "id": "1eb7d3c82b7f61",
-      "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/",
-      "sources": [
-        {
-          "name": "AWS AI",
-          "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/"
-        }
-      ],
-      "publishedAt": "2026-11-06",
-      "source": "AWS AI",
-      "title": "Taxbit在Bedrock上构建合规AI助手",
-      "summary": "数字资产税务合规平台Taxbit在Amazon Bedrock AgentCore上构建了嵌入式AI助手Taxbit Assist，帮助合规团队在产品仪表盘内获得带引用、按角色授权的答案。其知识库整合公开文档、从产品源码生成的说明和人工整理内容，检索后重排并限制引用来源。官方称超55%提问用户24小时内再次使用。该助手不读取客户税务数据，不提供税务建议，模型不接触用户身份，并按区域处理数据驻留。",
-      "category": "行业变化",
-      "importance": 62,
-      "why": "展示受监管行业如何用检索增强与权限隔离把AI助手落到生产，对合规、数据驻留和引用可信度的工程取舍有参考价值。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "Taxbit披露其AI助手Taxbit Assist的技术实现：应用运行在Amazon Bedrock AgentCore运行时，用户提问先经Bedrock Guardrails筛查并遮蔽个人信息，再从Bedrock知识库检索候选段落，经Cohere Rerank 3.5重排后取前5段交给模型，回答附带可打开的来源链接。知识库只收录公开网站、API文档、帮助中心文章、由产品源码生成的Markdown说明和人工整理内容，不包含租户数据。助手有八个窄工具，仅能查知识库、做组织权限与角色检查、管理提问者自己的工单，不读取客户税务数据。身份信息由调用服务绑定，模型无法自行指定。Taxbit称超55%提问用户24小时内再次提问，但该数字来自其内部生产分析，未提供独立验证。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "可以把这套系统想成一位只背了产品说明书、且进门前先核对工牌的客服：它回答时必须翻到某一页并指给你看，找不到就说不知道；它不会替你决定该选哪种税务计算方法，因为那是税务建议；它也看不到你的账目，只能帮你开自己的工单。对普通人来说，这类设计意味着AI在报税、合规场景里更像“带出处的查询台”，而不是拍脑袋给结论的顾问。真正值得关注的是它把“能引用什么”写进代码而非提示词，以及按地区限制推理位置，这两点决定了受监管客户敢不敢用。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "Taxbit Assist: A grounded, role-aware AI agent on Amazon Bedrock AgentCore",
-      "image": "./news-images/8cc274630787c0b68431.png",
-      "imageAlt": "Taxbit在Bedrock上构建合规AI助手相关图片"
-    },
-    {
       "id": "b7e06d2c4d9dad",
       "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
       "sources": [
@@ -236,6 +271,37 @@
       "imageAlt": "中期选举后，AI数据中心扩张或遇阻相关图片"
     },
     {
+      "id": "1eb7d3c82b7f61",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "AWS AI",
+      "title": "Taxbit在Bedrock上构建合规AI助手",
+      "summary": "数字资产税务合规平台Taxbit在Amazon Bedrock AgentCore上构建了嵌入式AI助手Taxbit Assist，帮助合规团队在产品仪表盘内获得带引用、按角色授权的答案。其知识库整合公开文档、从产品源码生成的说明和人工整理内容，检索后重排并限制引用来源。官方称超55%提问用户24小时内再次使用。该助手不读取客户税务数据，不提供税务建议，模型不接触用户身份，并按区域处理数据驻留。",
+      "category": "行业变化",
+      "importance": 62,
+      "why": "展示受监管行业如何用检索增强与权限隔离把AI助手落到生产，对合规、数据驻留和引用可信度的工程取舍有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Taxbit披露其AI助手Taxbit Assist的技术实现：应用运行在Amazon Bedrock AgentCore运行时，用户提问先经Bedrock Guardrails筛查并遮蔽个人信息，再从Bedrock知识库检索候选段落，经Cohere Rerank 3.5重排后取前5段交给模型，回答附带可打开的来源链接。知识库只收录公开网站、API文档、帮助中心文章、由产品源码生成的Markdown说明和人工整理内容，不包含租户数据。助手有八个窄工具，仅能查知识库、做组织权限与角色检查、管理提问者自己的工单，不读取客户税务数据。身份信息由调用服务绑定，模型无法自行指定。Taxbit称超55%提问用户24小时内再次提问，但该数字来自其内部生产分析，未提供独立验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套系统想成一位只背了产品说明书、且进门前先核对工牌的客服：它回答时必须翻到某一页并指给你看，找不到就说不知道；它不会替你决定该选哪种税务计算方法，因为那是税务建议；它也看不到你的账目，只能帮你开自己的工单。对普通人来说，这类设计意味着AI在报税、合规场景里更像“带出处的查询台”，而不是拍脑袋给结论的顾问。真正值得关注的是它把“能引用什么”写进代码而非提示词，以及按地区限制推理位置，这两点决定了受监管客户敢不敢用。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Taxbit Assist: A grounded, role-aware AI agent on Amazon Bedrock AgentCore",
+      "image": "./news-images/8cc274630787c0b68431.png",
+      "imageAlt": "Taxbit在Bedrock上构建合规AI助手相关图片"
+    },
+    {
       "id": "c262b9961ff71d",
       "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
       "sources": [
@@ -265,6 +331,37 @@
       "originalTitle": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
       "image": "./news-images/b584df3428f361129928.webp",
       "imageAlt": "800余个Artex AI黑客工具暴露公网相关图片"
+    },
+    {
+      "id": "f659f2b84ee7c4",
+      "url": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "The Verge AI",
+      "title": "美中期选举反科技情绪高涨，AI监管承压",
+      "summary": "2026年美国中期选举后，民主党大胜，选民对大型科技公司和AI的反对情绪明显上升。The Verge播客讨论认为，针对科技巨头的政治压力将回升，数据中心建设面临更大阻力，国会可能加大对科技CEO和AI监管的施压力度。节目还质疑AI商业化前景：OpenAI网页搜索增长是否真有价值，连谷歌都难靠AI搜索盈利，企业正在收缩，AI代理并未接管业务。大量资金流入AI领域，但能否持续支撑整个生态仍是未知数。",
+      "category": "行业变化",
+      "importance": 72,
+      "why": "选举结果可能改变美国AI监管与数据中心政策走向，同时暴露AI商业化盈利难题，对科技行业和普通用户都有直接影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年美国中期选举中，民主党取得压倒性胜利，选民同时表达了对AI和大型科技公司的反对。The Verge播客指出，反科技运动将重新升温，数据中心建设面临更严峻的政治阻力。节目讨论认为，未来两年国会可能把能源和注意力转向科技CEO和AI监管，但实际立法能否落地仍不确定。在AI商业层面，节目质疑OpenAI网页搜索的爆发式增长是否具有商业意义，因为连谷歌都未能找到AI搜索的盈利模式。企业正在缩减投入，AI代理并未如预期接管业务，大量资金流入AI领域，但能否持续支撑整个生态仍是未知数。上述判断来自媒体讨论，具体政策走向和商业数据尚未确认。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次选举理解成选民给科技巨头和AI投了一张不信任票。过去几年，建数据中心、推AI产品一路绿灯，现在政治风向变了，地方和联邦层面都可能设卡。对普通人来说，这意味着AI服务扩张可能放缓，电价、土地和社区资源争夺会更受关注，监管规则也可能更严。至于AI赚钱，节目泼了冷水：搜索流量涨得再猛，如果广告和订阅收不上钱，就像开了一家客流很大却没人买单的店。企业收缩、代理没接管业务，说明AI离真正改变日常工作和消费还有距离。热钱还在涌，但能不能撑住整个行业，要看接下来有没有人真正愿意为AI掏钱。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Big Tech lost big in the 2026 election",
+      "image": "./news-images/e21b8d505f66e2103c10.jpg",
+      "imageAlt": "美中期选举反科技情绪高涨，AI监管承压相关图片"
     },
     {
       "id": "5a90caffb2c87d",
@@ -327,6 +424,37 @@
       "originalTitle": "Egyptian and Nigerian English join the Open ASR Leaderboard",
       "image": "./news-images/086db9bbd6bfcfcd315c.png",
       "imageAlt": "开源ASR榜单新增埃及与尼日利亚英语口音相关图片"
+    },
+    {
+      "id": "a7e1415152c958",
+      "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "The Verge AI",
+      "title": "美媒称中国招募高管刺探黄仁勋",
+      "summary": "《纽约时报》援引消息称，中国国家安全部招募Megaspeed高管Alice Huang，搜集美国AI芯片信息，并试图影响英伟达CEO黄仁勋，推动最先进芯片对华供应。Alice Huang与黄仁勋无亲属关系但往来密切，且与技嘉等芯片业高层有联系。报道称特朗普去年已听取相关简报但未采取行动；美国众议院三个委员会已要求黄仁勋出席闭门联合简报会。上述指控均来自匿名消息源，中方与当事方尚未回应，事实仍待核实。",
+      "category": "安全与规则",
+      "importance": 78,
+      "why": "涉及中美AI芯片管制与国家安全，牵动英伟达对华供应政策；但核心指控依赖匿名信源，需谨慎看待，对行业与政策走向有潜在影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "《纽约时报》报道称，中国国家安全部招募了英伟达客户Megaspeed的高管Alice Huang，目的是获取美国AI芯片相关信息，并可能借其与黄仁勋的密切关系影响英伟达，推动最先进芯片对华供应。报道称Alice Huang与技嘉等芯片业高层也有联系，两人并非亲属。特朗普去年已听取相关简报但未行动；美国众议院三个委员会要求黄仁勋出席闭门联合简报会，说明与Alice Huang的往来。目前中方、英伟达及当事人都未公开回应，报道主要依赖匿名消息源，招募细节与所谓影响是否属实仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：美国媒体说，有人被指通过私人关系接近芯片巨头老板，想打听技术底细、顺便吹吹风。但消息来源是匿名的，像听邻居转述的八卦，真假还没对上。对普通人来说，最直接的影响是英伟达高端芯片卖不卖中国、怎么卖，可能继续被政治放大镜盯着，进而影响AI算力价格和产品供应。国会要黄仁勋闭门说明，也说明这事已从媒体报道升级为监管关注。在官方回应和证据出来前，不宜当成定论，更别据此判断某家公司或某个人有罪。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "China reportedly recruited AI exec to spy on Jensen Huang",
+      "image": "./news-images/f8c4667a01f8d37d0f3c.jpg",
+      "imageAlt": "美媒称中国招募高管刺探黄仁勋相关图片"
     },
     {
       "id": "98f2cdcbd9596f",
