@@ -1,0 +1,18 @@
+[Unit]
+Description=HaiXuan consented newsletter delivery
+After=network.target
+[Service]
+Type=oneshot
+User=www
+Group=www
+WorkingDirectory=/opt/haixuan
+EnvironmentFile=/etc/haixuan.env
+ExecStart=/usr/bin/python3 /opt/haixuan/scripts/manage_portal.py newsletter daily --send
+ExecStart=/usr/bin/python3 /opt/haixuan/scripts/manage_portal.py newsletter weekly --send
+ExecStart=/usr/bin/python3 /opt/haixuan/scripts/manage_portal.py newsletter instant --send
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/haixuan

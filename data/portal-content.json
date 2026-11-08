@@ -1,0 +1,153 @@
+{
+  "updatedAt": "2026-11-08",
+  "cases": [
+    {
+      "id": "tencent-opc-orders",
+      "title": "电商设计与短视频：先找到真实订单，再谈 AI 接单",
+      "tag": "服务接单",
+      "source": "温州日报 · 温州网",
+      "url": "https://finance.66wz.com/system/2026/09/08/105835921.shtml",
+      "publishedAt": "2026-09-08",
+      "summary": "温州的腾讯 SSV 赋能 OPC 公益订单平台试点，连接个体创作者与本地企业需求。",
+      "customer": "有电商图片、视频等需求的企业",
+      "skills": "设计或视频交付能力、客户沟通",
+      "cost": "报道未披露成本；需自行核算工具与修改工时",
+      "evidence": "地方媒体现场报道；未独立核验成交与收入",
+      "firstStep": "编辑建议：准备一个明确交付范围的作品样例，再向试点方确认当前准入条件。",
+      "risk": "试点不代表全国开放，订单与收入均不保证。",
+      "image": "./illustrations/business.svg"
+    },
+    {
+      "id": "hangzhou-vertical-service",
+      "title": "从熟悉的行业出发，把 AI 做成一项具体服务",
+      "tag": "行业应用",
+      "source": "人民网浙江 · 记者探访",
+      "url": "https://zj.people.com.cn/n2/2026/0323/c228592-41531254.html",
+      "publishedAt": "2026-03-23",
+      "summary": "杭州创业者借助 AI 搭建机器人产销信息平台和数据采集应用，切入自己了解的行业需求。",
+      "customer": "机器人与制造业相关企业",
+      "skills": "行业理解、需求沟通、产品验证",
+      "cost": "报道未给出可复用的启动预算",
+      "evidence": "人民网记者采访；当前原文访问不稳定，未独立核验订单与利润。",
+      "firstStep": "编辑建议：问三位熟悉行业的从业者，找出一项重复又费时的工作。",
+      "risk": "行业资源、数据质量和销售周期会影响可复制性。",
+      "image": "./illustrations/business.svg"
+    },
+    {
+      "id": "agent-maintenance",
+      "title": "AI 员工产品能接到客户，持续维护也是生意的一部分",
+      "tag": "独立产品",
+      "source": "量子位 · 36氪授权转载",
+      "url": "https://www.36kr.com/p/3868498998449415",
+      "publishedAt": "2026-06-25",
+      "summary": "量子位走访国内 OPC 创业者，记录 AI 员工产品、客户服务与维护压力。",
+      "customer": "希望部署和管理 AI 助手的个人或团队",
+      "skills": "开发、部署、故障处理与售后",
+      "cost": "需持续承担模型、服务器及人工维护成本",
+      "evidence": "媒体访谈；未独立验证收入",
+      "firstStep": "编辑建议：做一个小范围付费试用，同时记录每位客户每周需要多少维护时间。",
+      "risk": "依赖的工具和订阅规则可能变化，服务量会限制单人交付。",
+      "image": "./illustrations/business.svg"
+    },
+    {
+      "id": "industrial-sales",
+      "title": "把行业销售经验，变成 AI 辅助的选型与报价服务",
+      "tag": "行业应用",
+      "source": "南方周末 · 微博原文",
+      "url": "https://www.weibo.com/ttarticle/p/show?id=2309405313423797256285",
+      "publishedAt": "2026-06-24",
+      "summary": "南方周末采访从工业电气销售转向 OPC 的创业者，关注繁琐的选型、查库存与报价工作。",
+      "customer": "有工业产品选型与信息整理需求的企业",
+      "skills": "行业知识、资料整理、结果核查",
+      "cost": "原文未给出完整成本和利润数据",
+      "evidence": "媒体认证账号原文；微博可能要求登录",
+      "firstStep": "编辑建议：选一份有权使用的产品手册，验证一个窄场景的辅助查询流程。",
+      "risk": "型号、库存和报价必须人工复核，客户资料需获得使用授权。",
+      "image": "./illustrations/business.svg"
+    },
+    {
+      "id": "qq-solo-reality",
+      "title": "AI之外，一人公司仍要解决客户、协作与持续交付",
+      "tag": "经营现实",
+      "source": "南风窗 · 腾讯新闻官方账号",
+      "url": "https://news.qq.com/rain/a/20260511A05SDP00",
+      "publishedAt": "2026-05-11",
+      "summary": "南风窗走访上海一人公司社区与社群，记录个体创业者的客户、协作和经营压力。",
+      "customer": "取决于具体服务，不能用“一人公司”概念代替客户需求",
+      "skills": "获客、项目管理、专业交付与协作",
+      "cost": "个体经营仍需核算外包、获客、保障和维护成本",
+      "evidence": "媒体记者走访；不把受访者自述视为普遍收益",
+      "firstStep": "编辑建议：列出你能交付的一个结果，找真实客户验证付费意愿。",
+      "risk": "AI工具不保证订单；独立经营也意味着直接承担收入波动。",
+      "image": "./illustrations/business.svg"
+    }
+  ],
+  "resources": [
+    {
+      "id": "aliyun-bailian",
+      "title": "阿里云百炼 · 新人模型免费额度",
+      "tag": "Token / API",
+      "provider": "阿里云官方文档",
+      "url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+      "summary": "首次开通可获得指定模型的新人额度。不同模型额度独立，实际可用量以控制台为准。",
+      "benefit": "模型新人额度",
+      "audience": "首次开通并完成实名认证的用户",
+      "region": "华北2（北京）地域指定模型",
+      "payment": "官方要求实名认证；支付要求以账号开通页面为准",
+      "billing": "耗尽或到期后可能按量计费，请先开启“免费额度用完即停”。",
+      "deadline": "按个人开通时间起算，通常90天；非统一活动截止日",
+      "endsAt": null,
+      "checkedAt": "2026-11-08",
+      "status": "官方规则已核对",
+      "steps": [
+        "阅读免费额度适用模型与地域。",
+        "完成实名认证，检查控制台实际到账额度。",
+        "开启免费额度用完即停，再开始调用。"
+      ]
+    },
+    {
+      "id": "tencent-tokenhub",
+      "title": "腾讯云 TokenHub · 新人免费体验包",
+      "tag": "Token / API",
+      "provider": "腾讯云官方文档（国际站）",
+      "url": "https://intl.cloud.tencent.com/zh/document/product/1300/80423",
+      "summary": "官方文档介绍新用户模型体验包，可在模型广场选择支持免费体验的模型。",
+      "benefit": "指定模型体验额度",
+      "audience": "符合页面资格的主账号；每个主账号一次",
+      "region": "本条依据国际站文档，国内站账号适用性需另行确认",
+      "payment": "以开通页面与账号地域要求为准",
+      "billing": "仅免费包覆盖部分可抵扣；调用前核对计费模式。",
+      "deadline": "本期活动至2026年12月31日，领取后有效期以模型为准",
+      "endsAt": "2026-12-31",
+      "checkedAt": "2026-11-08",
+      "status": "官方规则已核对",
+      "steps": [
+        "确认账号所属站点和参与资格。",
+        "在模型广场查看新人福利和每个模型的额度。",
+        "确认领取有效期、付费设置后再调用。"
+      ]
+    },
+    {
+      "id": "tencent-databuddy",
+      "title": "腾讯云 DataBuddy · 新用户工作台试用",
+      "tag": "开发工具",
+      "provider": "腾讯云官方文档",
+      "url": "https://cloud.tencent.com/document/product/1835/137105",
+      "summary": "新用户工作台试用包含部分计算资源与 Agent 积分，模型服务费用需要单独查看。",
+      "benefit": "30个自然日试用",
+      "audience": "符合官方资格的新用户",
+      "region": "服务地域以控制台开放情况为准",
+      "payment": "开通条件以控制台为准",
+      "billing": "模型服务按量计费，不包含免费模型调用额度。",
+      "deadline": "从个人开通日计算30个自然日",
+      "endsAt": null,
+      "checkedAt": "2026-11-08",
+      "status": "官方规则已核对",
+      "steps": [
+        "核对试用资源清单和不包含的计费项。",
+        "设置预算与提醒，避免把工作台试用当作模型免费。",
+        "试用到期前备份数据并检查资源状态。"
+      ]
+    }
+  ]
+}

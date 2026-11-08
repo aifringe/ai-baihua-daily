@@ -1,5 +1,5 @@
 {
-  "name": "ai-baihua-daily",
+  "name": "haixuan-ai",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -7,9 +7,9 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "prebuild": "cp data/hotspots.json public/hotspots.json",
+    "prebuild": "cp data/hotspots.json public/hotspots.json && cp data/portal-content.json public/portal-content.json",
     "build": "vite build --config vite.static.config.ts",
-    "preview": "vite preview --config vite.static.config.ts --host 127.0.0.1",
+    "preview": "python3 server/app.py --port 4173 --static dist",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint app components lib static-entry.tsx vite.config.ts vite.static.config.ts next.config.ts",
     "format": "oxfmt",

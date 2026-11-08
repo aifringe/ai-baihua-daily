@@ -1,6 +1,8 @@
 import pathlib
 import sys
 import unittest
+from unittest.mock import patch
+import source_access
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import update_news as u
@@ -54,5 +56,22 @@ class UpdateNewsTests(unittest.TestCase):
  def test_article_parser_reads_open_graph_image(self):
   parser=u.ArticleParser();parser.feed('<meta property="og:image" content="https://example.com/cover.jpg"><article>正文内容</article>')
   self.assertEqual(parser.image,'https://example.com/cover.jpg')
+
+class SourcePolicyTests(unittest.TestCase):
+ def test_denied_feed_never_fetches(self):
+  with patch.object(u, 'robots_allow', return_value=False), patch.object(u, 'request') as request:
+   rows, status=u.parse_feed(('Blocked', 'https://blocked.example/rss', 5))
+   self.assertEqual(rows, []); self.assertFalse(status['ok']); request.assert_not_called()
+ def test_denied_article_never_fetches(self):
+  with patch.object(u, 'robots_allow', return_value=False), patch.object(u, 'request') as request:
+   self.assertIsNone(u.article_text({'url':'https://blocked.example/article'})); request.assert_not_called()
+ def test_schedule_matches_four_beijing_hours(self):
+  text=(u.ROOT/'.github/workflows/update-news.yml').read_text()
+  self.assertIn("0 23,3,9,13 * * *", text)
+  self.assertEqual(sorted((h+8)%24 for h in [23,3,9,13]), [7,11,17,21])
+ def test_curated_sources_exclude_blocked_and_aggregator(self):
+  names={s['name'] for s in u.SOURCE_CATALOG}
+  self.assertIn('量子位', names); self.assertIn('Simon Willison', names)
+  self.assertNotIn('VentureBeat AI', names); self.assertNotIn('Google News', names)
 
 if __name__=='__main__':unittest.main()

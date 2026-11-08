@@ -1,7 +1,190 @@
-{"updatedAt":"2026-09-03T04:00:00Z","lastCheckedAt":"2026-09-03T04:00:00Z","articles":[
-{"id":"claude-51","title":"Claude 更新：更会做长任务，也开始走进科研","summary":"Anthropic 发布 Fable 5.1 与 Mythos 5.1。两者底层相同，但开放范围和安全限制不同，别把它们当成人人都能用的两个新产品。","category":"模型进展","source":"Anthropic","url":"https://www.anthropic.com/claude-fable-and-mythos-5-1","publishedAt":"2026-09-01","importance":95,"why":"AI 的竞争正在从答一道题，转向能否持续完成一件复杂的事。","sections":[{"heading":"到底发生了什么？","text":"Anthropic 推出 Fable 5.1 和 Mythos 5.1。官方称它们在编程、知识工作和科研任务上有所进步。Fable 面向一般用户开放，Mythos 通过受信任访问计划提供。"},{"heading":"换成人话","text":"可以把模型理解成助手的大脑。这次是同一套大脑，配上不同的使用限制。它更擅长处理步骤多、耗时长的工作，但仍需要人检查结果。"},{"heading":"和你有什么关系？","text":"如果你用 Claude 写代码、整理资料，可以留意升级后是否更少返工。官方的成绩和客户案例值得参考，但不能代替你自己的实际测试。"},{"heading":"还要留意什么？","text":"可用范围、价格和安全限制并不相同。官方介绍不代表所有场景都比其他模型好，具体使用条件请看原文。"}],"editor":"首期来源核对"},
-{"id":"android-memory","title":"钥匙放哪了？Gemini 将能帮你记住","summary":"Google 的 Android 更新把 AI 用在生活小事上：记录物品位置、描述眼前环境。部分功能还在陆续推出，并有设备和地区要求。","category":"日常应用","source":"Google","url":"https://blog.google/products-and-platforms/platforms/android/Android-Drop-September-2026/","publishedAt":"2026-09-01","importance":90,"why":"比起模型跑分，这类变化更容易直接影响你每天怎么用手机。","sections":[{"heading":"到底发生了什么？","text":"Google 宣布，你将可以告诉 Gemini 护照或备用钥匙放在哪里，由 Find Hub 保存位置；需要时再询问。另一个 Guided vision 功能会描述手机摄像头看到的内容。"},{"heading":"换成人话","text":"它像一个可以对话的备忘录。你先告诉它东西放在哪里，它帮你记住；并不是手机能自动找到任意丢失的物品。"},{"heading":"和你有什么关系？","text":"容易忘东西的人可能会觉得有用。视觉描述也可能帮助视力不佳的人理解标签或菜单。具体功能需要相应 Android 版本，并受支持地区限制。"},{"heading":"还要留意什么？","text":"部分功能标注为即将推出。视觉描述可能出错，不能用来替代导航、障碍检测或安全出行辅助。"}],"editor":"首期来源核对"},
-{"id":"health-records","title":"ChatGPT 接入医疗记录，先服务医护团队","summary":"OpenAI 宣布医疗版 ChatGPT 可连接 Epic 病历系统和公共医疗数据，帮助获授权的团队整理信息；并非所有人的普通账号都新增了看病功能。","category":"行业变化","source":"OpenAI","url":"https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/","publishedAt":"2026-09-01","importance":88,"why":"AI 正在接入实际工作资料，而不只是回答泛泛的问题。","sections":[{"heading":"到底发生了什么？","text":"医疗机构可以将 Epic 的授权病历信息连接到 ChatGPT for Healthcare。新的公共数据插件还可访问 PubMed、DailyMed 等来源。"},{"heading":"换成人话","text":"医生看诊前常要翻很多记录。这个工具希望先把近期检查、用药变化等整理出来，并指回相关记录，让医生更快找到重点。"},{"heading":"和你有什么关系？","text":"对普通人而言，这是医疗工作方式的变化，不是让你直接把诊断交给聊天机器人。实际能否使用，取决于医疗机构的部署和授权。"},{"heading":"还要留意什么？","text":"整理资料不等于替医生作决定。官方评估有特定测试条件，不能理解为在所有真实场景都准确。"}],"editor":"首期来源核对"},
-{"id":"astra-safety","title":"AI 能力越强，发布前的安全门槛也越高","summary":"OpenAI 公布 Astra 的能力评估与防护方案，重点讨论强网络安全能力该如何限制滥用。它是一份安全进展说明，不是普通用户的上手指南。","category":"安全与规则","source":"OpenAI","url":"https://openai.com/index/path-to-astra/","publishedAt":"2026-09-01","importance":85,"why":"一个 AI 能做什么，与厂商允许它做什么，是两回事。","sections":[{"heading":"到底发生了什么？","text":"OpenAI 介绍 Astra 在网络安全任务中的能力与风险，并说明为发布准备的多层防护，包括拒绝滥用、监测和访问限制。"},{"heading":"换成人话","text":"像一把更锋利的工具：能帮助专业人员发现问题，也需要更严格的使用边界。模型变强后，安全措施也必须跟上。"},{"heading":"和你有什么关系？","text":"遇到模型拒绝某些请求，不一定是它做不到，也可能是使用范围受限。评价 AI 时，除了能力，也应关注可靠性和授权边界。"},{"heading":"还要留意什么？","text":"文中的测试成绩有特定条件；它们不能直接等同于日常产品表现。高级安全用途的访问范围也受到限制。"}],"editor":"首期来源核对"},
-{"id":"hardware-standard","title":"让 AI 操作实验设备，先给机器统一“语言”","summary":"Anthropic 预览 MHS 硬件标准，让 AI 更容易连接显微镜、机械臂等设备。目前面向部分实验室和制造伙伴进行研究试用。","category":"模型进展","source":"Anthropic","url":"https://www.anthropic.com/news/model-hardware-standard-research-preview","publishedAt":"2026-08-27","importance":75,"why":"让 AI 从屏幕走向现实，难点还包括设备接口和安全限制。","sections":[{"heading":"到底发生了什么？","text":"MHS 尝试提供共同的设备驱动规范，让不同仪器以统一方式描述功能、接收操作，并向 AI 提供安全限制。"},{"heading":"换成人话","text":"过去每台仪器像说一种方言，需要单独写翻译程序。这个标准希望提供共同语言，减少把设备连起来的工作。"},{"heading":"和你有什么关系？","text":"它暂时不是家用机器人产品。更直接的影响可能发生在实验室：让研究人员少做重复操作，更快验证想法。"},{"heading":"还要留意什么？","text":"这还是研究预览，部分伙伴案例不代表所有设备都能直接接入。真实设备的安全验证依然重要。"}],"editor":"首期来源核对"}
-]}
+{
+  "updatedAt": "2026-11-03T04:40:05.269112+00:00",
+  "lastCheckedAt": "2026-11-03T04:40:05.269112+00:00",
+  "feedStatus": [
+    {
+      "source": "OpenAI",
+      "ok": true
+    },
+    {
+      "source": "Google DeepMind",
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "ok": true
+    },
+    {
+      "source": "Google Research",
+      "ok": true
+    },
+    {
+      "source": "AWS AI",
+      "ok": true
+    },
+    {
+      "source": "MIT News",
+      "ok": true
+    },
+    {
+      "source": "Berkeley AI Research",
+      "ok": true
+    },
+    {
+      "source": "Apple Machine Learning",
+      "ok": true
+    },
+    {
+      "source": "Hugging Face",
+      "ok": true
+    },
+    {
+      "source": "Microsoft Research",
+      "ok": true
+    },
+    {
+      "source": "NVIDIA AI",
+      "ok": true
+    },
+    {
+      "source": "GitHub",
+      "ok": true
+    },
+    {
+      "source": "TechCrunch AI",
+      "ok": true
+    },
+    {
+      "source": "MIT Technology Review",
+      "ok": true
+    },
+    {
+      "source": "VentureBeat AI",
+      "ok": false
+    },
+    {
+      "source": "The Verge AI",
+      "ok": true
+    },
+    {
+      "source": "Google News",
+      "ok": true
+    }
+  ],
+  "editionDate": "2026-11-08",
+  "dailyIds": [
+    "xinhua-ai-terminal-20261106",
+    "googlebook-game-20261104",
+    "google-educator-20261103",
+    "981c51fa20c4c2"
+  ],
+  "editionUpdatedAt": "2026-11-08T14:38:44.514137+00:00",
+  "articles": [
+    {
+      "id": "xinhua-ai-terminal-20261106",
+      "title": "进博会上的 AI 新终端：智能眼镜、电脑与原型网络",
+      "summary": "新华网探访高通展台，报道6G终端原型机与多种AI终端演示。原型和展会演示展示了方向，仍需区分测试、发布与实际商用。",
+      "category": "产品动态",
+      "source": "新华网 · 记者现场报道",
+      "url": "https://www.news.cn/tech/20261106/03e933c5011f4ea9b09c03b9c8c8bb32/c.html",
+      "publishedAt": "2026-11-06",
+      "importance": 90,
+      "why": "编辑观察：AI正在进入具体设备。选购时先看任务是否可完成、服务能否使用和总成本。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "新华网11月6日报道，高通在进博会展示6G终端原型机、智能眼镜相关AI演示及AI电脑等设备。报道涉及下一代网络与端侧、边缘侧计算的协作。原型机处于验证阶段，不能理解为6G已经全面商用。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "编辑建议：关注设备能否解决一个具体问题，例如信息检索或办公任务，而不是只看AI标签。展台体验不等于日常效果，购买前仍需核对上市状态、隐私设置和订阅成本。"
+        }
+      ],
+      "editor": "海选AI · 基于新华网现场报道整理",
+      "image": "./news-images/0b867294059faa28271c.jpg",
+      "imageAlt": "进博会高通展台的终端展示 · 新华网报道配图",
+      "imageKind": "新华网报道配图 · 来源见原文"
+    },
+    {
+      "id": "googlebook-game-20261104",
+      "title": "用自然语言做小游戏：Google 展示 AI 创作流程",
+      "summary": "Google 用一款复古小游戏展示自然语言编程工具的使用过程。对个人创作者而言，值得关注的是从想法到可试玩原型的步骤。",
+      "category": "产品动态",
+      "source": "Google 官方博客",
+      "url": "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
+      "publishedAt": "2026-11-04",
+      "importance": 88,
+      "why": "编辑观察：先用小原型验证想法，再决定是否继续开发。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google 的官方文章展示 Henry Cavill 使用 Googlebook 及内置 AI 工具制作复古游戏。文中提到 Antigravity 可以把自然语言提示转成游戏机制，Rambler 用于语音转文字。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "编辑建议：把第一个目标缩小到一个能玩的关卡。做出原型后，仍要自己检查操作、素材权利和发布要求。演示案例不代表所有人都能获得相同效果。"
+        }
+      ],
+      "editor": "海选AI · 基于官方正文整理",
+      "image": "./news-images/fbf778b42ea6bc29e79f.jpg",
+      "imageAlt": "用自然语言做小游戏：Google 展示 AI 创作流程 · Google官方配图",
+      "imageKind": "Google 官方博客配图"
+    },
+    {
+      "id": "google-educator-20261103",
+      "title": "Google 扩展教师 AI 培训，重点落在具体教学任务",
+      "summary": "官方公布教师 AI 培训的地区扩展与新课程，涉及互动测验、游戏化学习和作业设计。国内教师可借鉴任务设计，参与条件需另查。",
+      "category": "行业动态",
+      "source": "Google 官方博客",
+      "url": "https://blog.google/products-and-platforms/products/education/google-ai-educator-series-global-expansion-november-2026/",
+      "publishedAt": "2026-11-03",
+      "importance": 78,
+      "why": "编辑观察：从一个明确教学问题开始，比泛泛学习 AI 功能更容易落地。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Google 宣布扩展 AI Educator Series，并介绍 11 月的新教学模块。内容包括构建互动测验、通过游戏学习，以及改进作业设计。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "编辑建议：先选一节课，试做带即时反馈的练习。地区开放范围和工具可用性以官方页面为准，这并不是面向中国教师的普遍免费资格承诺。"
+        }
+      ],
+      "editor": "海选AI · 基于官方正文整理",
+      "image": "./news-images/7fd5be5969b0bde64159.jpg",
+      "imageAlt": "Google 扩展教师 AI 培训，重点落在具体教学任务 · Google官方配图",
+      "imageKind": "Google 官方博客配图"
+    },
+    {
+      "id": "981c51fa20c4c2",
+      "url": "https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102"
+        }
+      ],
+      "publishedAt": "2026-11-02",
+      "source": "MIT News",
+      "title": "MIT两教授获AI科学奖 曾用AI发现抗生素",
+      "summary": "MIT新闻2026年11月2日报道，MIT教授Regina Barzilay与James Collins获2026年普利兹克AI科学卓越研究奖，该奖由芝加哥大学与加州理工2024年设立。两人因合作利用深度学习、生物工程与实验验证发现新型抗菌候选物而获奖。其2020年论文报告首个AI发现的抗生素halicin，对多种耐药菌有效，将原本数年的发现过程缩短至数周；2023年又识别窄谱抗生素abaucin。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "该奖项与成果显示AI在药物发现中从辅助工具走向设计工具，对耐药菌危机具现实意义，也反映高校与AI交叉研究的制度化认可。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT新闻称，Regina Barzilay与James Collins获2026年普利兹克AI科学卓越研究奖，表彰其在AI辅助抗生素发现上的合作。报道回顾，两人2020年在《Cell》发表论文，描述首个由AI发现的抗生素halicin，模型基于2500个分子训练，测试显示可杀灭艰难梭菌、鲍曼不动杆菌和结核分枝杆菌等耐药菌，发现周期由数年缩至数周。2023年团队又识别窄谱抗生素abaucin，针对鲍曼不动杆菌。报道同时引述Barzilay称，AI目前只能自动化药物发现流程的部分环节，仍需更真实的人类生物学模型；奖项具体评选细节及独立验证情况未在文中展开。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：过去找新抗生素像在大海里靠经验捞针，慢且常失败；现在研究人员先让AI从海量分子里筛出候选，再到实验室验证。halicin和abaucin就是被筛出来并验证有效的例子，前者广谱、后者只打一种菌，后者理论上更不容易误伤肠道好菌、也更难让细菌产生耐药。对普通人来说，这不等于新药马上进医院，但意味着面对“超级细菌”时，未来可能更快找到新武器；同时也要看到，AI只是加速了筛选环节，真正上市仍需多年临床试验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Regina Barzilay and Jim Collins win Pritzker Prize for AI and Science Research Excellence for work in AI-enabled antibiotic discovery",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图"
+    }
+  ]
+}

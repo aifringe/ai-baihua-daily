@@ -2,10 +2,8 @@ name: Update AI news
 
 on:
   schedule:
-    # Beijing 01:30, 08:00 and 13:00 (UTC+8)
-    - cron: '30 17 * * *'
-    - cron: '0 0 * * *'
-    - cron: '0 5 * * *'
+    # Beijing 07:00, 11:00, 17:00, 21:00 (UTC+8). GitHub may queue runs.
+    - cron: '0 23,3,9,13 * * *'
   workflow_dispatch:
     inputs:
       since:
@@ -13,9 +11,9 @@ on:
         required: false
         type: string
       limit:
-        description: '本批最多新增条数（上限20）'
+        description: '本批最多新增条数（上限5）'
         required: false
-        default: '20'
+        default: '5'
         type: string
       until:
         description: '可选：历史回补结束日期（YYYY-MM-DD）'
@@ -37,25 +35,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Test update rules
-        run: python3 -m unittest scripts/test_update_news.py
+        run: python3 -m unittest discover -s scripts -p "test_*.py"
       - name: Build deduplicated edition from readable articles
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           BACKFILL_SINCE: ${{ inputs.since }}
           BACKFILL_UNTIL: ${{ inputs.until }}
-          UPDATE_LIMIT: ${{ inputs.limit || '20' }}
+          UPDATE_LIMIT: ${{ inputs.limit || '5' }}
         run: |
           args=("$UPDATE_LIMIT")
           if [[ -n "$BACKFILL_SINCE" ]]; then args+=(--since "$BACKFILL_SINCE"); fi
           if [[ -n "$BACKFILL_UNTIL" ]]; then args+=(--until "$BACKFILL_UNTIL"); fi
           python3 scripts/update_news.py "${args[@]}"
+          python3 scripts/discover_domestic.py
       - name: Publish changed edition
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add public/news.json public/news-images
+          git add public/news.json public/news-images data/domestic-candidates.json
           git diff --cached --quiet || git commit -m "Update deduplicated AI news"
           git push
           gh workflow run deploy-baota.yml

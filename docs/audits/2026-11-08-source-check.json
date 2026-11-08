@@ -1,0 +1,163 @@
+{
+  "checkedAt": "2026-11-08T15:27:34.979830+00:00",
+  "results": [
+    {
+      "source": "OpenAI",
+      "ok": true,
+      "candidates": 78,
+      "sampleUrl": "https://openai.com/index/partnering-with-hacktron",
+      "bodyReadable": false,
+      "bodyLength": 0
+    },
+    {
+      "source": "Google DeepMind",
+      "ok": false,
+      "candidates": 0,
+      "sampleUrl": null,
+      "bodyReadable": false,
+      "bodyLength": 0
+    },
+    {
+      "source": "Google AI",
+      "ok": true,
+      "candidates": 5,
+      "sampleUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "bodyReadable": true,
+      "bodyLength": 9299
+    },
+    {
+      "source": "Google Research",
+      "ok": true,
+      "candidates": 5,
+      "sampleUrl": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
+      "bodyReadable": true,
+      "bodyLength": 12984
+    },
+    {
+      "source": "AWS AI",
+      "ok": true,
+      "candidates": 12,
+      "sampleUrl": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
+      "bodyReadable": true,
+      "bodyLength": 18000
+    },
+    {
+      "source": "MIT News",
+      "ok": true,
+      "candidates": 12,
+      "sampleUrl": "https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102",
+      "bodyReadable": true,
+      "bodyLength": 7039
+    },
+    {
+      "source": "Berkeley AI Research",
+      "ok": true,
+      "candidates": 0,
+      "sampleUrl": null,
+      "bodyReadable": false,
+      "bodyLength": 0
+    },
+    {
+      "source": "Apple Machine Learning",
+      "ok": true,
+      "candidates": 6,
+      "sampleUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "bodyReadable": true,
+      "bodyLength": 18000
+    },
+    {
+      "source": "Hugging Face",
+      "ok": true,
+      "candidates": 26,
+      "sampleUrl": "https://huggingface.co/blog/allenai/toyblocks",
+      "bodyReadable": true,
+      "bodyLength": 18000
+    },
+    {
+      "source": "Microsoft Research",
+      "ok": true,
+      "candidates": 5,
+      "sampleUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "bodyReadable": true,
+      "bodyLength": 18000
+    },
+    {
+      "source": "NVIDIA AI",
+      "ok": true,
+      "candidates": 1,
+      "sampleUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "bodyReadable": true,
+      "bodyLength": 8833
+    },
+    {
+      "source": "GitHub",
+      "ok": true,
+      "candidates": 1,
+      "sampleUrl": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
+      "bodyReadable": true,
+      "bodyLength": 14769
+    },
+    {
+      "source": "TechCrunch AI",
+      "ok": true,
+      "candidates": 8,
+      "sampleUrl": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "bodyReadable": true,
+      "bodyLength": 4908
+    },
+    {
+      "source": "MIT Technology Review",
+      "ok": true,
+      "candidates": 3,
+      "sampleUrl": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+      "bodyReadable": true,
+      "bodyLength": 5529
+    },
+    {
+      "source": "The Verge AI",
+      "ok": true,
+      "candidates": 6,
+      "sampleUrl": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "bodyReadable": true,
+      "bodyLength": 1574
+    },
+    {
+      "source": "量子位",
+      "ok": true,
+      "candidates": 1,
+      "sampleUrl": "https://www.qbitai.com/2026/11/508478.html",
+      "bodyReadable": true,
+      "bodyLength": 2020
+    },
+    {
+      "source": "Simon Willison",
+      "ok": true,
+      "candidates": 17,
+      "sampleUrl": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+      "bodyReadable": true,
+      "bodyLength": 960
+    },
+    {
+      "source": "Latent Space",
+      "ok": true,
+      "candidates": 11,
+      "sampleUrl": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
+      "bodyReadable": true,
+      "bodyLength": 5827
+    },
+    {
+      "source": "机器之心",
+      "ok": true,
+      "stage": "search-responded, public-index-readable",
+      "count": 0,
+      "readable": 0
+    },
+    {
+      "source": "智东西",
+      "ok": true,
+      "stage": "search-responded, public-index-readable",
+      "count": 5,
+      "readable": 0
+    }
+  ]
+}

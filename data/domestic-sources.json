@@ -1,0 +1,138 @@
+[
+  {
+    "name": "腾讯新闻",
+    "home": "https://news.qq.com/",
+    "role": "国内报道与案例发现",
+    "policy": "区分原始媒体与平台转载；采集公开页面，访问受限保留线索供人工核验。",
+    "domains": [
+      "news.qq.com"
+    ],
+    "query": "AI 一人公司 创业 接单",
+    "mode": "search",
+    "watchUrls": [
+      "https://news.qq.com/rain/a/20260511A05SDP00"
+    ]
+  },
+  {
+    "name": "微博",
+    "home": "https://weibo.com/",
+    "role": "认证作者与热点线索",
+    "policy": "优先媒体认证账号和创业者本人；不把热度与自报收入当作核验证据，不绕过登录。",
+    "domains": [
+      "weibo.com"
+    ],
+    "query": "AI 一人公司 创业",
+    "mode": "discovery",
+    "watchUrls": [
+      "https://www.weibo.com/ttarticle/p/show?id=2309405313423797256285"
+    ]
+  },
+  {
+    "name": "36氪",
+    "home": "https://www.36kr.com/",
+    "role": "国内创业、产品与案例",
+    "policy": "注明原作者和授权转载关系；排除招商、培训营销及无证据的收入承诺。",
+    "domains": [
+      "36kr.com"
+    ],
+    "query": "AI 一人公司 独立开发者",
+    "mode": "search",
+    "watchUrls": [
+      "https://www.36kr.com/p/3868498998449415",
+      "https://www.36kr.com/p/3747947088003588",
+      "https://www.36kr.com/newsflashes/4045152038458502"
+    ]
+  },
+  {
+    "name": "人民网",
+    "home": "https://www.people.com.cn/",
+    "role": "记者走访与地方产业案例",
+    "policy": "优先现场采访和原始报道；政策与申请资格回查官方公告。",
+    "domains": [
+      "people.com.cn"
+    ],
+    "query": "人工智能 一人公司 创业",
+    "mode": "search",
+    "indexes": [
+      "https://www.people.com.cn/"
+    ],
+    "watchUrls": [
+      "https://zj.people.com.cn/n2/2026/0323/c228592-41531254.html"
+    ]
+  },
+  {
+    "name": "新华网",
+    "home": "https://www.news.cn/",
+    "role": "权威报道与行业动态",
+    "policy": "关注有具体事实的报道，保留报道日期，不把历史案例当成今日消息。",
+    "domains": [
+      "news.cn",
+      "xinhuanet.com"
+    ],
+    "query": "人工智能 一人公司",
+    "mode": "search",
+    "indexes": [
+      "https://www.news.cn/tech/"
+    ],
+    "watchUrls": [
+      "https://www1.xinhuanet.com/fortune/20260321/943f6293dbe14f918ef29a481d12a6d0/c.html"
+    ]
+  },
+  {
+    "name": "温州网",
+    "home": "https://www.66wz.com/",
+    "role": "本地接单与创业试点",
+    "policy": "核对主办方、试点范围与原始报道，未确认的全国开放资格不作承诺。",
+    "domains": [
+      "66wz.com"
+    ],
+    "query": "腾讯 OPC 订单 AI",
+    "mode": "search",
+    "indexes": [
+      "https://finance.66wz.com/"
+    ],
+    "watchUrls": [
+      "https://finance.66wz.com/system/2026/09/08/105835921.shtml"
+    ]
+  },
+  {
+    "name": "厂商官方文档",
+    "home": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+    "role": "免费资源规则核对",
+    "policy": "额度、地域、到期与扣费条款均优先查官方；网页可读不等于实际领取成功。",
+    "domains": [
+      "aliyun.com",
+      "cloud.tencent.com"
+    ],
+    "query": "",
+    "mode": "official"
+  },
+  {
+    "name": "机器之心",
+    "home": "https://www.jiqizhixin.com/",
+    "role": "国内AI报道与创业线索",
+    "policy": "仅公开列表与正文；会员、合作推广和收益声明进入人工核验。",
+    "domains": [
+      "jiqizhixin.com"
+    ],
+    "query": "AI 创业 产品",
+    "mode": "search",
+    "indexes": [
+      "https://www.jiqizhixin.com/"
+    ]
+  },
+  {
+    "name": "智东西",
+    "home": "https://zhidx.com/",
+    "role": "国内AI报道与创业线索",
+    "policy": "仅公开列表与正文；会员、合作推广和收益声明进入人工核验。",
+    "domains": [
+      "zhidx.com"
+    ],
+    "query": "AI 创业 产品",
+    "mode": "search",
+    "indexes": [
+      "https://zhidx.com/"
+    ]
+  }
+]

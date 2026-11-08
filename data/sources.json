@@ -60,7 +60,7 @@
     "feed": "https://huggingface.co/blog/feed.xml",
     "home": "https://huggingface.co/blog",
     "weight": 4,
-    "kind": "官方"
+    "kind": "平台与社区文章"
   },
   {
     "name": "Microsoft Research",
@@ -98,13 +98,6 @@
     "kind": "专业媒体"
   },
   {
-    "name": "VentureBeat AI",
-    "feed": "https://venturebeat.com/category/ai/feed/",
-    "home": "https://venturebeat.com/category/ai/",
-    "weight": 3,
-    "kind": "专业媒体"
-  },
-  {
     "name": "The Verge AI",
     "feed": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
     "home": "https://www.theverge.com/ai-artificial-intelligence",
@@ -112,10 +105,24 @@
     "kind": "专业媒体"
   },
   {
-    "name": "Google News",
-    "feed": "https://news.google.com/rss/search?q=%22artificial%20intelligence%22%20OR%20OpenAI%20OR%20Gemini%20OR%20Claude%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
-    "home": "https://news.google.com/",
-    "weight": 1,
-    "kind": "聚合发现"
+    "name": "量子位",
+    "feed": "https://www.qbitai.com/feed",
+    "home": "https://www.qbitai.com/",
+    "weight": 4,
+    "kind": "国内专业媒体"
+  },
+  {
+    "name": "Simon Willison",
+    "feed": "https://simonwillison.net/atom/everything/",
+    "home": "https://simonwillison.net/",
+    "weight": 4,
+    "kind": "作者实测"
+  },
+  {
+    "name": "Latent Space",
+    "feed": "https://www.latent.space/feed",
+    "home": "https://www.latent.space/",
+    "weight": 4,
+    "kind": "访谈与分析"
   }
 ]
