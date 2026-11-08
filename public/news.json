@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-07T21:03:06.232265+00:00",
-  "lastCheckedAt": "2026-11-07T21:03:06.232265+00:00",
+  "updatedAt": "2026-11-08T03:29:28.675947+00:00",
+  "lastCheckedAt": "2026-11-08T03:29:28.675947+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -6147,6 +6147,41 @@
       "originalTitle": "Developing Gemini 4 Argon responsibly and safely",
       "image": "./news-images/2e73b40e3d324de7469f.png",
       "imageAlt": "谷歌发布Gemini 4 Argon并强化安全防护相关图片"
+    },
+    {
+      "id": "d0161db6473550",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+        },
+        {
+          "name": "Google AI",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+        }
+      ],
+      "publishedAt": "2026-10-13",
+      "source": "Google DeepMind / Google AI",
+      "title": "谷歌发布Gemini 4 Argon，主打复杂任务",
+      "summary": "2026年10月13日，谷歌DeepMind发布前沿模型Gemini 4 Argon，面向开发者、企业和消费者开放。官方称其在编程、金融、法律、网络安全和科研等多步骤任务中表现领先，在Vals Index排名第一。发布同时公布多项内部应用案例，包括Chrome代码重构、ADK性能优化、xTB量子化学包提速及Gemma推理加速。定价为每百万输入token 2美元、输出10美元。上述性能与案例均来自谷歌官方，尚无独立第三方验证。",
+      "category": "模型进展",
+      "importance": 88,
+      "why": "谷歌旗舰模型换代，直接改变前沿模型竞争格局，且定价与多领域落地案例对开发者和企业选型有实际参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind于2026年10月13日发布Gemini 4 Argon，通过AI Studio和Gemini平台API向开发者与企业开放，同时面向Google AI Ultra和Pro订阅用户在Gemini应用及搜索AI Mode中提供。官方称该模型在编程、金融、法律、税务等经济领域基准Vals Index上排名第一，定价为每百万输入token 2美元、输出10美元，缓存输入享95%折扣。谷歌还列举内部案例：Chrome团队借其完成涉及数百文件的架构重构；ADK框架长会话准备时间降低40%；xTB分子结构预测提速最高2.3倍；Gemma 4 E2B推理吞吐提升2.85倍。上述数据均出自谷歌自述，缺少独立评测，实际表现仍待验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Argon理解成一个不只聊天、还能连续干活的助手：给它一个目标，它能自己拆步骤、改代码、查漏洞，甚至通宵跑任务。对普通人最直接的影响是，谷歌搜索和Gemini应用里的回答可能更少绕弯子、更少套话；对程序员和企业来说，处理大型代码库和文档的成本可能下降。但要注意，发布方自己夸自己，就像餐厅说自家菜最好吃，真实味道还得等第三方测评和用户上手。价格看似便宜，实际花费取决于任务消耗多少token，复杂任务未必省钱。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini 4 Argon: Built to solve your hardest problems",
+      "image": "./news-images/9554489effb9696afc05.png",
+      "imageAlt": "谷歌发布Gemini 4 Argon，主打复杂任务相关图片"
     },
     {
       "id": "a19e8d8011ce19",
