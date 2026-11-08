@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-08T14:42:13.194713+00:00",
+  "checkedAt": "2026-11-08T15:33:35.984934+00:00",
   "sources": [
     {
       "source": "腾讯新闻",
@@ -39,8 +39,22 @@
     {
       "source": "温州网",
       "ok": true,
-      "stage": "search-responded",
+      "stage": "search-responded, public-index-readable",
       "count": 1,
+      "readable": 0
+    },
+    {
+      "source": "机器之心",
+      "ok": true,
+      "stage": "search-responded, public-index-readable",
+      "count": 0,
+      "readable": 0
+    },
+    {
+      "source": "智东西",
+      "ok": true,
+      "stage": "search-responded, public-index-readable",
+      "count": 0,
       "readable": 0
     }
   ],
@@ -51,7 +65,7 @@
       "source": "腾讯新闻",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-08T14:42:09.577188+00:00",
+      "discoveredAt": "2026-11-08T15:33:28.465126+00:00",
       "discoveryUrl": "https://news.qq.com/rain/a/20260511A05SDP00",
       "topic": "business",
       "state": "历史线索",
@@ -67,7 +81,7 @@
       "source": "微博",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-08T14:42:09.632840+00:00",
+      "discoveredAt": "2026-11-08T15:33:28.475654+00:00",
       "discoveryUrl": "https://www.weibo.com/ttarticle/p/show?id=2309405313423797256285",
       "topic": "business",
       "state": "待人工核验",
@@ -79,7 +93,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-08T14:42:09.564189+00:00",
+      "discoveredAt": "2026-11-08T15:33:28.515305+00:00",
       "discoveryUrl": "https://www.36kr.com/p/3868498998449415",
       "topic": "business",
       "state": "历史线索",
@@ -95,7 +109,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-08T14:42:10.350261+00:00",
+      "discoveredAt": "2026-11-08T15:33:32.970594+00:00",
       "discoveryUrl": "https://www.36kr.com/p/3747947088003588",
       "topic": "business",
       "state": "历史线索",
@@ -111,7 +125,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-08T14:42:11.474820+00:00",
+      "discoveredAt": "2026-11-08T15:33:34.496314+00:00",
       "discoveryUrl": "https://www.36kr.com/newsflashes/4045152038458502",
       "topic": "business",
       "state": "待人工核验",
@@ -277,16 +291,16 @@
       "contentHash": "5ee6ac0c50738711e4b7ee8254cf82e369bae380147dbf3794e27b44e1db570f"
     },
     {
-      "originalTitle": "",
+      "originalTitle": "ЯѶOPC Ϊ崴ҵߴӵͨ-ݲƾ-",
       "url": "https://finance.66wz.com/system/2026/09/08/105835921.shtml",
       "source": "温州网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-08T14:42:10.773906+00:00",
+      "discoveredAt": "2026-11-08T15:33:34.127419+00:00",
       "discoveryUrl": "https://finance.66wz.com/system/2026/09/08/105835921.shtml",
       "topic": "business",
       "state": "待人工核验",
-      "reason": "访问规则未确认或不允许自动读取"
+      "reason": "正文或发布日期不能可靠读取"
     },
     {
       "originalTitle": "",
@@ -294,7 +308,7 @@
       "source": "人民网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-08T14:42:10.075161+00:00",
+      "discoveredAt": "2026-11-08T15:33:30.274299+00:00",
       "discoveryUrl": "https://zj.people.com.cn/n2/2026/0323/c228592-41531254.html",
       "topic": "business",
       "state": "待人工核验",
@@ -306,7 +320,7 @@
       "source": "新华网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-08T14:42:11.138431+00:00",
+      "discoveredAt": "2026-11-08T15:33:30.178586+00:00",
       "discoveryUrl": "https://www1.xinhuanet.com/fortune/20260321/943f6293dbe14f918ef29a481d12a6d0/c.html",
       "topic": "business",
       "state": "历史线索",
