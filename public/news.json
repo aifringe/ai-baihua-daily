@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-08T15:33:20.273146+00:00",
-  "lastCheckedAt": "2026-11-08T15:33:20.273146+00:00",
+  "updatedAt": "2026-11-09T02:22:50.355098+00:00",
+  "lastCheckedAt": "2026-11-09T02:22:50.355098+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -90,7 +90,7 @@
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 4
+      "candidates": 6
     },
     {
       "source": "腾讯新闻",
@@ -117,15 +117,15 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 2,
+      "count": 1,
       "readable": 0
     },
     {
       "source": "新华网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 4,
-      "readable": 1
+      "count": 2,
+      "readable": 0
     },
     {
       "source": "温州网",
@@ -150,6 +150,109 @@
     }
   ],
   "articles": [
+    {
+      "id": "b5a64090dde0e3",
+      "url": "https://latent.space/p/cs146s/",
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://latent.space/p/cs146s/"
+        },
+        {
+          "name": "Latent Space",
+          "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/"
+        }
+      ],
+      "publishedAt": "2026-11-08",
+      "source": "Latent Space",
+      "title": "斯坦福AI编程课改版：作业改为向开源项目提交补丁",
+      "summary": "斯坦福CS146S课程《现代软件开发者》第二期改版，起因是教师Mihail Eric发现学生用一个提示就能完成去年作业，且受访的斯坦福二三年级学生已全部使用编程智能体。新版作业改为向真实开源项目提交补丁，由维护者评审。Eric同时在AI公司Monaco负责AI，其团队评估后保留Devin做代码审查，但自建智能体工作区，并开发了可调查故障、开PR的Hal。",
+      "category": "行业动态",
+      "importance": 62,
+      "why": "AI编程智能体普及正改变软件工程教学与团队分工，斯坦福课程改版和Monaco的买与建取舍，为开发者技能转型提供可参照样本。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Latent Space播客采访斯坦福CS146S课程教师、Monaco AI负责人Mihail Eric。课程第二期改版：去年九次作业和结课项目，学生用一个提示即可完成大部分；他调查的斯坦福二三年级学生全部已用编程智能体写代码。因此新版把部分作业改为向开源项目贡献补丁，由仓库维护者评审，学生需理解代码行为、判断维护者是否接受、评估改动影响。Monaco团队评估代码审查产品后继续用Devin，但认为后台智能体需要能运行产品、复现故障、测试补丁的工作区，于是自建；还开发了Hal，工程师可让它调查故障并开PR，销售可问产品原理。Eric原则是“买来学，自建来留”。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去老师布置写代码作业，现在AI几秒就能写完，作业本身失去意义。斯坦福的新办法像让学生去真实公司实习：不是把代码写完就行，还得说服项目负责人接受你的改动，并解释为什么这么改。这练的是判断力和沟通，而非打字速度。对普通程序员来说，信号很明确：写代码越来越不稀缺，稀缺的是知道该改什么、为什么改、改了会不会出事。Monaco的做法也像居家过日子：能买现成工具先买来学，但核心环节自己搭，因为外面买不到贴合自家云环境的“试验场”。这意味着未来团队里可能多出“智能体管理员”这类角色，而初级工程师的成长路径会更依赖与资深维护者的真实对话。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "斯坦福AI编程课改版：作业改为向开源项目提交补丁相关图片",
+      "selectedOn": "2026-11-09"
+    },
+    {
+      "id": "c08233254ab556",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
+        }
+      ],
+      "publishedAt": "2026-11-08",
+      "source": "The Verge AI",
+      "title": "猫王与阿姆版权方起诉Suno侵权",
+      "summary": "2026年11月8日，猫王埃尔维斯·普雷斯利音乐版权方与阿姆部分热门唱片出版方分别起诉AI音乐公司Suno，指控其未经授权生成模仿这两位艺人的音乐与歌词。猫王案律师援引田纳西州《ELVIS法案》，该法禁止AI克隆歌手声音；诉状称Suno将艺人身份与创造力编码进模型以牟利。Suno回应称产品旨在帮助创作原创音乐，禁止输入特定艺人姓名与歌曲的提示词，并用第三方筛查上传音频和歌词。此案与9月Jason Isbell等提起的诉讼相似，Suno还面临索尼、环球音乐等多家诉讼。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "AI音乐生成与艺人声音、 likeness 的法律边界再受冲击，田纳西州ELVIS法案首次被用于此类诉讼，判决结果将影响AI音乐产品合规路径与版权方维权策略。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "11月8日，猫王音乐版权方与阿姆部分唱片出版方分别对Suno提起诉讼，指其AI系统生成模仿两位艺人的音乐和歌词。猫王案律师依据田纳西州《ELVIS法案》主张，该法禁止AI克隆歌手声音；诉状称Suno把艺人身份、创造力“机械编码”进模型以持续变现。Suno发言人回应称，公司旨在帮助人们创作原创音乐，禁止提示词指定艺人姓名和歌曲，并与第三方合作筛查上传音频与歌词，持续加强防护。此案与9月Jason Isbell等提起的诉讼高度相似，后者未直接主张版权侵权。Suno目前还面临索尼、环球音乐、Reservoir Media等多起诉讼，案件走向尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Suno想象成一台“声音复印机”：用户输入几个词，它就能吐出听起来像猫王或阿姆的歌。版权方认为，这台机器把艺人多年练就的嗓音和风格当免费原料，批量生产赚钱，因此告上法庭。对普通人来说，短期影响是AI音乐工具可能收紧提示词、加强上传筛查，想生成“某歌手风格”会更容易被拦；长期看，若法院支持版权方，AI音乐产品要么付费授权，要么转向更安全的原创路线。对音乐人而言，这关系到自己的声音和风格能否被未经许可地复制。案件结果也会影响你未来在短视频、播客里用AI配乐的边界。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Elvis and Eminem rights holders are suing Suno",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "猫王与阿姆版权方起诉Suno侵权相关图片",
+      "selectedOn": "2026-11-09"
+    },
+    {
+      "id": "f0be6325bfc4de",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"
+        }
+      ],
+      "publishedAt": "2026-11-08",
+      "source": "The Verge AI",
+      "title": "英伟达调查黄仁勋与AI高管关系",
+      "summary": "2026年11月8日，英伟达宣布调查CEO黄仁勋与AI高管Alice Huang的关系，报道称后者为中国政府代理人。黄仁勋同日向员工发备忘录，承认对妻子不忠并道歉，称对家庭和公司负全责。他表示支持董事会独立调查并全力配合，强调热爱美国、致力于保护英伟达和支持国家安全。目前调查尚无结论，报道所指国家安全关切的具体内容及Alice Huang身份均未获独立证实。",
+      "category": "人物对话",
+      "importance": 88,
+      "why": "全球市值最高芯片公司CEO被董事会调查，且牵涉国家安全指控，可能影响公司治理、市场信心与美中科技关系，事件仍在发酵。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "11月8日，英伟达宣布对CEO黄仁勋与AI高管Alice Huang的关系展开调查。据The Verge AI报道，Alice Huang被指为中国政府代理人，报道还提及国家安全关切，但这一身份和指控未获独立证实。同日，黄仁勋向全体员工发出备忘录，承认自己婚内不忠，向妻子、家人、同事、董事会、合作伙伴和股东道歉，称负全部责任。他表示董事会已启动独立调查，自己支持并全力配合，并强调热爱美国、致力于保护英伟达和支持美国国家安全。目前调查刚启动，尚无结论，董事会是否已掌握实质证据、报道所指国家安全问题具体为何，均不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方：一家全球最值钱的芯片公司的“船长”，被董事会查私生活，而与他有私人关系的人又被媒体指为外国政府代理人。对普通人来说，这事有两层影响。第一层是公司治理：CEO精力与声誉若受牵制，可能影响英伟达的决策节奏和投资者信心，进而波及AI芯片供应和价格。第二层是国家安全：若指控坐实，可能引发监管审查，甚至影响对华芯片政策走向。不过目前只是调查启动，备忘录也只承认私德问题，没有承认任何安全指控。读者不必急着下结论，后续看董事会调查结果和官方回应。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "英伟达调查黄仁勋与AI高管关系相关图片",
+      "selectedOn": "2026-11-09"
+    },
     {
       "id": "4b429bd7582936",
       "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
@@ -692,6 +795,39 @@
       "originalTitle": "How a Blue Wave midterm might reshape the AI industry",
       "image": "./news-images/8688d1fc0036b4122828.jpg",
       "imageAlt": "美中期选举或收紧数据中心监管相关图片"
+    },
+    {
+      "id": "db8aad7567ee0d",
+      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/"
+        }
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "Simon Willison",
+      "title": "科技评论人质疑AI基建成本与收益",
+      "summary": "科技媒体人Nilay Patel在一段被Simon Willison引用的言论中，批评当前AI产业的高昂成本与有限收益不匹配。他指出，数据中心噪音、深度伪造内容泛滥、AI代理产品尚未成熟，而相关公司投入远超收入。他还提到欧洲血库冰箱遭黑客攻击等安全事件，并将企业高管与政治人物的互动称为“加密腐败”。Patel认为，除非使用这些产品能直接改善生活、无需广告说服，否则大规模基建投入难以被公众接受。",
+      "category": "行业动态",
+      "importance": 62,
+      "why": "该言论集中反映AI基建扩张与公众感知收益之间的落差，涉及成本、安全与信任问题，对理解行业争议有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Simon Willison于2026年11月6日发布了一条引用Nilay Patel言论的帖子。Patel在文中批评AI产业：数据中心运转带来噪音，深度伪造内容大量出现，AI代理产品“并不真实”且可能未被按预期使用；相关公司支出超过收入。他还提到欧洲用于血液储存的冰箱遭黑客攻击，并称成本过高而收益不真实。Patel进一步将企业高管与政治人物的互动描述为“加密腐败”。需要说明的是，这些均为Patel的个人评论，帖子未提供具体公司名称、财务数据或黑客事件细节，相关说法尚无法独立核实。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，就是有人泼冷水：AI公司花大钱建机房、推产品，但普通人感受到的好处有限，反而要忍受噪音、假视频和安全隐患。好比邻居为了开豪华派对砸重金装修，却吵得你睡不着，端出来的菜还可能是假的。Patel的意思是，如果产品不能让人生活明显变好，只靠广告和政商关系硬推，大家不会买账。对普通人来说，这意味着AI服务可能涨价或缩水，隐私和基础设施安全风险也值得关注；同时，行业若无法证明实际价值，投资热潮可能降温，影响就业和产品选择。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Quoting Nilay Patel",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "科技评论人质疑AI基建成本与收益相关图片",
+      "selectedOn": "2026-11-09"
     },
     {
       "id": "xinhua-ai-terminal-20261106",
@@ -1994,6 +2130,39 @@
       "image": "./news-images/7fd5be5969b0bde64159.jpg",
       "imageAlt": "Google 扩展教师 AI 培训，重点落在具体教学任务 · Google官方配图",
       "imageKind": "Google 官方博客配图"
+    },
+    {
+      "id": "00a42c9331cf0d",
+      "url": "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/",
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/"
+        }
+      ],
+      "publishedAt": "2026-11-02",
+      "source": "Latent Space",
+      "title": "Legora CTO谈法律智能体如何盲测",
+      "summary": "Latent Space播客发布对法律科技公司Legora首席技术官Jacob Lauritzen的访谈。Legora为律所提供合同起草、万份合同表格化审查与尽职调查等智能体服务，但因客户数据归属律所，公司无法查看智能体在真实案件中的运行轨迹。Lauritzen介绍团队由工程师与律师组成，按客户工作模式搭建模拟测试环境，并称模型已能较好完成约六成法律工作；一次版本发布后引用准确率从70%升至99%。访谈还涉及模型选择器、Azure部署及初级律师岗位等话题。",
+      "category": "人物对话",
+      "importance": 62,
+      "why": "访谈揭示法律AI在数据不可见约束下的评测与产品化路径，涉及模型能力边界、引用可靠性及律所用工影响，对关注垂直智能体落地者具参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Latent Space发布与Legora首席技术官Jacob Lauritzen的对话。Legora从斯德哥尔摩地下室起步，现可让律师在Word中起草修改文档、用表格一次审查上万份合同并开展尽职调查，还协调律师、客户与其他智能体之间的工作。核心矛盾是数据归属律所客户，Legora看不到智能体实际运行轨迹，因此靠三到六人小组按客户工作方式搭建模拟环境测试。Lauritzen称模型已能较好完成约六成法律工作，并提到某次发布后引用准确率由70%升至99%而公司未作改动。他同时表示公司长期不设模型选择器、后因需要而加入，全部运行于Azure。上述比例与准确率均为受访者单方说法，无第三方验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "好比给一家餐厅做智能点餐系统，但厨房和顾客数据都不让你看，你只能照着菜谱在自家厨房反复演练。Legora做的就是这种“闭眼调系统”的活：律师的案卷是客户的私产，公司不能拿来直接看，只能模拟出相似场景来试错。对普通人的影响是，以后律所可能用AI更快处理海量合同和尽调，费用结构或随之变化；但AI写的东西仍需律师核对，引用是否可靠是关键。访谈中“六成工作”“99%准确”都是公司自述，不能当作行业标准。初级律师和律师助理的岗位会不会减少，目前也只是讨论，没有定论。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Legora CTO谈法律智能体如何盲测相关图片",
+      "selectedOn": "2026-11-09"
     },
     {
       "id": "fe6efa0410ef5f",
@@ -19452,13 +19621,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-08",
+  "editionDate": "2026-11-09",
   "dailyIds": [
+    "f0be6325bfc4de",
     "4b429bd7582936",
-    "eecad6fef1daea",
     "xinhua-ai-terminal-20261106",
     "googlebook-game-20261104",
     "0f94978320f209"
   ],
-  "editionUpdatedAt": "2026-11-08T15:33:20.273146+00:00"
+  "editionUpdatedAt": "2026-11-09T02:22:50.355098+00:00"
 }
