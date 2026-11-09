@@ -1,20 +1,21 @@
 {
-  "updatedAt": "2026-11-09T02:22:50.355098+00:00",
-  "lastCheckedAt": "2026-11-09T10:54:15.501297+00:00",
+  "updatedAt": "2026-11-09T22:52:47.697024+00:00",
+  "lastCheckedAt": "2026-11-09T22:52:47.697024+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 25
+      "candidates": 22
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true,
+      "candidates": 2
     },
     {
       "source": "Google AI",
       "ok": true,
-      "candidates": 2
+      "candidates": 1
     },
     {
       "source": "Google Research",
@@ -24,12 +25,12 @@
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 12
+      "candidates": 14
     },
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 3
+      "candidates": 2
     },
     {
       "source": "Berkeley AI Research",
@@ -44,7 +45,7 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 8
+      "candidates": 9
     },
     {
       "source": "Microsoft Research",
@@ -64,17 +65,17 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 8
+      "candidates": 5
     },
     {
       "source": "MIT Technology Review",
       "ok": true,
-      "candidates": 2
+      "candidates": 5
     },
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 6
+      "candidates": 5
     },
     {
       "source": "量子位",
@@ -84,12 +85,12 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 11
+      "candidates": 9
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 6
+      "candidates": 5
     },
     {
       "source": "腾讯新闻",
@@ -116,8 +117,8 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 1,
-      "readable": 0
+      "count": 2,
+      "readable": 1
     },
     {
       "source": "新华网",
@@ -149,6 +150,173 @@
     }
   ],
   "articles": [
+    {
+      "id": "730323ba6c06be",
+      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+        }
+      ],
+      "publishedAt": "2026-11-09",
+      "source": "TechCrunch AI",
+      "title": "Meta发布轻量模型Muse Ember，主打智能体执行",
+      "summary": "Meta超级智能实验室11月9日发布轻量模型Muse Ember，称其为该实验室迄今最轻、最具成本效率的模型，面向智能体全天重复的工具调用、编码子任务、路由、信息抽取和长文档解析等场景。Meta以每百万输入token 10美分的价格，强调其单任务成本低于Anthropic的Haiku和OpenAI的Luna，并与DeepSeek V4.1 Flash、GLM 5.3 Flash等开源模型具备成本竞争力。该模型支持文本、图像和音频输入，设计上与更大模型Muse Wonder搭配，由后者规划、前者承担大批量执行。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "Meta补齐Muse模型矩阵中的轻量执行层，以低价和多媒体输入切入智能体规模化落地，直接影响企业智能体的成本结构与同类轻量模型的竞争格局。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Meta超级智能实验室11月9日发布轻量模型Muse Ember，称其为该实验室迄今最轻、最具成本效率的模型。Meta表示，Ember面向复杂推理执行以及智能体每天重复的工作，包括工具调用、编码子任务、路由、信息抽取和长文档解析。定价方面，Meta称其每百万输入token为10美分，并引用Artificial Analysis的综合基准分数，称其单任务成本低于Anthropic的Haiku和OpenAI的Luna，同时与DeepSeek V4.1 Flash、GLM 5.3 Flash等开源模型具备成本竞争力。Ember支持文本、图像和音频输入，可读取截图、图表、扫描文档，也可处理语音备忘、会议录音和视频。Meta将其定位为与更大模型Muse Wonder搭配使用：由Wonder制定规则，Ember在大量案例中执行。Ember是Muse品牌下第四款模型，前三款为4月的Spark、8月的开源版Glimmer和10月的Wonder。上述性能与成本对比均为Meta单方面说法，尚待第三方独立验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Ember理解成一个便宜、手快、能看会听的执行工：大模型负责想清楚规则，它负责把规则套到成千上万件琐事上。对企业来说，这意味着客服、文档处理、数据录入这类重复劳动，可以用更低的单价批量交给AI，而不必每次都动用昂贵的大模型。对普通人而言，未来接到的客服回复、账单解析、会议纪要整理，背后可能更多是这类轻量模型在干活，响应更快、成本更低。但便宜不等于可靠：Meta给出的对比数据来自自家引用，实际准确率、稳定性和长期使用成本仍需独立测试。另外，低价模型大规模铺开，也意味着更多日常流程被自动化，相关岗位的工作内容会被重新划分。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Meta releases Muse Ember, a new lightweight model for agent execution",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Meta发布轻量模型Muse Ember，主打智能体执行相关图片",
+      "selectedOn": "2026-11-10"
+    },
+    {
+      "id": "e5d7409756abf4",
+      "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/"
+        }
+      ],
+      "publishedAt": "2026-11-09",
+      "source": "TechCrunch AI",
+      "title": "黄仁勋被曝与疑似间谍有染，英伟达中国业务承压",
+      "summary": "TechCrunch报道称，英伟达CEO黄仁勋被曝与英伟达客户Megaspeed前高管Alice Huang存在婚外情，美国情报官员认为后者疑似被中国情报机构招募，目的是获取黄仁勋的信息并影响英伟达放松芯片出口限制的努力。黄仁勋已向公司承认此事并道歉，英伟达独立董事正联合外部律师调查，国会已要求作出解释。此事发生在英伟达中国业务敏感期：截至7月26日的季度，来自中国总部的客户收入为79亿美元，约占总营收8%，较往年明显缩水。报道同时指出，黄仁勋游说放松对华芯片出口早于两人据称在2024年初的会面，其立场未必因这段关系而改变。",
+      "category": "行业动态",
+      "importance": 78,
+      "why": "事件牵涉全球市值最高芯片公司CEO、美国对华芯片出口管制与国家安全指控，可能影响英伟达在华业务前景和华盛顿的政策讨论，关注度高但事实仍待调查确认。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据TechCrunch援引《金融时报》报道，英伟达CEO黄仁勋与Alice Huang存在婚外情。Alice Huang曾是英伟达客户Megaspeed的高管，美国情报官员认为她疑似被中国情报机构招募，任务是收集黄仁勋的信息，并影响英伟达推动放松芯片出口限制的努力。黄仁勋已于周日向公司发备忘录承认此事并道歉。英伟达独立董事正与外部法律顾问合作调查，国会已要求给出答案。报道还称，国务卿鲁比奥今年早些时候曾向特朗普身边官员就这段关系发出提醒。英伟达未回应置评请求。需要指出的是，上述间谍指控目前来自情报官员的判断，调查尚未公布结论，黄仁勋是否泄露敏感信息仍不确定。报道同时提到，黄仁勋公开游说放松对华芯片出口早于两人据称在2024年初英伟达活动上的会面。",
+          "text_en": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把英伟达想象成一家既想继续做中国大生意、又被美国政府盯着不许卖关键工具的公司。CEO被曝和一位可能带有中国情报背景的女性有私交，就像公司掌门人在敏感谈判期被拍到和对方阵营的人走得很近——哪怕只是私事，也会让监管者和议员怀疑：他推动放松出口限制，到底是为生意，还是被人吹了枕边风？对普通人来说，短期直接影响有限，但这件事可能让美国对华芯片出口政策更难松动，进而影响AI芯片供应和价格走势。更关键的是信任问题：即便调查证明黄仁勋没泄密，华盛顿对英伟达“能否管好敏感技术”的疑虑也很难一夜消除。",
+          "text_en": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "黄仁勋被曝与疑似间谍有染，英伟达中国业务承压相关图片",
+      "selectedOn": "2026-11-10"
+    },
+    {
+      "id": "cb6eb90ca74f28",
+      "url": "https://aws.amazon.com/blogs/machine-learning/professional-work-deserves-professional-tools-meet-aws-quick/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/professional-work-deserves-professional-tools-meet-aws-quick/"
+        }
+      ],
+      "publishedAt": "2026-11-09",
+      "source": "AWS AI",
+      "title": "AWS推出Quick品牌广告，主打企业级AI工作台",
+      "summary": "AWS于2026年11月9日发布其AI工作台产品Quick的首个品牌广告活动，覆盖美国与英国的流媒体电视、在线视频、社交媒体及商业媒体。Quick定位为“只为工作而生”的企业AI工作空间，支持团队用AI代理在既有数据和应用中研究、分析与执行任务。AWS称3M、宝马、亿滋、纽约人寿、西南航空等企业已在使用。官方强调Quick无消费版，内置微软Purview、AWS IAM、Active Directory等安全合规能力，并持有HIPAA、FedRAMP、SOC 2、ISO 27001认证。广告效果与产品实际采用数据尚未披露。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是AWS首次为Quick投放品牌广告，标志其企业AI工作台从产品推广转向大众市场认知争夺，也反映企业级AI助手赛道竞争加剧。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS于2026年11月9日宣布为AI工作台Quick启动首个品牌广告活动，投放范围包括美国与英国的流媒体电视、在线视频、社交媒体和商业出版物。Quick被描述为面向企业的AI工作空间，团队可用AI代理在已有数据和应用中完成研究、分析和执行。AWS称3M、宝马、亿滋、纽约人寿和西南航空等企业正在使用该产品。官方强调Quick没有消费版本，从第一天起就按企业需求构建，并集成微软Purview、AWS IAM和微软Active Directory，支持权限控制与敏感数据标记，同时持有HIPAA、FedRAMP、SOC 2和ISO 27001认证。AWS还表示用户对话私密，IT管理员无法查看聊天记录，数据不用于训练他人模型。不过，广告投放规模、预算及产品实际用户增长数据均未公布，企业客户的使用深度也无从核实。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Quick理解成一个“只给上班用的AI同事”：它不像很多从消费级应用改出来的助手，而是从一开始就按公司规矩设计，能读你手头的文件、表格和邮件，还能按权限办事。AWS这次打广告，是想告诉普通职场人：AI不只是个人提速的小工具，而应成为团队共享的生产力资产。对普通人来说，这意味着未来公司采购AI工具时会更看重安全、权限和合规，而不是只看谁回答得快。但广告说得再热闹，关键还得看企业是否真愿意为它买单，以及员工用起来是否顺手。毕竟，工具再专业，也得有人天天用才算数。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Professional work deserves professional tools. Meet AWS Quick.",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "AWS推出Quick品牌广告，主打企业级AI工作台相关图片",
+      "selectedOn": "2026-11-10"
+    },
+    {
+      "id": "8aadbba86d5bd9",
+      "url": "https://latent.space/p/handshake/",
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://latent.space/p/handshake/"
+        }
+      ],
+      "publishedAt": "2026-11-09",
+      "source": "Latent Space",
+      "title": "Handshake AI数据业务年入10亿美元揭秘",
+      "summary": "Latent Space播客首次深入探访AI数据公司Handshake，其AI训练业务约一年内从上线做到10亿美元年化毛收入。节目展示前沿实验室采购的专家数据形态：金融智能体在模拟银行中处理并购模型时因误用商誉数字出错；生物视觉基准VIALS要求模型从脑组织切片中识别血管坏死，模型多选了错误选项；安全测试则追踪智能体的工具调用与文件操作。团队还讨论了评分标准与专家判断的差距、实验室为何保留部分评测任务不公开。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "揭示前沿模型训练数据市场的真实规模与采购逻辑，并展示金融、生物、安全三类高价值评测环境的具体形态，对理解AI数据产业链有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Latent Space与Handshake AI团队进行约164分钟联合播客，首次公开其专家数据业务细节。Handshake称AI训练业务约一年内达到10亿美元年化毛收入。节目现场演示三类环境：金融基准ATLAS-Finance中，智能体需从模拟银行邮件定位任务、判断适用文件并交付工作簿，但在处理客户邮件中一行关于既有商誉的说明时，模型把数字带入Python直接相减，未识别该规则适用位置；生物基准VIALS展示九张脑肿瘤组织切片，要求选出血管坏死最严重的两张，模型选对两张但多选了第三张；安全环节则检查智能体读取哪些文件、是否核对副本、是否清理shell历史。团队还提到评分标准难以完全替代专家判断，以及部分评测任务被实验室保留不公开。具体收入口径与客户构成未在节目中完整披露。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Handshake理解成给AI大模型出“实战考题”的供应商：不是让模型背答案，而是把它放进模拟银行、生物实验室和安全场景里真干活，再由行业专家打分。模型在金融题上算错，不是不会算税，而是没意识到“这行代码就是规则该用的地方”，类似学生公式背得熟、却看不出应用题该套哪个公式。生物题里模型多选一张切片，说明它看到了部分特征但边界判断不稳。对普通人来说，这类数据决定未来AI助手在财务、医疗影像等高风险场景是否可靠；数据越贴近真实工作，AI越可能真正接手部分专业任务，但短期内仍需人类复核。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Handshake AI数据业务年入10亿美元揭秘相关图片",
+      "selectedOn": "2026-11-10"
+    },
+    {
+      "id": "e6bdcf66d2f907",
+      "url": "https://zhidx.com/p/608240.html",
+      "sources": [
+        {
+          "name": "智东西",
+          "url": "https://zhidx.com/p/608240.html"
+        }
+      ],
+      "publishedAt": "2026-11-09",
+      "source": "智东西",
+      "title": "北京AI智能体大会将设个人Agent研讨会",
+      "summary": "2026年11月，多家媒体报道北京将举办AI智能体大会，主会场设长程智能体技术研讨会，并另设个人智能体技术研讨会。腾讯混元康佳政、阿里高德马子瑜、字节跳动实习生吴垠、浙大王伟杰、小红书张康宁等将围绕Agent记忆、长程任务执行与自主进化分享。个人智能体专场定于12月16日上午，DS Bot作者吴嘉盛、nanoMuse作者刘广义、APUS AI张旭将作报告。报道还提及Grok Bot、Meta Muse等产品数据，但未说明统计口径，具体议程与参会规模仍待主办方确认。",
+      "category": "行业动态",
+      "importance": 62,
+      "why": "大会汇集腾讯、阿里、字节等一线研究者，议题覆盖智能体记忆与长程任务，是观察个人Agent技术路线和产业落地的重要窗口。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据智东西报道，北京将举办AI智能体大会，主会场设长程智能体技术研讨会，个人智能体技术研讨会定于12月16日上午举行。腾讯混元康佳政将结合Hy-Memory 2.0分享记忆模型训练与系统落地；阿里高德马子瑜围绕LongHorizon-Harness与TerminalHorizon谈长程任务执行；字节跳动筋斗云实习生吴垠、浙大王伟杰、小红书张康宁等也将出席。个人Agent专场中，DS Bot作者吴嘉盛、nanoMuse作者刘广义、APUS AI首席科学家张旭将作主题报告。报道还提到Grok Bot付费周活80万、Meta Muse美国下载量破500万，但未交代统计口径，具体议程和嘉宾名单仍待主办方确认。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这场大会理解成智能体圈的“技术庙会”：大家不再只比谁家模型会聊天，而是比谁能让AI记住事、自己拆任务、连续干完活。记忆模型像给AI配了个记事本，长程任务框架像给它一张任务清单，个人Agent则像随叫随到的私人助理。对普通人来说，短期影响有限，更多是技术风向；中期可能看到手机和电脑里的助手更懂你、少重复问、能跨应用办事。但报道里的用户和下载数字口径不明，别急着当成市场定论，等产品真正落地再判断。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "腾讯混元字节研究人员集结！北京AI智能体大会及个人Agent研讨会要来了",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "北京AI智能体大会将设个人Agent研讨会相关图片",
+      "selectedOn": "2026-11-10"
+    },
     {
       "id": "b5a64090dde0e3",
       "url": "https://latent.space/p/cs146s/",
@@ -19620,13 +19788,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-09",
+  "editionDate": "2026-11-10",
   "dailyIds": [
     "f0be6325bfc4de",
     "4b429bd7582936",
     "xinhua-ai-terminal-20261106",
-    "googlebook-game-20261104",
-    "0f94978320f209"
+    "e5d7409756abf4",
+    "googlebook-game-20261104"
   ],
-  "editionUpdatedAt": "2026-11-09T02:22:50.355098+00:00"
+  "editionUpdatedAt": "2026-11-09T22:52:47.697024+00:00"
 }
