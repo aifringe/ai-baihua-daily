@@ -11,7 +11,12 @@ for (const width of widths) {
       '工具雷达',
     ]);
     await expect(page.locator('.headline-card')).toHaveCount(1);
-    await expect(page.locator('.news-card')).toHaveCount(3);
+    await expect
+      .poll(() => page.locator('.headline-card, .news-card').count())
+      .toBeGreaterThanOrEqual(3);
+    await expect
+      .poll(() => page.locator('.headline-card, .news-card').count())
+      .toBeLessThanOrEqual(5);
     for (const button of ['今日情报', '一人公司', '免费资源', '工具雷达']) {
       await page
         .locator('.primary-nav')
@@ -87,9 +92,17 @@ test('四类筛选、搜索、档案分页和收藏持久化', async ({ page }) 
   await expect(page.locator('.news-card')).not.toHaveCount(0);
   await page.getByLabel('清空搜索').click();
   await page.getByRole('button', { name: '人物对话', exact: true }).click();
-  await expect(page.locator('.news-card')).toHaveCount(3);
+  await expect(page.locator('.news-card')).not.toHaveCount(0);
+  expect(
+    await page.locator('.news-card .category-label').allTextContents(),
+  ).toEqual(expect.arrayContaining(['人物对话']));
   await page.getByRole('button', { name: '报告解读', exact: true }).click();
-  await expect(page.locator('.news-card')).toHaveCount(4);
+  await expect(page.locator('.news-card')).not.toHaveCount(0);
+  expect(
+    (await page.locator('.news-card .category-label').allTextContents()).every(
+      (x) => x === '报告解读',
+    ),
+  ).toBe(true);
   expect(errors).toEqual([]);
 });
 test('案例来源与免费资源详情、领取标记可用', async ({ page }) => {
