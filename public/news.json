@@ -1,11 +1,11 @@
 {
   "updatedAt": "2026-11-10T16:47:32.681457+00:00",
-  "lastCheckedAt": "2026-11-11T02:31:17.313131+00:00",
+  "lastCheckedAt": "2026-11-11T10:17:59.675676+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 22
+      "candidates": 25
     },
     {
       "source": "Google DeepMind",
@@ -15,7 +15,7 @@
     {
       "source": "Google AI",
       "ok": true,
-      "candidates": 4
+      "candidates": 5
     },
     {
       "source": "Google Research",
@@ -45,7 +45,7 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 8
+      "candidates": 9
     },
     {
       "source": "Microsoft Research",
@@ -90,7 +90,7 @@
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 7
+      "candidates": 9
     },
     {
       "source": "腾讯新闻",
@@ -117,7 +117,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 2,
+      "count": 1,
       "readable": 0
     },
     {
