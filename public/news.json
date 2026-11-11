@@ -1,31 +1,30 @@
 {
-  "updatedAt": "2026-11-10T16:47:32.681457+00:00",
-  "lastCheckedAt": "2026-11-11T10:17:59.675676+00:00",
+  "updatedAt": "2026-11-11T20:00:29.455490+00:00",
+  "lastCheckedAt": "2026-11-11T20:00:29.455490+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 25
+      "candidates": 22
     },
     {
       "source": "Google DeepMind",
-      "ok": true,
-      "candidates": 4
+      "ok": false
     },
     {
       "source": "Google AI",
       "ok": true,
-      "candidates": 5
+      "candidates": 7
     },
     {
       "source": "Google Research",
       "ok": true,
-      "candidates": 1
+      "candidates": 0
     },
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 11
+      "candidates": 9
     },
     {
       "source": "MIT News",
@@ -40,7 +39,7 @@
     {
       "source": "Apple Machine Learning",
       "ok": true,
-      "candidates": 0
+      "candidates": 2
     },
     {
       "source": "Hugging Face",
@@ -65,12 +64,12 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 7
+      "candidates": 6
     },
     {
       "source": "MIT Technology Review",
       "ok": true,
-      "candidates": 4
+      "candidates": 3
     },
     {
       "source": "The Verge AI",
@@ -85,7 +84,7 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 10
+      "candidates": 11
     },
     {
       "source": "Latent Space",
@@ -150,6 +149,72 @@
     }
   ],
   "articles": [
+    {
+      "id": "e7b7fb1e9e2688",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/"
+        }
+      ],
+      "publishedAt": "2026-11-11",
+      "source": "AWS AI",
+      "title": "SageMaker双向流推理新增按用量计费",
+      "summary": "AWS宣布为Amazon SageMaker AI双向流式推理推出按用量计费，解决实时语音AI的软件计费难题。此前AWS Marketplace按请求-响应模式可在HTTP响应头报告计费数量，但双向流会话可持续30秒至30分钟，用量在会话结束时才确定，响应头无法中途上报。新方案在推理数据流之外建立一条伴随WebSocket元数据连接，模型服务商可增量上报消耗单位。Deepgram为首发合作伙伴，用于语音转文字与文字转语音计费。SageMaker端点基础设施费用仍单独收取。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是云计费机制针对流式AI的适配创新，影响实时语音模型在AWS Marketplace的商业化路径，对语音AI服务商和采购方都有实际意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS为SageMaker AI双向流式推理推出按用量计费。双向流会话通过HTTP/2事件流传输音频并接收转写结果，时长从30秒到30分钟不等，用量随会话累积，结束时才知总量，原有响应头计费方式失效。新机制在数据连接外增加一条元数据WebSocket，模型服务商在升级响应中返回支持头即可启用，随后按每秒一条、单条不超过512字节的JSON文本帧上报消耗单位，并用请求ID关联会话、用客户端令牌保证幂等。Deepgram为首发合作伙伴。元数据连接失败时默认不影响推理，也可配置为强制中断。AWS强调上报不等于已计费，需与Marketplace账单核对。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去买实时语音AI像包月：不管用没用，模型在线就按小时收钱，安静时段也照扣。现在改成按实际用量结账，像水电表一样，说了多少秒音频就付多少秒的钱。技术上相当于在通话管道旁边另拉一根小管子，专门报数，主通话照常进行。对普通用户和企业采购来说，好处是账单更透明，费用直接并入AWS账单，不用再和模型厂商单独结算，还能走私有报价谈折扣。对模型厂商来说，可以按自己的定价规则定义“一个单位”是什么，比如每秒音频算一单位。但要注意，端点基础设施费照收，报数失败也不保证计费，厂商需自行核对账单。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "SageMaker双向流推理新增按用量计费相关图片",
+      "selectedOn": "2026-11-12"
+    },
+    {
+      "id": "6e96a802abbc1d",
+      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/"
+        }
+      ],
+      "publishedAt": "2026-11-11",
+      "source": "Simon Willison",
+      "title": "Anthropic路演视频披露多芯片与算力倍增策略",
+      "summary": "Anthropic在IPO路演视频中由联合创始人Tom Brown介绍算力策略：Claude目前同时运行在AWS Trainium、Google TPU、NVIDIA GPU和AMD GPU四类芯片上，这一多芯片押注早期被认为不划算，因为每类芯片都需独立软件与推理栈。今年首次接入AMD GPU时，据称由名为Mythos的系统在三天内完成适配，几乎无需人工介入。公司还强调以“总算力=物理容量×算力倍增系数”衡量优势，称倍增系数可叠加，并预期未来由Claude自主发现。上述细节来自单一路演视频，尚无独立信源核实。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "IPO路演罕见披露头部模型公司的算力架构与成本策略，多芯片路线和“算力倍增”概念对理解AI竞争壁垒有参考价值，但细节仅来自企业自述。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Anthropic在IPO路演视频中公开其算力打法。联合创始人Tom Brown称，Claude的训练与推理已横跨AWS Trainium、Google TPU、NVIDIA GPU和AMD GPU四类芯片。公司早期押注多芯片，当时业内普遍认为为每类芯片单独维护软件栈和推理栈成本过高。今年首次接入AMD GPU，据称由名为Mythos的系统在三天内让Claude跑通，基本没有人工干预；而过去引入新芯片平台需数十名工程师耗时数月。公司还提出“总算力等于物理容量乘以算力倍增系数”，称倍增系数可叠加并形成竞争壁垒，未来有望由Claude自主发现。需注意，这些说法均出自公司路演材料，适配细节、Mythos的性质及倍增系数的具体数值均未披露，也无第三方验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Anthropic的做法理解成一家餐厅不只用一种灶台，而是同时用四个品牌的炉子做菜。过去换炉子要重新培训整支厨师队伍，费时费钱；现在它声称有个“自动适配器”三天就能让新炉子上手。所谓“算力倍增”，好比同样一桶油以前只能炒一盘菜，改进方法后能炒四盘，或者用同样油做出更高级的菜。对普通人的影响是：如果这套说法成立，AI公司能用更少硬件跑出更强模型，长期可能压低推理成本、让AI服务更便宜；但这也意味着算力竞争从“堆芯片”转向“拼软件效率”，小公司追赶的门槛未必降低。目前这些数字和效果都来自企业自述，宜谨慎看待。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Anthropic's IPO roadshow video",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Anthropic路演视频披露多芯片与算力倍增策略相关图片",
+      "selectedOn": "2026-11-12"
+    },
     {
       "id": "697debda975c18",
       "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
@@ -219,6 +284,39 @@
       "selectedOn": "2026-11-11"
     },
     {
+      "id": "e1742b0ed40ea5",
+      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+      "sources": [
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/"
+        }
+      ],
+      "publishedAt": "2026-11-10",
+      "source": "Microsoft Research",
+      "title": "微软研究：重编程休眠神经元可给AI代理植入后门",
+      "summary": "微软研究院披露名为“Lazarus”的后门技术：无需重新训练，仅改写大模型中小于10个休眠神经元，就能让AI代理在隐藏触发条件（如日期跨入2027年）出现时执行攻击者命令，如下载运行恶意代码，同时仍通过标准安全评测。研究称该攻击只需对模型权重有写权限，内部自研模型同样暴露，因此权重完整性与来源溯源至关重要。微软Foundry已通过来源校验、容器扫描等措施防护，并计划引入权重扫描、模型签名与审计。",
+      "category": "行业动态",
+      "importance": 82,
+      "why": "揭示AI代理供应链的新型后门风险，攻击门槛低且难被常规评测发现，直接影响企业部署开源权重模型的安全策略与采购决策。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软研究院发布研究，提出“Lazarus”后门方法：通过改写大模型中不到10个平时很少激活的休眠神经元，把其中部分变成触发检测器，一旦特定条件出现（例如系统时间跨过2027年零点），模型就会在正常任务中输出攻击者预设的命令，代理再以自身权限执行。研究称整个过程不需要训练，只需推理级算力，模型仍能通过标准评测、行为看似正常。攻击前提是对模型检查点有写权限，因此内部自研模型与开源权重模型同样面临风险。微软表示Foundry已对模型做来源绑定和容器扫描，并正研发权重扫描、红队工具与可验证签名；但研究也承认，没有扫描能绝对证明模型安全，可靠检测需与原始权重比对。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把大模型想成一台出厂后很少被拆开检查的机器：攻击者不用重造整台机器，只拧动几个几乎不用的螺丝，就能让它平时一切正常，却在某个暗号出现时突然听命于外人。对普通人来说，这意味着你用的AI助手或自动化工具，可能在毫无异常提示的情况下被偷偷使唤，去下载恶意程序或泄露数据。防御思路和防内鬼类似：别默认模型可信，限制它能碰到的权限，记录它做了什么，并尽量只从可追溯来源获取模型。对使用开源模型的企业，采购时应关注来源与权重是否被改动，而不是只看评测分数。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "微软研究：重编程休眠神经元可给AI代理植入后门相关图片",
+      "selectedOn": "2026-11-12"
+    },
+    {
       "id": "ec52a02e1b50c5",
       "url": "https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110",
       "sources": [
@@ -285,6 +383,72 @@
       "imageKind": "编辑示意图",
       "imageAlt": "谷歌云推出医疗版Gemini，整合临床数据相关图片",
       "selectedOn": "2026-11-11"
+    },
+    {
+      "id": "c80838f46e535c",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/10/muse-ember/"
+        }
+      ],
+      "publishedAt": "2026-11-10",
+      "source": "Simon Willison",
+      "title": "Meta发布Muse Ember小模型，主打高效推理",
+      "summary": "Meta AI推出新模型Muse Ember，定位为对标Claude Haiku与GPT Luna的小型高效模型，面向工具调用、编码子任务、路由、信息抽取和长文档解析等重复性代理工作。短提示下其定价与GPT-6 Luna、Claude Haiku 5.5相同，均为每百万输入token 0.10美元、输出0.50美元；长提示价格会随阈值上调。评测方指出，该模型位于智能指数与单任务成本的帕累托前沿，但不同推理档位与输出质量并非线性对应。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "小模型正成为代理工作流的主力，Muse Ember以低价和效率前沿切入，直接影响开发者选型与推理成本。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Meta AI发布Muse Ember，称其为自家最小、最高效的模型，专为复杂推理执行和代理全天重复的工作设计，包括工具调用、编码子任务、路由、抽取和长文档解析。短提示定价与GPT-6 Luna、Claude Haiku 5.5一致：每百万输入token 0.10美元、输出0.50美元；三者均支持最高百万输入token，但超过阈值后价格上调。评测方称Muse Ember落在智能指数与单任务成本的帕累托前沿，即无法在不牺牲另一维度的情况下改进。模型提供minimal、low、medium、high、xhigh、max六档推理级别，但实测中high档未能返回完整SVG，且推理档位与视觉质量未清晰对应。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Muse Ember理解成一支“便宜耐用的跑腿小队”：不负责写长篇大论，而是专门干调用工具、拆代码、分拣信息这些重复杂活。对普通人来说，这类模型降价意味着以后用AI代理自动处理表格、整理文档、跑流程会更便宜，但别指望它样样精通。评测里“档位越高画得越好”并不成立，说明调高推理档不一定换来更好结果，反而可能多花钱。对开发者而言，选型不能只看每token单价，还要看完成同一任务实际消耗多少token；落在效率前沿只说明它性价比有竞争力，不代表全面领先。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Meta发布Muse Ember小模型，主打高效推理相关图片",
+      "selectedOn": "2026-11-12"
+    },
+    {
+      "id": "e5607ea9b34566",
+      "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/"
+        }
+      ],
+      "publishedAt": "2026-11-10",
+      "source": "Simon Willison",
+      "title": "Gemini新模型发布：性能提升但价格将翻倍",
+      "summary": "开发者Simon Willison发布llm-gemini 0.36插件更新，记录Google最新Gemini模型的使用体验。该模型在低、中、高三档思考强度下运行，默认中档，定价为每百万输入2美元、输出10美元，与GPT-6.1 Sol、Claude Sonnet 5.5持平，但官方计划12月1日将价格翻倍至4美元和20美元。作者用鹈鹕测试和Antigravity IDE生成Three.js动画、开放世界3D游戏等案例展示能力，但未披露模型正式名称与完整基准数据。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "涉及Google主力模型更新与定价策略变化，价格翻倍将直接影响开发者调用成本，对API用户有实际决策价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "开发者Simon Willison在博客中发布llm-gemini 0.36插件更新，介绍Google最新Gemini模型的使用情况。该模型支持低、中、高三档思考强度，默认中档，发布价为每百万输入token 2美元、输出10美元，与GPT-6.1 Sol、Claude Sonnet 5.5同档，但计划12月1日翻倍至4美元和20美元。作者用鹈鹕图像测试高档表现，并在Google Antigravity IDE中生成Three.js动画和开放世界3D游戏，展示多子代理协作建模、WebGL着色器和程序化音效能力。文中未给出模型正式名称、上下文窗口和基准分数，价格翻倍是否确定执行也尚不明确。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次更新理解成：Google新模型先以“平价档”吸引开发者试用，两个月后恢复“高端价”。对普通用户，短期用API做应用更便宜，长期成本可能翻倍，需提前算账。对开发者，模型能一句话生成3D动画和游戏原型，意味着做demo的门槛继续降低，但复杂项目仍要人工调试。价格翻倍像健身房先办低价年卡再涨续费价，早用早省，晚用多掏钱。是否值得迁移，要看12月后实际账单和模型稳定性，别只看演示效果。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "llm-gemini 0.36",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Gemini新模型发布：性能提升但价格将翻倍相关图片",
+      "selectedOn": "2026-11-12"
     },
     {
       "id": "730323ba6c06be",
@@ -19957,13 +20121,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-11",
+  "editionDate": "2026-11-12",
   "dailyIds": [
+    "e1742b0ed40ea5",
     "f0be6325bfc4de",
     "8827aad4505e69",
     "4b429bd7582936",
-    "xinhua-ai-terminal-20261106",
-    "e5d7409756abf4"
+    "xinhua-ai-terminal-20261106"
   ],
-  "editionUpdatedAt": "2026-11-10T16:47:32.681457+00:00"
+  "editionUpdatedAt": "2026-11-11T20:00:29.455490+00:00"
 }
