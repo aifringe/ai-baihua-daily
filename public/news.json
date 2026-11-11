@@ -1,11 +1,11 @@
 {
   "updatedAt": "2026-11-10T16:47:32.681457+00:00",
-  "lastCheckedAt": "2026-11-10T16:47:32.681457+00:00",
+  "lastCheckedAt": "2026-11-11T02:31:17.313131+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 21
+      "candidates": 22
     },
     {
       "source": "Google DeepMind",
@@ -15,7 +15,7 @@
     {
       "source": "Google AI",
       "ok": true,
-      "candidates": 3
+      "candidates": 4
     },
     {
       "source": "Google Research",
@@ -25,7 +25,7 @@
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 13
+      "candidates": 11
     },
     {
       "source": "MIT News",
@@ -45,12 +45,12 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 7
+      "candidates": 8
     },
     {
       "source": "Microsoft Research",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "NVIDIA AI",
@@ -65,7 +65,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 5
+      "candidates": 7
     },
     {
       "source": "MIT Technology Review",
@@ -85,12 +85,12 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 9
+      "candidates": 10
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 5
+      "candidates": 7
     },
     {
       "source": "腾讯新闻",
@@ -117,7 +117,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 0,
+      "count": 2,
       "readable": 0
     },
     {
