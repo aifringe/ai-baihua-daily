@@ -1,21 +1,20 @@
 {
-  "updatedAt": "2026-11-11T20:00:29.455490+00:00",
-  "lastCheckedAt": "2026-11-12T03:36:15.237880+00:00",
+  "updatedAt": "2026-11-12T17:21:53.820705+00:00",
+  "lastCheckedAt": "2026-11-12T17:21:53.820705+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 22
+      "candidates": 16
     },
     {
       "source": "Google DeepMind",
-      "ok": true,
-      "candidates": 5
+      "ok": false
     },
     {
       "source": "Google AI",
       "ok": true,
-      "candidates": 7
+      "candidates": 6
     },
     {
       "source": "Google Research",
@@ -25,12 +24,12 @@
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 10
+      "candidates": 11
     },
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 3
+      "candidates": 4
     },
     {
       "source": "Berkeley AI Research",
@@ -50,7 +49,7 @@
     {
       "source": "Microsoft Research",
       "ok": true,
-      "candidates": 2
+      "candidates": 1
     },
     {
       "source": "NVIDIA AI",
@@ -75,12 +74,12 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 2
+      "candidates": 0
     },
     {
       "source": "量子位",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "Simon Willison",
@@ -90,7 +89,7 @@
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 9
+      "candidates": 11
     },
     {
       "source": "腾讯新闻",
@@ -117,7 +116,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 1,
+      "count": 2,
       "readable": 0
     },
     {
@@ -151,6 +150,139 @@
   ],
   "articles": [
     {
+      "id": "dcc3893e53f427",
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-prototype-to-production-engineering-agents-with-agent-dlc/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/from-prototype-to-production-engineering-agents-with-agent-dlc/"
+        }
+      ],
+      "publishedAt": "2026-11-12",
+      "source": "AWS AI",
+      "title": "AWS提出Agent DLC框架",
+      "summary": "AWS AI发布技术博客，提出面向AI智能体的开发运维框架Agent DLC，围绕Define、Build、Evaluate、Release、Observe、Feed Back六个环节，以业务方批准的“金标准”作为验收依据。文章指出智能体具有非确定性、提示词即源码、外部依赖独立变动三大特性，传统CI/CD不足。其内部HR政策助手参考实现显示，检索块级精度全为1.00，但事实级精度低至0.09，暴露覆盖缺口；仅改提示词后一问改善、另一问恶化。",
+      "category": "行业动态",
+      "importance": 62,
+      "why": "智能体从演示走向生产，验收标准缺失是普遍痛点。该框架把评估前置为发布门槛，对正在落地大模型应用的企业有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS AI发布技术博客，提出Agent Development Lifecycle（Agent DLC）框架，用于把AI智能体从原型推进到生产。框架围绕Define、Build、Evaluate、Release、Observe、Feed Back六个活动，以业务负责人批准的“金标准”为核心，该标准包含可验证标准、阈值和已批准样例。文章指出智能体有三个特性使传统CI/CD不够用：输出非确定性、提示词与工具描述变更难以靠文本审查发现、模型端点和知识库可独立于代码库变动。配套参考实现是一个回答HR政策问题的内部助手，评估显示三个问题块级检索精度均为1.00，但事实级精度分别为0.59、0.53、0.09，第三问检索覆盖率为0.00。仅修改系统提示词后，第一问事实级精度升至0.85，第三问降至0.04。文章强调这些是参考实现测量值，非客户结果或基准成绩，分数会随运行变化。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把智能体想成一位新员工：演示时表现不错，不代表能直接上岗。传统软件测试像检查螺丝有没有拧紧，拧紧就算过；智能体每次回答都可能不同，光看一次结果不够。AWS这套框架相当于给智能体定一份岗位说明书，先写清什么算合格，再反复考试、记录错题、改一处再考。文中例子很直观：检索到的材料“看起来相关”得分满分，但拆开看九成内容答非所问，说明光看表面相关会漏掉真问题。对普通人来说，这意味着未来企业上线AI客服、HR助手时，验收会更看重实际答对率和是否编造信息，而不是演示效果。文章也提醒，高分不等于安全，例子里助手曾凭空编造用户联系方式，说明质量达标和责任约束要分开检查。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "From prototype to production: Engineering agents with Agent DLC",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "AWS提出Agent DLC框架相关图片",
+      "selectedOn": "2026-11-13"
+    },
+    {
+      "id": "d652bf4e1f2db5",
+      "url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112"
+        }
+      ],
+      "publishedAt": "2026-11-12",
+      "source": "MIT News",
+      "title": "MIT新训练法让气候AI模拟器更快更可信",
+      "summary": "麻省理工学院研究团队在《美国国家科学院院刊》发表研究，提出一种新的气候模拟器训练方法。传统气候模拟器依赖6至8个真实排放情景作为训练数据，每个情景都需运行完整地球系统模型，耗时数月且成本高昂，导致模拟器往往过时且难以适应新情景。新方法用算法生成带高频波动的合成情景数据，只需运行一次完整模型即可完成训练，使模拟器在更少数据下更准确、更可适应。研究称传统模拟器在局部污染物控制等测试中失败，新方法则能捕捉此类效应。",
+      "category": "报告解读",
+      "importance": 72,
+      "why": "气候模拟器是政策制定的重要工具，训练周期长导致工具过时是长期痛点。该研究用合成数据大幅压缩训练成本，若经完整模型验证，可能改变气候情景分析的工作方式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT研究团队开发了一种训练气候模拟器的新算法，成果发表于《美国国家科学院院刊》。气候模拟器是模仿完整地球系统模型的快速AI工具，几秒内即可跑完一个情景，但训练它通常需要6至8个真实排放情景，每个都要用超级计算机运行完整模型数月。新方法先用简单气候模型生成任意情景，再迭代调整训练数据，加入2050年二氧化碳骤增、2037年甲烷骤降等高频波动，直到模拟器误差降到阈值以下。这样只需运行一次完整模型，就能产出更准确、更适应新情景的模拟器。研究显示，传统模拟器在“局部污染物下降而其他排放上升”的测试中失败，新方法训练的模拟器则能捕捉该效应。尚未确定的是，该技术还未用完整地球系统模型生成的情景验证，也未推广到其他气候模型。",
+          "text_note": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把气候模拟器想成一个“速算器”：它不算全部物理过程，只学完整模型的样子，所以几秒出结果，方便科学家试算成千上万种未来。问题是教它时要用真实情景当教材，而每本教材都得让超级计算机算几个月，等教材备齐，速算器已经过时。MIT的办法是：不再用“像真实未来”的情景当教材，而是故意编出忽高忽低、现实中不太可能出现的排放曲线，让速算器在极端变化中学会抓规律。好比练车不在平直高速上慢慢开，而是在急转弯和急刹车中练反应。对普通人的意义在于：如果电网、农业、公共卫生部门能更快拿到更新的气候预测，规划会更及时；但这项技术目前仍是研究阶段，离直接进入政策工具箱还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "New research could lead to faster, trustworthy AI models for climate prediction",
+      "image": "./illustrations/report.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT新训练法让气候AI模拟器更快更可信相关图片",
+      "selectedOn": "2026-11-13"
+    },
+    {
+      "id": "e0226e82cba17a",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-attendees-guide-to-the-aws-reinvent-2026-ai-ml-track/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/the-attendees-guide-to-the-aws-reinvent-2026-ai-ml-track/"
+        }
+      ],
+      "publishedAt": "2026-11-11",
+      "source": "AWS AI",
+      "title": "AWS re:Invent 2026 AI/ML 议程指南发布",
+      "summary": "AWS 发布 re:Invent 2026 大会 AI/ML 专题参会指南。大会定于 11 月 30 日至 12 月 4 日举行，共设 2000 多场学习会议，其中 AI/ML 专题超过 140 场。指南按 AWS AI 技术栈分层介绍：底层是面向 AI 优化的数据中心与 Trainium、NVIDIA GPU 两类芯片；中层是数据基础、模型训练与推理，涉及 Amazon Bedrock 和 SageMaker AI；上层是 AgentCore 智能体开发管理与 Kiro、Amazon Connect 等即用型方案，安全治理与成本优化贯穿各层。会议分主题演讲、分组讲座、白板讨论、动手构建、工作坊和代码实操等类型，部分讲座会后上传视频。",
+      "category": "行业动态",
+      "importance": 55,
+      "why": "这是云厂商年度技术大会的议程预告，反映 AWS 在 AI 芯片、模型平台和智能体三层上的产品布局，对关注云计算与 AI 基础设施走向的从业者有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS 于 11 月 11 日发布 re:Invent 2026 大会 AI/ML 专题参会指南。大会 11 月 30 日至 12 月 4 日举行，2000 多场会议中 AI/ML 专题占 140 余场。指南把 AWS AI 能力分为五层：全球基础设施、AI 芯片（自研 Trainium 与 NVIDIA GPU 并行）、数据基础、模型训练与推理（Bedrock 提供多厂商模型统一接口，SageMaker AI 支持自建模型）、智能体开发管理（AgentCore）及即用型方案（Kiro、Amazon Connect 等）。会议形式包括分组讲座、白板讨论、构建者课程、两小时工作坊和代码实操，仅分组讲座会后上传视频。指南还列出各层推荐场次编号，但未披露具体产品更新内容。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把 AWS 的 AI 生意想成一家大型餐厅：最底下是自己盖的厨房和灶台（数据中心和自研芯片），中间是食材仓库和菜谱（数据与模型平台），最上面是直接端给客人的成品菜（现成智能体工具）。这份指南相当于大会的“点菜攻略”，告诉不同水平的参会者该去听哪几场。对普通人来说，短期没有直接影响，但它透露的信号值得留意：云厂商正把 AI 从单一模型服务扩展成从芯片到应用的整条流水线，未来企业用 AI 的门槛可能更低、选择更多，而价格和安全性仍是竞争焦点。指南本身只是议程安排，不等于产品已经落地。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The attendee’s guide to the AWS re:Invent 2026 AI/ML track",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "AWS re:Invent 2026 AI/ML 议程指南发布相关图片",
+      "selectedOn": "2026-11-13"
+    },
+    {
+      "id": "df4c427209a31b",
+      "url": "https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock/"
+        }
+      ],
+      "publishedAt": "2026-11-11",
+      "source": "AWS AI",
+      "title": "AWS发布Codex接入Bedrock企业指南",
+      "summary": "AWS发布技术指南，说明开发者如何将OpenAI Codex通过Amazon Bedrock推理接入现有AWS体系。Codex仍运行在开发者工作站，模型请求可经原生AWS访问、AgentCore Gateway或LLM网关三条路径到达Bedrock。指南建议先以最小权限小范围试点，用IAM Identity Center完成身份认证，并给出直接调用Bedrock Runtime验证、配置Codex提供商、双用户身份隔离检查及回滚验证等步骤，同时强调用OpenTelemetry与CloudWatch观测，但遥测不能证明代码正确或安全。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是Codex在企业云平台上落地路径的官方说明，涉及身份、网关、可观测与成本归属，对计划引入AI编程工具的平台团队有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布指南，介绍如何让OpenAI Codex通过Amazon Bedrock进行模型推理，同时复用企业已有的AWS身份、IAM、区域和可观测实践。Codex仍运行在开发者工作站，关键设计是模型请求如何抵达Bedrock以及策略控制放在哪里。指南给出三条路径：原生AWS访问适合最小权限试点；AgentCore Gateway适合需要AWS托管网关或Bedrock Guardrails的团队；LLM网关适合已有网关或在请求路径中强制控制的组织，自建集成属于进阶方案。示例使用GPT-5.6 Sol，并提醒先确认所选区域和推理路径支持Sol、Terra或Luna。文中还给出直接调用Bedrock Runtime、配置Codex提供商、双用户身份隔离和回滚验证等检查步骤。不过，这些内容属于官方技术指引，并非Codex功能本身更新，实际可用性仍取决于各区域模型支持情况。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：Codex是员工桌上的“写作助手”，Bedrock是公司统一管理的“印刷厂”。以前助手可能直接连外部服务，现在指南教你怎么让请求走公司已有的门禁、监控和账本，谁用了多少、花了多少钱都能对上号。对平台团队来说，好处是不用再搭第二套模型访问和运维体系；对普通开发者来说，日常写代码的体验变化不大，但登录、权限和可用的模型会受公司策略约束。指南也提醒，监控数据只能说明“谁在什么时候调用了什么”，不能保证生成的代码一定正确或安全，合并前仍需人工审查。对不负责IT采购的普通人，这类变化更多体现在企业软件采购和合规流程上，而非直接可感知的产品功能。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "OpenAI Codex on Amazon Bedrock",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "AWS发布Codex接入Bedrock企业指南相关图片",
+      "selectedOn": "2026-11-13"
+    },
+    {
       "id": "e7b7fb1e9e2688",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
       "sources": [
@@ -182,6 +314,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "SageMaker双向流推理新增按用量计费相关图片",
       "selectedOn": "2026-11-12"
+    },
+    {
+      "id": "485ec329c8b740",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
+        }
+      ],
+      "publishedAt": "2026-11-11",
+      "source": "Simon Willison",
+      "title": "Gemini决策模型API发布 支持多模态输入",
+      "summary": "2026年11月11日，Simon Willison报道谷歌发布Gemini Decision 1决策模型API，与Jev、OpenAI同类产品形成竞争。该模型支持是/否、选择和评分三类问题，覆盖文本、图像、音频、视频和PDF五种输入模态，定价为每百万输入token 10美分、输出免费，与GPT-6 Luna相同，但高于Jev的4.2美分。报道称Gemini对是/否问题的返回结果不像Jev和OpenAI那样严格为1.0或0.0，显得“不那么自信”，但未说明具体数值。目前尚不清楚该API的正式上线时间与可用范围。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "决策模型是AI应用落地的细分赛道，多模态支持与定价策略直接影响开发者选型，对关注AI工具成本与能力边界的读者有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据Simon Willison于2026年11月11日发布的内容，谷歌推出名为Gemini Decision 1的决策模型API，归入决策模型类别。该API与Jev高度相似，支持是/否、选择和评分三类问题，并沿用Jev对是/否问题的术语“Noul”。定价方面，Gemini Decision 1为每百万输入token 10美分、输出免费，与GPT-6 Luna决策模型相同；Jev以每百万4.2美分保持最低价。输入模态上，Jev仅支持文本和JSON，OpenAI支持文本与图像，Gemini Decision 1则覆盖文本、图像、音频、视频和PDF。报道举例称，可向模型提问视频中是否有龙、机器人，或场景是否位于法国、美国。一个关键差异是：Jev和OpenAI对是/否问题返回1.0或0.0，而Gemini“坚持不那么自信”，但原文未给出具体返回值，也未说明API正式上线时间与可用范围。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把决策模型理解成一个专门回答“是或否”“选哪个”“打几分”的AI裁判，而不是写文章聊天的助手。谷歌这次把裁判的眼睛和耳朵都装上了：不光能读文字，还能看图片、听音频、看视频和读PDF，比如直接问一段视频里有没有龙。价格上它和GPT-6 Luna一样，每百万输入token十美分，输出不要钱，但比最便宜的Jev贵一倍多。对普通人来说，这意味着以后做内容审核、视频打标、问卷评分这类活儿，可能更便宜也更省事；不过谷歌的裁判回答“是/否”时不会只给满分或零分，具体怎么用还得看开发者怎么解读。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Gemini Decisions API",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Gemini决策模型API发布 支持多模态输入相关图片",
+      "selectedOn": "2026-11-13"
     },
     {
       "id": "6e96a802abbc1d",
@@ -20122,13 +20287,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-12",
+  "editionDate": "2026-11-13",
   "dailyIds": [
     "e1742b0ed40ea5",
     "f0be6325bfc4de",
     "8827aad4505e69",
     "4b429bd7582936",
-    "xinhua-ai-terminal-20261106"
+    "d652bf4e1f2db5"
   ],
-  "editionUpdatedAt": "2026-11-11T20:00:29.455490+00:00"
+  "editionUpdatedAt": "2026-11-12T17:21:53.820705+00:00"
 }
