@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-11-11T20:00:29.455490+00:00",
-  "lastCheckedAt": "2026-11-11T20:00:29.455490+00:00",
+  "lastCheckedAt": "2026-11-12T03:36:15.237880+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -9,7 +9,8 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true,
+      "candidates": 5
     },
     {
       "source": "Google AI",
@@ -24,7 +25,7 @@
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 9
+      "candidates": 10
     },
     {
       "source": "MIT News",
@@ -74,7 +75,7 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 3
+      "candidates": 2
     },
     {
       "source": "量子位",
@@ -84,7 +85,7 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 11
+      "candidates": 12
     },
     {
       "source": "Latent Space",
