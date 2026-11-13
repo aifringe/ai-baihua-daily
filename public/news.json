@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-12T17:21:53.820705+00:00",
-  "lastCheckedAt": "2026-11-13T03:08:20.668963+00:00",
+  "updatedAt": "2026-11-13T16:56:54.579228+00:00",
+  "lastCheckedAt": "2026-11-13T16:56:54.579228+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 18
+      "candidates": 17
     },
     {
       "source": "Google DeepMind",
       "ok": true,
-      "candidates": 5
+      "candidates": 6
     },
     {
       "source": "Google AI",
@@ -30,7 +30,7 @@
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 4
+      "candidates": 6
     },
     {
       "source": "Berkeley AI Research",
@@ -45,7 +45,7 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 10
+      "candidates": 9
     },
     {
       "source": "Microsoft Research",
@@ -65,7 +65,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 8
+      "candidates": 7
     },
     {
       "source": "MIT Technology Review",
@@ -80,17 +80,17 @@
     {
       "source": "量子位",
       "ok": true,
-      "candidates": 2
+      "candidates": 1
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 12
+      "candidates": 11
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 11
+      "candidates": 12
     },
     {
       "source": "腾讯新闻",
@@ -117,7 +117,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 4,
+      "count": 3,
       "readable": 1
     },
     {
@@ -146,10 +146,142 @@
       "ok": true,
       "stage": "search-responded, public-index-readable",
       "count": 6,
-      "readable": 1
+      "readable": 2
     }
   ],
   "articles": [
+    {
+      "id": "68811c4e6ccf66",
+      "url": "https://latent.space/p/artcraft/",
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://latent.space/p/artcraft/"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "Latent Space",
+      "title": "ArtCraft用AI克隆Photoshop，宣称要重建互联网",
+      "summary": "在旧金山AI Engineer Code Summit上，初创公司ArtCraft创始人Brandon Thomas宣布已用AI重写Photoshop等17款开源软件，其中PhotoCraft以Rust从零构建，24小时内生成接近Photoshop的版本。他称PhotoCraft功能覆盖约60%，GitHub显示功能广度约76%、专业就绪度约46%，并称应用日下载约170万次、社区约4000名开发者。Thomas批评Web 2.0后API被收回、分发被大厂把守，提出“重建一切、夺回互联网”的口号，并预告将开源自主软件工厂AutoCraft。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "AI生成完整桌面软件并开源，直接挑战Adobe等订阅制巨头，若下载与社区数据属实，可能改变创意工具的成本结构与开发范式。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "ArtCraft在AI Engineer Code Summit上展示其AI重写软件路线。创始人Brandon Thomas称，团队给AI模型详细提示词，描述Photoshop的工具、数据结构和文件导入器，再让其构建应用，24小时内得到“相当接近Photoshop”的版本。PhotoCraft用Rust从零编写，兼容MCP和CLI。Thomas称功能覆盖刚过60%，GitHub标注功能广度约76%、专业就绪度约46%，尚未完全对齐Adobe。公司已发布17款官方开源应用，包括PdfCraft、WordCraft及Figma克隆，社区另有约300款在开发。Thomas称日下载约170万次、社区约4000名开发者，并预告开源自主软件工厂AutoCraft。上述下载与社区数字均为其单方说法，未见第三方核实。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把ArtCraft理解成用AI批量“复刻”大家熟悉的收费软件，再把代码公开，谁都能免费用、改。过去做一款Photoshop级工具要多年工程，现在他们让AI先搭骨架，人再补关键部分，速度被大幅压缩。对普通人最直接的影响是：修图、做图、写文档可能不再必须按月订阅，选择变多、价格压力变大。但也要冷静看：PhotoCraft只完成约六成功能，专业设计师依赖的细节、插件和稳定性仍待验证；开源软件谁来维护、安全谁负责也是问题。Thomas喊“夺回互联网”更像愿景口号，真正能否兑现，要看下载量能否变成持续贡献和可用产品。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "ArtCraft用AI克隆Photoshop，宣称要重建互联网相关图片",
+      "selectedOn": "2026-11-14"
+    },
+    {
+      "id": "73b823aa24f5b8",
+      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "TechCrunch AI",
+      "title": "黄仁勋涉婚外情与间谍疑云辞职",
+      "summary": "2026年10月底，美媒曝英伟达CEO黄仁勋与疑似中国间谍、Megaspeed高管Alice Huang关系密切，后者公司两年购入48亿美元英伟达芯片并遭美新调查。11月8日黄仁勋公开承认婚外情，董事会启动调查；随后《纽约时报》再曝其与直属下属、医疗副总裁Kimberly Powell有染，路透又称存在第三段与员工的关系。11月12日董事会接受辞呈，CFO Colette Kress任临时CEO，黄同意赴国会作证。国会就H200对华出口许可与国家安全展开调查，股价数日跌约11%。",
+      "category": "人物对话",
+      "importance": 95,
+      "why": "全球AI芯片龙头CEO因私德与国家安全疑云突然去职，牵动对华出口政策、公司治理与供应链，影响远超个人丑闻。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据TechCrunch时间线，美国官员调查Megaspeed高管Alice Huang逾一年，怀疑其为中方情报人员；该公司两年购入约48亿美元英伟达芯片，美新曾调查其违规转售，司法部已接手。10月底《纽约时报》曝她与黄仁勋关系密切，英伟达称属正常客户会面。11月8日黄仁勋致员工信承认对妻子不忠，称配合董事会独立调查。11日《纽约时报》称其与直接下属、医疗副总裁Kimberly Powell有婚外情，公司未确认；路透12日又称存在第三段与匿名员工的关系。12日董事会接受辞呈，CFO Colette Kress任临时CEO，Harvey C. Jones任董事会主席；黄同意感恩节前赴国会闭门作证。国会就2025年12月批准H200对华销售展开调查。股价五日跌约11%。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方：掌勺三十多年的大厨突然被曝私生活混乱，其中一位交往对象还被怀疑是竞争对手派来的“试菜员”，而这家餐厅的招牌菜正是美国最不想外流的AI芯片。结果大厨辞职、副手临时掌勺，国会要问个明白。对普通人来说，短期看英伟达芯片供应和价格可能波动，AI产品迭代节奏或受影响；中期看美国对华芯片出口政策可能收紧，相关科技股和就业承压。需要说明：间谍指控、第三段关系等关键细节仍属媒体报道或调查阶段，未经法院认定，黄仁勋本人未回应置评请求，后续听证与调查结果才是关键。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The unfolding Jensen Huang scandal: a timeline",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "黄仁勋涉婚外情与间谍疑云辞职相关图片",
+      "selectedOn": "2026-11-14"
+    },
+    {
+      "id": "35e1ee14fcc7cb",
+      "url": "https://world.people.com.cn/n1/2026/1113/c1002-40833002.html",
+      "sources": [
+        {
+          "name": "人民网",
+          "url": "https://world.people.com.cn/n1/2026/1113/c1002-40833002.html"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "人民网",
+      "title": "阿布扎比石油展聚焦能源安全与AI应用",
+      "summary": "第四十二届阿布扎比国际石油展近日在阿联酋举行，主题为“全球能源体系聚力共建之地”，吸引170多个国家和地区2260家企业参展。能源安全、供应链韧性、人工智能应用和绿色转型成为焦点。阿联酋官员贾比尔称霍尔木兹海峡航运受阻暴露供应链脆弱性，呼吁扩大储备并借助AI提升效率。多家中企展示智能油田、碳捕集等技术，振华石油与阿布扎比国家石油公司签署技术中心合作协议。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "展会反映全球能源安全焦虑与AI、低碳技术加速渗透油气业，中企展示技术并签署合作协议，体现中阿能源合作向技术服务延伸。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "第四十二届阿布扎比国际石油展近日在阿联酋首都阿布扎比举行，主题为“全球能源体系聚力共建之地”，设人工智能、数字化、低碳与化工、海事与物流等展区，来自170多个国家和地区的2260家企业参展。阿联酋工业与先进技术部长、阿布扎比国家石油公司集团首席执行官苏尔坦·贾比尔在开幕式上表示，霍尔木兹海峡航运受阻暴露全球能源供应链脆弱性，呼吁扩大战略储备、完善运输物流设施并借助人工智能提高运行效率和风险预判。展会现场，中国石油展示塔里木绿色发展沙盘模型，中国海油展示伊拉克米桑智能油田建设，多家民营企业带来智能钻机、电驱压裂、数字孪生等装备。振华石油与阿布扎比国家石油公司签署技术中心合作协议。报道未披露协议金额、具体项目时间表及参展中企数量。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这场展会相当于全球油气行业的“大集”，大家最担心的不是地下没油，而是油能不能安全运到市场。霍尔木兹海峡一堵，就像高速公路突然封路，整条供应链都跟着紧张。所以主办方一边喊多囤货、修好路，一边请人工智能当“调度员”，提前预判风险、提高效率。对中国企业来说，过去主要是买油卖油，现在开始卖技术、卖装备、卖服务，比如让油田变“聪明”、把碳排放捕集起来。对普通人而言，这类合作短期不直接改变油价，但长期看，能源运输更稳、技术输出更多，有助于降低供应中断带来的价格波动风险。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "第四十二届阿布扎比国际石油展近日在阿联酋首都阿布扎比举行。本届展会以“全球能源体系聚力共建之地”为主题，设置人工智能、数字化、低碳与化工、海事与物流等专业展区，吸引来自全球170多个国家和地区的2260家企业参展，能源安全、供应链韧性、人工智能应用和绿色转型成为与会各方关注焦点。多家中企亮相展会，中阿能源合作不断向新向深拓展。",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "阿布扎比石油展聚焦能源安全与AI应用相关图片",
+      "selectedOn": "2026-11-14"
+    },
+    {
+      "id": "f55817b72e9782",
+      "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/",
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "Latent Space",
+      "title": "英伟达CEO黄仁勋被曝辞职 临时CEO接任",
+      "summary": "据Latent Space报道，英伟达董事会据称在《纽约时报》报道黄仁勋与一名被控中国间谍的女性有婚外情后，准备更换CEO；随后又传出第二段婚外情消息，2026年11月12日英伟达宣布黄仁勋辞去CEO、总裁及董事会成员职务，结束33年任期。自2013年起担任CFO的Colette Kress兼任临时CEO。报道称辞职可能由董事会施压，但因果关系存疑。该消息尚未获英伟达官方公告或其他媒体独立证实，下周财报电话会预计受高度关注。",
+      "category": "人物对话",
+      "importance": 92,
+      "why": "黄仁勋是AI算力浪潮的核心人物，其突然去职若属实，将牵动英伟达战略、开源生态与中美芯片出口管制走向，但消息源单一且未经官方确认，需谨慎对待。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Latent Space的AINews栏目称，英伟达董事会在《纽约时报》报道黄仁勋与一名被控中国间谍的女性存在婚外情后，已准备更换CEO；随后又出现第二段婚外情报道。2026年11月12日，公司宣布黄仁勋辞去CEO、总裁和董事会成员职务，结束33年任期，自2013年起任CFO的Colette Kress以临时CEO身份留任原职。报道称辞职可能由董事会施压促成，但明确表示因果关系存疑。该文还提及外界讨论中国模型是否使用了本不应获得的Blackwell GPU，规模存在争议。需要指出，上述内容仅来自单一媒体，英伟达官方公告及其他主流媒体均未证实，黄仁勋是否真的离职、董事会是否施压均属不确定信息。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方，黄仁勋就像一家全球最火餐厅的主厨兼老板，突然被传撂挑子，临时由管账的CFO顶上。对普通人来说，短期最直接的影响是英伟达股价和AI芯片供应预期可能剧烈波动，买显卡、用云服务甚至AI订阅价格都可能受牵连。中期看，新掌门是否延续开源与对华销售策略，会左右美国AI领导力格局和芯片出口管制走向。不过眼下这更像一则未经证实的八卦式爆料：消息源单一，官方没吭声，其他媒体也没跟进。读者不妨把它当成“待核实的传闻”，等英伟达正式公告或财报会表态再下结论，别急着据此做投资或采购决定。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "[AINews] Jensen Huang resigns after 33 years leading NVIDIA",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "英伟达CEO黄仁勋被曝辞职 临时CEO接任相关图片",
+      "selectedOn": "2026-11-14"
+    },
     {
       "id": "dcc3893e53f427",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-prototype-to-production-engineering-agents-with-agent-dlc/",
@@ -216,6 +348,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "MIT新训练法让气候AI模拟器更快更可信相关图片",
       "selectedOn": "2026-11-13"
+    },
+    {
+      "id": "16dbc3338bdccc",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+      "sources": [
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/"
+        }
+      ],
+      "publishedAt": "2026-11-12",
+      "source": "Microsoft Research",
+      "title": "微软研究速递：AI翻译、数学突破与编码代理优化",
+      "summary": "微软研究院发布第98期研究速递，汇总多项进展：AI语音翻译推动通用翻译器接近现实；研究解决高维几何领域悬置31年的KLS猜想，并经独立验证与计算机辅助形式化验证；针对AI编码代理长会话上下文压缩成本高的问题，基于1350万次会话分析提出CompactionBench基准与APEC方法，称成本最多降25.4%、执行时间降9.6%；另推出Latent Core Tokenizer，在104种语言上生成更具语言学意义的词元。上述数据均来自微软单方披露，尚无第三方复现。",
+      "category": "报告解读",
+      "importance": 62,
+      "why": "一次性汇总翻译、数学、编码代理与分词四项研究，其中KLS猜想获解与编码代理降本数据较有分量，但均为微软单方发布，需独立验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软研究院第98期研究速递以播客形式汇总多项工作。其一，应用科学经理Jinyu Li讨论AI语音翻译进展，称通用翻译器更接近现实，但未给出具体指标。其二，研究称解决高维几何核心开放问题KLS猜想，建立对数凹分布的通用原则，结果经独立验证并用计算机辅助形式化验证。其三，分析1350万次编码会话发现，不足8%需上下文压缩，却占总AI处理成本44%；团队提出CompactionBench基准与后台预生成摘要的APEC方法，称性能提升、成本最多降25.4%、执行时间降9.6%。其四，Latent Core Tokenizer在104种语言上生成更具语言学意义的词元。以上数字均出自微软单方披露，尚无第三方复现，KLS证明细节亦未在正文展开。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这期速递看成微软实验室的季度汇报：翻译方向是让机器同传更靠谱；KLS猜想好比给高维空间里“最窄的瓶颈”定了一条通用测量规则，此前三十多年没人证明，如今有了答案，理论上能让随机算法的效率分析更踏实。对普通人最直接的是编码代理那项：AI写代码聊久了会“记不住”，得停下来做摘要，既慢又贵；微软发现这种停顿虽少却吃掉近半成本，于是让摘要提前在后台备好，相当于边做饭边备菜，号称省四分之一开销。分词改进则像把各国文字先拆成更合理的积木，再教模型认字，多语言场景可能更准。不过这些好处目前仍是微软自测口径，实际体验要等产品落地和外部验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Microsoft Research Focus – Edition #98",
+      "image": "./illustrations/report.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "微软研究速递：AI翻译、数学突破与编码代理优化相关图片",
+      "selectedOn": "2026-11-14"
     },
     {
       "id": "e0226e82cba17a",
@@ -20288,13 +20453,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-13",
+  "editionDate": "2026-11-14",
   "dailyIds": [
+    "73b823aa24f5b8",
+    "f55817b72e9782",
     "e1742b0ed40ea5",
     "f0be6325bfc4de",
-    "8827aad4505e69",
-    "4b429bd7582936",
-    "d652bf4e1f2db5"
+    "68811c4e6ccf66"
   ],
-  "editionUpdatedAt": "2026-11-12T17:21:53.820705+00:00"
+  "editionUpdatedAt": "2026-11-13T16:56:54.579228+00:00"
 }
