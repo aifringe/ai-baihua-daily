@@ -1,20 +1,21 @@
 {
   "updatedAt": "2026-11-12T17:21:53.820705+00:00",
-  "lastCheckedAt": "2026-11-12T17:21:53.820705+00:00",
+  "lastCheckedAt": "2026-11-13T03:08:20.668963+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 16
+      "candidates": 18
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true,
+      "candidates": 5
     },
     {
       "source": "Google AI",
       "ok": true,
-      "candidates": 6
+      "candidates": 7
     },
     {
       "source": "Google Research",
@@ -24,7 +25,7 @@
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 11
+      "candidates": 12
     },
     {
       "source": "MIT News",
@@ -39,17 +40,17 @@
     {
       "source": "Apple Machine Learning",
       "ok": true,
-      "candidates": 2
+      "candidates": 3
     },
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 9
+      "candidates": 10
     },
     {
       "source": "Microsoft Research",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "NVIDIA AI",
@@ -59,12 +60,12 @@
     {
       "source": "GitHub",
       "ok": true,
-      "candidates": 0
+      "candidates": 1
     },
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 6
+      "candidates": 8
     },
     {
       "source": "MIT Technology Review",
@@ -74,7 +75,7 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 0
+      "candidates": 1
     },
     {
       "source": "量子位",
@@ -116,15 +117,15 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 2,
-      "readable": 0
+      "count": 4,
+      "readable": 1
     },
     {
       "source": "新华网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 3,
-      "readable": 1
+      "count": 2,
+      "readable": 0
     },
     {
       "source": "温州网",
