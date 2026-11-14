@@ -1,16 +1,15 @@
 {
   "updatedAt": "2026-11-13T16:56:54.579228+00:00",
-  "lastCheckedAt": "2026-11-13T16:56:54.579228+00:00",
+  "lastCheckedAt": "2026-11-14T02:54:17.025279+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 17
+      "candidates": 18
     },
     {
       "source": "Google DeepMind",
-      "ok": true,
-      "candidates": 6
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -25,7 +24,7 @@
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 12
+      "candidates": 10
     },
     {
       "source": "MIT News",
@@ -45,7 +44,7 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 9
+      "candidates": 10
     },
     {
       "source": "Microsoft Research",
@@ -65,7 +64,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 7
+      "candidates": 9
     },
     {
       "source": "MIT Technology Review",
@@ -75,7 +74,7 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "量子位",
