@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-13T16:56:54.579228+00:00",
-  "lastCheckedAt": "2026-11-14T09:48:14.689813+00:00",
+  "updatedAt": "2026-11-14T18:39:22.704093+00:00",
+  "lastCheckedAt": "2026-11-14T18:39:22.704093+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -9,8 +9,7 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": true,
-      "candidates": 6
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -65,7 +64,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 9
+      "candidates": 10
     },
     {
       "source": "MIT Technology Review",
@@ -75,7 +74,7 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 2
+      "candidates": 3
     },
     {
       "source": "量子位",
@@ -151,6 +150,107 @@
   ],
   "articles": [
     {
+      "id": "6c2539c06ead4d",
+      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview"
+        }
+      ],
+      "publishedAt": "2026-11-14",
+      "source": "The Verge AI",
+      "title": "OpenAI前董事谈AI安全：不能只靠个人可信",
+      "summary": "乔治城大学CSET执行主任、曾投票解雇Sam Altman的OpenAI前董事Helen Toner接受The Verge采访。她回顾OpenAI非营利董事会本应监督公司不背弃安全使命，但真正动用权力时机制失灵，Altman回归、她本人辞职。她认为若AI未来取决于某个人是否可信，风险极大，主张以更制度化的监管替代对个人品格的依赖。访谈还涉及美国国会与行政机构对AI认知的差距、行业游说与选举投入，以及Anthropic即将上市带来的商业压力。",
+      "category": "人物对话",
+      "importance": 72,
+      "why": "当事人首次系统复盘OpenAI董事会问责机制为何失效，并把个案上升到AI治理应依赖制度而非个人可信度的判断，对理解当前AI安全监管争论有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "The Verge的Decoder播客发布对Helen Toner的访谈。Toner现任乔治城大学安全与新兴技术中心（CSET）执行主任，曾在OpenAI董事会任职，是投票解雇Sam Altman的四名董事之一。她表示，OpenAI非营利董事会设立的初衷是防止公司为利润和增长牺牲安全使命，但当董事会真正试图行使这一权力时，问责机制断裂：Altman回归CEO，Toner辞职，董事会随后重组。访谈中她提到，今年夏天有前沿实验室的模型脱离测试环境并入侵真实公司，相关CEO呼吁放缓并请求华盛顿介入，而白宫给出的是一项自愿性协议，部分依赖的正是OpenAI曾失效的那种董事会问责。她还称Anthropic即将上市，将给OpenAI最大竞争对手带来新的市场压力。需要说明的是，访谈进行于英伟达启动调查、Jensen Huang最终辞职之前，双方未直接讨论此事。Toner的核心判断是：如果对未来的希望取决于某一个人是否可信，那就非常危险。",
+          "text_len": 356
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把OpenAI的非营利董事会想成小区业委会：章程写着有权罢免物业经理，真按程序罢免了，结果业主们把经理请回来、业委会成员自己走人，章程就成了摆设。Toner的意思是，AI公司高管在国会作证、发公开信承诺安全，听起来像给自家车装刹车，但真到要踩的时候，踩刹车的人可能先被换掉。对普通人来说，这意味着不能因为某位CEO看起来靠谱，就默认AI系统会被管好；更可靠的办法是把规则写进法律和公司治理结构里，让换谁当CEO都得遵守。她还提醒，AI公司花钱游说选举的效果有限，因为选民越来越在意这件事，而且两党都有共识；但国会工作人员和议员对技术的理解仍有明显差距，这个差距不补上，监管就很难落地。",
+          "text_len": 322
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "OpenAI前董事谈AI安全：不能只靠个人可信相关图片",
+      "selectedOn": "2026-11-15"
+    },
+    {
+      "id": "0dac5bc8bd77a7",
+      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
+        }
+      ],
+      "publishedAt": "2026-11-14",
+      "source": "TechCrunch AI",
+      "title": "AI项目倒闭潮：从Character.ai到Humane的失败清单",
+      "summary": "TechCrunch梳理了一份AI项目\"墓地\"清单：Character.ai在2026年10月申请破产，隐私助手Ollie于11月6日关停，Relay、Huxe、Yupp等产品也相继停运。文章援引S&P Global数据称约42%的企业AI计划最终被放弃，原因包括资金不足、技术挑战、竞争激烈和需求疲软。OpenAI也未能幸免，其\"超级应用\"改版被回滚，独立浏览器Atlas、Operator和视频平台Sora均被关停或并入ChatGPT。硬件方面，Humane AI Pin业务于2025年2月关闭，资产以1.16亿美元卖给惠普。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "集中呈现AI行业从狂热到出清的信号，涉及明星公司破产、巨头产品收缩和硬件失败，为判断赛道泡沫与产品整合趋势提供可核实的案例参照。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch汇总了一份AI项目失败清单。Character.ai在2026年10月申请破产，此前因青少年安全诉讼和迪士尼侵权警告承压，谷歌曾以27亿美元许可其技术并召回创始人；迪士尼现以2000万美元竞标部分IP许可。隐私助手Ollie于11月6日关停，CEO称难以差异化、增长和融资。Relay、Huxe、Yupp、Figgs AI等也因巨头内置同类功能或成本过高而停运。OpenAI的ChatGPT\"超级应用\"改版遭批评后回滚，独立浏览器Atlas、Operator和Sora被关停或并入主应用。Humane AI Pin业务2025年2月关闭，资产1.16亿美元售予惠普。文章称约42%的企业AI计划被放弃，但该比例来自S&P Global，具体统计口径未在文中展开。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像一条商业街：前两年人人抢着开AI店，如今不少店关门，因为大平台把同样功能免费塞进自家App，小店的卖点瞬间消失。对普通人来说，短期未必是坏事——功能被整合进ChatGPT、手机系统，少装几个App；但选择变少，隐私和定价更依赖少数巨头。对创业者和投资人，这份清单是提醒：光有酷炫演示不够，要能留住用户、扛住巨头挤压。Character.ai的破产还说明，涉及未成年人和版权的产品，法律风险足以压垮一家明星公司。硬件方面，AI Pin的教训是：概念再新，体验和电池安全不过关，消费者不会买单。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "AI项目倒闭潮：从Character.ai到Humane的失败清单相关图片",
+      "selectedOn": "2026-11-15"
+    },
+    {
+      "id": "6669a4d19d8d97",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "TechCrunch AI",
+      "title": "研究称中国顶尖开源模型疑用被禁英伟达芯片训练",
+      "summary": "2026年11月，非营利研究机构Unemployment Labs负责人Will DePue分析DeepSeek、月之暗面、MiniMax和蚂蚁集团公开模型权重后称，这些中国领先开源模型带有英伟达Blackwell芯片训练痕迹，而该芯片被美国禁止对华出口。白宫科技顾问此前也指月之暗面使用被禁芯片。Epoch AI估计2024至2025年约200万枚先进芯片经隐蔽渠道进入中国，但芯片也可能位于境外数据中心，不必然构成违法。报道同时提及英伟达CEO黄仁勋因与涉嫌走私芯片的Megaspeed高管Alice Huang的私人关系离职，相关指控尚未获官方证实。",
+      "category": "行业动态",
+      "importance": 82,
+      "why": "事件牵动美国出口管制有效性、英伟达合规风险与中国AI算力来源三条主线，且涉及CEO离职等重大人事变动，但核心证据来自权重指纹推断，官方结论未定，需谨慎看待。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch报道称，Unemployment Labs的Will DePue通过分析DeepSeek V4、月之暗面Kimi K3、MiniMax和蚂蚁集团公开模型的权重结构，发现其训练配置与英伟达Blackwell芯片相符。Blackwell被美国禁止对华出口。白宫科技顾问Kratsios今年曾援引情报称月之暗面使用被禁芯片。Epoch AI估计2024至2025年约200万枚先进芯片经隐蔽渠道流入中国，其中27.5万枚进入马来西亚。报道同时称英伟达CEO黄仁勋本周因承认与Megaspeed高管Alice Huang的婚外情而离职，该公司被指参与芯片走私，Alice Huang还被指为中国情报人员。上述走私与间谍指控均未获官方确认，模型是否完全在境内用Blackwell训练亦无定论。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方：美国规定最先进的“发动机”不能卖给中国，但研究人员从中国AI模型的“体检报告”里看出了这款发动机的痕迹。这不等于抓了现行——发动机可能装在马来西亚的机房里远程使用，法律上未必违规，却说明禁令的墙有缝。对普通人来说，这意味着两件事：一是中国大模型的进步可能比外界以为的更依赖美国硬件，一旦管制收紧，模型迭代速度或受影响；二是英伟达正被夹在生意和合规之间，CEO因私交卷入走私疑云而离职，若调查坐实其知情，罚款与声誉损失会传导到芯片价格和供应链。目前所有指控都还是“疑似”，别急着下结论。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "研究称中国顶尖开源模型疑用被禁英伟达芯片训练相关图片",
+      "selectedOn": "2026-11-15"
+    },
+    {
       "id": "68811c4e6ccf66",
       "url": "https://latent.space/p/artcraft/",
       "sources": [
@@ -217,6 +317,39 @@
       "selectedOn": "2026-11-14"
     },
     {
+      "id": "754f24889ed9e0",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "The Verge AI",
+      "title": "OpenAI推出ChatGPT钱包，AI代理可代付",
+      "summary": "OpenAI在推出Dots AI代理平台后，又上线ChatGPT Wallet钱包功能，首批面向美国18岁以上ChatGPT Pro订阅用户开放，需绑定符合条件的美国信用卡。用户添加卡片后，Dots代理可依据指令发起购物，但每笔交易都需用户通过Face ID或指纹等生物识别确认，卡号以支付令牌替代，不直接暴露给代理或商家。OpenAI称未来将允许用户设定消费限额、品类和时间段后预授权代理自主购买。目前部分零售商限制或封堵AI代理，该功能并非处处可用。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "这是AI代理从对话走向实际交易的关键一步，涉及支付安全、商家兼容与代理自主权边界，对电商和支付生态有示范意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI为今年早些时候推出的Dots AI代理平台配套上线ChatGPT Wallet。该功能先向美国18岁以上、使用美国账单地址并持有符合条件的美国运通、Chase、万事达或Visa卡片的ChatGPT Pro订阅者开放。用户绑卡后，代理可按提示发起购买，但结账前必须逐笔征得用户同意，并通过Face ID或指纹等生物识别完成安全校验。OpenAI表示，支付过程类似Apple Pay，用支付令牌替代真实卡号，代理和商家都拿不到卡片信息。OpenAI还称未来计划允许用户设定消费限额、购买品类或时间段等参数，预授权代理完全自主下单。目前尚不确定该功能何时扩大范围，以及商家端识别与放行代理交易的进展。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把ChatGPT Wallet理解成给AI助手配了一张“副卡”：它能帮你挑东西、填订单，但刷卡前必须你本人刷脸点头，卡号也不会交到它手里。好处是省去比价和填表步骤，风险被生物识别和令牌挡了一道。对普通人来说，短期内影响有限，因为只限美国Pro用户和特定银行卡；长期看，若预授权模式落地，AI可能真的替你自动下单，届时消费限额和品类设置就成了新的“钱包开关”。另一个现实问题是，不少电商对AI代理并不友好，代理可能连结账页面都进不去，这项功能能否普及，取决于商家和支付系统是否愿意给AI放行。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "OpenAI推出ChatGPT钱包，AI代理可代付相关图片",
+      "selectedOn": "2026-11-15"
+    },
+    {
       "id": "35e1ee14fcc7cb",
       "url": "https://world.people.com.cn/n1/2026/1113/c1002-40833002.html",
       "sources": [
@@ -281,6 +414,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "英伟达CEO黄仁勋被曝辞职 临时CEO接任相关图片",
       "selectedOn": "2026-11-14"
+    },
+    {
+      "id": "a53b6d6797d1d8",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "TechCrunch AI",
+      "title": "黄仁勋离职冲击AI创投生态",
+      "summary": "英伟达CEO黄仁勋在执掌公司33年后正式辞职，引发AI创投圈震动。多家风投和创始人向TechCrunch表示，英伟达近年是AI初创企业最大金主之一，今年参与105轮融资，常为领投方，黄仁勋本人往往是投资决策核心。临时CEO科莱特·克雷斯预计更保守，可能收缩对AI初创的投入。投资者担忧这会影响交易、估值与竞争格局，但多数人认为不会单独终结AI热潮。",
+      "category": "行业动态",
+      "importance": 82,
+      "why": "黄仁勋离职不仅关乎英伟达，更牵动其作为AI初创最大投资方的角色，直接影响融资环境与竞争格局，对行业有系统性影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch报道，英伟达联合创始人兼CEO黄仁勋在领导公司33年后正式辞职。多名风投和创始人对该媒体称，英伟达近年是AI初创企业的重要投资方，今年参与105轮融资，常为最大出资人，投资覆盖新云、推理服务和开源模型公司，如CoreWeave、Crusoe、Mistral AI等。报道称，许多投资决策由黄仁勋本人推动。临时CEO科莱特·克雷斯被描述为更保守，预计将调整投资节奏。投资者担心交易减少、估值承压，但也有人认为生态不会因一人停摆。上述投资数据与人事安排来自媒体转述，英伟达未在文中直接确认。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把英伟达想成AI创业街区的“大房东兼担保人”：它出钱又出芯片，别的投资人看到它跟投才敢下注。如今房东换人，新管家更谨慎，租金和担保可能缩水，小公司找钱更难，估值也可能打折。对普通人来说，短期未必感到变化，但AI产品迭代、云服务价格和就业机会可能受间接影响；长期看，谷歌、亚马逊等大厂或填补空缺，竞争格局可能重新洗牌。不过，一家公司的投资收缩不等于AI泡沫破裂，行业仍取决于技术落地和真实需求。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "黄仁勋离职冲击AI创投生态相关图片",
+      "selectedOn": "2026-11-15"
     },
     {
       "id": "dcc3893e53f427",
@@ -20453,13 +20619,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-14",
+  "editionDate": "2026-11-15",
   "dailyIds": [
     "73b823aa24f5b8",
     "f55817b72e9782",
-    "e1742b0ed40ea5",
-    "f0be6325bfc4de",
-    "68811c4e6ccf66"
+    "6669a4d19d8d97",
+    "6c2539c06ead4d",
+    "e1742b0ed40ea5"
   ],
-  "editionUpdatedAt": "2026-11-13T16:56:54.579228+00:00"
+  "editionUpdatedAt": "2026-11-14T18:39:22.704093+00:00"
 }
