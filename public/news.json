@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-11-14T18:39:22.704093+00:00",
-  "lastCheckedAt": "2026-11-14T18:39:22.704093+00:00",
+  "lastCheckedAt": "2026-11-15T02:22:57.999351+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -64,7 +64,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 10
+      "candidates": 8
     },
     {
       "source": "MIT Technology Review",
@@ -84,7 +84,7 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 11
+      "candidates": 12
     },
     {
       "source": "Latent Space",
@@ -116,7 +116,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 5,
+      "count": 4,
       "readable": 1
     },
     {
