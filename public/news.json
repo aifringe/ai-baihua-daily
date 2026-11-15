@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-14T18:39:22.704093+00:00",
-  "lastCheckedAt": "2026-11-15T10:23:10.337988+00:00",
+  "updatedAt": "2026-11-15T19:15:00.618309+00:00",
+  "lastCheckedAt": "2026-11-15T19:15:00.618309+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -85,12 +85,12 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 12
+      "candidates": 11
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 12
+      "candidates": 10
     },
     {
       "source": "腾讯新闻",
@@ -417,6 +417,39 @@
       "selectedOn": "2026-11-14"
     },
     {
+      "id": "e07fedf840f05b",
+      "url": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "MIT News",
+      "title": "MIT报道Robust AI协作机器人落地工厂",
+      "summary": "MIT News于2026年11月13日报道，由MIT校友Anthony Jules与荣休教授Rodney Brooks共同创办的Robust AI，正推动其轮式移动机器人Carter进入工厂和物流仓库。Carter外形类似带轮工具车，配有可感知推力的把手、AI视觉系统与全向轮，工人可用手势、单手推拉或触屏引导它搬运货物。公司称机器人已在仓库和工厂用于拣货、补货与跨区域运输，强调人机分工而非替代。报道未披露部署数量、客户名称与具体效率数据，相关效果仍待独立验证。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是MIT官方对一家知名机器人创业公司产品路线的介绍，涉及人机协作机器人在工厂和仓库的落地方式，对理解自动化如何进入非全自动场景有参考价值，但缺少可核验的部署规模与效果数据。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT News报道称，Robust AI由Anthony Jules和MIT荣休教授Rodney Brooks于2019年创办，其移动机器人Carter被设计成能在工厂和仓库中与工人并肩工作。Carter外形像带轮工具车，配有可感知推力的把手、AI视觉系统和全向轮，工人可以单手推拉、用手势或触屏指挥它。公司称机器人已在物流仓库和工厂用于拣货、补货和跨区域搬运，并可按客户需要分阶段引入。报道还提到，团队曾因疫情转向消毒机器人，后因传播途径认知变化而调整方向。不过，报道未给出部署数量、客户名单和效率提升的具体数字，实际效果仍缺少独立验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Carter理解成一辆“会看路、听得懂手势的智能推车”：工人不用追着它跑，也不用改造整条产线，哪里需要搬东西就让它搭把手。它瞄准的不是那种花上亿美元全自动化的“样板工厂”，而是大量连传送带都没有的普通车间和仓库。对普通人来说，这类机器人短期内更像同事而非替代者，重活、远距离搬运可能被分担，但工作流程和岗位数量会不会变化，还要看企业实际部署后的效果。报道本身没有提供成本、故障率和工人反馈，因此现在下结论说“机器人进厂潮来了”还为时过早。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Helping robots fit into the human workplace",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT报道Robust AI协作机器人落地工厂相关图片",
+      "selectedOn": "2026-11-16"
+    },
+    {
       "id": "a53b6d6797d1d8",
       "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
       "sources": [
@@ -450,6 +483,72 @@
       "selectedOn": "2026-11-15"
     },
     {
+      "id": "babb1d69563728",
+      "url": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "MIT News",
+      "title": "MIT推AI设计副驾 工程师可中途纠偏",
+      "summary": "麻省理工学院团队在《Communications Engineering》发表开放获取论文，提出一种“人在回路”的拓扑优化设计系统：算法生成结构过程中，会主动把区域交给工程师反馈，工程师可让指定区域变厚或变薄。研究称相比全算法方案，该方法使可制造性提升、线性屈曲载荷提高39%，总设计时间仅增加约15秒。目前修改选项仍限于厚度调整，团队计划扩展更多操作。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "把人类判断嵌入生成式结构设计流程，缓解黑箱算法难信任、难制造的问题，对建筑桥梁等工程落地有直接意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT研究人员公布一套用于结构设计的AI“副驾”系统。它基于拓扑优化：算法在给定空间内迭代生成建筑或桥梁构件形态，但不再等全部算完才给结果，而是在生成过程中标出可能需人工干预的区域，请工程师反馈。工程师目前只能把指定区域调厚或调薄。论文称，在演示中该方法让可制造性改善、线性屈曲载荷提高39%，总设计时间只比纯算法多约15秒。研究团队用合成的人类反馈数据训练模型，以快速定位人最可能想改的地方。仍不确定的是：该系统在真实工程项目中的长期表现、对其他修改类型的支持，以及不同工程团队使用时的信任建立效果。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把拓扑优化想成一个很会算但不太懂工地规矩的绘图员：它能画出性能很高的结构，却可能在一个节点塞八根梁，工厂做不出来，工程师也不敢签字。MIT这套系统相当于给绘图员配了个副驾，画到一半就停下来问“这块要不要改”，工程师说厚一点或薄一点，它接着画。好处是工程师从“等最终答案再推翻重来”变成“边画边纠偏”，既保留算法的高性能，又把人的经验和可制造性塞进去。对普通人的影响是间接的：未来建筑和桥梁设计可能更省材料、更易施工，但眼下它仍是研究演示，离大规模进工地还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "New AI “copilot” helps engineers design better structures",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT推AI设计副驾 工程师可中途纠偏相关图片",
+      "selectedOn": "2026-11-16"
+    },
+    {
+      "id": "9f9ef1f7c9cc00",
+      "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+        }
+      ],
+      "publishedAt": "2026-11-12",
+      "source": "TechCrunch AI",
+      "title": "Nebius拟2027年支出400亿美元，微软项目延期",
+      "summary": "AI云服务商Nebius在第三季度财报电话会上宣布，2027年计划资本支出400亿美元，远超华尔街预期，资金主要依赖客户预付款和以合同为担保的贷款。但其最大客户之一微软位于新泽西州Vineland的数据中心已延期数月，原定2025至2026年交付的算力仅过半能在年底前完成，其余推迟至2027年第二季度。延期源于第三方运营商DataOne提前关停临时发电设施，该设施此前因无证运行燃气发电机被罚款110万美元并面临噪音诉讼。Nebius将2026年营收预期下调2亿美元至30亿美元，股价当日下跌17%。",
+      "category": "行业动态",
+      "importance": 78,
+      "why": "反映AI算力扩张中“以未来合同融资建设”模式的风险：第三方交付延期会同时推高成本、拖累收入，并影响微软等大客户的合作意愿。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Nebius在财报电话会上公布2027年400亿美元支出计划，资金主要来自客户预付款和以合同为担保的贷款，预计可覆盖2027年400至450亿美元资本支出的85%。公司称第三季度签约的新合同预付款已超过对应建设成本，季末现金为74亿美元。但微软位于新泽西州Vineland的数据中心项目延期数月：该合同价值最高194亿美元，原定2025至2026年分批交付，目前仅略超一半产能计划年底前交付，其余推迟至2027年第二季度。Nebius将延期归因于第三方运营商DataOne提前关停临时发电设施、转向Bloom Energy燃料电池；该站点此前因无证运行燃气发电机被罚款110万美元，并面临居民噪音诉讼。Nebius未说明微软是否同意新交付时间，微软也未公开取消合同。公司同时将2026年营收预期下调2亿美元至30亿美元，股价当日下跌17%。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Nebius的做法类似用购房合同去银行贷款盖楼：先拿到客户承诺的算力订单和预付款，再借钱把数据中心建起来。只要楼按时交付，租金就能还贷；一旦工期拖延，利息和建设成本继续累积，收入却进不来。这次出问题的是它无法完全控制的第三方站点，而大客户微软已经开始收紧对第三方项目的审查，甚至放弃部分合作选项。对普通人来说，这意味着AI算力扩张并非一帆风顺：数据中心延期可能推高云服务成本，最终传导到使用AI产品的价格和体验上；对投资者而言，这类“靠未来合同融资”的公司，交付能力比订单金额更值得关注。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Nebius tests the neocloud playbook with $40 billion in planned spending",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Nebius拟2027年支出400亿美元，微软项目延期相关图片",
+      "selectedOn": "2026-11-16"
+    },
+    {
       "id": "dcc3893e53f427",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-prototype-to-production-engineering-agents-with-agent-dlc/",
       "sources": [
@@ -481,6 +580,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "AWS提出Agent DLC框架相关图片",
       "selectedOn": "2026-11-13"
+    },
+    {
+      "id": "cf8aede2b245e7",
+      "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/"
+        }
+      ],
+      "publishedAt": "2026-11-12",
+      "source": "TechCrunch AI",
+      "title": "黄仁勋离任后 Hugging Face CEO 誓言继续开源",
+      "summary": "英伟达CEO黄仁勋离任后，Hugging Face CEO Delangue公开称这是“悲伤的一天”，并承诺继续为开源AI而战。背景是英伟达2026年9月宣布以129亿美元收购Hugging Face，交易仍计划2027年上半年完成，美国司法部已就竞争影响展开问询。黄仁勋此前是开源权重模型的积极倡导者，曾联合25家公司呼吁政府避免过度限制。其离任引发开源社区对收购后Hugging Face走向的担忧，但交易状态及与新任临时CEO的沟通均未获回应。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "英伟达收购开源模型平台叠加CEO更替，直接关系开源AI生态的走向与市场竞争格局，对开发者和模型分发渠道影响深远。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch报道，Hugging Face CEO Clément Delangue在英伟达CEO黄仁勋离任后于X发文，称这是“非常悲伤的一天”，并表示将继续“比以往更努力”为开源AI而战。事件背景是英伟达2026年9月宣布以129亿美元收购Hugging Face，为其史上第二大收购，交易计划2027年上半年完成；路透社10月报道美国司法部已就交易对AI市场竞争的影响展开问询。黄仁勋长期倡导开源权重模型，2026年7月曾联合微软、Meta、IBM等25家公司发公开信，呼吁政府避免过度限制。报道称，Delangue的表态暗示黄仁勋离任令开源倡导者担忧，但Hugging Face未回应交易状态及是否已与英伟达临时CEO Colette Kress沟通。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Hugging Face理解成AI模型的“大集市”：开发者在这里免费下载、修改和分享模型。如今这个集市要被卖芯片的英伟达买下，而一直替“开放摊位”说话的老板黄仁勋又突然离任，摊主们自然担心以后还开不开放。Delangue的表态相当于喊话：不管东家怎么变，我们继续把门敞开。对普通人来说，短期用模型、跑本地AI不会立刻受影响；但若收购后平台收紧规则，免费好用的模型可能变少、使用门槛变高。监管审查和2027年的交割时点，是观察走向的关键窗口。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang’s exit",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "黄仁勋离任后 Hugging Face CEO 誓言继续开源相关图片",
+      "selectedOn": "2026-11-16"
     },
     {
       "id": "d652bf4e1f2db5",
@@ -548,6 +680,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "微软研究速递：AI翻译、数学突破与编码代理优化相关图片",
       "selectedOn": "2026-11-14"
+    },
+    {
+      "id": "bd79903a17a4b8",
+      "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/"
+        }
+      ],
+      "publishedAt": "2026-11-12",
+      "source": "TechCrunch AI",
+      "title": "黄仁勋辞职，英伟达开源路线存疑",
+      "summary": "英伟达CEO黄仁勋因承认与一名被指为中国间谍的女性有婚外情而辞职，引发美国国家安全担忧，并令外界质疑英伟达对开源AI的支持能否延续。黄仁勋此前是开源模型的重要倡导者，曾联合25家公司致信美国政府反对过度限制开源权重模型，并推动Nemotron系列开源模型及对Hugging Face的130亿美元收购。目前英伟达尚未完成该收购，CFO Colette Kress出任临时CEO，其立场不明。开源社区担忧领导层更替会削弱对开源生态的支持，而英伟达商业上仍需更广泛的AI开发者生态。",
+      "category": "行业动态",
+      "importance": 88,
+      "why": "全球市值最高芯片公司CEO因丑闻突然离职，直接牵动开源AI政策走向、对华芯片出口限制辩论及130亿美元收购案，影响面覆盖产业与监管。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch报道称，英伟达CEO黄仁勋于周四辞职，此前他承认与一名被指为中国间谍的女性有婚外情，引发美国国家安全担忧。黄仁勋一直是开源AI的坚定支持者，推动Nemotron系列开源权重模型，并支持对Hugging Face的130亿美元收购，该交易尚未完成。他还曾联合微软、Meta等25家公司致信美国政府，反对过度限制开源权重模型。英伟达已任命CFO Colette Kress为临时CEO，尚不清楚她将如何处理Hugging Face交易及开源生态支持。一名公司内部人士称，预计领导层变动不会影响Nemotron开发。报道同时提到英伟达同意以60亿美元获得Poolside技术的非独家许可。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把黄仁勋想成开源AI阵营里嗓门最大的靠山：他既掏钱投资开源初创公司，又公开跟华盛顿的收紧政策唱反调。现在靠山突然离场，接任者大概率更求稳，开源社区担心没人再替他们挡枪。对普通人来说，短期用开源模型不会立刻断供，但长期看，如果美国对开源权重模型加码限制，可选的便宜好用的AI工具可能变少，价格和门槛都可能上升。不过英伟达卖芯片需要更多开发者用它的卡，开源生态仍是生意，所以支持未必会彻底转向，关键看新CEO怎么选。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "黄仁勋辞职，英伟达开源路线存疑相关图片",
+      "selectedOn": "2026-11-16"
     },
     {
       "id": "e0226e82cba17a",
@@ -20620,13 +20785,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-15",
+  "editionDate": "2026-11-16",
   "dailyIds": [
     "73b823aa24f5b8",
     "f55817b72e9782",
-    "6669a4d19d8d97",
+    "bd79903a17a4b8",
     "6c2539c06ead4d",
     "e1742b0ed40ea5"
   ],
-  "editionUpdatedAt": "2026-11-14T18:39:22.704093+00:00"
+  "editionUpdatedAt": "2026-11-15T19:15:00.618309+00:00"
 }
