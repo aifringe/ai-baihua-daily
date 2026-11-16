@@ -1,11 +1,11 @@
 {
   "updatedAt": "2026-11-15T19:15:00.618309+00:00",
-  "lastCheckedAt": "2026-11-16T02:33:48.548897+00:00",
+  "lastCheckedAt": "2026-11-16T10:37:32.110396+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 19
+      "candidates": 20
     },
     {
       "source": "Google DeepMind",
@@ -146,7 +146,7 @@
       "ok": true,
       "stage": "search-responded, public-index-readable",
       "count": 6,
-      "readable": 2
+      "readable": 1
     }
   ],
   "articles": [
