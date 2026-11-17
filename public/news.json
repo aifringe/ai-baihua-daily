@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-11-16T22:44:24.508926+00:00",
-  "lastCheckedAt": "2026-11-17T04:57:02.682290+00:00",
+  "updatedAt": "2026-11-17T18:09:09.053459+00:00",
+  "lastCheckedAt": "2026-11-17T18:09:09.053459+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 24
+      "candidates": 22
     },
     {
       "source": "Google DeepMind",
       "ok": true,
-      "candidates": 5
+      "candidates": 2
     },
     {
       "source": "Google AI",
       "ok": true,
-      "candidates": 8
+      "candidates": 6
     },
     {
       "source": "Google Research",
@@ -30,7 +30,7 @@
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 4
+      "candidates": 5
     },
     {
       "source": "Berkeley AI Research",
@@ -40,12 +40,12 @@
     {
       "source": "Apple Machine Learning",
       "ok": true,
-      "candidates": 5
+      "candidates": 1
     },
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 10
+      "candidates": 8
     },
     {
       "source": "Microsoft Research",
@@ -65,7 +65,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 8
+      "candidates": 5
     },
     {
       "source": "MIT Technology Review",
@@ -75,7 +75,7 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 3
+      "candidates": 2
     },
     {
       "source": "量子位",
@@ -85,12 +85,12 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 14
+      "candidates": 12
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 9
+      "candidates": 6
     },
     {
       "source": "腾讯新闻",
@@ -150,6 +150,139 @@
     }
   ],
   "articles": [
+    {
+      "id": "c4b7e80cb7863d",
+      "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/"
+        }
+      ],
+      "publishedAt": "2026-11-17",
+      "source": "TechCrunch AI",
+      "title": "Isomorphic Labs完成50亿美元C轮融资",
+      "summary": "2026年11月17日，从DeepMind分拆出来的AI药物发现公司Isomorphic Labs宣布完成50亿美元C轮融资，由Greenoaks和红杉资本联合领投，a16z等新投资方参与，Alphabet旗下GV、淡马锡等原有股东跟投。公司称其肿瘤和免疫学项目已取得积极的临床前结果，并与礼来、诺华、强生等药企达成合作。本轮资金将用于继续开发药物设计引擎并拓展更多药物类型。公司未披露最新估值，彭博社此前报道其目标估值为500亿美元。",
+      "category": "行业动态",
+      "importance": 78,
+      "why": "这是AI制药领域少见的大额融资，反映资本对AI缩短药物发现周期的押注，也标志Hassabis重心转向药物发现后的首次融资。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Isomorphic Labs于2026年11月17日宣布完成50亿美元C轮融资，距其5月21亿美元B轮仅约半年。本轮由Greenoaks与红杉资本联合领投，新投资方包括Andreessen Horowitz，原有股东Alphabet旗下GV和CapitalG、Thrive Capital、MGX、淡马锡及英国主权AI基金全部跟投。公司称其AI药物设计引擎基于DeepMind的AlphaFold，在肿瘤和免疫学项目上取得“积极的临床前结果”，并与礼来、诺华、强生建立合作。资金将用于完善引擎并拓展药物类型。公司未公布估值，彭博社此前称其寻求以500亿美元估值融资，该数字未获证实。另需注意，报道称创始人Hassabis已卸任DeepMind负责人、转任董事长，此说法与其他公开信息是否一致尚不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Isomorphic Labs理解成一家用AI“画图纸”的药厂：传统新药研发像在黑暗里大海捞针，平均耗时十年以上、花费数十亿美元；它则用AI先算出蛋白质长什么样，再反过来设计能卡住病灶的分子，把“试错”搬到电脑里。50亿美元到账，意味着资本愿意为这条路线继续买单，但临床前结果不等于人体有效，真正的考验是接下来能否进入临床试验并过关。对普通人来说，短期看不到新药上市，长期若成功，可能让某些癌症和免疫疾病的新药来得更快、更便宜；若失败，这笔钱也只是又一轮昂贵的探索。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Isomorphic Labs完成50亿美元C轮融资相关图片",
+      "selectedOn": "2026-11-18"
+    },
+    {
+      "id": "826bb3231e4fa6",
+      "url": "https://www.qbitai.com/2026/11/510652.html",
+      "sources": [
+        {
+          "name": "量子位",
+          "url": "https://www.qbitai.com/2026/11/510652.html"
+        }
+      ],
+      "publishedAt": "2026-11-17",
+      "source": "量子位",
+      "title": "MatOS材料科学智能体开源，研发成功率提升",
+      "summary": "2026年11月17日，量子位报道材料科学智能体MatOS正式开源。其资产库含3135个数据集、386项技能、104个工作流、51个专家角色，集成48款材料计算软件，技术报告已发布在arXiv，代码在GitHub开放。在ResearchClawBench的12项化学、能源、材料任务中，MatOS采用GPT-5.4时平均得分19.46，较最佳基线MIRA高11.15%；材料任务较MIRA高18.7%。换用DeepSeek-V4-Flash时得分19.20，单任务成本约0.85美元。报道还称其在MatTools等基准上表现领先，但相关数字均来自单一来源，尚待独立复现。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "材料研发长期依赖人工试错，MatOS把数据、软件和操作经验封装成可复用资产，并给出可追溯的评测数字，若被复现，有望降低材料筛选成本，对AI for Science落地有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "量子位报道称，材料科学智能体MatOS已正式开源，代码托管在GitHub，技术报告发布在arXiv。系统把数据集、技能、工作流和专家角色登记为可组合资产，目前包含3135个数据集、386项技能、104个工作流、51个专家角色，并集成48款材料计算软件。研究者可按接口和依赖关系组合资产，系统也能依据任务证据提出修订，经结构检查和语义审查后复用，过程留有记录。评测方面，团队在ResearchClawBench选取化学、能源、材料领域12项任务，与7个采用GPT-5.4的科研智能体比较：MatOS平均得分19.46，较最佳基线MIRA高11.15%，材料任务较MIRA高18.7%；换用DeepSeek-V4-Flash得分19.20，单任务成本约0.85美元。报道还提及MatTools和SciAgentGym上的表现，但这些数字均出自同一来源，尚无第三方独立验证，具体任务设置和统计口径也未在正文中完整展开。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把MatOS想成一个材料实验室的“总调度台”：过去找一种新合金或电池材料，研究员要在海量配方里反复试，换一个软件就得重搭流程，经验还带不走；现在数据、软件和操作步骤被做成标准零件，智能体按任务自动拼装，失败时还能回看是哪一步出的问题。对普通人来说，短期不会直接改变生活，但长期可能让手机电池、半导体封装材料等研发少走弯路，缩短从实验室到产品的周期。需要冷静的是，报道中的提分和低成本都来自团队自测，开源后能否被其他实验室复现、资产库是否好用，才是检验它的关键。",
+          "heading_note": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "材料科学智能体MatOS正式开源！大幅提高材料研发任务成功率",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MatOS材料科学智能体开源，研发成功率提升相关图片",
+      "selectedOn": "2026-11-18"
+    },
+    {
+      "id": "46af5006ff7ddd",
+      "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+      "sources": [
+        {
+          "name": "Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/"
+        }
+      ],
+      "publishedAt": "2026-11-17",
+      "source": "Microsoft Research",
+      "title": "微软播客：AI医疗研究多落地少",
+      "summary": "微软研究院播客《The Shape of Things to Come》邀请微软首席科学官Eric Horvitz、斯克里普斯研究所Eric Topol和微软研究员Ava Amini，讨论AI在医学与生物学中的现状与前景。Horvitz介绍其团队在《Science》发表的序贯诊断研究，称前沿语言模型在模拟临床问诊、选择检查并给出诊断方面表现突出，与全科医生对比有优势但作者承认对比存在局限。Topol指出，医学影像AI已有百余人规模随机试验证据，却迟迟未进入临床，形成研究丰硕与落地停滞的落差。嘉宾还谈及全患者模型、虚拟细胞与生物基础模型，并强调数据质量与真实世界验证仍是瓶颈。",
+      "category": "人物对话",
+      "importance": 62,
+      "why": "多位权威专家集中讨论AI医疗从论文到临床的断层，既涉及《Science》诊断研究，也点出影像AI落地停滞，对理解行业节奏有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "微软研究院播客邀请Horvitz、Topol和Amini讨论AI医疗。Horvitz称其团队在《Science》发表序贯诊断研究，让AI模拟医生逐步问诊、权衡检查成本并给出诊断，部分前沿模型表现优于全科医生，但他明确表示对比设计有局限。Topol认为这是首次展示更高准确率与更低成本兼得，同时批评医学影像AI已有大规模随机试验证据却未用于患者，原因包括医疗系统利润薄、投资意愿低、医生和患者未主动要求。Amini介绍微软与Broad研究所合作的Project Ex Vivo，聚焦癌细胞状态建模。嘉宾一致认为生物数据质量和真实世界验证仍是关键缺口，但未给出具体落地时间表。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把AI医疗想象成一位刚考出高分的新医生：考试卷面成绩亮眼，甚至超过部分老医生，但医院还没给他排班。播客里专家说的核心矛盾是，AI看片子、辅助诊断的研究成果已经堆满期刊，真正进医院帮病人看病的却很少。对普通人来说，短期别指望挂号时遇到AI医生，但长期看，若全患者模型把病历、影像、基因等数据打通，疾病预测和个性化预防可能更早实现。眼下更现实的影响是，部分影像检查是否用AI辅助、要不要自费，可能成为患者需要面对的选择。专家也提醒，数据不好、验证不足，AI再聪明也可能看走眼。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Can AI help build a healthier future?",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "微软播客：AI医疗研究多落地少相关图片",
+      "selectedOn": "2026-11-18"
+    },
+    {
+      "id": "9e24bec0316d82",
+      "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/"
+        }
+      ],
+      "publishedAt": "2026-11-17",
+      "source": "Simon Willison",
+      "title": "Datasette Lite重写：浏览器跑完整Python应用",
+      "summary": "开发者Simon Willison发布Datasette Lite的完整重写版本，借助Service Worker与Pyodide，让原本运行在服务器端的Datasette Python应用几乎原样跑在浏览器里。新版可加载SQLite数据库、JSON、CSV和SQL脚本，从PyPI或wheel链接安装插件，并指定特定SQLite版本，解决了旧版依赖Web Worker、JavaScript功能失效的问题。作者称已用于演示分页bug的修复前后对比，并认为该模式可推广到其他Python应用。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是一次具体的技术产品更新，展示了浏览器端运行完整Python应用的可行路径，对开发者做演示、复现bug和预览环境有实际参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Simon Willison发布Datasette Lite的完整重写版，用Service Worker拦截页面与静态资源请求，再路由到运行Pyodide的Web Worker中独立的Datasette实例，使浏览器端体验接近真实服务器应用。新版支持加载SQLite数据库、JSON、CSV和SQL脚本，可从PyPI或wheel链接安装插件，也能指定特定SQLite版本。旧版通过Web Worker模拟请求并注入HTML，导致依赖JavaScript的功能失效。作者已用它链接演示分页bug修复前后行为，并称该方案不限于Datasette，其他Python应用也可尝试；但PostgreSQL、MySQL等数据库在WebAssembly中运行仍不成熟。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去要试一个数据工具，得先装服务器、配环境，像请厨师进厨房才能尝一口菜。现在这套工具把整个厨房塞进浏览器，点开链接等几秒就能用，还能临时加插件、换数据库版本。对普通人来说，最直接的好处是看演示、复现问题不用再折腾安装；对开发者来说，发一个链接就能让别人看到某个功能或bug的真实运行状态。它也有边界：SQLite很顺，换成大型数据库仍麻烦，复杂插件和浏览器兼容性也可能出问题。总体看，这是把“预览环境”变成一条链接的实用尝试。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Datasette Lite重写：浏览器跑完整Python应用相关图片",
+      "selectedOn": "2026-11-18"
+    },
     {
       "id": "b0846c49772843",
       "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
@@ -285,6 +418,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "阿里发布Qwen4-Max：智能体与编程能力进阶相关图片",
       "selectedOn": "2026-11-17"
+    },
+    {
+      "id": "0139ca5c534e35",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/15/datasette/"
+        }
+      ],
+      "publishedAt": "2026-11-15",
+      "source": "Simon Willison",
+      "title": "Datasette 1.0a43发布：新增多页视图过渡",
+      "summary": "2026年11月15日，开发者Simon Willison发布Datasette 1.0a43版本。该版本为内置TSV和CSV导出机制引入流式逐行导出能力，插件可注册一次性流式输出整表；私有存储查询存在被暴露标题与SQL的风险（但不允许执行）；Web Component在多个位置提供copy-schema，行页面中JSON列可美化打印。作者最看重的是为Datasette加入CSS多页视图过渡，使这一多页应用在导航时更接近单页应用体验，目前支持Safari和Chrome，Firefox预计2026年12月8日支持。",
+      "category": "产品动态",
+      "importance": 55,
+      "why": "Datasette是开源数据发布工具，此次更新涉及导出流式化、查询安全与前端体验，对数据工具用户有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Datasette发布1.0a43版本。内置TSV和CSV导出机制改用流式逐行导出，插件可通过新机制注册为能一次性流式输出整张表。私有存储查询可能被暴露标题和SQL，但不允许执行该查询。Web Component在多个位置提供copy-schema，行页面上的JSON列可美化打印。作者最兴奋的是加入CSS多页视图过渡，使Datasette在导航时更像单页应用；该功能目前支持Safari和Chrome，Firefox预计2026年12月8日支持。仍不确定的是私有查询暴露的具体触发条件与影响范围，原文未详述。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次更新理解成给一个数据展示网站做了三件事：导出大表时不再一次性憋住，而是边读边吐，省内存；页面切换加了动画，点来点去更顺滑，像用手机App；行里的JSON数据能展开看，复制表结构也更方便。对普通人来说，如果你用Datasette看公开数据，浏览会更流畅，下载大表更稳。但私有查询的标题和SQL可能被看到，虽然不能执行，仍提醒管理者检查哪些查询不该公开。整体是体验优化加一点安全提醒，不是颠覆性变化。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "datasette 1.0a43",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Datasette 1.0a43发布：新增多页视图过渡相关图片",
+      "selectedOn": "2026-11-18"
     },
     {
       "id": "6c2539c06ead4d",
@@ -20956,13 +21122,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-17",
+  "editionDate": "2026-11-18",
   "dailyIds": [
     "b0846c49772843",
     "73b823aa24f5b8",
     "950d93174fb288",
     "f55817b72e9782",
-    "6c2539c06ead4d"
+    "826bb3231e4fa6"
   ],
-  "editionUpdatedAt": "2026-11-16T22:44:24.508926+00:00"
+  "editionUpdatedAt": "2026-11-17T18:09:09.053459+00:00"
 }
