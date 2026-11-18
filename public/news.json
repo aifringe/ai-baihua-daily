@@ -1,11 +1,11 @@
 {
   "updatedAt": "2026-11-17T18:09:09.053459+00:00",
-  "lastCheckedAt": "2026-11-17T18:09:09.053459+00:00",
+  "lastCheckedAt": "2026-11-18T04:00:39.811098+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 22
+      "candidates": 24
     },
     {
       "source": "Google DeepMind",
@@ -25,12 +25,12 @@
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 7
+      "candidates": 9
     },
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 5
+      "candidates": 6
     },
     {
       "source": "Berkeley AI Research",
@@ -65,7 +65,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 5
+      "candidates": 2
     },
     {
       "source": "MIT Technology Review",
@@ -75,17 +75,17 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 2
+      "candidates": 1
     },
     {
       "source": "量子位",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 12
+      "candidates": 13
     },
     {
       "source": "Latent Space",
@@ -117,15 +117,15 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 1,
+      "count": 0,
       "readable": 0
     },
     {
       "source": "新华网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 5,
-      "readable": 3
+      "count": 6,
+      "readable": 4
     },
     {
       "source": "温州网",
