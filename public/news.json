@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-11-19T17:59:35.937491+00:00",
-  "lastCheckedAt": "2026-11-20T03:52:28.779040+00:00",
+  "updatedAt": "2026-11-20T17:32:39.743295+00:00",
+  "lastCheckedAt": "2026-11-20T17:32:39.743295+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 28
+      "candidates": 26
     },
     {
       "source": "Google DeepMind",
-      "ok": true,
-      "candidates": 2
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -30,7 +29,7 @@
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 6
+      "candidates": 5
     },
     {
       "source": "Berkeley AI Research",
@@ -45,7 +44,7 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 9
+      "candidates": 7
     },
     {
       "source": "Microsoft Research",
@@ -75,7 +74,7 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 1
+      "candidates": 0
     },
     {
       "source": "量子位",
@@ -85,12 +84,12 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 12
+      "candidates": 13
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 4
+      "candidates": 2
     },
     {
       "source": "腾讯新闻",
@@ -117,7 +116,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 3,
+      "count": 2,
       "readable": 2
     },
     {
@@ -138,7 +137,7 @@
       "source": "机器之心",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 4,
+      "count": 3,
       "readable": 0
     },
     {
@@ -150,6 +149,171 @@
     }
   ],
   "articles": [
+    {
+      "id": "7fdd41f0ffe863",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/"
+        }
+      ],
+      "publishedAt": "2026-11-20",
+      "source": "AWS AI",
+      "title": "SageMaker推理年度更新：26项功能落地",
+      "summary": "AWS于2026年11月发布SageMaker Inference年度回顾第二部分，梳理下半年13项新功能，使全年发布总数达26项。更新围绕生产环境痛点：推理推荐功能扩展至Studio界面、Python SDK v3及编码代理技能，新增LoRA适配器支持与基于SLA的并发搜索；Inference Components进入控制台，支持单端点托管多模型并独立扩缩；引入NVIDIA MIG实现单GPU最多七分区；HyperPod Inference新增路由策略、多区域网络及托管NVIDIA Dynamo框架。文中以虚构客服团队串联场景，未披露具体性能数字或定价变化。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "这是AWS年度产品功能盘点，集中反映云厂商在推理成本、多模型托管和GPU利用率上的竞争方向，对使用SageMaker的工程团队有直接参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布SageMaker Inference 2026年回顾第二部分，汇总下半年13项发布，全年共26项。核心变化包括：推理推荐从API扩展到SageMaker AI Studio低代码界面、Python SDK v3和编码代理技能，可针对延迟、吞吐或成本目标给出排序建议；新增LoRA适配器支持，按适配器数量与并发组合实测；并发搜索可按TTFT、端到端延迟和错误率等SLA目标自动寻找最大可行并发。Inference Components进入控制台，支持单端点托管多模型并独立扩缩至零。GPU分区采用NVIDIA MIG，单卡最多七分区，但计费仍按整实例小时。HyperPod Inference增加路由策略、多区域网络和托管NVIDIA Dynamo。文中场景为虚构示例，未给出具体性能提升或价格数据。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次更新理解成给AI模型“合租”和“搬家”提供更细的工具。以前一个模型往往独占一整块昂贵显卡，小模型也占大房子；现在MIG把一块显卡隔成多个带独立门锁的房间，多个小模型可以合租，但房租（实例小时费）不变，省钱靠的是少开机器。Inference Components像物业管理系统，每个模型单独定面积、单独扩缩，闲置就缩到零。推理推荐则像请了个测量师，拿真实流量跑一遍，告诉你哪种配置最划算、最多能扛多少并发。对普通用户来说，这类优化短期不会直接改变产品体验，但云厂商压低推理成本后，AI客服、搜索等服务的响应速度和价格可能间接受益。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "SageMaker推理年度更新：26项功能落地相关图片",
+      "selectedOn": "2026-11-21"
+    },
+    {
+      "id": "478ea25aeed3c9",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"
+        }
+      ],
+      "publishedAt": "2026-11-20",
+      "source": "Simon Willison",
+      "title": "ChatPRD免费试用遭Token欺诈被迫关停",
+      "summary": "AI产品ChatPRD创始人Claire披露，其免费试用被有组织滥用：部分用户循环注册试用和促销码，将额度转售或用于搭建商业项目，例如一个国际Roblox与Fortnite地图工作室借此调用其智能体批量生成地图。她还观察到智能体被反复要求生成骑自行车鹈鹕的SVG，疑似用于探测底层模型身份。面对持续滥用，Claire决定全面取消免费试用。此事由Simon Willison在视频中讨论，具体滥用规模与损失金额未披露。",
+      "category": "行业动态",
+      "importance": 62,
+      "why": "揭示AI产品免费试用被系统性套利的新风险，涉及token转售与模型探测，对依赖试用获客的AI创业公司有直接警示意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AI产品ChatPRD的创始人Claire公开表示，产品免费试用正被有组织滥用。她看到的情况包括：有人循环使用免费试用和促销码，把额度转售牟利，或在其智能体之上运行商业业务。其中一个案例是某国际Roblox与Fortnite地图工作室，通过反复注册试用并接入她的智能体来批量制作游戏地图。她还注意到智能体频繁收到生成“骑自行车鹈鹕”SVG的请求，推测这是用来识别底层模型家族的探测手段。由于滥用难以遏制，Claire决定彻底取消免费试用。目前公开信息未说明滥用规模、涉及账号数量或具体经济损失，相关细节仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "这就像一家餐厅提供免费试吃，结果有人反复排队领餐，再把餐券转卖，甚至在后厨开起自己的外卖生意。ChatPRD的免费额度本是让用户体验产品，却被当成廉价甚至免费的AI算力批发渠道。对普通用户来说，最直接的影响是免费试用可能越来越少，门槛越来越高；对创业者来说，这是一记警钟：免费额度必须配合身份验证、用量监控和反欺诈设计，否则获客成本会变成被薅羊毛的漏洞。至于“骑自行车鹈鹕”，可以理解为骗子用来试探后厨用的是什么食材的暗号。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Token fraud is here and it’s BAD (YouTube)",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "ChatPRD免费试用遭Token欺诈被迫关停相关图片",
+      "selectedOn": "2026-11-21"
+    },
+    {
+      "id": "29c6398dc2aba2",
+      "url": "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120"
+        }
+      ],
+      "publishedAt": "2026-11-20",
+      "source": "MIT News",
+      "title": "MIT论坛：AI引发数学界“数学末日”讨论",
+      "summary": "2026年11月，MIT举办“AI与社会：数学的未来”论坛，数学家们讨论AI对数学研究的冲击。此前OpenAI宣布用数千AI代理在88小时内解决纳维-斯托克斯方程相关问题，并发布722篇论文，被称为“数学末日”。但与会者指出AI证明缺乏人类理解，论文质量存疑。论坛探讨了优先权、期刊评审等传统规范的变化，以及数学教育面临的挑战。",
+      "category": "行业动态",
+      "importance": 75,
+      "why": "AI在数学领域的突破性进展引发学术界对研究范式、职业前景和教育方式的深刻反思，事件具有行业风向标意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "2026年11月，MIT举办“AI与社会：数学的未来”论坛，数学家们讨论AI对数学研究的冲击。此前OpenAI宣布用数千AI代理在88小时内解决纳维-斯托克斯方程相关问题，并发布722篇论文，被称为“数学末日”。但与会者指出AI证明缺乏人类理解，论文质量存疑。论坛探讨了优先权、期刊评审等传统规范的变化，以及数学教育面临的挑战。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "AI在数学领域的突破性进展引发学术界对研究范式、职业前景和教育方式的深刻反思，事件具有行业风向标意义。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Following the “mathocalypse,” mathematicians consider the future",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT论坛：AI引发数学界“数学末日”讨论相关图片",
+      "selectedOn": "2026-11-21"
+    },
+    {
+      "id": "4eab3c1f90feb8",
+      "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/"
+        }
+      ],
+      "publishedAt": "2026-11-19",
+      "source": "AWS AI",
+      "title": "AWS让AI代理用云账单直购x402服务",
+      "summary": "亚马逊云科技宣布，Amazon Bedrock AgentCore payments新增AWS Billing支付方式，使AI代理可直接在AWS Marketplace购买支持x402协议的软件、API、数据和内容，费用以美元计入开发者的AWS账单，无需稳定币钱包或API密钥。开发者可通过AgentCore Gateway的Marketplace连接器发现卖家，并用AgentCore策略设置消费上限和允许卖家名单，交易可在CloudTrail和Cost Explorer中审计。目前该支付方式仅支持x402固定报价模式，结算异步进行，费用按月出账。",
+      "category": "产品动态",
+      "importance": 78,
+      "why": "这是AI代理自主交易走向企业生产环境的关键一步，把支付、预算控制和审计接入现有云账单体系，降低了企业让代理花钱的门槛，也反映代理电商基础设施正在成型。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS在AgentCore payments中新增AWS Billing支付选项。当代理访问AWS Marketplace上支持x402的卖家端点时，卖家返回402状态码和签名报价，代理将报价交给AgentCore payments校验会话预算，通过后获得支付令牌并重试请求，费用最终计入开发者的AWS账单。开发者需创建Payment Manager并配置AWS Billing连接器，为每个任务设置消费上限；首次向某卖家购买会建立协议，后续购买自动计量。目前仅支持x402的exact固定报价方案，支付令牌有效期约五分钟，结算异步、按月出账。AWS同时推出AgentCore Gateway的Marketplace连接器用于发现卖家，并强调IAM角色分离、CloudTrail审计和Private Marketplace限制。官方未披露该功能的价格、区域覆盖范围及卖家数量。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去AI代理想买付费数据或API，得先配钱包、管密钥，企业不敢放手。现在AWS把这件事变成“公司报销”：代理自己挑工具、自己下单，但花的是公司云账户的钱，老板能设每次任务最多花多少、只准买哪些卖家，事后账单和日志一清二楚。好比给助理一张限额公司卡，刷卡记录自动进财务系统，不用给现金也不用报密码。对普通人来说，未来你用的AI助手可能自己付费查实时数据、买专业内容，答案更准更快，而你不用单独订阅一堆服务；对开发者来说，少了一套支付集成，但也要留意代理误购和预算设置。目前只支持固定报价，按用量浮动计费还没覆盖。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "AWS让AI代理用云账单直购x402服务相关图片",
+      "selectedOn": "2026-11-21"
+    },
+    {
+      "id": "7c0429e1122f88",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/"
+        }
+      ],
+      "publishedAt": "2026-11-19",
+      "source": "AWS AI",
+      "title": "SageMaker新增推理端点漂移监测",
+      "summary": "AWS宣布Amazon SageMaker AI新增生成式AI推理端点监测能力，可自动发现延迟漂移、GPU闲置和配置缺口三类问题。该功能对使用vLLM容器和GPU实例的端点默认开启，无需配置，仅读取延迟、GPU利用率和服务配置等运维信号，不读取请求或响应内容。发现问题后通过AWS Health发送通知，用户可跳转至SageMaker Studio，在独立算力上对备选配置进行基准测试，对比响应时间、吞吐量和每百万token成本后再决定是否应用，生产端点不会自动变更。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是云厂商把推理成本优化从人工巡检转为默认监测的产品动作，对使用生成式AI推理的企业有直接降本意义，但不涉及模型能力本身。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "AWS发布Amazon SageMaker AI新功能，针对生成式AI推理端点提供默认开启的监测。系统只采集延迟、GPU利用率和端点服务配置三类运维信号，不读取请求与响应内容，也不额外消耗GPU。监测会识别三种情况：中位端到端延迟或首token时间周环比上升；GPU长期大幅闲置；服务容器缺少新版本性能改进或安全补丁，或模型支持但未启用推测解码、GPU内核调优等优化。发现后经AWS Health按端点发送一条通知，附邮件提醒。用户点击后可进入SageMaker Studio的智能体验，在独立算力上对备选配置做基准测试，对比响应时间、吞吐量和每百万token成本，再决定是否应用。基准测试按标准SageMaker计费，生产端点在被确认应用前不会改变。目前该监测主要面向使用vLLM服务容器和GPU实例的端点，用户可选择退出。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它理解成给AI推理服务装了一个“体检提醒”：服务上线时调好的配置，会随着流量变化、提示词变长、软件升级慢慢跑偏，但因为没有报错，通常没人发现，直到用户觉得慢或者账单变贵。这个功能就是定期量一量延迟和GPU忙闲，发现异常就发消息，还顺手把“换小一号机器”“打开某个加速开关”等方案在旁路上试跑一遍，把省多少钱、慢多少摆出来。对普通用户来说，直接感受是所用AI应用可能更稳、更便宜；对企业来说，多了一道不碰生产环境就能比价的工具。不过它只给建议，改不改仍由人决定，且目前覆盖范围有限，不是所有端点都能用。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Amazon SageMaker AI now detects latency drift, idle GPUs, and missed optimizations on your inference endpoints",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "SageMaker新增推理端点漂移监测相关图片",
+      "selectedOn": "2026-11-21"
+    },
     {
       "id": "60ff07a70f51c3",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
@@ -21452,13 +21616,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-20",
+  "editionDate": "2026-11-21",
   "dailyIds": [
     "60ff07a70f51c3",
     "db9b81401cb73d",
     "d8a3bb1afd5fe4",
     "b0846c49772843",
-    "73b823aa24f5b8"
+    "29c6398dc2aba2"
   ],
-  "editionUpdatedAt": "2026-11-19T17:59:35.937491+00:00"
+  "editionUpdatedAt": "2026-11-20T17:32:39.743295+00:00"
 }
