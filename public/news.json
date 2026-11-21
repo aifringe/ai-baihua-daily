@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-20T17:32:39.743295+00:00",
-  "lastCheckedAt": "2026-11-21T03:45:25.848198+00:00",
+  "updatedAt": "2026-11-21T16:36:56.153512+00:00",
+  "lastCheckedAt": "2026-11-21T16:36:56.153512+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -9,7 +9,8 @@
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true,
+      "candidates": 2
     },
     {
       "source": "Google AI",
@@ -74,17 +75,17 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "量子位",
       "ok": true,
-      "candidates": 0
+      "candidates": 3
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 14
+      "candidates": 13
     },
     {
       "source": "Latent Space",
@@ -116,8 +117,8 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 2,
-      "readable": 1
+      "count": 1,
+      "readable": 0
     },
     {
       "source": "新华网",
@@ -150,6 +151,39 @@
   ],
   "articles": [
     {
+      "id": "3298713995b153",
+      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+        }
+      ],
+      "publishedAt": "2026-11-21",
+      "source": "The Verge AI",
+      "title": "Anthropic上市：安全优先能否持续",
+      "summary": "Anthropic于上周四在纳斯达克上市，成为首家上市的纯AI实验室，发行价83美元，首日一度涨至111美元。The Verge播客讨论其上市后的核心矛盾：公司以AI安全为品牌卖点，但作为上市公司需对股东负责，并持续创收以支付未来数年约9000亿美元算力账单。其特殊治理结构使股东难以罢免高管，但市场压力仍可能迫使安全投入让步。节目还提及OpenAI乐见Anthropic先上市以观察市场反应。",
+      "category": "行业动态",
+      "importance": 85,
+      "why": "首家纯AI实验室上市，标志AI行业进入公开市场检验期，其安全承诺与盈利压力的冲突将影响行业走向。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Anthropic于上周四在纳斯达克上市，成为首家上市的纯AI实验室，发行价83美元，首日一度涨至111美元。The Verge播客指出，公司未来数年算力账单约9000亿美元，上市后需持续创收以支撑估值。其特殊治理结构使股东难以投票罢免高管，权力集中于创始人和特殊信托。但公司仍面临盈利压力，可能被迫压缩安全投入。节目还称OpenAI乐见Anthropic先上市，以观察市场对AI公司的估值逻辑。目前Anthropic能否兼顾安全使命与股东回报仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "Anthropic就像一家标榜“安全第一”的餐厅，以前靠投资人养着，现在开门迎客，得自己赚钱付房租。房租就是天价算力账单，未来几年要花约9000亿美元。顾客（股东）虽然不能直接炒掉老板，但会天天盯着利润表。为了多赚钱，餐厅可能悄悄涨价、把顾客锁在会员体系里，甚至削减“安全质检”的开支。对普通人来说，这意味着你用的AI服务可能变贵、选择变少，而“安全”这块招牌还能挂多久，得看它能不能在赚钱和守底线之间找到平衡。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Can Anthropic afford to put safety first?",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Anthropic上市：安全优先能否持续相关图片",
+      "selectedOn": "2026-11-22"
+    },
+    {
       "id": "7fdd41f0ffe863",
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
       "sources": [
@@ -181,6 +215,105 @@
       "imageKind": "编辑示意图",
       "imageAlt": "SageMaker推理年度更新：26项功能落地相关图片",
       "selectedOn": "2026-11-21"
+    },
+    {
+      "id": "536d4386c711aa",
+      "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
+      "sources": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/"
+        }
+      ],
+      "publishedAt": "2026-11-20",
+      "source": "Google Research",
+      "title": "谷歌Duplex并入Gemini代打电话",
+      "summary": "谷歌研究团队11月20日发文回顾Duplex十年演进：2018年推出的AI电话代打技术，从早期封闭领域模型，经2022年引入LaMDA的混合架构，最终转向完全由Gemini驱动的统一系统。本周该能力以“Tasks in Gemini”形式上线，可代用户致电商家完成订位、询价等任务。文中称Duplex获取的商家信息在搜索和地图中展示超一万亿次，并提到Gemini 4 Hydrogen、Neon等模型名称，这些型号与发布时间均需以官方渠道核实。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "AI代打电话从实验室演示走向Gemini主产品，是语音智能体商业化的标志性一步，也牵动商家接听体验与隐私边界。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌研究副总裁Yossi Matias等人撰文称，Duplex自2018年面世后长期在搜索、地图等产品后台运行，疫情期间用于自动核实商家营业信息。技术栈经历三阶段：早期针对订餐等窄领域训练定制循环神经网络；2022年起在生产环境用LaMDA等生成模型，并以确定性状态跟踪和策略护栏组成混合架构；如今改为用自由文本任务描述提示Gemini，统一多模态理解、规划与对话生成。本周该能力以Tasks in Gemini形式上线，可代用户致电商家处理订位、询价等请求。文章强调每通电话开头会明示AI身份，商家可在商家资料中关闭自动来电或口头要求停止。文中提及Gemini 4 Hydrogen、Neon及Agent Payments Protocol等，属单一来源说法，型号与时间线需核实。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，以前你订位得自己打电话，现在可以让Gemini替你打：你说“周五晚两人、要靠窗”，它就去和店家对话，遇到没位子还会商量改时间。对普通人，省下的是排队等待和反复沟通的麻烦，尤其适合不会用App预订的小店。对商家，不用装软件、不用培训员工，接电话照常说话即可，但可能接到更多AI来电，也可选择拒接。需要留意的是，电话里AI会自报身份，录音与信息如何使用仍取决于谷歌政策；文章里的模型名称和上线范围目前只有谷歌一方说法，实际可用性以产品页面为准。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Google Duplex evolved to also call businesses for you in Gemini",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "谷歌Duplex并入Gemini代打电话相关图片",
+      "selectedOn": "2026-11-22"
+    },
+    {
+      "id": "4589680bbb8c97",
+      "url": "https://openai.com/business/customer-stories/hebbia/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/business/customer-stories/hebbia/"
+        }
+      ],
+      "publishedAt": "2026-11-20",
+      "source": "OpenAI",
+      "title": "Hebbia测试GPT-6 Astra金融研究能力",
+      "summary": "OpenAI于2026年11月20日发布案例称，金融科技公司Hebbia在2026年8至9月用同一批金融研究案例测试预发布版GPT-6 Astra，评估其在引用来源和按银行家简报生成演示文稿两方面的表现。结果显示，该模型在引用所需来源类型上领先最佳替代模型13.6个百分点，引用摘录相关率达99.5%，演示要求满足率97.9%，领先14.4个百分点。Hebbia产品技术成员Kavita Anand称其首次在质量与指令遵循上同时排名第一。上述数据均为Hebbia单方测试，未披露对比模型与样本细节。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "该案例披露了尚未公开发布的GPT-6 Astra在金融研究场景的量化测试结果，涉及引用准确性和演示文稿生成两项专业能力，对关注AI模型落地金融行业的人具有参考价值，但数据来自合作方单方测试。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI发布客户案例称，Hebbia测试了预发布版GPT-6 Astra，用于金融研究中的两项任务：为问题找到所需来源，以及按银行家简报生成演示文稿。测试时间为2026年8至9月，使用相同金融研究案例和评分标准，由领域专家编写或审核标准。Hebbia称，GPT-6 Astra在引用所需来源类型上比最佳替代模型高13.6个百分点，引用摘录相关率99.5%，演示要求满足率97.9%，领先14.4个百分点。Hebbia产品技术成员Kavita Anand称，此前模型往往在工艺或指令遵循上偏科，该模型首次两项均排第一。但案例未披露对比了哪些模型、测试样本量和具体评分方法，数据均来自Hebbia单方测试。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：银行家做并购研究时，要在成千上万份文件里找依据，再把结论做成客户能看的PPT。Hebbia相当于给这套流程配了一个AI助手，测试重点是它能不能找对文件、标对出处，并且按公司模板做出像人做的幻灯片。按Hebbia的说法，新模型在这两件事上都比它试过的其他模型强，引用几乎都能对上问题，演示要求也基本满足。对普通人来说，这类进步意味着未来金融、咨询等行业的初级分析工作可能更快完成，人工核对和改格式的时间减少。不过这些数字只是Hebbia自己的测试结果，模型尚未正式发布，实际用起来是否同样稳定，还要看更多独立验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Hebbia测试GPT-6 Astra金融研究能力相关图片",
+      "selectedOn": "2026-11-22"
+    },
+    {
+      "id": "5a5ba5d784f020",
+      "url": "https://openai.com/index/combatting-adversarial-distillation/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/combatting-adversarial-distillation/"
+        }
+      ],
+      "publishedAt": "2026-11-20",
+      "source": "OpenAI",
+      "title": "OpenAI披露反蒸馏防御：推理提取成功率降至0.2%",
+      "summary": "OpenAI于2026年11月20日发布文章，介绍其应对“对抗性蒸馏”的安全措施。所谓对抗性蒸馏，指攻击者利用前沿模型的输出训练另一个模型，从而复制能力却绕过原有安全防护，在网络安全、生物等两用领域风险尤高。OpenAI称，其防御结合对抗测试、模型训练、分类器与API层保护，并重点保护模型的“受保护推理”（思维链）。内部自适应红队测试显示，针对GPT-6 Astra的推理提取平均攻击成功率从54.0%降至GPT-6.2 Astra的0.2%。OpenAI还表示今年发现多起未授权蒸馏活动，每周执法涉及数千至数万账户，但未披露具体受影响模型或攻击方身份。",
+      "category": "行业动态",
+      "importance": 78,
+      "why": "前沿模型能力外溢与安全防护脱钩是AI治理的核心难题，OpenAI首次给出推理提取攻击成功率的量化对比，对行业安全标准有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI发文称，对抗性蒸馏让攻击者可用前沿模型输出训练新模型，复制能力却不继承安全防护，在网络安全和生物等两用领域风险突出。其防御分两层：请求层用对抗训练、输入输出分类器和API控制限制推理提取；活动层则识别协调性提取行为并执法。OpenAI称已加强GPT-6.2 Astra和GPT-6.2 Sol对“受保护推理”的保护，内部自适应黑盒红队测试中，从先前请求提取推理的平均攻击成功率由GPT-6 Astra的54.0%降至0.2%，当前请求提取由22.9%降至0.9%。文章还称今年发现多起未授权蒸馏活动，每周执法涉及数千至数万账户，夏季频率明显上升，但未说明具体攻击方、受影响模型及执法细节。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把大模型想成一位有执照的专家：它能回答难题，但遇到危险请求会拒绝。蒸馏相当于让别人把它的答题过程抄走，训练出一个“无执照版本”，能力差不多却不再守规矩。OpenAI这次做的，主要是给“解题草稿”上锁——不让外部拿到模型内部推理步骤，同时盯住批量套取答案的账号。对普通人来说，短期影响不大，但长期看，若这类防护成为行业标配，滥用AI实施网络攻击或生物风险的门槛会提高；反过来，若防护不严，危险能力可能流入缺乏监管的模型。需要说明的是，这些成功率来自OpenAI内部测试，尚不能等同于真实攻击环境下的效果。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Combatting adversarial distillation",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "OpenAI披露反蒸馏防御：推理提取成功率降至0.2%相关图片",
+      "selectedOn": "2026-11-22"
     },
     {
       "id": "478ea25aeed3c9",
@@ -346,6 +479,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "Anthropic史上最大IPO，安全招牌受考验相关图片",
       "selectedOn": "2026-11-20"
+    },
+    {
+      "id": "d271dd5b7b9d38",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/"
+        }
+      ],
+      "publishedAt": "2026-11-19",
+      "source": "OpenAI",
+      "title": "OpenAI用AI工厂自动修ChatGPT性能问题",
+      "summary": "OpenAI于2026年11月19日发布工程博客，介绍其内部构建的Performance Factory系统。该系统基于Codex，将性能回归的发现、根因分析、修复建议和部署后验证串成自动化工作流。官方称，首个Regression Workflow运行三个多月，追踪超1700次调查，对600多起完成根因定位，约合每天17次自动调查。人工复核100条根因建议中70%被判定准确，30%需进一步修正。系统仍由工程师审核合并修复代码，最终效果依赖人工把关。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "这展示了大模型厂商如何用自家AI代理改造内部工程流程，若模式成熟，可能影响软件运维和性能排障的自动化路径，也反映当前代理工作流的真实准确率边界。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI工程团队披露，其Performance Factory用Codex代理自动处理ChatGPT等服务的性能回归。当监控告警触发，系统创建任务，代理先定位指标恶化时间和受影响请求，再排查部署与配置变更，并阅读相关代码给出根因。为减少误判，系统另设一个Codex会话做对抗性复核，尝试推翻诊断。根因通过后，代理生成修复并提交PR，由工程师审核合并；部署后代理再检查性能是否恢复。官方称三个多月追踪1700多次调查、根因定位600多起，人工抽检100条根因建议中70%准确。仍不确定的是，这些数字的统计口径、修复实际采纳率及对普通用户延迟的改善幅度，博客未完整给出。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这理解成OpenAI给自家系统配了一支“AI急诊队”：服务器一喊疼，AI先查病历、找病因、开药方，再让人类医生签字，吃完药还回来复查。好处是排障从靠人盯变成流水线，速度更快，工程师只做关键审核。对普通人来说，ChatGPT若变慢或出错，理论上能更快被发现和修好。但70%的根因准确率也说明，AI开的“药方”三成左右还需人补课，短期内离不开工程师把关。更值得关注的是，这套模式若推广，软件公司的基础运维岗位可能更多转向审核和设计流程，而不是亲手逐条查日志。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "OpenAI用AI工厂自动修ChatGPT性能问题相关图片",
+      "selectedOn": "2026-11-22"
     },
     {
       "id": "d8a3bb1afd5fe4",
@@ -21616,13 +21782,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-21",
+  "editionDate": "2026-11-22",
   "dailyIds": [
+    "3298713995b153",
     "60ff07a70f51c3",
     "db9b81401cb73d",
-    "d8a3bb1afd5fe4",
-    "b0846c49772843",
-    "29c6398dc2aba2"
+    "5a5ba5d784f020",
+    "d8a3bb1afd5fe4"
   ],
-  "editionUpdatedAt": "2026-11-20T17:32:39.743295+00:00"
+  "editionUpdatedAt": "2026-11-21T16:36:56.153512+00:00"
 }
