@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-21T16:36:56.153512+00:00",
-  "lastCheckedAt": "2026-11-22T10:41:59.458456+00:00",
+  "updatedAt": "2026-11-22T20:09:32.745689+00:00",
+  "lastCheckedAt": "2026-11-22T20:09:32.745689+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 29
+      "candidates": 28
     },
     {
       "source": "Google DeepMind",
@@ -79,13 +79,13 @@
     },
     {
       "source": "量子位",
-      "ok": false,
-      "reason": "access-policy"
+      "ok": true,
+      "candidates": 3
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 14
+      "candidates": 10
     },
     {
       "source": "Latent Space",
@@ -314,6 +314,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "OpenAI披露反蒸馏防御：推理提取成功率降至0.2%相关图片",
       "selectedOn": "2026-11-22"
+    },
+    {
+      "id": "5fcd8ead51bf29",
+      "url": "https://openai.com/index/introducing-medchembench/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/introducing-medchembench/"
+        }
+      ],
+      "publishedAt": "2026-11-20",
+      "source": "OpenAI",
+      "title": "OpenAI发布MedChemBench评测药物化学推理",
+      "summary": "OpenAI于2026年11月20日发布MedChemBench，一个基于117篇论文和专利、761个分子结构、99道题目的药物化学推理基准，考察模型重建分子结构、解释实验证据、筛选化合物和预测性质四项能力。在统一xhigh推理档下，GPT-6.2 Astra得分84.5%，GPT-6 Astra为83.3%，GPT-6.1 Sol为82.0%，GPT-5.6 Sol仅58.2%。Astra在结构重建上拿到95.4%的分数，但化合物筛选与数值预测仅约一半。OpenAI明确表示，该结果不能证明模型能发现新药或改善实验决策，且无法排除模型此前接触过公开文献。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是OpenAI首次系统量化大模型在药物化学推理上的能力边界，结构重建强、筛选预测弱的分化对AI制药落地有参考价值，但基准本身不等于真实研发能力。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI发布MedChemBench基准，题目取自117篇论文和专利，覆盖761个分子结构、99道问题。每道题给模型设定研究节点：靶点、目标、已测化合物和部分实验数据，要求模型重建分子结构、解释证据、排序筛选化合物并预测性质。11个GPT模型在不同推理档位接受测试。统一xhigh档下，GPT-6.2 Astra得84.5%，GPT-6 Astra得83.3%，GPT-6.1 Sol得82.0%，GPT-5.6 Sol得58.2%。Astra结构重建得分95.4%，但筛选和数值预测仅约一半。OpenAI承认，模型可能此前见过公开文献，每次只作答一次、无工具和反馈，结果不能证明其能发现新药。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把MedChemBench理解成一场药物化学笔试：给模型一张分子图纸和一堆实验数据，看它能不能把分子画对、讲清为什么选这个化合物、猜出它进入细胞和肝脏后的表现。结果像偏科学生：画图几乎满分，挑化合物和算数值只对一半。对普通人的意义在于，AI目前更像帮研究员整理线索的助手，而不是能独立拍板新药的专家。药物研发中“活性强但吸收差、代谢快”的取舍，模型还接不住。OpenAI自己也说，这只是一次历史题模拟，离真实实验室决策还有距离，别把分数当成新药即将问世的信号。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Can AI help scientists identify promising drug candidates?",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "OpenAI发布MedChemBench评测药物化学推理相关图片",
+      "selectedOn": "2026-11-23"
     },
     {
       "id": "478ea25aeed3c9",
@@ -646,6 +679,72 @@
       "selectedOn": "2026-11-19"
     },
     {
+      "id": "9adace783a7997",
+      "url": "https://openai.com/index/the-silent-consensus/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/the-silent-consensus/"
+        }
+      ],
+      "publishedAt": "2026-11-18",
+      "source": "OpenAI",
+      "title": "OpenAI员工长文警告人类主导权流失",
+      "summary": "OpenAI于2026年11月18日刊发员工Dean Ball的署名长文，文章改编自其在哈佛的讲座，提出“沉默共识”概念：市场逐利会促使人类逐步把企业、资本乃至治理交给更高效的AI，无需AI反叛或恶意，人类就可能丧失对文明的主导权。作者明确反对这一前景，主张人类应凭历史传承而非智力优势保有主导地位，并承认该愿景难以替代。文章属个人观点，不代表OpenAI立场。",
+      "category": "行业动态",
+      "importance": 62,
+      "why": "文章来自头部AI公司内部员工，罕见公开讨论AI替代人类主导权的长期风险，为行业治理讨论提供新框架，但属个人观点，非公司政策。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI官网刊出员工Dean Ball的署名文章，改编自其在哈佛Vik-Bailey讲座的演讲，并注明仅代表作者个人观点。文章以“黑十月”网络安全漏洞事件为引，称这些漏洞由前沿AI系统发现，但重点转向长期问题。作者提出“沉默共识”：若AI在研发、谈判、资本配置和制造上持续优于人类，市场竞争会推动人类逐步放手，最终让机器主导商业与治理。他强调这不需要AI反叛或所有者恶意，每个委托决定单独看都合理，但累积起来可能使人类丧失对文明的有效权威。作者明确反对该前景，认为人类主导权源于共同历史与文明传承，而非智力垄断，同时承认目前缺乏有说服力的替代愿景。文章未给出具体政策方案或时间表。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方：一家公司发现AI当经理比人更省钱、更聪明，于是老板慢慢不管事，对手也照做，最后整条街的公司都由AI拍板。没人造反，也没人使坏，只是每一步“图省事”的选择加起来，人就从司机变成了乘客——车可能更豪华，但方向盘不在你手里。文章说的就是这个：AI未必需要觉醒或夺权，市场逐利本身就可能把人类挤出决策席。对普通人而言，短期未必立刻失业，但长期看，工作可能更像“陪玩”，政治与经济话语权也可能被稀释。作者的态度是：不能因为“反正拦不住”就默认接受，得先把这层窗户纸捅破，公开讨论人类如何留在驾驶座上。至于具体怎么留，文章没有给出答案，这也是它承认的难点。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The Silent Consensus",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "OpenAI员工长文警告人类主导权流失相关图片",
+      "selectedOn": "2026-11-23"
+    },
+    {
+      "id": "55cafb7085284a",
+      "url": "https://news.mit.edu/2026/helping-ai-text-detectors-keep-up-with-changing-conditions-1118",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/helping-ai-text-detectors-keep-up-with-changing-conditions-1118"
+        }
+      ],
+      "publishedAt": "2026-11-18",
+      "source": "MIT News",
+      "title": "MIT新法让AI文本检测器更抗伪装",
+      "summary": "AI文本检测器常因新模型出现或文本被“人性化”伪装而失效。MIT与康奈尔大学团队提出测试时自适应（TTA）训练法，让已部署的检测器利用未标注新数据动态调整内部参数，无需从头重训。实验显示，面对刻意规避检测的AI文本，商业检测器仅识别约27%，TTA方法达93%；在模拟人类写作自然变迁的场景中，TTA准确率85%，传统方法73%。研究者指出，TTA并非万能，未来AI文本更逼真时检测将更困难。",
+      "category": "报告解读",
+      "importance": 75,
+      "why": "AI文本检测是教育、出版、招聘等领域的关键工具，该研究显著提升检测器对伪装文本的识别率，并揭示检测与规避的长期博弈，对AI治理有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT与康奈尔大学研究人员发现，现有AI文本检测器易被“人性化”工具伪装或新模型出现所欺骗。他们采用测试时自适应（TTA）方法，让检测器在部署后利用未标注的新文本动态调整内部参数。实验分两类：模拟人类写作自然变迁时，TTA检测器准确率85%，传统方法73%；面对刻意规避检测的AI文本，商业检测器仅识别约27%，TTA方法识别超93%。论文将在NeurIPS会议展示。研究者同时提醒，TTA并非万能，未来AI文本更逼真时检测难度将加大，相关科学和伦理问题仍待解。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "AI检测器就像识别假钞的验钞机，但造假者不断升级手段，验钞机也得跟着学新招。MIT的新方法让验钞机在用的过程中自己“长经验”，不用返厂重造。实验里，面对刻意伪装的AI文章，老机器十篇只能抓出不到三篇，新方法能抓出九篇多。这对老师判作业、编辑审稿、公司筛简历都有帮助。不过研究者也泼冷水：如果将来AI写得跟人一模一样，检测可能彻底失灵，到时候我们得重新思考“作者”到底意味着什么。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Helping AI text detectors keep up with changing conditions",
+      "image": "./illustrations/report.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT新法让AI文本检测器更抗伪装相关图片",
+      "selectedOn": "2026-11-23"
+    },
+    {
       "id": "c4b7e80cb7863d",
       "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
       "sources": [
@@ -876,6 +975,72 @@
       "imageKind": "编辑示意图",
       "imageAlt": "MIT投入550万美元研究AI对人类影响相关图片",
       "selectedOn": "2026-11-19"
+    },
+    {
+      "id": "685512f6ef114d",
+      "url": "https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117"
+        }
+      ],
+      "publishedAt": "2026-11-17",
+      "source": "MIT News",
+      "title": "MIT教授：AI时代仍需练数学肌肉",
+      "summary": "MIT数学系助理教授John Urschel近日接受MIT News采访，讨论AI时代数学教育的价值。他曾用AI工具辅助解决两个长期数学难题，相关预印本已发布在arXiv。Urschel认为AI能大幅提升解题效率，但真正的价值在于人类理解并内化机器的推理过程。他担忧学生过度依赖AI会产生“学了但没真学会”的错觉，强调独立思考和经历学习中的“挣扎”仍不可替代。MIT教学AI委员会报告也强调体验必要学习挣扎与协作学习的重要性。",
+      "category": "人物对话",
+      "importance": 72,
+      "why": "MIT数学教授结合自身用AI证明数学难题的经历，讨论AI对数学教育的冲击，涉及学习方式与大学教育定位，对关注AI与教育的人有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT News于2026年11月17日刊发对MIT数学系助理教授John Urschel的问答。Urschel曾是美国职业橄榄球运动员，后在MIT获得博士学位。他近期在arXiv发布两篇预印本，分别涉及随机矩阵增长因子和高斯消元最坏情况，称研究中结合了人类洞察与AI工具，解决了困扰数学家数十年的问题。他表示AI像资源近乎无限、速度极快的合作者，能高效完成某些数学工作。但他强调，自己独立解题时获得的快乐最大，与AI合作时最重要的是理解并内化机器的推理。他担忧学生用AI一键完成作业，产生“学了但没真学会”的错觉。MIT教学AI委员会报告也强调体验必要学习挣扎与协作学习的重要性。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，AI像一台超级计算器加超级资料库，能帮你飞快算出答案、写出证明，但答案背后的道理还得你自己弄懂。Urschel的意思是，如果学生把作业直接丢给AI，就像健身时让别人替你举铁，看着完成了，肌肉却没长。对普通人来说，这意味着未来用AI的门槛会越来越低，但能判断AI说得对不对、能独立想清楚问题的人会更吃香。大学课堂的价值也不只是传知识，而是逼你动脑、和同学讨论、在卡住时坚持。对家长和学生而言，别把AI当抄作业神器，把它当陪练更划算。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Q&A: Why building math muscles remains important in the AI era",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT教授：AI时代仍需练数学肌肉相关图片",
+      "selectedOn": "2026-11-23"
+    },
+    {
+      "id": "c294f20baa0eb9",
+      "url": "https://news.mit.edu/2026/learning-language-of-machine-learning-jacob-andreas-1117",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/learning-language-of-machine-learning-jacob-andreas-1117"
+        }
+      ],
+      "publishedAt": "2026-11-17",
+      "source": "MIT News",
+      "title": "MIT学者让AI模型学会解释自身行为",
+      "summary": "MIT电子工程与计算机科学系副教授Jacob Andreas长期研究机器如何学习语言，并探索让深度学习模型用人类可理解的语言解释自身内部状态。其团队开发的技术可为神经网络中每个信息处理节点赋予自然语言描述，例如识别图像中“动物附近的草地”。Andreas认为，随着AI智能体进入高风险场景，可解释性将愈发重要，但该方向仍处研究阶段，尚无成熟产品化时间表。",
+      "category": "人物对话",
+      "importance": 62,
+      "why": "报道以人物特写形式呈现MIT学者的研究路径与观点，涉及AI可解释性这一行业关键议题，但非具体产品发布或政策事件，影响偏学术与方向性。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT News于2026年11月17日刊发对Jacob Andreas的专访式特写。Andreas是MIT电子工程与计算机科学系副教授、CSAIL成员，近期获得终身教职。报道称，他的团队研究大型语言模型的算法机制，并开发技术让模型用自然语言描述其他神经网络的内部状态，例如为图像识别网络中的单个节点标注“动物附近的草地”。团队还设计训练算法，试图预测特定数据集对模型行为的影响。报道同时提到，他参与讲授的自然语言处理课程需每年重新设计以跟上领域变化。需要指出的是，文中未给出具体论文、基准测试或产品落地信息，相关成果的成熟度仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这件事理解成：过去检查AI像拆开一台黑箱电器，只能看密密麻麻的零件，却不知道每个零件管什么。Andreas想训练AI自己“开口说话”，把内部零件翻译成人话，比如告诉工程师“这个节点在找草地”。这对普通人的意义在于，未来AI若用于医疗、科研等高风险场景，能解释自己为何做出某个判断，才更容易被信任和监管。不过目前这更像实验室里的“翻译器”，离日常使用还有距离，报道也没有给出何时能装进手机或产品的时间表。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Learning the language of machine learning",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT学者让AI模型学会解释自身行为相关图片",
+      "selectedOn": "2026-11-23"
     },
     {
       "id": "b0846c49772843",
@@ -1214,6 +1379,43 @@
       "selectedOn": "2026-11-15"
     },
     {
+      "id": "73b823aa24f5b8",
+      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+        }
+      ],
+      "publishedAt": "2026-11-13",
+      "source": "TechCrunch AI",
+      "title": "黄仁勋涉婚外情与间谍疑云辞职",
+      "summary": "2026年10月底，美媒曝英伟达CEO黄仁勋与疑似中国间谍、Megaspeed高管Alice Huang关系密切，后者公司两年购入48亿美元英伟达芯片并遭美新调查。11月8日黄仁勋公开承认婚外情，董事会启动调查；随后《纽约时报》再曝其与直属下属、医疗副总裁Kimberly Powell有染，路透又称存在第三段与员工的关系。11月12日董事会接受辞呈，CFO Colette Kress任临时CEO，黄同意赴国会作证。国会就H200对华出口许可与国家安全展开调查，股价数日跌约11%。",
+      "category": "人物对话",
+      "importance": 95,
+      "why": "全球AI芯片龙头CEO因私德与国家安全疑云突然去职，牵动对华出口政策、公司治理与供应链，影响远超个人丑闻。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "据TechCrunch时间线，美国官员调查Megaspeed高管Alice Huang逾一年，怀疑其为中方情报人员；该公司两年购入约48亿美元英伟达芯片，美新曾调查其违规转售，司法部已接手。10月底《纽约时报》曝她与黄仁勋关系密切，英伟达称属正常客户会面。11月8日黄仁勋致员工信承认对妻子不忠，称配合董事会独立调查。11日《纽约时报》称其与直接下属、医疗副总裁Kimberly Powell有婚外情，公司未确认；路透12日又称存在第三段与匿名员工的关系。12日董事会接受辞呈，CFO Colette Kress任临时CEO，Harvey C. Jones任董事会主席；黄同意感恩节前赴国会闭门作证。国会就2025年12月批准H200对华销售展开调查。股价五日跌约11%。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "打个比方：掌勺三十多年的大厨突然被曝私生活混乱，其中一位交往对象还被怀疑是竞争对手派来的“试菜员”，而这家餐厅的招牌菜正是美国最不想外流的AI芯片。结果大厨辞职、副手临时掌勺，国会要问个明白。对普通人来说，短期看英伟达芯片供应和价格可能波动，AI产品迭代节奏或受影响；中期看美国对华芯片出口政策可能收紧，相关科技股和就业承压。需要说明：间谍指控、第三段关系等关键细节仍属媒体报道或调查阶段，未经法院认定，黄仁勋本人未回应置评请求，后续听证与调查结果才是关键。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The unfolding Jensen Huang scandal: a timeline",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "黄仁勋涉婚外情与间谍疑云辞职相关图片",
+      "selectedOn": "2026-11-14"
+    },
+    {
       "id": "68811c4e6ccf66",
       "url": "https://latent.space/p/artcraft/",
       "sources": [
@@ -1244,39 +1446,6 @@
       "image": "./illustrations/product.svg",
       "imageKind": "编辑示意图",
       "imageAlt": "ArtCraft用AI克隆Photoshop，宣称要重建互联网相关图片",
-      "selectedOn": "2026-11-14"
-    },
-    {
-      "id": "73b823aa24f5b8",
-      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
-        }
-      ],
-      "publishedAt": "2026-11-13",
-      "source": "TechCrunch AI",
-      "title": "黄仁勋涉婚外情与间谍疑云辞职",
-      "summary": "2026年10月底，美媒曝英伟达CEO黄仁勋与疑似中国间谍、Megaspeed高管Alice Huang关系密切，后者公司两年购入48亿美元英伟达芯片并遭美新调查。11月8日黄仁勋公开承认婚外情，董事会启动调查；随后《纽约时报》再曝其与直属下属、医疗副总裁Kimberly Powell有染，路透又称存在第三段与员工的关系。11月12日董事会接受辞呈，CFO Colette Kress任临时CEO，黄同意赴国会作证。国会就H200对华出口许可与国家安全展开调查，股价数日跌约11%。",
-      "category": "人物对话",
-      "importance": 95,
-      "why": "全球AI芯片龙头CEO因私德与国家安全疑云突然去职，牵动对华出口政策、公司治理与供应链，影响远超个人丑闻。",
-      "sections": [
-        {
-          "heading": "发生了什么",
-          "text": "据TechCrunch时间线，美国官员调查Megaspeed高管Alice Huang逾一年，怀疑其为中方情报人员；该公司两年购入约48亿美元英伟达芯片，美新曾调查其违规转售，司法部已接手。10月底《纽约时报》曝她与黄仁勋关系密切，英伟达称属正常客户会面。11月8日黄仁勋致员工信承认对妻子不忠，称配合董事会独立调查。11日《纽约时报》称其与直接下属、医疗副总裁Kimberly Powell有婚外情，公司未确认；路透12日又称存在第三段与匿名员工的关系。12日董事会接受辞呈，CFO Colette Kress任临时CEO，Harvey C. Jones任董事会主席；黄同意感恩节前赴国会闭门作证。国会就2025年12月批准H200对华销售展开调查。股价五日跌约11%。"
-        },
-        {
-          "heading": "换成人话",
-          "text": "打个比方：掌勺三十多年的大厨突然被曝私生活混乱，其中一位交往对象还被怀疑是竞争对手派来的“试菜员”，而这家餐厅的招牌菜正是美国最不想外流的AI芯片。结果大厨辞职、副手临时掌勺，国会要问个明白。对普通人来说，短期看英伟达芯片供应和价格可能波动，AI产品迭代节奏或受影响；中期看美国对华芯片出口政策可能收紧，相关科技股和就业承压。需要说明：间谍指控、第三段关系等关键细节仍属媒体报道或调查阶段，未经法院认定，黄仁勋本人未回应置评请求，后续听证与调查结果才是关键。"
-        }
-      ],
-      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
-      "originalTitle": "The unfolding Jensen Huang scandal: a timeline",
-      "image": "./illustrations/dialogue.svg",
-      "imageKind": "编辑示意图",
-      "imageAlt": "黄仁勋涉婚外情与间谍疑云辞职相关图片",
       "selectedOn": "2026-11-14"
     },
     {
@@ -21782,7 +21951,7 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-22",
+  "editionDate": "2026-11-23",
   "dailyIds": [
     "3298713995b153",
     "60ff07a70f51c3",
@@ -21790,5 +21959,5 @@
     "5a5ba5d784f020",
     "d8a3bb1afd5fe4"
   ],
-  "editionUpdatedAt": "2026-11-21T16:36:56.153512+00:00"
+  "editionUpdatedAt": "2026-11-22T20:09:32.745689+00:00"
 }

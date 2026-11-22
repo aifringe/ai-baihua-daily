@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T10:42:17.692020+00:00",
+  "checkedAt": "2026-11-22T20:09:49.720686+00:00",
   "sources": [
     {
       "source": "腾讯新闻",
@@ -26,7 +26,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 1,
+      "count": 2,
       "readable": 0
     },
     {
@@ -65,7 +65,7 @@
       "source": "腾讯新闻",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T10:42:11.196664+00:00",
+      "discoveredAt": "2026-11-22T20:09:41.613342+00:00",
       "discoveryUrl": "https://news.qq.com/rain/a/20260511A05SDP00",
       "topic": "business",
       "state": "历史线索",
@@ -81,7 +81,7 @@
       "source": "微博",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T10:42:11.159027+00:00",
+      "discoveredAt": "2026-11-22T20:09:41.649995+00:00",
       "discoveryUrl": "https://www.weibo.com/ttarticle/p/show?id=2309405313423797256285",
       "topic": "business",
       "state": "待人工核验",
@@ -93,7 +93,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T10:42:11.182434+00:00",
+      "discoveredAt": "2026-11-22T20:09:41.661712+00:00",
       "discoveryUrl": "https://www.36kr.com/p/3868498998449415",
       "topic": "business",
       "state": "历史线索",
@@ -109,7 +109,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T10:42:13.265827+00:00",
+      "discoveredAt": "2026-11-22T20:09:44.314091+00:00",
       "discoveryUrl": "https://www.36kr.com/p/3747947088003588",
       "topic": "business",
       "state": "历史线索",
@@ -125,7 +125,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T10:42:14.658147+00:00",
+      "discoveredAt": "2026-11-22T20:09:45.885099+00:00",
       "discoveryUrl": "https://www.36kr.com/newsflashes/4045152038458502",
       "topic": "business",
       "state": "待人工核验",
@@ -296,7 +296,7 @@
       "source": "温州网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T10:42:16.157740+00:00",
+      "discoveredAt": "2026-11-22T20:09:45.920032+00:00",
       "discoveryUrl": "https://finance.66wz.com/system/2026/09/08/105835921.shtml",
       "topic": "business",
       "state": "待人工核验",
@@ -308,7 +308,7 @@
       "source": "人民网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T10:42:11.970287+00:00",
+      "discoveredAt": "2026-11-22T20:09:45.357736+00:00",
       "discoveryUrl": "https://zj.people.com.cn/n2/2026/0323/c228592-41531254.html",
       "topic": "business",
       "state": "待人工核验",
@@ -320,7 +320,7 @@
       "source": "新华网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T10:42:12.831736+00:00",
+      "discoveredAt": "2026-11-22T20:09:43.427172+00:00",
       "discoveryUrl": "https://www1.xinhuanet.com/fortune/20260321/943f6293dbe14f918ef29a481d12a6d0/c.html",
       "topic": "business",
       "state": "历史线索",
@@ -418,6 +418,18 @@
       "bodyExcerpt": "湖北武汉，模态跃迁科技有限公司，一场视频会议正在召开。视频另一端，是海外一家物流公司的调度中心。不久前，对方还在为规划车辆路线头疼，现在借助智能体，成本降低近一半。 模态跃迁由3名00后创办。首席执行官邴龙志，今年26岁，毕业于武汉大学电子商务专业，18岁开始创业。首席运营官常元和、首席技术官丁震宇，均是武汉大学计算机学院在读学生，二人合作开发的一款人工智能工具，曾在半年内获得超百万注册用户。 彼",
       "textLength": 881,
       "contentHash": "d36338da7a514abcaa045869896fe87929cd6a52f475d31f4a876cd613aaaa61"
+    },
+    {
+      "originalTitle": "创业板拟引入做市商制度",
+      "url": "https://finance.people.com.cn/n1/2026/1122/c1004-40838395.html",
+      "source": "人民网",
+      "weight": 4,
+      "feedExcerpt": "",
+      "discoveredAt": "2026-11-22T20:09:43.231788+00:00",
+      "discoveryUrl": "https://www.people.com.cn/",
+      "topic": "business",
+      "state": "待人工核验",
+      "reason": "正文或发布日期不能可靠读取"
     }
   ]
 }
