@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-11-21T16:36:56.153512+00:00",
-  "lastCheckedAt": "2026-11-22T02:48:18.840624+00:00",
+  "lastCheckedAt": "2026-11-22T10:41:59.458456+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -79,8 +79,8 @@
     },
     {
       "source": "量子位",
-      "ok": true,
-      "candidates": 3
+      "ok": false,
+      "reason": "access-policy"
     },
     {
       "source": "Simon Willison",
