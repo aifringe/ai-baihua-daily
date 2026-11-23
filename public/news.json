@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-11-22T20:09:32.745689+00:00",
-  "lastCheckedAt": "2026-11-23T03:31:25.418010+00:00",
+  "updatedAt": "2026-11-23T20:52:42.396283+00:00",
+  "lastCheckedAt": "2026-11-23T20:52:42.396283+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 28
+      "candidates": 19
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true,
+      "candidates": 3
     },
     {
       "source": "Google AI",
@@ -29,7 +30,7 @@
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 6
+      "candidates": 7
     },
     {
       "source": "Berkeley AI Research",
@@ -64,12 +65,12 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 3
+      "candidates": 1
     },
     {
       "source": "MIT Technology Review",
       "ok": true,
-      "candidates": 2
+      "candidates": 0
     },
     {
       "source": "The Verge AI",
@@ -78,13 +79,13 @@
     },
     {
       "source": "量子位",
-      "ok": false,
-      "reason": "access-policy"
+      "ok": true,
+      "candidates": 7
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 11
+      "candidates": 10
     },
     {
       "source": "Latent Space",
@@ -144,11 +145,110 @@
       "source": "智东西",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 6,
+      "count": 5,
       "readable": 1
     }
   ],
   "articles": [
+    {
+      "id": "e652a8cea99648",
+      "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123"
+        }
+      ],
+      "publishedAt": "2026-11-23",
+      "source": "MIT News",
+      "title": "MIT推SLIC法：小模型本地设计模拟芯片",
+      "summary": "麻省理工学院研究团队提出SLIC训练方法，通过多轮强化学习与可验证奖励，让参数量仅数十亿的小语言模型在模拟集成电路设计中接近前沿大模型表现，且可在笔记本电脑本地运行。该方法用大模型生成示范、再让小模型自主迭代仿真优化，避免将专有电路与代工数据上传云端。团队称其在多项指标上优于基线及开源前沿模型，并能适应未见过的电路结构与更先进工艺节点。研究将在NeurIPS 2026发表，获Analog Devices、IBM等资助，但尚未披露大规模工业部署效果。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "模拟芯片设计长期依赖人工调参，该研究证明小模型可本地完成接近前沿模型的优化，兼顾隐私与成本，对芯片设计流程有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT研究人员发布名为SLIC的训练方法，用于自动优化模拟集成电路设计。其核心是先用大语言模型生成开源设计过程的示范，再通过多轮强化学习与可验证奖励，让一个仅数十亿参数的小模型自行提出参数、运行仿真、评估结果并迭代改进。团队称，在满足给定性能指标的任务中，该小模型接近最新GPT模型的表现，同时计算资源消耗远低，并能在笔记本电脑上本地训练和部署，从而避免把专有电路和代工数据传给云端服务。论文将在NeurIPS 2026发表，获Analog Devices、IBM等资助。仍需观察的是：测试规模、与真实商业流程的差距，以及工业界大规模采用后的稳定性，报道未给出具体量化对比数字。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "模拟芯片像电子设备里的“感官和电源管家”，设计时要同时调很多旋钮，过去主要靠工程师凭经验反复试。SLIC相当于给一个小型AI配了一位“教练”：先看大模型演示怎么调，再自己上手练习，边仿真边改，直到达标。好处是这个小AI不用上云，在公司自己的电脑上就能跑，设计数据不外泄，成本也低。对普通人来说，短期不会立刻看到手机变便宜，但它可能让芯片公司更快试出更省电、性能更好的电路方案，长期影响医疗监测、工业传感器和通信设备的迭代速度。不过，这仍是研究阶段成果，离全面替代工程师还有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "AI-driven technique could help engineers design analog chips faster and with less expense",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT推SLIC法：小模型本地设计模拟芯片相关图片",
+      "selectedOn": "2026-11-24"
+    },
+    {
+      "id": "d7268feb3d6e47",
+      "url": "https://www.qbitai.com/2026/11/511978.html",
+      "sources": [
+        {
+          "name": "量子位",
+          "url": "https://www.qbitai.com/2026/11/511978.html"
+        }
+      ],
+      "publishedAt": "2026-11-23",
+      "source": "量子位",
+      "title": "RoboChallenge Zero首期真机评测发布",
+      "summary": "RoboChallenge发布真实机器人零样本评测基准RoboChallenge Zero，将11个多模态大模型接入统一机器人控制接口，在两类真机平台完成6项操作任务、共330次独立测试。整体成功率44.85%，最高为GPT-6.2 Astra的70.00%。任务差异明显：放置大积木成功率89.09%，书写“Z0”仅7.27%，整理充电线55次测试无完整成功。成功任务平均耗时13至24分钟，Token消耗最高约173万。评测方称将每月更新任务，持续检验零样本具身能力。",
+      "category": "报告解读",
+      "importance": 78,
+      "why": "首次以统一真机任务和成功标准横向比较多个大模型，给出成功率、耗时与Token开销，为具身智能能力边界提供可复现的量化参照。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "RoboChallenge发布零样本真机评测基准RoboChallenge Zero，首期将11个多模态大模型接入统一机器人控制接口，在两类真实机器人平台上执行6项操作任务，共完成330次独立测试。结果显示整体成功率44.85%，表现最好的GPT-6.2 Astra在30次测试中成功21次，成功率70.00%；Claude Fable 5.2以66.67%位列第二。任务难度分化显著：放置较大积木成功率89.09%，书写“Z0”仅7.27%，整理充电线55次测试无一次完整成功。效率方面，成功完成积木放置和玩偶抓取平均约需13至14分钟，书写任务平均23.8分钟、约173.56万Token。评测方同时说明，执行时间受本次配置和模型计价方式影响，需结合具体任务理解，尚不能直接外推为通用能力排名。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次评测理解成给大模型办了一场“机器人驾照路考”：不是让它在屏幕里答题，而是让它真的伸手去抓积木、写字符、理线。结果说明，模型“看得懂、说得出”不等于“手够稳”。粗活如抓放积木，多数模型已能过关；细活如按轨迹书写、判断绳结松紧，仍频频失手。对普通人来说，这意味着短期内机器人更可能先在仓储分拣、简单搬运等容错较高的场景落地，而整理线缆、精细装配这类家务或产线任务还需时间。另一个信号是成本：一次成功操作可能耗费十几分钟和数十万Token，距离便宜好用仍有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "当大模型接上真实机器人：RoboChallenge Zero首期评测发布",
+      "image": "./illustrations/report.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "RoboChallenge Zero首期真机评测发布相关图片",
+      "selectedOn": "2026-11-24"
+    },
+    {
+      "id": "422bcc74934afb",
+      "url": "https://www.qbitai.com/2026/11/511998.html",
+      "sources": [
+        {
+          "name": "量子位",
+          "url": "https://www.qbitai.com/2026/11/511998.html"
+        }
+      ],
+      "publishedAt": "2026-11-23",
+      "source": "量子位",
+      "title": "蚂蚁开源医疗大模型Sante 阿福升级",
+      "summary": "11月23日，蚂蚁集团旗下百灵医疗健康大模型家族集中发布，统一以“Sante”命名，覆盖专业推理、多模态理解、疾病风险预测、安全防护和实时智能体等方向。其中原生多模态模型支持文字、图片和视频理解，参数量124B、激活参数5.5B，可在笔记本电脑本地部署；面向医疗机构的深度推理模型总参数量560B，支持最长1M Token上下文。阿福App同步升级，可视频“望闻问切”并连线真人医生。官方称阿福服务1.5亿用户、日均近2000万次健康咨询。",
+      "category": "产品动态",
+      "importance": 78,
+      "why": "蚂蚁首次系统开源医疗健康模型家族，并同步升级阿福App，把专业医疗AI能力推向本地部署和大众健康服务，对医疗AI落地路径有示范意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "11月23日，蚂蚁发布百灵医疗健康大模型家族，统一命名为“Sante”，覆盖医疗专业推理、多模态理解、疾病风险预测、安全防护和实时智能体等方向。原生多模态模型支持文字、图片和视频理解，参数量124B、激活参数5.5B，可在笔记本电脑等本地设备部署；深度推理模型总参数量560B，支持最长1M Token上下文，可处理大量病历和医学文献。健康预测模型LingSante Pulse宣称可预测150余项疾病未来六年风险，安全防护模型LingSante MedGuard从医疗安全、合规和伦理维度识别风险。阿福App同步升级，支持视频实时观察、主动追问并连线真人医生。官方称阿福服务1.5亿用户、日均近2000万次健康咨询。模型具体开源协议、评测细节和临床验证情况尚未在文中完整披露。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这次发布理解成：蚂蚁把一套“医疗AI工具箱”摆上了台面，其中轻量版能装进医生自己的笔记本电脑，不用把病人资料传到云端；重量版则像一位能同时翻完一摞病历和文献的“超级助手”。对普通人来说，最直接的变化是阿福App能视频看症状、看药盒、看报告，还能在需要时转给真人医生把关，小毛病在家先问一问更方便。但要注意，AI再像医生也只是辅助，不能替代面诊和处方；疾病风险预测也只是提示可能性，不是诊断结论。开源意味着更多开发者能参与改进，也意味着模型实际效果和安全边界需要后续验证。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "蚂蚁阿福同款大模型宣布开源，全球医生一台电脑就能解锁专业医疗 AI 能力",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "蚂蚁开源医疗大模型Sante 阿福升级相关图片",
+      "selectedOn": "2026-11-24"
+    },
     {
       "id": "3298713995b153",
       "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
@@ -214,6 +314,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "SageMaker推理年度更新：26项功能落地相关图片",
       "selectedOn": "2026-11-21"
+    },
+    {
+      "id": "8332904eb70bcb",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+      "sources": [
+        {
+          "name": "AWS AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/"
+        }
+      ],
+      "publishedAt": "2026-11-20",
+      "source": "AWS AI",
+      "title": "标准银行用AI自动评估生成式AI风险",
+      "summary": "南非标准银行集团与AWS专业服务团队合作，在自有AWS账户内部署了一套生成式AI用例自动风险评估系统。系统通过预评估代理收集代码与文档证据，调用应用进行越狱和一致性测试，再由Amazon Bedrock上的基础模型以“LLM-as-a-judge”方式对照国际AI标准及银行内部政策逐项判定，最终生成报告与仪表盘。银行称，原本约两周的人工评审可缩短至约两小时，六次评估后用例风险评分改善14%。审批权仍在风险委员会，系统不构成合规认证。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "大型银行把AI治理从人工审文档变成可重复运行的自动检查，并给出两周缩至两小时、风险评分改善14%的量化结果，对金融业规模化落地生成式AI有示范意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "标准银行集团与AWS专业服务团队合作，把生成式AI用例的风险评估流程自动化，并运行在银行自己的AWS账户内。流程分四步：预评估代理扫描代码仓库和文档，为约40个问题预填答案与证据链接；流水线检查文档、政策、源码和系统提示，并通过Lambda或API对应用发起真实调用，加入越狱、跑题和同义改写问题测试一致性；Amazon Bedrock上的基础模型以“LLM-as-a-judge”方式，对照国际AI标准与银行内部政策逐条给出是或否判断，总检查项超过300个；最后输出高管简报、缓解清单、技术报告和CloudWatch仪表盘。银行称，原本约两周的人工评审可缩短至约两小时，六次评估后用例风险评分改善14%。需要说明的是，审批仍由风险委员会负责，该系统只提供证据，不构成任何监管合规认证；模型可用性因AWS区域而异。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套系统理解成给每个AI应用配了一台自动安检机：过去要风险人员逐页翻材料、手工试系统，现在机器先扫一遍代码和文档，再亲自“问”应用一堆刁钻问题，最后对照标准打分并列出缺什么、怎么补。对普通人来说，银行上线新AI功能前的审查可能更快，但并不意味着风险消失——最终拍板仍由人组成的风险委员会做，机器只是把证据摆齐。对银行自身，政策一旦修改，就能直接变成新的检查项自动跑，省去反复人工返工。真正的看点是：AI治理从“写在本子上的规定”变成“每次上线都要跑一遍的测试”，这决定了银行能否既快又稳地铺开生成式AI。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Standard Bank Group automates AI risk assessment for generative AI",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "标准银行用AI自动评估生成式AI风险相关图片",
+      "selectedOn": "2026-11-24"
     },
     {
       "id": "536d4386c711aa",
@@ -511,6 +644,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "Anthropic史上最大IPO，安全招牌受考验相关图片",
       "selectedOn": "2026-11-20"
+    },
+    {
+      "id": "a457925fbd609a",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/"
+        }
+      ],
+      "publishedAt": "2026-11-19",
+      "source": "Simon Willison",
+      "title": "PostgreSQL 19发布：新增读己之写一致性",
+      "summary": "PostgreSQL 19于2026年11月发布，比往年9月的惯例晚了两个月。作者称延迟与PostgreSQL团队需应对大量AI报告的漏洞有关，但这一说法未获官方确认。新版本针对将读请求发往备库的应用，加入“读己之写”一致性：应用可先记录主库当前WAL插入位置，随后在备库执行WAIT FOR LSN等待其回放到该位置再查询，并可设置超时。文中还类比MediaWiki通过保存主库binlog位点、请求开始时等待备库追平来保证顺序一致。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "PostgreSQL是主流开源数据库，读己之写一致性直接关系到读写分离架构下用户刚写入就读取却读到旧数据的常见问题，对后端开发者有实际价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "PostgreSQL 19正式发布，时间在2026年11月，比该项目通常的9月发布窗口晚约两个月。作者Simon Willison称延迟与团队需处理大量由AI报告的漏洞有关，但这是其个人说法，官方未在文中给出确认。核心新功能是面向“读请求发往备库”场景的读己之写一致性：应用在主库执行写入后，用pg_current_wal_insert_lsn()取得当前WAL插入位点并保存（例如放进签名Cookie），后续请求在备库上执行WAIT FOR LSN '位点' WITH (TIMEOUT '0.1s')，等备库回放到该位点后再查询，从而读到刚写入的数据。超时可选，设置后若备库未在时限内追平会报错。文中还提到MediaWiki用保存主库binlog位点、请求开始时等待备库追平的方式保证顺序一致。具体语法细节与超时行为仍应以官方文档为准。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "很多网站把写操作交给主数据库、把读操作分给备数据库，以分担压力。但备库同步有延迟，用户刚改完资料立刻刷新，可能看到旧内容，体验像“刚存完就丢”。PostgreSQL 19相当于给应用一张“进度条凭据”：写入时记下主库日志写到哪，读备库前先问一句“你追到这个位置了吗”，追上了再查，没追上就等一小会儿或直接报错。对普通人来说，这意味着使用读写分离的网站在提交表单后刷新页面，更不容易看到过时数据。代价是读请求可能多等一点时间，极端情况下会因超时失败，需要开发者合理设置超时。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "PostgreSQL 19 Released",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "PostgreSQL 19发布：新增读己之写一致性相关图片",
+      "selectedOn": "2026-11-24"
     },
     {
       "id": "d271dd5b7b9d38",
@@ -21950,13 +22116,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-23",
+  "editionDate": "2026-11-24",
   "dailyIds": [
     "3298713995b153",
+    "d7268feb3d6e47",
+    "422bcc74934afb",
     "60ff07a70f51c3",
-    "db9b81401cb73d",
-    "5a5ba5d784f020",
-    "d8a3bb1afd5fe4"
+    "e652a8cea99648"
   ],
-  "editionUpdatedAt": "2026-11-22T20:09:32.745689+00:00"
+  "editionUpdatedAt": "2026-11-23T20:52:42.396283+00:00"
 }
