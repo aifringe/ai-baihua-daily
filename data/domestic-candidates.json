@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T20:09:49.720686+00:00",
+  "checkedAt": "2026-11-23T03:31:38.702514+00:00",
   "sources": [
     {
       "source": "腾讯新闻",
@@ -26,7 +26,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 2,
+      "count": 3,
       "readable": 0
     },
     {
@@ -65,7 +65,7 @@
       "source": "腾讯新闻",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T20:09:41.613342+00:00",
+      "discoveredAt": "2026-11-23T03:31:31.659699+00:00",
       "discoveryUrl": "https://news.qq.com/rain/a/20260511A05SDP00",
       "topic": "business",
       "state": "历史线索",
@@ -81,7 +81,7 @@
       "source": "微博",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T20:09:41.649995+00:00",
+      "discoveredAt": "2026-11-23T03:31:31.660867+00:00",
       "discoveryUrl": "https://www.weibo.com/ttarticle/p/show?id=2309405313423797256285",
       "topic": "business",
       "state": "待人工核验",
@@ -93,7 +93,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T20:09:41.661712+00:00",
+      "discoveredAt": "2026-11-23T03:31:31.663611+00:00",
       "discoveryUrl": "https://www.36kr.com/p/3868498998449415",
       "topic": "business",
       "state": "历史线索",
@@ -109,7 +109,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T20:09:44.314091+00:00",
+      "discoveredAt": "2026-11-23T03:31:35.387158+00:00",
       "discoveryUrl": "https://www.36kr.com/p/3747947088003588",
       "topic": "business",
       "state": "历史线索",
@@ -125,7 +125,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T20:09:45.885099+00:00",
+      "discoveredAt": "2026-11-23T03:31:36.936138+00:00",
       "discoveryUrl": "https://www.36kr.com/newsflashes/4045152038458502",
       "topic": "business",
       "state": "待人工核验",
@@ -296,7 +296,7 @@
       "source": "温州网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T20:09:45.920032+00:00",
+      "discoveredAt": "2026-11-23T03:31:35.710265+00:00",
       "discoveryUrl": "https://finance.66wz.com/system/2026/09/08/105835921.shtml",
       "topic": "business",
       "state": "待人工核验",
@@ -308,7 +308,7 @@
       "source": "人民网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T20:09:45.357736+00:00",
+      "discoveredAt": "2026-11-23T03:31:32.734823+00:00",
       "discoveryUrl": "https://zj.people.com.cn/n2/2026/0323/c228592-41531254.html",
       "topic": "business",
       "state": "待人工核验",
@@ -320,7 +320,7 @@
       "source": "新华网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-22T20:09:43.427172+00:00",
+      "discoveredAt": "2026-11-23T03:31:32.830930+00:00",
       "discoveryUrl": "https://www1.xinhuanet.com/fortune/20260321/943f6293dbe14f918ef29a481d12a6d0/c.html",
       "topic": "business",
       "state": "历史线索",
@@ -430,6 +430,30 @@
       "topic": "business",
       "state": "待人工核验",
       "reason": "正文或发布日期不能可靠读取"
+    },
+    {
+      "originalTitle": "增强干部干事创业本领",
+      "url": "https://politics.people.com.cn/n1/2026/1123/c1001-40838465.html",
+      "source": "人民网",
+      "weight": 4,
+      "feedExcerpt": "",
+      "discoveredAt": "2026-11-23T03:31:32.227811+00:00",
+      "discoveryUrl": "https://www.people.com.cn/",
+      "topic": "business",
+      "state": "待人工核验",
+      "reason": "访问规则未确认或不允许自动读取"
+    },
+    {
+      "originalTitle": "构建亲清政商关系，激发干事创业新活力",
+      "url": "https://politics.people.com.cn/n1/2026/1123/c461001-40838459.html",
+      "source": "人民网",
+      "weight": 4,
+      "feedExcerpt": "",
+      "discoveredAt": "2026-11-23T03:31:32.733961+00:00",
+      "discoveryUrl": "https://www.people.com.cn/",
+      "topic": "business",
+      "state": "待人工核验",
+      "reason": "访问规则未确认或不允许自动读取"
     }
   ]
 }
