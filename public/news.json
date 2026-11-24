@@ -1,11 +1,11 @@
 {
   "updatedAt": "2026-11-23T20:52:42.396283+00:00",
-  "lastCheckedAt": "2026-11-23T20:52:42.396283+00:00",
+  "lastCheckedAt": "2026-11-24T06:44:04.102099+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 19
+      "candidates": 21
     },
     {
       "source": "Google DeepMind",
@@ -30,7 +30,7 @@
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 7
+      "candidates": 8
     },
     {
       "source": "Berkeley AI Research",
@@ -80,12 +80,12 @@
     {
       "source": "量子位",
       "ok": true,
-      "candidates": 7
+      "candidates": 3
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 10
+      "candidates": 13
     },
     {
       "source": "Latent Space",
@@ -117,15 +117,15 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 0,
-      "readable": 0
+      "count": 2,
+      "readable": 2
     },
     {
       "source": "新华网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 4,
-      "readable": 2
+      "count": 5,
+      "readable": 3
     },
     {
       "source": "温州网",
