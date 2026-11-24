@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-11-23T20:52:42.396283+00:00",
-  "lastCheckedAt": "2026-11-24T06:44:04.102099+00:00",
+  "updatedAt": "2026-11-24T19:57:23.866896+00:00",
+  "lastCheckedAt": "2026-11-24T19:57:23.866896+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 21
+      "candidates": 20
     },
     {
       "source": "Google DeepMind",
-      "ok": true,
-      "candidates": 3
+      "ok": false
     },
     {
       "source": "Google AI",
@@ -30,7 +29,7 @@
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 8
+      "candidates": 6
     },
     {
       "source": "Berkeley AI Research",
@@ -45,12 +44,12 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 8
+      "candidates": 9
     },
     {
       "source": "Microsoft Research",
       "ok": true,
-      "candidates": 1
+      "candidates": 0
     },
     {
       "source": "NVIDIA AI",
@@ -65,7 +64,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 1
+      "candidates": 3
     },
     {
       "source": "MIT Technology Review",
@@ -75,17 +74,17 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 2
+      "candidates": 1
     },
     {
       "source": "量子位",
       "ok": true,
-      "candidates": 3
+      "candidates": 1
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 13
+      "candidates": 11
     },
     {
       "source": "Latent Space",
@@ -117,8 +116,8 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 2,
-      "readable": 2
+      "count": 3,
+      "readable": 3
     },
     {
       "source": "新华网",
@@ -151,6 +150,39 @@
   ],
   "articles": [
     {
+      "id": "a72cc3aa1f3d17",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+        }
+      ],
+      "publishedAt": "2026-11-23",
+      "source": "TechCrunch AI",
+      "title": "Anthropic推出Claude Ship，AI可自动审批代码",
+      "summary": "Anthropic发布Claude Ship工具套件，将AI代理引入代码审查与合并环节。该套件包含已正式上线的Code Review，以及处于测试阶段的PR Steward和Claude Approvals。其中Claude Approvals可依据团队以自然语言编写的策略文件，自动批准常规代码变更，这是最受关注的部分。背景是AI生成代码量激增，导致审查和批准成为瓶颈。Anthropic建议先在仅观察模式下试用，并限定单一仓库和月度支出上限。目前该工具面向GitHub上的Claude Team和Enterprise套餐用户开放。",
+      "category": "产品动态",
+      "importance": 78,
+      "why": "AI编程工具正从生成代码延伸到审批环节，把合并决定权部分交给代理，触及开发流程中的信任与责任边界，对工程团队协作方式影响直接。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Anthropic宣布推出Claude Ship，一套用于自动化代码审查、修复和批准常规变更的AI代理工具。它由三部分组成：Code Review已正式可用；PR Steward和Claude Approvals处于测试阶段。PR Steward处理CI失败、合并冲突和审查反馈，并在每次推送后说明改动及回滚方式；Claude Approvals则读取团队写在仓库中的策略文件，结合审查结果或自有分类器，自动批准代码变更。Anthropic称其内部Claude Code团队大部分代码由Claude编写，希望PR之后的流程同样提速。目前仅支持GitHub，面向Team和Enterprise套餐。官方建议先以仅观察模式运行审批，并限定单一仓库和月度支出上限。自动审批在真实团队中的误判率和责任归属，仍待测试验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去AI是帮你写代码的“笔”，现在它还想当“签字的人”。代码写多了，人工审查就成了堵点，Claude Ship相当于在流水线末端加了一道自动质检和放行闸门：小问题自己修，符合规则的直接盖章通过。好处是常规改动不用排队等人点头，开发速度更快。但风险也直观——盖章的权力交给了机器，一旦策略写松了或判断出错，问题代码可能悄悄上线。所以Anthropic才让你先“只看不动”，像新员工实习期一样观察它靠不靠谱。对普通用户而言，这类工具短期不会直接可见，但软件更新可能更快，同时代码质量把关的责任划分会变得更微妙。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Anthropic推出Claude Ship，AI可自动审批代码相关图片",
+      "selectedOn": "2026-11-25"
+    },
+    {
       "id": "e652a8cea99648",
       "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123",
       "sources": [
@@ -182,6 +214,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "MIT推SLIC法：小模型本地设计模拟芯片相关图片",
       "selectedOn": "2026-11-24"
+    },
+    {
+      "id": "dfa0b937d56702",
+      "url": "https://news.mit.edu/2026/many-languages-one-common-neural-code-1123",
+      "sources": [
+        {
+          "name": "MIT News",
+          "url": "https://news.mit.edu/2026/many-languages-one-common-neural-code-1123"
+        }
+      ],
+      "publishedAt": "2026-11-23",
+      "source": "MIT News",
+      "title": "MIT研究：21种语言共享同一套大脑语义编码",
+      "summary": "MIT麦戈文研究所Fedorenko实验室在《自然·神经科学》发表研究，利用多语言大模型构建编码模型，将模型输出的数值表征与21种语言使用者的脑成像数据对齐。结果显示，模型能准确预测各语言的大脑反应，且用单一语言训练的模型可预测未训练语言（如法语模型预测越南语），提示不同语言使用者存在共享的语义神经成分。研究覆盖南非荷兰语、印地语、普通话、韩语等，也包括马拉地语、立陶宛语等数据稀缺语言。",
+      "category": "报告解读",
+      "importance": 72,
+      "why": "首次用多语言模型跨21种语言预测大脑反应，发现共享语义编码，对脑疾病AI诊断的跨语言公平性和濒危语言保护有潜在意义。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "MIT麦戈文脑研究所的Andrea Gregor de Varda与Evelina Fedorenko团队，用多语言大模型提取句子数值表征，再与21种语言使用者在听故事时的脑成像数据结合，构建编码模型。这些语言包括南非荷兰语、荷兰语、波斯语、法语、立陶宛语、马拉地语、挪威语、罗马尼亚语、西班牙语、泰米尔语、土耳其语、越南语，以及新招募的意大利语、葡萄牙语、德语、俄语、波兰语、印地语、阿拉伯语、普通话和韩语。研究发现，编码模型能准确预测所有受试语言的大脑反应，包括数据稀缺的马拉地语和立陶宛语；更关键的是，仅在一种语言上训练的模型，也能预测从未训练过的语言的大脑活动。研究者据此推断，跨语言共享的成分与“意义”有关。不过，该共享成分的具体神经机制、是否适用于所有语言类型，以及临床转化可行性，仍待进一步验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把大脑想成一台通用翻译机：不管你说普通话、阿拉伯语还是韩语，它处理“意思”的那套底层线路可能差不多。MIT团队用能同时处理上百种语言的AI当“探针”，先让AI把句子变成一串数字，再看这串数字能不能猜中人在听故事时大脑哪块亮起来。结果不仅猜得中，而且用学法语的数据去猜越南语也八九不离十，说明大家脑子里有一套共通的“意义密码”。这对普通人的意义在于：未来用AI筛查认知衰退、语言障碍的工具，可能不再只服务英语人群，小语种使用者也有机会受益；对濒危语言，理论上还能反过来用脑信号帮助记录。当然，这还只是实验室发现，离医院和日常应用有距离。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Many languages, one common neural code",
+      "image": "./illustrations/report.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "MIT研究：21种语言共享同一套大脑语义编码相关图片",
+      "selectedOn": "2026-11-25"
     },
     {
       "id": "d7268feb3d6e47",
@@ -217,6 +282,39 @@
       "selectedOn": "2026-11-24"
     },
     {
+      "id": "83b9621afef40a",
+      "url": "https://openai.com/index/introducing-shirudo/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/introducing-shirudo/"
+        }
+      ],
+      "publishedAt": "2026-11-23",
+      "source": "OpenAI",
+      "title": "OpenAI与思科开源Linux运行时防护工具Shirudo",
+      "summary": "2026年11月23日，OpenAI与思科联合发布开源运行时Shirudo，用于在Linux系统打补丁前提供临时防护。该工具基于eBPF技术，可在不重启服务的情况下拦截漏洞利用行为。官方称在受控测试中，由Codex生成的防护规则成功阻止了针对运行中Elasticsearch的Java4Shell漏洞利用。Shirudo采用签名验证与TPM硬件校验，代码以BSD 2-Clause许可开源，邀请开发者共同完善。目前公开信息仅来自双方官方博客，尚无第三方独立验证其实际防护效果。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "AI厂商与网络设备巨头联手切入系统安全底层，用AI生成临时防护规则，为补丁空窗期提供新思路，开源策略也值得关注。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI与思科于2026年11月23日宣布推出开源运行时Shirudo，目标是在Linux系统等待补丁期间提供临时保护。其技术基础是eBPF，可在操作系统内核特定位置运行小程序，从而观察并拦截可疑行为。官方披露的受控测试中，团队用OpenAI的Codex生成防护规则，为Java的Base64解码器增加输入检查，并挂载到运行中的Elasticsearch进程上，成功拒绝恶意输入，服务无需重启。Shirudo设计了四项能力：实时防护、机器速度防御、签名验证部署和TPM硬件校验。项目以BSD 2-Clause许可开源，BPF程序采用BSD与GPL双许可。需要指出，上述效果均来自官方自述，尚无独立第三方复现或评估，实际拦截准确率与误报情况仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把它理解成给房子换锁前的临时门闩：正式补丁还没装好，先用一道可验证的临时屏障挡住已知攻击手法，同时不影响正常访客进出。过去安全团队面对漏洞往往两难，全封某个系统操作可能让服务瘫痪，不封又怕被攻击。Shirudo让团队先测试临时规则是否只挡坏人、不误伤正常请求，确认后再上线。对普通人来说，这类工具的意义在于减少因漏洞未及时修复导致的服务中断和数据泄露风险。但也要清醒看到，它只是补丁前的缓冲，不能替代正式修复；且规则由AI生成，是否可靠仍需人工审核和长期检验。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "OpenAI and Cisco introduce Shirudo",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "OpenAI与思科开源Linux运行时防护工具Shirudo相关图片",
+      "selectedOn": "2026-11-25"
+    },
+    {
       "id": "422bcc74934afb",
       "url": "https://www.qbitai.com/2026/11/511998.html",
       "sources": [
@@ -248,6 +346,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "蚂蚁开源医疗大模型Sante 阿福升级相关图片",
       "selectedOn": "2026-11-24"
+    },
+    {
+      "id": "e59fe8be067f4a",
+      "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/23/ladybird/"
+        }
+      ],
+      "publishedAt": "2026-11-23",
+      "source": "Simon Willison",
+      "title": "Ladybird浏览器首个Alpha版发布",
+      "summary": "2026年11月23日，独立浏览器项目Ladybird发布首个Alpha版本。该项目自研HTML解析、CSS引擎、布局、JavaScript及WebAssembly等核心组件，仅2D图形、视频解码和SQLite依赖外部库。试用者反馈其速度较快、界面轻量，多数网站可正常加载，且采用多进程标签页隔离。项目今年大量借助AI编程代理推进开发，曾用两周将部分JS引擎从C++迁移为2.5万行Rust，十月性能大幅提升。官方承认Alpha版存在兼容性与崩溃问题，安全尚无保证，呼吁用户报告故障并欢迎安全研究者测试。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "浏览器引擎长期由少数厂商主导，Ladybird自研核心组件并发布可用Alpha版，是少见的独立新入局者，其AI辅助开发路径也具观察价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Ladybird发布了首个Alpha版本，这是一个从零构建的独立浏览器，自行实现HTML解析、CSS引擎、布局、JavaScript和WebAssembly等大部分关键组件，仅2D图形、ffmpeg视频解码和SQLite等少数部分依赖外部代码。试用反馈称其运行较快、界面轻量，多数网站能正常加载，标签页采用多进程隔离。项目今年大量使用AI编程代理，曾两周内将部分LibJS引擎从C++迁移为约2.5万行Rust，十月性能显著提升。官方明确这是Alpha版：部分网站不兼容、偶发崩溃，安全不作承诺，并鼓励用户报告故障、欢迎安全研究者攻击测试。具体所用模型版本未公开。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "浏览器内核这块地盘，多年来基本被几家大厂占着，新玩家想挤进来极难。Ladybird相当于自己造发动机、自己搭底盘，几乎不借别人的零件，如今终于能上路试跑了。对普通人来说，短期内它还不能替代日常浏览器，尤其别用它登录网银、邮箱等敏感账号，因为安全防护尚未经过考验。但它的意义在于打破垄断的可能性：多一个认真做内核的竞争者，长期可能推动整个行业在性能、隐私和标准上更努力。它也是观察AI辅助写大型软件的活样本——一个团队靠AI代理推进了原本需要更久的核心开发。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Ladybird's first alpha release",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Ladybird浏览器首个Alpha版发布相关图片",
+      "selectedOn": "2026-11-25"
     },
     {
       "id": "3298713995b153",
@@ -22116,13 +22247,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-24",
+  "editionDate": "2026-11-25",
   "dailyIds": [
     "3298713995b153",
+    "a72cc3aa1f3d17",
     "d7268feb3d6e47",
     "422bcc74934afb",
-    "60ff07a70f51c3",
-    "e652a8cea99648"
+    "60ff07a70f51c3"
   ],
-  "editionUpdatedAt": "2026-11-23T20:52:42.396283+00:00"
+  "editionUpdatedAt": "2026-11-24T19:57:23.866896+00:00"
 }
