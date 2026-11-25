@@ -1,25 +1,26 @@
 {
-  "updatedAt": "2026-11-25T05:14:18.937790+00:00",
-  "lastCheckedAt": "2026-11-25T05:14:18.937790+00:00",
+  "updatedAt": "2026-11-25T18:59:17.335202+00:00",
+  "lastCheckedAt": "2026-11-25T18:59:17.335202+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 21
+      "candidates": 14
     },
     {
       "source": "Google DeepMind",
-      "ok": false
+      "ok": true,
+      "candidates": 2
     },
     {
       "source": "Google AI",
       "ok": true,
-      "candidates": 5
+      "candidates": 4
     },
     {
       "source": "Google Research",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "AWS AI",
@@ -29,7 +30,7 @@
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 6
+      "candidates": 5
     },
     {
       "source": "Berkeley AI Research",
@@ -44,7 +45,7 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 9
+      "candidates": 6
     },
     {
       "source": "Microsoft Research",
@@ -64,7 +65,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 4
+      "candidates": 6
     },
     {
       "source": "MIT Technology Review",
@@ -74,22 +75,22 @@
     {
       "source": "The Verge AI",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "量子位",
       "ok": true,
-      "candidates": 1
+      "candidates": 2
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 12
+      "candidates": 10
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 4
+      "candidates": 3
     },
     {
       "source": "腾讯新闻",
@@ -149,6 +150,173 @@
     }
   ],
   "articles": [
+    {
+      "id": "ef02d096cf97ea",
+      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/"
+        }
+      ],
+      "publishedAt": "2026-11-25",
+      "source": "TechCrunch AI",
+      "title": "AI数据中心建设遇阻，新云厂商承压",
+      "summary": "TechCrunch播客讨论AI数据中心建设难度上升。英伟达明确表示，在数据中心接近可运行前不会提供兜底支持，与此同时新云厂商报告建设延迟和债务成本上升。亚利桑那土地咨询公司创始人Verma-Lallian指出，土地、电力和已建成建筑比商业计划书更重要，社区反对和州级限制使部分市场更难建设。投资者Chamath Palihapitiya预测行业将出现洗牌，投机性项目可能最先出问题，2027年或现整合机会。",
+      "category": "行业动态",
+      "importance": 72,
+      "why": "反映AI基础设施从概念热转向落地难，英伟达收紧支持、新云厂商承压，预示行业洗牌和风险重分配，对判断AI算力投资节奏有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "TechCrunch播客聚焦AI数据中心建设困境。英伟达已明确，在数据中心接近可运行前不会提供兜底支持，这一立场与新云厂商报告的建设延迟和债务成本上升同时出现。亚利桑那土地咨询公司创始人Anita Verma-Lallian表示，其公司为开发商、超大规模云厂商、AI实验室和新云厂商整合数据中心选址，她观察到土地、电力和已建成建筑（即“土地、电力、外壳”）比商业计划书更能决定项目可行性。社区反对和州级限制使部分市场建设难度加大，公用事业公司正争取台积电等大客户分担电力基础设施成本。投资者Chamath Palihapitiya预测行业将出现洗牌，投机性项目可能最先出问题。播客还讨论项目停滞时开发商、贷款方和客户谁承担账单，以及AI实验室和超大规模云厂商可能更多自建数据中心。2027年洗牌的具体形态和受益者仍不确定。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把AI数据中心想成开一家大型工厂：以前只要拿着漂亮计划书就能拿到芯片和资金，现在英伟达要求你先有地、有电、有建好的厂房，才愿意谈支持。新云厂商就像租厂房转租的中间商，建设延期和借钱变贵让它们压力很大。对普通人来说，短期影响是AI算力扩张可能放缓，部分AI服务价格和可用性会受波及；长期看，行业洗牌会淘汰投机项目，资源向有土地和电力优势的公司集中。社区反对和电网成本分摊也意味着，数据中心建设不再只是科技公司的事，会更多影响当地电价和土地使用。2027年是否真洗牌、谁接盘仍待观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "AI数据中心建设遇阻，新云厂商承压相关图片",
+      "selectedOn": "2026-11-26"
+    },
+    {
+      "id": "17929128d139e3",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+        }
+      ],
+      "publishedAt": "2026-11-25",
+      "source": "The Verge AI",
+      "title": "FCC批准SpaceX部署百万AI卫星",
+      "summary": "美国联邦通信委员会（FCC）批准SpaceX的“Starmind”计划，允许其部署最多100万颗搭载AI芯片的卫星，用于在太空收集太阳能并驱动地面AI计算，数据通过激光链路回传。这是该机构首次批准完整的AI卫星星座，要求SpaceX在2033年前至少部署一颗卫星，2040年前达到百万颗规模。FCC同时暂缓了SpaceX将600公里以上卫星送入“墓地轨道”而非在大气层烧毁的请求，称其处置方案信息不足。谷歌和蓝色起源也在推进太空算力项目。",
+      "category": "行业动态",
+      "importance": 82,
+      "why": "这是监管机构首次放行百万颗规模的AI算力卫星星座，标志太空数据中心从概念走向许可落地，也引发轨道资源与卫星处置的监管争议。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "FCC于周三宣布，授权SpaceX部署最多100万颗搭载AI芯片的卫星，作为其“Starmind”计划的一部分。这是该机构首次批准完整的AI卫星星座。批准附带时间表：SpaceX须在2033年前部署至少一颗卫星，2040年前达到百万颗里程碑。SpaceX称，Starmind将在太空收集太阳能为地面AI能力供电，并通过高速激光连接星链回传数据，卫星芯片计划在未来的Terafab工厂生产。FCC同时暂缓了SpaceX将600公里以上卫星送入“墓地轨道”而非在大气层烧毁的请求，理由是公司未提供足够的处置流程信息。谷歌上月已发射“Project Suncatcher”AI服务器卫星，蓝色起源将于2029年为其执行首次专用重型发射。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "简单说，就是把一部分耗电巨大的AI机房搬到天上，让卫星晒着太阳算，再用激光把结果传回地面。好处是不占地面电力和土地，坏处是天上会变得非常拥挤。FCC这次等于给SpaceX发了一张“百万颗卫星”的长期施工许可证，但先扣下了“报废卫星怎么处理”这一条——因为SpaceX想把高轨道卫星推到更高的“墓地轨道”搁置，而不是让它们掉进大气层烧掉，监管方觉得交代得不够清楚。对普通人来说，短期内用不上太空算力，但夜空中的卫星会更多，天文观测和轨道碰撞风险也会成为更现实的公共话题。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "FCC批准SpaceX部署百万AI卫星相关图片",
+      "selectedOn": "2026-11-26"
+    },
+    {
+      "id": "b96dec21a3c74f",
+      "url": "https://www.qbitai.com/2026/11/512715.html",
+      "sources": [
+        {
+          "name": "量子位",
+          "url": "https://www.qbitai.com/2026/11/512715.html"
+        }
+      ],
+      "publishedAt": "2026-11-25",
+      "source": "量子位",
+      "title": "智元灵心平台一年孵化3万机器人智能体",
+      "summary": "智元在具身智能生态计划下推出机器人智能体开发平台灵心（LinkSoul），上线一年累计吸引2万+用户、孵化3万+机器人智能体、沉淀7万+平台内容。平台支持用自然语言创建智能体，结合知识库、技能和工作流编排任务，并通过SDK、MCP等连接外部系统与机器人本体。官方还披露北京大学人民医院导诊、横琴长隆乐园IP互动等应用案例，但未给出具体部署规模与效果数据。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "具身智能落地受开发门槛制约，平台化降低门槛并沉淀可复用能力，是机器人规模化的关键基础设施尝试，但实际效果仍待验证。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "智元发布具身智能生态技术体系AIMA及“元苼”生态计划，宣布未来五年投入不低于20亿元支持生态建设。其机器人智能体开发平台灵心（LinkSoul）上线一年，官方称累计吸引2万+用户、孵化3万+机器人智能体、沉淀7万+平台内容。平台提供智能体创建、知识技能配置、任务编排与应用连接能力，用户可用自然语言描述需求，结合知识库、技能和工作流组织任务，并借助3D环境调试，通过SDK、MCP、Skill等连接外部工具、业务系统与机器人本体。应用案例包括北京大学人民医院导诊场景和横琴长隆飞船乐园IP互动。不过，报道未披露智能体的活跃率、实际部署数量及场景效果数据，20亿元投入的具体分配也未说明。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "过去给机器人开发一项新本领，往往要专业程序员从头写代码，费时费钱，做完还很难搬到别的场景。灵心平台相当于给机器人应用搭了一个“低代码工具箱”：懂业务的人用大白话描述需求，就能拼装知识、技能和任务流程，像搭积木一样做出机器人智能体。做好的“积木”还能存下来、共享出去，下次换个场景接着用，减少重复开发。对普通人来说，这意味着医院导诊、乐园导览这类机器人服务可能更快普及、更贴合具体场景；但平台上的3万个智能体有多少真正在干活，目前还没有公开数据，实际体验仍需观察。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "零基础也能做开发，智元灵心平台一年孵化超3万个机器人智能体",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "智元灵心平台一年孵化3万机器人智能体相关图片",
+      "selectedOn": "2026-11-26"
+    },
+    {
+      "id": "10ef75306f1db5",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/"
+        }
+      ],
+      "publishedAt": "2026-11-24",
+      "source": "Google DeepMind",
+      "title": "谷歌推出质谱AI工具，可解析分子结构",
+      "summary": "谷歌DeepMind发布面向Google Antigravity的Mass Spec Skills，将Gemini的化学推理与公开质谱工具、化学数据库检索结合，可从串联质谱数据推断小分子结构。背景是传统谱库匹配平均仅能注释约5%的谱图，大量信号成为“暗物质”。该工具在示例中从m/z 395.1387的负离子谱出发，确定分子式C20H21ClN6O，在PubChem的845个同分异构体中锁定候选结构，并解释97.7%的碎片强度。官方称多数评测准确率超90%，但数据来自谷歌自述，尚缺独立验证。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "质谱注释长期受限于参考谱库覆盖不足，该工具把多步化学流程自动化，若准确率经独立验证，将影响代谢组学、天然产物和药物发现效率。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "谷歌DeepMind宣布为Google Antigravity推出Mass Spec Skills，一套面向质谱分析的领域技能。它把Gemini的化学推理与matchms、SIRIUS、MAGMa、MetFrag、RDKit等公开工具及GNPS、MoNA、PubChem等数据库串联，用户用自然语言描述任务即可完成去噪、谱库检索、分子式推断、候选结构排序和碎片解释。官方示例中，一条负离子串联质谱经处理从1761个原始峰筛至19个，确定分子式为C20H21ClN6O，并在845个PubChem同分异构体中依据尿素连接和中性丢失排除近似候选，最终锁定CID 137835447。谷歌称多数评测准确率超过90%，但该数字来自官方自述，尚无独立复现；对全新分子，工具只能缩小范围，不能保证完整结构。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把质谱仪想成一台“分子碎纸机”：它把样品里的分子打碎并称出碎片重量，但不会直接告诉你原分子长什么样。过去科学家要拿碎片去比对已知谱库，可谱库只覆盖约5%的信号，剩下的大多成了“暗物质”。这个工具相当于给科学家配了一个会查资料、会算账、还会讲证据的助手：先清理噪声，再查库，查不到就推算分子式，从海量候选里逐个排除，最后把推理过程摊开供人复核。对普通人来说，它不会立刻改变看病或用药，但可能加快天然产物药物发现和代谢物鉴定，让原本要数天甚至数月的分析缩短到数小时。不过它给出的是候选和证据，仍需化学家把关，不能当成自动定论。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "谷歌推出质谱AI工具，可解析分子结构相关图片",
+      "selectedOn": "2026-11-26"
+    },
+    {
+      "id": "925effec2abc88",
+      "url": "https://openai.com/business/customer-stories/intentful-dots/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/business/customer-stories/intentful-dots/"
+        }
+      ],
+      "publishedAt": "2026-11-24",
+      "source": "OpenAI",
+      "title": "OpenAI案例：小企业用AI代理提效",
+      "summary": "OpenAI发布案例，介绍营销服务公司Intentful CEO Marina Petrova使用名为dots的AI代理（基于ChatGPT及Gmail、Slack、HubSpot等插件）处理业务。该代理曾筛查约300个网站站点地图、调取历史定价并生成提案草稿，还主动提醒关键邮件、更新会议讲稿备注、发现培训录音访问故障。案例称提案准备从数天缩短至数小时，但效率提升幅度来自企业自述，未经独立验证，具体定价与客户信息未披露。",
+      "category": "产品动态",
+      "importance": 55,
+      "why": "这是OpenAI面向企业客户的官方案例，展示AI代理接入办公工具后的实际用法，对判断代理类产品落地场景有参考价值，但属厂商自述，效果需谨慎看待。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI官网发布客户案例，主角是营销服务公司Intentful的CEO Marina Petrova。她使用名为dots的AI代理（她本人称其为Aria），通过ChatGPT及Gmail、Slack、HubSpot、Google Drive、Asana等插件完成工作。案例称，Aria曾按给定标准筛查约300个网站站点地图，帮助确定旅游客户打包服务覆盖范围，并从历史协议和销售数据中提取定价，生成一页提案草稿；还曾发现旧提案续约日期与记忆不符并主动提示。日常中它筛选需处理的邮件、在共享演示文稿新增幻灯片后自动更新讲稿备注，并在培训场景发现录音链接访问故障。Marina表示会审核对外邮件并控制代理可访问的信息。上述效率提升均为企业自述，OpenAI未提供独立测评数据。",
+          "sections": []
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把dots理解成一个住在你常用办公软件里的助理：你交代目标，它自己去翻网页、查合同、套模板，把初稿端上来，你只做最后把关。对普通人来说，意义不在于AI多聪明，而在于它开始接手“找资料、对格式、盯消息”这类耗时间的杂活，让人腾出精力做判断和谈生意。但也要看到，这类案例由厂商发布，天然偏向展示成功面；代理能读邮件、改文档，也意味着权限管理和人工复核不能省。真要用，先从小任务试起，重要数字和对外内容仍要自己核对。",
+          "sections": []
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How Intentful uses dots to make more time for growth",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "OpenAI案例：小企业用AI代理提效相关图片",
+      "selectedOn": "2026-11-26"
+    },
     {
       "id": "0b260d07579db8",
       "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
@@ -22280,13 +22448,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-25",
+  "editionDate": "2026-11-26",
   "dailyIds": [
+    "17929128d139e3",
     "3298713995b153",
+    "ef02d096cf97ea",
     "a72cc3aa1f3d17",
-    "d7268feb3d6e47",
-    "422bcc74934afb",
-    "60ff07a70f51c3"
+    "d7268feb3d6e47"
   ],
-  "editionUpdatedAt": "2026-11-25T05:14:18.937790+00:00"
+  "editionUpdatedAt": "2026-11-25T18:59:17.335202+00:00"
 }
