@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-24T19:57:23.866896+00:00",
-  "lastCheckedAt": "2026-11-24T19:57:23.866896+00:00",
+  "updatedAt": "2026-11-25T05:14:18.937790+00:00",
+  "lastCheckedAt": "2026-11-25T05:14:18.937790+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 20
+      "candidates": 21
     },
     {
       "source": "Google DeepMind",
@@ -64,7 +64,7 @@
     {
       "source": "TechCrunch AI",
       "ok": true,
-      "candidates": 3
+      "candidates": 4
     },
     {
       "source": "MIT Technology Review",
@@ -84,12 +84,12 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 11
+      "candidates": 12
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 3
+      "candidates": 4
     },
     {
       "source": "腾讯新闻",
@@ -117,13 +117,13 @@
       "ok": true,
       "stage": "search-responded, public-index-readable",
       "count": 3,
-      "readable": 3
+      "readable": 2
     },
     {
       "source": "新华网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 5,
+      "count": 6,
       "readable": 3
     },
     {
@@ -149,6 +149,39 @@
     }
   ],
   "articles": [
+    {
+      "id": "0b260d07579db8",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "sources": [
+        {
+          "name": "Simon Willison",
+          "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/"
+        }
+      ],
+      "publishedAt": "2026-11-24",
+      "source": "Simon Willison",
+      "title": "开发者复盘：一年内大模型三次能力拐点",
+      "summary": "开发者Simon Willison在个人博客复盘过去一年大模型与编程智能体的三次能力拐点：2025年11月Claude Opus 4.5与OpenAI GPT-5.1系列让编程智能体从需频繁纠错变为默认可用；2026年6月Claude Fable 5因安全能力被出口管制短暂下架，7月1日恢复；9月22日Opus 5.5展现出对“趣味”的理解，能长时间自主试玩并重平衡游戏。他称Fable 5.2是否算新拐点仍不确定，并认为手写大部分代码的时代已过去。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是一线开发者对多款模型迭代的横向复盘，涉及编程智能体可靠性、出口管制与游戏生成能力，对理解大模型产品节奏有参考价值，但属个人体验而非官方评测。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Willison按时间线列出三次拐点。第一次在2025年11月：Anthropic发布Claude Opus 4.5，OpenAI推出GPT-5.1 Instant、Thinking、Codex与Codex-Max，他称编程智能体由此变得“默认结果基本正确”，此前需频繁人工纠正。第二次在2026年6月：Claude Fable 5发布，是移除攻击性安全能力的Mythos版本，但三天后因出口管制被禁，7月1日恢复。第三次在2026年9月22日：Opus 5.5能理解“好玩”，花12小时试玩并重平衡一款即时战略游戏。他称Fable 5.2是否算新拐点尚不确定，文中模型名称与时间均为其个人叙述，未提供第三方验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这三次拐点理解成助手从“经常帮倒忙的实习生”变成“能独立交活的熟练工”，再变成“懂产品感觉的搭档”。第一次变化最实际：以前用AI写代码要反复改，现在多数日常任务一次就能用，省下的是纠错时间。第二次提醒人们，能力越强的模型越可能被政策按住，好用的工具不一定随时可用。第三次则涉及“品味”：模型不只是把功能做出来，还能判断游戏好不好玩并自行调整，这意味着普通人做小游戏、小工具的门槛进一步降低。不过这些判断来自一位开发者的主观体验，普通用户的实际感受可能因任务类型而异。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Three LLM inflection points in twelve months",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "开发者复盘：一年内大模型三次能力拐点相关图片",
+      "selectedOn": "2026-11-25"
+    },
     {
       "id": "a72cc3aa1f3d17",
       "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
@@ -22255,5 +22288,5 @@
     "422bcc74934afb",
     "60ff07a70f51c3"
   ],
-  "editionUpdatedAt": "2026-11-24T19:57:23.866896+00:00"
+  "editionUpdatedAt": "2026-11-25T05:14:18.937790+00:00"
 }

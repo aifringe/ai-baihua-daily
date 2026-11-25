@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-24T19:57:41.987590+00:00",
+  "checkedAt": "2026-11-25T05:14:35.121111+00:00",
   "sources": [
     {
       "source": "腾讯新闻",
@@ -26,14 +26,14 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 1,
+      "count": 2,
       "readable": 0
     },
     {
       "source": "新华网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 1,
+      "count": 2,
       "readable": 0
     },
     {
@@ -65,7 +65,7 @@
       "source": "腾讯新闻",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-24T19:57:35.851412+00:00",
+      "discoveredAt": "2026-11-25T05:14:27.548652+00:00",
       "discoveryUrl": "https://news.qq.com/rain/a/20260511A05SDP00",
       "topic": "business",
       "state": "历史线索",
@@ -81,7 +81,7 @@
       "source": "微博",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-24T19:57:35.765660+00:00",
+      "discoveredAt": "2026-11-25T05:14:27.598279+00:00",
       "discoveryUrl": "https://www.weibo.com/ttarticle/p/show?id=2309405313423797256285",
       "topic": "business",
       "state": "待人工核验",
@@ -93,7 +93,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-24T19:57:35.743169+00:00",
+      "discoveredAt": "2026-11-25T05:14:27.527982+00:00",
       "discoveryUrl": "https://www.36kr.com/p/3868498998449415",
       "topic": "business",
       "state": "历史线索",
@@ -109,7 +109,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-24T19:57:38.520758+00:00",
+      "discoveredAt": "2026-11-25T05:14:30.661240+00:00",
       "discoveryUrl": "https://www.36kr.com/p/3747947088003588",
       "topic": "business",
       "state": "历史线索",
@@ -125,7 +125,7 @@
       "source": "36氪",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-24T19:57:40.143530+00:00",
+      "discoveredAt": "2026-11-25T05:14:31.950680+00:00",
       "discoveryUrl": "https://www.36kr.com/newsflashes/4045152038458502",
       "topic": "business",
       "state": "待人工核验",
@@ -296,7 +296,7 @@
       "source": "温州网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-24T19:57:39.352112+00:00",
+      "discoveredAt": "2026-11-25T05:14:32.098620+00:00",
       "discoveryUrl": "https://finance.66wz.com/system/2026/09/08/105835921.shtml",
       "topic": "business",
       "state": "待人工核验",
@@ -308,7 +308,7 @@
       "source": "人民网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-24T19:57:35.908424+00:00",
+      "discoveredAt": "2026-11-25T05:14:28.877564+00:00",
       "discoveryUrl": "https://zj.people.com.cn/n2/2026/0323/c228592-41531254.html",
       "topic": "business",
       "state": "待人工核验",
@@ -320,7 +320,7 @@
       "source": "新华网",
       "weight": 4,
       "feedExcerpt": "",
-      "discoveredAt": "2026-11-24T19:57:37.215609+00:00",
+      "discoveredAt": "2026-11-25T05:14:31.825080+00:00",
       "discoveryUrl": "https://www1.xinhuanet.com/fortune/20260321/943f6293dbe14f918ef29a481d12a6d0/c.html",
       "topic": "business",
       "state": "历史线索",
@@ -454,6 +454,34 @@
       "topic": "business",
       "state": "待人工核验",
       "reason": "访问规则未确认或不允许自动读取"
+    },
+    {
+      "originalTitle": "在实践中淬炼锻造干部干事创业真本领",
+      "url": "https://theory.people.com.cn/n1/2026/1125/c40531-40840061.html",
+      "source": "人民网",
+      "weight": 4,
+      "feedExcerpt": "",
+      "discoveredAt": "2026-11-25T05:14:27.885695+00:00",
+      "discoveryUrl": "https://www.people.com.cn/",
+      "topic": "business",
+      "state": "待人工核验",
+      "reason": "访问规则未确认或不允许自动读取"
+    },
+    {
+      "originalTitle": "“一人公司”崛起 AI赋能“超级个体”-新华网",
+      "url": "https://www3.xinhuanet.com/tech/20260709/95eb319491d149cdb969557c3591267a/c.html",
+      "source": "新华网",
+      "weight": 4,
+      "feedExcerpt": "",
+      "discoveredAt": "2026-11-25T05:14:29.323454+00:00",
+      "discoveryUrl": "https://www.bing.com/search?q=site%3Anews.cn+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8&format=rss",
+      "topic": "business",
+      "state": "历史线索",
+      "reason": "不在最近60天窗口",
+      "publishedAt": "2026-07-09",
+      "bodyExcerpt": "智能经济加速发展的今天，OPC（One Person Company，一人公司）这种全新创业模式迅速走红。依托AI智能体、无代码工具等数字技术，普通创业者无需组建庞大团队，仅凭“个人主导+AI协同”就能独立完成产品设计、运营推广、市场落地的全链路商业闭环。 创业热潮席卷而来，但新赛道也暗藏新挑战。技术门槛持续降低，大批创业者入局，同质化竞争、落地难、运营不规范等问题逐渐凸显。如何帮助OPC创业者突",
+      "textLength": 3198,
+      "contentHash": "defb06dc9c1ab39b2b251658ded4cd6a52e8c496dd52469d91c5d5d33cf7329b"
     }
   ]
 }
