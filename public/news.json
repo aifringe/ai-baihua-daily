@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-11-25T18:59:17.335202+00:00",
-  "lastCheckedAt": "2026-11-25T18:59:17.335202+00:00",
+  "lastCheckedAt": "2026-11-26T04:41:56.423289+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
@@ -85,12 +85,12 @@
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 10
+      "candidates": 11
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 3
+      "candidates": 4
     },
     {
       "source": "腾讯新闻",
@@ -117,14 +117,14 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 3,
-      "readable": 2
+      "count": 1,
+      "readable": 0
     },
     {
       "source": "新华网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 6,
+      "count": 5,
       "readable": 3
     },
     {
