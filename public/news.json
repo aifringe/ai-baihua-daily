@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-26T18:49:53.374306+00:00",
-  "lastCheckedAt": "2026-11-27T04:46:24.983114+00:00",
+  "updatedAt": "2026-11-27T18:41:23.258697+00:00",
+  "lastCheckedAt": "2026-11-27T18:41:23.258697+00:00",
   "feedStatus": [
     {
       "source": "OpenAI",
       "ok": true,
-      "candidates": 10
+      "candidates": 7
     },
     {
       "source": "Google DeepMind",
@@ -19,17 +19,17 @@
     {
       "source": "Google Research",
       "ok": true,
-      "candidates": 2
+      "candidates": 1
     },
     {
       "source": "AWS AI",
       "ok": true,
-      "candidates": 7
+      "candidates": 4
     },
     {
       "source": "MIT News",
       "ok": true,
-      "candidates": 5
+      "candidates": 3
     },
     {
       "source": "Berkeley AI Research",
@@ -44,7 +44,7 @@
     {
       "source": "Hugging Face",
       "ok": true,
-      "candidates": 7
+      "candidates": 6
     },
     {
       "source": "Microsoft Research",
@@ -79,17 +79,17 @@
     {
       "source": "量子位",
       "ok": true,
-      "candidates": 1
+      "candidates": 4
     },
     {
       "source": "Simon Willison",
       "ok": true,
-      "candidates": 12
+      "candidates": 8
     },
     {
       "source": "Latent Space",
       "ok": true,
-      "candidates": 4
+      "candidates": 3
     },
     {
       "source": "腾讯新闻",
@@ -116,7 +116,7 @@
       "source": "人民网",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 0,
+      "count": 1,
       "readable": 0
     },
     {
@@ -137,7 +137,7 @@
       "source": "机器之心",
       "ok": true,
       "stage": "search-responded, public-index-readable",
-      "count": 3,
+      "count": 4,
       "readable": 0
     },
     {
@@ -149,6 +149,39 @@
     }
   ],
   "articles": [
+    {
+      "id": "637318b7f1d1bd",
+      "url": "https://www.qbitai.com/2026/11/513155.html",
+      "sources": [
+        {
+          "name": "量子位",
+          "url": "https://www.qbitai.com/2026/11/513155.html"
+        }
+      ],
+      "publishedAt": "2026-11-27",
+      "source": "量子位",
+      "title": "腾讯混元发布Hy3D 3.6 3D生成模型",
+      "summary": "11月27日，腾讯混元发布原生3D生成大模型Hy3D 3.6，重点提升高模几何与PBR材质贴图质量，面向游戏、影视、手办等专业3D创作场景。该模型已上线腾讯云Token Hub提供API，并接入Miora、LAP、WorkRally等产品。腾讯称内部数百位专业美术与建模师盲测显示，其几何与纹理质量、可用性显著优于同类模型。混元3D负责人表示，3D生成竞争正从“能看”转向“能用”，拓扑、分件、UV和PBR材质等生产可用性愈发关键。混元3D系列社区下载量已超653万。",
+      "category": "产品动态",
+      "importance": 72,
+      "why": "3D生成正从演示走向生产工具，此次更新直指高模与PBR贴图等专业痛点，并接入腾讯云及多款产品，对游戏、影视等内容生产流程有实际影响。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "腾讯混元于11月27日发布Hy3D 3.6，定位原生3D生成模型，训练阶段直接学习3D资产的几何、纹理与材质分布。官方称新版本重点优化高模表面整洁度、部件结构清晰度和面部服装等细节，并支持PBR材质贴图生成，可产出供重拓扑、烘焙和引擎验证使用的资产底稿。该模型已上线腾讯云Token Hub提供API，Miora、LAP、WorkRally等产品已接入。腾讯表示内部数百位专业3D美术与建模师盲测显示其几何、纹理质量和可用性显著优于同类模型，但未公布具体对比对象与量化数据，实际效果仍需第三方验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把Hy3D 3.6理解成一个“3D草稿生成器”：你给它一张原画或描述，它先捏出一个结构清楚、表面不坑洼的模型，还顺手把颜色和材质贴好。以前AI生成的3D模型常像捏坏的橡皮泥，表面坑坑洼洼、零件糊成一片，美术师拿到后几乎要重做；现在它更像一个合格的美术助理，交出的底稿能直接进入精修流程。对普通人来说，未来游戏里的角色、手办模型、影视道具可能更快做出来，成本也可能下降；但要注意，它生成的是“底稿”而非成品，专业美术的后期加工仍不可少，官方所称的领先优势也还需更多独立测试来确认。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "腾讯混元发布 Hy3D 3.6：高模表面更整洁、结构更清晰、刻画更细腻",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "腾讯混元发布Hy3D 3.6 3D生成模型相关图片",
+      "selectedOn": "2026-11-28"
+    },
     {
       "id": "a734da9d3a1d87",
       "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
@@ -181,6 +214,41 @@
       "imageKind": "编辑示意图",
       "imageAlt": "llama.cpp推出AMD硬件跑分看板相关图片",
       "selectedOn": "2026-11-27"
+    },
+    {
+      "id": "979e22972f743c",
+      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+        }
+      ],
+      "publishedAt": "2026-11-26",
+      "source": "TechCrunch AI",
+      "title": "英伟达暂停向东南亚发货审查合规",
+      "summary": "据《华尔街日报》报道，英伟达已要求戴尔、超微等制造合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运服务器，暂停期限未定，以评估当地合作伙伴是否遵守美国出口要求。报道称，中国公司此前通过设在上述国家的数据中心远程调用英伟达芯片，美国商务部本月已堵上这一漏洞。智库Institute for Progress估计，这类远程数据中心约占中国AI算力的24%。英伟达和上述服务器厂商均未公开确认细节，暂停时长和涉及规模仍不清楚。",
+      "category": "行业动态",
+      "importance": 78,
+      "why": "这是美国出口管制收紧后，芯片供应链首次出现区域性发货暂停，直接影响东南亚数据中心业务，也反映合规审查正从芯片销售延伸到远程算力使用。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "《华尔街日报》报道，英伟达通知戴尔、超微等制造伙伴，暂停向马来西亚、新加坡、泰国、印尼发运服务器，暂停期限未说明，目的是核查当地合作方是否满足美国出口要求。报道把这一动作与“远程调用”漏洞联系起来：中国公司此前通过设在这些国家的数据中心远程使用英伟达芯片，美国商务部本月已关闭该漏洞。TechCrunch称，智库Institute for Progress估算这类远程数据中心约占中国AI算力的24%。目前英伟达和服务器厂商未公开确认，暂停涉及的具体产品和规模、是否只针对服务器整机，均不确定。",
+          "text2": ""
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把芯片想象成受管控的紧俏商品，美国规定不能随便卖给中国。有人发现，把芯片放在东南亚的数据中心，让中国客户远程使用，也算一种绕路。现在美国把这条路堵上，英伟达为了不踩线，先让服务器暂停发货，查清楚买家是谁、算力最终给谁用。对普通人来说，短期影响是东南亚部分数据中心项目可能延期，AI服务成本未必立刻上涨，但全球算力供应链会更紧张；长期看，芯片流动会更依赖合规审查，企业用AI的门槛和成本可能被推高。",
+          "text2": ""
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Nvidia hits pause on chip shipments to Southeast Asia",
+      "image": "./illustrations/industry.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "英伟达暂停向东南亚发货审查合规相关图片",
+      "selectedOn": "2026-11-28"
     },
     {
       "id": "b4fddd7d3c17c3",
@@ -316,6 +384,39 @@
       "selectedOn": "2026-11-26"
     },
     {
+      "id": "b294701165e549",
+      "url": "https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/",
+      "sources": [
+        {
+          "name": "Latent Space",
+          "url": "https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/"
+        }
+      ],
+      "publishedAt": "2026-11-25",
+      "source": "Latent Space",
+      "title": "Thariq谈AI编程：量产与精雕可共存",
+      "summary": "Latent Space播客发布对Thariq Shihipar的访谈，他在AI Engineer CODE活动上演示了用AI快速生成大量软件与保留手工打磨时间并存的思路：在自制的格斗游戏中修改/human文件夹里岩石大小并即时试玩投掷动作，还展示过可切换模式的Mac Dock，但后来停用，因为他更在意察觉自己何时分心。访谈涉及编程智能体如何改变他的看法、由设计师定义动作的决策模型，以及谁来决定哪些实验值得投入算力。节目录制后，Thariq宣布加入OpenAI。",
+      "category": "人物对话",
+      "importance": 55,
+      "why": "访谈呈现一线AI工程师对编程智能体与手工打磨关系的反思，并披露其加入OpenAI的人事变动，对关注AI编程工具走向的读者有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "Latent Space发布了一期约54分钟的播客，嘉宾为Thariq Shihipar，内容围绕他在AI Engineer CODE活动上的主题演讲展开。他现场演示了在自制格斗游戏中修改/human文件夹里岩石的尺寸，并立刻试玩投掷动作，以此说明AI可以让软件以极低成本批量产出，同时仍留出时间把一件事做对。他还提到自己做过一个可切换模式的Mac Dock，实际使用后停用，因为他发现自己更在意的是察觉自己何时分心。访谈还谈到编程智能体如何改变了他的看法、决策模型如何从设计师定义的动作中选择，以及谁来决定哪些实验值得投入算力。节目录制后，Thariq宣布加入OpenAI，这一人事变动在节目中被提及。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这期访谈理解成：AI像一台高速印刷机，能一口气印出上千份东西，但真正让人记住的，往往还是你亲手改过的那一处细节。Thariq演示的改岩石、试投掷，就是边印边改、马上上手试的流程，门槛低到普通人也能快速做出能玩的东西。他停用自己做的Dock，说明工具再多，真正有用的是帮人发现自己走神，而不是堆功能。对普通人来说，这意味着以后做小软件、小工具会更便宜更快，但值不值得做、做完有没有用，仍要人来判断；算力给谁做实验，也是人和机构要决定的事。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+      "image": "./illustrations/dialogue.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "Thariq谈AI编程：量产与精雕可共存相关图片",
+      "selectedOn": "2026-11-28"
+    },
+    {
       "id": "c232ab95006f02",
       "url": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
       "sources": [
@@ -448,6 +549,39 @@
       "selectedOn": "2026-11-27"
     },
     {
+      "id": "a5af0418515c8c",
+      "url": "https://openai.com/business/customer-stories/ifood/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/business/customer-stories/ifood/"
+        }
+      ],
+      "publishedAt": "2026-11-24",
+      "source": "OpenAI",
+      "title": "iFood用OpenAI模型批量修代码漏洞",
+      "summary": "OpenAI发布案例称，拉美外卖平台iFood搭建内部“远程代理平台”，把代码检查、依赖漏洞修复等任务封装为REST API调用，由隔离沙箱中的GPT-5.6 Luna执行并自动提交合并请求。平台已覆盖iFood超1.5万个代码仓库，完成2.5万多次运行，平均每次推理成本约0.04美元。接入该平台后，内部安全平台修复漏洞数量与修复准确率均提升一倍以上。iFood强调异步执行让开发者无需全程盯守，但相关数据均来自OpenAI单方披露，尚无第三方验证。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "这是OpenAI对外展示企业级代理编程落地效果的案例，涉及模型选型、成本与安全修复效率，对关注AI编程工具规模化应用的企业有参考价值。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI在案例文章中称，iFood维护超过1.5万个代码仓库，过去各团队各自搭建零散方案处理代码规范校验、漏洞依赖修复等重复任务，瓶颈不在任务本身而在执行基础设施。iFood因此构建内部“远程代理平台”：用户通过REST接口提交提示词和环境要求，平台在隔离沙箱中运行任务，结束后返回合并请求。沙箱预装Python、Java、Go等多种工具链，并可访问GitLab、Docker、Snyk等系统。平台选用GPT-5.6 Luna，理由是智能、效率与速度的平衡。官方数据称已完成2.5万多次运行、消耗超270亿token、平均每次成本0.04美元；首个主要用户是内部安全平台，迁移后修复准确率和修复漏洞数量均翻倍以上。上述数字均来自OpenAI单方披露，未提供独立审计或对比基线，实际效果仍待验证。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "可以把这套平台理解成给程序员配了一个“云端外包工”：团队不用自己搭机器人，只要在系统里下一张工单，说明要改什么，任务就被送进一个独立房间自动干活，干完把修改结果打包交回来。以前每个团队各自造轮子，现在统一走一个接口，省去重复建设。对普通人来说，这类工具的意义不在“AI取代程序员”，而在把查漏洞、升级依赖这类枯燥活批量外包出去，让人腾出时间做更需要判断的事。不过也要看到，修漏洞翻倍是厂商自述，真实代码质量和安全风险仍需长期观察；每次四分钱的成本看似低，但乘以海量仓库和任务后，仍是一笔需要精打细算的架构账。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "How iFood scales coding agents across 15,000 repositories",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "iFood用OpenAI模型批量修代码漏洞相关图片",
+      "selectedOn": "2026-11-28"
+    },
+    {
       "id": "925effec2abc88",
       "url": "https://openai.com/business/customer-stories/intentful-dots/",
       "sources": [
@@ -514,6 +648,39 @@
       "imageKind": "编辑示意图",
       "imageAlt": "开发者复盘：一年内大模型三次能力拐点相关图片",
       "selectedOn": "2026-11-25"
+    },
+    {
+      "id": "78551721fa6493",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra/",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/searching-for-distant-planets-with-astra/"
+        }
+      ],
+      "publishedAt": "2026-11-24",
+      "source": "OpenAI",
+      "title": "业余天文爱好者用AI发现系外行星候选",
+      "summary": "OpenAI工程师Kevin Bond与创业者Ethan Byrd分别借助Codex和Astra分析开普勒与TESS公开望远镜数据，寻找恒星亮度周期性微降的凌星信号。Bond筛查约10万颗恒星，标记200多个信号，其中两个候选被SETI研究所独立搜索复现；Byrd分析约1900万颗恒星，首轮得49个候选，一个已提交TESS团队待分析。这些只是候选，尚未确认，后续需更多观测与同行评审。",
+      "category": "产品动态",
+      "importance": 62,
+      "why": "展示通用AI工具在真实科研流程中的辅助作用，也说明业余爱好者可参与系外行星搜寻，但候选尚未确认，意义在方法而非发现本身。",
+      "sections": [
+        {
+          "heading": "发生了什么",
+          "text": "OpenAI发文称，其工程师Kevin Bond用Codex编写程序，分析开普勒望远镜约10万颗恒星的公开光变曲线，标记出200多个疑似凌星信号，其中10个对应已确认行星，另有两颗恒星KIC 5689121和KIC 6691030的周期信号较突出。创业者Ethan Byrd独立使用Astra分析TESS等约1900万颗恒星数据，首轮得到49个候选。Bond联系SETI研究所天文学家独立复算，对方称找到其中两个相同信号；Byrd将一个较强候选提交TESS团队，另有两个待提交。报道明确，这些只是候选，成因可能包括双星互掩或仪器温度变化，确认或需数月到数年。"
+        },
+        {
+          "heading": "换成人话",
+          "text": "找系外行星有点像在一排路灯下等飞虫掠过：行星从恒星前面经过时，星星会规律地暗一下。过去靠人盯着海量曲线找这种“眨眼”，现在AI能先帮忙筛出可疑目标，再交给天文学家拿更硬的证据去核实。对普通人的影响是，你不必拥有望远镜，也能通过NASA Exoplanet Watch等项目参与分析公开数据；同时别把“AI发现新行星”当成已定论，目前只是给专业天文学家指了几个值得细看的位置，离写进教科书还差独立观测和同行评审。"
+        }
+      ],
+      "editor": "DeepSeek Flash · 基于公开可读正文综合整理",
+      "originalTitle": "Searching for distant planets with Astra",
+      "image": "./illustrations/product.svg",
+      "imageKind": "编辑示意图",
+      "imageAlt": "业余天文爱好者用AI发现系外行星候选相关图片",
+      "selectedOn": "2026-11-28"
     },
     {
       "id": "a72cc3aa1f3d17",
@@ -22613,13 +22780,13 @@
       "accessNote": "原始报告页面目前访问受限；此条作为历史档案保留，暂无可靠的替代公开入口。"
     }
   ],
-  "editionDate": "2026-11-27",
+  "editionDate": "2026-11-28",
   "dailyIds": [
     "bee434900b5ec6",
     "17929128d139e3",
-    "3298713995b153",
-    "ef02d096cf97ea",
-    "c232ab95006f02"
+    "979e22972f743c",
+    "637318b7f1d1bd",
+    "3298713995b153"
   ],
-  "editionUpdatedAt": "2026-11-26T18:49:53.374306+00:00"
+  "editionUpdatedAt": "2026-11-27T18:41:23.258697+00:00"
 }
